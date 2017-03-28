@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x0936" id="Arachna the Spider Queen">
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiChar216x16</File>
+         <Index>0x31</Index>
+      </Texture>
+      <HitSound>monster/spider_queen_hit</HitSound>
+      <DeathSound>monster/spider_queen_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>2700</MaxHitPoints>
+      <Defense>4</Defense>
+      <Enemy/>
+      <God/>
+      <StasisImmune/>
+      <Quest/>
+      <Level>1</Level>
+      <XpMult>1.4</XpMult>
+      <NoArticle/>
+      <Projectile id="0">
+         <ObjectId>Green Magic</ObjectId>
+         <Speed>56</Speed>
+         <Damage>40</Damage>
+         <LifetimeMS>2600</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Green Blob</ObjectId>
+         <Speed>40</Speed>
+         <Damage>75</Damage>
+         <Size>185</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="5">Weak</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x0937" id="Arachna Web Spoke 1">
+      <DisplayId>Arachna Element</DisplayId>
+      <Group>AttackType</Group>
+      <Class>Character</Class>
+      <StasisImmune/>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>1000</Defense>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x49</Index>
+      </Texture>
+      <Size>250</Size>
+      <StasisImmune/>
+      <Enemy/>
+      <Projectile id="0">
+         <ObjectId>Web Thread</ObjectId>
+         <Damage>0</Damage>
+         <Size>170</Size>
+         <Speed>70</Speed>
+         <LifetimeMS>1450</LifetimeMS>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x0938" id="Arachna Web Spoke 2">
+      <DisplayId>Arachna Element</DisplayId>
+      <Group>AttackType</Group>
+      <Class>Character</Class>
+      <StasisImmune/>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>1000</Defense>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x49</Index>
+      </Texture>
+      <Size>250</Size>
+      <StasisImmune/>
+      <Enemy/>
+      <Projectile id="0">
+         <ObjectId>Web Thread</ObjectId>
+         <Damage>0</Damage>
+         <Size>170</Size>
+         <Speed>70</Speed>
+         <LifetimeMS>1450</LifetimeMS>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x0939" id="Arachna Web Spoke 3">
+      <DisplayId>Arachna Element</DisplayId>
+      <Group>AttackType</Group>
+      <Class>Character</Class>
+      <StasisImmune/>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>1000</Defense>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x49</Index>
+      </Texture>
+      <Size>250</Size>
+      <StasisImmune/>
+      <Enemy/>
+      <Projectile id="0">
+         <ObjectId>Web Thread</ObjectId>
+         <Damage>0</Damage>
+         <Size>170</Size>
+         <Speed>70</Speed>
+         <LifetimeMS>1450</LifetimeMS>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x093a" id="Arachna Web Spoke 4">
+      <DisplayId>Arachna Element</DisplayId>
+      <Group>AttackType</Group>
+      <Class>Character</Class>
+      <StasisImmune/>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>1000</Defense>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x49</Index>
+      </Texture>
+      <Size>250</Size>
+      <StasisImmune/>
+      <Enemy/>
+      <Projectile id="0">
+         <ObjectId>Web Thread</ObjectId>
+         <Damage>0</Damage>
+         <Size>170</Size>
+         <Speed>70</Speed>
+         <LifetimeMS>1450</LifetimeMS>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x093b" id="Arachna Web Spoke 5">
+      <DisplayId>Arachna Element</DisplayId>
+      <Group>AttackType</Group>
+      <Class>Character</Class>
+      <StasisImmune/>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>1000</Defense>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x49</Index>
+      </Texture>
+      <Size>250</Size>
+      <StasisImmune/>
+      <Enemy/>
+      <Projectile id="0">
+         <ObjectId>Web Thread</ObjectId>
+         <Damage>0</Damage>
+         <Size>170</Size>
+         <Speed>70</Speed>
+         <LifetimeMS>1450</LifetimeMS>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x093c" id="Arachna Web Spoke 6">
+      <DisplayId>Arachna Element</DisplayId>
+      <Group>AttackType</Group>
+      <Class>Character</Class>
+      <StasisImmune/>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>1000</Defense>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x49</Index>
+      </Texture>
+      <Size>250</Size>
+      <StasisImmune/>
+      <Enemy/>
+      <Projectile id="0">
+         <ObjectId>Web Thread</ObjectId>
+         <Damage>0</Damage>
+         <Size>170</Size>
+         <Speed>70</Speed>
+         <LifetimeMS>1450</LifetimeMS>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x093d" id="Arachna Web Spoke 7">
+      <DisplayId>Arachna Element</DisplayId>
+      <Group>AttackType</Group>
+      <Class>Character</Class>
+      <StasisImmune/>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>1000</Defense>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x49</Index>
+      </Texture>
+      <Size>250</Size>
+      <StasisImmune/>
+      <Enemy/>
+      <Projectile id="0">
+         <ObjectId>Web Thread</ObjectId>
+         <Damage>0</Damage>
+         <Size>170</Size>
+         <Speed>70</Speed>
+         <LifetimeMS>880</LifetimeMS>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x093e" id="Arachna Web Spoke 8">
+      <DisplayId>Arachna Element</DisplayId>
+      <Group>AttackType</Group>
+      <Class>Character</Class>
+      <StasisImmune/>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>1000</Defense>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x49</Index>
+      </Texture>
+      <Size>250</Size>
+      <StasisImmune/>
+      <Enemy/>
+      <Projectile id="0">
+         <ObjectId>Web Thread</ObjectId>
+         <Damage>0</Damage>
+         <Size>170</Size>
+         <Speed>70</Speed>
+         <LifetimeMS>880</LifetimeMS>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x093f" id="Arachna Web Spoke 9">
+      <DisplayId>Arachna Element</DisplayId>
+      <Group>AttackType</Group>
+      <Class>Character</Class>
+      <StasisImmune/>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>1000</Defense>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x49</Index>
+      </Texture>
+      <Size>250</Size>
+      <StasisImmune/>
+      <Enemy/>
+      <Projectile id="0">
+         <ObjectId>Web Thread</ObjectId>
+         <Damage>0</Damage>
+         <Size>170</Size>
+         <Speed>70</Speed>
+         <LifetimeMS>880</LifetimeMS>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x21b" id="Spider Egg Sac">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiChar8x8</File>
+         <Index>0xe9</Index>
+      </Texture>
+      <HitSound>monster/eggs_hit</HitSound>
+      <DeathSound>monster/eggs_death</DeathSound>
+      <Size>75</Size>
+      <MaxHitPoints>1</MaxHitPoints>
+   </Object>
+   <Object type="0x021c" id="Green Den Spider Hatchling">
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiChar8x8</File>
+         <Index>0xca</Index>
+      </Texture>
+      <HitSound>monster/spiders_hit</HitSound>
+      <DeathSound>monster/spiders_death</DeathSound>
+      <Size>75</Size>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Enemy/>
+      <XpMult>0.2</XpMult>
+      <Projectile>
+         <ObjectId>Green Magic</ObjectId>
+         <Speed>50</Speed>
+         <Damage>25</Damage>
+         <LifetimeMS>3000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x021d" id="Black Den Spider">
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiChar8x8</File>
+         <Index>0xc8</Index>
+      </Texture>
+      <HitSound>monster/spiders_hit</HitSound>
+      <DeathSound>monster/spiders_death</DeathSound>
+      <Size>115</Size>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Enemy/>
+      <Projectile>
+         <ObjectId>Green Magic</ObjectId>
+         <Speed>50</Speed>
+         <Damage>50</Damage>
+         <LifetimeMS>2000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x021e" id="Red Spotted Den Spider">
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiChar28x8</File>
+         <Index>0x11</Index>
+      </Texture>
+      <HitSound>monster/spiders_hit</HitSound>
+      <DeathSound>monster/spiders_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Enemy/>
+      <Projectile>
+         <ObjectId>Blue Magic</ObjectId>
+         <Speed>80</Speed>
+         <Damage>35</Damage>
+         <LifetimeMS>1250</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x021f" id="Black Spotted Den Spider">
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiChar28x8</File>
+         <Index>0x10</Index>
+      </Texture>
+      <HitSound>monster/spiders_hit</HitSound>
+      <DeathSound>monster/spiders_death</DeathSound>
+      <Size>90</Size>
+      <MaxHitPoints>200</MaxHitPoints>
+      <ProjectileId>Purple Fire</ProjectileId>
+      <ProjectileDamage>40</ProjectileDamage>
+      <Enemy/>
+      <Projectile>
+         <ObjectId>Purple Magic</ObjectId>
+         <Speed>80</Speed>
+         <Damage>40</Damage>
+         <LifetimeMS>1250</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x0220" id="Brown Den Spider">
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiChar28x8</File>
+         <Index>0x13</Index>
+      </Texture>
+      <HitSound>monster/spiders_hit</HitSound>
+      <DeathSound>monster/spiders_death</DeathSound>
+      <Size>60</Size>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Enemy/>
+      <Projectile>
+         <ObjectId>Purple Magic</ObjectId>
+         <Speed>80</Speed>
+         <Damage>20</Damage>
+         <LifetimeMS>1250</LifetimeMS>
+      </Projectile>
+   </Object>
+</Objects>

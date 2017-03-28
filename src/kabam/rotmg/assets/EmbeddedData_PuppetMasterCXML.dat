@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x7443" id="Puppet Theatre Boss Spawn">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <XpMult>0.0</XpMult>
+      <StasisImmune/>
+      <StunImmune/>
+   </Object>
+   <Object type="0x7433" id="The Puppet Master">
+      <DisplayId>The Puppet Master</DisplayId>
+      <Class>Character</Class>
+      <Group>Master</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>120</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>120</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>110000</MaxHitPoints>
+      <Defense>30</Defense>
+      <XpMult>1.5</XpMult>
+      <Level>20</Level>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Jester Bolt</ObjectId>
+         <Speed>30</Speed>
+         <MinDamage>75</MinDamage>
+         <MaxDamage>95</MaxDamage>
+         <LifetimeMS>4000</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Lightning Spiral</ObjectId>
+         <Speed>60</Speed>
+         <MinDamage>80</MinDamage>
+         <MaxDamage>100</MaxDamage>
+         <LifetimeMS>4500</LifetimeMS>
+         <ConditionEffect duration="1.5">Paralyzed</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Big Zombie Blast</ObjectId>
+         <Speed>80</Speed>
+         <MinDamage>95</MinDamage>
+         <MaxDamage>115</MaxDamage>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="2.5">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Armor Pierce Bullet</ObjectId>
+         <Speed>30</Speed>
+         <ArmorPiercing/>
+         <MinDamage>75</MinDamage>
+         <MaxDamage>85</MaxDamage>
+         <LifetimeMS>6000</LifetimeMS>
+      </Projectile>
+      <AltTexture id="1">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+   </Object>
+   <Object type="0x743e" id="Puppet Wizard 2">
+      <DisplayId>Wizard Puppet</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>105</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>120</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Defense>15</Defense>
+      <XpMult>0.0</XpMult>
+      <Level>20</Level>
+      <StunImmune/>
+      <Projectile id="0">
+         <ObjectId>White Bolt</ObjectId>
+         <Speed>30</Speed>
+         <MinDamage>50</MinDamage>
+         <MaxDamage>65</MaxDamage>
+         <LifetimeMS>1500</LifetimeMS>
+      </Projectile>
+      <AltTexture id="1">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x4ED</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x4EE</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x4EF</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x4F0</Index>
+         </Texture>
+      </AltTexture>
+   </Object>
+   <Object type="0x743f" id="Puppet Knight 2">
+      <DisplayId>Knight Puppet</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>103</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>120</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Defense>25</Defense>
+      <XpMult>0.0</XpMult>
+      <Level>20</Level>
+      <StunImmune/>
+      <Projectile id="0">
+         <ObjectId>Fire Shield</ObjectId>
+         <Speed>30</Speed>
+         <MinDamage>100</MinDamage>
+         <MaxDamage>120</MaxDamage>
+         <LifetimeMS>1500</LifetimeMS>
+         <ConditionEffect duration="4">Armor Broken</ConditionEffect>
+         <ParticleTrail>0xf7941d</ParticleTrail>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Fire Bolt</ObjectId>
+         <Speed>45</Speed>
+         <MinDamage>100</MinDamage>
+         <MaxDamage>120</MaxDamage>
+         <LifetimeMS>1200</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x7437" id="Puppet Priest">
+      <DisplayId>Priest Puppet</DisplayId>
+      <Class>Character</Class>
+      <Group>Healers</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>104</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>120</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Defense>18</Defense>
+      <XpMult>0.8</XpMult>
+      <Level>20</Level>
+      <StunImmune/>
+      <StasisImmune/>
+      <AltTexture id="1">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x4F1</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x4F2</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x4F3</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x4F4</Index>
+         </Texture>
+      </AltTexture>
+   </Object>
+   <Object type="0x7440" id="Puppet Priest 2">
+      <DisplayId>Priest Puppet</DisplayId>
+      <Class>Character</Class>
+      <Group>Healers</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>104</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>120</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Defense>18</Defense>
+      <XpMult>0.0</XpMult>
+      <Level>20</Level>
+      <StunImmune/>
+      <StasisImmune/>
+      <AltTexture id="1">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x4F1</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x4F2</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x4F3</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x4F4</Index>
+         </Texture>
+      </AltTexture>
+   </Object>
+   <Object type="0x7438" id="False Puppet Master">
+      <DisplayId>The Puppet Master</DisplayId>
+      <Class>Character</Class>
+      <Group>Master</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>120</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>120</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>15000</MaxHitPoints>
+      <Defense>30</Defense>
+      <XpMult>1.5</XpMult>
+      <Level>20</Level>
+      <StasisImmune/>
+      <DazedImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Jester Bolt</ObjectId>
+         <Speed>30</Speed>
+         <MinDamage>75</MinDamage>
+         <MaxDamage>95</MaxDamage>
+         <LifetimeMS>4000</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Lightning Spiral</ObjectId>
+         <Speed>60</Speed>
+         <MinDamage>1</MinDamage>
+         <MaxDamage>1</MaxDamage>
+         <LifetimeMS>4500</LifetimeMS>
+         <ConditionEffect duration="3.5">Paralyzed</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Big Zombie Blast</ObjectId>
+         <Speed>100</Speed>
+         <MinDamage>95</MinDamage>
+         <MaxDamage>115</MaxDamage>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="2.5">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x7444" id="Oryx Puppet">
+      <DisplayId>Oryx Puppet</DisplayId>
+      <Class>Character</Class>
+      <Group>Treasure Boss</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars16x16rEmbed</File>
+         <Index>0x00</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>45000</MaxHitPoints>
+      <Defense>20</Defense>
+      <XpMult>1.3</XpMult>
+      <Level>20</Level>
+      <StunImmune/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>White Superblast</ObjectId>
+         <Speed>55</Speed>
+         <Damage>100</Damage>
+         <LifetimeMS>1500</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="4">Weak</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>White Bullet</ObjectId>
+         <Speed>60</Speed>
+         <Damage>100</Damage>
+         <Size>100</Size>
+         <LifetimeMS>900</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>White Bullet</ObjectId>
+         <Speed>60</Speed>
+         <Damage>75</Damage>
+         <Size>85</Size>
+         <LifetimeMS>1000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x7445" id="Minion Puppet">
+      <DisplayId>Minion Puppet</DisplayId>
+      <Class>Character</Class>
+      <Group>Treasure Minion</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars8x8rEmbed</File>
+         <Index>0x00</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>7000</MaxHitPoints>
+      <Defense>15</Defense>
+      <XpMult>1.3</XpMult>
+      <Level>20</Level>
+      <StunImmune/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Fire Bolt</ObjectId>
+         <Speed>55</Speed>
+         <Damage>65</Damage>
+         <Size>80</Size>
+         <LifetimeMS>1300</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Green Star</ObjectId>
+         <Speed>60</Speed>
+         <Damage>55</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1600</LifetimeMS>
+         <ConditionEffect duration="6">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x7446" id="Mini Guardian Element">
+      <DisplayId>Mini Guardian Element</DisplayId>
+      <Group>AttackType</Group>
+      <Class>Character</Class>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>1000</Defense>
+      <Size>65</Size>
+      <Enemy/>
+      <StasisImmune/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x4a</Index>
+      </Texture>
+      <Projectile id="0">
+         <ObjectId>White Flame</ObjectId>
+         <Damage>50</Damage>
+         <Size>60</Size>
+         <Speed>55</Speed>
+         <LifetimeMS>920</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <XpMult>0.0</XpMult>
+   </Object>
+   <Object type="0x7435" id="Puppet Wizard">
+      <DisplayId>Wizard Puppet</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>105</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>120</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Defense>15</Defense>
+      <XpMult>0.8</XpMult>
+      <Level>20</Level>
+      <StunImmune/>
+      <Projectile id="0">
+         <ObjectId>White Bolt</ObjectId>
+         <Speed>30</Speed>
+         <MinDamage>50</MinDamage>
+         <MaxDamage>65</MaxDamage>
+         <LifetimeMS>1500</LifetimeMS>
+      </Projectile>
+      <AltTexture id="1">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x4ED</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x4EE</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x4EF</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x4F0</Index>
+         </Texture>
+      </AltTexture>
+   </Object>
+   <Object type="0x7436" id="Puppet Knight">
+      <DisplayId>Knight Puppet</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>103</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>120</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Defense>25</Defense>
+      <XpMult>0.8</XpMult>
+      <Level>20</Level>
+      <StunImmune/>
+      <Projectile id="0">
+         <ObjectId>Fire Shield</ObjectId>
+         <Speed>30</Speed>
+         <MinDamage>100</MinDamage>
+         <MaxDamage>120</MaxDamage>
+         <LifetimeMS>1500</LifetimeMS>
+         <ConditionEffect duration="4">Armor Broken</ConditionEffect>
+         <ParticleTrail>0xf7941d</ParticleTrail>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Fire Bolt</ObjectId>
+         <Speed>45</Speed>
+         <MinDamage>100</MinDamage>
+         <MaxDamage>120</MaxDamage>
+         <LifetimeMS>1200</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x7442" id="Assassin Puppet">
+      <DisplayId>Assassin Puppet</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>107</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>120</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>4000</MaxHitPoints>
+      <Defense>15</Defense>
+      <XpMult>0.8</XpMult>
+      <Level>20</Level>
+      <StunImmune/>
+      <Projectile id="0">
+         <ObjectId>Green Bolt</ObjectId>
+         <Speed>75</Speed>
+         <MinDamage>50</MinDamage>
+         <MaxDamage>65</MaxDamage>
+         <LifetimeMS>1500</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x7439" id="Healer Puppet">
+      <DisplayId>Priest Puppet</DisplayId>
+      <Class>Character</Class>
+      <Group>Healers</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>104</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Defense>15</Defense>
+      <XpMult>0.4</XpMult>
+      <Level>20</Level>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Purple Magic</ObjectId>
+         <Speed>50</Speed>
+         <MinDamage>65</MinDamage>
+         <MaxDamage>85</MaxDamage>
+         <LifetimeMS>1500</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x743a" id="Archer Puppet">
+      <DisplayId>Archer Puppet</DisplayId>
+      <Class>Character</Class>
+      <Group>DPS</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>115</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>4000</MaxHitPoints>
+      <Defense>25</Defense>
+      <XpMult>0.4</XpMult>
+      <Level>20</Level>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Gold Arrow</ObjectId>
+         <Speed>50</Speed>
+         <MinDamage>75</MinDamage>
+         <MaxDamage>85</MaxDamage>
+         <LifetimeMS>1200</LifetimeMS>
+         <ConditionEffect duration="4">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Indigo Arrow</ObjectId>
+         <Speed>95</Speed>
+         <Damage>125</Damage>
+         <LifetimeMS>1600</LifetimeMS>
+         <ConditionEffect duration="2">Paralyzed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x743b" id="Rogue Puppet">
+      <DisplayId>Rogue Puppet</DisplayId>
+      <Class>Character</Class>
+      <Group>DPS</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>110</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>4000</MaxHitPoints>
+      <Defense>20</Defense>
+      <XpMult>0.4</XpMult>
+      <Level>20</Level>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Darkness Bolt</ObjectId>
+         <Speed>50</Speed>
+         <MinDamage>75</MinDamage>
+         <MaxDamage>100</MaxDamage>
+         <LifetimeMS>800</LifetimeMS>
+      </Projectile>
+      <AltTexture id="1">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+   </Object>
+   <Object type="0x744e" id="Warrior Puppet">
+      <DisplayId>Warrior Puppet</DisplayId>
+      <Class>Character</Class>
+      <Group>DPS</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>109</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>4000</MaxHitPoints>
+      <Defense>20</Defense>
+      <XpMult>0.4</XpMult>
+      <Level>20</Level>
+      <Projectile id="0">
+         <ObjectId>White Bolt</ObjectId>
+         <Speed>45</Speed>
+         <MinDamage>100</MinDamage>
+         <MaxDamage>120</MaxDamage>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>White Bolt</ObjectId>
+         <Speed>45</Speed>
+         <MinDamage>100</MinDamage>
+         <MaxDamage>120</MaxDamage>
+         <LifetimeMS>1500</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x7450" id="Paladin Puppet">
+      <DisplayId>Paladin Puppet</DisplayId>
+      <Class>Character</Class>
+      <Group>Support</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>114</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>3500</MaxHitPoints>
+      <Defense>20</Defense>
+      <XpMult>0.4</XpMult>
+      <Level>20</Level>
+      <Projectile id="0">
+         <ObjectId>Blue Bolt</ObjectId>
+         <Speed>70</Speed>
+         <MinDamage>100</MinDamage>
+         <MaxDamage>120</MaxDamage>
+         <LifetimeMS>600</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x7451" id="Necromancer Puppet">
+      <DisplayId>Necromancer Puppet</DisplayId>
+      <Class>Character</Class>
+      <Group>DPS</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>111</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Defense>15</Defense>
+      <XpMult>0.4</XpMult>
+      <Level>20</Level>
+      <LeachHealth/>
+      <Projectile id="0">
+         <ObjectId>Aqua Missile</ObjectId>
+         <Damage>120</Damage>
+         <Speed>35</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <ConditionEffect duration="4">Bleeding</ConditionEffect>
+         <Amplitude>.5</Amplitude>
+         <Frequency>3</Frequency>
+      </Projectile>
+   </Object>
+   <Object type="0x7452" id="Mystic Puppet">
+      <DisplayId>Mystic Puppet</DisplayId>
+      <Class>Character</Class>
+      <Group>DPS</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>106</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Defense>18</Defense>
+      <XpMult>0.4</XpMult>
+      <Level>20</Level>
+      <Projectile id="0">
+         <ObjectId>Violet Missile</ObjectId>
+         <Damage>120</Damage>
+         <Speed>35</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Amplitude>.5</Amplitude>
+         <Frequency>3</Frequency>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Dragon Attack Black Spin</ObjectId>
+         <Damage>80</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>2200</LifetimeMS>
+         <Size>85</Size>
+         <ConditionEffect duration="5" target="1">Stasis</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x7453" id="Sorcerer Puppet">
+      <DisplayId>Sorcerer Puppet</DisplayId>
+      <Class>Character</Class>
+      <Group>DPS</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>108</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>15</Defense>
+      <XpMult>0.4</XpMult>
+      <Level>20</Level>
+      <Projectile id="0">
+         <ObjectId>Pink Bolt</ObjectId>
+         <MinDamage>75</MinDamage>
+         <MaxDamage>90</MaxDamage>
+         <Speed>55</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x7457" id="Puppet Bomb">
+      <DisplayId>Puppet Bomb</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x0c</Index>
+      </Texture>
+      <MaxHitPoints>30000</MaxHitPoints>
+      <Defense>50</Defense>
+      <XpMult>0</XpMult>
+      <Size>40</Size>
+      <ShadowSize>30</ShadowSize>
+      <StasisImmune/>
+      <StunImmune/>
+      <Projectile id="1">
+         <ObjectId>Red Fire</ObjectId>
+         <Damage>65</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x7455" id="Puppet Bomb 2">
+      <DisplayId>Puppet Bomb</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x0c</Index>
+      </Texture>
+      <MaxHitPoints>30000</MaxHitPoints>
+      <Defense>50</Defense>
+      <XpMult>0</XpMult>
+      <Size>40</Size>
+      <ShadowSize>30</ShadowSize>
+      <StasisImmune/>
+      <StunImmune/>
+      <Projectile id="1">
+         <ObjectId>Red Fire</ObjectId>
+         <Damage>65</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x7456" id="Sorc Bomb Thrower">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <MaxHitPoints>30000</MaxHitPoints>
+      <Defense>50</Defense>
+      <XpMult>0</XpMult>
+      <Size>100</Size>
+      <ShadowSize>30</ShadowSize>
+      <StasisImmune/>
+      <StunImmune/>
+   </Object>
+   <Object type="0x7458" id="Trickster Puppet">
+      <DisplayId>Trickster Puppet</DisplayId>
+      <Class>Character</Class>
+      <Group>DPS</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>113</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Defense>18</Defense>
+      <XpMult>0.4</XpMult>
+      <Level>20</Level>
+      <Projectile id="0">
+         <ObjectId>Red Fire</ObjectId>
+         <MinDamage>75</MinDamage>
+         <MaxDamage>90</MaxDamage>
+         <Speed>55</Speed>
+         <LifetimeMS>900</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x7454" id="Trickster Decoys">
+      <DisplayId>Trickster Puppet</DisplayId>
+      <Class>Character</Class>
+      <Group>DPS</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>113</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>1600</MaxHitPoints>
+      <Defense>18</Defense>
+      <XpMult>0.0</XpMult>
+      <Level>20</Level>
+      <Projectile id="0">
+         <ObjectId>Red Fire</ObjectId>
+         <MinDamage>0</MinDamage>
+         <MaxDamage>0</MaxDamage>
+         <Speed>55</Speed>
+         <LifetimeMS>900</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x7459" id="Ninja Puppet">
+      <DisplayId>Ninja Puppet</DisplayId>
+      <Class>Character</Class>
+      <Group>DPS</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars8x8rEmbed</File>
+         <Index>0x01</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>20</Defense>
+      <XpMult>0.4</XpMult>
+      <Level>20</Level>
+      <Projectile id="0">
+         <ObjectId>Ninja Star Silver</ObjectId>
+         <Damage>140</Damage>
+         <Speed>55</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x7441" id="Puppet Loot Chest">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x466</Index>
+      </Texture>
+      <MaxHitPoints>30000</MaxHitPoints>
+      <Defense>35</Defense>
+      <Size>160</Size>
+      <XpMult>0.0</XpMult>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x7447" id="Puppet Treasure Chest">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x466</Index>
+      </Texture>
+      <MaxHitPoints>30000</MaxHitPoints>
+      <Defense>35</Defense>
+      <Size>160</Size>
+      <XpMult>0.0</XpMult>
+      <StasisImmune/>
+   </Object>
+</Objects>

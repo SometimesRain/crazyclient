@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x1e17" id="Treasure Thief">
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>47</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>125</Size>
+      <ShadowSize>50</ShadowSize>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>10</Defense>
+      <XpMult>0.7</XpMult>
+   </Object>
+   <Object type="0x1e18" id="Treasure Dropper">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x1e40" id="Treasure Pile">
+      <Class>GameObject</Class>
+      <Z>-.2</Z>
+      <RandomTexture>
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x63</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x64</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x65</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x1ff</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x66</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x200</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x201</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x67</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x202</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x203</Index>
+         </Texture>
+      </RandomTexture>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <NoMiniMap/>
+      <Static/>
+   </Object>
+   <Object type="0x1e41" id="Treasure Chests">
+      <Class>GameObject</Class>
+      <Z>-.2</Z>
+      <RandomTexture>
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x67</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x68</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x69</Index>
+         </Texture>
+      </RandomTexture>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <NoMiniMap/>
+      <Static/>
+   </Object>
+   <Object type="0x1e42" id="Treasure Enemy">
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>48</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>150</Size>
+      <ShadowSize>50</ShadowSize>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Defense>10</Defense>
+      <Projectile id="0">
+         <ObjectId>Golden Coin</ObjectId>
+         <Speed>50</Speed>
+         <Damage>75</Damage>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Ruby</ObjectId>
+         <Speed>50</Speed>
+         <Damage>90</Damage>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x1e43" id="Log Trap Clockwise">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x6a</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x6b</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x6c</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x6d</Index>
+         </Texture>
+      </AltTexture>
+      <Size>100</Size>
+      <ShadowSize>50</ShadowSize>
+      <StasisImmune/>
+      <Defense>10</Defense>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Speed>50</Speed>
+         <Damage>50</Damage>
+         <LifetimeMS>100</LifetimeMS>
+         <Size>0</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x5e1d" id="Treasure Rat">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>40</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>49</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>4000</MaxHitPoints>
+      <Defense>15</Defense>
+      <Projectile id="0">
+         <ObjectId>H Baby Blast</ObjectId>
+         <Size>200</Size>
+         <Speed>65</Speed>
+         <Damage>120</Damage>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x5e1e" id="Treasure Flame Trap 1.2 Sec">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <DrawOnGround/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x204</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x205</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x206</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x207</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x208</Index>
+         </Texture>
+      </AltTexture>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>50</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>100</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x5e3b" id="Treasure Flame Trap 1.7 Sec">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <DrawOnGround/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x204</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x205</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x206</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x207</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x208</Index>
+         </Texture>
+      </AltTexture>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>50</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>100</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x5e2a" id="Treasure Plunderer">
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>41</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>125</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Defense>15</Defense>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>50</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>100</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x5e2b" id="Treasure Robber">
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>42</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x209</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x20a</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x20b</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x20c</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x20d</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="6">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="7">
+         <AnimatedTexture>
+            <File>chars8x8rEncounters</File>
+            <Index>43</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>125</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>20</Defense>
+      <Projectile id="0">
+         <ObjectId>Dagger Throw</ObjectId>
+         <Damage>55</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x5e2c" id="Golden Oryx Effigy">
+      <Class>Character</Class>
+      <Enemy/>
+      <God/>
+      <Quest/>
+      <NoArticle/>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>41</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>chars16x16dEncounters2</File>
+            <Index>42</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="2">
+         <AnimatedTexture>
+            <File>chars16x16dEncounters2</File>
+            <Index>42</Index>
+         </AnimatedTexture>
+         <Effect particle="SwirlingMist" cooldown="0.1">XMLEffect</Effect>
+      </AltTexture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>225</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>25000</MaxHitPoints>
+      <Defense>30</Defense>
+      <Projectile id="1">
+         <ObjectId>Golden Blast</ObjectId>
+         <Damage>80</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <Size>150</Size>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Gold Fireball</ObjectId>
+         <Damage>90</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <Size>150</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x5e3a" id="Treasure Oryx Defender">
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>43</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>150</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Defense>30</Defense>
+      <Projectile id="1">
+         <ObjectId>Golden Blast</ObjectId>
+         <Damage>80</Damage>
+         <Speed>30</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <Size>125</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x5e3c" id="Treasure Pot">
+      <Class>Character</Class>
+      <Enemy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <NoMiniMap/>
+      <Static/>
+      <RandomTexture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x210</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x211</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x212</Index>
+         </Texture>
+      </RandomTexture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>125</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Defense>10</Defense>
+      <XpMult>0.0</XpMult>
+   </Object>
+   <Object type="0x5e3d" id="Boulder">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x213</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x214</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x215</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x216</Index>
+         </Texture>
+      </AltTexture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>250</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Defense>10</Defense>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>60</Damage>
+         <Speed>100</Speed>
+         <LifetimeMS>100</LifetimeMS>
+         <Size>75</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x5e3f" id="Boulder Spawner">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x5e4a" id="Gold Planet">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>44</Index>
+      </AnimatedTexture>
+      <Enemy/>
+      <HitSound>monster/cubes_hit</HitSound>
+      <DeathSound>monster/cubes_death</DeathSound>
+      <Defense>5</Defense>
+      <XpMult>0.0</XpMult>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Size>200</Size>
+      <StasisImmune/>
+      <Projectile id="1">
+         <ObjectId>Grey Spiral</ObjectId>
+         <Damage>60</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>900</LifetimeMS>
+         <Size>150</Size>
+         <ConditionEffect duration="1">Blind</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Black Ball</ObjectId>
+         <Damage>80</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>900</LifetimeMS>
+         <Size>150</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x5e4b" id="Realm Portal Opener">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x5e4e" id="Treasure Rocks">
+      <Class>GameObject</Class>
+      <Z>-.2</Z>
+      <RandomTexture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x217</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x218</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x219</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x21a</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x21b</Index>
+         </Texture>
+      </RandomTexture>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <NoMiniMap/>
+      <Static/>
+   </Object>
+</Objects>

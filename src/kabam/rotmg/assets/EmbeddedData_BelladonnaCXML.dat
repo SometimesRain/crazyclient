@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x738c" id="vlntns Botany Bella">
+      <DisplayId>Belladonna</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Group>Bella</Group>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>116</Index>
+      </AnimatedTexture>
+      <HitSound>monster/medusa_hit</HitSound>
+      <DeathSound>monster/medusa_death</DeathSound>
+      <MaxHitPoints>85000</MaxHitPoints>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <Defense>60</Defense>
+      <God/>
+      <XPMult>0.3</XPMult>
+      <KeepDamageRecord/>
+      <Size>200</Size>
+      <Projectile id="0">
+         <ObjectId>BellaShot</ObjectId>
+         <Speed>25</Speed>
+         <MinDamage>96</MinDamage>
+         <MaxDamage>103</MaxDamage>
+         <LifetimeMS>3000</LifetimeMS>
+         <ConditionEffect duration="3">Bleeding</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>BellaBerry</ObjectId>
+         <Speed>25</Speed>
+         <MinDamage>75</MinDamage>
+         <MaxDamage>143</MaxDamage>
+         <LifetimeMS>6000</LifetimeMS>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>BellaPetal</ObjectId>
+         <Speed>35</Speed>
+         <MinDamage>82</MinDamage>
+         <MaxDamage>114</MaxDamage>
+         <Size>90</Size>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+         <LifetimeMS>6000</LifetimeMS>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>BellaLeaf</ObjectId>
+         <Speed>45</Speed>
+         <MinDamage>91</MinDamage>
+         <MaxDamage>155</MaxDamage>
+         <Size>95</Size>
+         <LifetimeMS>5000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x739a" id="vlntns Bella Buds">
+      <DisplayId>Bella Bud</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>117</Index>
+      </AnimatedTexture>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Size>100</Size>
+      <Defense>15</Defense>
+      <XPMult>0</XPMult>
+      <KeepDamageRecord/>
+      <Projectile id="0">
+         <ObjectId>BellaShot</ObjectId>
+         <Speed>25</Speed>
+         <Damage>80</Damage>
+         <LifetimeMS>3000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x739b" id="vlntns Governor">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <XpMult>0</XpMult>
+      <Size>0</Size>
+      <NoMiniMap/>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x739c" id="vlntns Planter">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <XpMult>0</XpMult>
+      <Size>0</Size>
+      <NoMiniMap/>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x739d" id="vlntns Red">
+      <DisplayId>Immaculate Red Flower</DisplayId>
+      <Group>vlntns flowers</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x49e</Index>
+      </Texture>
+      <MaxHitPoints>7000</MaxHitPoints>
+      <XpMult>0</XpMult>
+      <NoMiniMap/>
+      <StasisImmune/>
+      <AltTexture id="1">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x49f</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x4a0</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x4a1</Index>
+         </Texture>
+      </AltTexture>
+      <Projectile id="0">
+         <ObjectId>Red Star</ObjectId>
+         <Speed>25</Speed>
+         <MinDamage>103</MinDamage>
+         <MaxDamage>124</MaxDamage>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x740e" id="vlntns White">
+      <DisplayId>Breathtaking White Flower</DisplayId>
+      <Group>vlntns flowers</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x49e</Index>
+      </Texture>
+      <MaxHitPoints>7000</MaxHitPoints>
+      <XpMult>0</XpMult>
+      <NoMiniMap/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Blue Star</ObjectId>
+         <Speed>25</Speed>
+         <Damage>1</Damage>
+         <LifetimeMS>1000</LifetimeMS>
+         <ConditionEffect duration="1.5">Quiet</ConditionEffect>
+      </Projectile>
+      <AltTexture id="1">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x4af</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x4b0</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x4b1</Index>
+         </Texture>
+      </AltTexture>
+   </Object>
+   <Object type="0x740f" id="vlntns Yellow">
+      <DisplayId>Gorgeous Yellow Flower</DisplayId>
+      <Group>vlntns flowers</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x49e</Index>
+      </Texture>
+      <MaxHitPoints>7000</MaxHitPoints>
+      <XpMult>0</XpMult>
+      <NoMiniMap/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Yellow Star</ObjectId>
+         <Speed>25</Speed>
+         <Damage>1</Damage>
+         <LifetimeMS>1000</LifetimeMS>
+         <ConditionEffect duration="1.5">Slowed</ConditionEffect>
+      </Projectile>
+      <AltTexture id="1">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x4b2</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x4b3</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x4b4</Index>
+         </Texture>
+      </AltTexture>
+   </Object>
+   <Object type="0x7410" id="vlntns Loot Balloon Bella">
+      <DisplayId>Bella Chest</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x466</Index>
+      </Texture>
+      <MaxHitPoints>30000</MaxHitPoints>
+      <Defense>35</Defense>
+      <Size>160</Size>
+      <XpMult>0.0</XpMult>
+   </Object>
+</Objects>

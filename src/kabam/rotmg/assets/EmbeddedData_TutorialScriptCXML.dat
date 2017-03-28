@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Tutorial>
+   <Step>
+      <UIDrawBox color="0x00ff00">600, 0, 200, 200</UIDrawBox>
+      <Requirement objectId="Sign" objectName="{tutorial_script.Check_out_the|minimap.}" radius="3">Near</Requirement>
+      <UIDrawArrow color="0x00ff00">400, 350, 600, 200</UIDrawArrow>
+   </Step>
+   <Step>
+      <UIDrawBox color="0x00ff00">605, 244, 190, 35</UIDrawBox>
+      <UIDrawArrow color="0x00ff00">400, 350, 605, 279</UIDrawArrow>
+      <Requirement objectId="Sign" objectName="{tutorial_script.The_red_bar|shows_your|health.}" radius="3">Near</Requirement>
+   </Step>
+   <Step>
+      <UIDrawBox color="0x00ff00">605, 295, 185, 56</UIDrawBox>
+      <UIDrawArrow color="0x00ff00">400, 350, 605, 322</UIDrawArrow>
+      <Requirement objectId="Sign" objectName="{tutorial_script.This_is_your|equipment.}" radius="3">Near</Requirement>
+   </Step>
+   <Step>
+      <UIDrawBox color="0x0000ff">614, 509, 40, 40</UIDrawBox>
+      <UIDrawBox color="0x00ff00">746, 304, 40, 40</UIDrawBox>
+      <UIDrawArrow color="0x00ff00">400, 350, 610, 506</UIDrawArrow>
+      <UIDrawArrow color="0x00ff00">650, 504, 746, 346</UIDrawArrow>
+      <Requirement objectId="Tutorial Loot Bag" radius="1">Near</Requirement>
+   </Step>
+   <Step>
+      <UIDrawBox color="0x00ff00">658, 304, 40, 40</UIDrawBox>
+      <UIDrawArrow color="0x00ff00">400, 350, 658, 324</UIDrawArrow>
+      <Requirement objectId="Sign" objectName="{tutorial_script.Space_bar|activates_your|special_power.}" radius="3">Near</Requirement>
+   </Step>
+   <Step>
+      <UIDrawBox color="0x00ff00">760, 190, 40, 40</UIDrawBox>
+      <UIDrawArrow color="0x00ff00">400, 350, 760, 210</UIDrawArrow>
+      <Requirement objectId="Sign" objectName="{tutorial_script.By_pressing_R|or_the_Nexus_icon.}" radius="3">Near</Requirement>
+   </Step>
+   <Step>
+      <UIDrawBox color="0x00ff00">488, 2, 48, 36</UIDrawBox>
+      <UIDrawArrow color="0x00ff00">400, 350, 512, 38</UIDrawArrow>
+      <Requirement objectId="Sign" objectName="{tutorial_script.You_earn_fame|by_dyingBANG}" radius="3">Near</Requirement>
+   </Step>
+   <Step>
+      <Requirement objectId="Nexus Explanation Portal" radius="1">Near</Requirement>
+      <UIDrawBox color="0x00ff00">600, 500, 200, 100</UIDrawBox>
+      <UIDrawArrow color="0x00ff00">400, 350, 600, 500</UIDrawArrow>
+      <Action>EnterPortal</Action>
+   </Step>
+</Tutorial>

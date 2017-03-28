@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x1648" id="Rainbow Road">
+      <DisplayId>Rainbow Portal</DisplayId>
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>Rainbow Road</DungeonName>
+      <Texture>
+         <File>stPatricksObjects8x8</File>
+         <Index>0x00</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x1649" id="Rainbow Road Key">
+      <DisplayId>St. Patricks Key</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>stPatricksObjects8x8</File>
+         <Index>0x07</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>Treasures await at the end of the rainbow.</Description>
+      <Sound>use_key</Sound>
+      <Consumable/>
+      <Soulbound/>
+      <Activate id="Rainbow Road">Create</Activate>
+   </Object>
+   <Object type="0x164a" id="Clover Bow">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>stPatricksObjects8x8</File>
+         <Index>0x09</Index>
+      </Texture>
+      <SlotType>3</SlotType>
+      <Description>Good thing this bow is lucky because it sure doesn't hit very hard! Thanks to: Beige</Description>
+      <RateOfFire>0.5</RateOfFire>
+      <Sound>weapon/golden_bow</Sound>
+      <OldSound>weapon/golden_bow</OldSound>
+      <Projectile>
+         <ObjectId>4-Leaf Clover</ObjectId>
+         <Speed>90</Speed>
+         <MinDamage>10</MinDamage>
+         <MaxDamage>30</MaxDamage>
+         <LifetimeMS>500</LifetimeMS>
+         <Amplitude>3.59</Amplitude>
+         <Frequency>0.42</Frequency>
+         <Size>100</Size>
+         <MultiHit/>
+         <ParticleTrail lifetimeMS="350">0xff00</ParticleTrail>
+      </Projectile>
+      <NumProjectiles>8</NumProjectiles>
+      <ArcGap>45</ArcGap>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <DisplayId>Clover Bow</DisplayId>
+   </Object>
+   <Object type="0x164b" id="Sword of the Rainbow's End">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>stPatricksObjects8x8</File>
+         <Index>0x0a</Index>
+      </Texture>
+      <SlotType>1</SlotType>
+      <Description>Colourful and fashionable, but not very good for hunting monsters. Thanks to: Beige</Description>
+      <RateOfFire>1.5</RateOfFire>
+      <Sound>weapon/mithril_sword</Sound>
+      <OldSound>spell/light_heal</OldSound>
+      <Projectile>
+         <ObjectId>Patty Rainbow Bolt</ObjectId>
+         <Speed>80</Speed>
+         <MinDamage>20</MinDamage>
+         <MaxDamage>40</MaxDamage>
+         <LifetimeMS>438</LifetimeMS>
+         <Frequency>1</Frequency>
+         <Size>100</Size>
+         <Wavy/>
+      </Projectile>
+      <NumProjectiles>1</NumProjectiles>
+      <ArcGap>10</ArcGap>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <DisplayId>Sword of the Rainbow's End</DisplayId>
+   </Object>
+   <Object type="0x164c" id="St. Patricks Event">
+      <DisplayId>Leprechaun</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>stPatricksChars8x8</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dwarves_hit</HitSound>
+      <DeathSound>monster/dwarves_death</DeathSound>
+      <Terrain>MidForest</Terrain>
+      <SpawnProb>0.10</SpawnProb>
+      <PerRealmMax>1</PerRealmMax>
+      <Size>20</Size>
+      <ShadowSize>60</ShadowSize>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>25</Defense>
+      <XpMult>2.5</XpMult>
+      <Quest/>
+      <Level>20</Level>
+      <ParalyzeImmune/>
+   </Object>
+   <Object type="0x164d" id="St. Patricks Event Chest">
+      <DisplayId>Pot of Gold</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>stPatricksChars16x16</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <HitSound>monster/golems_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>120000</MaxHitPoints>
+      <Defense>5</Defense>
+      <XpMult>0.8</XpMult>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x164e" id="Patty Coin1">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>stPatricksObjects8x8</File>
+            <Index>5</Index>
+         </Texture>
+         <Texture>
+            <File>stPatricksObjects8x8</File>
+            <Index>6</Index>
+         </Texture>
+      </RandomTexture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0x164f" id="Patty Clover1">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>stPatricksObjects8x8</File>
+            <Index>1</Index>
+         </Texture>
+         <Texture>
+            <File>stPatricksObjects8x8</File>
+            <Index>2</Index>
+         </Texture>
+         <Texture>
+            <File>stPatricksObjects8x8</File>
+            <Index>3</Index>
+         </Texture>
+         <Texture>
+            <File>stPatricksObjects8x8</File>
+            <Index>0x4</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x1650" id="Patty Rainbow 1">
+      <Class>GameObject</Class>
+      <Model>Gate Entry</Model>
+      <Texture>
+         <File>stPatricksObjects16x16</File>
+         <Index>0</Index>
+      </Texture>
+      <Static/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x1651" id="Patty Rainbow 2">
+      <Class>GameObject</Class>
+      <Model>Gate Entry</Model>
+      <Texture>
+         <File>stPatricksObjects16x16</File>
+         <Index>0</Index>
+      </Texture>
+      <Static/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <Z>2</Z>
+   </Object>
+   <Object type="0x1652" id="Patty Plant">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>stPatricksObjects8x8</File>
+            <Index>0x0e</Index>
+         </Texture>
+         <Texture>
+            <File>stPatricksObjects8x8</File>
+            <Index>0x0f</Index>
+         </Texture>
+         <Texture>
+            <File>stPatricksObjects8x8</File>
+            <Index>0x10</Index>
+         </Texture>
+      </RandomTexture>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <Static/>
+   </Object>
+   <Object type="0x1653" id="Patty Rocks">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>stPatricksObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+         <Texture>
+            <File>stPatricksObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+         <Texture>
+            <File>stPatricksObjects8x8</File>
+            <Index>0x26</Index>
+         </Texture>
+      </RandomTexture>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <Static/>
+   </Object>
+   <Object type="0x1654" id="St. Patricks Event Dead">
+      <Class>Character</Class>
+      <Enemy/>
+      <NoMiniMap/>
+      <StasisImmune/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <XpMult>0.0</XpMult>
+      <Size>0</Size>
+      <MaxHitPoints>10</MaxHitPoints>
+   </Object>
+   <Object type="0x1655" id="Patty Coin Drop">
+      <Class>Character</Class>
+      <Enemy/>
+      <NoMiniMap/>
+      <StasisImmune/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <XpMult>0.0</XpMult>
+      <Size>0</Size>
+      <MaxHitPoints>10</MaxHitPoints>
+   </Object>
+</Objects>

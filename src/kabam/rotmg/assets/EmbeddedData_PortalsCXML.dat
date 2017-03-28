@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x0703" id="Portal of Cowardice">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0x7c</Index>
+      </Texture>
+      <SpawnPoint/>
+   </Object>
+   <Object type="0x0704" id="Realm Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0x7c</Index>
+      </Texture>
+   </Object>
+   <Object type="0x070c" id="Glowing Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Sprite World</DisplayId>
+      <DungeonName>Sprite World</DungeonName>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x36</Index>
+      </Texture>
+   </Object>
+   <Object type="0x070d" id="Glowing Portal of Cowardice">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x36</Index>
+      </Texture>
+      <SpawnPoint/>
+   </Object>
+   <Object type="0x070e" id="Glowing Realm Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x36</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0717" id="Pirate Cave Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Pirate Cave</DisplayId>
+      <DungeonName>Pirate Cave</DungeonName>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0x7c</Index>
+      </Texture>
+   </Object>
+   <Object type="0x5f34" id="Forest Maze Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Forest Maze</DisplayId>
+      <DungeonName>Forest Maze</DungeonName>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x3dd</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x0718" id="Snake Pit Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Snake Pit</DisplayId>
+      <DungeonName>Snake Pit</DungeonName>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x8c</Index>
+      </Texture>
+      <Animation prob="0.6" period="1.6">
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiEnvironment2</File>
+               <Index>0x8d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiEnvironment2</File>
+               <Index>0x8e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiEnvironment2</File>
+               <Index>0x8d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiEnvironment2</File>
+               <Index>0x8e</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x0719" id="Spider Den Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Spider Den</DisplayId>
+      <DungeonName>Spider Den</DungeonName>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x8f</Index>
+      </Texture>
+   </Object>
+   <Object type="0x071a" id="Undead Lair Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Undead Lair</DisplayId>
+      <DungeonName>Undead Lair</DungeonName>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x97</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.0">
+         <Frame time="0.2">
+            <RandomTexture>
+               <Texture>
+                  <File>lofiEnvironment2</File>
+                  <Index>0x98</Index>
+               </Texture>
+               <Texture>
+                  <File>lofiEnvironment2</File>
+                  <Index>0x99</Index>
+               </Texture>
+               <Texture>
+                  <File>lofiEnvironment2</File>
+                  <Index>0x9a</Index>
+               </Texture>
+               <Texture>
+                  <File>lofiEnvironment2</File>
+                  <Index>0x9b</Index>
+               </Texture>
+               <Texture>
+                  <File>lofiEnvironment2</File>
+                  <Index>0x9c</Index>
+               </Texture>
+            </RandomTexture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x071b" id="Abyss of Demons Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Abyss of Demons</DisplayId>
+      <DungeonName>Abyss of Demons</DungeonName>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x9d</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0890" id="Mad Lab Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Mad Lab</DisplayId>
+      <DungeonName>Mad Lab</DungeonName>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x1ab</Index>
+      </Texture>
+      <Animation prob="1" period="1">
+         <Frame time="0.25">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x1ac</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.25">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x1ad</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.25">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x1ae</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.25">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x1ad</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x0d89" id="Oryx's Castle Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Oryx's Frozen Castle</DisplayId>
+      <DungeonName>Oryx's Castle</DungeonName>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0x5d</Index>
+      </Texture>
+   </Object>
+   <Object type="0x634" id="Oryx Chamber Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Oryx's Chamber</DisplayId>
+      <DungeonName>Oryx's Chamber</DungeonName>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0x7c</Index>
+      </Texture>
+   </Object>
+   <Object type="0x242" id="Wine Cellar Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Wine Cellar</DisplayId>
+      <DungeonName>Wine Cellar</DungeonName>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0x7c</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0721" id="Locked Wine Cellar Portal">
+      <Class>Portal</Class>
+      <LockedPortal/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0xba</Index>
+      </Texture>
+   </Object>
+   <Object type="0x075e" id="Battle Nexus Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Battle for the Nexus</DisplayId>
+      <DungeonName>Battle for the Nexus</DungeonName>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x410</Index>
+      </Texture>
+   </Object>
+   <Object type="0x072d" id="Dreamscape Labyrinth Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Dreamscape Labyrinth</DisplayId>
+      <DungeonName>Dreamscape Labyrinth</DungeonName>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0x7c</Index>
+      </Texture>
+   </Object>
+   <Object type="0x072c" id="Tomb of the Ancients Portal">
+      <DisplayId>Tomb of the Ancients</DisplayId>
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>Tomb of the Ancients</DungeonName>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x9e</Index>
+      </Texture>
+   </Object>
+   <Object type="0x076a" id="Tomb of the Ancients Portal (Heroic)">
+      <DisplayId>Tomb of the Ancients (Heroic)</DisplayId>
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>Tomb of the Ancients (Heroic)</DungeonName>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x9e</Index>
+      </Texture>
+   </Object>
+   <Object type="0x2291" id="Belladonna's Garden Portal">
+      <DisplayId>Belladonna's Garden</DisplayId>
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>Belladonna's Garden</DungeonName>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x4BA</Index>
+      </Texture>
+   </Object>
+   <Object type="0x2295" id="Lair of Shaitan Portal">
+      <DisplayId>Shaitan's Portal</DisplayId>
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>Lair of Shaitan</DungeonName>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x4BB</Index>
+      </Texture>
+   </Object>
+   <Object type="0x2001" id="Court of Oryx Portal">
+      <DisplayId>Court of Oryx</DisplayId>
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>Court of Oryx</DungeonName>
+      <Texture>
+         <File>d1lofiObjBig</File>
+         <Index>0xC</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0730" id="Ocean Trench Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Ocean Trench</DisplayId>
+      <DungeonName>Ocean Trench</DungeonName>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x9f</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0733" id="Forbidden Jungle Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Forbidden Jungle</DisplayId>
+      <DungeonName>Forbidden Jungle</DungeonName>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0xa8</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0739" id="Manor of the Immortals Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Manor of the Immortals</DisplayId>
+      <DungeonName>Manor of the Immortals</DungeonName>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x4c</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0741" id="Davy Jones' Locker Portal">
+      <Class>Portal</Class>
+      <DisplayId>Davy Jones' Locker</DisplayId>
+      <IntergamePortal/>
+      <DungeonName>Davy Jones' Locker</DungeonName>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x151</Index>
+      </Texture>
+      <Animation prob="1" period="2">
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x151</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x157</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x158</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x159</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x15a</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x0742" id="Beachzone Portal">
+      <DisplayId>Beachzone</DisplayId>
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>Beachzone</DungeonName>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x192</Index>
+      </Texture>
+   </Object>
+   <Object type="0x5e2e" id="Treasure Cave Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Cave of A Thousand Treasures</DisplayId>
+      <DungeonName>Cave of A Thousand Treasures</DungeonName>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x20f</Index>
+      </Texture>
+   </Object>
+   <Object type="0x074a" id="Candyland Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Candyland Hunting Grounds</DisplayId>
+      <DungeonName>Candyland Hunting Grounds</DungeonName>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x2a5</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x074b" id="Haunted Cemetery Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Haunted Cemetery</DisplayId>
+      <DungeonName>Haunted Cemetery</DungeonName>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x318</Index>
+      </Texture>
+      <Animation prob="0.4" period="1.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x319</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x31a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.6">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x31b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x31a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x319</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x318</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x135" id="Halloween Cemetery Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Halloween Haunted Cemetery</DisplayId>
+      <DungeonName>Halloween Haunted Cemetery</DungeonName>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x318</Index>
+      </Texture>
+      <Animation prob="0.4" period="1.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x319</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x31a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.6">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x31b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x31a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x319</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x318</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x2353" id="Puppet Theatre Portal">
+      <DisplayId>Puppet Master's Theatre</DisplayId>
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>Puppet Master's Theatre</DungeonName>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x4FE</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0727e" id="The Shatters">
+      <DisplayId>The Shatters</DisplayId>
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>The Shatters</DungeonName>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x44e</Index>
+      </Texture>
+   </Object>
+   <Object type="0x7466" id="Puppet Encore Portal">
+      <DisplayId>Puppet Master's Encore</DisplayId>
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>Puppet Master's Encore</DungeonName>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x1a</Index>
+      </Texture>
+   </Object>
+   <Object type="0x748b" id="Ice Cave Portal">
+      <DisplayId>Ice Cave</DisplayId>
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>Ice Cave</DungeonName>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x54F</Index>
+      </Texture>
+   </Object>
+   <Object type="0x748d" id="Inner Sanctum Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>The Inner Sanctum</DungeonName>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x54F</Index>
+      </Texture>
+   </Object>
+   <Object type="0x753E" id="Lair of Draconis Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Lair of Draconis</DisplayId>
+      <DungeonName>Lair of Draconis</DungeonName>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x139</Index>
+      </Texture>
+      <Size>60</Size>
+      <Animation prob="1" period="1">
+         <Frame time="0.20">
+            <Texture>
+               <File>lofiObjBig</File>
+               <Index>0x174</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.20">
+            <Texture>
+               <File>lofiObjBig</File>
+               <Index>0x175</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.20">
+            <Texture>
+               <File>lofiObjBig</File>
+               <Index>0x176</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.20">
+            <Texture>
+               <File>lofiObjBig</File>
+               <Index>0x177</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.20">
+            <Texture>
+               <File>lofiObjBig</File>
+               <Index>0x178</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x754e" id="Ivory Wyvern Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>The Ivory Wyvern</DungeonName>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x139</Index>
+      </Texture>
+      <Size>60</Size>
+   </Object>
+   <Object type="0x075c" id="Woodland Labyrinth">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Woodland Labyrinth</DisplayId>
+      <DungeonName>Woodland Labyrinth</DungeonName>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x3e5</Index>
+      </Texture>
+   </Object>
+   <Object type="0x075d" id="Deadwater Docks">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Deadwater Docks</DisplayId>
+      <DungeonName>Deadwater Docks</DungeonName>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x3ea</Index>
+      </Texture>
+   </Object>
+   <Object type="0x708b" id="Bilgewater's Grotto Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Bilgewater's Grotto</DisplayId>
+      <DungeonName>Bilgewater's Grotto</DungeonName>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x3ea</Index>
+      </Texture>
+   </Object>
+   <Object type="0x072e" id="The Crawling Depths">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>The Crawling Depths</DisplayId>
+      <DungeonName>The Crawling Depths</DungeonName>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x3e8</Index>
+      </Texture>
+   </Object>
+   <Object type="0x23e" id="Toxic Sewers Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Toxic Sewers</DisplayId>
+      <DungeonName>Toxic Sewers</DungeonName>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x56c</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x11d" id="The Hive Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>The Hive</DisplayId>
+      <DungeonName>The Hive</DungeonName>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x58a</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x137" id="Mountain Temple Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Mountain Temple</DisplayId>
+      <DungeonName>Mountain Temple</DungeonName>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x58a</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+</Objects>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Regions>
+   <Region type="0x01" id="Spawn">
+      <Color>0x00FF00</Color>
+   </Region>
+   <Region type="0x02" id="Realm Portals">
+      <Color>0xFF0000</Color>
+   </Region>
+   <Region type="0x03" id="Store 1">
+      <Color>0xFFDCF3</Color>
+   </Region>
+   <Region type="0x04" id="Store 2">
+      <Color>0xD9FFF3</Color>
+   </Region>
+   <Region type="0x05" id="Store 3">
+      <Color>0xC6B1FF</Color>
+   </Region>
+   <Region type="0x06" id="Store 4">
+      <Color>0xB1DAFF</Color>
+   </Region>
+   <Region type="0x07" id="Store 5">
+      <Color>0xFCFFB1</Color>
+   </Region>
+   <Region type="0x08" id="Store 6">
+      <Color>0xD5FFB9</Color>
+   </Region>
+   <Region type="0x11" id="Store 7">
+      <Color>0x80D186</Color>
+   </Region>
+   <Region type="0x12" id="Store 8">
+      <Color>0xEBE310</Color>
+   </Region>
+   <Region type="0x13" id="Store 9">
+      <Color>0xAB8A00</Color>
+   </Region>
+   <Region type="0x15" id="Store 10">
+      <Color>0xCC6633</Color>
+   </Region>
+   <Region type="0x16" id="Store 11">
+      <Color>0x009900</Color>
+   </Region>
+   <Region type="0x17" id="Store 12">
+      <Color>0xCC3399</Color>
+   </Region>
+   <Region type="0x18" id="Store 13">
+      <Color>0x660033</Color>
+   </Region>
+   <Region type="0x1a" id="Store 14">
+      <Color>0x663366</Color>
+   </Region>
+   <Region type="0x1b" id="Store 15">
+      <Color>0x9966FF</Color>
+   </Region>
+   <Region type="0x1c" id="Store 16">
+      <Color>0x666699</Color>
+   </Region>
+   <Region type="0x1d" id="Store 17">
+      <Color>0x333399</Color>
+   </Region>
+   <Region type="0x1e" id="Store 18">
+      <Color>0x003399</Color>
+   </Region>
+   <Region type="0x1f" id="Store 19">
+      <Color>0x339966</Color>
+   </Region>
+   <Region type="0x20" id="Store 20">
+      <Color>0xFFFF66</Color>
+   </Region>
+   <Region type="0x21" id="Store 21">
+      <Color>0xFFCC00</Color>
+   </Region>
+   <Region type="0x22" id="Store 22">
+      <Color>0xFF6600</Color>
+   </Region>
+   <Region type="0x23" id="Store 23">
+      <Color>0x336666</Color>
+   </Region>
+   <Region type="0x24" id="Store 24">
+      <Color>0x66999</Color>
+   </Region>
+   <Region type="0x2a" id="Store 25">
+      <Color>0x669966</Color>
+   </Region>
+   <Region type="0x2b" id="Store 26">
+      <Color>0x445566</Color>
+   </Region>
+   <Region type="0x2c" id="Store 27">
+      <Color>0xFFDD11</Color>
+   </Region>
+   <Region type="0x2d" id="Store 28">
+      <Color>0xCCDDBB</Color>
+   </Region>
+   <Region type="0x2e" id="Store 29">
+      <Color>0x440033</Color>
+   </Region>
+   <Region type="0x2f" id="Store 30">
+      <Color>0xDDAA99</Color>
+   </Region>
+   <Region type="0x30" id="Store 31">
+      <Color>0xAA22FF</Color>
+   </Region>
+   <Region type="0x31" id="Store 32">
+      <Color>111AAA</Color>
+   </Region>
+   <Region type="0x32" id="Store 33">
+      <Color>0xFF99AA</Color>
+   </Region>
+   <Region type="0x33" id="Store 34">
+      <Color>0x113344</Color>
+   </Region>
+   <Region type="0x34" id="Store 35">
+      <Color>0x778899</Color>
+   </Region>
+   <Region type="0x35" id="Store 36">
+      <Color>0x654321</Color>
+   </Region>
+   <Region type="0x36" id="Store 37">
+      <Color>0x432343</Color>
+   </Region>
+   <Region type="0x37" id="Store 38">
+      <Color>0x526496</Color>
+   </Region>
+   <Region type="0x38" id="Store 39">
+      <Color>0x3C3C3C</Color>
+   </Region>
+   <Region type="0x39" id="Store 40">
+      <Color>0x980000</Color>
+   </Region>
+   <Region type="0x09" id="Vault">
+      <Color>0x828492</Color>
+   </Region>
+   <Region type="0x0a" id="Loot">
+      <Color>0x7E2BCB</Color>
+   </Region>
+   <Region type="0x0b" id="Defender">
+      <Color>0xFF7919</Color>
+   </Region>
+   <Region type="0x0c" id="Hallway">
+      <Color>0x0000FF</Color>
+   </Region>
+   <Region type="0x0d" id="Enemy">
+      <Color>0xDC3146</Color>
+   </Region>
+   <Region type="0x0e" id="Hallway 1">
+      <Color>0x0080FF</Color>
+   </Region>
+   <Region type="0x0f" id="Hallway 2">
+      <Color>0x00FFFF</Color>
+   </Region>
+   <Region type="0x10" id="Hallway 3">
+      <Color>0x62FFEC</Color>
+   </Region>
+   <Region type="0x14" id="Gifting Chest">
+      <Color>0x424452</Color>
+   </Region>
+   <Region type="0x25" id="PetRegion">
+      <Color>0x424400</Color>
+   </Region>
+   <Region type="0x26" id="Outside Arena">
+      <Color>0x424445</Color>
+   </Region>
+   <Region type="0x27" id="Item Spawn Point">
+      <Color>0x555555</Color>
+   </Region>
+   <Region type="0x28" id="Arena Central Spawn">
+      <Color>0xFF0000</Color>
+   </Region>
+   <Region type="0x29" id="Arena Edge Spawn">
+      <Color>0xFFF700</Color>
+   </Region>
+   <Region type="0x30" id="Quest Monster Region">
+      <Color>0xFF0000</Color>
+   </Region>
+</Regions>

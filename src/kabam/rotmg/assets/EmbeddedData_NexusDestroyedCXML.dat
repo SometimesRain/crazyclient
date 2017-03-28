@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x718a" id="destnex Observer 1">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <XpMult>0.0</XpMult>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x718b" id="destnex Observer 2">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <XpMult>0.0</XpMult>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x718c" id="destnex Observer 3">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <XpMult>0.0</XpMult>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x718d" id="destnex Observer 4">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <XpMult>0.0</XpMult>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x718e" id="Oryx the Mad God Deux">
+      <DisplayId>Oryx the Mad God</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiChar16x16</File>
+         <Index>0x54</Index>
+      </Texture>
+      <HitSound>monster/oryx_hit</HitSound>
+      <DeathSound>monster/oryx_death</DeathSound>
+      <Size>120</Size>
+      <MaxHitPoints>75000</MaxHitPoints>
+      <Defense>60</Defense>
+      <Group>Group4</Group>
+      <Quest/>
+      <God/>
+      <Oryx/>
+      <StasisImmune/>
+      <Level>1</Level>
+      <XpMult>0.0</XpMult>
+      <NoArticle/>
+      <Projectile id="0">
+         <ObjectId>Fire Bolt</ObjectId>
+         <Damage>135</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>2500</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Green Star</ObjectId>
+         <Damage>160</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>2500</LifetimeMS>
+         <ConditionEffect duration="10">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Blade</ObjectId>
+         <Damage>240</Damage>
+         <Speed>100</Speed>
+         <LifetimeMS>450</LifetimeMS>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Purple Star</ObjectId>
+         <Damage>160</Damage>
+         <Speed>55</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <ConditionEffect duration="5">Blind</ConditionEffect>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Blue Star</ObjectId>
+         <Damage>160</Damage>
+         <Speed>105</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <ConditionEffect duration="5">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>Grey Star</ObjectId>
+         <Damage>160</Damage>
+         <Speed>45</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <ConditionEffect duration="3">Quiet</ConditionEffect>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>Red Star</ObjectId>
+         <Damage>160</Damage>
+         <Speed>55</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="13">
+         <ObjectId>Dark Gray Spinner</ObjectId>
+         <Speed>90</Speed>
+         <Size>100</Size>
+         <Damage>1</Damage>
+         <LifetimeMS>1800</LifetimeMS>
+         <ConditionEffect duration="20">Quiet</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="14">
+         <ObjectId>Gray Spinner</ObjectId>
+         <Speed>90</Speed>
+         <Size>100</Size>
+         <Damage>1</Damage>
+         <LifetimeMS>1800</LifetimeMS>
+         <ConditionEffect duration="60">Weak</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x718f" id="Murderous Megamoth Deux">
+      <DisplayId>Murderous Megamoth</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>67</Index>
+      </AnimatedTexture>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <Group>Group1</Group>
+      <MaxHitPoints>45000</MaxHitPoints>
+      <Defense>25</Defense>
+      <XpMult>0.0</XpMult>
+      <Size>170</Size>
+      <God/>
+      <Quest/>
+      <Flying/>
+      <Z>0.2</Z>
+      <Projectile id="0">
+         <ObjectId>Fire Boomerang</ObjectId>
+         <Damage>125</Damage>
+         <Speed>25</Speed>
+         <Size>75</Size>
+         <LifetimeMS>5000</LifetimeMS>
+         <ConditionEffect duration="3">Quiet</ConditionEffect>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Yellow Energy Shot</ObjectId>
+         <Damage>125</Damage>
+         <Speed>90</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="3">Weak</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x722d" id="Mini Larva Deux">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x8dEncounters</File>
+         <Index>9</Index>
+      </AnimatedTexture>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Defense>5</Defense>
+      <XpMult>0.0</XpMult>
+      <Size>50</Size>
+      <Projectile id="0">
+         <ObjectId>Dragon Attack Blue Bullet</ObjectId>
+         <Damage>80</Damage>
+         <Speed>90</Speed>
+         <Size>50</Size>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x719a" id="Lord Ruthven Deux">
+      <Enemy/>
+      <Class>Character</Class>
+      <Group>Group1</Group>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>34</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <AnimatedTexture>
+            <File>chars16x16dEncounters2</File>
+            <Index>35</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>120</Size>
+      <ShadowSize>40</ShadowSize>
+      <Z>0.2</Z>
+      <Flying/>
+      <MaxHitPoints>45000</MaxHitPoints>
+      <Defense>30</Defense>
+      <XpMult>0.0</XpMult>
+      <LeachHealth/>
+      <God/>
+      <StasisImmune/>
+      <Quest/>
+      <Level>1</Level>
+      <Projectile id="0">
+         <ObjectId>Dagger</ObjectId>
+         <Damage>100</Damage>
+         <Speed>50</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2400</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Ruthven Shot</ObjectId>
+         <Damage>90</Damage>
+         <Speed>65</Speed>
+         <Size>100</Size>
+         <LifetimeMS>3400</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x719b" id="NM Green Dragon God Deux">
+      <DisplayId>Limoz the Veridian Dragon</DisplayId>
+      <Group>Group3</Group>
+      <Enemy/>
+      <Quest/>
+      <God/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>49</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>chars16x16dEncounters2</File>
+            <Index>50</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>175</Size>
+      <MaxHitPoints>75000</MaxHitPoints>
+      <Defense>40</Defense>
+      <XpMult>0.0</XpMult>
+      <Level>20</Level>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Dragon Attack Green Ball</ObjectId>
+         <Damage>135</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1900</LifetimeMS>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Dragon Attack Green Spin Ball</ObjectId>
+         <Damage>95</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect effect="3">Sick</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Dragon Attack Green Arrow</ObjectId>
+         <Speed>100</Speed>
+         <Damage>75</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1200</LifetimeMS>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Dragon Attack Green Bullet</ObjectId>
+         <Damage>120</Damage>
+         <Speed>100</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Dragon Attack Green Spine</ObjectId>
+         <Speed>55</Speed>
+         <Damage>100</Damage>
+         <Size>100</Size>
+         <LifetimeMS>2500</LifetimeMS>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>Dragon Attack Blue Fireball</ObjectId>
+         <Speed>100</Speed>
+         <Damage>100</Damage>
+         <Size>140</Size>
+         <LifetimeMS>1200</LifetimeMS>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>Dragon Attack Red Orb</ObjectId>
+         <Speed>55</Speed>
+         <Damage>70</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <ConditionEffect duration="2">Armor Broken</ConditionEffect>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>Green Missile</ObjectId>
+         <Speed>100</Speed>
+         <Damage>50</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1200</LifetimeMS>
+      </Projectile>
+      <Projectile id="8">
+         <ObjectId>Green Missile</ObjectId>
+         <Speed>55</Speed>
+         <Damage>50</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1200</LifetimeMS>
+      </Projectile>
+      <Projectile id="9">
+         <ObjectId>Green Missile</ObjectId>
+         <Speed>55</Speed>
+         <Damage>50</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1200</LifetimeMS>
+      </Projectile>
+      <Projectile id="10">
+         <ObjectId>Green Missile</ObjectId>
+         <Speed>25</Speed>
+         <Damage>350</Damage>
+         <Size>200</Size>
+         <LifetimeMS>1200</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x719c" id="Archdemon Malphas Deux">
+      <Group>Group2</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <Flying/>
+      <Quest/>
+      <God/>
+      <StasisImmune/>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <HitSound>monster/demons_hit</HitSound>
+      <DeathSound>monster/demons_death</DeathSound>
+      <MaxHitPoints>45000</MaxHitPoints>
+      <Size>100</Size>
+      <Defense>20</Defense>
+      <XpMult>0.0</XpMult>
+      <Projectile id="0">
+         <ObjectId>White Bullet</ObjectId>
+         <Speed>75</Speed>
+         <Damage>60</Damage>
+         <Size>60</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Silver Shield</ObjectId>
+         <Speed>42</Speed>
+         <Damage>65</Damage>
+         <Size>65</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="4">Weak</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>White Bullet</ObjectId>
+         <Speed>40</Speed>
+         <Damage>150</Damage>
+         <Size>150</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Silver Shield</ObjectId>
+         <Speed>60</Speed>
+         <Damage>110</Damage>
+         <Size>120</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="4">Weak</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x723b" id="Malphas Protector Deux">
+      <Group>Demons</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rHero1</File>
+         <Index>0x13</Index>
+      </AnimatedTexture>
+      <HitSound>monster/demons_hit</HitSound>
+      <DeathSound>monster/demons_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>900</MaxHitPoints>
+      <Defense>7</Defense>
+      <XpMult>0.1</XpMult>
+      <Projectile id="0">
+         <ObjectId>Red Fire</ObjectId>
+         <Damage>50</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>600</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x723a" id="Malphas Flamer Deux">
+      <Group>Flamers</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8dEncounters</File>
+         <Index>1</Index>
+      </AnimatedTexture>
+      <HitSound>monster/demons_hit</HitSound>
+      <DeathSound>monster/demons_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>White Flame</ObjectId>
+         <Speed>80</Speed>
+         <Damage>20</Damage>
+         <Size>100</Size>
+         <LifetimeMS>500</LifetimeMS>
+         <MultiHit/>
+         <Amplitude>0.3</Amplitude>
+         <Frequency>0.5</Frequency>
+      </Projectile>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Size>100</Size>
+      <Defense>6</Defense>
+      <XpMult>0.0</XpMult>
+   </Object>
+   <Object type="0x719d" id="Stheno the Snake Queen Deux">
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiChar216x16</File>
+         <Index>0x33</Index>
+      </Texture>
+      <HitSound>monster/snake_queen_hit</HitSound>
+      <DeathSound>monster/snake_queen_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>75000</MaxHitPoints>
+      <Defense>30</Defense>
+      <Group>Group2</Group>
+      <Enemy/>
+      <God/>
+      <StasisImmune/>
+      <Quest/>
+      <Level>1</Level>
+      <XpMult>0.0</XpMult>
+      <NoArticle/>
+      <Projectile id="0">
+         <ObjectId>Blade</ObjectId>
+         <Speed>70</Speed>
+         <Damage>100</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>White Bullet</ObjectId>
+         <Speed>62</Speed>
+         <Damage>60</Damage>
+         <Size>60</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="1.4">Blind</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x723e" id="Stheno Pet Deux">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters</File>
+         <Index>2</Index>
+      </AnimatedTexture>
+      <HitSound>monster/snakes_hit</HitSound>
+      <DeathSound>monster/snakes_death</DeathSound>
+      <Size>70</Size>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Defense>7</Defense>
+      <Enemy/>
+      <Level>1</Level>
+      <XpMult>0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Aqua Missile</ObjectId>
+         <Speed>60</Speed>
+         <Damage>75</Damage>
+         <Size>100</Size>
+         <LifetimeMS>900</LifetimeMS>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x723f" id="Stheno Swarm Deux">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8dEncounters</File>
+         <Index>3</Index>
+      </AnimatedTexture>
+      <HitSound>monster/snakes_hit</HitSound>
+      <DeathSound>monster/snakes_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Defense>4</Defense>
+      <Enemy/>
+      <Level>1</Level>
+      <XpMult>0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Aqua Missile</ObjectId>
+         <Speed>60</Speed>
+         <Damage>40</Damage>
+         <Size>70</Size>
+         <LifetimeMS>1000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x719e" id="Golden Oryx Effigy Deux">
+      <Class>Character</Class>
+      <Enemy/>
+      <XpMult>0.0</XpMult>
+      <Group>Group3</Group>
+      <God/>
+      <Quest/>
+      <NoArticle/>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>41</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>chars16x16dEncounters2</File>
+            <Index>42</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="2">
+         <AnimatedTexture>
+            <File>chars16x16dEncounters2</File>
+            <Index>42</Index>
+         </AnimatedTexture>
+         <Effect particle="SwirlingMist" cooldown="0.1">XMLEffect</Effect>
+      </AltTexture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>225</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>45000</MaxHitPoints>
+      <Defense>30</Defense>
+      <Projectile id="1">
+         <ObjectId>Golden Blast</ObjectId>
+         <Damage>80</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <Size>150</Size>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Gold Fireball</ObjectId>
+         <Damage>90</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <Size>150</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x723d" id="Treasure Oryx Defender Deux">
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>43</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>150</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Defense>30</Defense>
+      <Projectile id="1">
+         <ObjectId>Golden Blast</ObjectId>
+         <Damage>80</Damage>
+         <Speed>30</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <Size>125</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x723c" id="Gold Planet Deux">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>44</Index>
+      </AnimatedTexture>
+      <Enemy/>
+      <HitSound>monster/cubes_hit</HitSound>
+      <DeathSound>monster/cubes_death</DeathSound>
+      <Defense>5</Defense>
+      <XpMult>0.0</XpMult>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Size>200</Size>
+      <StasisImmune/>
+      <Projectile id="1">
+         <ObjectId>Grey Spiral</ObjectId>
+         <Damage>60</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>900</LifetimeMS>
+         <Size>150</Size>
+         <ConditionEffect duration="1">Blind</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Black Ball</ObjectId>
+         <Damage>80</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>900</LifetimeMS>
+         <Size>150</Size>
+      </Projectile>
+      f
+   </Object>
+   <Object type="0x719f" id="destnex Paladin Grave">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x12b</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x720a" id="destnex Warrior Grave">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x12c</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x720b" id="destnex Priest Grave">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x12d</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x720c" id="destnex Knight Grave">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x12e</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x720d" id="destnex Necromancer Grave">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x12f</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x720e" id="destnex Assassin Grave">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x130</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x720f" id="destnex Sorcerer Grave">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x131</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x721a" id="destnex Trickster Grave">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x132</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x721b" id="destnex Wizard Grave">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x133</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x721c" id="destnex Rogue Grave">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x134</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x721d" id="destnex Mystic Grave">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x135</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x721e" id="destnex Huntress Grave">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x136</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x721f" id="destnex Archer Grave">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x137</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x722a" id="destnex Ninja Grave">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x138</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x722b" id="NM Green Dragon Shield Deux">
+      <DisplayId>Abundant Shield</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x3ac</Index>
+      </Texture>
+      <Size>200</Size>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>20</Defense>
+      <XpMult>0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Black Missile</ObjectId>
+         <Speed>55</Speed>
+         <Damage>100</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1200</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x722c" id="NM Green Dragon Shield Counter Deux">
+      <DisplayId>Abundant Shield</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>100</Size>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Projectile id="0">
+         <ObjectId>Black Missile</ObjectId>
+         <Speed>55</Speed>
+         <Damage>100</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1200</LifetimeMS>
+      </Projectile>
+   </Object>
+</Objects>

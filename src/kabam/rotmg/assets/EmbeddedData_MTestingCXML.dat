@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x750d" id="ft orb">
+      <DisplayId>Fortune Teller Orb</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiCharBig</File>
+         <Index>0x140</Index>
+      </Texture>
+      <Size>40</Size>
+      <ShadowSize>1</ShadowSize>
+      <Animation prob="1" period="1.8">
+         <Frame time="0.1">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x140</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x141</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x142</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x143</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x144</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x145</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x146</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x145</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x146</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x145</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x146</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x750e" id="ft big orb">
+      <DisplayId>Fortune Teller Crystal Ball</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiCharBig</File>
+         <Index>0x80</Index>
+      </Texture>
+      <Size>60</Size>
+      <ShadowSize>1</ShadowSize>
+      <Animation prob="1" period="1.8">
+         <Frame time="0.1">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x80</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x81</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x82</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x83</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x84</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x85</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x86</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x85</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x86</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x85</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x86</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+</Objects>

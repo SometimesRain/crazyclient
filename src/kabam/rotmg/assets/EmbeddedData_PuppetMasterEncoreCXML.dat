@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x7461" id="Puppet Master v2">
+      <DisplayId>The Puppet Master</DisplayId>
+      <Class>Character</Class>
+      <Group>Master</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars16x16rEmbed</File>
+         <Index>0x02</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>d3Chars16x16rEmbed</File>
+            <Index>0x01</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="2">
+         <AnimatedTexture>
+            <File>d3Chars16x16rEmbed</File>
+            <Index>0x03</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>140</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>110000</MaxHitPoints>
+      <Defense>40</Defense>
+      <XpMult>8.39</XpMult>
+      <Level>20</Level>
+      <Quest/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Jester Bolt</ObjectId>
+         <Speed>30</Speed>
+         <Damage>150</Damage>
+         <LifetimeMS>5000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Puppet Green Wheel</ObjectId>
+         <Speed>85</Speed>
+         <Damage>70</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1800</LifetimeMS>
+         <ConditionEffect duration="5" target="1">Stasis</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Jester Bolt</ObjectId>
+         <Speed>60</Speed>
+         <Damage>80</Damage>
+         <LifetimeMS>3000</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Puppet Green Wheel</ObjectId>
+         <Speed>35</Speed>
+         <Damage>55</Damage>
+         <LifetimeMS>7000</LifetimeMS>
+         <Size>80</Size>
+         <ConditionEffect duration="7" target="1">Stasis</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Jester Bolt</ObjectId>
+         <Speed>50</Speed>
+         <Damage>150</Damage>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>140</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x74a1" id="HomingFire">
+      <DisplayId>Cursed Blast</DisplayId>
+      <Class>Character</Class>
+      <Group>Statue</Group>
+      <Enemy/>
+      <Texture>
+         <File>lofiProjs</File>
+         <Index>0x64</Index>
+      </Texture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>130</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>30</Defense>
+      <XpMult>0</XpMult>
+      <Level>20</Level>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Rainbow Baller</ObjectId>
+         <Speed>100</Speed>
+         <Damage>90</Damage>
+         <LifetimeMS>4000</LifetimeMS>
+         <ArmorPiercing/>
+         <Size>130</Size>
+         <ConditionEffect duration="2">Dazed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x74a3" id="Encore Huntress Statue">
+      <DisplayId>Huntress Puppet</DisplayId>
+      <Class>Character</Class>
+      <Group>Statues</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars8x8rEmbed</File>
+         <Index>0x04</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>60000</MaxHitPoints>
+      <XpMult>0</XpMult>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x7464" id="Encore Huntress">
+      <DisplayId>Huntress Puppet</DisplayId>
+      <Class>Character</Class>
+      <Group>Statues</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars8x8rEmbed</File>
+         <Index>0x04</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>120</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>45000</MaxHitPoints>
+      <Defense>20</Defense>
+      <XpMult>1.5</XpMult>
+      <Level>20</Level>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Purple Arrow</ObjectId>
+         <Damage>80</Damage>
+         <Speed>100</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>90</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Indigo Dark Arrow</ObjectId>
+         <Damage>150</Damage>
+         <Speed>85</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>120</Size>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0x7465" id="Huntress Trap">
+      <DisplayId>Encore Trap</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x18</Index>
+      </Texture>
+      <MaxHitPoints>30000</MaxHitPoints>
+      <Defense>50</Defense>
+      <XpMult>0</XpMult>
+      <Size>60</Size>
+      <ShadowSize>90</ShadowSize>
+      <StasisImmune/>
+      <StunImmune/>
+      <Projectile id="1">
+         <ObjectId>Purple Magic</ObjectId>
+         <Size>90</Size>
+         <Damage>55</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>650</LifetimeMS>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x74a4" id="Encore Trickster Statue">
+      <DisplayId>Trickster Puppet</DisplayId>
+      <Class>Character</Class>
+      <Group>Statues</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars8x8rEmbed</File>
+         <Index>0x05</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>60000</MaxHitPoints>
+      <XpMult>0</XpMult>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x746e" id="Encore Trickster">
+      <DisplayId>Trickster Puppet</DisplayId>
+      <Class>Character</Class>
+      <Group>Statues</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars8x8rEmbed</File>
+         <Index>0x05</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>120</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>40000</MaxHitPoints>
+      <Defense>20</Defense>
+      <XpMult>1.5</XpMult>
+      <Level>20</Level>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Spirit Dagger Slash</ObjectId>
+         <Damage>150</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>120</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Ghost Sr Slash</ObjectId>
+         <Damage>80</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x748a" id="Puppet Clone">
+      <DisplayId>Puppet Clone</DisplayId>
+      <Class>Character</Class>
+      <Group>Statues</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars8x8rEmbed</File>
+         <Index>0x05</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>120</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>13500</MaxHitPoints>
+      <Defense>10</Defense>
+      <XpMult>0</XpMult>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Spirit Bolt</ObjectId>
+         <Damage>70</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>70</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x74a5" id="Confuse Puppet Statue">
+      <DisplayId>Puppet of Chaos</DisplayId>
+      <Class>Character</Class>
+      <Group>Statues</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars8x8rEmbed</File>
+         <Index>0x06</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>60000</MaxHitPoints>
+      <XpMult>0</XpMult>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x7474" id="Confuse Puppet">
+      <DisplayId>Puppet of Chaos</DisplayId>
+      <Class>Character</Class>
+      <Group>Statue</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars8x8rEmbed</File>
+         <Index>0x06</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>130</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>40000</MaxHitPoints>
+      <Defense>30</Defense>
+      <XpMult>2</XpMult>
+      <Level>20</Level>
+      <ParalyzeImmune/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Puppet Purple Wheel</ObjectId>
+         <Speed>60</Speed>
+         <Damage>90</Damage>
+         <Size>100</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="2">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Puppet Purple Wheel</ObjectId>
+         <Speed>60</Speed>
+         <Damage>90</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <Amplitude>0.6</Amplitude>
+         <Frequency>1</Frequency>
+         <MultiHit/>
+         <ConditionEffect duration="2">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Pink Swipe</ObjectId>
+         <Speed>60</Speed>
+         <Damage>150</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x74a6" id="Bleed Puppet Statue">
+      <DisplayId>Puppet of Pain</DisplayId>
+      <Class>Character</Class>
+      <Group>Statues</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars8x8rEmbed</File>
+         <Index>0x07</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>45000</MaxHitPoints>
+      <XpMult>0</XpMult>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x7489" id="Bleed Puppet">
+      <DisplayId>Puppet of Pain</DisplayId>
+      <Class>Character</Class>
+      <Group>Statue</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars8x8rEmbed</File>
+         <Index>0x07</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>130</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <Defense>30</Defense>
+      <XpMult>2</XpMult>
+      <Level>20</Level>
+      <StasisImmune/>
+      <StunImmune/>
+      <Projectile id="0">
+         <ObjectId>Puppet Red Wheel</ObjectId>
+         <Speed>55</Speed>
+         <Damage>150</Damage>
+         <LifetimeMS>2500</LifetimeMS>
+         <ConditionEffect duration="2">Bleeding</ConditionEffect>
+         <Size>90</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Puppet Red Wheel</ObjectId>
+         <Speed>55</Speed>
+         <Damage>150</Damage>
+         <LifetimeMS>2500</LifetimeMS>
+         <ConditionEffect duration="2">Bleeding</ConditionEffect>
+         <Size>90</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+</Objects>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x01ff" id="Sheep">
+      <Group>Sheep</Group>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rBeach</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <XpMult>0.0</XpMult>
+   </Object>
+   <Object type="0x5e29" id="Halloween Bat">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>26</Index>
+      </AnimatedTexture>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <MaxHitPoints>125</MaxHitPoints>
+      <Defense>25</Defense>
+      <XpMult>1</XpMult>
+      <Z>0.24</Z>
+      <Flying/>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+   </Object>
+   <Object type="0x074c" id="Nexus Turkey">
+      <DisplayId>Turkey</DisplayId>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>44</Index>
+      </AnimatedTexture>
+      <Size>110</Size>
+      <XpMult>0.0</XpMult>
+   </Object>
+   <Object type="0x074d" id="Winter Bunny">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>82</Index>
+      </AnimatedTexture>
+      <Size>110</Size>
+      <XpMult>0.0</XpMult>
+   </Object>
+   <Object type="0x222a" id="Pumpkin1">
+      <DisplayId>Creepy Talking Jack-O-Lantern</DisplayId>
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+      <Size>0</Size>
+      <OccupySquare/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x0e78" id="Nexus Crier">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>83</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>chars8x8rEncounters</File>
+            <Index>84</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>140</Size>
+      <ShadowSize>50</ShadowSize>
+      <Defense>10</Defense>
+   </Object>
+</Objects>

@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x7fd0" id="Ice Golem">
+      <Group>Ice Golems</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters</File>
+         <Index>28</Index>
+      </AnimatedTexture>
+      <HitSound>monster/spiders_hit</HitSound>
+      <DeathSound>monster/spiders_death</DeathSound>
+      <Size>60</Size>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Defense>0</Defense>
+      <XpMult>0.0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Blue Magic</ObjectId>
+         <Damage>50</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>200</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Violet Claw</ObjectId>
+         <Damage>20</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>200</LifetimeMS>
+         <ConditionEffect duration="0.8">Paralyzed</ConditionEffect>
+         <Size>40</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x7fd1" id="Ice Tomb Chest">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x466</Index>
+      </Texture>
+      <Size>160</Size>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>0</Defense>
+      <XpMult>0.0</XpMult>
+   </Object>
+   <Object type="0x7f51" id="Ice Tomb Event Chest Dropper">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x7fcb" id="Ice Tomb Event Chest">
+      <DisplayId>Event Chest</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <KeepDamageRecord/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x466</Index>
+      </Texture>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Size>160</Size>
+      <XpMult>5.13</XpMult>
+   </Object>
+   <Object type="0x7fab" id="Ice Artifact 1">
+      <DisplayId>Ice Artifact</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8dEncounters</File>
+         <Index>13</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Defense>20</Defense>
+      <XpMult>0.0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Blue Shuriken</ObjectId>
+         <Damage>90</Damage>
+         <Speed>80</Speed>
+         <Size>80</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Blue Shuriken</ObjectId>
+         <Damage>130</Damage>
+         <Speed>80</Speed>
+         <Size>120</Size>
+         <LifetimeMS>1000</LifetimeMS>
+         <ConditionEffect duration="5">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x7fac" id="Ice Artifact 2">
+      <DisplayId>Ice Artifact</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8dEncounters</File>
+         <Index>13</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Defense>20</Defense>
+      <XpMult>0.0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Blue Shuriken</ObjectId>
+         <Damage>90</Damage>
+         <Speed>80</Speed>
+         <Size>80</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Blue Shuriken</ObjectId>
+         <Damage>130</Damage>
+         <Speed>80</Speed>
+         <Size>120</Size>
+         <LifetimeMS>1000</LifetimeMS>
+         <ConditionEffect duration="5">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x7fad" id="Ice Artifact 3">
+      <DisplayId>Ice Artifact</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8dEncounters</File>
+         <Index>13</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Defense>20</Defense>
+      <XpMult>0.0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Blue Shuriken</ObjectId>
+         <Damage>90</Damage>
+         <Speed>100</Speed>
+         <Size>80</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Blue Shuriken</ObjectId>
+         <Damage>130</Damage>
+         <Speed>80</Speed>
+         <Size>120</Size>
+         <LifetimeMS>1000</LifetimeMS>
+         <ConditionEffect duration="5">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x7fae" id="Aqua Artifact 1">
+      <DisplayId>Aqua Artifact</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8dEncounters</File>
+         <Index>62</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>20</Defense>
+      <XpMult>0.0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Black Missile</ObjectId>
+         <Damage>190</Damage>
+         <Speed>40</Speed>
+         <Size>120</Size>
+         <LifetimeMS>3000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x7faf" id="Aqua Artifact 2">
+      <DisplayId>Aqua Artifact</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8dEncounters</File>
+         <Index>62</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>20</Defense>
+      <XpMult>0.0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Black Missile</ObjectId>
+         <Damage>190</Damage>
+         <Speed>40</Speed>
+         <Size>120</Size>
+         <LifetimeMS>3000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x7fb0" id="Aqua Artifact 3">
+      <DisplayId>Aqua Artifact</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8dEncounters</File>
+         <Index>62</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>20</Defense>
+      <XpMult>0.0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Black Missile</ObjectId>
+         <Damage>190</Damage>
+         <Speed>40</Speed>
+         <Size>120</Size>
+         <LifetimeMS>3000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x7fb1" id="Shard Artifact 1">
+      <DisplayId>Shard Artifact</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters</File>
+         <Index>29</Index>
+      </AnimatedTexture>
+      <Size>80</Size>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Defense>50</Defense>
+      <XpMult>0.0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Beam</ObjectId>
+         <Damage>50</Damage>
+         <Speed>200</Speed>
+         <Size>140</Size>
+         <LifetimeMS>200</LifetimeMS>
+         <ConditionEffect duration="2">Weak</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x7fb2" id="Shard Artifact 2">
+      <DisplayId>Shard Artifact</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters</File>
+         <Index>29</Index>
+      </AnimatedTexture>
+      <Size>80</Size>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Defense>50</Defense>
+      <XpMult>0.0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Beam</ObjectId>
+         <Damage>50</Damage>
+         <Speed>200</Speed>
+         <Size>140</Size>
+         <LifetimeMS>200</LifetimeMS>
+         <ConditionEffect duration="2">Weak</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x7fb3" id="Shard Artifact 3">
+      <DisplayId>Shard Artifact</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters</File>
+         <Index>29</Index>
+      </AnimatedTexture>
+      <Size>80</Size>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Defense>50</Defense>
+      <XpMult>0.0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Beam</ObjectId>
+         <Damage>50</Damage>
+         <Speed>200</Speed>
+         <Size>140</Size>
+         <LifetimeMS>200</LifetimeMS>
+         <ConditionEffect duration="2">Weak</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x7fa6" id="Ice Tomb Boss Anchor">
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiChar216x16</File>
+         <Index>0x0e</Index>
+      </Texture>
+      <Size>0</Size>
+      <Defense>0</Defense>
+      <XpMult>0.0</XpMult>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x7fa7" id="Activator">
+      <Class>Character</Class>
+      <Texture>
+         <File>d3LofiObjEmbed16</File>
+         <Index>0x30</Index>
+      </Texture>
+      <Size>100</Size>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <Defense>0</Defense>
+      <XpMult>0.0</XpMult>
+      <NoMiniMap/>
+      <DisplayId>Mysterious Ice Shard</DisplayId>
+      <Enemy/>
+      <StasisImmune/>
+      <AltTexture id="1">
+         <Texture>
+            <File>d3LofiObjEmbed16</File>
+            <Index>0x31</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>d3LofiObjEmbed16</File>
+            <Index>0x32</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>d3LofiObjEmbed16</File>
+            <Index>0x33</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>d3LofiObjEmbed16</File>
+            <Index>0x34</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>d3LofiObjEmbed16</File>
+            <Index>0x35</Index>
+         </Texture>
+      </AltTexture>
+      <HitSound>monster/eggs_hit</HitSound>
+      <DeathSound>monster/eggs_death</DeathSound>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>0</Defense>
+      <XpMult>0.0</XpMult>
+      <Size>130</Size>
+      <ShadowSize>100</ShadowSize>
+   </Object>
+   <Object type="0x7fa8" id="Ice Tomb Support Statue">
+      <Group>Ice Tomb Boss Statues</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <DisplayId>Polaris Statue</DisplayId>
+      <Size>140</Size>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x180</Index>
+      </Texture>
+   </Object>
+   <Object type="0x7fa9" id="Ice Tomb Attacker Statue">
+      <Group>Ice Tomb Boss Statues</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <DisplayId>Glacius Statue</DisplayId>
+      <Size>140</Size>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x181</Index>
+      </Texture>
+   </Object>
+   <Object type="0x7faa" id="Ice Tomb Defender Statue">
+      <Group>Ice Tomb Boss Statues</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <DisplayId>Frimar Statue</DisplayId>
+      <Size>140</Size>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x182</Index>
+      </Texture>
+   </Object>
+   <Object type="0x7fb4" id="Ice Tomb Support">
+      <Group>Ice Tomb Bosses</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <DisplayId>Polaris</DisplayId>
+      <Quest/>
+      <Level>1</Level>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters</File>
+         <Index>24</Index>
+      </AnimatedTexture>
+      <HitSound>monster/medusa_hit</HitSound>
+      <DeathSound>monster/medusa_death</DeathSound>
+      <MaxHitPoints>80000</MaxHitPoints>
+      <Size>140</Size>
+      <Defense>15</Defense>
+      <XpMult>1</XpMult>
+      <God/>
+      <NoArticle/>
+      <Projectile id="0">
+         <ObjectId>Blue Bolt Shot</ObjectId>
+         <Damage>180</Damage>
+         <Speed>100</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>120</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Grey Boomerang</ObjectId>
+         <Damage>40</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration="1">Quiet</ConditionEffect>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Blue Boomerang</ObjectId>
+         <Damage>40</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration="5">Weak</ConditionEffect>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Ninja Star Ice</ObjectId>
+         <Damage>40</Damage>
+         <Speed>20</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration="5">Slowed</ConditionEffect>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Purple Boomerang</ObjectId>
+         <Damage>40</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration="5">Blind</ConditionEffect>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>Frozen Arrow</ObjectId>
+         <Damage>40</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration="3">Armor Broken</ConditionEffect>
+         <Size>100</Size>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>Jester Bolt</ObjectId>
+         <Damage>200</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration="1.4">Paralyzed</ConditionEffect>
+         <MultiHit/>
+         <Size>200</Size>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>snow flakes</ObjectId>
+         <Damage>0</Damage>
+         <Speed>120</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <ConditionEffect duration="10">Weak</ConditionEffect>
+         <MultiHit/>
+         <Size>150</Size>
+      </Projectile>
+      <Projectile id="8">
+         <ObjectId>Ice Magic</ObjectId>
+         <Damage>50</Damage>
+         <Speed>100</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration="1.0">Paralyzed</ConditionEffect>
+         <Size>120</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x7fb5" id="Ice Tomb Attacker">
+      <Group>Ice Tomb Bosses</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <DisplayId>Glacius</DisplayId>
+      <Quest/>
+      <Level>1</Level>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters</File>
+         <Index>25</Index>
+      </AnimatedTexture>
+      <HitSound>monster/medusa_hit</HitSound>
+      <DeathSound>monster/medusa_death</DeathSound>
+      <MaxHitPoints>90000</MaxHitPoints>
+      <Size>140</Size>
+      <Defense>30</Defense>
+      <XpMult>1</XpMult>
+      <God/>
+      <NoArticle/>
+      <Projectile id="0">
+         <ObjectId>Blue Bolt Shot</ObjectId>
+         <Damage>280</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>140</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Ninja Star Ice</ObjectId>
+         <Damage>100</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>3600</LifetimeMS>
+         <ConditionEffect duration="5">Slowed</ConditionEffect>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Icey Magic Attack</ObjectId>
+         <Damage>30</Damage>
+         <Speed>100</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <ArmorPiercing/>
+         <Size>100</Size>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>snow flakes</ObjectId>
+         <Damage>0</Damage>
+         <Speed>120</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <ConditionEffect duration="10">Weak</ConditionEffect>
+         <MultiHit/>
+         <Size>200</Size>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Frozen Wand Icicle</ObjectId>
+         <Damage>80</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>140</Size>
+         <Parametric/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>Blue Bolt Shot</ObjectId>
+         <Damage>200</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>140</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x7fb6" id="Ice Tomb Defender">
+      <Group>Ice Tomb Bosses</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <DisplayId>Frimar</DisplayId>
+      <Quest/>
+      <Level>1</Level>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters</File>
+         <Index>26</Index>
+      </AnimatedTexture>
+      <HitSound>monster/medusa_hit</HitSound>
+      <DeathSound>monster/medusa_death</DeathSound>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Size>140</Size>
+      <Defense>50</Defense>
+      <XpMult>1</XpMult>
+      <God/>
+      <NoArticle/>
+      <Projectile id="0">
+         <ObjectId>Blue Bolt Shot</ObjectId>
+         <Damage>240</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>180</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Water Storm</ObjectId>
+         <Damage>150</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <ConditionEffect duration="5">Armor Broken</ConditionEffect>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Silver Shield</ObjectId>
+         <Damage>160</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>540</LifetimeMS>
+         <ConditionEffect duration="1.2">Stunned</ConditionEffect>
+         <Size>200</Size>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>snow flakes</ObjectId>
+         <Damage>0</Damage>
+         <Speed>120</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <ConditionEffect duration="10">Weak</ConditionEffect>
+         <MultiHit/>
+         <Size>200</Size>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Silver Shield</ObjectId>
+         <Damage>60</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <ConditionEffect duration="1.2">Stunned</ConditionEffect>
+         <Size>200</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x7fb8" id="Ice Tomb Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Ice Tomb</DisplayId>
+      <DungeonName>Ice Tomb</DungeonName>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x09</Index>
+      </Texture>
+   </Object>
+</Objects>

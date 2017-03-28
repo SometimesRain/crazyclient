@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x5e62" id="Mama Megamoth">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>106</Index>
+      </AnimatedTexture>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Defense>5</Defense>
+      <XpMult>1.2</XpMult>
+      <Size>140</Size>
+      <Flying/>
+      <Z>0.2</Z>
+      <God/>
+      <Quest/>
+      <Projectile id="0">
+         <ObjectId>Moth Dust</ObjectId>
+         <Damage>25</Damage>
+         <Speed>5</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>90</Size>
+         <ConditionEffect duration="3">Confused</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x5e61" id="Mini Megamoth">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>85</Index>
+      </AnimatedTexture>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Defense>0</Defense>
+      <XpMult>0</XpMult>
+      <Size>100</Size>
+      <Flying/>
+      <Z>0.3</Z>
+      <Projectile id="0">
+         <ObjectId>Small Moth Bullet</ObjectId>
+         <Damage>15</Damage>
+         <Speed>45</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>90</Size>
+         <ConditionEffect duration="0.8">Confused</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x5e60" id="Armored Squirrel">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>86</Index>
+      </AnimatedTexture>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <MaxHitPoints>40</MaxHitPoints>
+      <Defense>5</Defense>
+      <XpMult>1.2</XpMult>
+      <Size>100</Size>
+      <Projectile id="0">
+         <ObjectId>Blade</ObjectId>
+         <Damage>20</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>80</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x5e63" id="Ultimate Squirrel">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>107</Index>
+      </AnimatedTexture>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Defense>4</Defense>
+      <XpMult>1.2</XpMult>
+      <Size>120</Size>
+      <Projectile id="0">
+         <ObjectId>Acorn</ObjectId>
+         <Damage>35</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>1300</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x5e4d" id="Forest Goblin Mage">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>87</Index>
+      </AnimatedTexture>
+      <HitSound>monster/cave_pirates_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <MaxHitPoints>35</MaxHitPoints>
+      <Defense>1</Defense>
+      <XpMult>1.15</XpMult>
+      <Size>120</Size>
+      <Projectile id="0">
+         <ObjectId>Leaf Magic</ObjectId>
+         <Speed>70</Speed>
+         <Damage>8</Damage>
+         <LifetimeMS>1200</LifetimeMS>
+         <Amplitude>0.1</Amplitude>
+         <Frequency>6</Frequency>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x5e4c" id="Forest Goblin">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>88</Index>
+      </AnimatedTexture>
+      <HitSound>monster/cave_pirates_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Defense>0</Defense>
+      <XpMult>1</XpMult>
+      <Size>120</Size>
+      <Projectile id="0">
+         <ObjectId>Blade</ObjectId>
+         <Damage>20</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>800</LifetimeMS>
+         <Size>90</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x5e5f" id="Forrest Shady Floor">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x129</Index>
+      </Texture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0x5e5e" id="Forrest Shady Corner DL">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x13b</Index>
+      </Texture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0x5e5d" id="Forrest Shady Corner DR">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x13a</Index>
+      </Texture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0x5e5c" id="Forrest Shady Corner UL">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x139</Index>
+      </Texture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0x5e5b" id="Forrest Shady Corner UR">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x138</Index>
+      </Texture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0x5e5a" id="Forrest Shady OCorner DL">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x137</Index>
+      </Texture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0x5e59" id="Forrest Shady OCorner DR">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x136</Index>
+      </Texture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0x5e58" id="Forrest Shady OCorner UL">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x135</Index>
+      </Texture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0x5e57" id="Forrest Shady OCorner UR">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x134</Index>
+      </Texture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0x5e56" id="Forrest Shady Edge UP">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x133</Index>
+      </Texture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0x5e55" id="Forrest Shady Edge DN">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x132</Index>
+      </Texture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0x5e54" id="Forrest Shady Edge LF">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x131</Index>
+      </Texture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0x5e53" id="Forrest Shady Edge RT">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x130</Index>
+      </Texture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0x5e52" id="Forrest Shady Floor DR">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x126</Index>
+      </Texture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0x5e51" id="Forrest Shady Floor DL">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x127</Index>
+      </Texture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0x5e50" id="Forrest Shady Floor UR">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x128</Index>
+      </Texture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0x5e4f" id="Forrest Shady Floor UL">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x12a</Index>
+      </Texture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+</Objects>

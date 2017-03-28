@@ -1,0 +1,1682 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x6010" id="Arena Dn Spawner">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>64</Index>
+      </AnimatedTexture>
+      <NoMiniMap/>
+      <MaxHitPoints>10</MaxHitPoints>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x600f" id="Arena Up Spawner">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>64</Index>
+      </AnimatedTexture>
+      <NoMiniMap/>
+      <MaxHitPoints>10</MaxHitPoints>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x600e" id="Arena Rt Spawner">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>64</Index>
+      </AnimatedTexture>
+      <NoMiniMap/>
+      <MaxHitPoints>10</MaxHitPoints>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x600d" id="Arena Lf Spawner">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>64</Index>
+      </AnimatedTexture>
+      <NoMiniMap/>
+      <MaxHitPoints>10</MaxHitPoints>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x600b" id="BattleMaster">
+      <DisplayId>Ghost of Skuld</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>66</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>66</Index>
+         </AnimatedTexture>
+         <Effect particle="SwirlingMist" cooldown="0.1">XMLEffect</Effect>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lofiCharBig</File>
+            <Index>0x0a</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lofiCharBig</File>
+            <Index>0x0b</Index>
+         </Texture>
+      </AltTexture>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Size>120</Size>
+      <ShadowSize>80</ShadowSize>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>Ghost X</ObjectId>
+         <Damage>70</Damage>
+         <Speed>75</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1200</LifetimeMS>
+         <PassesCover/>
+         <ConditionEffect duration="0.4">Paralyzed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x600a" id="Skuld Portal">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>67</Index>
+      </AnimatedTexture>
+      <NoMiniMap/>
+      <MaxHitPoints>10</MaxHitPoints>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x6009" id="Skuld Apparition">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>68</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="2">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>69</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="3">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>70</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="4">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>71</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="5">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>72</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="7">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>67</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="8">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>73</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="6">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>74</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Size>0</Size>
+      <ShadowSize>80</ShadowSize>
+      <StasisImmune/>
+      <HitSound>monster/flaming_skulls_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Ghost X</ObjectId>
+         <Damage>80</Damage>
+         <Speed>75</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1200</LifetimeMS>
+         <PassesCover/>
+         <ConditionEffect duration="0.5">Paralyzed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x6008" id="Skuld Summoner">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>66</Index>
+      </AnimatedTexture>
+      <NoMiniMap/>
+      <MaxHitPoints>10</MaxHitPoints>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x6007" id="Flying Flame Skull">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>75</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>75</Index>
+         </AnimatedTexture>
+         <Effect particle="SwirlingMist" cooldown="0.3">XMLEffect</Effect>
+      </AltTexture>
+      <Size>110</Size>
+      <ShadowSize>60</ShadowSize>
+      <Z>0.4</Z>
+      <Flying/>
+      <DontFaceAttacks/>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <XpMult>0.45</XpMult>
+      <Defense>8</Defense>
+      <Projectile id="0">
+         <ObjectId>Skull Wave</ObjectId>
+         <Damage>70</Damage>
+         <Speed>80</Speed>
+         <Size>100</Size>
+         <LifetimeMS>200</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x6006" id="Ghost of Skuld">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>66</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>66</Index>
+         </AnimatedTexture>
+         <Effect particle="SwirlingMist" cooldown="0.1">XMLEffect</Effect>
+      </AltTexture>
+      <AltTexture id="2">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>73</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="3">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>76</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="4">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>76</Index>
+         </AnimatedTexture>
+         <Effect particle="SwirlingMist" cooldown="0.1">XMLEffect</Effect>
+      </AltTexture>
+      <AltTexture id="5">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>68</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="6">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>69</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="7">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>70</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="8">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>71</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="9">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>72</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="10">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>67</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="11">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="12">
+         <Texture>
+            <File>lofiCharBig</File>
+            <Index>0x0a</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="13">
+         <Texture>
+            <File>lofiCharBig</File>
+            <Index>0x0b</Index>
+         </Texture>
+      </AltTexture>
+      <HitSound>monster/flaming_skulls_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <Size>120</Size>
+      <ShadowSize>60</ShadowSize>
+      <NoMiniMap/>
+      <MaxHitPoints>48000</MaxHitPoints>
+      <XpMult>0.85</XpMult>
+      <Defense>15</Defense>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Ghost Cross</ObjectId>
+         <Damage>85</Damage>
+         <Speed>65</Speed>
+         <Size>80</Size>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Ghost X</ObjectId>
+         <Damage>25</Damage>
+         <Speed>85</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="2.2">Paralyzed</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Giga Ghost X</ObjectId>
+         <Damage>250</Damage>
+         <Speed>40</Speed>
+         <Size>200</Size>
+         <LifetimeMS>5000</LifetimeMS>
+         <MultiHit/>
+         <Boomerang/>
+         <PassesCover/>
+         <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x6002" id="Halloween Zombie Spawner">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>65</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Defense>8</Defense>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x6001" id="Blue Zombie">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>66</Index>
+      </AnimatedTexture>
+      <Size>110</Size>
+      <ShadowSize>80</ShadowSize>
+      <HitSound>monster/abyss_demons_hit</HitSound>
+      <DeathSound>monster/dwarf_god_hit</DeathSound>
+      <MaxHitPoints>550</MaxHitPoints>
+      <XpMult>0</XpMult>
+      <Defense>12</Defense>
+      <Projectile id="0">
+         <ObjectId>Blue Zombie Wave</ObjectId>
+         <Damage>65</Damage>
+         <Speed>35</Speed>
+         <Size>80</Size>
+         <LifetimeMS>800</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x6000" id="Zombie Rise">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x2fd</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x2fe</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x2ff</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x300</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x301</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="6">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x302</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="7">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x303</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="8">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x304</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="9">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x305</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="10">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x306</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="11">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x307</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="12">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x308</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="13">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x309</Index>
+         </Texture>
+      </AltTexture>
+      <Size>110</Size>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <XpMult>0</XpMult>
+   </Object>
+   <Object type="0x600c" id="Mini Werewolf">
+      <Group>Hallowrena</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>64</Index>
+      </AnimatedTexture>
+      <HitSound>monster/undead_hobbits_hit</HitSound>
+      <DeathSound>monster/goblins_hit</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>550</MaxHitPoints>
+      <Defense>3</Defense>
+      <XpMult>0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Wereshot</ObjectId>
+         <Damage>50</Damage>
+         <Speed>60</Speed>
+         <Size>90</Size>
+         <LifetimeMS>800</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x6005" id="Zombie Hulk">
+      <Enemy/>
+      <Class>Character</Class>
+      <Group>Hallowrena</Group>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>77</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>78</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <Size>110</Size>
+      <ShadowSize>80</ShadowSize>
+      <HitSound>monster/archdemon_hit</HitSound>
+      <DeathSound>monster/abyss_demons_death</DeathSound>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <XpMult>0.35</XpMult>
+      <Defense>13</Defense>
+      <Projectile id="0">
+         <ObjectId>Big Zombie Wave</ObjectId>
+         <Speed>55</Speed>
+         <Damage>45</Damage>
+         <Size>110</Size>
+         <LifetimeMS>400</LifetimeMS>
+         <MultiHit/>
+         <PassesCover/>
+         <ConditionEffect duration="2.4">Armor Broken</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Big Zombie Blast</ObjectId>
+         <Speed>70</Speed>
+         <Damage>70</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1200</LifetimeMS>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0x6004" id="Classic Ghost">
+      <Enemy/>
+      <Class>Character</Class>
+      <Group>Hallowrena</Group>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>67</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>75</Index>
+         </AnimatedTexture>
+         <Effect particle="SwirlingMist" cooldown="0.3">XMLEffect</Effect>
+      </AltTexture>
+      <HitSound>monster/beholder_hit</HitSound>
+      <DeathSound>monster/beholder_death</DeathSound>
+      <Size>110</Size>
+      <ShadowSize>40</ShadowSize>
+      <Z>0.33</Z>
+      <Flying/>
+      <DontFaceAttacks/>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <XpMult>0.25</XpMult>
+      <Defense>8</Defense>
+      <Projectile id="0">
+         <ObjectId>White Ghost Shot</ObjectId>
+         <Damage>40</Damage>
+         <Speed>60</Speed>
+         <Size>80</Size>
+         <LifetimeMS>900</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x6003" id="Werewolf">
+      <Enemy/>
+      <Class>Character</Class>
+      <Group>Hallowrena</Group>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>79</Index>
+      </AnimatedTexture>
+      <HitSound>monster/demons_hit</HitSound>
+      <DeathSound>monster/cyclops_death</DeathSound>
+      <Size>120</Size>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Defense>15</Defense>
+      <Projectile id="0">
+         <ObjectId>Wereblast</ObjectId>
+         <Damage>70</Damage>
+         <Speed>60</Speed>
+         <Size>120</Size>
+         <LifetimeMS>900</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x5e8c" id="Arena North Gate Spawner">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <NoMiniMap/>
+      <MaxHitPoints>10</MaxHitPoints>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x5e8d" id="Arena South Gate Spawner">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <NoMiniMap/>
+      <MaxHitPoints>10</MaxHitPoints>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x5e8e" id="Arena East Gate Spawner">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <NoMiniMap/>
+      <MaxHitPoints>10</MaxHitPoints>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x5e8f" id="Arena West Gate Spawner">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <NoMiniMap/>
+      <MaxHitPoints>10</MaxHitPoints>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x5e9a" id="Area 1 Controller">
+      <DisplayId>Ghost of Skuld</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>66</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="2">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>66</Index>
+         </AnimatedTexture>
+         <Effect particle="SwirlingMist" cooldown="0.1">XMLEffect</Effect>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lofiCharBig</File>
+            <Index>0x0a</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>lofiCharBig</File>
+            <Index>0x0b</Index>
+         </Texture>
+      </AltTexture>
+      <NoMiniMap/>
+      <MaxHitPoints>10</MaxHitPoints>
+      <Size>125</Size>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x5f21" id="Area 2 Controller">
+      <DisplayId>Ghost of Skuld</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>66</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="2">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>66</Index>
+         </AnimatedTexture>
+         <Effect particle="SwirlingMist" cooldown="0.1">XMLEffect</Effect>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lofiCharBig</File>
+            <Index>0x0a</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>lofiCharBig</File>
+            <Index>0x0b</Index>
+         </Texture>
+      </AltTexture>
+      <NoMiniMap/>
+      <MaxHitPoints>10</MaxHitPoints>
+      <Size>125</Size>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x5f22" id="Area 3 Controller">
+      <DisplayId>Ghost of Skuld</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>66</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="2">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>66</Index>
+         </AnimatedTexture>
+         <Effect particle="SwirlingMist" cooldown="0.1">XMLEffect</Effect>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lofiCharBig</File>
+            <Index>0x0a</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>lofiCharBig</File>
+            <Index>0x0b</Index>
+         </Texture>
+      </AltTexture>
+      <NoMiniMap/>
+      <MaxHitPoints>10</MaxHitPoints>
+      <Size>125</Size>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x5f23" id="Area 4 Controller">
+      <DisplayId>Ghost of Skuld</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>66</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <NoMiniMap/>
+      <MaxHitPoints>10</MaxHitPoints>
+      <Size>125</Size>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x5f24" id="Area 5 Controller">
+      <DisplayId>Arena Master</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <NoMiniMap/>
+      <MaxHitPoints>10</MaxHitPoints>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x5e9b" id="Area1 Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Haunted Cemetery</DisplayId>
+      <DungeonName>Haunted Cemetery</DungeonName>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x30a</Index>
+      </Texture>
+      <Animation prob="0.4" period="1.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.6">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30a</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x5f25" id="Haunted Cemetery Gates Portal">
+      <Class>Portal</Class>
+      <Size>120</Size>
+      <IntergamePortal/>
+      <DisplayId>Gates</DisplayId>
+      <DungeonName>Haunted Cemetery Gates</DungeonName>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x30a</Index>
+      </Texture>
+      <Animation prob="0.6" period="1.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.6">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30a</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x5f26" id="Haunted Cemetery Graves Portal">
+      <Class>Portal</Class>
+      <Size>130</Size>
+      <IntergamePortal/>
+      <DisplayId>Graves</DisplayId>
+      <DungeonName>Haunted Cemetery Graves</DungeonName>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x30a</Index>
+      </Texture>
+      <Animation prob="0.8" period="1.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.6">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30a</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x5f29" id="Haunted Cemetery Final Rest Portal">
+      <Class>Portal</Class>
+      <Size>140</Size>
+      <IntergamePortal/>
+      <DisplayId>Final Battle</DisplayId>
+      <DungeonName>Haunted Cemetery Final Battle</DungeonName>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x30a</Index>
+      </Texture>
+      <Animation prob="1" period="2">
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.6">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.6">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30a</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x5e9f" id="Arena Headless Horseman">
+      <DisplayId>Headless Horseman</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>80</Index>
+      </AnimatedTexture>
+      <HitSound>monster/cyclops_hit</HitSound>
+      <DeathSound>monster/cyclops_death</DeathSound>
+      <Size>150</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Terrain>Mountains</Terrain>
+      <SpawnProb>0.045</SpawnProb>
+      <XpMult>0.7</XpMult>
+      <Projectile id="0">
+         <ObjectId>Orange Pumpkin Blast</ObjectId>
+         <Damage>85</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>140</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Orange Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>2500</LifetimeMS>
+         <Size>170</Size>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Horseman Blast</ObjectId>
+         <Damage>70</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>150</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x5f01" id="Arena Ghost 1">
+      <DisplayId>Apparition</DisplayId>
+      <Class>Character</Class>
+      <Group>Hallowrena</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>68</Index>
+      </AnimatedTexture>
+      <HitSound>monster/ghosts_hit</HitSound>
+      <DeathSound>monster/ghosts_death</DeathSound>
+      <Size>125</Size>
+      <MaxHitPoints>3500</MaxHitPoints>
+      <Defense>10</Defense>
+      <ShadowSize>70</ShadowSize>
+      <Z>.4</Z>
+      <Flying/>
+      <Projectile id="0">
+         <ObjectId>Blue Magic</ObjectId>
+         <Damage>55</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>150</Size>
+         <Amplitude>0.05</Amplitude>
+         <Frequency>10</Frequency>
+      </Projectile>
+   </Object>
+   <Object type="0x5f02" id="Arena Risen Mummy">
+      <DisplayId>Risen Mummy</DisplayId>
+      <Class>Character</Class>
+      <Group>Hallowrena</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>69</Index>
+      </AnimatedTexture>
+      <HitSound>monster/mummies_hit</HitSound>
+      <DeathSound>monster/mummies_death</DeathSound>
+      <Size>125</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>20</Defense>
+      <Projectile id="0">
+         <ObjectId>Mummy Blast</ObjectId>
+         <Damage>55</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x5f03" id="Arena Risen Warrior">
+      <DisplayId>Risen Warrior</DisplayId>
+      <Class>Character</Class>
+      <Group>Hallowrena</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>70</Index>
+      </AnimatedTexture>
+      <HitSound>monster/undead_dwarves_hit</HitSound>
+      <DeathSound>monster/undead_dwarves_death</DeathSound>
+      <Size>125</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>20</Defense>
+      <Projectile id="0">
+         <ObjectId>Purple Bolt</ObjectId>
+         <Damage>90</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x5f04" id="Arena Risen Mage">
+      <DisplayId>Risen Mage</DisplayId>
+      <Class>Character</Class>
+      <Group>Hallowrena</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>71</Index>
+      </AnimatedTexture>
+      <HitSound>monster/undead_dwarves_hit</HitSound>
+      <DeathSound>monster/undead_dwarves_death</DeathSound>
+      <Size>125</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>20</Defense>
+      <Projectile id="0">
+         <ObjectId>Purple Magic</ObjectId>
+         <Damage>75</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>120</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x5f05" id="Arena Risen Archer">
+      <DisplayId>Risen Archer</DisplayId>
+      <Class>Character</Class>
+      <Group>Hallowrena</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>72</Index>
+      </AnimatedTexture>
+      <HitSound>monster/orcs_hit</HitSound>
+      <DeathSound>monster/orcs_death</DeathSound>
+      <Size>125</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>20</Defense>
+      <Projectile id="0">
+         <ObjectId>Green Arrow</ObjectId>
+         <Damage>75</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Thousand Shot Arrow</ObjectId>
+         <Damage>100</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x5f06" id="Arena Risen Brawler">
+      <DisplayId>Risen Brawler</DisplayId>
+      <Class>Character</Class>
+      <Group>Hallowrena</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>73</Index>
+      </AnimatedTexture>
+      <HitSound>monster/pirates_hit</HitSound>
+      <DeathSound>monster/pirates_death</DeathSound>
+      <Size>150</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>20</Defense>
+      <Projectile id="0">
+         <ObjectId>Yellow Grey Ball</ObjectId>
+         <Damage>110</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>900</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x5f07" id="Arena Ghost Bride">
+      <DisplayId>Ghost Bride</DisplayId>
+      <Class>Character</Class>
+      <Group>Hallowrena</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>81</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <HitSound>monster/medusa_hit</HitSound>
+      <DeathSound>monster/medusa_death</DeathSound>
+      <Size>150</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>30</Defense>
+      <ShadowSize>70</ShadowSize>
+      <Z>.2</Z>
+      <Flying/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Ghost Bride Attack 1</ObjectId>
+         <Damage>70</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>150</Size>
+         <ConditionEffect duration="2">Bleeding</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Ghost Big Blast</ObjectId>
+         <Damage>95</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x5f09" id="Arena Hay Stack">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x30e</Index>
+      </Texture>
+      <HitSound>monster/trees_hit</HitSound>
+      <DeathSound>monster/tress_death</DeathSound>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Static/>
+      <XpMult>0.0</XpMult>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x5f10" id="Arena Statue Right">
+      <DisplayId>Glory</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>92</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x98</Index>
+         </Texture>
+      </AltTexture>
+      <HitSound>monster/ogres_hit</HitSound>
+      <DeathSound>monster/ogres_death</DeathSound>
+      <Size>125</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>14000</MaxHitPoints>
+      <Defense>20</Defense>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>Assassin Slash</ObjectId>
+         <Damage>125</Damage>
+         <Speed>100</Speed>
+         <LifetimeMS>300</LifetimeMS>
+         <Size>125</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Ruby</ObjectId>
+         <Damage>75</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>125</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x5f1a" id="Arena Dead Tree">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x90</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x91</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x92</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x93</Index>
+         </Texture>
+      </RandomTexture>
+      <HitSound>monster/trees_hit</HitSound>
+      <DeathSound>monster/tress_death</DeathSound>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Static/>
+      <XpMult>0.0</XpMult>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0x5f1b" id="Arena Statue">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x94</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x95</Index>
+         </Texture>
+      </RandomTexture>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Static/>
+      <XpMult>0.0</XpMult>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x5f12" id="Arena Ghost 2">
+      <DisplayId>Haunting Spectre</DisplayId>
+      <Class>Character</Class>
+      <Group>Hallowrena</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>74</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x30f</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x310</Index>
+         </Texture>
+      </AltTexture>
+      <HitSound>monster/ghost_god_hit</HitSound>
+      <DeathSound>monster/ghost_god_death</DeathSound>
+      <Size>125</Size>
+      <MaxHitPoints>4000</MaxHitPoints>
+      <Defense>5</Defense>
+      <ShadowSize>70</ShadowSize>
+      <Z>.4</Z>
+      <Flying/>
+      <Projectile id="0">
+         <ObjectId>Blue Ghost Blast</ObjectId>
+         <Damage>70</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x5f1e" id="Troll 1">
+      <DisplayId>Forest Troll</DisplayId>
+      <Class>Character</Class>
+      <Group>Hallowrena</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>83</Index>
+      </AnimatedTexture>
+      <HitSound>monster/demons_hit</HitSound>
+      <DeathSound>monster/demons_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>110</ShadowSize>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Defense>50</Defense>
+      <Projectile id="0">
+         <ObjectId>Troll 1 Attack 1</ObjectId>
+         <Damage>55</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>120</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x5f1f" id="Troll 3">
+      <DisplayId>Troll Matriarch</DisplayId>
+      <Class>Character</Class>
+      <Group>Hallowrena</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>84</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dragons_hit</HitSound>
+      <DeathSound>monster/dragons_death</DeathSound>
+      <Size>175</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>20</Defense>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Troll 3 Attack 1</ObjectId>
+         <Damage>75</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>175</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Nature Wave</ObjectId>
+         <Damage>80</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>125</Size>
+         <ConditionEffect duration="2">Weak</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x5f20" id="Troll 2">
+      <DisplayId>Troll Pathfinder</DisplayId>
+      <Class>Character</Class>
+      <Group>Hallowrena</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>85</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dwarf_god_hit</HitSound>
+      <DeathSound>monster/dwarf_god_death</DeathSound>
+      <Size>125</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Projectile id="0">
+         <ObjectId>Troll 2 Attack 1</ObjectId>
+         <Damage>55</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>130</Size>
+         <ConditionEffect duration="2">Bleeding</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x5f27" id="Arena Skeleton">
+      <DisplayId>Reanimated Remains</DisplayId>
+      <Class>Character</Class>
+      <Group>Hallowrena</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>75</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>125</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Defense>20</Defense>
+      <XpMult>0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Skeleton Attack</ObjectId>
+         <Damage>70</Damage>
+         <Speed>85</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x5f28" id="Arena Possessed Girl">
+      <DisplayId>Possessed Child</DisplayId>
+      <Class>Character</Class>
+      <Group>Hallowrena</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>86</Index>
+      </AnimatedTexture>
+      <HitSound>monster/elves_hit</HitSound>
+      <DeathSound>monster/elves_death</DeathSound>
+      <Size>125</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>20</Defense>
+      <Projectile id="0">
+         <ObjectId>Purple Magic Blast</ObjectId>
+         <Damage>75</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>600</LifetimeMS>
+         <Size>100</Size>
+         <Amplitude>0.1</Amplitude>
+         <Frequency>10</Frequency>
+      </Projectile>
+   </Object>
+   <Object type="0x5f2b" id="Arena Grave Caretaker">
+      <DisplayId>Grave Caretaker</DisplayId>
+      <Class>Character</Class>
+      <Group>Hallowrena</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>87</Index>
+      </AnimatedTexture>
+      <HitSound>monster/archdemon_hit</HitSound>
+      <DeathSound>monster/archdemon_death</DeathSound>
+      <Size>150</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>18000</MaxHitPoints>
+      <Defense>15</Defense>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Angry Ghost</ObjectId>
+         <Damage>55</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Fire Spinner</ObjectId>
+         <Damage>55</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>800</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="2">Blind</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x5f2c" id="Arena Spider">
+      <DisplayId>Grave Spider</DisplayId>
+      <Class>Character</Class>
+      <Group>Hallowrena</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>76</Index>
+      </AnimatedTexture>
+      <HitSound>monster/spiders_hit</HitSound>
+      <DeathSound>monster/spiders_death</DeathSound>
+      <Size>90</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>20</Defense>
+      <Projectile id="0">
+         <ObjectId>Spider Bolt</ObjectId>
+         <Damage>100</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>800</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x5f2d" id="Arena Pumpkin King">
+      <DisplayId>Pumpkin King</DisplayId>
+      <Class>Character</Class>
+      <Group>Hallowrena</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>88</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>150</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>20</Defense>
+      <Projectile id="0">
+         <ObjectId>Orange Pumpkin Wave</ObjectId>
+         <Damage>55</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>150</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x5f2e" id="Arena Vampire">
+      <DisplayId>Vengeful Vampire</DisplayId>
+      <Class>Character</Class>
+      <Group>Hallowrena</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>77</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>150</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>20</Defense>
+      <Projectile id="0">
+         <ObjectId>Vampire Attack</ObjectId>
+         <Damage>55</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>100</Size>
+         <Amplitude>0.8</Amplitude>
+         <Frequency>2</Frequency>
+      </Projectile>
+   </Object>
+   <Object type="0x5f2f" id="Arena Blue Flame">
+      <DisplayId>Forgotten Soul</DisplayId>
+      <Class>Character</Class>
+      <Group>Hallowrena</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>78</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>75</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>20</Defense>
+      <Z>.4</Z>
+      <XpMult>0.0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Blue Magic</ObjectId>
+         <Damage>60</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>900</LifetimeMS>
+         <Size>80</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x5f30" id="Arena Small Ghost Bride">
+      <DisplayId>Ghost Bride</DisplayId>
+      <Class>Character</Class>
+      <Group>Hallowrena</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>81</Index>
+      </AnimatedTexture>
+      <HitSound>monster/medusa_hit</HitSound>
+      <DeathSound>monster/medusa_death</DeathSound>
+      <Size>75</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Z>.25</Z>
+      <Flying/>
+      <Projectile id="0">
+         <ObjectId>Blue Magic</ObjectId>
+         <Damage>55</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>900</LifetimeMS>
+         <Size>80</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x5f31" id="Arena Mushroom">
+      <DisplayId>Deadly Mushroom</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x311</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x312</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x313</Index>
+         </Texture>
+      </AltTexture>
+      <HitSound>monster/slimes_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <Size>175</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Defense>20</Defense>
+      <XpMult>0</XpMult>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>Blue Magic</ObjectId>
+         <Damage>90</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>900</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x5f32" id="Arena Horseman Anchor">
+      <DisplayId>Headless Horseman</DisplayId>
+      <Class>Character</Class>
+      <Group>Hallowrena</Group>
+      <NoMiniMap/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Defense>20</Defense>
+   </Object>
+   <Object type="0x5f33" id="Arena Statue Left">
+      <DisplayId>Fate</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>91</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x97</Index>
+         </Texture>
+      </AltTexture>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>125</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>14000</MaxHitPoints>
+      <Defense>30</Defense>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>Demon Fire Blast</ObjectId>
+         <Damage>90</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>900</LifetimeMS>
+         <Size>145</Size>
+      </Projectile>
+   </Object>
+</Objects>

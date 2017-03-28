@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<GroundTypes>
+   <Ground type="0x1670" id="Patty Grass 1">
+      <Texture>
+         <File>stPatricksObjects8x8</File>
+         <Index>0x23</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <RandomOffset/>
+   </Ground>
+   <Ground type="0x1671" id="Patty Grass 2">
+      <Texture>
+         <File>stPatricksObjects8x8</File>
+         <Index>0x22</Index>
+      </Texture>
+      <BlendPriority>9</BlendPriority>
+      <RandomOffset/>
+   </Ground>
+   <Ground type="0x1672" id="Patty Grass 3">
+      <Texture>
+         <File>stPatricksObjects8x8</File>
+         <Index>0x21</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+      <RandomOffset/>
+   </Ground>
+   <Ground type="0x1673" id="Patty Rainbow Road 1">
+      <Texture>
+         <File>stPatricksObjects8x8</File>
+         <Index>0x19</Index>
+      </Texture>
+      <Speed>1.2</Speed>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1674" id="Patty Rainbow Road 2">
+      <Texture>
+         <File>stPatricksObjects8x8</File>
+         <Index>0x1a</Index>
+      </Texture>
+      <Speed>1.2</Speed>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1675" id="Patty Rainbow Road 3">
+      <Texture>
+         <File>stPatricksObjects8x8</File>
+         <Index>0x1b</Index>
+      </Texture>
+      <Speed>1.2</Speed>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1676" id="Patty Rainbow Road 4">
+      <Texture>
+         <File>stPatricksObjects8x8</File>
+         <Index>0x1c</Index>
+      </Texture>
+      <Speed>1.2</Speed>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1677" id="Patty Rainbow Road Rotated 1">
+      <Texture>
+         <File>stPatricksObjects8x8</File>
+         <Index>0x1d</Index>
+      </Texture>
+      <Speed>1.2</Speed>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1678" id="Patty Rainbow Road Rotated 2">
+      <Texture>
+         <File>stPatricksObjects8x8</File>
+         <Index>0x1e</Index>
+      </Texture>
+      <Speed>1.2</Speed>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1679" id="Patty Rainbow Road Rotated 3">
+      <Texture>
+         <File>stPatricksObjects8x8</File>
+         <Index>0x1f</Index>
+      </Texture>
+      <Speed>1.2</Speed>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x167a" id="Patty Rainbow Road Rotated  4">
+      <Texture>
+         <File>stPatricksObjects8x8</File>
+         <Index>0x20</Index>
+      </Texture>
+      <Speed>1.2</Speed>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x167b" id="Patty Grass 3 No Walk">
+      <Texture>
+         <File>stPatricksObjects8x8</File>
+         <Index>0x21</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <NoWalk/>
+   </Ground>
+</GroundTypes>

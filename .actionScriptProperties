@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<actionScriptProperties analytics="false" mainApplicationPath="WebMain.as" projectUUID="4157678e-958c-453e-a7de-180633d055b9" version="10">
+  <compiler additionalCompilerArguments="-locale en_US&#13;&#10;-default-size 800 600&#13;&#10;-default-frame-rate 60&#13;&#10;-default-background-color #000000&#13;&#10;-swf-version 15&#13;&#10;-dump-config config.xml&#13;&#10;-optimize=true&#13;&#10;-use-direct-blit=true&#13;&#10;-keep-as3-metadata+=Inject&#13;&#10;-keep-as3-metadata+=Embed&#13;&#10;-keep-as3-metadata+=PostConstruct&#13;&#10;-keep-as3-metadata+=ArrayElementType" autoRSLOrdering="true" copyDependentFiles="false" fteInMXComponents="false" generateAccessible="false" htmlExpressInstall="false" htmlGenerate="false" htmlHistoryManagement="false" htmlPlayerVersionCheck="false" includeNetmonSwc="false" outputFolderPath="bin-debug" removeUnusedRSL="true" sourceFolderPath="src" strict="true" targetPlayerVersion="0.0.0" useApolloConfig="false" useDebugRSLSwfs="true" verifyDigests="true" warn="false">
+    <compilerSourcePath/>
+    <libraryPath defaultLinkType="1">
+      <libraryPathEntry kind="4" path=""/>
+      <libraryPathEntry kind="1" linkType="1" path="libs"/>
+    </libraryPath>
+    <sourceAttachmentPath/>
+  </compiler>
+  <applications>
+    <application path="WebMain.as"/>
+  </applications>
+  <modules/>
+  <buildCSSFiles/>
+  <flashCatalyst validateFlashCatalystCompatibility="false"/>
+</actionScriptProperties>

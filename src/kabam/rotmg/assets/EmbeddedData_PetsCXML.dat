@@ -1,0 +1,4729 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object id="Black Cat" type="0x7f05">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Feline</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Black Cat Skin</DefaultSkin>
+      <FirstAbility>Attack Far</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Grey Cat" type="0x7f06">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Feline</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Grey Cat Skin</DefaultSkin>
+      <FirstAbility>Attack Mid</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Orange Cat" type="0x7f07">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Feline</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Orange Cat Skin</DefaultSkin>
+      <FirstAbility>Attack Mid</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Tan Cat" type="0x7f08">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Feline</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Tan Cat Skin</DefaultSkin>
+      <FirstAbility>Attack Close</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Yellow Cat" type="0x7f09">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Feline</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Yellow Cat Skin</DefaultSkin>
+      <FirstAbility>Heal</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="White Cat" type="0x7f0a">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Feline</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>White Cat Skin</DefaultSkin>
+      <FirstAbility>Magic Heal</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Brown Pup" type="0x7f0b">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Canine</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Brown Pup Skin</DefaultSkin>
+      <FirstAbility>Heal</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Grey Pup" type="0x7f0c">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Canine</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Grey Pup Skin</DefaultSkin>
+      <FirstAbility>Attack Close</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Golden Pup" type="0x7f0d">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Canine</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Golden Pup Skin</DefaultSkin>
+      <FirstAbility>Electric</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Grey Wolf" type="0x7f0e">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Canine</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Grey Wolf Skin</DefaultSkin>
+      <FirstAbility>Attack Mid</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Brown Fox" type="0x7f0f">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Canine</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Brown Fox Skin</DefaultSkin>
+      <FirstAbility>Attack Far</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Sheepdog" type="0x7f10">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Canine</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Sheepdog Skin</DefaultSkin>
+      <FirstAbility>Decoy</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Grey Fox" type="0x7f11">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Canine</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Grey Fox Skin</DefaultSkin>
+      <FirstAbility>Attack Close</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Blue Parrot" type="0x7f12">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Avian</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Blue Parrot Skin</DefaultSkin>
+      <FirstAbility>Magic Heal</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Oriole" type="0x7f13">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Avian</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Oriole Skin</DefaultSkin>
+      <FirstAbility>Attack Far</FirstAbility>
+      <WhileMoving>
+         <Z>0.35</Z>
+         <Flying/>
+      </WhileMoving>
+      <Size>60</Size>
+   </Object>
+   <Object id="Goldfinch" type="0x7f14">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Avian</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Goldfinch Skin</DefaultSkin>
+      <FirstAbility>Decoy</FirstAbility>
+      <WhileMoving>
+         <Z>0.35</Z>
+         <Flying/>
+      </WhileMoving>
+      <Size>60</Size>
+   </Object>
+   <Object id="Bluebird" type="0x7f15">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Avian</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Bluebird Skin</DefaultSkin>
+      <FirstAbility>Heal</FirstAbility>
+      <WhileMoving>
+         <Z>0.35</Z>
+         <Flying/>
+      </WhileMoving>
+      <Size>60</Size>
+   </Object>
+   <Object id="Cardinal" type="0x7f16">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Avian</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Cardinal Skin</DefaultSkin>
+      <FirstAbility>Attack Close</FirstAbility>
+      <WhileMoving>
+         <Z>0.35</Z>
+         <Flying/>
+      </WhileMoving>
+      <Size>60</Size>
+   </Object>
+   <Object id="Elephant" type="0x7f17">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Exotic</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Elephant Skin</DefaultSkin>
+      <FirstAbility>Rising Fury</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Koala" type="0x7f18">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Exotic</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Koala Skin</DefaultSkin>
+      <FirstAbility>Magic Heal</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Monkey" type="0x7f19">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Exotic</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Monkey Skin</DefaultSkin>
+      <FirstAbility>Electric</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Chick" type="0x7f1a">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Farm</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Chick Skin</DefaultSkin>
+      <FirstAbility>Heal</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Pig" type="0x7f1b">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Farm</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Pig Skin</DefaultSkin>
+      <FirstAbility>Attack Far</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Duck" type="0x7f1c">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Farm</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Duck Skin</DefaultSkin>
+      <FirstAbility>Magic Heal</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Squirrel" type="0x7f89">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Woodland</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Squirrel Skin</DefaultSkin>
+      <FirstAbility>Attack Mid</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Hamster" type="0x7f1d">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Woodland</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Hamster Skin</DefaultSkin>
+      <FirstAbility>Electric</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Raccoon" type="0x7f1e">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Woodland</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Raccoon Skin</DefaultSkin>
+      <FirstAbility>Magic Heal</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Dino" type="0x7f1f">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Reptile</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Dino Skin</DefaultSkin>
+      <FirstAbility>Rising Fury</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Tomb Snake" type="0x7f20">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Reptile</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Tomb Snake Skin</DefaultSkin>
+      <FirstAbility>Attack Mid</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Chameleon" type="0x7f21">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Reptile</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Chameleon Skin</DefaultSkin>
+      <FirstAbility>Heal</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Dragonfly" type="0x7f8a">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Insect</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Dragonfly Skin</DefaultSkin>
+      <FirstAbility>Attack Far</FirstAbility>
+      <WhileMoving>
+         <Z>0.25</Z>
+         <Flying/>
+      </WhileMoving>
+      <Size>60</Size>
+   </Object>
+   <Object id="Black Ant" type="0x7f23">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Insect</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Black Ant Skin</DefaultSkin>
+      <FirstAbility>Rising Fury</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Blue Ant" type="0x7f24">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Insect</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Blue Ant Skin</DefaultSkin>
+      <FirstAbility>Decoy</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Green Ant" type="0x7f25">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Insect</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Green Ant Skin</DefaultSkin>
+      <FirstAbility>Attack Close</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Red Ant" type="0x7f26">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Insect</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Red Ant Skin</DefaultSkin>
+      <FirstAbility>Attack Close</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Purple Ant" type="0x7f27">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Insect</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Purple Ant Skin</DefaultSkin>
+      <FirstAbility>Attack Close</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Penguin" type="0x7f28">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Penguin</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Penguin Skin</DefaultSkin>
+      <FirstAbility>Attack Far</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Green Penguin" type="0x7f29">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Penguin</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Green Penguin Skin</DefaultSkin>
+      <FirstAbility>Attack Far</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Grape Penguin" type="0x7f2a">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Penguin</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Grape Penguin Skin</DefaultSkin>
+      <FirstAbility>Magic Heal</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Grass Penguin" type="0x7f2b">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Penguin</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Grass Penguin Skin</DefaultSkin>
+      <FirstAbility>Heal</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Blue Snail" type="0x7f2c">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Aquatic</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Blue Snail Skin</DefaultSkin>
+      <FirstAbility>Attack Mid</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Green Frog" type="0x7f2d">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Aquatic</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Green Frog Skin</DefaultSkin>
+      <FirstAbility>Attack Far</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Purple Snail" type="0x7f2e">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Aquatic</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Purple Snail Skin</DefaultSkin>
+      <FirstAbility>Attack Mid</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Purple Frog" type="0x7f2f">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Aquatic</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Purple Frog Skin</DefaultSkin>
+      <FirstAbility>Decoy</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Sea Slurp" type="0x7f30">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Aquatic</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Sea Slurp Skin</DefaultSkin>
+      <FirstAbility>Electric</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Turtle" type="0x7f31">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Aquatic</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Turtle Skin</DefaultSkin>
+      <FirstAbility>Heal</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Crab" type="0x7f32">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Aquatic</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Crab Skin</DefaultSkin>
+      <FirstAbility>Attack Close</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Bat" type="0x7f34">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Spooky</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Bat Skin</DefaultSkin>
+      <FirstAbility>Attack Close</FirstAbility>
+      <WhileMoving>
+         <Z>0.3</Z>
+         <Flying/>
+      </WhileMoving>
+      <Size>60</Size>
+   </Object>
+   <Object id="Lil' Ghost" type="0x7f35">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Spooky</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Lil' Ghost Skin</DefaultSkin>
+      <FirstAbility>Rising Fury</FirstAbility>
+      <Z>0.15</Z>
+      <Flying/>
+      <Size>60</Size>
+   </Object>
+   <Object id="Spirit" type="0x7f36">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Spooky</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Spirit Skin</DefaultSkin>
+      <FirstAbility>Attack Mid</FirstAbility>
+      <ShadowSize>35</ShadowSize>
+      <WhileMoving>
+         <Z>0.3</Z>
+         <Flying/>
+      </WhileMoving>
+      <Size>60</Size>
+   </Object>
+   <Object id="Baby" type="0x7f37">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Humanoid</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Baby Skin</DefaultSkin>
+      <FirstAbility>Heal</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Dreidel" type="0x7f39">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Dreidel Skin</DefaultSkin>
+      <FirstAbility>Decoy</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Sprite Star" type="0x7f3a">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Sprite Star Skin</DefaultSkin>
+      <FirstAbility>Electric</FirstAbility>
+      <WhileMoving>
+         <Z>0.22</Z>
+         <Flying/>
+      </WhileMoving>
+      <Size>60</Size>
+   </Object>
+   <Object id="Blue Thing" type="0x7f3b">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Blue Thing Skin</DefaultSkin>
+      <FirstAbility>Magic Heal</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Robobuddy" type="0x7f3c">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Automaton</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Robobuddy Skin</DefaultSkin>
+      <FirstAbility>Electric</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Helmbot" type="0x7f3d">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Automaton</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Helmbot Skin</DefaultSkin>
+      <FirstAbility>Electric</FirstAbility>
+      <Size>60</Size>
+   </Object>
+   <Object id="Lion" type="0x7f3e">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Feline</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Lion Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="White Lion" type="0x7f3f">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Feline</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>White Lion Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Ninja Cat" type="0x7f40">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Feline</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Ninja Cat Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Golden Sheepdog" type="0x7f41">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Canine</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Golden Sheepdog Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Black Wolf" type="0x7f42">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Canine</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Black Wolf Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Gold Bulldog" type="0x7f43">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Canine</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Gold Bulldog Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Eagle" type="0x7f44">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Avian</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Eagle Skin</DefaultSkin>
+      <WhileMoving>
+         <Z>0.35</Z>
+         <Flying/>
+      </WhileMoving>
+      <Size>80</Size>
+   </Object>
+   <Object id="Raven" type="0x7f45">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Avian</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Raven Skin</DefaultSkin>
+      <WhileMoving>
+         <Z>0.35</Z>
+         <Flying/>
+      </WhileMoving>
+      <Size>80</Size>
+   </Object>
+   <Object id="USA Eagle" type="0x7f46">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Avian</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>USA Eagle Skin</DefaultSkin>
+      <WhileMoving>
+         <Z>0.35</Z>
+         <Flying/>
+      </WhileMoving>
+      <Size>80</Size>
+   </Object>
+   <Object id="Pigeon" type="0x7f47">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Avian</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Pigeon Skin</DefaultSkin>
+      <WhileMoving>
+         <Z>0.35</Z>
+         <Flying/>
+      </WhileMoving>
+      <Size>80</Size>
+   </Object>
+   <Object id="Panda" type="0x7f48">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Exotic</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Panda Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Toucan" type="0x7f49">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Exotic</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Toucan Skin</DefaultSkin>
+      <WhileMoving>
+         <Z>0.35</Z>
+         <Flying/>
+      </WhileMoving>
+      <Size>80</Size>
+   </Object>
+   <Object id="Orangutan" type="0x7f4a">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Exotic</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Orangutan Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Mallard" type="0x7f4b">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Farm</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Mallard Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Turkey" type="0x7f4c">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Farm</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Turkey Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Skunk" type="0x7f4d">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Woodland</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Skunk Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Snowy Owl" type="0x7f4e">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Woodland</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Snowy Owl Skin</DefaultSkin>
+      <WhileMoving>
+         <Z>0.25</Z>
+         <Flying/>
+      </WhileMoving>
+      <Size>80</Size>
+   </Object>
+   <Object id="Reindeer" type="0x7f4f">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Woodland</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Reindeer Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Baby Dragon" type="0x7f50">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Reptile</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Baby Dragon Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Bee" type="0x7f52">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Insect</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Bee Skin</DefaultSkin>
+      <WhileMoving>
+         <Z>0.25</Z>
+         <Flying/>
+      </WhileMoving>
+      <Size>80</Size>
+   </Object>
+   <Object id="Praying Mantis" type="0x7f53">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Insect</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Praying Mantis Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Karate Red" type="0x7f54">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Penguin</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Karate Red Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Karate Blue" type="0x7f55">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Penguin</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Karate Blue Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Karate Yellow" type="0x7f56">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Penguin</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Karate Yellow Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Karate Purple" type="0x7f57">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Penguin</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Karate Purple Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Demon Frog" type="0x7f58">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Aquatic</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Demon Frog Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Peppermint Snail" type="0x7f59">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Aquatic</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Peppermint Snail Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Gargoyle" type="0x7f5a">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Spooky</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Gargoyle Skin</DefaultSkin>
+      <WhileMoving>
+         <Z>0.25</Z>
+         <Flying/>
+      </WhileMoving>
+      <Size>80</Size>
+   </Object>
+   <Object id="Lil' Cyclops" type="0x7f5b">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Spooky</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Lil' Cyclops Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Werewolf Cub" type="0x7f5c">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Spooky</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Werewolf Cub Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Monster Eye" type="0x7f5d">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Spooky</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Monster Eye Skin</DefaultSkin>
+      <Z>0.26</Z>
+      <Flying/>
+      <ShadowSize>60</ShadowSize>
+      <Size>80</Size>
+   </Object>
+   <Object id="Skull" type="0x7f5e">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Spooky</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Skull Skin</DefaultSkin>
+      <WhileMoving>
+         <Z>0.22</Z>
+         <Flying/>
+         <ShadowSize>80</ShadowSize>
+      </WhileMoving>
+      <Size>80</Size>
+   </Object>
+   <Object id="Leprechaun" type="0x7f5f">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Humanoid</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Leprechaun Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Elf" type="0x7f60">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Humanoid</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Elf Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Mermaid" type="0x7f61">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Humanoid</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Mermaid Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Jelly" type="0x7f62">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Jelly Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Gummy Bear" type="0x7f63">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Gummy Bear Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Snowman" type="0x7f64">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Snowman Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Jalapeno" type="0x7f65">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Jalapeno Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Redbot" type="0x7f66">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Automaton</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Redbot Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Funkatron" type="0x7f67">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Automaton</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Funkatron Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Tiger" type="0x7f68">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>Feline</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Tiger Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Pink Lion" type="0x7f69">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>Feline</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Pink Lion Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Midnight Wolf" type="0x7f6a">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>Canine</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Midnight Wolf Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Golden Hyena" type="0x7f6b">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>Canine</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Golden Hyena Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Phoenix" type="0x7f6c">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>Avian</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Phoenix Skin</DefaultSkin>
+      <WhileMoving>
+         <Z>0.3</Z>
+         <Flying/>
+         <ShadowSize>80</ShadowSize>
+      </WhileMoving>
+      <Size>80</Size>
+   </Object>
+   <Object id="Griffin" type="0x7f6d">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>Avian</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Griffin Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="War Elephant" type="0x7f6e">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>Exotic</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>War Elephant Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="King Gorilla" type="0x7f6f">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>Exotic</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>King Gorilla Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Enraged Yack" type="0x7f70">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>Farm</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Enraged Yack Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Night Mare" type="0x7f71">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>Farm</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Night Mare Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Silver Doe" type="0x7f72">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>Woodland</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Silver Doe Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Solar Owl" type="0x7f73">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>Woodland</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Solar Owl Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Tandem Cobra" type="0x7f74">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>Reptile</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Tandem Cobra Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Poison Drake" type="0x7f75">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>Reptile</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Poison Drake Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Beetleman" type="0x7f76">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>Insect</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Beetleman Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Ultrawasp" type="0x7f77">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>Insect</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Ultrawasp Skin</DefaultSkin>
+      <Size>80</Size>
+      <WhileMoving>
+         <Z>0.2</Z>
+         <Flying/>
+      </WhileMoving>
+      <ShadowSize>65</ShadowSize>
+   </Object>
+   <Object id="Battle Penguin" type="0x7f78">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>Penguin</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Battle Penguin Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Tank Penguin" type="0x7f79">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>Penguin</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Tank Penguin Skin</DefaultSkin>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+   </Object>
+   <Object id="Golden Crab" type="0x7f7a">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>Aquatic</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Golden Crab Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Great Shark" type="0x7f7b">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>Aquatic</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Great Shark Skin</DefaultSkin>
+      <ShadowSize>70</ShadowSize>
+      <Size>80</Size>
+      <Z>0.1</Z>
+   </Object>
+   <Object id="Blue Landfish" type="0x7f7c">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>Aquatic</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Blue Landfish Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Glowing Skull" type="0x7f7d">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>Spooky</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Glowing Skull Skin</DefaultSkin>
+      <WhileMoving>
+         <Z>0.25</Z>
+         <Flying/>
+         <ShadowSize>80</ShadowSize>
+      </WhileMoving>
+      <Size>80</Size>
+   </Object>
+   <Object id="Monkey Head" type="0x7f7e">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>Spooky</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Monkey Head Skin</DefaultSkin>
+      <Z>0.3</Z>
+      <Flying/>
+      <Size>80</Size>
+   </Object>
+   <Object id="Reaper" type="0x7f7f">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>Spooky</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Reaper Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Jaco" type="0x6109">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x15a</Index>
+      </Texture>
+      <Family>Spooky</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Jaco Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Giant Vampire Bat" type="0x7ffb">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x15a</Index>
+      </Texture>
+      <Family>Spooky</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Giant Vampire Bat Skin</DefaultSkin>
+      <WhileMoving>
+         <Z>0.25</Z>
+         <Flying/>
+      </WhileMoving>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x7f8b" id="Pumpkin Head">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Spooky</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Pumpkin Head Skin</DefaultSkin>
+      <ShadowSize>80</ShadowSize>
+      <Size>60</Size>
+      <Flying/>
+      <Z>0.56</Z>
+      <WhileMoving>
+         <Flying/>
+         <Z>0.62</Z>
+      </WhileMoving>
+   </Object>
+   <Object id="Battle God" type="0x7f80">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>Humanoid</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Battle God Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Centaur" type="0x7f81">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>Humanoid</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Centaur Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Forest Fairy" type="0x7f82">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>Humanoid</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Forest Fairy Skin</DefaultSkin>
+      <WhileMoving>
+         <Z>0.3</Z>
+         <Flying/>
+      </WhileMoving>
+      <ShadowSize>60</ShadowSize>
+      <Size>80</Size>
+   </Object>
+   <Object id="Marid" type="0x6100">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>Humanoid</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Marid Skin</DefaultSkin>
+      <WhileMoving>
+         <Z>0.25</Z>
+         <Flying/>
+      </WhileMoving>
+      <ShadowSize>60</ShadowSize>
+      <Size>80</Size>
+   </Object>
+   <Object id="Lil' Oryx" type="0x7f83">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Lil' Oryx Skin</DefaultSkin>
+      <Size>60</Size>
+   </Object>
+   <Object id="Shroom" type="0x7f84">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Shroom Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Great Jelly" type="0x7f85">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Great Jelly Skin</DefaultSkin>
+      <Size>80</Size>
+      <ShadowSize>90</ShadowSize>
+   </Object>
+   <Object id="Sir Bagston" type="0x6103">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Bagston Skin</DefaultSkin>
+      <ShadowSize>40</ShadowSize>
+      <Size>80</Size>
+   </Object>
+   <Object id="Goldy" type="0x6106">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Goldy Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Spiderbot" type="0x7f86">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>Automaton</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Spiderbot Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Cylindron" type="0x7f87">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>Automaton</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Cylindron Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object id="Gutsbot" type="0x7f88">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Family>Automaton</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Gutsbot Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x8000" id="Black Cat Skin">
+      <PetSkin/>
+      <DisplayId>Black Cat</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>0x00</Index>
+      </AnimatedTexture>
+      <Group>Hexable</Group>
+   </Object>
+   <Object type="0x8001" id="Grey Cat Skin">
+      <PetSkin/>
+      <DisplayId>Grey Cat</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>0x01</Index>
+      </AnimatedTexture>
+      <Group>Hexable</Group>
+   </Object>
+   <Object type="0x8002" id="Orange Cat Skin">
+      <PetSkin/>
+      <DisplayId>Orange Cat</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>0x02</Index>
+      </AnimatedTexture>
+      <Group>Hexable</Group>
+   </Object>
+   <Object type="0x8003" id="Tan Cat Skin">
+      <PetSkin/>
+      <DisplayId>Tan Cat</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>90</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8004" id="Yellow Cat Skin">
+      <PetSkin/>
+      <DisplayId>Yellow Cat</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>92</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8005" id="White Cat Skin">
+      <PetSkin/>
+      <DisplayId>White Cat</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>91</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8006" id="Brown Pup Skin">
+      <PetSkin/>
+      <DisplayId>Brown Pup</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>0x05</Index>
+      </AnimatedTexture>
+      <Group>Hexable</Group>
+   </Object>
+   <Object type="0x8007" id="Grey Pup Skin">
+      <PetSkin/>
+      <DisplayId>Grey Pup</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>93</Index>
+      </AnimatedTexture>
+      <Group>Hexable</Group>
+   </Object>
+   <Object type="0x8008" id="Golden Pup Skin">
+      <PetSkin/>
+      <DisplayId>Golden Pup</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>94</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8009" id="Grey Wolf Skin">
+      <PetSkin/>
+      <DisplayId>Grey Wolf</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>0x04</Index>
+      </AnimatedTexture>
+      <Group>Hexable</Group>
+   </Object>
+   <Object type="0x800a" id="Brown Fox Skin">
+      <PetSkin/>
+      <DisplayId>Brown Fox</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>0x06</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x800b" id="Sheepdog Skin">
+      <PetSkin/>
+      <DisplayId>Sheepdog</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>0x0a</Index>
+      </AnimatedTexture>
+      <Group>Hexable</Group>
+   </Object>
+   <Object type="0x800c" id="Grey Fox Skin">
+      <PetSkin/>
+      <DisplayId>Grey Fox</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>95</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x800d" id="Blue Parrot Skin">
+      <PetSkin/>
+      <DisplayId>Blue Parrot</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>0x0c</Index>
+      </AnimatedTexture>
+      <Group>Hexable</Group>
+   </Object>
+   <Object type="0x800e" id="Oriole Skin">
+      <PetSkin/>
+      <DisplayId>Oriole</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>59</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x800f" id="Goldfinch Skin">
+      <PetSkin/>
+      <DisplayId>Goldfinch</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>60</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8010" id="Bluebird Skin">
+      <PetSkin/>
+      <DisplayId>Bluebird</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>61</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8011" id="Cardinal Skin">
+      <PetSkin/>
+      <DisplayId>Cardinal</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>62</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8012" id="Elephant Skin">
+      <PetSkin/>
+      <DisplayId>Elephant</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>35</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8013" id="Koala Skin">
+      <PetSkin/>
+      <DisplayId>Koala</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>70</Index>
+      </AnimatedTexture>
+      <Group>Hexable</Group>
+   </Object>
+   <Object type="0x8014" id="Monkey Skin">
+      <PetSkin/>
+      <DisplayId>Monkey</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>74</Index>
+      </AnimatedTexture>
+      <Group>Hexable</Group>
+   </Object>
+   <Object type="0x8015" id="Chick Skin">
+      <PetSkin/>
+      <DisplayId>Chick</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>0x0d</Index>
+      </AnimatedTexture>
+      <Group>Hexable</Group>
+   </Object>
+   <Object type="0x8016" id="Pig Skin">
+      <PetSkin/>
+      <DisplayId>Pig</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>0x0e</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8017" id="Duck Skin">
+      <PetSkin/>
+      <DisplayId>Duck</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>22</Index>
+      </AnimatedTexture>
+      <Group>Hexable</Group>
+   </Object>
+   <Object type="0x8018" id="Squirrel Skin">
+      <PetSkin/>
+      <DisplayId>Squirrel</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>18</Index>
+      </AnimatedTexture>
+      <Group>Hexable</Group>
+   </Object>
+   <Object type="0x8019" id="Hamster Skin">
+      <PetSkin/>
+      <DisplayId>Hamster</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>33</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x801a" id="Raccoon Skin">
+      <PetSkin/>
+      <DisplayId>Raccoon</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>75</Index>
+      </AnimatedTexture>
+      <Group>Hexable</Group>
+   </Object>
+   <Object type="0x801b" id="Dino Skin">
+      <PetSkin/>
+      <DisplayId>Dino</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>34</Index>
+      </AnimatedTexture>
+      <Group>Hexable</Group>
+   </Object>
+   <Object type="0x801c" id="Tomb Snake Skin">
+      <PetSkin/>
+      <DisplayId>Tomb Snake</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>64</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x801d" id="Chameleon Skin">
+      <PetSkin/>
+      <DisplayId>Chameleon</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>76</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x801e" id="Dragonfly Skin">
+      <PetSkin/>
+      <DisplayId>Dragonfly</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>39</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x801f" id="Black Ant Skin">
+      <PetSkin/>
+      <DisplayId>Black Ant</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>53</Index>
+      </AnimatedTexture>
+      <Group>Hexable</Group>
+   </Object>
+   <Object type="0x8020" id="Blue Ant Skin">
+      <PetSkin/>
+      <DisplayId>Blue Ant</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>54</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8021" id="Green Ant Skin">
+      <PetSkin/>
+      <DisplayId>Green Ant</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>55</Index>
+      </AnimatedTexture>
+      <Group>Hexable</Group>
+   </Object>
+   <Object type="0x8022" id="Red Ant Skin">
+      <PetSkin/>
+      <DisplayId>Red Ant</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>56</Index>
+      </AnimatedTexture>
+      <Group>Hexable</Group>
+   </Object>
+   <Object type="0x8023" id="Purple Ant Skin">
+      <PetSkin/>
+      <DisplayId>Purple Ant</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>57</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8024" id="Penguin Skin">
+      <PetSkin/>
+      <DisplayId>Penguin</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>0x09</Index>
+      </AnimatedTexture>
+      <Group>Hexable</Group>
+   </Object>
+   <Object type="0x8025" id="Green Penguin Skin">
+      <PetSkin/>
+      <DisplayId>Green Penguin</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>96</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8026" id="Grape Penguin Skin">
+      <PetSkin/>
+      <DisplayId>Grape Penguin</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>29</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8027" id="Grass Penguin Skin">
+      <PetSkin/>
+      <DisplayId>Grass Penguin</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>30</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8028" id="Blue Snail Skin">
+      <PetSkin/>
+      <DisplayId>Blue Snail</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>0x03</Index>
+      </AnimatedTexture>
+      <Group>Hexable</Group>
+   </Object>
+   <Object type="0x8029" id="Green Frog Skin">
+      <PetSkin/>
+      <DisplayId>Green Frog</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>0x07</Index>
+      </AnimatedTexture>
+      <Group>Hexable</Group>
+   </Object>
+   <Object type="0x802a" id="Purple Snail Skin">
+      <PetSkin/>
+      <DisplayId>Purple Snail</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>97</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x802b" id="Purple Frog Skin">
+      <PetSkin/>
+      <DisplayId>Purple Frog</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>98</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x802c" id="Sea Slurp Skin">
+      <PetSkin/>
+      <DisplayId>Sea Slurp</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>0x0f</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x802d" id="Turtle Skin">
+      <PetSkin/>
+      <DisplayId>Turtle</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>24</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x802e" id="Crab Skin">
+      <PetSkin/>
+      <DisplayId>Crab</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>32</Index>
+      </AnimatedTexture>
+      <Group>Hexable</Group>
+   </Object>
+   <Object type="0x8030" id="Bat Skin">
+      <PetSkin/>
+      <DisplayId>Bat</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>103</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8031" id="Lil' Ghost Skin">
+      <PetSkin/>
+      <DisplayId>Lil' Ghost</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>16</Index>
+      </AnimatedTexture>
+      <Group>Hexable</Group>
+   </Object>
+   <Object type="0x8032" id="Spirit Skin">
+      <PetSkin/>
+      <DisplayId>Spirit</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>101</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8033" id="Baby Skin">
+      <PetSkin/>
+      <DisplayId>Baby</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>45</Index>
+      </AnimatedTexture>
+      <Group>Hexable</Group>
+   </Object>
+   <Object type="0x8035" id="Dreidel Skin">
+      <PetSkin/>
+      <DisplayId>Dreidel</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>67</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8036" id="Sprite Star Skin">
+      <PetSkin/>
+      <DisplayId>Sprite Star</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>102</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8037" id="Blue Thing Skin">
+      <PetSkin/>
+      <DisplayId>Blue Thing</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>77</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8038" id="Robobuddy Skin">
+      <PetSkin/>
+      <DisplayId>Robobuddy</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>51</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8039" id="Helmbot Skin">
+      <PetSkin/>
+      <DisplayId>Helmbot</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>78</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x803a" id="Lion Skin">
+      <PetSkin/>
+      <DisplayId>Lion</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>0x08</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x803b" id="White Lion Skin">
+      <PetSkin/>
+      <DisplayId>White Lion</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>88</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x803c" id="Ninja Cat Skin">
+      <PetSkin/>
+      <DisplayId>Ninja Cat</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>65</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x803d" id="Golden Sheepdog Skin">
+      <PetSkin/>
+      <DisplayId>G. Sheepdog</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>99</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x803e" id="Black Wolf Skin">
+      <PetSkin/>
+      <DisplayId>Black Wolf</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>100</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x803f" id="Gold Bulldog Skin">
+      <PetSkin/>
+      <DisplayId>Gold Bulldog</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>79</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8040" id="Eagle Skin">
+      <PetSkin/>
+      <DisplayId>Eagle</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>23</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8041" id="Raven Skin">
+      <PetSkin/>
+      <DisplayId>Raven</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>28</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8042" id="USA Eagle Skin">
+      <PetSkin/>
+      <DisplayId>USA Eagle</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>71</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8043" id="Pigeon Skin">
+      <PetSkin/>
+      <DisplayId>Pigeon</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>80</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8044" id="Panda Skin">
+      <PetSkin/>
+      <DisplayId>Panda</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>0x0b</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8045" id="Toucan Skin">
+      <PetSkin/>
+      <DisplayId>Toucan</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>19</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8046" id="Orangutan Skin">
+      <PetSkin/>
+      <DisplayId>Orangutan</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>81</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8047" id="Mallard Skin">
+      <PetSkin/>
+      <DisplayId>Mallard</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>21</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8048" id="Turkey Skin">
+      <PetSkin/>
+      <DisplayId>Turkey</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>44</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8049" id="Skunk Skin">
+      <PetSkin/>
+      <DisplayId>Skunk</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>20</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x804a" id="Snowy Owl Skin">
+      <PetSkin/>
+      <DisplayId>Snowy Owl</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>43</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x804b" id="Reindeer Skin">
+      <PetSkin/>
+      <DisplayId>Reindeer</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>68</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x804c" id="Baby Dragon Skin">
+      <PetSkin/>
+      <DisplayId>Baby Dragon</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>46</Index>
+      </AnimatedTexture>
+      <Group>Hexable</Group>
+   </Object>
+   <Object type="0x804e" id="Bee Skin">
+      <PetSkin/>
+      <DisplayId>Bee</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>26</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x804f" id="Praying Mantis Skin">
+      <PetSkin/>
+      <DisplayId>Mantis</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>66</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8050" id="Karate Red Skin">
+      <PetSkin/>
+      <DisplayId>Karate R.</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>47</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8051" id="Karate Blue Skin">
+      <PetSkin/>
+      <DisplayId>Karate B.</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>48</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8052" id="Karate Yellow Skin">
+      <PetSkin/>
+      <DisplayId>Karate Y.</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>49</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8053" id="Karate Purple Skin">
+      <PetSkin/>
+      <DisplayId>Karate P.</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>50</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8054" id="Demon Frog Skin">
+      <PetSkin/>
+      <DisplayId>Demon Frog</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>36</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8055" id="Peppermint Snail Skin">
+      <PetSkin/>
+      <DisplayId>Candy Snail</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>58</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8056" id="Gargoyle Skin">
+      <PetSkin/>
+      <DisplayId>Gargoyle</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>37</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8057" id="Lil' Cyclops Skin">
+      <PetSkin/>
+      <DisplayId>Lil' Cyclops</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>41</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8058" id="Werewolf Cub Skin">
+      <PetSkin/>
+      <DisplayId>Werewolf</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>63</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8059" id="Monster Eye Skin">
+      <PetSkin/>
+      <DisplayId>Monster Eye</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>82</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x805a" id="Skull Skin">
+      <PetSkin/>
+      <DisplayId>Skull</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>83</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x805b" id="Leprechaun Skin">
+      <PetSkin/>
+      <DisplayId>Leprechaun</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>17</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x805c" id="Elf Skin">
+      <PetSkin/>
+      <DisplayId>Elf</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>31</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x805d" id="Mermaid Skin">
+      <PetSkin/>
+      <DisplayId>Mermaid</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>84</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x805e" id="Jelly Skin">
+      <PetSkin/>
+      <DisplayId>Jelly</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>25</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x805f" id="Gummy Bear Skin">
+      <PetSkin/>
+      <DisplayId>Gummy Bear</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>38</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8060" id="Snowman Skin">
+      <PetSkin/>
+      <DisplayId>Snowman</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>52</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8061" id="Jalapeno Skin">
+      <PetSkin/>
+      <DisplayId>Jalapeno</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>85</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8062" id="Redbot Skin">
+      <PetSkin/>
+      <DisplayId>Redbot</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>86</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8063" id="Funkatron Skin">
+      <PetSkin/>
+      <DisplayId>Funkatron</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>87</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8064" id="Tiger Skin">
+      <PetSkin/>
+      <DisplayId>Great Tiger</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>00</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8065" id="Pink Lion Skin">
+      <PetSkin/>
+      <DisplayId>Pink Lion</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>01</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8066" id="Midnight Wolf Skin">
+      <PetSkin/>
+      <DisplayId>Shadow Wolf</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>02</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8067" id="Golden Hyena Skin">
+      <PetSkin/>
+      <DisplayId>Golden Hyena</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>03</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8068" id="Phoenix Skin">
+      <PetSkin/>
+      <DisplayId>Phoenix</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>04</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8069" id="Griffin Skin">
+      <PetSkin/>
+      <DisplayId>Griffin</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>05</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x806a" id="War Elephant Skin">
+      <PetSkin/>
+      <DisplayId>War Elephant</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>06</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x806b" id="King Gorilla Skin">
+      <PetSkin/>
+      <DisplayId>King Gorilla</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>07</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x806c" id="Enraged Yack Skin">
+      <PetSkin/>
+      <DisplayId>Enraged Yack</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>08</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x806d" id="Night Mare Skin">
+      <PetSkin/>
+      <DisplayId>Night Mare</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>09</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x806e" id="Silver Doe Skin">
+      <PetSkin/>
+      <DisplayId>Silver Doe</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>10</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x806f" id="Solar Owl Skin">
+      <PetSkin/>
+      <DisplayId>Solar Owl</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>11</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8070" id="Tandem Cobra Skin">
+      <PetSkin/>
+      <DisplayId>Tandem Cobra</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>12</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8071" id="Poison Drake Skin">
+      <PetSkin/>
+      <DisplayId>Poison Drake</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>13</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8072" id="Beetleman Skin">
+      <PetSkin/>
+      <DisplayId>Beetleman</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>14</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8073" id="Ultrawasp Skin">
+      <PetSkin/>
+      <DisplayId>Ultrawasp</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>15</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8074" id="Battle Penguin Skin">
+      <PetSkin/>
+      <DisplayId>Battle P.</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>16</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8075" id="Tank Penguin Skin">
+      <PetSkin/>
+      <DisplayId>Tank Penguin</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>17</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8076" id="Golden Crab Skin">
+      <PetSkin/>
+      <DisplayId>Golden Crab</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>18</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8077" id="Great Shark Skin">
+      <PetSkin/>
+      <DisplayId>Great Shark</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>19</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8078" id="Blue Landfish Skin">
+      <PetSkin/>
+      <DisplayId>Blue Landfish</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>20</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8079" id="Glowing Skull Skin">
+      <PetSkin/>
+      <DisplayId>Glowing Skull</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>21</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x807a" id="Monkey Head Skin">
+      <PetSkin/>
+      <DisplayId>Monkey Head</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>22</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x807b" id="Reaper Skin">
+      <PetSkin/>
+      <DisplayId>Reaper</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>23</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x807c" id="Battle God Skin">
+      <PetSkin/>
+      <DisplayId>Battle God</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>24</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x807d" id="Centaur Skin">
+      <PetSkin/>
+      <DisplayId>Centaur</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>25</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x807e" id="Forest Fairy Skin">
+      <PetSkin/>
+      <DisplayId>Forest Fairy</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>26</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8084" id="Lil' Oryx Skin">
+      <PetSkin/>
+      <DisplayId>Lil' Oryx</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>36</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x807f" id="Shroom Skin">
+      <PetSkin/>
+      <DisplayId>Shroom</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>27</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8080" id="Great Jelly Skin">
+      <PetSkin/>
+      <DisplayId>Great Jelly</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>28</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8081" id="Spiderbot Skin">
+      <PetSkin/>
+      <DisplayId>Spiderbot</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>29</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8082" id="Cylindron Skin">
+      <PetSkin/>
+      <DisplayId>Cylindron</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>30</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x8083" id="Gutsbot Skin">
+      <PetSkin/>
+      <DisplayId>Gutsbot</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>31</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x89a2" id="Marid Skin">
+      <PetSkin/>
+      <DisplayId>Marid</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>32</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0xcfb" id="Marid Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>32</Index>
+      </AnimatedTexture>
+      <ScaleValue>10</ScaleValue>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Marid of the Humanoid family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="24832">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Marid Pet Skin</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x6104" id="Bagston Skin">
+      <PetSkin/>
+      <DisplayId>Sir Bagston</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>107</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x6105" id="Bagston Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x59e</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Sir Bagston of the ? ? ? ? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="24835">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Bagston Pet Skin</DisplayId>
+   </Object>
+   <Object type="0x6107" id="Goldy Skin">
+      <PetSkin/>
+      <DisplayId>Goldy</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>108</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x6108" id="Goldy Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x59d</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Goldy of the ? ? ? ? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="24838">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Goldy Pet Skin</DisplayId>
+   </Object>
+   <Object type="0x610a" id="Jaco Skin">
+      <PetSkin/>
+      <DisplayId>Jaco</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>33</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x610b" id="Jaco Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>33</Index>
+      </AnimatedTexture>
+      <ScaleValue>10</ScaleValue>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Jaco of the Spooky family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="24841">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Jaco Pet Skin</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x7ffc" id="Giant Vampire Bat Skin">
+      <PetSkin/>
+      <DisplayId>Giant Vampire Bat</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>34</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x7f8c" id="Pumpkin Head Skin">
+      <PetSkin/>
+      <DisplayId>Pumpkin Head</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>109</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x7f9c" id="Christmas Tree">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Christmas Tree Skin</DefaultSkin>
+      <ShadowSize>80</ShadowSize>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x7f9d" id="Christmas Tree Skin">
+      <PetSkin/>
+      <DisplayId>Christmas Tree</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>110</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x7f9e" id="Red Nose">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Woodland</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Red Nose Skin</DefaultSkin>
+      <ShadowSize>80</ShadowSize>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x7f9f" id="Red Nose Skin">
+      <PetSkin/>
+      <DisplayId>Red Nosed</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>111</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object id="Red Bagston" type="0x7fbf">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Red Bagston Skin</DefaultSkin>
+      <ShadowSize>40</ShadowSize>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x7fc0" id="Red Bagston Skin">
+      <PetSkin/>
+      <DisplayId>Red Bagston</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>116</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x7fc1" id="Red Bagston Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x5a2</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Red Bagston of the ? ? ? ? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32703">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Red Bagston Skin</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object id="Helper Bagston" type="0x7fc2">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Helper Bagston Skin</DefaultSkin>
+      <ShadowSize>40</ShadowSize>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x7fc3" id="Helper Bagston Skin">
+      <PetSkin/>
+      <DisplayId>Helper Bagston</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>115</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x7fc4" id="Helper Bagston Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x5a3</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Helper Bagston of the ? ? ? ? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32706">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Helper Bagston Skin</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object id="Red Helper Bagston" type="0x7fc5">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Red Helper Bagston Skin</DefaultSkin>
+      <ShadowSize>40</ShadowSize>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x7fc6" id="Red Helper Bagston Skin">
+      <PetSkin/>
+      <DisplayId>Red Helper Bagston</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>113</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x7fc7" id="Red Helper Bagston Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x5a4</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Red Helper Bagston of the ? ? ? ? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32709">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Red Helper Bagston Skin</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object id="Muddy Tidechaser" type="0x7fc9">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Humanoid</Family>
+      <Rarity>Common</Rarity>
+      <DefaultSkin>Muddy Tidechaser Skin</DefaultSkin>
+      <ShadowSize>40</ShadowSize>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x7fcd" id="Muddy Tidechaser Skin">
+      <PetSkin/>
+      <DisplayId>Muddy Tidechaser</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>117</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x7fcf" id="Muddy Tidechaser Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x0b</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Muddy Tidechaser of the Humanoid family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32713">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Muddy Tidechaser Skin</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x8090" id="Disabled Pet Skin">
+      <PetSkin/>
+      <DisplayId>Disabled Pet</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets2</File>
+         <Index>0x00</Index>
+      </AnimatedTexture>
+      <Group>Hexable</Group>
+   </Object>
+   <Object id="CloseRangeAttack" type="0x8300">
+      <PetProjectile/>
+      <Projectile>
+         <ObjectId>Pet Bullet 3</ObjectId>
+         <MinDamage>7</MinDamage>
+         <MaxDamage>200</MaxDamage>
+         <Speed>100</Speed>
+         <LifetimeMS>400</LifetimeMS>
+         <Size>80</Size>
+      </Projectile>
+   </Object>
+   <Object id="MidRangeAttack" type="0x8301">
+      <PetProjectile/>
+      <Projectile>
+         <ObjectId>Pet Bullet 3</ObjectId>
+         <MinDamage>5</MinDamage>
+         <MaxDamage>150</MaxDamage>
+         <Speed>100</Speed>
+         <LifetimeMS>650</LifetimeMS>
+         <Size>80</Size>
+      </Projectile>
+   </Object>
+   <Object id="FarRangeAttack" type="0x8302">
+      <PetProjectile/>
+      <Projectile>
+         <ObjectId>Pet Bullet 3</ObjectId>
+         <MinDamage>3</MinDamage>
+         <MaxDamage>100</MaxDamage>
+         <Speed>100</Speed>
+         <LifetimeMS>900</LifetimeMS>
+         <Size>80</Size>
+      </Projectile>
+   </Object>
+   <Object id="Heal" type="0x164">
+      <PetBehavior/>
+      <Class>PetBehavior</Class>
+      <BaseBehavior id="PetHeal"/>
+      <Parameters>
+         <MaxHeal min="10" max="90" curve="exp_incr"/>
+         <Cooldown min="10" max="1" curve="dim_returns"/>
+      </Parameters>
+   </Object>
+   <Object id="MagicHeal" type="0x170">
+      <PetBehavior/>
+      <Class>PetBehavior</Class>
+      <BaseBehavior id="PetMagicHeal"/>
+      <Parameters>
+         <MaxHeal min="1" max="45" curve="exp_incr"/>
+         <Cooldown min="10" max="1" curve="dim_returns"/>
+      </Parameters>
+   </Object>
+   <Object id="AttackClose" type="0x17f">
+      <PetBehavior/>
+      <Class>PetBehavior</Class>
+      <BaseBehavior id="PetShoot"/>
+      <Parameters>
+         <ProjectileId value="CloseRangeAttack"/>
+         <DamageCurve value="exp_incr"/>
+         <ThreatRange value="4.5"/>
+         <Delay min="5" max=".2" curve="exp_decr"/>
+         <AimType value="Targeted"/>
+      </Parameters>
+   </Object>
+   <Object id="AttackMid" type="0x180">
+      <PetBehavior/>
+      <Class>PetBehavior</Class>
+      <BaseBehavior id="PetShoot"/>
+      <Parameters>
+         <ProjectileId value="MidRangeAttack"/>
+         <DamageCurve value="exp_incr"/>
+         <ThreatRange value="6.75"/>
+         <Delay min="5" max=".2" curve="exp_decr"/>
+         <AimType value="Targeted"/>
+      </Parameters>
+   </Object>
+   <Object id="AttackFar" type="0x181">
+      <PetBehavior/>
+      <Class>PetBehavior</Class>
+      <BaseBehavior id="PetShoot"/>
+      <Parameters>
+         <ProjectileId value="FarRangeAttack"/>
+         <DamageCurve value="exp_incr"/>
+         <ThreatRange value="9"/>
+         <Delay min="5" max=".2" curve="exp_decr"/>
+         <AimType value="Targeted"/>
+      </Parameters>
+   </Object>
+   <Object id="ElectricZap" type="0x182">
+      <PetBehavior/>
+      <Class>PetBehavior</Class>
+      <BaseBehavior id="PetZap"/>
+      <Parameters>
+         <Color value="0xffffff"/>
+         <Damage min="5" max="300" curve="exp_incr"/>
+         <DamageRange min="5" max="50" curve="linear"/>
+         <Delay min="1" max="0" curve="dim_returns"/>
+         <ThreatRange min="0.35" max="2" curve="linear"/>
+         <Effect>
+            <Type value="Paralyzed"/>
+            <Probability min="0" max=".2" curve="linear"/>
+            <Duration min=".4" max="4" curve="dim_returns"/>
+         </Effect>
+      </Parameters>
+   </Object>
+   <Object id="PetSavage" type="0x183">
+      <PetBehavior/>
+      <Class>PetBehavior</Class>
+      <BaseBehavior id="PetSavage"/>
+      <Parameters>
+         <Tiles min="2.5" max="8" curve="dim_returns"/>
+         <Frequency min="8" max=".8" curve="exp_incr"/>
+      </Parameters>
+   </Object>
+   <Object id="PetDecoy" type="0x184">
+      <PetBehavior/>
+      <Class>PetBehavior</Class>
+      <BaseBehavior id="PetDecoy"/>
+      <Parameters>
+         <Radius min="3" max="12" curve="dim_returns"/>
+         <Duration min="3" max="8" curve="exp_incr"/>
+         <Cooldown min="10" max="3" curve="exp_decr"/>
+      </Parameters>
+   </Object>
+   <Object id="PetRisingFury" type="0x185">
+      <PetBehavior/>
+      <Class>PetBehavior</Class>
+      <BaseBehavior id="PetRisingFury"/>
+      <Parameters>
+         <MaxChargeTime min="5" max="2" curve="linear"/>
+         <MaxDamage min="100" max="1500" curve="exp_incr"/>
+         <Cooldown min="3.6" max="0.2" curve="exp_decr"/>
+         <Radius min="3" max="8" curve="exp_incr"/>
+      </Parameters>
+   </Object>
+   <Object id="Attack Close" type="0x192">
+      <PetAbility/>
+      <Class>PetAbility</Class>
+      <Group>Shoot Attack</Group>
+      <Description>Shoots at any close-range enemies and deals heavy damage.\n\nLevel this ability up to increase its power and frequency.</Description>
+   </Object>
+   <Object id="Attack Mid" type="0x194">
+      <PetAbility/>
+      <Class>PetAbility</Class>
+      <Group>Shoot Attack</Group>
+      <Description>Shoots at any mid-range enemies and deals medium damage.\n\nLevel this ability up to increase its power and frequency.</Description>
+   </Object>
+   <Object id="Attack Far" type="0x195">
+      <PetAbility/>
+      <Class>PetAbility</Class>
+      <Group>Shoot Attack</Group>
+      <Description>Shoots at any nearby far-range enemies and deals light damage.\n\nLevel this ability up to increase its power and frequency.</Description>
+   </Object>
+   <Object id="Electric" type="0x196">
+      <PetAbility/>
+      <Class>PetAbility</Class>
+      <Group>AOE Attack</Group>
+      <Description>Zaps any enemy foolish enough to touch your pet. This attack has a chance of paralyzing your foes.\n\nLevel this ability up to increase its power, range, chance of paralyzing, and duration of paralyze effect.</Description>
+   </Object>
+   <Object id="Heal" type="0x197">
+      <PetAbility/>
+      <Class>PetAbility</Class>
+      <Group>Heal</Group>
+      <Description>Heals you periodically.\n\nLevel this ability up to increase its power and frequency.</Description>
+   </Object>
+   <Object id="Magic Heal" type="0x198">
+      <PetAbility/>
+      <Class>PetAbility</Class>
+      <Group>Magic Heal</Group>
+      <Description>Restores your Magic Points periodically.\n\nLevel this ability up to increase its power and frequency.</Description>
+   </Object>
+   <Object id="Savage" type="0x199">
+      <PetAbility/>
+      <Class>PetAbility</Class>
+      <Group>Savage</Group>
+      <Description>Your pet will run towards nearby enemies.\n\nLevel this ability up to increase its frequency and range.</Description>
+   </Object>
+   <Object id="Decoy" type="0x19a">
+      <PetAbility/>
+      <Class>PetAbility</Class>
+      <Group>Decoy</Group>
+      <Description>Distracts enemies for a short while.\n\nLevel this ability up to increase its range, duration and shorten its cooldown time.</Description>
+   </Object>
+   <Object id="Rising Fury" type="0x19b">
+      <PetAbility/>
+      <Class>PetAbility</Class>
+      <Group>RisingFury</Group>
+      <Description>Standing still will charge this attack. Begin moving to release a blast of fury that hurts nearby enemies.\n\nLevel this ability up to increase its damage and range + decrease its charge time and cooldown.</Description>
+   </Object>
+   <Object type="0x1997" id="Turtle Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>24</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Turtle of the Aquatic family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32561">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Turtle Pet Skin</DisplayId>
+      <feedPower>50</feedPower>
+   </Object>
+   <Object type="0x1998" id="Peppermint Snail Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>58</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Peppermint Snail of the Aquatic family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32601">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Peppermint Snail Pet Skin</DisplayId>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x1999" id="Golden Crab Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>18</Index>
+      </AnimatedTexture>
+      <ScaleValue>10</ScaleValue>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Golden Crab of the Aquatic family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32634">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Golden Crab Pet Skin</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x199a" id="Robobuddy Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>51</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Robobuddy of the Automaton family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32572">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Robobuddy Pet Skin</DisplayId>
+      <feedPower>50</feedPower>
+   </Object>
+   <Object type="0x199b" id="Redbot Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>86</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Redbot of the Automaton family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32614">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Redbot Pet Skin</DisplayId>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x199c" id="Gutsbot Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>31</Index>
+      </AnimatedTexture>
+      <ScaleValue>10</ScaleValue>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Gutsbot of the Automaton family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32648">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Gutsbot Pet Skin</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x199d" id="Cardinal Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>62</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Cardinal of the Avian family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32534">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Cardinal Pet Skin</DisplayId>
+      <feedPower>50</feedPower>
+   </Object>
+   <Object type="0x199e" id="USA Eagle Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>71</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into USA Eagle of the Avian family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32582">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>USA Eagle Pet Skin</DisplayId>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x199f" id="Griffin Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>05</Index>
+      </AnimatedTexture>
+      <ScaleValue>10</ScaleValue>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Griffin of the Avian family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32621">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Griffin Pet Skin</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x19a0" id="Sheepdog Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>0x0a</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Sheepdog of the Canine family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32528">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Sheepdog Pet Skin</DisplayId>
+      <feedPower>50</feedPower>
+   </Object>
+   <Object type="0x19a1" id="Gold Bulldog Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>79</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Gold Bulldog of the Canine family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32579">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Gold Bulldog Pet Skin</DisplayId>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x19a2" id="Golden Hyena Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>03</Index>
+      </AnimatedTexture>
+      <ScaleValue>10</ScaleValue>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Golden Hyena of the Canine family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32619">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Golden Hyena Pet Skin</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x19a3" id="Elephant Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>35</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Elephant of the Exotic family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32535">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Elephant Pet Skin</DisplayId>
+      <feedPower>50</feedPower>
+   </Object>
+   <Object type="0x19a4" id="Panda Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>0x0b</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Panda of the Exotic family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32584">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Panda Pet Skin</DisplayId>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x19a5" id="King Gorilla Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>07</Index>
+      </AnimatedTexture>
+      <ScaleValue>10</ScaleValue>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into King Gorilla of the Exotic family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32623">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>King Gorilla Pet Skin</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x19a6" id="Duck Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>22</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Duck of the Farm family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32540">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Duck Pet Skin</DisplayId>
+      <feedPower>50</feedPower>
+   </Object>
+   <Object type="0x19a7" id="Mallard Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>21</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Mallard of the Farm family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32587">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Mallard Pet Skin</DisplayId>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x19a8" id="Enraged Yack Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>08</Index>
+      </AnimatedTexture>
+      <ScaleValue>10</ScaleValue>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Enraged Yack of the Farm family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32624">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Enraged Yack Pet Skin</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x19a9" id="Tan Cat Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>90</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Tan Cat of the Feline family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32520">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Tan Cat Pet Skin</DisplayId>
+      <feedPower>50</feedPower>
+   </Object>
+   <Object type="0x19aa" id="White Lion Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>88</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into White Lion of the Feline family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32575">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>White Lion Pet Skin</DisplayId>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x19ab" id="Tiger Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>00</Index>
+      </AnimatedTexture>
+      <ScaleValue>10</ScaleValue>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Tiger of the Feline family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32616">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Tiger Pet Skin</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x19ac" id="Leprechaun Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>17</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Leprechaun of the Humanoid family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32607">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Leprechaun Pet Skin</DisplayId>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x19ad" id="Red Ant Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>56</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Red Ant of the Insect family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32550">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Red Ant Pet Skin</DisplayId>
+      <feedPower>50</feedPower>
+   </Object>
+   <Object type="0x19ae" id="Bee Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>26</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Bee of the Insect family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32594">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Bee Pet Skin</DisplayId>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x19af" id="Beetleman Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>14</Index>
+      </AnimatedTexture>
+      <ScaleValue>10</ScaleValue>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Beetleman of the Insect family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32630">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Beetleman Pet Skin</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x19b0" id="Penguin Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>0x09</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Penguin of the Penguin family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32552">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Penguin Pet Skin</DisplayId>
+      <feedPower>50</feedPower>
+   </Object>
+   <Object type="0x19b1" id="Karate Purple Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>50</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Karate Purple of the Penguin family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32599">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Karate Purple Pet Skin</DisplayId>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x19b2" id="Tank Penguin Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>17</Index>
+      </AnimatedTexture>
+      <ScaleValue>10</ScaleValue>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Tank Penguin of the Penguin family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32633">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Tank Penguin Pet Skin</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x19b3" id="Dino Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>34</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Dino of the Reptile family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32543">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Dino Pet Skin</DisplayId>
+      <feedPower>50</feedPower>
+   </Object>
+   <Object id="Frilled Lizard" type="0x19b4">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Reptile</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Frilled Lizard Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x19b5" id="Frilled Lizard Skin">
+      <PetSkin/>
+      <PetSkin/>
+      <DisplayId>Frilled Lizard</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>106</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x19b6" id="Frilled Lizard Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>106</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Frilled Lizard of the Reptile family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="6580">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Frilled Lizard Pet Stone</DisplayId>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x19b7" id="Poison Drake Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>13</Index>
+      </AnimatedTexture>
+      <ScaleValue>10</ScaleValue>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Poison Drake of the Reptile family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32629">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Poison Drake Pet Skin</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x19b8" id="Spirit Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>101</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Spirit of the Spooky family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32566">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Spirit Pet Skin</DisplayId>
+      <feedPower>50</feedPower>
+   </Object>
+   <Object type="0x19b9" id="Werewolf Cub Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>63</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Werewolf Cub of the Spooky family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32604">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Werewolf Cub Pet Skin</DisplayId>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x19ba" id="Hamster Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>33</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Hamster of the Woodland family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32541">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Hamster Pet Skin</DisplayId>
+      <feedPower>50</feedPower>
+   </Object>
+   <Object type="0x19bb" id="Snowy Owl Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>43</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Snowy Owl of the Woodland family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32590">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Snowy Owl Pet Skin</DisplayId>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x19bc" id="Sprite Star Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>102</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Sprite Star of the ? ? ? ? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32570">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Sprite Star Pet Skin</DisplayId>
+      <feedPower>50</feedPower>
+   </Object>
+   <Object type="0x19bd" id="Gummy Bear Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>38</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Gummy Bear of the ? ? ? ? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="32611">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Gummy Bear Pet Skin</DisplayId>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object id="Fire Rooster" type="0x19be">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Farm</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Fire Rooster Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x19bf" id="Fire Rooster Skin">
+      <PetSkin/>
+      <PetSkin/>
+      <DisplayId>Fire Rooster</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>118</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x19c0" id="Fire Rooster Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>118</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Celebrate the 2017 Lunar New Year of the Rooster! Thanks to: Beige</Description>
+      <Activate skinId="6590">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Fire Rooster Pet Stone</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object id="Rooster of Good Fortune" type="0x19c1">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Farm</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Rooster of Good Fortune Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x19c2" id="Rooster of Good Fortune Skin">
+      <PetSkin/>
+      <PetSkin/>
+      <DisplayId>Rooster of Good Fortune</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>119</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x19c3" id="Rooster of Good Fortune Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>119</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Lucky you! You've been blessed by luck for the entire year of 2017! Thanks to: Beige</Description>
+      <Activate skinId="6593">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Rooster of Good Fortune Pet Stone</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object id="Mini Chinese Dragon" type="0x19c4">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Reptile</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Mini Chinese Dragon Skin</DefaultSkin>
+      <Size>80</Size>
+      <WhileMoving>
+         <Z>0.25</Z>
+         <Flying/>
+      </WhileMoving>
+   </Object>
+   <Object type="0x19c5" id="Mini Chinese Dragon Skin">
+      <PetSkin/>
+      <PetSkin/>
+      <DisplayId>Red Dragon</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>120</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x19c6" id="Mini Chinese Dragon Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>120</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Smaller than his Western counterpart, but no less dangerous! Thanks to: Beige</Description>
+      <Activate skinId="6596">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Mini Chinese Dragon Pet Stone</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object id="Gingerbread Man" type="0x19c7">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Gingerbread Man Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x19c8" id="Gingerbread Man Skin">
+      <PetSkin/>
+      <PetSkin/>
+      <DisplayId>Gingerbread Man</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>121</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x19c9" id="Gingerbread Man Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>121</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Don't eat me! Don't eat me! Thanks to: Nmin</Description>
+      <Activate skinId="6599">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Gingerbread Man Pet Stone</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object id="Mini Polaris" type="0x19ca">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Mini Polaris Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x19cb" id="Mini Polaris Skin">
+      <PetSkin/>
+      <PetSkin/>
+      <DisplayId>Mini Polaris</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>122</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x19cc" id="Mini Polaris Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>122</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Little Polaris didn't want to become a boss like Papa Polaris. Thanks to: Poshun</Description>
+      <Activate skinId="6602">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Mini Polaris Pet Stone</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object id="Mini Paper Lantern" type="0x19cd">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Mini Paper Lantern Skin</DefaultSkin>
+      <Size>80</Size>
+      <WhileMoving>
+         <Z>0.25</Z>
+         <Flying/>
+      </WhileMoving>
+   </Object>
+   <Object type="0x19ce" id="Mini Paper Lantern Skin">
+      <PetSkin/>
+      <PetSkin/>
+      <DisplayId>Mini Paper Lantern</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>35</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x19cf" id="Mini Paper Lantern Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x26</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Small Lantern of the ? ? ? ? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="6605">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Mini Paper Lantern Pet Skin</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object id="Paper Lantern" type="0x19d0">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Paper Lantern Skin</DefaultSkin>
+      <Size>80</Size>
+      <WhileMoving>
+         <Z>0.25</Z>
+         <Flying/>
+      </WhileMoving>
+   </Object>
+   <Object type="0x19d1" id="Paper Lantern Skin">
+      <PetSkin/>
+      <PetSkin/>
+      <DisplayId>Paper Lantern</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>36</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x19d2" id="Paper Lantern Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>36</Index>
+      </AnimatedTexture>
+      <ScaleValue>10</ScaleValue>
+      <SlotType>10</SlotType>
+      <Description>Light it up and get ready for the festivities! Thanks to: Beige</Description>
+      <Activate skinId="6608">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Paper Lantern Pet Skin</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object id="Chinese Dragon" type="0x19d3">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Reptile</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Chinese Dragon Skin</DefaultSkin>
+      <Size>80</Size>
+      <WhileMoving>
+         <Z>0.25</Z>
+         <Flying/>
+      </WhileMoving>
+   </Object>
+   <Object type="0x19d4" id="Chinese Dragon Skin">
+      <PetSkin/>
+      <PetSkin/>
+      <DisplayId>Chinese Dragon</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>37</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x19d5" id="Chinese Dragon Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>37</Index>
+      </AnimatedTexture>
+      <ScaleValue>10</ScaleValue>
+      <SlotType>10</SlotType>
+      <Description>Smaller than his Western counterpart, but no less dangerous! Thanks to: Beige</Description>
+      <Activate skinId="6611">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Chinese Dragon Pet Skin</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object id="Desert Cobra" type="0x19d6">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Reptile</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Desert Cobra Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x19d7" id="Desert Cobra Skin">
+      <PetSkin/>
+      <PetSkin/>
+      <DisplayId>Desert Cobra</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>123</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x19d8" id="Desert Cobra Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>123</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into Desert Cobra of the Reptile family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="6614">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Desert Cobra Pet Stone</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object id="White Bounsheep" type="0x2aa0">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Farm</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>White Bounsheep Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x2aa1" id="White Bounsheep Skin">
+      <PetSkin/>
+      <PetSkin/>
+      <DisplayId>White Bounsheep</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>124</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x2aa2" id="White Bounsheep Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>124</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Boing Boing! Made by Beige</Description>
+      <Activate skinId="10912">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>White Bounsheep Pet Stone</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object id="Grey Bounsheep" type="0x2aa3">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Farm</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Grey Bounsheep Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x2aa4" id="Grey Bounsheep Skin">
+      <PetSkin/>
+      <PetSkin/>
+      <DisplayId>Grey Bounsheep</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>125</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x2aa5" id="Grey Bounsheep Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>125</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Boing Boing! Made by Beige</Description>
+      <Activate skinId="10915">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Grey Bounsheep Pet Stone</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object id="Brown Bounsheep" type="0x2aa6">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Farm</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Brown Bounsheep Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x2aa7" id="Brown Bounsheep Skin">
+      <PetSkin/>
+      <PetSkin/>
+      <DisplayId>Brown Bounsheep</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>126</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x2aa8" id="Brown Bounsheep Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>126</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Boing Boing! Made by Beige</Description>
+      <Activate skinId="10918">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Brown Bounsheep Pet Stone</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object id="Bes' Artifact" type="0x2aa9">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Bes' Artifact Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x2aaa" id="Bes' Artifact Skin">
+      <PetSkin/>
+      <PetSkin/>
+      <DisplayId>Bes' Artifact</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>127</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x2aab" id="Bes' Artifact Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>127</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Awe at its wondrous defense! Made by Poshun</Description>
+      <Activate skinId="10921">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Bes' Artifact Pet Stone</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object id="Geb's Artifact" type="0x2aac">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Geb's Artifact Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x2aad" id="Geb's Artifact Skin">
+      <PetSkin/>
+      <PetSkin/>
+      <DisplayId>Geb's Artifact</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>128</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x2aae" id="Geb's Artifact Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>128</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>It shall destroy your foes from their soul to their flesh! Made by Poshun</Description>
+      <Activate skinId="10924">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Geb's Artifact Pet Stone</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object id="Nut's Artifact" type="0x2aaf">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Nut's Artifact Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x2ab0" id="Nut's Artifact Skin">
+      <PetSkin/>
+      <PetSkin/>
+      <DisplayId>Nut's Artifact</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>129</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x2ab1" id="Nut's Artifact Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>129</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>It shall make your foes' lethargic lives end much more swiftly! Made by Poshun</Description>
+      <Activate skinId="10927">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Nut's Artifact Pet Stone</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+</Objects>

@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x217a" id="Woodland Moth Dust">
+      <Class>Projectile</Class>
+      <RandomTexture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x39c</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x39d</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x39e</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x39f</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x3a0</Index>
+         </Texture>
+      </RandomTexture>
+      <Rotation>350</Rotation>
+   </Object>
+   <Object type="0x217b" id="Fire Acorn">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x3e7</Index>
+      </Texture>
+      <Rotation>180</Rotation>
+   </Object>
+   <Object type="0x703e" id="Woodland Paralyze Turret">
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xfe</Index>
+      </Texture>
+      <Enemy/>
+      <NoMiniMap/>
+      <Size>75</Size>
+      <StasisImmune/>
+      <Enemy/>
+      <Projectile id="0">
+         <ObjectId>Yellow Energy Shot</ObjectId>
+         <Speed>100</Speed>
+         <MinDamage>50</MinDamage>
+         <MaxDamage>150</MaxDamage>
+         <LifetimeMS>1000</LifetimeMS>
+         <ConditionEffect duration="1.2">Paralyzed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x703f" id="Woodland Silence Turret">
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xff</Index>
+      </Texture>
+      <Enemy/>
+      <NoMiniMap/>
+      <Size>75</Size>
+      <StasisImmune/>
+      <Enemy/>
+      <Projectile id="0">
+         <ObjectId>Yellow Energy Shot</ObjectId>
+         <Speed>100</Speed>
+         <MinDamage>100</MinDamage>
+         <MaxDamage>150</MaxDamage>
+         <LifetimeMS>1000</LifetimeMS>
+         <ConditionEffect duration="4">Quiet</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x704a" id="Woodland Weakness Turret">
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x100</Index>
+      </Texture>
+      <Enemy/>
+      <NoMiniMap/>
+      <Size>75</Size>
+      <StasisImmune/>
+      <Enemy/>
+      <Projectile id="0">
+         <ObjectId>Yellow Energy Shot</ObjectId>
+         <Speed>100</Speed>
+         <MinDamage>50</MinDamage>
+         <MaxDamage>100</MaxDamage>
+         <LifetimeMS>1000</LifetimeMS>
+         <ConditionEffect duration="5">Weak</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x704b" id="Wooland Armor Squirrel">
+      <DisplayId>Grizzled Armored Squirrel</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8dEncounters</File>
+         <Index>24</Index>
+      </AnimatedTexture>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <MaxHitPoints>4000</MaxHitPoints>
+      <Defense>0</Defense>
+      <XpMult>.2</XpMult>
+      <Size>110</Size>
+      <Projectile id="0">
+         <ObjectId>Blade</ObjectId>
+         <Damage>90</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>80</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x704c" id="Woodland Mini Megamoth">
+      <DisplayId>Micro Megamoth Sentinel</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8dEncounters</File>
+         <Index>25</Index>
+      </AnimatedTexture>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <MaxHitPoints>1500</MaxHitPoints>
+      <Defense>5</Defense>
+      <XpMult>0.0</XpMult>
+      <Size>100</Size>
+      <Flying/>
+      <Z>0.3</Z>
+      <Projectile id="0">
+         <ObjectId>Small Moth Bullet</ObjectId>
+         <Damage>80</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>90</Size>
+         <ConditionEffect duration="0.8">Confused</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x704d" id="Woodland Ultimate Squirrel">
+      <DisplayId>Mecha Squirrel</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>61</Index>
+      </AnimatedTexture>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>6</Defense>
+      <XpMult>.3</XpMult>
+      <Size>120</Size>
+      <Projectile id="0">
+         <ObjectId>Fire Acorn</ObjectId>
+         <Damage>175</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>1300</LifetimeMS>
+         <Size>90</Size>
+         <ParticleTrail/>
+      </Projectile>
+   </Object>
+   <Object type="0x704e" id="Woodland Goblin Mage">
+      <DisplayId>Forest Goblin Necromancer</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8dEncounters</File>
+         <Index>26</Index>
+      </AnimatedTexture>
+      <HitSound>monster/cave_pirates_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <MaxHitPoints>1500</MaxHitPoints>
+      <Defense>3</Defense>
+      <XpMult>.4</XpMult>
+      <Size>120</Size>
+      <Projectile id="0">
+         <ObjectId>Leaf Magic</ObjectId>
+         <Speed>100</Speed>
+         <Damage>85</Damage>
+         <LifetimeMS>1200</LifetimeMS>
+         <Amplitude>0.1</Amplitude>
+         <Frequency>6</Frequency>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x704f" id="Woodland Goblin">
+      <DisplayId>Forest Goblin Bruiser</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8dEncounters</File>
+         <Index>27</Index>
+      </AnimatedTexture>
+      <HitSound>monster/cave_pirates_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Defense>5</Defense>
+      <XpMult>.4</XpMult>
+      <Size>120</Size>
+      <Projectile id="0">
+         <ObjectId>Blade</ObjectId>
+         <Damage>100</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>90</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x706b" id="Larva Puke">
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x3fe</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x706c" id="Epic Larva">
+      <DisplayId>Megamoth Larva</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x8dEncounters</File>
+         <Index>7</Index>
+      </AnimatedTexture>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <MaxHitPoints>66000</MaxHitPoints>
+      <Defense>15</Defense>
+      <XpMult>0.1</XpMult>
+      <Size>140</Size>
+      <Quest/>
+      <Projectile id="1">
+         <ObjectId>Yellow Energy Shot</ObjectId>
+         <Damage>125</Damage>
+         <Speed>60</Speed>
+         <Size>150</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="2">Blind</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x706d" id="Epic Mama Megamoth">
+      <DisplayId>Mammoth Megamoth</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>62</Index>
+      </AnimatedTexture>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <MaxHitPoints>66000</MaxHitPoints>
+      <Defense>15</Defense>
+      <XpMult>0.1</XpMult>
+      <Size>140</Size>
+      <Quest/>
+      <Flying/>
+      <Z>0.2</Z>
+      <Projectile id="0">
+         <ObjectId>Moth Dust</ObjectId>
+         <Damage>125</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>90</Size>
+         <ConditionEffect duration="3">Quiet</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x706e" id="Mini Larva">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x8dEncounters</File>
+         <Index>9</Index>
+      </AnimatedTexture>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <MaxHitPoints>1500</MaxHitPoints>
+      <Defense>5</Defense>
+      <XpMult>0.0</XpMult>
+      <Size>50</Size>
+      <Projectile id="0">
+         <ObjectId>Dragon Attack Blue Bullet</ObjectId>
+         <Damage>80</Damage>
+         <Speed>90</Speed>
+         <Size>50</Size>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x707b" id="Murderous Megamoth">
+      <DisplayId>Murderous Megamoth</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>67</Index>
+      </AnimatedTexture>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <MaxHitPoints>35000</MaxHitPoints>
+      <Defense>25</Defense>
+      <XpMult>.3</XpMult>
+      <Size>170</Size>
+      <God/>
+      <Quest/>
+      <Flying/>
+      <Z>0.2</Z>
+      <Projectile id="0">
+         <ObjectId>Fire Boomerang</ObjectId>
+         <Damage>125</Damage>
+         <Speed>25</Speed>
+         <Size>75</Size>
+         <LifetimeMS>5000</LifetimeMS>
+         <ConditionEffect duration="3">Quiet</ConditionEffect>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Yellow Energy Shot</ObjectId>
+         <Damage>125</Damage>
+         <Speed>90</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="3">Weak</ConditionEffect>
+      </Projectile>
+   </Object>
+</Objects>

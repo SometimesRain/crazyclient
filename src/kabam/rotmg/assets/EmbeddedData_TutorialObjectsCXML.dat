@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x0802" id="South Tutorial Gun">
+      <Class>GameObject</Class>
+      <Model>Tower</Model>
+      <Enemy/>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xc8</Index>
+      </Texture>
+      <Projectile>
+         <ObjectId>Green Blob</ObjectId>
+         <Speed>40</Speed>
+         <Damage>5</Damage>
+         <LifetimeMS>3000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x0803" id="North Tutorial Gun">
+      <Class>GameObject</Class>
+      <Model>Tower</Model>
+      <Enemy/>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xc8</Index>
+      </Texture>
+      <Projectile>
+         <ObjectId>Green Blob</ObjectId>
+         <Speed>40</Speed>
+         <Damage>5</Damage>
+         <LifetimeMS>3000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x0804" id="East Tutorial Gun">
+      <Class>GameObject</Class>
+      <Model>Tower</Model>
+      <Enemy/>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xc8</Index>
+      </Texture>
+      <Projectile>
+         <ObjectId>Green Blob</ObjectId>
+         <Speed>40</Speed>
+         <Damage>5</Damage>
+         <LifetimeMS>3000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x0805" id="West Tutorial Gun">
+      <Class>GameObject</Class>
+      <Model>Tower</Model>
+      <Enemy/>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xc8</Index>
+      </Texture>
+      <Projectile>
+         <ObjectId>Green Blob</ObjectId>
+         <Speed>40</Speed>
+         <Damage>5</Damage>
+         <LifetimeMS>3000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x0806" id="Tutorial Loot Bag">
+      <Class>Container</Class>
+      <Container/>
+      <Loot/>
+      <Texture>
+         <File>lofiObj</File>
+         <Index>0x08</Index>
+      </Texture>
+      <Size>75</Size>
+      <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+      <Equipment>0x0a4f, -1, -1, -1, -1, -1, -1, -1</Equipment>
+   </Object>
+   <Object type="0x0808" id="Up Arrow">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x14</Index>
+      </Texture>
+      <DrawOnGround/>
+   </Object>
+   <Object type="0x0809" id="UpLeft Arrow">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x15</Index>
+      </Texture>
+      <DrawOnGround/>
+   </Object>
+   <Object type="0x080a" id="UpRight Arrow">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x16</Index>
+      </Texture>
+      <DrawOnGround/>
+   </Object>
+   <Object type="0x080b" id="Grey Up Arrow">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x17</Index>
+      </Texture>
+      <DrawOnGround/>
+   </Object>
+   <Object type="0x071d" id="Portal to Nexus">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>Nexus</DungeonName>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x36</Index>
+      </Texture>
+   </Object>
+   <Object type="0x071e" id="Kitchen Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>Kitchen</DungeonName>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0x7c</Index>
+      </Texture>
+      <Size>120</Size>
+   </Object>
+   <Object type="0x0745" id="Nexus Explanation Obj">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x0746" id="Nexus Explanation Portal">
+      <Class>Portal</Class>
+      <DisplayId>Nexus Explanation</DisplayId>
+      <DungeonName>Nexus Explanation</DungeonName>
+      <IntergamePortal/>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x36</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0747" id="Vault Explanation Portal">
+      <Class>Portal</Class>
+      <DisplayId>Vault Explanation</DisplayId>
+      <DungeonName>Vault Explanation</DungeonName>
+      <IntergamePortal/>
+      <Texture>
+         <File>lofiEnvironment3</File>
+         <Index>0xf8</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0748" id="Guild Explanation Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Guild Explanation</DisplayId>
+      <DungeonName>Guild Explanation</DungeonName>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x54</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+</Objects>

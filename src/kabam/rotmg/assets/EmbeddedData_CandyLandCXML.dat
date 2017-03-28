@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x5e49" id="Candy Gnome">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>44</Index>
+      </AnimatedTexture>
+      <HitSound>monster/goblins_hit</HitSound>
+      <DeathSound>monster/goblins_death</DeathSound>
+      <Size>120</Size>
+      <ShadowSize>45</ShadowSize>
+      <MaxHitPoints>800</MaxHitPoints>
+      <Defense>12</Defense>
+      <Terrain>MidPlains</Terrain>
+      <XpMult>2.5</XpMult>
+      <SpawnProb>0.04</SpawnProb>
+   </Object>
+   <Object type="0x5e48" id="MegaRototo">
+      <Group>Candy Boss</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>54</Index>
+      </AnimatedTexture>
+      <HitSound>monster/elves_death</HitSound>
+      <DeathSound>monster/flaming_skulls_hit</DeathSound>
+      <Size>140</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>13000</MaxHitPoints>
+      <Defense>40</Defense>
+      <God/>
+      <Quest/>
+      <Projectile id="0">
+         <ObjectId>Purple Rototo Blast</ObjectId>
+         <Damage>160</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>1600</LifetimeMS>
+         <Size>220</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Red Rototo Blast</ObjectId>
+         <Damage>140</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <Size>180</Size>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Flame Breath</ObjectId>
+         <Damage>100</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+         <Size>120</Size>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Flame Breath</ObjectId>
+         <Damage>100</Damage>
+         <Speed>55</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+         <Size>130</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x5e47" id="Spoiled Creampuff">
+      <Group>Candy Boss</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>55</Index>
+      </AnimatedTexture>
+      <HitSound>monster/blobs_death</HitSound>
+      <DeathSound>monster/blobs_hit</DeathSound>
+      <Size>200</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>12000</MaxHitPoints>
+      <Defense>30</Defense>
+      <God/>
+      <Quest/>
+      <Projectile id="0">
+         <ObjectId>Cream Shot</ObjectId>
+         <Damage>160</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>200</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Cream Bullet</ObjectId>
+         <Damage>100</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>160</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x5e46" id="Desire Troll">
+      <Group>Candy Boss</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>56</Index>
+      </AnimatedTexture>
+      <HitSound>weapon/sprite_wand</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>140</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>14500</MaxHitPoints>
+      <Defense>20</Defense>
+      <God/>
+      <Quest/>
+      <Projectile id="0">
+         <ObjectId>Troll Hair Whip</ObjectId>
+         <Damage>120</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1600</LifetimeMS>
+         <Size>140</Size>
+         <ConditionEffect duration="3">Hallucinating</ConditionEffect>
+         <ConditionEffect duration="3">Hexed</ConditionEffect>
+         <ConditionEffect duration="3">Stunned</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Pink Star</ObjectId>
+         <Damage>90</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>80</Size>
+         <ConditionEffect duration="3">Hexed</ConditionEffect>
+         <ConditionEffect duration="3">Stunned</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Pink Slash</ObjectId>
+         <Damage>110</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>110</Size>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Pink Slash</ObjectId>
+         <Damage>110</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>600</LifetimeMS>
+         <Size>110</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x5e45" id="Swoll Fairy">
+      <Group>Candy Boss</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>57</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dwarf_god_hit</HitSound>
+      <DeathSound>player/paladin_death</DeathSound>
+      <Size>160</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>13000</MaxHitPoints>
+      <Defense>40</Defense>
+      <God/>
+      <Quest/>
+      <Projectile id="0">
+         <ObjectId>Magic Sparkle</ObjectId>
+         <Damage>90</Damage>
+         <Speed>35</Speed>
+         <LifetimeMS>3400</LifetimeMS>
+         <Size>140</Size>
+         <Amplitude>0.4</Amplitude>
+         <Frequency>0.2</Frequency>
+         <MultiHit/>
+         <ConditionEffect duration="2">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Magic Sparkle</ObjectId>
+         <Damage>90</Damage>
+         <Speed>35</Speed>
+         <LifetimeMS>44000</LifetimeMS>
+         <Size>140</Size>
+         <Amplitude>0.4</Amplitude>
+         <Frequency>0.2</Frequency>
+         <MultiHit/>
+         <Boomerang/>
+         <ConditionEffect duration="2">Confused</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x5e44" id="Gigacorn">
+      <Group>Candy Boss</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>58</Index>
+      </AnimatedTexture>
+      <HitSound>spell/light_heal</HitSound>
+      <DeathSound>spell/major_heal</DeathSound>
+      <Size>200</Size>
+      <MaxHitPoints>16000</MaxHitPoints>
+      <Defense>35</Defense>
+      <God/>
+      <Quest/>
+      <Projectile id="0">
+         <ObjectId>Unicorn Horn</ObjectId>
+         <Damage>90</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>160</Size>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Rainbow Brick</ObjectId>
+         <Damage>70</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>160</Size>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x5e43" id="Candyland Boss Spawner">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x289</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <XpMult>0</XpMult>
+   </Object>
+   <Object type="0x5e42" id="Gumball Machine">
+      <Class>Character</Class>
+      <Enemy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <NoMiniMap/>
+      <Static/>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x7c</Index>
+      </Texture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Size>120</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Defense>10</Defense>
+      <XpMult>0.0</XpMult>
+   </Object>
+   <Object type="0x5e41" id="Cupcake">
+      <Group>Candy Creature</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>59</Index>
+      </AnimatedTexture>
+      <HitSound>monster/greater_demons_hit</HitSound>
+      <DeathSound>monster/greater_demons_death</DeathSound>
+      <Size>120</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Projectile id="0">
+         <ObjectId>White Demon Shot</ObjectId>
+         <Damage>45</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>60</Size>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x5e40" id="Unicorn">
+      <Group>Candy Creature</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>60</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skull_shrine_hit</HitSound>
+      <DeathSound>spell/light_heal</DeathSound>
+      <Size>140</Size>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Defense>25</Defense>
+      <XpMult>0.5</XpMult>
+      <Projectile id="0">
+         <ObjectId>Unicorn Horn</ObjectId>
+         <Damage>70</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Rainbow Brick</ObjectId>
+         <Damage>50</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x5e3e" id="Hard Candy">
+      <Group>Candy Creature</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>45</Index>
+      </AnimatedTexture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Size>120</Size>
+      <ShadowSize>60</ShadowSize>
+      <MaxHitPoints>1300</MaxHitPoints>
+      <Defense>18</Defense>
+      <XpMult>0.6</XpMult>
+      <Projectile id="0">
+         <ObjectId>Hard Candy Stake</ObjectId>
+         <Damage>50</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>80</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x5e39" id="Beefy Fairy">
+      <Group>Candy Creature</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>61</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dwarves_hit</HitSound>
+      <DeathSound>monster/wizard_death</DeathSound>
+      <Size>140</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Defense>30</Defense>
+      <Flying/>
+      <Z>0.24</Z>
+      <Projectile id="0">
+         <ObjectId>Magic Sparkle</ObjectId>
+         <Damage>50</Damage>
+         <Speed>35</Speed>
+         <LifetimeMS>2200</LifetimeMS>
+         <Size>100</Size>
+         <Amplitude>0.4</Amplitude>
+         <Frequency>0.6</Frequency>
+         <MultiHit/>
+         <ConditionEffect duration="2">Confused</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x5e38" id="Fairy">
+      <Group>Candy Creature</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>46</Index>
+      </AnimatedTexture>
+      <HitSound>monster/elves_hit</HitSound>
+      <DeathSound>monster/dwarves_hit</DeathSound>
+      <Size>120</Size>
+      <ShadowSize>60</ShadowSize>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Flying/>
+      <Z>0.25</Z>
+      <Projectile id="0">
+         <ObjectId>Magic Star</ObjectId>
+         <Damage>55</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>80</Size>
+         <MultiHit/>
+         <ConditionEffect duration="0.6">Confused</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x5e37" id="Wishing Troll">
+      <Group>Candy Creature</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>62</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flaming_skulls_hit</HitSound>
+      <DeathSound>monster/flaming_skulls_death</DeathSound>
+      <Size>120</Size>
+      <ShadowSize>60</ShadowSize>
+      <MaxHitPoints>4000</MaxHitPoints>
+      <Defense>20</Defense>
+      <XpMult>0.6</XpMult>
+      <Projectile id="0">
+         <ObjectId>Troll Hair Whip</ObjectId>
+         <Damage>70</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>90</Size>
+         <ConditionEffect duration="3">Hallucinating</ConditionEffect>
+         <ConditionEffect duration="3">Hexed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x5e36" id="Spilled Icecream">
+      <Group>Candy Creature</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>47</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Defense>20</Defense>
+      <XpMult>0.6</XpMult>
+      <Projectile id="0">
+         <ObjectId>Icecream Bullet</ObjectId>
+         <Damage>36</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>60</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x5e35" id="Big Creampuff">
+      <Group>Candy Creature</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>63</Index>
+      </AnimatedTexture>
+      <HitSound>monster/blobs_death</HitSound>
+      <DeathSound>monster/blobs_hit</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>2300</MaxHitPoints>
+      <Defense>20</Defense>
+      <XpMult>0.6</XpMult>
+      <Projectile id="0">
+         <ObjectId>Cream Shot</ObjectId>
+         <Damage>85</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>120</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Cream Bullet</ObjectId>
+         <Damage>60</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x5e34" id="Small Creampuff">
+      <Group>Candy Creature</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>48</Index>
+      </AnimatedTexture>
+      <HitSound>monster/elves_death</HitSound>
+      <DeathSound>monster/cubes_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>700</MaxHitPoints>
+      <Defense>20</Defense>
+      <XpMult>0.6</XpMult>
+      <Projectile id="0">
+         <ObjectId>Cream Bullet</ObjectId>
+         <Damage>55</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>1400</LifetimeMS>
+         <Size>80</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Cream Ball</ObjectId>
+         <Damage>40</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>800</LifetimeMS>
+         <Size>60</Size>
+         <ConditionEffect duration="1.2">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x5e33" id="Tiny Rototo">
+      <Group>Candy Creature</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>49</Index>
+      </AnimatedTexture>
+      <HitSound>monster/elves_hit</HitSound>
+      <DeathSound>monster/hobbits_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Defense>20</Defense>
+      <XpMult>0.0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Purple Rototo Blast</ObjectId>
+         <Damage>40</Damage>
+         <Speed>45</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <Size>90</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Red Rototo Blast</ObjectId>
+         <Damage>40</Damage>
+         <Speed>45</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <Size>90</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x5e32" id="Rototo">
+      <Group>Candy Creature</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>64</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>65</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <HitSound>monster/dragons_hit</HitSound>
+      <DeathSound>monster/djinn_hit</DeathSound>
+      <Size>120</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>2300</MaxHitPoints>
+      <Defense>25</Defense>
+      <XpMult>0.8</XpMult>
+      <Projectile id="0">
+         <ObjectId>Purple Rototo Blast</ObjectId>
+         <Damage>120</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>1600</LifetimeMS>
+         <Size>120</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Red Rototo Blast</ObjectId>
+         <Damage>80</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x5e31" id="Candyland Spawner">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x289</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <XpMult>0</XpMult>
+   </Object>
+   <Object type="0x5e2f" id="Butterfly">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x2d9</Index>
+      </Texture>
+      <Animation prob="1" period="0.4">
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x2d9</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x2da</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <MaxHitPoints>100</MaxHitPoints>
+      <XpMult>0</XpMult>
+      <Z>0.27</Z>
+      <Flying/>
+      <Size>80</Size>
+      <ShadowSize>30</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+</Objects>

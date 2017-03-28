@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x705e" id="Pirate King Healer">
+      <Class>Character</Class>
+      <Enemy/>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <StasisImmune/>
+      <XpMult>0.0</XpMult>
+   </Object>
+   <Object type="0x7109" id="Bilgewater Anchor">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <StasisImmune/>
+      <XpMult>0.0</XpMult>
+   </Object>
+   <Object type="0x706a" id="Bilgewater Summoner">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <StasisImmune/>
+      <XpMult>0.0</XpMult>
+   </Object>
+   <Object type="0x707a" id="Bilgewater Darkwater Spawner">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <StasisImmune/>
+      <XpMult>0.0</XpMult>
+   </Object>
+   <Object type="0x0930" id="Jon Bilgewater the Pirate King">
+      <Group>JonBilgewater</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>64</Index>
+      </AnimatedTexture>
+      <HitSound>monster/pirate_king_hit</HitSound>
+      <DeathSound>monster/pirate_king_death</DeathSound>
+      <Size>120</Size>
+      <MaxHitPoints>90000</MaxHitPoints>
+      <Defense>30</Defense>
+      <Quest/>
+      <God/>
+      <StasisImmune/>
+      <Level>1</Level>
+      <XpMult>0.4</XpMult>
+      <NoArticle/>
+      <Projectile id="0">
+         <ObjectId>Golden Coin</ObjectId>
+         <Damage>150</Damage>
+         <Speed>70</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1600</LifetimeMS>
+         <ConditionEffect duration="1.5">Confused</ConditionEffect>
+         <ParticleTrail/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Black Ball</ObjectId>
+         <Damage>250</Damage>
+         <Speed>80</Speed>
+         <Size>200</Size>
+         <LifetimeMS>1800</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x705d" id="Parrot Cage">
+      <Class>GameObject</Class>
+      <ShadowSize>0</ShadowSize>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xed</Index>
+      </Texture>
+      <Size>80</Size>
+      <Z>0.40</Z>
+      <StasisImmune/>
+      <XpMult>0.0</XpMult>
+   </Object>
+   <Object type="0x705b" id="Deadwater Docks Parrot">
+      <Group>Deadwater Parrots</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8dEncounters</File>
+         <Index>41</Index>
+      </AnimatedTexture>
+      <HitSound>monster/cave_pirates_hit</HitSound>
+      <DeathSound>monster/cave_pirates_death</DeathSound>
+      <Size>120</Size>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Defense>0</Defense>
+      <XpMult>0.0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Sound Wave</ObjectId>
+         <Damage>60</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>100</LifetimeMS>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x705c" id="Deadwater Docks Macaw">
+      <Group>Deadwater Parrots</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8dEncounters</File>
+         <Index>42</Index>
+      </AnimatedTexture>
+      <HitSound>monster/cave_pirates_hit</HitSound>
+      <DeathSound>monster/cave_pirates_death</DeathSound>
+      <Size>120</Size>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Defense>0</Defense>
+      <XpMult>0.0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Sound Wave</ObjectId>
+         <Damage>60</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>100</LifetimeMS>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x707c" id="Massive Parrot">
+      <Group>Massive Parrots</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8dEncounters</File>
+         <Index>42</Index>
+      </AnimatedTexture>
+      <HitSound>monster/cave_pirates_hit</HitSound>
+      <DeathSound>monster/cave_pirates_death</DeathSound>
+      <Size>200</Size>
+      <Z>0.40</Z>
+      <MaxHitPoints>4000</MaxHitPoints>
+      <Defense>20</Defense>
+      <XpMult>0.0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Sound Wave</ObjectId>
+         <Damage>60</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>100</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x690" id="Deadwater Docks Lieutenant">
+      <Group>Deadwater Docks Bosses</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8dEncounters</File>
+         <Index>34</Index>
+      </AnimatedTexture>
+      <HitSound>monster/pirates_hit</HitSound>
+      <DeathSound>monster/pirates_death</DeathSound>
+      <Size>105</Size>
+      <MaxHitPoints>3500</MaxHitPoints>
+      <Defense>30</Defense>
+      <XpMult>0.2</XpMult>
+      <Projectile id="0">
+         <ObjectId>Black Ball</ObjectId>
+         <Damage>150</Damage>
+         <Speed>125</Speed>
+         <LifetimeMS>500</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x691" id="Deadwater Docks Commander">
+      <Group>Deadwater Docks Bosses</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8dEncounters</File>
+         <Index>35</Index>
+      </AnimatedTexture>
+      <HitSound>monster/pirates_hit</HitSound>
+      <DeathSound>monster/pirates_death</DeathSound>
+      <Size>110</Size>
+      <MaxHitPoints>3500</MaxHitPoints>
+      <Defense>30</Defense>
+      <XpMult>0.2</XpMult>
+      <Projectile id="0">
+         <ObjectId>Black Ball</ObjectId>
+         <Damage>150</Damage>
+         <Speed>125</Speed>
+         <LifetimeMS>500</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x692" id="Deadwater Docks Captain">
+      <Group>Deadwater Docks Bosses</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8dEncounters</File>
+         <Index>36</Index>
+      </AnimatedTexture>
+      <HitSound>monster/pirates_hit</HitSound>
+      <DeathSound>monster/pirates_death</DeathSound>
+      <Size>115</Size>
+      <MaxHitPoints>3500</MaxHitPoints>
+      <Defense>30</Defense>
+      <XpMult>0.2</XpMult>
+      <Defense>20</Defense>
+      <Projectile id="0">
+         <ObjectId>Black Ball</ObjectId>
+         <Damage>150</Damage>
+         <Speed>125</Speed>
+         <LifetimeMS>500</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x693" id="Deadwater Docks Admiral">
+      <Group>Deadwater Docks Bosses</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8dEncounters</File>
+         <Index>37</Index>
+      </AnimatedTexture>
+      <HitSound>monster/pirates_hit</HitSound>
+      <DeathSound>monster/pirates_death</DeathSound>
+      <Size>120</Size>
+      <MaxHitPoints>3500</MaxHitPoints>
+      <Defense>30</Defense>
+      <XpMult>0.2</XpMult>
+      <Projectile id="0">
+         <ObjectId>Black Ball</ObjectId>
+         <Damage>150</Damage>
+         <Speed>125</Speed>
+         <LifetimeMS>500</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x694" id="Deadwater Docks Brawler">
+      <Group>Deadwater Docks Pirates</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8dEncounters</File>
+         <Index>38</Index>
+      </AnimatedTexture>
+      <XpMult>0.2</XpMult>
+      <HitSound>monster/cave_pirates_hit</HitSound>
+      <DeathSound>monster/cave_pirates_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>20</Defense>
+      <Projectile id="0">
+         <ObjectId>Skull Wave</ObjectId>
+         <Damage>100</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>600</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x695" id="Deadwater Docks Sailor">
+      <Group>Deadwater Docks Pirates</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8dEncounters</File>
+         <Index>39</Index>
+      </AnimatedTexture>
+      <HitSound>monster/cave_pirates_hit</HitSound>
+      <DeathSound>monster/cave_pirates_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>2100</MaxHitPoints>
+      <Defense>30</Defense>
+      <XpMult>0.2</XpMult>
+      <Projectile id="0">
+         <ObjectId>Beer Bottle</ObjectId>
+         <Damage>90</Damage>
+         <Speed>150</Speed>
+         <LifetimeMS>500</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x696" id="Deadwater Docks Veteran">
+      <Group>Deadwater Docks Pirates</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8dEncounters</File>
+         <Index>40</Index>
+      </AnimatedTexture>
+      <HitSound>monster/cave_pirates_hit</HitSound>
+      <DeathSound>monster/cave_pirates_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Defense>30</Defense>
+      <XpMult>0.2</XpMult>
+      <Projectile id="0">
+         <ObjectId>Blade</ObjectId>
+         <Damage>100</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>600</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x705f" id="Bottled Evil Water">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x3f3</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1994" id="Group Eye Wall Nondestruct">
+      <Class>Wall</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x3ec</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x3ed</Index>
+         </Texture>
+      </Top>
+      <Animation prob="0.4" period="0.4">
+         <Frame time="0.1">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x3ee</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x3ef</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.15">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x3f0</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x3ef</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x3ee</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x697" id="The Heroic Observer">
+      <Group>GroupWall</Group>
+      <Class>Wall</Class>
+      <Enemy/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x3e0</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x3e1</Index>
+         </Texture>
+      </Top>
+      <Animation prob="0.4" period="0.4">
+         <Frame time="0.1">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x3e2</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x3e3</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.15">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x3e4</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x3e3</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x3e2</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <XpMult>0.0</XpMult>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x698" id="Group Wall Observer">
+      <Class>Character</Class>
+      <Enemy/>
+      <MaxHitPoints>10000000</MaxHitPoints>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <XpMult>0.0</XpMult>
+      <StasisImmune/>
+   </Object>
+</Objects>

@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x0700" id="Dungeon Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0x7c</Index>
+      </Texture>
+   </Object>
+   <Object type="0x070f" id="Invisible Placeholder">
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiChar8x8</File>
+         <Index>0xb5</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x0711" id="Trap">
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xff</Index>
+      </Texture>
+      <Size>0</Size>
+      <Z>-0.2</Z>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x0712" id="Nexus Portal">
+      <Class>Portal</Class>
+      <Size>80</Size>
+      <IntergamePortal/>
+      <NexusPortal/>
+      <Texture>
+         <File>lofiChar216x16</File>
+         <Index>0x3f</Index>
+      </Texture>
+   </Object>
+   <Object type="0x071c" id="Random Realm Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>Random Realm</DungeonName>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x36</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0720" id="Vault Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>Vault</DungeonName>
+      <Texture>
+         <File>lofiEnvironment3</File>
+         <Index>0xf8</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x075b" id="Arena Portal">
+      <Class>ArenaPortal</Class>
+      <IntergamePortal/>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xe9</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x0723" id="Gravestone 1">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiChar28x8</File>
+         <Index>0x6c</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0724" id="Gravestone 2">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiChar28x8</File>
+         <Index>0x6d</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0725" id="Gravestone 3">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiChar28x8</File>
+         <Index>0x6e</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0726" id="Gravestone 4">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiChar28x8</File>
+         <Index>0x6f</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0727" id="Gravestone 5">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiChar216x16</File>
+         <Index>0x13</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0728" id="Gravestone 6">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiChar216x16</File>
+         <Index>0x14</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0729" id="Gravestone 7">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiChar216x16</File>
+         <Index>0x15</Index>
+      </Texture>
+   </Object>
+   <Object type="0x072a" id="Gravestone 8">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiChar216x16</File>
+         <Index>0x16</Index>
+      </Texture>
+   </Object>
+   <Object type="0x072b" id="Gravestone 9">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiChar216x16</File>
+         <Index>0x17</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0734" id="Gravestone 10">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiChar216x16</File>
+         <Index>0x27</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0735" id="Gravestone 11">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiChar216x16</File>
+         <Index>0x3d</Index>
+      </Texture>
+   </Object>
+   <Object type="0x01c7" id="White Fountain">
+      <Class>GameObject</Class>
+      <Model>Tower</Model>
+      <Effect color="0x4165D5">Fountain</Effect>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x96</Index>
+      </Texture>
+   </Object>
+   <Object type="0x074f" id="Winter Fountain Frozen">
+      <Class>GameObject</Class>
+      <Model>Tower</Model>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x96</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x0ddb" id="Winter Fountain Snowy">
+      <Class>GameObject</Class>
+      <Model>Tower</Model>
+      <Effect color="0xF0F0FF">FountainSnowy</Effect>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x96</Index>
+      </Texture>
+   </Object>
+   <Object type="0x01f0" id="Fountain Placer Center">
+      <Class>Character</Class>
+      <Size>0</Size>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x96</Index>
+      </Texture>
+   </Object>
+   <Object type="0x060b" id="Fountain Placer Center Snowy">
+      <Class>Character</Class>
+      <Size>0</Size>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x96</Index>
+      </Texture>
+   </Object>
+   <Object type="0x01ef" id="Halloween Fountain">
+      <Class>GameObject</Class>
+      <Model>Tower</Model>
+      <Effect color="0x91121c">Fountain</Effect>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x162</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x01ca" id="Merchant">
+      <Class>Merchant</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x77</Index>
+      </Texture>
+   </Object>
+   <Object type="0x074e" id="Winter now">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+      <StasisImmune/>
+      <Effect color="0xFFFFFF" rate="4" life="3" lifeVariance=".25" speed="0" speedVariance=".5" size="5" rise="-.6" riseVariance=".1" rangeX="5" rangeY="5">CustomParticles</Effect>
+   </Object>
+   <Object type="0x0755" id="Charachter Changer Maker LF">
+      <Class>Character</Class>
+      <Size>0</Size>
+      <Texture>
+         <File>lofiChar8x8</File>
+         <Index>0x18</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0756" id="Charachter Changer Maker">
+      <Class>Character</Class>
+      <Size>0</Size>
+      <Texture>
+         <File>lofiChar8x8</File>
+         <Index>0x08</Index>
+      </Texture>
+   </Object>
+   <Object type="0x072f" id="Guild Hall Portal">
+      <Class>GuildHallPortal</Class>
+      <IntergamePortal/>
+      <DungeonName>Guild Hall</DungeonName>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x54</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x0736" id="Guild Hall Upgrade 1">
+      <DisplayId>Guild Hall Upgrade</DisplayId>
+      <Class>GuildMerchant</Class>
+      <Price>10000</Price>
+      <GuildItem>GuildHallUpgrade</GuildItem>
+      <GuildItemParam>Guild Hall 2</GuildItemParam>
+      <Description>This will make your Guild Hall larger and more attractive.  Note that this will take effect after the Guild Hall is empty for a few minutes.</Description>
+      <Texture>
+         <File>lofiEnvironment3</File>
+         <Index>0x98</Index>
+      </Texture>
+      <OccupySquare/>
+      <Static/>
+   </Object>
+   <Object type="0x0737" id="Guild Hall Upgrade 2">
+      <DisplayId>Guild Hall Upgrade</DisplayId>
+      <Class>GuildMerchant</Class>
+      <Price>100000</Price>
+      <GuildItem>GuildHallUpgrade</GuildItem>
+      <GuildItemParam>Guild Hall 3</GuildItemParam>
+      <Description>This will make your Guild Hall larger and more attractive.  Note that this will take effect after the Guild Hall is empty for a few minutes.</Description>
+      <Texture>
+         <File>lofiEnvironment3</File>
+         <Index>0x98</Index>
+      </Texture>
+      <OccupySquare/>
+      <Static/>
+   </Object>
+   <Object type="0x0738" id="Guild Hall Upgrade 3">
+      <DisplayId>Guild Hall Upgrade</DisplayId>
+      <Class>GuildMerchant</Class>
+      <Price>250000</Price>
+      <GuildItem>GuildHallUpgrade</GuildItem>
+      <GuildItemParam>Guild Hall 4</GuildItemParam>
+      <Description>This will make your Guild Hall larger and more attractive.  Note that this will take effect after the Guild Hall is empty for a few minutes.</Description>
+      <Texture>
+         <File>lofiEnvironment3</File>
+         <Index>0x98</Index>
+      </Texture>
+      <OccupySquare/>
+      <Static/>
+   </Object>
+   <Object type="0x0749" id="G Door Opener">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x073a" id="Cube">
+      <Class>GameObject</Class>
+      <Model>Cube</Model>
+   </Object>
+   <Object type="0x073b" id="Big Cube">
+      <Class>GameObject</Class>
+      <Model>Big Cube</Model>
+   </Object>
+   <Object type="0x073c" id="Ico">
+      <Class>GameObject</Class>
+      <Model>Ico</Model>
+   </Object>
+   <Object type="0x073d" id="Octa">
+      <Class>GameObject</Class>
+      <Model>Octa</Model>
+   </Object>
+   <Object type="0x073e" id="Pyramid">
+      <Class>GameObject</Class>
+      <Model>Pyramid</Model>
+   </Object>
+   <Object type="0x073f" id="Tetra">
+      <Class>GameObject</Class>
+      <Model>Tetra</Model>
+   </Object>
+   <Object type="0x0740" id="Dodec">
+      <Class>GameObject</Class>
+      <Model>Dodec</Model>
+   </Object>
+   <Object type="0x0750" id="Cloth Bazaar Portal">
+      <Class>Portal</Class>
+      <DungeonName>Cloth Bazaar</DungeonName>
+      <IntergamePortal/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x33f</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0751" id="Cloth Bazaar Portal Maker">
+      <Class>Character</Class>
+      <Size>0</Size>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x36</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0753" id="Pet Yard Portal">
+      <Class>Portal</Class>
+      <DungeonName>Pet Yard</DungeonName>
+      <IntergamePortal/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x0d</Index>
+      </Texture>
+      <DisplayId>{objects.Pet_Yard_Portal}</DisplayId>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+   </Object>
+   <Object type="0x0754" id="Pet Upgrader">
+      <Class>PetUpgrader</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0xfb</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x0511" id="Mystery Box">
+      <Class>MysteryBoxGround</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x0f</Index>
+      </Texture>
+   </Object>
+   <Object type="0x222b" id="Mystery Box Ground Object">
+      <Class>MysteryBoxGround</Class>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+      <Size>0</Size>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x494</Index>
+      </Texture>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x222c" id="mb shopkeep1">
+      <DisplayId>Mystery Box Shop</DisplayId>
+      <Class>Character</Class>
+      <ShadowSize>50</ShadowSize>
+      <Size>80</Size>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x153</Index>
+      </Texture>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x222d" id="mb shopkeep2">
+      <DisplayId>Mystery Box Shop</DisplayId>
+      <Class>Character</Class>
+      <ShadowSize>50</ShadowSize>
+      <Size>80</Size>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x154</Index>
+      </Texture>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x22f0" id="Fortune Ground Object">
+      <Class>FortuneGround</Class>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+      <Size>0</Size>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x494</Index>
+      </Texture>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x22f1" id="ft shopkeep">
+      <DisplayId>The Alchemist</DisplayId>
+      <Class>FortuneTeller</Class>
+      <ShadowSize>50</ShadowSize>
+      <Size>100</Size>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x4f5</Index>
+      </Texture>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x1757" id="ft Vases with rug">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Size>100</Size>
+      <Texture>
+         <File>lofiCharBig</File>
+         <Index>0x170</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1758" id="ft Vases">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Size>100</Size>
+      <Texture>
+         <File>lofiCharBig</File>
+         <Index>0x171</Index>
+      </Texture>
+   </Object>
+   <Object type="0x175A" id="Daily Login Rewards">
+      <Class>DailyLoginRewards</Class>
+      <DisplayId>Login Seer</DisplayId>
+      <ShadowSize>50</ShadowSize>
+      <Size>120</Size>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x4Fa</Index>
+      </Texture>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x175B" id="Daily Login Rewards Inv Object">
+      <Class>DailyLoginRewards</Class>
+      <ShadowSize>0</ShadowSize>
+      <Size>0</Size>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x4Fa</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x175C" id="Daily Login Portal">
+      <Class>Portal</Class>
+      <DungeonName>Daily Login Room</DungeonName>
+      <IntergamePortal/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x4f7</Index>
+      </Texture>
+      <Animation prob="1" period=".8">
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x4f7</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x4f8</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x1754" id="Quest Rewards">
+      <Class>QuestRewards</Class>
+      <DisplayId>The Tinkerer</DisplayId>
+      <ShadowSize>50</ShadowSize>
+      <Size>120</Size>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x4F6</Index>
+      </Texture>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x1755" id="Quest Rewards Inv Object">
+      <Class>QuestRewards</Class>
+      <ShadowSize>0</ShadowSize>
+      <Size>0</Size>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x4F6</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x1756" id="Daily Quest Portal">
+      <DisplayId>Daily Quest Room</DisplayId>
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>Daily Quest Room</DungeonName>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x4f7</Index>
+      </Texture>
+      <Animation prob="1" period=".8">
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x4f7</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x4f8</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x744D" id="Event Chest">
+      <DisplayId>Event Chest</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <KeepDamageRecord/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x466</Index>
+      </Texture>
+      <MaxHitPoints>180000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Size>160</Size>
+      <XpMult>5.13</XpMult>
+   </Object>
+   <Object type="0x744F" id="Event Chest Portal">
+      <DisplayId>Event Chest</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x466</Index>
+      </Texture>
+      <MaxHitPoints>30000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Size>160</Size>
+      <XpMult>0.0</XpMult>
+   </Object>
+   <Object type="0x7412" id="Nexus Anchor">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>lofiInterfaceBig</File>
+         <Index>6</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x7413" id="Nexus Chinese Dragon">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>37</Index>
+      </AnimatedTexture>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Size>120</Size>
+      <ShadowSize>60</ShadowSize>
+      <Z>0.8</Z>
+      <Flying/>
+   </Object>
+   <Object type="0x7414" id="Nexus Paper Lantern">
+      <Class>Character</Class>
+      <Texture>
+         <File>d3LofiObjEmbed16</File>
+         <Index>0x2a</Index>
+      </Texture>
+      <Animation prob="0.2" period="10" periodJitter="5">
+         <Frame time="0.2">
+            <Texture>
+               <File>d3LofiObjEmbed16</File>
+               <Index>0x29</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>d3LofiObjEmbed16</File>
+               <Index>0x2a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>d3LofiObjEmbed16</File>
+               <Index>0x29</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>d3LofiObjEmbed16</File>
+               <Index>0x2a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>d3LofiObjEmbed16</File>
+               <Index>0x29</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Animation prob="0.2" period="35" periodJitter="10">
+         <Frame time="0.3">
+            <Texture>
+               <File>d3LofiObjEmbed16</File>
+               <Index>0x29</Index>
+            </Texture>
+         </Frame>
+         <Frame time="1.2">
+            <Texture>
+               <File>d3LofiObjEmbed16</File>
+               <Index>0x28</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.3">
+            <Texture>
+               <File>d3LofiObjEmbed16</File>
+               <Index>0x29</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Size>80</Size>
+      <ShadowSize>180</ShadowSize>
+      <ShadowColor>0xff8271</ShadowColor>
+      <Z>0.5</Z>
+      <Flying/>
+   </Object>
+   <Object type="0x7415" id="Nexus Paper Lantern Small">
+      <Class>Character</Class>
+      <Texture>
+         <File>d3LofiObjEmbed16</File>
+         <Index>0x22</Index>
+      </Texture>
+      <Animation prob="0.2" period="10" periodJitter="5">
+         <Frame time="0.2">
+            <Texture>
+               <File>d3LofiObjEmbed16</File>
+               <Index>0x21</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>d3LofiObjEmbed16</File>
+               <Index>0x22</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>d3LofiObjEmbed16</File>
+               <Index>0x21</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>d3LofiObjEmbed16</File>
+               <Index>0x22</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>d3LofiObjEmbed16</File>
+               <Index>0x21</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Animation prob="0.2" period="35" periodJitter="10">
+         <Frame time="0.3">
+            <Texture>
+               <File>d3LofiObjEmbed16</File>
+               <Index>0x21</Index>
+            </Texture>
+         </Frame>
+         <Frame time="1.2">
+            <Texture>
+               <File>d3LofiObjEmbed16</File>
+               <Index>0x20</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.3">
+            <Texture>
+               <File>d3LofiObjEmbed16</File>
+               <Index>0x21</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Size>80</Size>
+      <ShadowSize>100</ShadowSize>
+      <ShadowColor>0xff8271</ShadowColor>
+      <Z>0.4</Z>
+      <Flying/>
+   </Object>
+</Objects>

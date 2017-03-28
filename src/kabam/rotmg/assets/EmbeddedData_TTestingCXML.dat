@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x099b" id="Jeebs">
+      <Class>Character</Class>
+      <Group>Mad Lab</Group>
+      <RemoteTexture>
+         <Instance>testing</Instance>
+         <Id>7632526</Id>
+         <Right/>
+      </RemoteTexture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>200</Size>
+      <ShadowSize>50</ShadowSize>
+      <Defense>10</Defense>
+   </Object>
+</Objects>

@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x714c" id="DS Bat">
+      <DisplayId>Sewer Bat</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>123</Index>
+      </AnimatedTexture>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>125</MaxHitPoints>
+      <Defense>25</Defense>
+      <XpMult>1</XpMult>
+      <Flying/>
+      <Z>0.24</Z>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>40</Damage>
+         <Speed>0</Speed>
+         <Size>80</Size>
+         <LifetimeMS>100</LifetimeMS>
+         <ConditionEffect duration="3">Confused</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x714d" id="DS Rat">
+      <DisplayId>Sewer Rat</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>124</Index>
+      </AnimatedTexture>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/flayers_hit</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>800</MaxHitPoints>
+      <Defense>10</Defense>
+      <XpMult>1</XpMult>
+      <Projectile id="0">
+         <ObjectId>Gray Spinner</ObjectId>
+         <Damage>95</Damage>
+         <Speed>70</Speed>
+         <Size>75</Size>
+         <LifetimeMS>800</LifetimeMS>
+         <ConditionEffect duration="3">Unstable</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x714e" id="DS Natural Slime God">
+      <DisplayId>Natural Slime God</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16dMountains1</File>
+         <Index>0x07</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Defense>12</Defense>
+      <God/>
+      <XpMult>1</XpMult>
+      <Projectile id="0">
+         <ObjectId>Red Fire</ObjectId>
+         <Damage>80</Damage>
+         <Speed>100</Speed>
+         <LifetimeMS>1100</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Green Star</ObjectId>
+         <Damage>0</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="6">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x714f" id="DS Goblin Peon">
+      <DisplayId>Goblin Peon</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>125</Index>
+      </AnimatedTexture>
+      <HitSound>monster/goblins_hit</HitSound>
+      <DeathSound>monster/goblins_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>900</MaxHitPoints>
+      <Defense>10</Defense>
+      <XpMult>0.642</XpMult>
+      <Projectile id="0">
+         <ObjectId>Green Magic</ObjectId>
+         <Damage>20</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>470</LifetimeMS>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0x7150" id="DS Goblin Warlock">
+      <DisplayId>Goblin Warlock</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>126</Index>
+      </AnimatedTexture>
+      <HitSound>monster/goblins_hit</HitSound>
+      <DeathSound>monster/goblins_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Defense>8</Defense>
+      <XpMult>0.642</XpMult>
+      <Projectile id="0">
+         <ObjectId>Green Missile</ObjectId>
+         <Damage>50</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Amplitude>0.75</Amplitude>
+         <Frequency>1.5</Frequency>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Green Star</ObjectId>
+         <Damage>15</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>850</LifetimeMS>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x7163" id="DS Goblin Sorcerer">
+      <DisplayId>Goblin Sorcerer</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>141</Index>
+      </AnimatedTexture>
+      <HitSound>monster/goblins_hit</HitSound>
+      <DeathSound>monster/goblins_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Defense>8</Defense>
+      <XpMult>0.642</XpMult>
+      <Projectile id="0">
+         <ObjectId>Green Missile</ObjectId>
+         <Damage>60</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x7151" id="DS Goblin Brute">
+      <DisplayId>Goblin Brute</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>127</Index>
+      </AnimatedTexture>
+      <HitSound>monster/goblins_hit</HitSound>
+      <DeathSound>monster/goblins_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>1750</MaxHitPoints>
+      <Defense>12</Defense>
+      <XpMult>0.8</XpMult>
+      <Projectile id="0">
+         <ObjectId>Green Bolt</ObjectId>
+         <Damage>90</Damage>
+         <Speed>120</Speed>
+         <LifetimeMS>250</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x7152" id="DS Goblin Knight">
+      <DisplayId>Goblin Knight</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>128</Index>
+      </AnimatedTexture>
+      <HitSound>monster/goblins_hit</HitSound>
+      <DeathSound>monster/goblins_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>2450</MaxHitPoints>
+      <Defense>18</Defense>
+      <XpMult>0.642</XpMult>
+      <Projectile id="0">
+         <ObjectId>White Bolt</ObjectId>
+         <Damage>140</Damage>
+         <Speed>110</Speed>
+         <LifetimeMS>370</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x7168" id="DS Alligator">
+      <DisplayId>Sewer Alligator</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>129</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flaming_skulls_hit</HitSound>
+      <DeathSound>monster/flaming_skulls_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>1700</MaxHitPoints>
+      <Defense>25</Defense>
+      <XpMult>0.8</XpMult>
+      <Projectile id="0">
+         <ObjectId>Z Blast</ObjectId>
+         <Damage>40</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>450</LifetimeMS>
+         <Size>80</Size>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0x7153" id="DS Brown Slime">
+      <DisplayId>Sewer Brown Slime</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>129</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <Size>120</Size>
+      <MaxHitPoints>2750</MaxHitPoints>
+      <Defense>15</Defense>
+      <XpMult>0.8</XpMult>
+      <Projectile id="0">
+         <ObjectId>Brown Magic</ObjectId>
+         <Damage>40</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>250</LifetimeMS>
+         <Size>75</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x7154" id="DS Yellow Slime">
+      <DisplayId>Sewer Yellow Slime</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>130</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <Size>120</Size>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>5</Defense>
+      <XpMult>0.8</XpMult>
+      <Projectile id="0">
+         <ObjectId>Yellow Magic</ObjectId>
+         <Damage>30</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>250</LifetimeMS>
+         <Size>75</Size>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0x7155" id="DS Gulpord the Slime God">
+      <DisplayId>Gulpord the Slime God</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>126</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <Size>120</Size>
+      <MaxHitPoints>25000</MaxHitPoints>
+      <Defense>25</Defense>
+      <Quest/>
+      <God/>
+      <StasisImmune/>
+      <NoArticle/>
+      <Level>1</Level>
+      <XpMult>2.5642</XpMult>
+      <Projectile id="0">
+         <ObjectId>Poison Fireball</ObjectId>
+         <Damage>70</Damage>
+         <Speed>85</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Red Star</ObjectId>
+         <Damage>30</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>1750</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="2.5">Armor Broken</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Green Star</ObjectId>
+         <Damage>30</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Green Star</ObjectId>
+         <Damage>30</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>2400</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="1.5">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x7156" id="DS Boss Minion">
+      <DisplayId>Gulpord Slime</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>131</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>1500</MaxHitPoints>
+      <Defense>0</Defense>
+      <XpMult>0.0</XpMult>
+      <ParalyzeImmune/>
+   </Object>
+   <Object type="0x17f" id="DS Gulpord the Slime God M">
+      <DisplayId>Gulpord the Slime God</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>126</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <Size>70</Size>
+      <MaxHitPoints>8000</MaxHitPoints>
+      <Defense>25</Defense>
+      <StasisImmune/>
+      <NoArticle/>
+      <XpMult>0.0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Poison Fireball</ObjectId>
+         <Damage>60</Damage>
+         <Speed>85</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Size>80</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Red Star</ObjectId>
+         <Damage>30</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>1750</LifetimeMS>
+         <Size>80</Size>
+         <ConditionEffect duration="1">Armor Broken</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x7165" id="DS Gulpord the Slime God S">
+      <DisplayId>Gulpord the Slime God</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>126</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <Size>50</Size>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Defense>25</Defense>
+      <XpMult>0.0</XpMult>
+      <StasisImmune/>
+      <NoArticle/>
+      <Projectile id="0">
+         <ObjectId>Poison Fireball</ObjectId>
+         <Damage>55</Damage>
+         <Speed>85</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Size>60</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Red Star</ObjectId>
+         <Damage>25</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>1750</LifetimeMS>
+         <Size>70</Size>
+         <ConditionEffect duration="1">Armor Broken</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x7157" id="DS Sick">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x7158" id="DS Master Rat">
+      <DisplayId>Master Rat</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <StasisImmune/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>142</Index>
+      </AnimatedTexture>
+      <HitSound>monster/medusa_hit</HitSound>
+      <DeathSound>monster/medusa_death</DeathSound>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <ShadowSize>0</ShadowSize>
+      <Level>20</Level>
+      <XpMult>0.0</XpMult>
+      <Size>140</Size>
+      <Defense>60</Defense>
+      <Projectile id="0">
+         <ObjectId>Wereblast</ObjectId>
+         <Speed>55</Speed>
+         <Damage>50</Damage>
+         <Size>110</Size>
+         <LifetimeMS>1600</LifetimeMS>
+         <ArmorPiercing/>
+         <ConditionEffect duration="5">Darkness</ConditionEffect>
+         <ConditionEffect duration="5">Blind</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x7159" id="DS Orange Turtle">
+      <DisplayId>Orange Turtle</DisplayId>
+      <Class>Character</Class>
+      <StasisImmune/>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>135</Index>
+      </AnimatedTexture>
+      <HitSound>monster/djinn_hit</HitSound>
+      <DeathSound>monster/flaming_skulls_death</DeathSound>
+      <MaxHitPoints>4200</MaxHitPoints>
+      <XpMult>0.0</XpMult>
+      <Size>90</Size>
+      <Defense>10</Defense>
+   </Object>
+   <Object type="0x715b" id="DS Red Turtle">
+      <DisplayId>Red Turtle</DisplayId>
+      <Class>Character</Class>
+      <StasisImmune/>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>133</Index>
+      </AnimatedTexture>
+      <HitSound>monster/djinn_hit</HitSound>
+      <DeathSound>monster/flaming_skulls_death</DeathSound>
+      <MaxHitPoints>4200</MaxHitPoints>
+      <XpMult>0.0</XpMult>
+      <Size>90</Size>
+      <Defense>10</Defense>
+   </Object>
+   <Object type="0x715c" id="DS Purple Turtle">
+      <DisplayId>Purple Turtle</DisplayId>
+      <Class>Character</Class>
+      <StasisImmune/>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>134</Index>
+      </AnimatedTexture>
+      <HitSound>monster/djinn_hit</HitSound>
+      <DeathSound>monster/flaming_skulls_death</DeathSound>
+      <MaxHitPoints>4200</MaxHitPoints>
+      <XpMult>0.0</XpMult>
+      <Size>90</Size>
+      <Defense>10</Defense>
+   </Object>
+   <Object type="0x715e" id="DS Blue Turtle">
+      <DisplayId>Blue Turtle</DisplayId>
+      <Class>Character</Class>
+      <StasisImmune/>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>136</Index>
+      </AnimatedTexture>
+      <HitSound>monster/djinn_hit</HitSound>
+      <DeathSound>monster/flaming_skulls_death</DeathSound>
+      <MaxHitPoints>4200</MaxHitPoints>
+      <XpMult>0.0</XpMult>
+      <Size>90</Size>
+      <Defense>10</Defense>
+   </Object>
+   <Object type="0x715f" id="DS Golden Rat">
+      <DisplayId>Golden Rat</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>132</Index>
+      </AnimatedTexture>
+      <MaxHitPoints>4500</MaxHitPoints>
+      <Defense>10</Defense>
+      <XpMult>1.0</XpMult>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/flayers_hit</DeathSound>
+   </Object>
+   <Object type="0x7160" id="DS Gulpord Summoner">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <MaxHitPoints>10</MaxHitPoints>
+      <Size>0</Size>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+   </Object>
+   <Object type="0x7169" id="DS Sewer Dummy">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x570</Index>
+      </Texture>
+      <HitSound>monster/wooden_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Enemy/>
+      <XpMult>0.0</XpMult>
+   </Object>
+   <Object type="0x7167" id="DS Brown Slime Trail">
+      <Enemy/>
+      <Class>Character</Class>
+      <DisplayId>Sewer Brown Slime</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x57c</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x57d</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x57e</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x57f</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x580</Index>
+         </Texture>
+      </RandomTexture>
+      <Size>90</Size>
+      <ShadowSize>0</ShadowSize>
+      <DrawUnder/>
+      <NoMiniMap/>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Defense>10</Defense>
+      <XpMult>0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <MinDamage>40</MinDamage>
+         <MaxDamage>70</MaxDamage>
+         <Speed>0</Speed>
+         <Size>85</Size>
+         <LifetimeMS>6000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="3">Quiet</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x7166" id="DS Yellow Slime Trail">
+      <Enemy/>
+      <Class>Character</Class>
+      <DisplayId>Sewer Yellow Slime</DisplayId>
+      <RandomTexture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x581</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x582</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x583</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x584</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x585</Index>
+         </Texture>
+      </RandomTexture>
+      <Size>90</Size>
+      <ShadowSize>0</ShadowSize>
+      <DrawUnder/>
+      <NoMiniMap/>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Defense>10</Defense>
+      <XpMult>0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <MinDamage>40</MinDamage>
+         <MaxDamage>70</MaxDamage>
+         <Speed>0</Speed>
+         <Size>85</Size>
+         <LifetimeMS>6000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x7164" id="DS Fly">
+      <Enemy/>
+      <DisplayId>Sewer Fly</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x575</Index>
+      </Texture>
+      <Animation prob="1" period="0.4">
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x575</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x576</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <MaxHitPoints>100</MaxHitPoints>
+      <XpMult>0</XpMult>
+      <Z>0.27</Z>
+      <Flying/>
+      <Size>80</Size>
+      <ShadowSize>30</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+</Objects>

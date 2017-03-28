@@ -1,0 +1,1514 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x1500" id="Black Cat Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x140</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Black Cat</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1501" id="Grey Cat Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x140</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Grey Cat</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1502" id="Orange Cat Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x140</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Orange Cat</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1503" id="Tan Cat Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x140</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Tan Cat</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1504" id="Yellow Cat Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x140</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Yellow Cat</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1505" id="Brown Pup Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x141</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Brown Pup</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1506" id="Grey Pup Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x141</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Grey Pup</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1507" id="Golden Pup Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x141</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Golden Pup</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1508" id="White Cat Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x140</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>White Cat</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1509" id="Blue Snail Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x149</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Blue Snail</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x150a" id="Grey Wolf Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x141</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Grey Wolf</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x150b" id="Brown Fox Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x141</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Brown Fox</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x150c" id="Green Frog Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x149</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Green Frog</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x150d" id="Lion Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x140</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>Feline</PetFamily>
+      <PetSkin>Lion Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x150e" id="Penguin Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x148</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Penguin</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x150f" id="Sheepdog Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x141</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Sheepdog</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1510" id="Panda Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x143</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>Exotic</PetFamily>
+      <PetSkin>Panda Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1511" id="Purple Snail Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x149</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Purple Snail</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1512" id="Black Wolf Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x141</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>Canine</PetFamily>
+      <PetSkin>Black Wolf Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1513" id="Grey Fox Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x141</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Grey Fox</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1514" id="Purple Frog Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x149</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Purple Frog</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1515" id="White Lion Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x140</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>Feline</PetFamily>
+      <PetSkin>White Lion Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1516" id="Green Penguin Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x148</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Green Penguin</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1517" id="Golden Sheepdog Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x141</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>Canine</PetFamily>
+      <PetSkin>Golden Sheepdog Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1518" id="Blue Parrot Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x142</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Blue Parrot</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1519" id="Chick Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x144</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Chick</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x151a" id="Pig Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x144</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Pig</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x151b" id="Sea Slurp Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x149</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Sea Slurp</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x151c" id="Squirrel Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x145</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Squirrel</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x151d" id="Bat Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x14a</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Bat</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x151e" id="Lil' Ghost Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x14a</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Lil' Ghost</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x151f" id="Valentine Generator">
+      <DisplayId>Valentine</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x14c</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>Give this to someone you care about!</Description>
+      <BagType>2</BagType>
+      <Activate objectId="Valentine" cooldown="1" hideEffect="false">PermaPet</Activate>
+      <InvUse/>
+      <feedPower>250</feedPower>
+   </Object>
+   <Object type="0x161f" id="Valentine">
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiChar28x8</File>
+         <Index>0x1a</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.0">
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiChar28x8</File>
+               <Index>0x1a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiChar28x8</File>
+               <Index>0x1b</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <NoMiniMap/>
+      <Z>0.15</Z>
+      <Flying/>
+      <Size>40</Size>
+      <ShadowSize>70</ShadowSize>
+   </Object>
+   --&gt;
+   <Object type="0x1520" id="Leprechaun Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x14b</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>Humanoid</PetFamily>
+      <PetSkin>Leprechaun Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1521" id="Lil' Oryx Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x140</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>? ? ? ?</PetFamily>
+      <PetSkin>Lil' Oryx Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1522" id="Toucan Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x143</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>Exotic</PetFamily>
+      <PetSkin>Toucan Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1523" id="Skunk Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x145</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>Woodland</PetFamily>
+      <PetSkin>Skunk Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1524" id="Mallard Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x144</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>Farm</PetFamily>
+      <PetSkin>Mallard Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1525" id="Duck Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x144</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Duck</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1526" id="Eagle Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x142</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>Avian</PetFamily>
+      <PetSkin>Eagle Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1527" id="Turtle Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x149</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Turtle</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1528" id="Jelly Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x140</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>? ? ? ?</PetFamily>
+      <PetSkin>Jelly Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1529" id="Bee Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x140</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>Insect</PetFamily>
+      <PetSkin>Bee Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x152a" id="Raven Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x140</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>Avian</PetFamily>
+      <PetSkin>Raven Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x152b" id="Grape Penguin Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x148</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Grape Penguin</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x152c" id="Grass Penguin Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x148</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Grass Penguin</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x152d" id="Elf Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x14b</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>Humanoid</PetFamily>
+      <PetSkin>Elf Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x152e" id="Crab Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x149</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Crab</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x152f" id="Hamster Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x145</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Hamster</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1530" id="Dino Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x146</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Dino</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1531" id="Elephant Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x143</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Elephant</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1532" id="Demon Frog Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x149</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>Aquatic</PetFamily>
+      <PetSkin>Demon Frog Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1533" id="Gargoyle Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x14a</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>Spooky</PetFamily>
+      <PetSkin>Gargoyle Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1534" id="Gummy Bear Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x14c</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>? ? ? ?</PetFamily>
+      <PetSkin>Gummy Bear Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1535" id="Dragonfly Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x147</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Dragonfly</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1536" id="Lil' Cyclops Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x14a</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>Spooky</PetFamily>
+      <PetSkin>Lil' Cyclops Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1537" id="Snowy Owl Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x145</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>Woodland</PetFamily>
+      <PetSkin>Snowy Owl Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1538" id="Turkey Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x144</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>Farm</PetFamily>
+      <PetSkin>Turkey Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1539" id="Baby Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x14b</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Baby</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x153a" id="Baby Dragon Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x146</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>Reptile</PetFamily>
+      <PetSkin>Baby Dragon Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x153b" id="Karate Penguin Red Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x148</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>Penguin</PetFamily>
+      <PetSkin>Karate Red Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x153c" id="Karate Penguin Blue Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x148</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>Penguin</PetFamily>
+      <PetSkin>Karate Blue Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x153d" id="Karate Penguin Yellow Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x148</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>Penguin</PetFamily>
+      <PetSkin>Karate Yellow Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x153e" id="Karate Penguin Purple Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x148</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>Penguin</PetFamily>
+      <PetSkin>Karate Purple Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x153f" id="Beach Ball Generator">
+      <DisplayId>Beach Ball</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x193</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>Play with this ball on the beach! (Requires a buddy!)</Description>
+      <BagType>2</BagType>
+      <InvUse/>
+      <Activate objectId="Beach Ball" cooldown="1" hideEffect="true">PermaPet</Activate>
+      <Soulbound/>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x163f" id="Beach Ball">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x1540" id="Robobuddy Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x14d</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>Automaton</PetFamily>
+      <PetSkin>Robobuddy Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1541" id="Snowman Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x14c</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>? ? ? ?</PetFamily>
+      <PetSkin>Snowman Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1542" id="Black Ant Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x147</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Black Ant</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1543" id="Blue Ant Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x147</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Blue Ant</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1544" id="Green Ant Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x147</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Green Ant</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1545" id="Red Ant Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x147</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Red Ant</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1546" id="Purple Ant Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x147</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Purple Ant</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1547" id="Beer Slurp Generator">
+      <DisplayId>Beer Slurp</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x244</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>This special sea slurp is trained to seek out the elusive Beer God.</Description>
+      <Sound>spell/fire_spray</Sound>
+      <ExtraTooltipData>
+         <EffectInfo name="" description="Helps locate Beer Gods in the Realm"/>
+      </ExtraTooltipData>
+      <Sound>spell/light_heal</Sound>
+      <InvUse/>
+      <VaultItem/>
+      <Soulbound/>
+      <Activate objectId="Beer Slurp" cooldown="10">PermaPet</Activate>
+      <OldSound>use_potion</OldSound>
+      <feedPower>1000</feedPower>
+   </Object>
+   <Object type="0x1647" id="Beer Slurp">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>50</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>51</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <NoMiniMap/>
+      <Size>60</Size>
+      <ShadowSize>50</ShadowSize>
+   </Object>
+   <Object type="0x1549" id="Peppermint Snail Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x149</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>Aquatic</PetFamily>
+      <PetSkin>Peppermint Snail Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x154a" id="Relief Oriole Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x142</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Oriole</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x154b" id="Relief Goldfinch Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x142</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Goldfinch</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x154c" id="Relief Bluebird Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x142</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Bluebird</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x154d" id="Relief Cardinal Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x142</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Cardinal</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x154e" id="Werewolf Cub Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x14a</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>Spooky</PetFamily>
+      <PetSkin>Werewolf Cub Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x154f" id="Tomb Snake Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x146</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Tomb Snake</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1550" id="Ninja Cat Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x140</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>Feline</PetFamily>
+      <PetSkin>Ninja Cat Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1551" id="Praying Mantis Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x147</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>Insect</PetFamily>
+      <PetSkin>Praying Mantis Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1552" id="Dreidel Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x14c</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Dreidel</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1553" id="Reindeer Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x145</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>Woodland</PetFamily>
+      <PetSkin>Reindeer Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1555" id="Koala Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x143</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Koala</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1556" id="USA Eagle Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x142</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetFamily>Avian</PetFamily>
+      <PetSkin>USA Eagle Skin</PetSkin>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1557" id="Spirit Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x14a</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Spirit</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x1558" id="Sprite Star Egg">
+      <feedPower>200</feedPower>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x140</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Description>A pet egg. Use it in the Pet Yard located in your Vault!</Description>
+      <PetId>Sprite Star</PetId>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+   </Object>
+   <Object type="0x16f4" id="Valentine Heart Generator">
+      <DisplayId>Valentine Launcher</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x76</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>Send a heart to your closest buddy!</Description>
+      <BagType>2</BagType>
+      <InvUse/>
+      <Activate objectId="Valentine Heart" cooldown="1" hideEffect="true">PermaPet</Activate>
+      <Soulbound/>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x16f5" id="Valentine Heart">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+      <Size>0</Size>
+   </Object>
+</Objects>

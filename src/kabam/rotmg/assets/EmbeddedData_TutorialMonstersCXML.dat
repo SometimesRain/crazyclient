@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0xae2" id="Tut Orange Cat">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>0x02</Index>
+      </AnimatedTexture>
+      <Size>60</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0xae6" id="Tut Sheepdog">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>0x0a</Index>
+      </AnimatedTexture>
+      <Size>60</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0xae7" id="Tut Green Frog">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>0x07</Index>
+      </AnimatedTexture>
+      <Size>60</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0xae8" id="Tut Dragonfly">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>39</Index>
+      </AnimatedTexture>
+      <Size>60</Size>
+      <NoMiniMap/>
+      <WhileMoving>
+         <Z>0.25</Z>
+         <Flying/>
+      </WhileMoving>
+   </Object>
+   <Object type="0xaf4" id="Tut Duck">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>22</Index>
+      </AnimatedTexture>
+      <Size>60</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0xaf5" id="Tut Baby Dragon">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>46</Index>
+      </AnimatedTexture>
+      <Size>80</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0xaf7" id="Tut Panda">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>0x0b</Index>
+      </AnimatedTexture>
+      <Size>80</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0xaf8" id="Tut Toucan">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>19</Index>
+      </AnimatedTexture>
+      <Size>80</Size>
+      <WhileMoving>
+         <Z>0.35</Z>
+         <Flying/>
+      </WhileMoving>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x6af" id="Evil Chicken">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rBeach</File>
+         <Index>8</Index>
+      </AnimatedTexture>
+      <HitSound>monster/chicken_hit</HitSound>
+      <DeathSound>monster/chicken_death</DeathSound>
+      <Size>80</Size>
+      <MaxHitPoints>5</MaxHitPoints>
+      <Defense>0</Defense>
+   </Object>
+   <Object type="0x6b0" id="Evil Chicken Minion">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rBeach</File>
+         <Index>8</Index>
+      </AnimatedTexture>
+      <HitSound>monster/chicken_hit</HitSound>
+      <DeathSound>monster/chicken_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>30</MaxHitPoints>
+      <Defense>0</Defense>
+   </Object>
+   <Object type="0x6b1" id="Evil Chicken God">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>2</Index>
+      </AnimatedTexture>
+      <HitSound>monster/chicken_hit</HitSound>
+      <DeathSound>monster/chicken_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Defense>0</Defense>
+      <Quest/>
+      <Level>1</Level>
+   </Object>
+   <Object type="0x6b2" id="Evil Hen">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rBeach</File>
+         <Index>9</Index>
+      </AnimatedTexture>
+      <HitSound>monster/chicken_hit</HitSound>
+      <DeathSound>monster/chicken_death</DeathSound>
+      <Size>80</Size>
+      <MaxHitPoints>5</MaxHitPoints>
+      <Defense>0</Defense>
+   </Object>
+   <Object type="0x6b3" id="Kitchen Guard">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rBeach</File>
+         <Index>6</Index>
+      </AnimatedTexture>
+      <HitSound>monster/pirates_hit</HitSound>
+      <DeathSound>monster/pirates_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>10</MaxHitPoints>
+      <Defense>0</Defense>
+      <Projectile id="0">
+         <ObjectId>Blade</ObjectId>
+         <Damage>2</Damage>
+         <Speed>120</Speed>
+         <LifetimeMS>400</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x6b4" id="Butcher">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rBeach</File>
+         <Index>7</Index>
+      </AnimatedTexture>
+      <HitSound>monster/pirates_hit</HitSound>
+      <DeathSound>monster/pirates_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>10</MaxHitPoints>
+      <Defense>0</Defense>
+      <Projectile id="0">
+         <ObjectId>Blade</ObjectId>
+         <Damage>5</Damage>
+         <Speed>120</Speed>
+         <LifetimeMS>400</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x0926" id="Bonegrind the Butcher">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>14</Index>
+      </AnimatedTexture>
+      <HitSound>monster/pirates_hit</HitSound>
+      <DeathSound>monster/pirates_death</DeathSound>
+      <Size>80</Size>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Defense>0</Defense>
+      <Quest/>
+      <Level>1</Level>
+      <XpMult>0.7</XpMult>
+      <NoArticle/>
+      <Projectile id="0">
+         <ObjectId>Blade</ObjectId>
+         <Damage>6</Damage>
+         <Size>100</Size>
+         <Speed>75</Speed>
+         <LifetimeMS>800</LifetimeMS>
+      </Projectile>
+   </Object>
+</Objects>

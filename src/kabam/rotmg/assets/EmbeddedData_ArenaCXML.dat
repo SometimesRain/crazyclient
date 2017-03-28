@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x1548" id="Arena Tomb Bosses">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xb6</Index>
+      </Texture>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <XpMult>0</XpMult>
+      <Size>0</Size>
+      <NoMiniMap/>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x5e86" id="Spreading Fire">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>90</Index>
+      </AnimatedTexture>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Defense>10</Defense>
+      <XpMult>0</XpMult>
+      <Size>120</Size>
+      <ShadowSize>0</ShadowSize>
+      <Flying/>
+      <StasisImmune/>
+      <StunImmune/>
+   </Object>
+   <Object type="0x5e85" id="Fire Bomb">
+      <Enemy/>
+      <Class>Character</Class>
+      <Animation prob="1.0" period="0">
+         <Frame time="0.6">
+            <Texture>
+               <File>lofiEnvironment3</File>
+               <Index>0x177</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.6">
+            <Texture>
+               <File>lofiEnvironment3</File>
+               <Index>0x178</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.6">
+            <Texture>
+               <File>lofiEnvironment3</File>
+               <Index>0x179</Index>
+            </Texture>
+         </Frame>
+         <Frame time="2.6">
+            <Texture>
+               <File>lofiEnvironment3</File>
+               <Index>0x17b</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Texture>
+         <File>lofiEnvironment3</File>
+         <Index>0x17b</Index>
+      </Texture>
+      <HitSound>monster/wooden_walls_hit</HitSound>
+      <DeathSound>monster/skull_shrine_hit</DeathSound>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Defense>30</Defense>
+      <XpMult>0</XpMult>
+      <Size>100</Size>
+      <Projectile id="0">
+         <ObjectId>LavaBombBlast</ObjectId>
+         <Speed>70</Speed>
+         <Damage>130</Damage>
+         <Size>140</Size>
+         <LifetimeMS>800</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <StasisImmune/>
+      <StunImmune/>
+   </Object>
+   <Object type="0x5e84" id="Bomb Devil">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>55</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>25</Defense>
+      <Projectile id="0">
+         <ObjectId>Fire Bolt</ObjectId>
+         <Damage>130</Damage>
+         <Speed>90</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2200</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Fire Bolt</ObjectId>
+         <Damage>100</Damage>
+         <Speed>75</Speed>
+         <Size>80</Size>
+         <LifetimeMS>1800</LifetimeMS>
+      </Projectile>
+      <StasisImmune/>
+      <StunImmune/>
+   </Object>
+   <Object type="0x5e87" id="Bomb Father">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>57</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>15000</MaxHitPoints>
+      <Defense>25</Defense>
+      <Projectile id="0">
+         <ObjectId>Fire Bolt</ObjectId>
+         <Damage>160</Damage>
+         <Speed>90</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2200</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Fire Bolt</ObjectId>
+         <Damage>130</Damage>
+         <Speed>75</Speed>
+         <Size>80</Size>
+         <LifetimeMS>1800</LifetimeMS>
+      </Projectile>
+      <StasisImmune/>
+      <StunImmune/>
+   </Object>
+   <Object type="0x5e88" id="Fire Blight">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>56</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>20000</MaxHitPoints>
+      <Defense>50</Defense>
+      <Projectile id="0">
+         <ObjectId>Blue Bolt Shot</ObjectId>
+         <Damage>190</Damage>
+         <Speed>90</Speed>
+         <Size>80</Size>
+         <LifetimeMS>2200</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Blue Bolt Shot</ObjectId>
+         <Damage>160</Damage>
+         <Speed>75</Speed>
+         <Size>60</Size>
+         <LifetimeMS>1800</LifetimeMS>
+      </Projectile>
+      <StasisImmune/>
+      <StunImmune/>
+   </Object>
+   <Object type="0x5e89" id="Quiet Wizard">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rLow2</File>
+         <Index>8</Index>
+      </AnimatedTexture>
+      <Size>80</Size>
+      <MaxHitPoints>4000</MaxHitPoints>
+      <Defense>15</Defense>
+      <XpMult>0.75</XpMult>
+      <Projectile id="0">
+         <ObjectId>White Star Stunner</ObjectId>
+         <Speed>80</Speed>
+         <Damage>20</Damage>
+         <Size>60</Size>
+         <LifetimeMS>1000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="2.4">Quiet</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>White Blue Bubble</ObjectId>
+         <Speed>90</Speed>
+         <Damage>60</Damage>
+         <Size>80</Size>
+         <LifetimeMS>1400</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x140c" id="Silent Wizard">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rLow2</File>
+         <Index>9</Index>
+      </AnimatedTexture>
+      <Size>80</Size>
+      <MaxHitPoints>9000</MaxHitPoints>
+      <Defense>25</Defense>
+      <XpMult>0.75</XpMult>
+      <Projectile id="0">
+         <ObjectId>White Star Stunner</ObjectId>
+         <Speed>90</Speed>
+         <Damage>60</Damage>
+         <Size>60</Size>
+         <LifetimeMS>1300</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="4">Quiet</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>White Blue Bubble</ObjectId>
+         <Speed>90</Speed>
+         <Damage>80</Damage>
+         <Size>80</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <StasisImmune/>
+      <StunImmune/>
+   </Object>
+   <Object type="0x0757" id="Arena Spectator">
+      <Class>Character</Class>
+      <RandomTexture>
+         <AnimatedTexture>
+            <File>chars8x8rHero2</File>
+            <Index>0x09</Index>
+         </AnimatedTexture>
+         <AnimatedTexture>
+            <File>chars8x8rHero2</File>
+            <Index>0x0a</Index>
+         </AnimatedTexture>
+         <AnimatedTexture>
+            <File>chars8x8rHero2</File>
+            <Index>0x0b</Index>
+         </AnimatedTexture>
+         <AnimatedTexture>
+            <File>chars8x8rHero2</File>
+            <Index>0x0c</Index>
+         </AnimatedTexture>
+         <AnimatedTexture>
+            <File>chars8x8rHero2</File>
+            <Index>0x0d</Index>
+         </AnimatedTexture>
+         <AnimatedTexture>
+            <File>chars8x8rHero2</File>
+            <Index>0x0e</Index>
+         </AnimatedTexture>
+         <AnimatedTexture>
+            <File>chars8x8rHero2</File>
+            <Index>0x0f</Index>
+         </AnimatedTexture>
+      </RandomTexture>
+      <Size>100</Size>
+      <XpMult>0.0</XpMult>
+      <Z>1</Z>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>0</Damage>
+         <Speed>0</Speed>
+         <Size>80</Size>
+         <LifetimeMS>100</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x0758" id="Arena Spectator Spawner">
+      <Class>Character</Class>
+      <Size>0</Size>
+      <Texture>
+         <File>lofiChar8x8</File>
+         <Index>0x08</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0759" id="Arena Spectator Spawner High">
+      <Class>Character</Class>
+      <Size>0</Size>
+      <Texture>
+         <File>lofiChar8x8</File>
+         <Index>0x09</Index>
+      </Texture>
+   </Object>
+   <Object type="0x075a" id="Arena Spectator High">
+      <Class>Character</Class>
+      <RandomTexture>
+         <AnimatedTexture>
+            <File>chars8x8rHero2</File>
+            <Index>0x09</Index>
+         </AnimatedTexture>
+         <AnimatedTexture>
+            <File>chars8x8rHero2</File>
+            <Index>0x0a</Index>
+         </AnimatedTexture>
+         <AnimatedTexture>
+            <File>chars8x8rHero2</File>
+            <Index>0x0b</Index>
+         </AnimatedTexture>
+         <AnimatedTexture>
+            <File>chars8x8rHero2</File>
+            <Index>0x0c</Index>
+         </AnimatedTexture>
+         <AnimatedTexture>
+            <File>chars8x8rHero2</File>
+            <Index>0x0d</Index>
+         </AnimatedTexture>
+         <AnimatedTexture>
+            <File>chars8x8rHero2</File>
+            <Index>0x0e</Index>
+         </AnimatedTexture>
+         <AnimatedTexture>
+            <File>chars8x8rHero2</File>
+            <Index>0x0f</Index>
+         </AnimatedTexture>
+      </RandomTexture>
+      <Size>100</Size>
+      <XpMult>0.0</XpMult>
+      <Z>1.9</Z>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>0</Damage>
+         <Speed>0</Speed>
+         <Size>80</Size>
+         <LifetimeMS>100</LifetimeMS>
+      </Projectile>
+   </Object>
+</Objects>
