@@ -28,7 +28,7 @@ public class FindMenu extends Frame {
 	private const padY:int = 28;
 
     public function FindMenu(gs:GameSprite, players:Vector.<Player>, itemname:String) {
-        super("Players with "+itemname+" (Click to trade)", "", "");
+        super("Players with "+itemname, "", "");
 		gs_ = gs;
 		p_ = players;
 		var le:int = p_.length;
@@ -73,6 +73,7 @@ public class FindMenu extends Frame {
 		for each(_local_2 in p_) {
 			gs_.gsc_.requestTrade(_local_2.name_);
 		}
+        closeDialogs.dispatch();
     }
 
     private function onClose(e:MouseEvent):void {

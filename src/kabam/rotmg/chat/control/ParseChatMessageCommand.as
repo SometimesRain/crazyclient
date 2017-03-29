@@ -44,8 +44,6 @@ public class ParseChatMessageCommand {
 	[Inject]
 	public var openDialog:OpenDialogSignal;
 	
-	private var itemnames:Array = new Array("life","mana","def","att","wis","vit","dex","spd");
-	private var itemids:Array = new Array("2793","2794","2592","2591","2613","2612","2636","2593");
 	private static var lastMsg:String = "";
 	private static var lastTell:String = "";
 	private static var lastTellTo:String = "";
@@ -447,7 +445,7 @@ public class ParseChatMessageCommand {
         }
         if(data.toLowerCase() == "/exdefault")
         {
-            Parameters.data_.AAException = [3448,3449,3472,3334,5952,2354,2369,3368,3366,3367,3391,3389,3390,5920,2314,3412,3639,3634,2327,2335,2336,1755,24582,24351,24363,24135,24133,24134,24132,24136,3356,3357,3358,3359,3360,3361,3362,3363,3364,2352,28780,28781,28795,28942,28957,28988,28938,29291,29018,29517,24338,29580,29712,6282,0x717e,0x727c,0x727d,0x736e,0x736f,0x724a,0x724b,0x724c,0x724d,0x724e];
+            Parameters.data_.AAException = [3448,3449,3472,3334,5952,2354,2369,3368,3366,3367,3391,3389,3390,5920,2314,3412,3639,3634,2327,1755,24582,24351,24363,24135,24133,24134,24132,24136,3356,3357,3358,3359,3360,3361,3362,3363,3364,2352,28780,28781,28795,28942,28957,28988,28938,29291,29018,29517,24338,29580,29712,6282,0x717e,0x727c,0x727d,0x736e,0x736f,0x724a,0x724b,0x724c,0x724d,0x724e];
             addTextLine.dispatch(ChatMessage.make("*Help*","Default exception list restored."));
             Parameters.save();
             return true;
@@ -461,7 +459,7 @@ public class ParseChatMessageCommand {
         }
         if(data.toLowerCase() == "/tpdefault")
         {
-            Parameters.data_.tptoList = ["lab","manor", "sewer"];
+            Parameters.data_.tptoList = ["lab","manor", "sew"];
             addTextLine.dispatch(ChatMessage.make("*Help*","Default teleport keyword list restored."));
             Parameters.save();
             return true;
@@ -489,6 +487,7 @@ public class ParseChatMessageCommand {
 				hudModel.gameSprite.gsc_.playerText("/tell mreyeball hide me");
 				return true;
 			case "/friends":
+			case "/fr":
 				hudModel.gameSprite.gsc_.playerText("/tell mreyeball friends");
 				return true;
 			case "/l2m":
@@ -563,23 +562,6 @@ public class ParseChatMessageCommand {
 		if (splice != null) {
 			navigateToURL(new URLRequest("https://www.realmeye.com/player/" + splice[1]), "_blank");
 			return true;
-		}
-		splice = data.toLowerCase().match("/sell (\\w{3,4}) (\\w{3,4})$");
-		if (splice != null) {
-			var id1:String;
-			var id2:String;
-			for (i = 0; i < itemnames.length; i++) {
-				if (itemnames[i] == splice[1]) {
-					id1 = itemids[i];
-				}
-				else if (itemnames[i] == splice[2]) {
-					id2 = itemids[i];
-				}
-			}
-			if (id1 != null && id2 != null) {
-				navigateToURL(new URLRequest("https://www.realmeye.com/offers-to/buy/" + id1 + "/" + id2), "_blank");
-				return true;
-			}
 		}
 		splice = data.toLowerCase().match("/sell (\\d{1,2})$"); //incl backpack
 		if (splice != null) {
@@ -657,18 +639,6 @@ public class ParseChatMessageCommand {
 		}*/
 		splice = data.match("/find (.+)$");
 		if (splice != null) {
-			var input:String = splice[1];
-			//findItem(ObjectLibrary.idToType_[splice[1]]); //simple way
-			//findItem(findMatch(splice[1])); //levenshtein
-			var hardcode:Vector.<String> = new <String> ["def", "att", "spd", "dex", "vit", "wis", "ubhp"];
-			var hardval:Vector.<int> = new <int>[0xa20, 0xa1f, 0xa21, 0xa4c, 0xa34, 0xa35, 0xba9];
-			for (i = 0; i < hardcode.length; i++) {
-				if (splice[1] == hardcode[i]) {
-					//addTextLine.dispatch(ChatMessage.make("*Help*", "Finding players with " + ObjectLibrary.getIdFromType(hardval[i])));
-					findItem(hardval[i]);
-					return true;
-				}
-			}
 			findItem(findMatch2(splice[1])); //length-match
 			return true;
 		}
@@ -683,6 +653,39 @@ public class ParseChatMessageCommand {
             addTextLine.dispatch(ChatMessage.make("*Help*","Taking "+ObjectLibrary.getIdFromType(hudModel.gameSprite.map.player_.collect)+"s from vault chests"));
 			return true;
 		}
+		splice = data.match("/put (.+)$");
+		if (splice != null) {
+			hudModel.gameSprite.map.player_.collect = 0 - findMatch2(splice[1]);
+            addTextLine.dispatch(ChatMessage.make("*Help*","Putting "+ObjectLibrary.getIdFromType(0 - hudModel.gameSprite.map.player_.collect)+"s to vault chests"));
+			return true;
+		}
+		splice = data.match("/tp (\\w+)$");
+		if (splice != null) {
+			fixedTeleport(splice[1]);
+			return true;
+		}
+		splice = data.toLowerCase().match("/buy (\\w+) ?(\\w*)$");
+		if (splice != null) {
+			//navigateToURL(new URLRequest("https://www.realmeye.com/offers-to/sell/" + findMatch2(splice[1]) + "/2793"), "_blank");
+			if (splice[2] == "") {
+				navigateToURL(new URLRequest("https://www.realmeye.com/offers-to/sell/" + findMatch2(splice[1]) + "/2793"), "_blank");
+			}
+			else {
+				navigateToURL(new URLRequest("https://www.realmeye.com/offers-to/sell/" + findMatch2(splice[1]) + "/"+ findMatch2(splice[2])), "_blank");
+			}
+			return true;
+		}
+		splice = data.toLowerCase().match("/sell (\\w+) ?(\\w*)$");
+		if (splice != null) {
+            //addTextLine.dispatch(ChatMessage.make("*Help*", splice[1]+" "+splice[2]));
+			if (splice[2] == "") {
+				navigateToURL(new URLRequest("https://www.realmeye.com/offers-to/buy/" + findMatch2(splice[1]) + "/2793"), "_blank");
+			}
+			else {
+				navigateToURL(new URLRequest("https://www.realmeye.com/offers-to/buy/" + findMatch2(splice[1]) + "/"+ findMatch2(splice[2])), "_blank");
+			}
+			return true;
+		}
 		/*splice = data.match("/spam (.+)$");
 		if (splice != null) {
 			return true;
@@ -695,11 +698,41 @@ public class ParseChatMessageCommand {
         return false;
     }
 	
+	private function fixedTeleport(input:String):void {
+		var dist2:int = int.MAX_VALUE;
+		var temp:int;
+		var go_:GameObject;
+		var itemname:String;
+		for each(go_ in hudModel.gameSprite.map.goDict_) {
+			if (!(go_ is Player)) {
+				continue;
+			}
+			temp = levenshtein(input, go_.name_.toLowerCase().substr(0,input.length));
+			if (temp < dist2) {
+				//addTextLine.dispatch(ChatMessage.make("*Help*",temp+" < "+dist2+", so player = "+go_.name_));
+				dist2 = temp;
+				itemname = go_.name_;
+			}
+			if (dist2 == 0) {
+				break;
+			}
+		}
+        addTextLine.dispatch(ChatMessage.make("*Help*", "Teleporting to: " + itemname));
+		hudModel.gameSprite.gsc_.playerText("/teleport "+itemname);
+	}
+	
 	private function findMatch2(input:String):int {
+		var hardcode:Vector.<String> = new <String> ["def", "att", "spd", "dex", "vit", "wis", "ubhp"];
+		var hardval:Vector.<int> = new <int>[0xa20, 0xa1f, 0xa21, 0xa4c, 0xa34, 0xa35, 0xba9];
+		for (var i:int = 0; i < hardcode.length; i++) {
+			if (input == hardcode[i]) {
+				return hardval[i];
+			}
+		}
+		
 		var splice:Array = input.split(' ');
 		var splice2:Array;
 		var curStr:String;
-		
 		var dist2:int = int.MAX_VALUE;
 		var temp:int;
 		var itemname:String;
@@ -729,32 +762,12 @@ public class ParseChatMessageCommand {
 		return init;
 	}
 	
-	/*private function findMatch(input:String):int {
-		var dist2:int = int.MAX_VALUE;
-		var temp:int;
-		var curStr:String;
-		var itemname:String;
-		for each(curStr in ObjectLibrary.itemLib) {
-			temp = levenshtein(input, curStr.toLowerCase());
-			if (temp < dist2) {
-				addTextLine.dispatch(ChatMessage.make("*Help*",temp+" < "+dist2+", so item = "+curStr));
-				dist2 = temp;
-				itemname = curStr;
-			}
-			if (dist2 == 0) {
-				break;
-			}
-		}
-        addTextLine.dispatch(ChatMessage.make("*Help*", "Desired item: " + itemname));
-		return ObjectLibrary.idToType_[itemname];
-	}
-	
 	private function levenshtein(string_1:String, string_2:String):int {
-		var matrix:Array=new Array();
+		var matrix:Array = new Array();
 		var dist:int;
 		for (var i:int=0; i<=string_1.length; i++) {
-			matrix[i]=new Array();
-			for (var j:int=0; j<=string_2.length; j++) {
+			matrix[i] = new Array();
+			for (var j:int = 0; j <= string_2.length; j++) {
 				if (i!=0) {
 					matrix[i].push(0);
 				} else {
@@ -763,20 +776,23 @@ public class ParseChatMessageCommand {
 			}
 			matrix[i][0]=i;
 		}
-		for (i=1; i<=string_1.length; i++) {
-			for (j=1; j<=string_2.length; j++) {
-				if (string_1.charAt(i-1)==string_2.charAt(j-1)) {
-					dist=0;
+		for (i = 1; i <= string_1.length; i++) {
+			for (j = 1; j <= string_2.length; j++) {
+				if (string_1.charAt(i-1) == string_2.charAt(j-1)) {
+					dist = 0;
 				} else {
-					dist=1;
+					dist = 1;
 				}
-				matrix[i][j]=Math.min(matrix[i-1][j]+1,matrix[i][j-1]+1,matrix[i-1][j-1]+dist);
+				matrix[i][j] = Math.min(matrix[i-1][j]+1,matrix[i][j-1]+1,matrix[i-1][j-1]+dist);
 			}
 		}
 		return matrix[string_1.length][string_2.length];
-	}*/
+	}
 	
 	private function findItem(id:int):void { //TODO show amounts
+		if (id == 0xa15) { //dirk
+			addTextLine.dispatch(ChatMessage.make("*Help*", "No item matched the query"));
+		}
 		var holders:Vector.<Player> = new <Player>[];
 		var inv:Vector.<int>;
 		var obj:GameObject;

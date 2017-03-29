@@ -59,6 +59,7 @@ import com.hurlant.util.Base64;
 import com.hurlant.util.der.PEM;
 import flash.system.System;
 import flash.utils.Dictionary;
+import kabam.rotmg.dailyLogin.view.DailyLoginModal;
 import kabam.rotmg.game.commands.PlayGameCommand;
 
 import flash.display.BitmapData;
@@ -282,6 +283,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 	public static var ignoredBag:int = -1;
 	public static var receivingGift:Vector.<Boolean>;
 	public static var sendingGift:Vector.<Boolean>;
+	public static var recentHeal:int = 0;
 	
 	private const servs:Array = new Array("EUEast","EUNorth2","EUNorth","USWest","USMidWest","EUWest","USEast","AsiaSouthEast","USSouth","USSouthWest","EUSouthWest","USEast3","USWest2","USMidWest2","USEast2","USNorthWest","AsiaEast","USSouth3","EUWest2","EUSouth","USSouth2","USWest3","Proxy");
 	private const abbrs:Array = new Array("eue","eun2","eun","usw","usmw","euw","use","ase","uss","ussw","eusw","use3","usw2","usmw2","use2","usnw","ae","uss3","euw2","eus","uss2","usw3","p");
@@ -617,7 +619,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         _local_1.isFromArena_ = isFromArena_;
         serverConnection.sendMessage(_local_1);
         if (isFromArena_) {
-            this.openDialog.dispatch(new BattleSummaryDialog());
+            openDialog.dispatch(new BattleSummaryDialog());
         }
     }
 
@@ -730,14 +732,42 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 					}
 					//change character
 					else {
-						var dict:Dictionary = CurrentCharacterRect.charDict;
-						for each (var s:String in classes) {
-							if (s.substring(0,concom[j].length) == concom[j]) {
-								concom[j] = s
+						var names:Vector.<String> = CurrentCharacterRect.charnames;
+						var ids:Vector.<int> = CurrentCharacterRect.charids;
+						var wanChar:String;
+						var s:String;
+						for (var index:int; index < names.length; index++) {
+							wanChar = concom[j];
+							s = names[index];
+							if (wanChar.substr(wanChar.length-1,1) == "2" && s.substr(s.length-1,1) == "2") { //both end with 2
+								if (s.substring(0,wanChar.length-1) == wanChar.substr(0,wanChar.length-1)) { //subtract 2 and compare
+									concom[j] = ids[index];
+									break;
+								}
+							}
+							else if (s.substring(0,wanChar.length) == wanChar) { //compare
+								concom[j] = ids[index];
 								break;
 							}
 						}
-						var result:int = dict[concom[j] as Object];
+						/*for each (var s:String in dict) {
+							wanChar = concom[j];
+							addTextLine.dispatch(ChatMessage.make("*Help*", s+" "+wanChar.substr(wanChar.length-1, 1)+" "+s.substr(s.length-1,1)));
+							if (wanChar.substr(wanChar.length-1,1) == "2" && s.substr(s.length-1,1) == "2") {
+								addTextLine.dispatch(ChatMessage.make("*Help*", s.substring(0,wanChar.length-1)+" "+wanChar.substr(0,wanChar.length-1)));
+								if (s.substring(0,wanChar.length-1) == wanChar.substr(0,wanChar.length-1)) {
+									addTextLine.dispatch(ChatMessage.make("*Help*","new "+s.substring(0,wanChar.length-1)+" == "+wanChar.substr(0,wanChar.length-1)+" -> "+s));
+									concom[j] = s
+									break;
+								}
+							}
+							else if (s.substring(0,wanChar.length) == wanChar) {
+								//addTextLine.dispatch(ChatMessage.make("*Help*","reg "+s.substring(0,wanChar.length)+" == "+wanChar+" -> "+s));
+								concom[j] = s
+								break;
+							}
+						}*/
+						var result:int = concom[j];
 						if (result > 0) {
 							charid = result;
 							if (j == 1)
@@ -1228,7 +1258,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 		}
     }
 
-    private function onCreateSuccess(_arg_1:CreateSuccess):void { //todo
+    private function onCreateSuccess(_arg_1:CreateSuccess):void {
         this.playerId_ = _arg_1.objectId_;
         charId_ = _arg_1.charId_;
 		
@@ -1238,8 +1268,10 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         gs_.initialize();
         createCharacter_ = false;
 		
-		if (claimkey != "") {
-			var _loc2_:ClaimDailyRewardMessage;
+		if (claimkey != "") { //TODO
+			openDialog.dispatch(new DailyLoginModal());
+			claimkey = "";
+			/*var _loc2_:ClaimDailyRewardMessage;
 			_loc2_ = this.messages.require(CLAIM_LOGIN_REWARD_MSG) as ClaimDailyRewardMessage;
 			_loc2_.claimKey = claimkey;
 			_loc2_.type = "nonconsecutive";
@@ -1252,7 +1284,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 			claimkey = "";
 			
 			escape();
-			this.addTextLine.dispatch(ChatMessage.make("", "Daily rewards claimed!"));
+			this.addTextLine.dispatch(ChatMessage.make("", "Daily rewards claimed!"));*/
 		}
     }
 
@@ -1525,7 +1557,9 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 			if (_local_3.key == "server.plus_symbol") {
 				if (_local_2.objectId_ == playerId_ && _arg_1.color_ == 0x00ff00) {
 					var short:String = _arg_1.message.substr(48);
-					player.chp += int(short.substr(0, short.length-3));
+					var value:int = parseInt(short.substr(0, short.length - 3));
+					player.chp += value;
+					recentHeal += value;
 					//addTextLine.dispatch(ChatMessage.make("", short.substr(0, short.length-3)));
 				}
 				_local_4 = new CharacterStatusText(_local_2, _arg_1.color_, 1000);
@@ -1771,6 +1805,29 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 		//nextTpTime = getTimer() + 10000; //tptime
         _local_2.onGoto(_arg_1.pos_.x_, _arg_1.pos_.y_, gs_.lastUpdate_);
     }
+	
+	private function playerChp(p:Player):void {
+		/*var recentDmg_:Vector.<int> = Projectile.recentDmg;
+		var error:int;
+		var margin:int = 10;
+		var oldChp:int = int(p.chp);*/
+		if (p.chp == -1) {
+			p.chp = p.hp_;
+		}
+		/*else if (recentDmg_.length != 0) { //TODO multibullet algorithm
+			error = p.hp_ - p.chp; //only corrects errors where chp < hp
+			if (error > margin) { //don't correct if hp is almost chp
+				if (recentDmg_.length == 1) { //only correct 1 hit for now
+					if (Math.abs(error - recentDmg_[0]) < margin) {
+						p.chp += recentDmg_[1];
+						addTextLine.dispatch(ChatMessage.make("*Help*", "Correcting CL "+oldChp+" -> "+p.chp.toFixed(0)));
+					}
+				}
+			}
+		}*/
+		recentHeal = 0;
+		Projectile.recentDmg.length = 0;
+	}
 
     private function updateGameObject(_arg_1:GameObject, _arg_2:Vector.<StatData>, _arg_3:Boolean):void {
         var _local_7:StatData;
@@ -1794,8 +1851,8 @@ public class GameServerConnectionConcrete extends GameServerConnection {
                     break;
                 case StatData.HP_STAT:
                     _arg_1.hp_ = _local_8;
-					if (_arg_1 == player && _local_4.chp == -1) {
-						_local_4.chp = _arg_1.hp_;
+					if (_arg_1 == player) {
+						playerChp(_local_4);
 					}
                     break;
                 case StatData.SIZE_STAT:
@@ -1865,11 +1922,8 @@ public class GameServerConnectionConcrete extends GameServerConnection {
                     }
 					if (_arg_1.objectId_ == PLAYERID_) {
 						switch(_arg_1.name_) {
-							case "Arkani":
-								disconnect();
-								//exitGame.dispatch(); //needs an import
-							default:
-								break;
+							case "Arkani": //ban list
+								gs_.closed.dispatch();
 						}
 					}
                     break;

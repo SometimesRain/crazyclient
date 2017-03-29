@@ -1,5 +1,6 @@
 ﻿package com.company.assembleegameclient.ui.options {
 import com.company.assembleegameclient.game.GameSprite;
+import com.company.assembleegameclient.game.MapUserInput;
 import com.company.assembleegameclient.parameters.Parameters;
 import com.company.assembleegameclient.screens.TitleMenuOption;
 import com.company.assembleegameclient.sound.Music;
@@ -314,6 +315,7 @@ public class Options extends Sprite {
     }
 
     private function onAddedToStage(_arg_1:Event):void {
+		MapUserInput.optionsOpen = true;
         this.continueButton_.x = 400;
         this.continueButton_.y = Y_POSITION;
         this.resetToDefaultsButton_.x = 20;
@@ -326,16 +328,12 @@ public class Options extends Sprite {
     }
 
     private function onRemovedFromStage(_arg_1:Event):void {
+		MapUserInput.optionsOpen = false;
         stage.removeEventListener(KeyboardEvent.KEY_DOWN, this.onKeyDown, false);
         stage.removeEventListener(KeyboardEvent.KEY_UP, this.onKeyUp, false);
     }
 
     private function onKeyDown(_arg_1:KeyboardEvent):void {
-        if ((((Capabilities.playerType == "Desktop")) && ((_arg_1.keyCode == KeyCodes.ESCAPE)))) {
-            Parameters.data_.fullscreenMode = false;
-            Parameters.save();
-            this.refresh();
-        }
         if (_arg_1.keyCode == Parameters.data_.options) {
             this.close();
         }
@@ -395,7 +393,7 @@ public class Options extends Sprite {
         
 	private function fsv3() : void
 	{
-		stage.scaleMode = Parameters.data_["stageScale"];
+		stage.scaleMode = Parameters.data_.stageScale;
 		Parameters.root.dispatchEvent(new Event(Event.RESIZE));
 		fsv3_options();
 	}
@@ -411,7 +409,6 @@ public class Options extends Sprite {
 			}
 		}
 	}
-	//
 	
     private function updateEffId() : void
     {
@@ -452,7 +449,7 @@ public class Options extends Sprite {
 		addOptionAndPosition(new ChoiceOption("noOption",new <StringBuilder>[new StaticStringBuilder("")],[],"Current Effect ID: "+calcEffId(),"Turn on the effects that you want to toggle and use the value displayed here to set a hotkey for it.",null));
         addOptionAndPosition(new ChoiceOption("dbQuiet",makeOnOffLabels(),[true,false],"Quiet","Red means you will take this status effect. Increases risk of getting disconnected when turned off.",quietCastle_options,Parameters.data_.dbQuiet ? 0xFF0000 : 0xFFFFFF, true));
         addOptionAndPosition(new ChoiceOption("dbQuietCastle",makeOnOffLabels(),[true,false],"Quiet in Castle","This should be turned on. If you choose not to take quiet in castle you're almost guaranteed to get disconnected.",null,Parameters.data_.dbQuietCastle ? 0xFFFFFF : 0xFF0000, true));
-        addOptionAndPosition(new ChoiceOption("dbPetStasis",makeOnOffLabels(),[true,false],"Pet Stasis","Red means you will take this status effect. Increases risk of getting disconnected when turned off.",null,Parameters.data_.dbPetStasis ? 0xFF0000 : 0xFFFFFF, true));
+        addOptionAndPosition(new ChoiceOption("dbPetStasis",makeOnOffLabels(),[true,false],"Pet Stasis","Red means you will take this status effect. Increases risk of getting disconnected when turned off.",updateEffId,Parameters.data_.dbPetStasis ? 0xFF0000 : 0xFFFFFF, true));
         quietCastle_options();
     }
       
@@ -507,6 +504,9 @@ public class Options extends Sprite {
 		}
 		if (Parameters.data_.dbQuiet) {
 			i += 256;
+		}
+		if (Parameters.data_.dbPetStasis) {
+			i += 512;
 		}
 		return i;
 	}
@@ -566,7 +566,9 @@ public class Options extends Sprite {
         addOptionAndPosition(new ChoiceOption("AABoundingDist",BoundingDistValues(),[1,2,3,4,5,6,7,8,9,10,15,20],"Bounding Distance","Restrict auto aim to see only as far as the bounding distance from the mouse cursor in closest to cursor aim mode.",null));
         addOptionAndPosition(new KeyMapper("AAModeHotkey","Cycle Mode","Key that will cycle through the various auto aim modes."));
         addOptionAndPosition(new ChoiceOption("damageIgnored",makeOnOffLabels(),[true,false],"Damage Ignore Mobs","Damage mobs on auto aim ignore list.",null));
+		addOptionAndPosition(new ChoiceOption("PassesCover",makeOnOffLabels(),[true,false],"Projectile No-Clip","Toggle allowing projectiles to pass through solid objects as well as invulnerable enemies. Only you can see the effect.",null));
         addOptionAndPosition(new ChoiceOption("AATargetLead",makeOnOffLabels(),[true,false],"Target Lead","Enables leading of targets.",null));
+        addOptionAndPosition(new KeyMapper("tPassCover","Toggle Projectile No-Clip","Toggles the hack on and off."));
         addOptionAndPosition(new NullOption());
         addOptionAndPosition(new NullOption());
         addOptionAndPosition(new ChoiceOption("perfectBomb",makeOnOffLabels(),[true,false],"Spell Bomb Aim","Targets the mob with highest max health in 15 tile radius from the player.",pbOptions));
@@ -668,16 +670,16 @@ public class Options extends Sprite {
 		addOptionAndPosition(new ChoiceOption("AutoNexus",AutoNexusValues(),[0,25,30,35,40,45,50],"Auto Nexus","Will attempt to Nexus the player when health drops below the given percentage. You can still die with this on.",null));
 		addOptionAndPosition(new ChoiceOption("autoHealP",AutoHealValues(),[0,50,55,60,65,70,75,80],"Auto Heal Percentage","Heals you once your HP drops low enough on priest or paladin.",null));
 		addOptionAndPosition(new ChoiceOption("autoPot",AutoPotValues(),[0,50,55,60,65,70,75,80],"Auto Pot Percentage","Automatically drink a potion if your hp falls below a certain percentage.",null));
-		addOptionAndPosition(new ChoiceOption("PassesCover",makeOnOffLabels(),[true,false],"Projectile No-Clip","Toggle allowing projectiles to pass through solid objects like trees and walls. The effect is only visible to yourself but other players can see the damage you deal.",null));
 		addOptionAndPosition(new ChoiceOption("TradeDelay",makeOnOffLabels(),[true,false],"Disable Trade Delay","Removes trade delay. Indicator still shows.",null));
 		addOptionAndPosition(new ChoiceOption("SafeWalk",makeOnOffLabels(),[true,false],"Safe Walk","Block movement onto tiles that cause damage. Click and hold left mouse to walk over these tiles.",null));
 		addOptionAndPosition(new ChoiceOption("bestServ", ServerPrefValues(), ["Default", "USWest", "USMidWest", "EUWest", "USEast", "AsiaSouthEast", "USSouth", "USSouthWest", "EUEast", "EUNorth", "EUSouthWest", "USEast3", "USWest2", "USMidWest2", "USEast2", "USNorthWest", "AsiaEast", "USSouth3", "EUNorth2", "EUWest2", "EUSouth", "USSouth2", "USWest3"], "Best Server", "Select your best server.", null));
 		
 		addOptionAndPosition(new ChoiceOption("spellVoid", makeOnOffLabels(), [true, false], "Unsafe Prism Use", "Allows using prism through walls. If you land on void you will get disconnected.", null));
 		addOptionAndPosition(new ChoiceOption("autoAbil", makeOnOffLabels(), [true, false], "Auto Ability", "Automatically uses your ability on warrior, paladin and rogue. Activated by pressing space.", null));
+        addOptionAndPosition(new ChoiceOption("slideOnIce", makeOnOffLabels(), [true, false], "Slide on Ice", "Toggles sliding on ice.", null));
+		addOptionAndPosition(new ChoiceOption("rclickTp",makeOnOffLabels(),[true,false],"Right-click Chat Teleport","Right click a chat name to teleport. No menu will be shown.",null));
+		addOptionAndPosition(new KeyMapper("enterPortal", "Portal Enter", "Enters nearest portal."));
 		addOptionAndPosition(new KeyMapper("resetCHP","Reset Client HP","Use this hotkey if your CL bar doesn't match your HP bar."));
-        addOptionAndPosition(new ChoiceOption("slideOnIce",makeOnOffLabels(),[true,false],"Slide on Ice","Toggles sliding on ice.",null));
-		addOptionAndPosition(new KeyMapper("enterPortal","Portal Enter","Enters nearest portal."));
         addOptionAndPosition(new KeyMapper("incFinder","Inc Finder","Goes through everyone's inventory and backpack then reports if they have an incantation."));
         addOptionAndPosition(new KeyMapper("maxPrism","Teleport Max Distance","Always teleports the maximum distance on Trickster. You will have to stand still for this to work."));
         addOptionAndPosition(new KeyMapper("QuestTeleport","Closest Player to Quest Teleport","Teleports to the player that is closest to your quest."));

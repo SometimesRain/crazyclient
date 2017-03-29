@@ -44,6 +44,7 @@ public class SpeechBalloon extends Sprite implements IMapOverlayElement {
     private const graphicsData_:Vector.<IGraphicsData> = new <IGraphicsData>[
         lineStyle_, backgroundFill_, path_, GraphicsUtil.END_FILL, GraphicsUtil.END_STROKE
     ];
+	private var model:HUDModel;
 
     public function SpeechBalloon(_arg_1:GameObject, _arg_2:String, _arg_3:String, _arg_4:Boolean, _arg_5:Boolean, _arg_6:uint, _arg_7:Number, _arg_8:uint, _arg_9:Number, _arg_10:uint, _arg_11:int, _arg_12:Boolean, _arg_13:Boolean) {
         super();
@@ -85,32 +86,29 @@ public class SpeechBalloon extends Sprite implements IMapOverlayElement {
         filters = [new DropShadowFilter(0, 0, 0, 1, 16, 16)];
         this.offset_.y = ((-(height) - ((this.go_.texture_.height * (_arg_1.size_ / 100)) * 5)) - 2);
         visible = false;
+        model = StaticInjectorContext.getInjector().getInstance(HUDModel);
         addEventListener(MouseEvent.RIGHT_CLICK, this.onSpeechBalloonRightClicked);
     }
 
     private function onSpeechBalloonRightClicked(e:MouseEvent):void {
-        var hmod:HUDModel;
+		var go_:GameObject = model.gameSprite.map.goDict_[go_.objectId_];
+		if (go_ != null && go_ is Player) {
+			model.gameSprite.gsc_.requestTrade(go_.name_);
+		}
+        /*var hmod:HUDModel;
         var aPlayer:Player;
         var playerObjectId:int = this.go_.objectId_;
-        try {
-            hmod = StaticInjectorContext.getInjector().getInstance(HUDModel);
-            if (((((!((hmod.gameSprite.map.goDict_[playerObjectId] == null))) && ((hmod.gameSprite.map.goDict_[playerObjectId] is Player)))) && (!((hmod.gameSprite.map.player_.objectId_ == playerObjectId))))) {
-                aPlayer = (hmod.gameSprite.map.goDict_[playerObjectId] as Player);
-                hmod.gameSprite.addChatPlayerMenu(aPlayer, e.stageX, e.stageY);
-            }
-            else {
-                if (((((((!(this.isTrade)) && (!((this.senderName == null))))) && (!((this.senderName == ""))))) && (!((hmod.gameSprite.map.player_.name_ == this.senderName))))) {
-                    hmod.gameSprite.addChatPlayerMenu(null, e.stageX, e.stageY, this.senderName, this.isGuild);
-                }
-                else {
-                    if (((((((this.isTrade) && (!((this.senderName == null))))) && (!((this.senderName == ""))))) && (!((hmod.gameSprite.map.player_.name_ == this.senderName))))) {
-                        hmod.gameSprite.addChatPlayerMenu(null, e.stageX, e.stageY, this.senderName, false, true);
-                    }
-                }
-            }
+        hmod = StaticInjectorContext.getInjector().getInstance(HUDModel);
+        if (hmod.gameSprite.map.goDict_[playerObjectId] != null && (hmod.gameSprite.map.goDict_[playerObjectId] is Player) && hmod.gameSprite.map.player_.objectId_ != playerObjectId) {
+            aPlayer = (hmod.gameSprite.map.goDict_[playerObjectId] as Player);
+            hmod.gameSprite.addChatPlayerMenu(aPlayer, e.stageX, e.stageY);
         }
-        catch (e:Error) {
+        else if (!this.isTrade && this.senderName != null && this.senderName != "" && hmod.gameSprite.map.player_.name_ != this.senderName) {
+			hmod.gameSprite.addChatPlayerMenu(null, e.stageX, e.stageY, this.senderName, this.isGuild);
         }
+        else if (this.isTrade && this.senderName != null && this.senderName != "" && hmod.gameSprite.map.player_.name_ != this.senderName) {
+			hmod.gameSprite.addChatPlayerMenu(null, e.stageX, e.stageY, this.senderName, false, true);
+        }*/
     }
 
     public function draw(_arg_1:Camera, _arg_2:int):Boolean {

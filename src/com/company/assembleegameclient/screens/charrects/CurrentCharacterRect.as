@@ -5,7 +5,6 @@ import com.company.assembleegameclient.screens.events.DeleteCharacterEvent;
 import com.company.assembleegameclient.ui.tooltip.MyPlayerToolTip;
 import com.company.assembleegameclient.util.FameUtil;
 import com.company.rotmg.graphics.DeleteXGraphic;
-import flash.utils.Dictionary;
 
 import flash.display.DisplayObject;
 import flash.display.Sprite;
@@ -26,7 +25,9 @@ public class CurrentCharacterRect extends CharacterRect {
     public const deleteCharacter:Signal = new Signal();
     public const showToolTip:Signal = new Signal(Sprite);
     public const hideTooltip:Signal = new Signal();
-	public static var charDict:Dictionary = new Dictionary();
+	//public static var charDict:Dictionary = new Dictionary();
+	public static var charnames:Vector.<String> = new <String>[];
+	public static var charids:Vector.<int> = new <int>[];
 
     public var charName:String;
     public var charStats:CharacterStats;
@@ -52,7 +53,7 @@ public class CurrentCharacterRect extends CharacterRect {
 			}
 		}
         var _local_5:String = _arg_2.name;
-		/*if (_local_5 == "Necromancer") { //class names are not in this format
+		/*if (_local_5 == "Necromancer") { //class names are in this format
 			_local_5 = "Necro";
 		}*/
         var _local_6:String = maxed + "/8";//_arg_3.charId();
@@ -63,8 +64,14 @@ public class CurrentCharacterRect extends CharacterRect {
         });
 		//trace("chardict",_local_5);
 		var key:String = _local_5.toLowerCase();
-		if (charDict[key] == null) {
-			charDict[key] = char.charId();
+		if (!containsVal(charnames, key)) {
+			charnames.push(key);
+			charids.push(char.charId());
+		}
+		else {
+			key += "2";
+			charnames.push(key);
+			charids.push(char.charId());
 		}
         super.color = 0x5C5C5C;
         super.overColor = 0x7F7F7F;
@@ -73,6 +80,15 @@ public class CurrentCharacterRect extends CharacterRect {
         //this.makeDeleteButton();
         this.addEventListeners();
     }
+	
+	private function containsVal(vect:Vector.<String>, val:String):Boolean {
+		for each (var s:String in vect) {
+			if (s == val) {
+				return true;
+			}
+		}
+		return false;
+	}
 
     private function addEventListeners():void {
         addEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromStage);

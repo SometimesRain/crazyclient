@@ -26,7 +26,7 @@ import flash.utils.Dictionary;
 
 public class MiniMapImp extends MiniMap {
 
-    public static const MOUSE_DIST_SQ:int = (5 * 5);//25
+    public static const MOUSE_DIST_SQ:int = 25; //5*5
     private static var objectTypeColorDict_:Dictionary = new Dictionary();
 
     public var _width:int;
@@ -151,7 +151,10 @@ public class MiniMapImp extends MiniMap {
     }
 
     private function onMapRightClick(_arg_1:MouseEvent):void {
-        this._rotateEnableFlag = ((!(this._rotateEnableFlag)) && (Parameters.data_.allowMiniMapRotation));
+		if (players_.length != 0) {
+			players_[0].map_.gs_.gsc_.playerText("/teleport "+players_[0].name_);
+		}
+        //this._rotateEnableFlag = ((!(this._rotateEnableFlag)) && (Parameters.data_.allowMiniMapRotation));
     }
 
     private function onMapClick(_arg_1:MouseEvent):void {

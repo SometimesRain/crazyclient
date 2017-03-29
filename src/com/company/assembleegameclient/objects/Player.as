@@ -87,8 +87,8 @@ public class Player extends Character {
     public static const HEALTH_SLOT:int = 254;
     public static const MAGIC_SLOT:int = 255;
     public static var wantedList:Vector.<int> = null;
-    public static var lastSearchTime:int;
-    public static var lastLootTime:int;
+    public static var lastSearchTime:int = 0;
+    public static var lastLootTime:int = 0;
     public static var nextLootSlot:int = -1;
 	private var nextSwap:int = 0;
 	private var bools:Array = new Array(false,false,false,false,false,false,false,false);
@@ -337,7 +337,7 @@ public class Player extends Character {
 		if (objectId_ == map_.player_.objectId_) {
 			var objxml:XML = ObjectLibrary.xmlLibrary_[objectType_];
 			var avggains:Array = new Array();
-			var msgout:String = "You have rolled ";
+			var msgout:String = "You rolled ";
 			var statabbr:Array = new Array("HP", "MP", "ATT", "DEF", "SPD", "DEX", "VIT", "WIS");
 			var base:Array = new Array(
 					maxHP_ - maxHPBoost_ - objxml.MaxHitPoints,
@@ -357,9 +357,14 @@ public class Player extends Character {
 				r++;
 			}
 			for (var j:int = 0; j < 8; j++) {
-				msgout += avggains[j] + " " + statabbr[j]+ ", ";
+				if (avggains[j] > 0)  {
+					msgout += "+"+avggains[j] + " " + statabbr[j]+ ", ";
+				}
+				else {
+					msgout += avggains[j] + " " + statabbr[j]+ ", ";
+				}
 			}
-			addTextLine.dispatch(ChatMessage.make(Parameters.GUILD_CHAT_NAME, msgout.substr(0, msgout.length - 2)));
+			addTextLine.dispatch(ChatMessage.make("*Help*", msgout.substr(0, msgout.length - 2)));
 		}
     }
 
@@ -721,8 +726,7 @@ public class Player extends Character {
     {
         var _loc1_:int = getTimer();
         var _loc2_:int = 1000 / SEARCH_LOOT_FREQ;
-        if(this == map_.player_ && _loc1_ - lastSearchTime > _loc2_)
-        {
+        if (this == map_.player_ && _loc1_ - lastSearchTime > _loc2_) {
             lastSearchTime = _loc1_;
             return true;
         }
@@ -731,32 +735,12 @@ public class Player extends Character {
     
     public function isWantedItem(param1:int) : Boolean
     {
-        var _loc2_:int = 0;
+        var _loc2_:int;
         for each(_loc2_ in wantedList)
         {
             if(param1 == _loc2_)
             {
                 return true;
-            }
-        }
-        return false;
-    }
-    
-    public function playerNear(param1:int = 20) : Boolean //player == me
-    {
-        var _loc2_:GameObject = null;
-        var _loc3_:int = 0;
-        var _loc4_:int = 0;
-        for each(_loc2_ in map_.goDict_)
-        {
-            if (_loc2_ is Player && _loc2_ != this)
-            {
-                _loc3_ = x_ > _loc2_.x_ ? int(x_ - _loc2_.x_) : int(_loc2_.x_ - x_);
-                _loc4_ = y_ > _loc2_.y_ ? int(y_ - _loc2_.y_) : int(_loc2_.y_ - y_);
-                if (_loc3_ < param1 && _loc4_ < param1)
-                {
-                    return true;
-                }
             }
         }
         return false;
@@ -815,16 +799,13 @@ public class Player extends Character {
     {
         var _loc2_:int = getTimer();
         var _loc3_:int = _loc2_ - lastLootTime;
-        var _loc6_:Vector.<int> = equipment_;
-        if(_loc3_ < LOOT_EVERY_MS) //is it time to loot?
-        {
-            return false;
+        if (_loc3_ < LOOT_EVERY_MS) {
+            return false; //too early to loot
         }
-        if(nextAvailableInventorySlotMod() != -1) //do we have slots?
-        {
-            return true;
+        if (nextAvailableInventorySlotMod() != -1) {
+            return true; //we have slots
         }
-        return false;
+        return false; //we have no slots
     }
     
     public function autoloot_() : void
@@ -835,7 +816,6 @@ public class Player extends Character {
         var _loc4_:int = 0;
         var _loc5_:Vector.<Container> = getLootBags();
         _loc5_ = getLootableBags(_loc5_,MAX_LOOT_DIST);
-        var _loc6_:Boolean = playerNear();
         for each(_loc1_ in _loc5_)
         {
             _loc4_ = 0;
@@ -854,6 +834,68 @@ public class Player extends Character {
         }
     }
 	//LOOT END
+	
+    public function vault_():void { //monster function
+		var i:int;
+		var goCont:GameObject;
+		var dist:int;
+		var locDist:int;
+		var cont:Container;
+		var suitSlot:int = 0;
+		for (i = 4; i < equipment_.length; i++) { //find first suitable slot
+			if (!hasBackpack_ && i > 11) { //backpack check
+				trace("bp abort");
+				break;
+			}
+			else if (collect > 0 && equipment_[i] == -1) { //take, free slot
+				suitSlot = i;
+				break;
+			}
+			else if (collect < 0 && equipment_[i] == (0-collect)) { //put, slot with item
+				suitSlot = i;
+				break;
+			}
+		}
+		if (suitSlot == 0) { //no suitable slot
+			return;
+		}
+		for each(goCont in map_.goDict_) { //find nearest chest
+			if (goCont.objectType_ == VAULT_CHEST) {
+				//trace("chest found");
+				if (cont == null) {
+					cont = (goCont as Container);
+					dist = int((x_ -cont.x_) * (x_ -cont.x_) + (y_ -cont.y_) * (y_ -cont.y_));
+					//trace("chest set",cont.objectId_,"dist",dist);
+				}
+				else {
+					locDist = int((x_ -goCont.x_) * (x_ -goCont.x_) + (y_ -goCont.y_) * (y_ -goCont.y_));
+					if (locDist < dist) {
+						dist = locDist;
+						cont = (goCont as Container);
+						//trace("chest updated",cont.objectId_,"dist",dist);
+					}
+				}
+			}
+		}
+		//trace("nearest",dist);
+		if (dist > MAX_LOOT_DIST) { //no chests ner enough
+			return;
+		}
+		for (i = 0; i < cont.equipment_.length; i++) {
+			if (cont.equipment_[i] == collect) { //take
+				//addTextLine.dispatch(ChatMessage.make("*Help*","Switch slot #"+suitSlot+" with vault slot #"+i));
+				map_.gs_.gsc_.invSwap(this, cont, i, cont.equipment_[i], this, suitSlot, equipment_[suitSlot]);
+				lastLootTime = getTimer();
+				return;
+			}
+			else if (cont.equipment_[i] == -1 && collect < 0) { //put
+				//addTextLine.dispatch(ChatMessage.make("*Help*","Switch slot #"+suitSlot+" with vault slot #"+i));
+				map_.gs_.gsc_.invSwap(this, this, suitSlot, equipment_[suitSlot], cont, i, cont.equipment_[i]);
+				lastLootTime = getTimer();
+				return;
+			}
+		}
+    }
 	
 	private function swapInvBp(slot:int):void {
 		if (getTimer() >= nextSwap) {
@@ -923,6 +965,7 @@ public class Player extends Character {
 				if (isHpBoosted() && !hpBoostApplied) {
 					hpBoostApplied = true;
 					chp += maxHPBoost_ - lastMaxHPBoost;
+					GameServerConnectionConcrete.recentHeal += maxHPBoost_ - lastMaxHPBoost;
 				}
 				else if (!isHpBoosted() && hpBoostApplied) {
 					hpBoostApplied = false;
@@ -952,6 +995,10 @@ public class Player extends Character {
 			if (Parameters.data_.AutoLootOn && lookForLoot()) //autoloot
 			{
 				autoloot_();
+			}
+			if (collect != 0 && lastLootTime + 750 < getTimer()) //fast vaulting, higher delay
+			{
+				vault_();
 			}
 			if (ParseChatMessageCommand.switch_) //selects all the slots that need to be swapped
 			{
@@ -998,7 +1045,7 @@ public class Player extends Character {
 				timerCount++;
 			}
 			if (mapAutoAbil && nextAutoAbil <= getTimer()) {
-				var abilFreq:int
+				var abilFreq:int = 0;
 				switch(equipment_[1]) {
 					case 0xb27: //ghostly
 					case 0xae1: //twi
@@ -1017,13 +1064,9 @@ public class Player extends Character {
 					case 0xa55: //zseal
 						abilFreq = 4000 * (1 + (wisdom_ + wisdomBoost_) / 150);
 						break;
-					default:
-						abilFreq = 0;
-						break;
 				}
 				if (abilFreq > 0) {
-					nextAutoAbil = getTimer() + abilFreq;
-					useAltWeapon(x_, y_, UseType.START_USE)
+					useAltWeapon(x_, y_, UseType.START_USE, abilFreq)
 				}
 			}
 		}
@@ -1410,7 +1453,7 @@ public class Player extends Character {
         return (portrait_);
     }
 
-    public function useAltWeapon(_arg_1:Number, _arg_2:Number, _arg_3:int):Boolean {
+    public function useAltWeapon(_arg_1:Number, _arg_2:Number, _arg_3:int, abFreq:int = 0):Boolean {
         var _local_7:XML;
         var abilUseTime:int;
         var shootAngle:Number;
@@ -1452,6 +1495,9 @@ public class Player extends Character {
                 SoundEffectLibrary.play("no_mana");
                 return (false);
             }
+			if (abFreq > 0) {
+				nextAutoAbil = getTimer() + abFreq;
+			}
             _local_11 = 500; //base cooldown
             if (thisAbilXML.hasOwnProperty("Cooldown")) {
                 _local_11 = (Number(thisAbilXML.Cooldown) * 1000);

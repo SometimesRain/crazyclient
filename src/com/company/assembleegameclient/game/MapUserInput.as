@@ -69,7 +69,8 @@ public class MapUserInput {
     public static var skipRender:Boolean = false;
     public var lightSpeed:Boolean = false;
     private var maxprism:Boolean = false;
-	private var spaceSpam:int = 0;
+	private var spaceSpam:int = 0; //makes sure you don't dc when spamming
+	public static var optionsOpen:Boolean = false;
 
     public var gs_:GameSprite;
     private var moveLeft_:Boolean = false;
@@ -172,6 +173,7 @@ public class MapUserInput {
     }
 
     public function disableRightClick(_arg_1:MouseEvent):void {
+		gs_.map.player_.mapLightSpeed = !gs_.map.player_.mapLightSpeed;
     }
 
     private function onRemovedFromStage(_arg_1:Event):void {
@@ -200,6 +202,9 @@ public class MapUserInput {
     public function onMouseDown(_arg_1:MouseEvent):void {
 		//addTextLine.dispatch(ChatMessage.make(Parameters.CLIENT_CHAT_NAME, "mouse down x: "+gs_.mouseX + " y: "+gs_.mouseY));
 		if (gs_.mouseX >= gs_.hudView.x) {
+			return;
+		}
+		if (optionsOpen) {
 			return;
 		}
         this.mouseDown_ = true;
@@ -826,6 +831,11 @@ public class MapUserInput {
 				Parameters.save();
 				player.notifyPlayer(Parameters.data_.perfectBomb ? "Spell Bomb Aim: On" : "Spell Bomb Aim: Off", 0x00ff00, 1500);
                 break;
+            case Parameters.data_.tPassCover:
+				Parameters.data_.PassesCover = !Parameters.data_.PassesCover;
+				Parameters.save();
+				player.notifyPlayer(Parameters.data_.PassesCover ? "Proj No-Clip: On" : "Proj No-Clip: Off", 0x00ff00, 1500);
+                break;
         }
         this.setPlayerMovement();
     }
@@ -852,7 +862,7 @@ public class MapUserInput {
 		if (effTotal == -1) {
 			return;
 		}
-		for (var i:int = 0; i < 9; i++) {
+		for (var i:int = 0; i < 10; i++) {
 			var a:int = 1 << i;
 			var b:int = effTotal & a;
 			//addTextLine.dispatch(ChatMessage.make(Parameters.CLIENT_CHAT_NAME, i+": "+a+" "+b));
@@ -884,6 +894,9 @@ public class MapUserInput {
 						break;
 					case 8:
 						Parameters.data_.dbQuiet = state;
+						break;
+					case 9:
+						Parameters.data_.dbPetStasis = state;
 						break;
 				}
 			}

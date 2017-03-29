@@ -1,6 +1,7 @@
 ﻿package kabam.rotmg.chat.view {
 import com.company.assembleegameclient.objects.GameObject;
 import com.company.assembleegameclient.objects.Player;
+import com.company.assembleegameclient.parameters.Parameters;
 //import kabam.rotmg.chat.model.ChatMessage;
 //import kabam.rotmg.game.signals.AddTextLineSignal;
 import org.swiftsuspenders.Injector;
@@ -54,26 +55,27 @@ public class ChatListItem extends Sprite {
     }
 
     public function onRightMouseDown(e:MouseEvent):void {
-		var go_:GameObject = model.gameSprite.map.goDict_[playerObjectId];
-        if (go_ != null && go_ is Player) {
-			model.gameSprite.gsc_.teleport(go_.objectId_);
+		if (Parameters.data_.rclickTp) {
+			var go_:GameObject = model.gameSprite.map.goDict_[playerObjectId];
+			if (go_ != null && go_ is Player) {
+				model.gameSprite.gsc_.teleport(go_.objectId_);
+			}
 		}
-        /*var aPlayer:Player;
-        if (hmod.gameSprite.map.goDict_[playerObjectId] != null && hmod.gameSprite.map.goDict_[playerObjectId] is Player && hmod.gameSprite.map.player_.objectId_ != playerObjectId) {
-            aPlayer = (hmod.gameSprite.map.goDict_[this.playerObjectId] as Player);
-            hmod.gameSprite.addChatPlayerMenu(aPlayer, e.stageX, e.stageY);
-			//addTextLine.dispatch(ChatMessage.make("*Client*", "1 "+e.stageX+" "+e.stageY+" "+aPlayer.name_));
-        }
-		else if (this.playerName != null && this.playerName != "" && hmod.gameSprite.map.player_.name_ != this.playerName) {
-			if (!isTrade) {
-				hmod.gameSprite.addChatPlayerMenu(null, e.stageX, e.stageY, this.playerName, this.fromGuild);
-				//addTextLine.dispatch(ChatMessage.make("*Client*", "2"));
+		else {
+			var aPlayer:Player;
+			if (model.gameSprite.map.goDict_[playerObjectId] != null && model.gameSprite.map.goDict_[playerObjectId] is Player && model.gameSprite.map.player_.objectId_ != playerObjectId) {
+				aPlayer = (model.gameSprite.map.goDict_[this.playerObjectId] as Player);
+				model.gameSprite.addChatPlayerMenu(aPlayer, e.stageX, e.stageY);
 			}
-			else if (isTrade) {
-				hmod.gameSprite.addChatPlayerMenu(null, e.stageX, e.stageY, this.playerName, false, true);
-				//addTextLine.dispatch(ChatMessage.make("*Client*", "3"));
+			else if (this.playerName != null && this.playerName != "" && model.gameSprite.map.player_.name_ != this.playerName) {
+				if (!isTrade) {
+					model.gameSprite.addChatPlayerMenu(null, e.stageX, e.stageY, this.playerName, this.fromGuild);
+				}
+				else if (isTrade) {
+					model.gameSprite.addChatPlayerMenu(null, e.stageX, e.stageY, this.playerName, false, true);
+				}
 			}
-		}*/
+		}
     }
 
     public function isTimedOut():Boolean {

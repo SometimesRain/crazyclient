@@ -52,6 +52,8 @@ public class Projectile extends BasicObject {
     private var staticVector3D_:Vector3D;
     protected var shadowGradientFill_:GraphicsGradientFill;
     protected var shadowPath_:GraphicsPath;
+	
+	public static var recentDmg:Vector.<int> = new <int>[];
 
     public function Projectile() {
         this.p_ = new Point3D(100);
@@ -238,7 +240,7 @@ public class Projectile extends BasicObject {
                 _local_5 = BloodComposition.getColors(this.texture_);
                 map_.addObj(new HitEffect(_local_5, 100, 3, this.angle_, this.projProps_.speed_), _local_4.x, _local_4.y);
             }
-			if (Parameters.data_["PassesCover"] == true && this.ownerId_ == map_.player_.objectId_) {
+			if (Parameters.data_.PassesCover && this.ownerId_ == map_.player_.objectId_) {
 				return true;
 			}
             return false;
@@ -349,6 +351,7 @@ public class Projectile extends BasicObject {
 							_local_7.notifyPlayer(effName, 0x00ff00, 1500);
 						}
 						if (_local_11 > 0) {
+							recentDmg.push(_local_11);
 							_local_7.negateHealth(_local_11);
 							GameObject.takeDmgNotif(_local_11, _local_7);
 						}
@@ -357,7 +360,7 @@ public class Projectile extends BasicObject {
                 }
                 else {
                     if (_local_6.props_.isEnemy_) {
-                        if (!damageIgnored(_local_6) || (_local_6.isInvulnerable() && !isStun())) //don't hit invulnerable or ignored enemies
+                        if (!damageIgnored(_local_6) || (_local_6.isInvulnerable() && !isStun() && Parameters.data_.PassesCover)) //don't hit invulnerable or ignored enemies
                         {
                             return true;
                         }

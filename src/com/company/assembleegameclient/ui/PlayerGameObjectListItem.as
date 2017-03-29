@@ -37,14 +37,20 @@ public class PlayerGameObjectListItem extends GameObjectListItem implements Tool
 			addEventListener(MouseEvent.MOUSE_OVER, this.onMouseOver);
 			this.hoverTooltipDelegate.setDisplayObject(this);
 		}
+		addEventListener(MouseEvent.RIGHT_CLICK, this.onRClick);
     }
 
     private function onRemovedFromStage(_arg_1:Event):void {
 		if (hover) {
 			removeEventListener(MouseEvent.MOUSE_OVER, this.onMouseOver);
 		}
+        removeEventListener(MouseEvent.RIGHT_CLICK, this.onRClick);
         removeEventListener(Event.ADDED_TO_STAGE, this.onAddedToStage);
         removeEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromStage);
+    }
+
+    private function onRClick(_arg_1:MouseEvent):void {
+		go.map_.gs_.gsc_.teleport(go.objectId_);
     }
 
     private function onMouseOver(_arg_1:MouseEvent):void {
