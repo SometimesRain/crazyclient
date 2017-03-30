@@ -214,6 +214,7 @@ public class Projectile extends BasicObject {
         var _local_10:Boolean;
         var _local_11:int;
         var _local_12:Boolean;
+		var effName:String;
         var _local_3:int = (_arg_1 - this.startTime_);
         if (_local_3 > this.projProps_.lifetime_) {
             return (false);
@@ -262,94 +263,17 @@ public class Projectile extends BasicObject {
                 }
                 if (_local_6 == _local_7) {
 					//player hit with cond effect SS DEBUFFS
-					var takeEff:Boolean = true;
-					var effName:String = "";
-                    for each(_local_3 in projProps_.effects_) //params.statEff = true -> take the effect -> takeEff = true
-                    {
-						//welcome to the if jungle
-						if (_local_3 == 2) {
-							if (!Parameters.data_.dbQuiet) {
-								effName = "Quiet";
-								takeEff = false;
-								if (map_.name_ == "Oryx\'s Castle" && Parameters.data_.dbQuietCastle)
-								{
-									takeEff = true;
-								}
-								break; //it doesn't matter if we break if we're in castle although we don't take the eff
-							}
-						}
-						else if (_local_3 == 3) {
-							if (!Parameters.data_.dbWeak) {
-								effName = "Weak";
-								takeEff = false;
-								break; //we decided to not take this bullet -> break
-							}
-						}
-						else if (_local_3 == 4) {
-							if (!Parameters.data_.dbSlowed) {
-								effName = "Slowed";
-								takeEff = false;
-								break;
-							}
-						}
-						else if (_local_3 == 5) {
-							if (!Parameters.data_.dbSick) {
-								effName = "Sick";
-								takeEff = false;
-								break;
-							}
-						}
-						else if (_local_3 == 6) {
-							if (!Parameters.data_.dbDazed) {
-								effName = "Dazed";
-								takeEff = false;
-								break;
-							}
-						}
-						else if (_local_3 == 7) {
-							if (!Parameters.data_.dbStunned) {
-								effName = "Stunned";
-								takeEff = false;
-								break;
-							}
-						}
-						else if (_local_3 == 14) {
-							if (!Parameters.data_.dbParalyzed) {
-								effName = "Paralyzed";
-								takeEff = false;
-								break;
-							}
-						}
-						else if (_local_3 == 16) {
-							if (!Parameters.data_.dbBleeding) {
-								effName = "Bleeding";
-								takeEff = false;
-								break;
-							}
-						}
-						else if (_local_3 == 27) {
-							if (!Parameters.data_.dbArmorBroken) {
-								effName = "Armor Broken";
-								takeEff = false;
-								break;
-							}
-						}
-						else if (_local_3 == 37) {
-							if (!Parameters.data_.dbPetStasis) {
-								effName = "Pet Stasis";
-								takeEff = false;
-								break;
-							}
-						}
+					effName = statEffHit(projProps_.effects_);
+					if (effName.substr(0,7) == "Unknown") { //test
+						_local_7.notifyPlayer(effName, 0x00ff00, 1500);
+						effName = "";
 					}
-					if (takeEff) { //TODO
+					if (effName == "") { //we're not taking any effects
 						_local_6.damage(this.containerType_, _local_11, this.projProps_.effects_, false, this); //if effects was removed could we use this?
-						map_.gs_.gsc_.playerHit(this.bulletId_, this.ownerId_); //needs to be ignored
+						map_.gs_.gsc_.playerHit(this.bulletId_, this.ownerId_); //needs to be ignored nonetheless
 					}
 					else {
-						if (effName != "") {
-							_local_7.notifyPlayer(effName, 0x00ff00, 1500);
-						}
+						_local_7.notifyPlayer(effName, 0x00ff00, 1500);
 						if (_local_11 > 0) {
 							recentDmg.push(_local_11);
 							_local_7.negateHealth(_local_11);
@@ -388,6 +312,72 @@ public class Projectile extends BasicObject {
         }
         return true;
     }
+	
+	private function statEffHit(effs:Vector.<uint>):String {
+		var _local_3:int;
+        for each(_local_3 in effs) {
+			//welcome to the jungle
+			switch (_local_3) {
+				case 2:
+					if (!Parameters.data_.dbQuiet) {
+						if (map_.name_ == "Oryx\'s Castle" && Parameters.data_.dbQuietCastle)
+						{
+							return ""; //this okay because quiet bombs only do quiet
+						}
+						else {
+							return "Quiet"; //we're not taking the effect
+						}
+					}
+					break;
+				case 3:
+					if (!Parameters.data_.dbWeak)
+						return "Weak";
+					break;
+				case 4:
+					if (!Parameters.data_.dbSlowed)
+						return "Slowed";
+					break;
+				case 5:
+					if (!Parameters.data_.dbSick)
+						return "Sick";
+					break;
+				case 6:
+					if (!Parameters.data_.dbDazed)
+						return "Dazed";
+					break;
+				case 7:
+					if (!Parameters.data_.dbStunned)
+						return "Stunned";
+					break;
+				case 14:
+					if (!Parameters.data_.dbParalyzed)
+						return "Paralyzed";
+					break;
+				case 16:
+					if (!Parameters.data_.dbBleeding)
+						return "Bleeding";
+					break;
+				case 22:
+					if (!Parameters.data_.dbPetStasis)
+						return "Pet Stasis";
+					break;
+				case 27:
+					if (!Parameters.data_.dbArmorBroken)
+						return "Armor Broken";
+					break;
+				case 8:
+				case 9:
+				case 10:
+				case 11:
+				case 30:
+				case 31:
+					break;
+				default:
+					return "Unknown: " + _local_3;
+			}
+		}
+		return "";
+	}
 	
 	private function isStun():Boolean { //shields and quivers
 		if (containerType_ > 2567 && containerType_ < 2573) { //some tiered shields

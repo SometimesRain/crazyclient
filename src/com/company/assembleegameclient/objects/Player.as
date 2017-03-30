@@ -878,7 +878,10 @@ public class Player extends Character {
 			}
 		}
 		//trace("nearest",dist);
-		if (dist > MAX_LOOT_DIST) { //no chests ner enough
+		if (dist > MAX_LOOT_DIST) { //no chests near enough
+			return;
+		}
+		if (cont == null) {
 			return;
 		}
 		for (i = 0; i < cont.equipment_.length; i++) {

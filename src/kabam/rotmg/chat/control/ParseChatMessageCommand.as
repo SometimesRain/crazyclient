@@ -649,12 +649,20 @@ public class ParseChatMessageCommand {
 		}*/
 		splice = data.match("/take (.+)$");
 		if (splice != null) {
+			if (hudModel.gameSprite.map.name_ != "Vault") {
+				addTextLine.dispatch(ChatMessage.make("*Help*", "Use the command in vault and run over the chest you wish to interact with."));
+				return true;
+			}
 			hudModel.gameSprite.map.player_.collect = findMatch2(splice[1]);
             addTextLine.dispatch(ChatMessage.make("*Help*","Taking "+ObjectLibrary.getIdFromType(hudModel.gameSprite.map.player_.collect)+"s from vault chests"));
 			return true;
 		}
 		splice = data.match("/put (.+)$");
 		if (splice != null) {
+			if (hudModel.gameSprite.map.name_ != "Vault") {
+				addTextLine.dispatch(ChatMessage.make("*Help*", "Use the command in vault and run over the chest you wish to interact with."));
+				return true;
+			}
 			hudModel.gameSprite.map.player_.collect = 0 - findMatch2(splice[1]);
             addTextLine.dispatch(ChatMessage.make("*Help*","Putting "+ObjectLibrary.getIdFromType(0 - hudModel.gameSprite.map.player_.collect)+"s to vault chests"));
 			return true;
