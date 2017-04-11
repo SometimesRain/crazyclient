@@ -376,7 +376,7 @@ public class MapUserInput {
 		return true;
 	}
 	
-	private function handlePerfectBomb(player:Player):Boolean { //recall
+	private function handlePerfectBomb(player:Player):Boolean {
 		if (Parameters.data_.perfectQuiv && handlePerfectQuiv(player)) {
 			return true;
 		}
@@ -437,8 +437,9 @@ public class MapUserInput {
 		specialKeyDown_ = true;
         if (player == null)
 			return;
-		if (Parameters.data_.autoAbil && handleAutoAbil(player))
+		if (Parameters.data_.autoAbil && handleAutoAbil(player)) {
 			return;
+		}
 		if (player.nextAltAttack_ >= getTimer()) {
 			return;
 		}
@@ -462,13 +463,11 @@ public class MapUserInput {
 			player.useAltWeapon(desX, desY, UseType.START_USE);
 			return;
 		}
-		if (!this.specialKeyDown_ || player.objectType_ == 782) {
-            if (player.isUnstable() && Parameters.data_.dbUnstableAbil) {
-				player.useAltWeapon(Math.random() * 600 - 300, Math.random() * 600 - 325, UseType.START_USE)
-            }
-            else {
-				player.useAltWeapon(gs_.map.mouseX, gs_.map.mouseY, UseType.START_USE)
-            }
+        if (player.isUnstable() && Parameters.data_.dbUnstableAbil) {
+			player.useAltWeapon(Math.random() * 600 - 300, Math.random() * 600 - 325, UseType.START_USE)
+        }
+        else {
+			player.useAltWeapon(gs_.map.mouseX, gs_.map.mouseY, UseType.START_USE)
         }
 	}
 
