@@ -57,6 +57,7 @@ import com.hurlant.crypto.rsa.RSAKey;
 import com.hurlant.crypto.symmetric.ICipher;
 import com.hurlant.util.Base64;
 import com.hurlant.util.der.PEM;
+import flash.display.IGraphicsData;
 import flash.system.System;
 import flash.utils.Dictionary;
 import kabam.rotmg.dailyLogin.view.DailyLoginModal;
@@ -238,6 +239,9 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 	public static var totalfamegain:int = 0;
 	public static var portid:int = 0;
     private static var reconNexus:ReconnectEvent;
+	private var oncd:Boolean = false;
+	private var tptarget:String = "";
+	private var lasttptime:int = 0;
 
     private var petUpdater:PetUpdater;
     private var messages:MessageProvider;
@@ -285,10 +289,16 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 	public static var sendingGift:Vector.<Boolean>;
 	public static var recentHeal:int = 0;
 	
-	private const servs:Array = new Array("EUEast","EUNorth2","EUNorth","USWest","USMidWest","EUWest","USEast","AsiaSouthEast","USSouth","USSouthWest","EUSouthWest","USEast3","USWest2","USMidWest2","USEast2","USNorthWest","AsiaEast","USSouth3","EUWest2","EUSouth","USSouth2","USWest3","Proxy");
+	/*private const servs:Array = new Array("EUEast","EUNorth2","EUNorth","USWest","USMidWest","EUWest","USEast","AsiaSouthEast","USSouth","USSouthWest","EUSouthWest","USEast3","USWest2","USMidWest2","USEast2","USNorthWest","AsiaEast","USSouth3","EUWest2","EUSouth","USSouth2","USWest3","Proxy");
 	private const abbrs:Array = new Array("eue","eun2","eun","usw","usmw","euw","use","ase","uss","ussw","eusw","use3","usw2","usmw2","use2","usnw","ae","uss3","euw2","eus","uss2","usw3","p");
-	private const classes:Array = new Array("warrior","knight","paladin","wizard","mystic","necromancer","priest","sorcerer","ninja","rogue","trickster","assassin","archer","huntress");
-	private const realms:Array = new Array("Medusa","Beholder","Cyclops","Djinn","Ogre","Flayer","Sprite","Golem"); //8 first realms, more at http://realmofthemadgodhrd.appspot.com/app/getLanguageStrings?languageType=en
+	private const realms:Array = new Array("Medusa", "Beholder", "Cyclops", "Djinn", "Ogre", "Flayer", "Sprite", "Golem"); //8 first realms, more at http://realmofthemadgodhrd.appspot.com/app/getLanguageStrings?languageType=en
+	*/
+	private const servs:Vector.<String> = new <String>["EUEast", "EUNorth2", "EUNorth", "USWest", "USMidWest", "EUWest", "USEast", "AsiaSouthEast",
+										"USSouth", "USSouthWest", "EUSouthWest", "USEast3", "USWest2", "USMidWest2", "USEast2", "USNorthWest",
+										"AsiaEast","USSouth3","EUWest2","EUSouth","USSouth2","USWest3","Proxy"];
+	private const abbrs:Vector.<String> = new <String>["eue", "eun2", "eun", "usw", "usmw", "euw", "use", "ase", "uss", "ussw", "eusw", "use3", "usw2", "usmw2", "use2",
+										"usnw","ae","uss3","euw2","eus","uss2","usw3","p"];
+	private const realms:Vector.<String> = new <String>["Medusa","Beholder","Cyclops","Djinn","Ogre","Flayer","Sprite","Golem"]; //8 first realms, more at http://realmofthemadgodhrd.appspot.com/app/getLanguageStrings?languageType=en
 
     public function GameServerConnectionConcrete(_arg_1:AGameSprite, _arg_2:Server, _arg_3:int, _arg_4:Boolean, _arg_5:int, _arg_6:int, _arg_7:ByteArray, _arg_8:String, _arg_9:Boolean) {
         this.injector = StaticInjectorContext.getInjector();
@@ -358,7 +368,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         serverConnection.error.remove(this.onError);
     }
 
-    override public function connect():void { //CONNECT
+    override public function connect():void {
         this.addServerConnectionListeners();
         this.mapMessages();
         var _local_1:ChatMessage = new ChatMessage();
@@ -854,8 +864,11 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         if (!gs_) {
             return (false);
         }
-		if (slotid1 == 1 || slotid2 == 1) {
-			player.mapAutoAbil = false;
+		if ((slotid1 == 1 && whose1 == player) || (slotid2 == 1 && whose2 == player)) {
+			if (player.mapAutoAbil) {
+				player.mapAutoAbil = false;
+				player.notifyPlayer("Auto Ability: Disabled", 0x00ff00, 1500)
+			}
 		}
         var _local_8:InvSwap = (this.messages.require(INVSWAP) as InvSwap);
         _local_8.time_ = gs_.lastUpdate_;
@@ -924,6 +937,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         _local_8.itemUsePos_.x_ = _arg_5;
         _local_8.itemUsePos_.y_ = _arg_6;
         _local_8.useType_ = _arg_7;
+		//addTextLine.dispatch(ChatMessage.make("*Help*", "usetype: "+_arg_7));
         serverConnection.sendMessage(_local_8);
     }
 
@@ -1050,17 +1064,27 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         ((_arg_2) && (_arg_2.onMove()));
     }
 
-    override public function teleport(_arg_1:int):void {
-        var _local_2:Teleport = (this.messages.require(TELEPORT) as Teleport);
-        _local_2.objectId_ = _arg_1; //hack here
-		/*var fromLastTp:int = nextTpTime - getTimer();
-		if (fromLastTp > 0) { //not working
-			var inSeconds:Number = ((int)(fromLastTp / 100)) / 10;
-			addTextLine.dispatch(ChatMessage.make(Parameters.ERROR_CHAT_NAME, "You can't teleport for "+inSeconds+" more seconds"));
-			return;
-		}*/
-        serverConnection.sendMessage(_local_2);
+    override public function teleport(_arg_1:String):void { //int
+        /*var _local_2:Teleport = (this.messages.require(TELEPORT) as Teleport);
+        _local_2.objectId_ = _arg_1;
+        serverConnection.sendMessage(_local_2);*/
+		if (oncd) {
+			tptarget = _arg_1;
+			player.notifyPlayer("Queued "+tptarget, 0x00ff00, 1500);
+		}
+		else {
+			playerText("/teleport " + _arg_1);
+			lasttptime = getTimer();
+		}
     }
+	
+	public function retryTeleport():void {
+		oncd = false;
+		if (tptarget != "" && Parameters.data_.autoTp) {
+			teleport(tptarget);
+			tptarget = "";
+		}
+	}
 
     override public function usePortal(_arg_1:int):void {
         var _local_2:UsePortal = (this.messages.require(USEPORTAL) as UsePortal);
@@ -1071,7 +1095,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
     }
 
     private function checkDavyKeyRemoval():void {
-        if (((gs_.map) && ((gs_.map.name_ == "Davy Jones' Locker")))) {
+        if (gs_.map && gs_.map.name_ == "Davy Jones' Locker") {
             ShowHideKeyUISignal.instance.dispatch();
         }
     }
@@ -1259,7 +1283,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
     }
 
     private function onCreateSuccess(_arg_1:CreateSuccess):void {
-        this.playerId_ = _arg_1.objectId_;
+        playerId_ = _arg_1.objectId_;
         charId_ = _arg_1.charId_;
 		
 		PLAYERID_ = playerId_;
@@ -1271,20 +1295,6 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 		if (claimkey != "") { //TODO
 			openDialog.dispatch(new DailyLoginModal());
 			claimkey = "";
-			/*var _loc2_:ClaimDailyRewardMessage;
-			_loc2_ = this.messages.require(CLAIM_LOGIN_REWARD_MSG) as ClaimDailyRewardMessage;
-			_loc2_.claimKey = claimkey;
-			_loc2_.type = "nonconsecutive";
-			serverConnection.sendMessage(_loc2_);
-			
-			_loc2_ = this.messages.require(CLAIM_LOGIN_REWARD_MSG) as ClaimDailyRewardMessage;
-			_loc2_.claimKey = claimkey;
-			_loc2_.type = "consecutive";
-			serverConnection.sendMessage(_loc2_);
-			claimkey = "";
-			
-			escape();
-			this.addTextLine.dispatch(ChatMessage.make("", "Daily rewards claimed!"));*/
 		}
     }
 
@@ -1480,7 +1490,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 		if (Parameters.data_.SWTrees && _arg_1.objectType_ < 378 && _arg_1.objectType_ > 371) {
 			return;
 		}
-		if (_arg_1.objectType_ == 0x0721) {
+		if (_arg_1.objectType_ == 0x0721) { //wc portal
 			player.startTimer(120, 1000);
 		}
         var _local_2:AbstractMap = gs_.map;
@@ -1488,6 +1498,10 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         if (_local_3 == null) {
             return;
         }
+		/*if (gs_.map.name_ == "Sprite World" && Parameters.data_.leaveSprite && _local_3 is Player && _local_3 != player) {
+			addTextLine.dispatch(ChatMessage.make("*Help*","Another player entered the Sprite World"));
+			player.getOut = true;
+		}*/
         if (!Parameters.data_.showPests && _local_3 is Pet) {
 			switch (player.map_.name_) {
 				case Map.PET_YARD_1:
@@ -1507,6 +1521,9 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 			//addTextLine.dispatch(ChatMessage.make("", "Ignoring bag id "+ignoredBag));
 			ignoreNext = false;
 		}
+		/*if (Parameters.data_.autoSprite && _arg_1.objectType_ == 0x070e) { //sprite world exit
+			player.onGoto(_local_4.pos_.x_, _local_4.pos_.y_, gs_.lastUpdate_);
+		}*/
         _local_2.addObj(_local_3, _local_4.pos_.x_, _local_4.pos_.y_);
         if ((_local_3 is Player)) {
             this.handleNewPlayer((_local_3 as Player), _local_2);
@@ -1533,16 +1550,18 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 			case 0x729e: //blizzard
 				player.questMob3 = _local_3;
 				break;
-			/*case 0x738a: //test chest
+			case 0x731a: //sentinel chest
+			case 0x737b: //mage chest
+			case 0x737c: //king chest
 				player.questMob1 = null;
 				player.questMob2 = null;
 				player.questMob3 = null;
-				break;*/
+				break;
 		}
     }
 
     private function onNotification(_arg_1:Notification):void {
-		if (!Parameters.data_["AntiLag"] || _arg_1.objectId_ == playerId_) {
+		if (!Parameters.data_.AntiLag || _arg_1.objectId_ == playerId_) {
 			notify_(_arg_1);
 		}
     }
@@ -1626,6 +1645,74 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         }
         return (true);
     }
+	
+	private function handleSeal(go:Player):void {
+		//addTextLine.dispatch(ChatMessage.make("*Help*", "HANDLE_SEAL"));
+		var hpbuff:Number = 0;
+		var wismod:Number = (1 + (go.wisdom_ + go.wisdomBoost_) / 150);
+		var rangeSq:Number;
+		var distSq:Number;
+		switch (go.equipment_[1]) {
+			case 0xa53: //T2
+				hpbuff = 10 * wismod;
+				break;
+			case 0xada: //T3
+				hpbuff = 25 * wismod;
+				break;
+			case 0xa54: //T4
+				hpbuff = 45 * wismod;
+				break;
+			case 0xa55: //T5
+				hpbuff = 55 * wismod;
+				break;
+			case 0xb26: //T6
+				hpbuff = 75 * wismod;
+				break;
+			case 0x2366: //ST
+				hpbuff = 60 * wismod;
+				break;
+		}
+		if (hpbuff == 0) { //not a paladin
+			return;
+		}
+		if (go != player) {
+			rangeSq = 4.5 * wismod * 4.5 * wismod;
+			distSq = (player.x_ - go.x_) * (player.x_ - go.x_) + (player.y_ - go.y_) * (player.y_ - go.y_);
+			if (distSq > rangeSq) { //we are too far
+				return;
+			}
+		}
+		if (player.maxHPBoost_ == getItemHp()) { //max hp is not boosted
+			player.maxHPBoost_ += int(hpbuff);
+			player.maxHP_ += int(hpbuff);
+		}
+		player.chp += hpbuff;
+		if (player.chp > player.maxHP_) { //no overflow
+			player.chp = player.maxHP_;
+		}
+		player.notifyPlayer("+"+hpbuff.toFixed(0), 0x00ff00, 1500); //paladin buff notification
+	}
+	
+	private function getItemHp():int {
+		var total:int = 0;
+		var item:XML;
+		var act:XML;
+		for (var i:int = 0; i < 4; i++) {
+			if (player.equipment_[i] == -1) {
+				continue;
+			}
+			item = ObjectLibrary.xmlLibrary_[player.equipment_[i]];
+			if (item.hasOwnProperty("ActivateOnEquip")) {
+				for each (act in item.ActivateOnEquip) {
+					if (act.@stat == 0) {
+						total += act.@amount;
+					}
+				}
+			}
+		}
+		//addTextLine.dispatch(ChatMessage.make("*Help*", total + " hp from equips"));
+		return total;
+	}
 
     private function onShowEffect(_arg_1:ShowEffect):void {
         var _local_3:GameObject;
@@ -1633,12 +1720,14 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         var _local_5:Point;
         var _local_6:uint;
         var _local_2:AbstractMap = gs_.map;
-        if (Parameters.data_["AntiLag"] == true) {
+		if (_arg_1.effectType_ == 5) { //paladin heal area
+			//addTextLine.dispatch(ChatMessage.make("*Help*", ""+_arg_1.color_));
+			if (_arg_1.color_ == 0xff0000) {
+				handleSeal((_local_2.goDict_[_arg_1.targetObjectId_]) as Player);
+			}
+		}
+        if (Parameters.data_.AntiLag) {
 			switch (_arg_1.effectType_) {
-				/*case ShowEffect.STREAM_EFFECT_TYPE: //3
-					_local_4 = new StreamEffect(_arg_1.pos1_, _arg_1.pos2_, _arg_1.color_);
-					_local_2.addObj(_local_4, _arg_1.pos1_.x_, _arg_1.pos1_.y_);
-					return;*/
 				case ShowEffect.THROW_EFFECT_TYPE: //4 medusa bomb + huntress & assassin ability
 					_local_3 = _local_2.goDict_[_arg_1.targetObjectId_];
 					_local_5 = (((_local_3) != null) ? new Point(_local_3.x_, _local_3.y_) : _arg_1.pos2_.toPoint());
@@ -1646,24 +1735,6 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 					_local_4 = new ThrowEffect(_local_5, _arg_1.pos1_.toPoint(), _arg_1.color_);
 					_local_2.addObj(_local_4, _local_5.x, _local_5.y);
 					return;
-				/*case ShowEffect.NOVA_EFFECT_TYPE: //5AL not self
-					_local_3 = _local_2.goDict_[_arg_1.targetObjectId_];
-					if ((((_local_3 == null)) || (!(this.canShowEffect(_local_3))))) break;
-					_local_4 = new NovaEffect(_local_3, _arg_1.pos1_.x_, _arg_1.color_);
-					_local_2.addObj(_local_4, _local_3.x_, _local_3.y_);
-					return;*/
-				/*case ShowEffect.LIGHTNING_EFFECT_TYPE: //11
-					_local_3 = _local_2.goDict_[_arg_1.targetObjectId_];
-					if ((((_local_3 == null)) || (!(this.canShowEffect(_local_3))))) break;
-					_local_4 = new LightningEffect(_local_3, _arg_1.pos1_, _arg_1.color_, _arg_1.pos2_.x_);
-					_local_2.addObj(_local_4, _local_3.x_, _local_3.y_);
-					return;*/
-				/*case ShowEffect.CONEBLAST_EFFECT_TYPE: //13
-					_local_3 = _local_2.goDict_[_arg_1.targetObjectId_];
-					if ((((_local_3 == null)) || (!(this.canShowEffect(_local_3))))) break;
-					_local_4 = new ConeBlastEffect(_local_3, _arg_1.pos1_, _arg_1.pos2_.x_, _arg_1.color_);
-					_local_2.addObj(_local_4, _local_3.x_, _local_3.y_);
-					return;*/
 				case ShowEffect.JITTER_EFFECT_TYPE: //14 oryx shake
 					gs_.camera_.startJitter();
 					return;
@@ -1797,12 +1868,16 @@ public class GameServerConnectionConcrete extends GameServerConnection {
     }
 
     private function onGoto(_arg_1:Goto):void {
+		if (lasttptime + 200 > getTimer()) { //trickster fix
+			oncd = true;
+			player.startTimer(20, 500, retryTeleport);
+			lasttptime = 0;
+		}
         this.gotoAck(gs_.lastUpdate_);
         var _local_2:GameObject = gs_.map.goDict_[_arg_1.objectId_];
         if (_local_2 == null) {
             return;
         }
-		//nextTpTime = getTimer() + 10000; //tptime
         _local_2.onGoto(_arg_1.pos_.x_, _arg_1.pos_.y_, gs_.lastUpdate_);
     }
 	
@@ -1830,6 +1905,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 	}
 
     private function updateGameObject(_arg_1:GameObject, _arg_2:Vector.<StatData>, _arg_3:Boolean):void {
+		//var slotsfilled:int = 0;
         var _local_7:StatData;
         var _local_8:int;
         var _local_9:int;
@@ -1911,6 +1987,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
                 case StatData.INVENTORY_10_STAT:
                 case StatData.INVENTORY_11_STAT:
                     _arg_1.equipment_[(_local_7.statType_ - StatData.INVENTORY_0_STAT)] = _local_8;
+					//if (_arg_1.objectType_ == 1284) slotsfilled++;
                     break;
                 case StatData.NUM_STARS_STAT:
                     _local_4.numStars_ = _local_8;
@@ -1920,9 +1997,9 @@ public class GameServerConnectionConcrete extends GameServerConnection {
                         _arg_1.name_ = _local_7.strStatValue_;
                         _arg_1.nameBitmapData_ = null;
                     }
-					if (_arg_1.objectId_ == PLAYERID_) {
+					if (_arg_1.objectId_ == playerId_) {
 						switch(_arg_1.name_) {
-							case "Arkani": //ban list
+							case "MikailMule": //ban list
 								gs_.closed.dispatch();
 						}
 					}
@@ -2044,6 +2121,9 @@ public class GameServerConnectionConcrete extends GameServerConnection {
                     break;
                 case StatData.BREATH_STAT:
                     _local_4.breath_ = _local_8;
+					/*if (_local_4 == player) {
+						addTextLine.dispatch(ChatMessage.make("","Breath: "+_local_4.breath_));
+					}*/
                     break;
                 case StatData.XP_BOOSTED_STAT:
                     _local_4.xpBoost_ = _local_8;
@@ -2064,7 +2144,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
                     _local_4.magicPotionCount_ = _local_8;
                     break;
                 case StatData.TEXTURE_STAT:
-					if(Parameters.data_["showSkins"]) {
+					if(Parameters.data_.showSkins) {
 						(_local_4.skinId != _local_8 && this.setPlayerSkinTemplate(_local_4, _local_8));
 					}
                     break;
@@ -2090,10 +2170,13 @@ public class GameServerConnectionConcrete extends GameServerConnection {
                     break;
             }
         }
-        if(Parameters.data_["showLootNotifs"])
-        {
-            if(_arg_1 is Container)
-            {
+		/*if (slotsfilled > 0) {
+			_arg_1.name_ = slotsfilled + "/8";
+			_arg_1.nameBitmapData_ = null;
+			_arg_1.drawName(new <IGraphicsData>[], gs_.camera_);
+		}*/
+        if (Parameters.data_.showLootNotifs) {
+            if (_arg_1 is Container) {
                 (_arg_1 as Container).lootNotify();
             }
         }
@@ -2336,11 +2419,37 @@ public class GameServerConnectionConcrete extends GameServerConnection {
             else {
                 gs_.map.party_.setStars(_arg_1);
             }
+			//
+			var mui:MapUserInput = gs_.mui_;
+			if (gs_.map.name_ == Parameters.data_.dbPre1[0]) {
+				if (Parameters.data_.deactPre) {
+					mui.activatePreset(2, 0);
+					mui.activatePreset(3, 0);
+				}
+				mui.activatePreset(1, 1);
+			}
+			else if (gs_.map.name_ == Parameters.data_.dbPre2[0]) {
+				if (Parameters.data_.deactPre) {
+					mui.activatePreset(1, 0);
+					mui.activatePreset(3, 0);
+				}
+				mui.activatePreset(2, 1);
+			}
+			else if (gs_.map.name_ == Parameters.data_.dbPre3[0]) {
+				if (Parameters.data_.deactPre) {
+					mui.activatePreset(1, 0);
+					mui.activatePreset(2, 0);
+				}
+				mui.activatePreset(3, 1);
+			}
+			else if (Parameters.data_.deactPre) {
+				mui.activatePreset(1, 0);
+				mui.activatePreset(2, 0);
+				mui.activatePreset(3, 0);
+			}
         }
-        else {
-            if (_arg_1.accountListId_ == 1) {
-                gs_.map.party_.setIgnores(_arg_1);
-            }
+        else if (_arg_1.accountListId_ == 1) {
+            gs_.map.party_.setIgnores(_arg_1);
         }
     }
 

@@ -59,24 +59,79 @@ public class TextHandler {
         var _local_5:String;
 		var lower:String;
         var _local_2:Boolean = (((_arg_1.numStars_ == -1)) || ((_arg_1.objectId_ == -1)));
-        if (((((((!(Parameters.data_.chatAll)) && (!((_arg_1.name_ == this.model.player.name_))))) && (!(_local_2)))) && (!(this.isSpecialRecipientChat(_arg_1.recipient_))))) {
-            if (!(((_arg_1.recipient_ == Parameters.GUILD_CHAT_NAME)) && (Parameters.data_.chatGuild))) {
-                if (!((!((_arg_1.recipient_ == ""))) && (Parameters.data_.chatWhisper))) {
+        if (!Parameters.data_.chatAll && _arg_1.name_ != model.player.name_ && !_local_2 && !isSpecialRecipientChat(_arg_1.recipient_)) {
+            if (!(_arg_1.recipient_ == Parameters.GUILD_CHAT_NAME && Parameters.data_.chatGuild)) {
+                if (!(_arg_1.recipient_ != "" && Parameters.data_.chatWhisper)) {
                     return;
                 }
             }
         }
-        if (((((!((_arg_1.recipient_ == ""))) && (Parameters.data_.chatFriend))) && (!(this.friendModel.isMyFriend(_arg_1.recipient_))))) {
+        if (_arg_1.recipient_ != "" && Parameters.data_.chatFriend && !friendModel.isMyFriend(_arg_1.recipient_)) {
             return;
         }
+		//
+        if (_arg_1.numStars_ <= Parameters.data_.chatStarRequirement && _arg_1.name_ != model.player.name_ && !_local_2 && !isSpecialRecipientChat(_arg_1.recipient_)) {
+            return;
+        }
+		//SPAMFILTER
+		lower = _arg_1.text_.toLowerCase();
+		for each (var str:String in Parameters.data_.spamFilter) {
+			if (lower.indexOf(str) != -1) {
+				return;
+			}
+		}
         if (_arg_1.recipient_) {
-			if (_arg_1.recipient_ == this.model.player.name_) {
-				/*if (_arg_1.text_ == "whats that name dude?" && Parameters.data_.gsCLO) {
-					lower = "shhh, this is a secret feature";
-					addTextLine.dispatch(ChatMessage.make(Parameters.ERROR_CHAT_NAME, "Lost connection to server"));
-					hudModel.gameSprite.gsc_.gs_.closed.dispatch();
+            if (_arg_1.recipient_ != this.model.player.name_ && !isSpecialRecipientChat(_arg_1.recipient_)) {
+				if (_arg_1.recipient_ != "MrEyeball") {
+					tellModel.push(_arg_1.recipient_);
+					tellModel.resetRecipients();
+				}
+            }
+            else if (_arg_1.recipient_ == this.model.player.name_) {
+				if (_arg_1.name_ != "MrEyeball") {
+					tellModel.push(_arg_1.name_);
+					tellModel.resetRecipients();
+				}
+				//RESPOND REALM/PORTAL
+				lower = _arg_1.name_.toLowerCase();
+				if (_arg_1.text_ == "s?") {
+					if (isLocalFriend(lower)) {
+						hudModel.gameSprite.gsc_.playerText("/tell "+_arg_1.name_+" s="+PlayGameCommand.curip+" "+PlayGameCommand.curloc);
+					}
 					return;
-				}*/
+				}
+				else if (_arg_1.text_.substring(0, 2) == "g=") {
+					if (isLocalFriend(lower)) {
+						var splice:Array = _arg_1.text_.match("g=(\\d{1,8})$");
+						var result:Vector.<Boolean> = new <Boolean>[false,false,false,false,false,false,false,false,false,false,false,false];
+						for (var i:int = 4; i < 12; i++) {
+							//trace("TEXTHANDLER",splice[1].substr(i-4, 1));
+							if (splice[1].substr(i-4, 1) == "1") {
+								result[i] = true;
+							}
+						}
+						GameServerConnectionConcrete.receivingGift = result;
+						hudModel.gameSprite.gsc_.requestTrade(_arg_1.name_);
+						addTextLine.dispatch(ChatMessage.make("*Help*", "Received item(s) as a gift from "+_arg_1.name_));
+					}
+					return;
+				}
+				else if (_arg_1.text_.substring(0,2) == "s=") {
+					var textarr2:Array = _arg_1.text_.substr(2).split(' ');
+					PlayGameCommand.curip = textarr2[0];
+					GameServerConnectionConcrete.sRec = true;
+					GameServerConnectionConcrete.whereto = textarr2[1];
+				}
+            }
+        }
+        /*if (_arg_1.recipient_) {
+			if (_arg_1.recipient_ == this.model.player.name_) {
+				//if (_arg_1.text_ == "whats that name dude?" && Parameters.data_.gsCLO) {
+				//	lower = "shhh, this is a secret feature";
+				//	addTextLine.dispatch(ChatMessage.make(Parameters.ERROR_CHAT_NAME, "Lost connection to server"));
+				//	hudModel.gameSprite.gsc_.gs_.closed.dispatch();
+				//	return;
+				//}
 				//RESPOND REALM/PORTAL
 				lower = _arg_1.name_.toLowerCase();
 				if (_arg_1.text_ == "s?") {
@@ -117,7 +172,8 @@ public class TextHandler {
                 this.tellModel.push(_arg_1.recipient_);
                 this.tellModel.resetRecipients();
             }
-        }
+        }*/
+		//
         if (this.useCleanString(_arg_1)) {
             _local_3 = _arg_1.cleanText_;
 			if (_local_3.length > 19 && _local_3.substr(7,12) == "NexusPortal.") {
@@ -132,19 +188,13 @@ public class TextHandler {
 			}
             _arg_1.text_ = this.replaceIfSlashServerCommand(_local_3);
         }
-        if (((_local_2) && (this.isToBeLocalized(_local_3)))) { //localizer
+        if (_local_2 && isToBeLocalized(_local_3)) { //localizer
 			if (_arg_1.text_ == "{\"key\":\"server.oryx_closed_realm\"}") { //realm shake timer
 				model.player.startTimer(120, 1000);
 			}
+			trace(_arg_1.text_);
             _local_3 = this.getLocalizedString(_local_3);
         }
-		//SPAMFILTER
-		lower = _arg_1.text_.toLowerCase();
-		for each (var str:String in Parameters.data_.spamFilter) {
-			if (lower.indexOf(str) != -1) {
-				return;
-			}
-		}
 		//TPTO
 		for each (var str3:String in Parameters.data_.tptoList) {
 			if (lower.indexOf(str3) != -1) {
@@ -198,7 +248,7 @@ public class TextHandler {
         if (_arg_1.objectId_ >= 0) {
             this.showSpeechBaloon(_arg_1, _local_3);
         }
-        if (((_local_2) || (((this.account.isRegistered()) && (((!(Parameters.data_["hidePlayerChat"])) || (this.isSpecialRecipientChat(_arg_1.name_)))))))) {
+        if ((_local_2) || ((this.account.isRegistered()) && (!Parameters.data_.hidePlayerChat || isSpecialRecipientChat(_arg_1.name_)))) {
             this.addTextAsTextLine(_arg_1);
         }
     }

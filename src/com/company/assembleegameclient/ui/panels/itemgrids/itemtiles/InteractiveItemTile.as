@@ -1,5 +1,11 @@
 ﻿package com.company.assembleegameclient.ui.panels.itemgrids.itemtiles {
+import com.company.assembleegameclient.objects.ObjectLibrary;
+import com.company.assembleegameclient.objects.Player;
 import com.company.assembleegameclient.ui.panels.itemgrids.ItemGrid;
+import kabam.rotmg.chat.model.ChatMessage;
+import kabam.rotmg.core.StaticInjectorContext;
+import kabam.rotmg.game.model.GameModel;
+import kabam.rotmg.game.signals.AddTextLineSignal;
 
 import flash.display.DisplayObject;
 import flash.events.Event;
@@ -17,10 +23,14 @@ public class InteractiveItemTile extends ItemTile {
     private var dragStart:Point;
     private var pendingSecondClick:Boolean;
     private var isDragging:Boolean;
+	private var player:Player;
+	//private var addTextLine:AddTextLineSignal;
 
     public function InteractiveItemTile(_arg_1:int, _arg_2:ItemGrid, _arg_3:Boolean) {
         super(_arg_1, _arg_2);
         mouseChildren = false;
+		player = StaticInjectorContext.getInjector().getInstance(GameModel).player;
+		//addTextLine = StaticInjectorContext.getInjector().getInstance(AddTextLineSignal);
         this.doubleClickTimer = new Timer(DOUBLE_CLICK_PAUSE, 1);
         this.doubleClickTimer.addEventListener(TimerEvent.TIMER_COMPLETE, this.onDoubleClickTimerComplete);
         this.setInteractive(_arg_3);
@@ -31,13 +41,26 @@ public class InteractiveItemTile extends ItemTile {
             addEventListener(MouseEvent.MOUSE_DOWN, this.onMouseDown);
             addEventListener(MouseEvent.MOUSE_UP, this.onMouseUp);
             addEventListener(MouseEvent.MOUSE_OUT, this.onMouseOut);
+            addEventListener(MouseEvent.RIGHT_CLICK, this.startCollect);
             addEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromStage);
         }
         else {
             removeEventListener(MouseEvent.MOUSE_DOWN, this.onMouseDown);
             removeEventListener(MouseEvent.MOUSE_UP, this.onMouseUp);
             removeEventListener(MouseEvent.MOUSE_OUT, this.onMouseOut);
+            removeEventListener(MouseEvent.RIGHT_CLICK, this.startCollect);
         }
+    }
+
+    public function startCollect(_arg_1:MouseEvent):void {
+		if (ownerGrid.owner == player) {
+			player.collect = 0 - itemSprite.itemId;
+            //addTextLine.dispatch(ChatMessage.make("*Help*","Putting "+ObjectLibrary.getIdFromType(itemSprite.itemId)+"(s) to vault chests"));
+		}
+		else {
+			player.collect = itemSprite.itemId;
+            //addTextLine.dispatch(ChatMessage.make("*Help*","Taking "+ObjectLibrary.getIdFromType(itemSprite.itemId)+"(s) from vault chests"));
+		}
     }
 
     public function getDropTarget():DisplayObject {

@@ -5,10 +5,11 @@ import flash.text.TextField;
 import flash.text.TextFieldType;
 import flash.text.TextFormat;
 import flash.text.TextLineMetrics;
+import kabam.rotmg.text.model.FontModel_MyriadPro;
 
 public class BaseSimpleText extends TextField {
 
-    public static const MyriadPro:Class = BaseSimpleText_MyriadPro;
+    public static const MyriadPro:Class = FontModel_MyriadPro;
 
     public var inputWidth_:int;
     public var inputHeight_:int;
@@ -24,9 +25,10 @@ public class BaseSimpleText extends TextField {
         if (this.inputHeight_ != 0) {
             height = _arg_5;
         }
+        var _local_7:TextFormat = this.defaultTextFormat;
         Font.registerFont(MyriadPro);
         var _local_6:Font = new MyriadPro();
-        var _local_7:TextFormat = this.defaultTextFormat;
+		embedFonts = true;
         _local_7.font = _local_6.fontName;
         _local_7.bold = false;
         _local_7.size = _arg_1;

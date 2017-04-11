@@ -58,7 +58,7 @@ public class ChatListItem extends Sprite {
 		if (Parameters.data_.rclickTp) {
 			var go_:GameObject = model.gameSprite.map.goDict_[playerObjectId];
 			if (go_ != null && go_ is Player) {
-				model.gameSprite.gsc_.teleport(go_.objectId_);
+				model.gameSprite.gsc_.teleport(go_.name_);
 			}
 		}
 		else {

@@ -66,11 +66,11 @@ public class GameObjectArrow extends Sprite {
 
     protected function onRightClick(_arg_1:MouseEvent):void {
 		if (go_ is Player) {
-			go_.map_.gs_.gsc_.teleport(go_.objectId_);
+			go_.map_.gs_.gsc_.teleport(go_.name_);
 		}
 		else {
 			var dist:int = int.MAX_VALUE;
-			var targetPlayer:int = -1;
+			var targetPlayer:String = "";
 			var obj:GameObject;
 			for each(obj in go_.map_.goDict_) {
 				if (obj is Player) {
@@ -78,17 +78,17 @@ public class GameObjectArrow extends Sprite {
 					if(_distSquared < dist)
 					{
 						dist = _distSquared;
-						targetPlayer = obj.objectId_;
+						targetPlayer = obj.name_;
 					}
 				}
 			}
-			if (targetPlayer == go_.map_.player_.objectId_)
+			if (targetPlayer == go_.map_.player_.name_)
 			{
 				go_.map_.player_.notifyPlayer("You are the closest!",0x00FF00,1500);
 				return;
 			}
 			go_.map_.gs_.gsc_.teleport(targetPlayer);
-			go_.map_.player_.notifyPlayer("Teleporting to " + go_.map_.goDict_[targetPlayer].name_,0x00FF00,1500);
+			//go_.map_.player_.notifyPlayer("Teleporting to " + targetPlayer,0x00FF00,1500);
 		}
     }
 

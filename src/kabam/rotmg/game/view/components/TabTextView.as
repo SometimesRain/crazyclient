@@ -10,7 +10,6 @@ public class TabTextView extends TabView {
 
     private var background:Sprite;
     private var text:BaseSimpleText;
-    private var badgeBG:Bitmap;
     private var badgeIcon:Bitmap;
 
     public function TabTextView(_arg_1:int, _arg_2:Sprite, _arg_3:BaseSimpleText) {
@@ -24,19 +23,12 @@ public class TabTextView extends TabView {
     public function setBadge(_arg_1:int):void {
         if (this.badgeIcon == null) {
             this.badgeIcon = new Bitmap();
-            this.badgeIcon.bitmapData = AssetLibrary.getImageFromSet("lofiInterface", 110);
-            this.badgeIcon.x = (this.x - 10);
-            this.badgeIcon.y = 5;
-            this.badgeIcon.scaleX = (this.badgeIcon.scaleY = 1.5);
+            this.badgeIcon.bitmapData = AssetLibrary.getImageFromSet("lofiInterfaceBig", 14);
+            this.badgeIcon.x = (this.x - 26);
+            this.badgeIcon.y = 4;
             addChild(this.badgeIcon);
-            this.badgeBG = new Bitmap();
-            this.badgeBG.bitmapData = AssetLibrary.getImageFromSet("lofiInterface", 110);
-            this.badgeBG.x = (this.x - 12);
-            this.badgeBG.y = 3;
-            this.badgeBG.scaleX = (this.badgeBG.scaleY = 2);
-            addChild(this.badgeBG);
         }
-        this.badgeIcon.visible = (this.badgeBG.visible = (_arg_1 > 0));
+        this.badgeIcon.visible = _arg_1 > 0;
     }
 
     private function initBackground(_arg_1:Sprite):void {
@@ -46,7 +38,6 @@ public class TabTextView extends TabView {
 
     private function initTabText(_arg_1:BaseSimpleText):void {
         this.text = _arg_1;
-        _arg_1.x = 5;
         addChild(_arg_1);
     }
 

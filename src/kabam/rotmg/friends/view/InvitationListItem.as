@@ -38,9 +38,11 @@ public class InvitationListItem extends FListItem {
         this._portrait = new Bitmap();
         this._portrait.x = 2;
         addChild(this._portrait);
+		
         this._nameText = new TextFieldDisplayConcrete().setSize(18).setBold(true).setColor(0xB3B3B3);
         this._nameText.y = 11;
         addChild(this._nameText);
+		
         _local_3 = StaticInjectorContext.getInjector().getInstance(IconButtonFactory);
         var _local_4:BitmapData = AssetLibrary.getImageFromSet("lofiInterfaceBig", 11);
         _local_4.colorTransform(_local_4.rect, new ColorTransform(0, 1, 0, 1, 182, 0xFF, 160, 0));
@@ -49,6 +51,7 @@ public class InvitationListItem extends FListItem {
         this._acceptButton.y = 11;
         this._acceptButton.addEventListener(MouseEvent.CLICK, this.onAcceptClicked);
         addChild(this._acceptButton);
+		
         _local_4 = AssetLibrary.getImageFromSet("lofiInterfaceBig", 12);
         _local_4.colorTransform(_local_4.rect, new ColorTransform(1, 0, 0, 1, 0xFF, 188, 188, 0));
         this._rejectButton = _local_3.create(_local_4, TextKey.GUILD_REJECTION, "", "");
@@ -56,12 +59,14 @@ public class InvitationListItem extends FListItem {
         this._rejectButton.y = 11;
         this._rejectButton.addEventListener(MouseEvent.CLICK, this.onRejectClicked);
         addChild(this._rejectButton);
+		
         this._blockButton = _local_3.create(AssetLibrary.getImageFromSet("lofiInterfaceBig", 8), "", TextKey.FRIEND_BLOCK_BUTTON, "");
         this._blockButton.setToolTipText(TextKey.FRIEND_BLOCK_BUTTON_DESC);
         this._blockButton.addEventListener(MouseEvent.CLICK, this.onBlockClicked);
         this._blockButton.x = (this.width - 25);
         this._blockButton.y = 12;
         addChild(this._blockButton);
+		
         this.addEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromState);
     }
 
@@ -75,6 +80,7 @@ public class InvitationListItem extends FListItem {
     }
 
     override public function destroy():void {
+        this.removeEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromState);
         while (numChildren > 0) {
             this.removeChildAt((numChildren - 1));
         }
@@ -86,23 +92,28 @@ public class InvitationListItem extends FListItem {
         this._rejectButton = null;
         this._blockButton.removeEventListener(MouseEvent.CLICK, this.onBlockClicked);
         this._blockButton = null;
+        this.graphics.beginFill(0x242222);
+        this.graphics.drawRect(0, 0, width, height);
+        this.graphics.endFill();
     }
 
     private function onRemovedFromState(_arg_1:Event):void {
-        this.removeEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromState);
         this.destroy();
     }
 
     private function onAcceptClicked(_arg_1:MouseEvent):void {
         actionSignal.dispatch(FriendConstant.ACCEPT, this._senderName);
+		destroy();
     }
 
     private function onRejectClicked(_arg_1:MouseEvent):void {
         actionSignal.dispatch(FriendConstant.REJECT, this._senderName);
+		destroy();
     }
 
     private function onBlockClicked(_arg_1:MouseEvent):void {
         actionSignal.dispatch(FriendConstant.BLOCK, this._senderName);
+		destroy();
     }
 
 

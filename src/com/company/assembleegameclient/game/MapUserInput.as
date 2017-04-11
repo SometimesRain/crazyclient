@@ -71,6 +71,7 @@ public class MapUserInput {
     private var maxprism:Boolean = false;
 	private var spaceSpam:int = 0; //makes sure you don't dc when spamming
 	public static var optionsOpen:Boolean = false;
+	public var ninjaTapped:Boolean = false;
 
     public var gs_:GameSprite;
     private var moveLeft_:Boolean = false;
@@ -82,7 +83,7 @@ public class MapUserInput {
     public var mouseDown_:Boolean = false;
     public var autofire_:Boolean = false;
     private var currentString:String = "";
-    private var specialKeyDown_:Boolean = false;
+    public var specialKeyDown_:Boolean = false;
     private var enablePlayerInput_:Boolean = true;
     private var giftStatusUpdateSignal:GiftStatusUpdateSignal;
     private var addTextLine:AddTextLineSignal;
@@ -213,7 +214,7 @@ public class MapUserInput {
         var _local_5:XML;
         var _local_6:Number;
         var _local_7:Number;
-        var _local_2:Player = this.gs_.map.player_;
+        var _local_2:Player = gs_.map.player_;
         if (_local_2 == null) {
             return;
         }
@@ -302,6 +303,174 @@ public class MapUserInput {
             }
         }
     }
+	
+	private function handleAutoAbil(player:Player):Boolean {
+		if (!(player.objectType_ == 0x0300 || player.objectType_ == 0x031d || player.objectType_ == 0x031d)) {
+			return false; //not rogue, warrior, paladin
+		}
+		if (spaceSpam >= getTimer()) {
+			if (player.mapAutoAbil) {
+				player.mapAutoAbil = false
+				player.notifyPlayer("Auto Ability: Disabled", 0x00FF00, 1500);
+			}
+			return false; //not time yet
+		}
+		spaceSpam = getTimer() + 500;
+		switch(player.equipment_[1]) {
+			case 0xb27: //ghostly
+			case 0xae1: //twi
+			case 0xb29: //ggen
+			case 0xa6b: //ghelm
+			case 0xc08: //jugg
+			case 0xb26: //gcookie
+			case 0xa55: //zseal
+			case 0x21a2: //drape
+				player.mapAutoAbil = !player.mapAutoAbil;
+				player.notifyPlayer(player.mapAutoAbil ? "Auto Ability: Enabled" : "Auto Ability: Disabled", 0x00FF00, 1500);
+				return true;
+		}
+		return false;
+	}
+	
+	private function isIgnored(igtype:int):Boolean {
+		for each (var type:int in Parameters.data_.AAIgnore) {
+			if (igtype == type) {
+				return true;
+			}
+		}
+		if (Parameters.data_.tombHack && igtype >= 3366 && igtype <= 3368) { //tomb bosses
+			if (igtype != Parameters.data_.curBoss) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	private function handlePerfectQuiv(player:Player):Boolean {
+		if (!(player.objectType_ == 775 || player.objectType_ == 798)) {
+			return false;
+		}
+		var po:Point = player.sToW(gs_.map.mouseX,gs_.map.mouseY);
+		var target:GameObject;
+		var obj:GameObject;
+		var distSq:int = int.MAX_VALUE;
+		var temp:int;
+		//find closest target to mouse with at least 1000 health
+		for each (obj in gs_.map.goDict_) {
+			if (obj.props_.isEnemy_ && obj.maxHP_ >= 1000 && !isIgnored(obj.objectType_)) {
+				temp = (obj.x_ - po.x) * (obj.x_ - po.x) + (obj.y_ - po.y) * (obj.y_ - po.y);
+				if (temp < distSq) {
+					distSq = temp;
+					target = obj;
+				}
+			}
+		}
+		if (target == null) {
+			player.notifyPlayer("No targets nearby!", 0x00FF00, 1500);
+		}
+		else {
+			player.notifyPlayer(ObjectLibrary.typeToDisplayId_[target.objectType_], 0x00FF00, 1500);
+			gs_.gsc_.useItem(getTimer(), player.objectId_, 1, player.equipment_[1], target.x_, target.y_, UseType.START_USE);
+			player.doShoot(getTimer(), player.equipment_[1], ObjectLibrary.xmlLibrary_[player.equipment_[1]], (Parameters.data_.cameraAngle + Math.atan2(target.y_ - player.y_, target.x_ - player.x_)), false);
+		}
+		return true;
+	}
+	
+	private function handlePerfectBomb(player:Player):Boolean { //recall
+		if (Parameters.data_.perfectQuiv && handlePerfectQuiv(player)) {
+			return true;
+		}
+		if (player.objectType_ != 782) {
+			return false;
+		}
+		var target:GameObject;
+		var obj:GameObject;
+		var distSq:int;
+		//get target within 15 tiles that has the most health and at least 1000 health
+		for each (obj in gs_.map.goDict_) {
+			if (obj.props_.isEnemy_ && obj.maxHP_ >= 1000 && !isIgnored(obj.objectType_)) {
+				distSq = (obj.x_ - player.x_) * (obj.x_ - player.x_) + (obj.y_ - player.y_) * (obj.y_ - player.y_);
+				if (distSq < 225) {
+					if (target == null || obj.maxHP_ > target.maxHP_) {
+						target = obj;
+					}
+				}
+			}
+		}
+		if (target == null) {
+			player.notifyPlayer("No targets nearby!", 0x00FF00, 1500);
+		}
+		else if (target.isInvincible() || target.isInvulnerable() || target.isStasis()) {
+			player.notifyPlayer(ObjectLibrary.typeToDisplayId_[target.objectType_]+": Invulnerable", 0x00FF00, 1500);
+		}
+		else {
+			player.notifyPlayer(ObjectLibrary.typeToDisplayId_[target.objectType_], 0x00FF00, 1500);
+			gs_.gsc_.useItem(getTimer(), player.objectId_, 1, player.equipment_[1], target.x_, target.y_, UseType.START_USE);
+		}
+		return true;
+	}
+	
+	private function handleCooldown(player:Player, abilXML:XML):void {
+		var cd:int = 500; //base cooldown
+		if (abilXML.hasOwnProperty("Cooldown")) {
+			cd = (Number(abilXML.Cooldown) * 1000);
+		}
+		player.lastAltAttack_ = getTimer();
+		player.nextAltAttack_ = getTimer() + cd;
+	}
+	
+	private function ninjaTap(player:Player):Boolean {
+		if (player.objectType_ != 0x0326) {
+			return false;
+		}
+		ninjaTapped = !ninjaTapped;
+		if (ninjaTapped) {
+			player.useAltWeapon(gs_.map.mouseX, gs_.map.mouseY, UseType.START_USE)
+		}
+		else {
+			player.useAltWeapon(gs_.map.mouseX, gs_.map.mouseY, UseType.END_USE)
+		}
+		return true;
+	}
+	
+	public function abilityUsed(player:Player, abilXML:XML):void {
+		specialKeyDown_ = true;
+        if (player == null)
+			return;
+		if (Parameters.data_.autoAbil && handleAutoAbil(player))
+			return;
+		if (player.nextAltAttack_ >= getTimer()) {
+			return;
+		}
+		if (int(abilXML.MpCost) > player.mp_) {
+			return;
+		}
+		if (Parameters.data_.perfectBomb && handlePerfectBomb(player)) {
+			handleCooldown(player, abilXML);
+			return;
+		}
+		if (ninjaTap(player)) { //Parameter.data_.ninjaTap
+			return;
+		}
+		if (maxprism && (player.objectType_ == 804 || player.equipment_[1] == 0xa5a)) { //trickster or plane
+			var angle:Number = Math.atan2(gs_.map.mouseX, gs_.map.mouseY);
+			if (angle < 0) {
+				angle += Math.PI * 2;
+			}
+			var desX:Number = 20 * 50 * Math.sin(angle); //hypotenuse 20 -> how far is the teleport used
+			var desY:Number = 20 * 50 * Math.cos(angle);
+			player.useAltWeapon(desX, desY, UseType.START_USE);
+			return;
+		}
+		if (!this.specialKeyDown_ || player.objectType_ == 782) {
+            if (player.isUnstable() && Parameters.data_.dbUnstableAbil) {
+				player.useAltWeapon(Math.random() * 600 - 300, Math.random() * 600 - 325, UseType.START_USE)
+            }
+            else {
+				player.useAltWeapon(gs_.map.mouseX, gs_.map.mouseY, UseType.START_USE)
+            }
+        }
+	}
 
     private function onKeyDown(_arg_1:KeyboardEvent):void {
         var player:Player = gs_.map.player_;
@@ -346,155 +515,32 @@ public class MapUserInput {
                 this.moveRight_ = true;
                 break;
             case Parameters.data_.useSpecial:
-                if (player == null) break;
-				if (spaceSpam >= getTimer()) {
-					if (player.mapAutoAbil) {
-						player.mapAutoAbil = false
-						player.notifyPlayer("Auto Ability: Disabled", 0x00FF00, 1500);
-					}
-					break;
-				}
-				spaceSpam = getTimer() + 500;
-				var abilXML:XML = ObjectLibrary.xmlLibrary_[player.equipment_[1]];
-				if (Parameters.data_.autoAbil) {
-					var breaknow:Boolean = false;
-					switch(player.equipment_[1]) {
-						case 0xb27: //ghostly
-						case 0xae1: //twi
-						//case 0xa5a: //plane
-						case 0xb29: //ggen
-						case 0xa6b: //ghelm
-						case 0xc08: //jugg
-						case 0xb26: //gcookie
-						case 0xa55: //zseal
-						case 0x21a2: //drape
-							player.mapAutoAbil = !player.mapAutoAbil;
-							player.notifyPlayer(player.mapAutoAbil ? "Auto Ability: Enabled" : "Auto Ability: Disabled", 0x00FF00, 1500);
-							breaknow = true;
-							break;
-						default:
-							break;
-					}
-					if (breaknow) break;
-				}
-				if (player.nextAltAttack_ >= getTimer()) {
-					break;
-				}
-				if (int(abilXML.MpCost) > player.mp_) {
-					//SoundEffectLibrary.play("no_mana");
-					break;
-				}
-				//auto spell bomb aim, now works with archers and knights as well
-				//get highest hp enemy within 15 tiles and bomb it if it's not invulnerable, invincible or statis
-				if (Parameters.data_.perfectBomb && (player.objectType_ == 782 || ((player.objectType_ == 775 || player.objectType_ == 798) && Parameters.data_.perfectQuiv))) {
-					var highestHp:int = -1;
-					var target:GameObject;
-					for each(obj in gs_.map.goDict_)
-					{
-						if(obj.props_.isEnemy_)
-						{
-							//don't shoot ignore list
-							var ignored:Boolean = false;
-							for each (var type:int in Parameters.data_.AAIgnore) {
-								if (obj.objectType_ == type) {
-									ignored = true;
-									break;
-								}
-							}
-							if (Parameters.data_.tombHack && obj.objectType_ >= 3366 && obj.objectType_ <= 3368) { //tomb bosses
-								if (obj.objectType_ != Parameters.data_.curBoss) {
-									ignored = true;
-								}
-							}
-							if (ignored) {
-								continue;
-							}
-							//
-							var _distSquared3:int = (obj.x_ - player.x_) * (obj.x_ - player.x_) + (obj.y_ - player.y_) * (obj.y_ - player.y_);
-							if(_distSquared3 < (player.objectType_ == 798 ? 10.24 : 225) && obj.maxHP_ > highestHp && obj.maxHP_ >= 1000) //ie. 15^2, if enemy is further than 15 tiles, abort
-							{
-								highestHp = obj.maxHP_;
-								target = obj;
-							}
-						}
-					}
-					if (target == null) {
-						player.notifyPlayer("No targets nearby!", 0x00FF00, 1500);
-					}
-					else if (target.isInvincible() || target.isInvulnerable() || target.isStasis()) {
-						player.notifyPlayer("The target is invulnerable!", 0x00FF00, 1500);
-					}
-					else {
-						var cd:int = 500; //base cooldown
-						if (abilXML.hasOwnProperty("Cooldown")) {
-							cd = (Number(abilXML.Cooldown) * 1000);
-						}
-						player.lastAltAttack_ = getTimer();
-						player.nextAltAttack_ = getTimer() + cd;
-						//usetime, playerid, slotid, objecttype, useposx, useposy, usetype
-						gs_.gsc_.useItem(getTimer(), player.objectId_, 1, player.equipment_[1], target.x_, target.y_, UseType.START_USE);
-						if (player.objectType_ != 782) {
-							var shootAngle:Number = Math.atan2(target.y_ - player.y_, target.x_ - player.x_);
-							player.doShoot(getTimer(), player.equipment_[1], abilXML, (Parameters.data_.cameraAngle + shootAngle), false);
-						}
-					}
-					break;
-				}
-				else if (maxprism && (player.objectType_ == 804 || player.objectType_ == 768)) { //trickster or rogue
-					var angle:Number = Math.atan2(gs_.map.mouseX, gs_.map.mouseY);
-					if (angle < 0) {
-						angle += Math.PI * 2;
-					}
-					trace(angle);
-					var desX:Number = 20 * 50 * Math.sin(angle); //hypotenuse 20 -> how far is the teleport used
-					var desY:Number = 20 * 50 * Math.cos(angle);
-					player.useAltWeapon(desX, desY, UseType.START_USE);
-				}
-                else if (!this.specialKeyDown_) {
-					var _local_7:int;
-					var _local_8:int;
-                    if (player.isUnstable() && Parameters.data_.dbUnstableAbil) {
-                        _local_7 = ((Math.random() * 600) - 300);
-                        _local_8 = ((Math.random() * 600) - 325);
-                    }
-                    else {
-                        _local_7 = this.gs_.map.mouseX;
-                        _local_8 = this.gs_.map.mouseY;
-                    }
-                    if (player.useAltWeapon(_local_7, _local_8, UseType.START_USE)) {
-                        this.specialKeyDown_ = true;
-                    }
-                }
+				abilityUsed(player, ObjectLibrary.xmlLibrary_[player.equipment_[1]]);
                 break;
             case Parameters.data_.QuestTeleport:
 				var quest:GameObject = gs_.map.quest_.getObject(1);
                 if(quest != null)
                 {
                     dist = int.MAX_VALUE;
-					var _targetPlayer:int = -1;
-					//var invis:Dictionary = new Dictionary();
-					for each(obj in gs_.map.goDict_)
-                    {
-						if(obj is Player)
-						{
+					var _targetPlayer:String = "";
+					for each(obj in gs_.map.goDict_) {
+						if (obj is Player) {
 							var _distSquared:int = (obj.x_ - quest.x_) * (obj.x_ - quest.x_) + (obj.y_ - quest.y_) * (obj.y_ - quest.y_);
-							if(_distSquared < dist)
-							{
+							if (_distSquared < dist) {
 								dist = _distSquared;
-								_targetPlayer = obj.objectId_;
+								_targetPlayer = obj.name_;
 							}
 							/*if ((_obj as Player).isInvisible()) { //invis check TODO
 								
 							}*/
 						}
 					}
-					if(_targetPlayer == player.objectId_)
-					{
+					if (_targetPlayer == player.name_) {
 						player.notifyPlayer("You are the closest!",0x00FF00,1500);
 						break;
 					}
 					gs_.gsc_.teleport(_targetPlayer);
-					player.notifyPlayer("Teleporting to " + gs_.map.goDict_[_targetPlayer].name_,0x00FF00,1500);
+					//player.notifyPlayer("Teleporting to " + _targetPlayer,0x00FF00,1500);
                 }
                 else
                 {
@@ -634,10 +680,7 @@ public class MapUserInput {
                 }
                 break;
             case Parameters.data_.options:
-				closeDialogSignal.dispatch();
-                this.clearInput();
-				GameSprite.hidePreloader();
-                this.layers.overlay.addChild(new Options(this.gs_));
+				openOptions();
                 break;
             case Parameters.data_.toggleCentering:
                 Parameters.data_.centerOnPlayer = !(Parameters.data_.centerOnPlayer);
@@ -649,8 +692,7 @@ public class MapUserInput {
                 break;
 			//ADDITIONS
             case Parameters.data_.ReconRealm:
-				if(reconRealm != null)
-				{
+				if (reconRealm != null) {
 					reconRealm.charId_ = gs_.gsc_.charId_;
 					gs_.dispatchEvent(reconRealm);
 				}
@@ -672,8 +714,7 @@ public class MapUserInput {
 				}
                 break;
             case Parameters.data_.ReconDung:
-				if(reconDung != null)
-				{
+				if (reconDung != null) {
 					if (getTimer() - dungTime < 180000) {
 						reconDung.charId_ = gs_.gsc_.charId_;
 						gs_.dispatchEvent(reconDung);
@@ -697,15 +738,15 @@ public class MapUserInput {
 				}
                 break;
             case Parameters.data_.ReconVault:
-				if(reconVault != null)
-				{
+				if (reconVault != null) {
 					reconVault.charId_ = gs_.gsc_.charId_;
 					gs_.dispatchEvent(reconVault);
 				}
                 break;
 			//
             case Parameters.data_.tpto:
-                gs_.gsc_.playerText("/teleport "+TextHandler.caller);
+                //gs_.gsc_.playerText("/teleport "+TextHandler.caller);
+				gs_.gsc_.teleport(TextHandler.caller);
                 break;
             case Parameters.data_.TextPause:
                 gs_.gsc_.playerText("/pause");
@@ -813,15 +854,12 @@ public class MapUserInput {
                 break;
             case Parameters.data_.kdbPre1:
 				activatePreset(1);
-				player.notifyPlayer(Parameters.data_.dbPre1[2] ? Parameters.data_.dbPre1[0]+": On" : Parameters.data_.dbPre1[0]+": Off", Parameters.data_.dbPre1[2] ? 0xff0000 : 0x00ff00, 1500);
                 break;
             case Parameters.data_.kdbPre2:
 				activatePreset(2);
-				player.notifyPlayer(Parameters.data_.dbPre2[2] ? Parameters.data_.dbPre2[0]+": On" : Parameters.data_.dbPre2[0]+": Off", Parameters.data_.dbPre2[2] ? 0xff0000 : 0x00ff00, 1500);
                 break;
             case Parameters.data_.kdbPre3:
 				activatePreset(3);
-				player.notifyPlayer(Parameters.data_.dbPre3[2] ? Parameters.data_.dbPre3[0]+": On" : Parameters.data_.dbPre3[0]+": Off", Parameters.data_.dbPre3[2] ? 0xff0000 : 0x00ff00, 1500);
                 break;
             case Parameters.data_.resetCHP:
 				player.chp = player.hp_;
@@ -840,32 +878,85 @@ public class MapUserInput {
         this.setPlayerMovement();
     }
 	
-	private function activatePreset(preset:int):void {
+	public function openOptions():void {
+		closeDialogSignal.dispatch();
+        clearInput();
+		GameSprite.hidePreloader();
+        layers.overlay.addChild(new Options(gs_));
+	}
+	
+	public function activatePreset(preset:int, setstate:int = -1):void { //very nice code indeed
 		var effTotal:int;
 		var state:Boolean;
-		//var effOps:Array = new Array(Parameters.data_.dbArmorBroken, Parameters.data_.dbBleeding, Parameters.data_.dbDazed, Parameters.data_.dbParalyzed, Parameters.data_.dbSick, Parameters.data_.dbSlowed, Parameters.data_.dbStunned, Parameters.data_.dbWeak, Parameters.data_.dbQuiet);
-		if (preset == 1) {
-			effTotal = Parameters.data_.dbPre1[1];
-			Parameters.data_.dbPre1[2] = !Parameters.data_.dbPre1[2];
-			state = Parameters.data_.dbPre1[2];
+		var name:String;
+		switch (preset) {
+			case 1:
+				name = Parameters.data_.dbPre1[0];
+				effTotal = Parameters.data_.dbPre1[1];
+				break;
+			case 2:
+				name = Parameters.data_.dbPre2[0];
+				effTotal = Parameters.data_.dbPre2[1];
+				break;
+			case 3:
+				name = Parameters.data_.dbPre3[0];
+				effTotal = Parameters.data_.dbPre3[1];
+				break;
 		}
-		else if (preset == 2) {
-			effTotal = Parameters.data_.dbPre2[1];
-			Parameters.data_.dbPre2[2] = !Parameters.data_.dbPre2[2];
-			state = Parameters.data_.dbPre2[2];
-		}
-		else if (preset == 3) {
-			effTotal = Parameters.data_.dbPre3[1];
-			Parameters.data_.dbPre3[2] = !Parameters.data_.dbPre3[2];
-			state = Parameters.data_.dbPre3[2];
-		}
-		if (effTotal == -1) {
+		if (effTotal == 0) {
 			return;
+		}
+		if (setstate == -1) {
+			switch (preset) {
+				case 1:
+					Parameters.data_.dbPre1[2] = !Parameters.data_.dbPre1[2];
+					state = Parameters.data_.dbPre1[2];
+					break;
+				case 2:
+					Parameters.data_.dbPre2[2] = !Parameters.data_.dbPre2[2];
+					state = Parameters.data_.dbPre2[2];
+					break;
+				case 3:
+					Parameters.data_.dbPre3[2] = !Parameters.data_.dbPre3[2];
+					state = Parameters.data_.dbPre3[2];
+					break;
+			}
+		}
+		else if (setstate == 0) { //off
+			switch (preset) {
+				case 1:
+					Parameters.data_.dbPre1[2] = false;
+					state = Parameters.data_.dbPre1[2];
+					break;
+				case 2:
+					Parameters.data_.dbPre2[2] = false;
+					state = Parameters.data_.dbPre2[2];
+					break;
+				case 3:
+					Parameters.data_.dbPre3[2] = false;
+					state = Parameters.data_.dbPre3[2];
+					break;
+			}
+		}
+		else if (setstate == 1) {
+			switch (preset) {
+				case 1:
+					Parameters.data_.dbPre1[2] = true;
+					state = Parameters.data_.dbPre1[2];
+					break;
+				case 2:
+					Parameters.data_.dbPre2[2] = true;
+					state = Parameters.data_.dbPre2[2];
+					break;
+				case 3:
+					Parameters.data_.dbPre3[2] = true;
+					state = Parameters.data_.dbPre3[2];
+					break;
+			}
 		}
 		for (var i:int = 0; i < 10; i++) {
 			var a:int = 1 << i;
 			var b:int = effTotal & a;
-			//addTextLine.dispatch(ChatMessage.make(Parameters.CLIENT_CHAT_NAME, i+": "+a+" "+b));
 			if ((effTotal & 1 << i) != 0) {
 				switch (i) {
 					case 0:
@@ -902,22 +993,22 @@ public class MapUserInput {
 			}
 		}
 		Parameters.save();
+		if (setstate != 0) {
+			gs_.map.player_.notifyPlayer(state ? name+": On" : name+": Off", state ? 0xff0000 : 0x00ff00, 1500);
+		}
 	}
     
     private function selectAimMode() : void
     {
         var _loc1_:int = 0;
         var _loc2_:String = "";
-        if(Parameters.data_["aimMode"] == undefined)
-        {
+        if (Parameters.data_.aimMode == undefined) {
             _loc1_ = 1;
         }
-        else
-        {
-            _loc1_ = (Parameters.data_["aimMode"] + 1) % 3;
+        else {
+            _loc1_ = (Parameters.data_.aimMode + 1) % 3;
         }
-        switch(_loc1_)
-        {
+        switch(_loc1_) {
             case 1:
                 _loc2_ = "Aim Assist Mode: Highest HP";
                 break;
@@ -928,7 +1019,7 @@ public class MapUserInput {
                 _loc2_ = "Aim Assist Mode: Closest to Cursor";
         }
         gs_.map.player_.levelUpEffect(_loc2_);
-        Parameters.data_["aimMode"] = _loc1_;
+        Parameters.data_.aimMode = _loc1_;
     }
 
     private function onKeyUp(_arg_1:KeyboardEvent):void {
@@ -954,18 +1045,7 @@ public class MapUserInput {
                 this.rotateRight_ = false;
                 break;
             case Parameters.data_.useSpecial:
-                if (this.specialKeyDown_) {
-                    this.specialKeyDown_ = false;
-                    if (this.gs_.map.player_.isUnstable() && Parameters.data_.dbUnstableAbil) {
-                        _local_2 = ((Math.random() * 600) - 300);
-                        _local_3 = ((Math.random() * 600) - 325);
-                    }
-                    else {
-                        _local_2 = this.gs_.map.mouseX;
-                        _local_3 = this.gs_.map.mouseY;
-                    }
-                    this.gs_.map.player_.useAltWeapon(this.gs_.map.mouseX, this.gs_.map.mouseY, UseType.END_USE);
-                }
+				this.specialKeyDown_ = false;
                 break;
         }
         this.setPlayerMovement();

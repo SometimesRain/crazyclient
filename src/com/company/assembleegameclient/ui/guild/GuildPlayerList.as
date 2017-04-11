@@ -3,6 +3,7 @@ import com.company.assembleegameclient.ui.Scrollbar;
 import com.company.assembleegameclient.util.GuildUtil;
 import com.company.ui.BaseSimpleText;
 import com.company.util.MoreObjectUtil;
+import kabam.rotmg.text.view.stringBuilder.StaticStringBuilder;
 
 import flash.display.Bitmap;
 import flash.display.Graphics;
@@ -46,7 +47,7 @@ public class GuildPlayerList extends Sprite {
         this.loadingText_.setStringBuilder(new LineBuilder().setParams(TextKey.LOADING_TEXT));
         this.loadingText_.filters = [new DropShadowFilter(0, 0, 0, 1, 8, 8)];
         this.loadingText_.setAutoSize(TextFieldAutoSize.CENTER).setVerticalAlign(TextFieldDisplayConcrete.MIDDLE);
-        this.loadingText_.x = (800 / 2);
+        this.loadingText_.x = 400;
         this.loadingText_.y = 550;
         addChild(this.loadingText_);
         var _local_5:Account = StaticInjectorContext.getInjector().getInstance(Account);
@@ -85,7 +86,8 @@ public class GuildPlayerList extends Sprite {
         var _local_8:int;
         var _local_9:MemberListLine;
         removeChild(this.loadingText_);
-        this.titleText_ = new BaseSimpleText(32, 0xB3B3B3, false, 0, 0);
+		
+        this.titleText_ = new BaseSimpleText(32, 0xB3B3B3);
         this.titleText_.setBold(true);
         this.titleText_.text = _arg_1.@name;
         this.titleText_.useTextDimensions();
@@ -93,17 +95,20 @@ public class GuildPlayerList extends Sprite {
         this.titleText_.y = 24;
         this.titleText_.x = (400 - (this.titleText_.width / 2));
         addChild(this.titleText_);
-        this.guildFameText_ = new BaseSimpleText(22, 0xFFFFFF, false, 0, 0);
+		
+        this.guildFameText_ = new BaseSimpleText(22, 0xFFFFFF);
         this.guildFameText_.text = _arg_1.CurrentFame;
         this.guildFameText_.useTextDimensions();
         this.guildFameText_.filters = [new DropShadowFilter(0, 0, 0, 1, 8, 8)];
         this.guildFameText_.x = (0x0300 - this.guildFameText_.width);
-        this.guildFameText_.y = ((32 / 2) - (this.guildFameText_.height / 2));
+        this.guildFameText_.y = 5;
         addChild(this.guildFameText_);
+		
         this.guildFameIcon_ = new Bitmap(GuildUtil.guildFameIcon(40));
         this.guildFameIcon_.x = 760;
-        this.guildFameIcon_.y = ((32 / 2) - (this.guildFameIcon_.height / 2));
+        this.guildFameIcon_.y = (16 - (this.guildFameIcon_.height / 2));
         addChild(this.guildFameIcon_);
+		
         this.lines_ = new Shape();
         _local_2 = this.lines_.graphics;
         _local_2.clear();

@@ -92,6 +92,7 @@ public class Player extends Character {
     public static var nextLootSlot:int = -1;
 	private var nextSwap:int = 0;
 	private var bools:Array = new Array(false,false,false,false,false,false,false,false);
+    //public var getOut:Boolean = false;
 	
     public var questMob:GameObject;
     public var questMob1:GameObject;
@@ -103,6 +104,7 @@ public class Player extends Character {
 	private var timerCount:int = 1;
 	private var startTime:int = 0;
 	private var endCount:int = 0;
+	private var timercback:Function;
 	
 	private var nextAutoAbil:int = 0;
     public var mapAutoAbil:Boolean = false;
@@ -113,8 +115,8 @@ public class Player extends Character {
 	
 	public var chp:Number = -1;
 	private var vitTime:int = -1;
-	private var hpBoostApplied:Boolean = false;
-	private var lastMaxHPBoost:int = -1;
+	//private var hpBoostApplied:Boolean = false;
+	//private var lastMaxHPBoost:int = -1;
 
     public var xpTimer:int;
     public var skinId:int;
@@ -308,7 +310,7 @@ public class Player extends Character {
             }
             return (false);
         }
-        map_.gs_.gsc_.teleport(_arg_1.objectId_);
+        map_.gs_.gsc_.teleport(_arg_1.name_);
         this.nextTeleportAt_ = (getTimer() + MS_BETWEEN_TELEPORT);
         return (true);
     }
@@ -335,6 +337,7 @@ public class Player extends Character {
             this.levelUpEffect(TextKey.PLAYER_LEVELUP);
         }
 		if (objectId_ == map_.player_.objectId_) {
+			chp = maxHP_ + maxHPBoost_; //is this correct?
 			var objxml:XML = ObjectLibrary.xmlLibrary_[objectType_];
 			var avggains:Array = new Array();
 			var msgout:String = "You rolled ";
@@ -629,21 +632,16 @@ public class Player extends Character {
     
     public function genWantedList() : Vector.<int>
     {
-        var _loc1_:XML = null;
+        var _loc1_:XML;
         var _loc2_:Vector.<int> = new Vector.<int>();
 		_loc2_.push(HEALTH_POT);
 		_loc2_.push(MAGIC_POT);
-        for each(_loc1_ in ObjectLibrary.xmlLibrary_)
-        {
-            if(_loc1_.hasOwnProperty("Item")) //is item
-            {
-                if(!notWanted(_loc1_)) //we want this item
-                {
+        for each(_loc1_ in ObjectLibrary.xmlLibrary_) {
+            if (_loc1_.hasOwnProperty("Item")) { //is item
+                if (!notWanted(_loc1_)) { //we want this item
 					if (_loc1_.hasOwnProperty("Activate")) { //is potion
-						for each(var _loc3_:String in _loc1_.Activate)
-						{
-							if(_loc3_ == "IncrementStat")
-							{
+						for each(var _loc3_:String in _loc1_.Activate) {
+							if (_loc3_ == "IncrementStat") {
 								var attr:int = _loc1_.Activate.@stat;
 								switch (attr) {
 									case 21:
@@ -736,10 +734,13 @@ public class Player extends Character {
     public function isWantedItem(param1:int) : Boolean
     {
         var _loc2_:int;
-        for each(_loc2_ in wantedList)
-        {
-            if(param1 == _loc2_)
-            {
+		for each(_loc2_ in Parameters.data_.lootIgnore) { //ignored items
+            if (param1 == _loc2_) {
+				return false;
+			}
+		}
+        for each(_loc2_ in wantedList) { //wanted items
+            if (param1 == _loc2_) {
                 return true;
             }
         }
@@ -767,8 +768,13 @@ public class Player extends Character {
 				map_.gs_.gsc_.invSwap(this,bag,slot1,lootedItemtype,this,putToSlot,-1);
 			}
 			else { //loot item on potion
-				map_.gs_.gsc_.useItem(getTimer(), this.objectId_, putToSlot, nextLootSlot, this.x_, this.y_, 0); //use the unneeded potion
-				map_.gs_.gsc_.invSwap(this,bag,slot1,lootedItemtype,this,putToSlot,-1);
+				if (Parameters.data_.drinkPot) {
+					map_.gs_.gsc_.useItem(getTimer(), this.objectId_, putToSlot, nextLootSlot, this.x_, this.y_, 0); //use the unneeded potion
+					map_.gs_.gsc_.invSwap(this,bag,slot1,lootedItemtype,this,putToSlot,-1);
+				}
+				else {
+					map_.gs_.gsc_.invSwap(this,bag,slot1,lootedItemtype,this,putToSlot,equipment_[putToSlot]);
+				}
 			}
         }
         lastLootTime = getTimer();
@@ -795,14 +801,14 @@ public class Player extends Character {
         return (-1);
     }
     
-    public function okToLoot() : Boolean
+    public function okToLoot(item:int) : Boolean
     {
         var _loc2_:int = getTimer();
         var _loc3_:int = _loc2_ - lastLootTime;
         if (_loc3_ < LOOT_EVERY_MS) {
             return false; //too early to loot
         }
-        if (nextAvailableInventorySlotMod() != -1) {
+        if (nextAvailableInventorySlotMod() != -1 || (item == HEALTH_POT && healthPotionCount_ < 6) || (item == MAGIC_POT && magicPotionCount_ < 6)) {
             return true; //we have slots
         }
         return false; //we have no slots
@@ -816,13 +822,10 @@ public class Player extends Character {
         var _loc4_:int = 0;
         var _loc5_:Vector.<Container> = getLootBags();
         _loc5_ = getLootableBags(_loc5_,MAX_LOOT_DIST);
-        for each(_loc1_ in _loc5_)
-        {
+        for each(_loc1_ in _loc5_) {
             _loc4_ = 0;
-            for each(_loc2_ in _loc1_.equipment_)
-            {
-                if(isWantedItem(_loc2_) && okToLoot()) //is item wanted?
-                {
+            for each(_loc2_ in _loc1_.equipment_) {
+                if (isWantedItem(_loc2_) && okToLoot(_loc2_)) { //is item wanted?
 					if (_loc1_.objectId_ != GameServerConnectionConcrete.ignoredBag) {
 						//addTextLine.dispatch(ChatMessage.make("", "Looting bag id "+_loc1_.objectId_));
 						lootItem(nextAvailableInventorySlotMod(),_loc1_,_loc4_,_loc2_);
@@ -844,7 +847,6 @@ public class Player extends Character {
 		var suitSlot:int = 0;
 		for (i = 4; i < equipment_.length; i++) { //find first suitable slot
 			if (!hasBackpack_ && i > 11) { //backpack check
-				trace("bp abort");
 				break;
 			}
 			else if (collect > 0 && equipment_[i] == -1) { //take, free slot
@@ -855,8 +857,24 @@ public class Player extends Character {
 				suitSlot = i;
 				break;
 			}
+			else if (collect == int.MIN_VALUE) { //potions
+				switch (equipment_[i]) {
+					case 0xa20:
+					case 0xa1f:
+					case 0xa21:
+					case 0xa4c:
+					case 0xa34:
+					case 0xa35:
+					case 0xae9:
+					case 0xaea:
+						suitSlot = 1;
+						break;
+				}
+			}
 		}
 		if (suitSlot == 0) { //no suitable slot
+			collect = 0;
+			notifyPlayer("Stopping", 0xff0000, 1500);
 			return;
 		}
 		for each(goCont in map_.goDict_) { //find nearest chest
@@ -878,10 +896,10 @@ public class Player extends Character {
 			}
 		}
 		//trace("nearest",dist);
-		if (dist > MAX_LOOT_DIST) { //no chests near enough
+		if (cont == null) {
 			return;
 		}
-		if (cont == null) {
+		if (dist > MAX_LOOT_DIST) { //no chests near enough
 			return;
 		}
 		for (i = 0; i < cont.equipment_.length; i++) {
@@ -897,7 +915,24 @@ public class Player extends Character {
 				lastLootTime = getTimer();
 				return;
 			}
+			else if (collect == int.MAX_VALUE) { //potions
+				switch (cont.equipment_[i]) {
+					case 0xa20:
+					case 0xa1f:
+					case 0xa21:
+					case 0xa4c:
+					case 0xa34:
+					case 0xa35:
+					case 0xae9:
+					case 0xaea:
+						map_.gs_.gsc_.invSwap(this, cont, i, cont.equipment_[i], this, suitSlot, equipment_[suitSlot]);
+						lastLootTime = getTimer();
+						return;
+				}
+			}
 		}
+		collect = 0;
+		notifyPlayer("Stopping", 0xff0000, 1500);
     }
 	
 	private function swapInvBp(slot:int):void {
@@ -918,11 +953,12 @@ public class Player extends Character {
 		}
 	}
 	
-	public function startTimer(count:int, step:int = 500):void { //uses milliseconds
+	public function startTimer(count:int, step:int = 500, cback:Function = null):void { //uses milliseconds
 		timerCount = 0;
 		endCount = count;
 		timerStep = step;
-		startTime = getTimer(); //- 50; //allow 50 millisecond delay
+		timercback = cback;
+		startTime = getTimer();
 	}
 
     override public function damage(_arg_1:int, _arg_2:int, _arg_3:Vector.<uint>, _arg_4:Boolean, _arg_5:Projectile):void {
@@ -933,8 +969,7 @@ public class Player extends Character {
 	public function negateHealth(amount:int):void {
 		if (this == map_.player_) {
 			chp -= amount;
-            if (chp / maxHP_ * 100 <= 15)
-            {
+            if (chp / maxHP_ * 100 <= 15) {
 				addTextLine.dispatch(ChatMessage.make("", "You were saved at "+chp.toFixed(0)+" health"));
 				//map_.gs_.closed.dispatch(); //disconnect
 				map_.gs_.gsc_.escape(); //this uses a reconnect event, SENDING A REAL ESCAPE PACKET MAKES YOU DIE
@@ -944,9 +979,9 @@ public class Player extends Character {
 
     override public function update(_arg_1:int, _arg_2:int):Boolean {
 		if (this == map_.player_) {
-			if (lastMaxHPBoost == -1) {
+			/*if (lastMaxHPBoost == -1) {
 				lastMaxHPBoost = maxHPBoost_;
-			}
+			}*/
 			if (vitTime == -1) {
 				vitTime = getTimer();
 				//var hppms:Number = Number((1 + 0.12 * vitality_) / 1000);
@@ -965,7 +1000,10 @@ public class Player extends Character {
 				else { //vit
 					chp += (getTimer() - vitTime) * Number((1 + 0.12 * vitality_) / 1000);
 				}
-				if (isHpBoosted() && !hpBoostApplied) {
+				if (breath_ == 0) { //other effects and -96 hp/s
+					chp -= (getTimer() - vitTime) * 0.096;
+				}
+				/*if (isHpBoosted() && !hpBoostApplied) {
 					hpBoostApplied = true;
 					chp += maxHPBoost_ - lastMaxHPBoost;
 					GameServerConnectionConcrete.recentHeal += maxHPBoost_ - lastMaxHPBoost;
@@ -975,22 +1013,38 @@ public class Player extends Character {
 				}
 				else {
 					lastMaxHPBoost = maxHPBoost_;
+				}*/
+				if (chp / maxHP_ * 100 <= 15) {
+					addTextLine.dispatch(ChatMessage.make("", "You were saved at "+chp.toFixed(0)+" health"));
+					map_.gs_.gsc_.escape();
 				}
 				if (chp > maxHP_) {
+					//addTextLine.dispatch(ChatMessage.make("", "Overflow prevented "+chp));
 					chp = maxHP_;
 				}
 				vitTime = getTimer();
 			}
 			var qid:int = -1; 
 			if (map_.quest_.getObject(1) != null) { //questbar id prerequisite
-				qid = map_.quest_.getObject(1).objectType_;
+				var qob:GameObject = map_.quest_.getObject(1);
+				qid = qob.objectType_;
+				if (qid == 3334 && Parameters.data_.autoSprite) { //limon
+					onGoto(qob.x_, qob.y_ + 2, map_.gs_.lastUpdate_);
+				}
+			}
+			if (objectType_ == 782 && map_.gs_.mui_.specialKeyDown_) { //wizard
+				map_.gs_.mui_.abilityUsed(this, ObjectLibrary.xmlLibrary_[equipment_[1]]);
 			}
 			if (qid != 3366 && qid != 3367 && qid != 3368) { //questbar mod set
-				questMob = map_.quest_.getObject(1);
+				questMob = qob;
 			}
 			else {
 				questMob = null;
 			}
+			/*if (getOut) {
+				getOut = false;
+				map_.gs_.dispatchEvent(MapUserInput.reconRealm);
+			}*/
 			if (wantedList == null) //autoloot wanted list
 			{
 				wantedList = genWantedList();
@@ -999,7 +1053,7 @@ public class Player extends Character {
 			{
 				autoloot_();
 			}
-			if (collect != 0 && lastLootTime + 750 < getTimer()) //fast vaulting, higher delay
+			if (collect != 0 && map_.name_ == "Vault" && lastLootTime + 750 < getTimer()) //fast vaulting, higher delay
 			{
 				vault_();
 			}
@@ -1044,6 +1098,9 @@ public class Player extends Character {
 				}
 				else {
 					notifyPlayer(time.toFixed(timerStep < 1000 ? 1 : 0), GameObject.green2red(100 - (cur / end) * 100));
+				}
+				if (timerCount == endCount && timercback != null) {
+					timercback();
 				}
 				timerCount++;
 			}
@@ -1212,7 +1269,7 @@ public class Player extends Character {
 				moveMultiplier_ = 5;
 			}
 			else {
-				moveMultiplier_ = 1.6;
+				moveMultiplier_ = 1.4;
 			}
         }
 		//if (mapLightSpeed) moveMultiplier_ = 1.5; //speedhack, disabled for now
@@ -1280,18 +1337,10 @@ public class Player extends Character {
     }
 
     override public function draw(_arg_1:Vector.<IGraphicsData>, _arg_2:Camera, _arg_3:int):void {
-		if(Parameters.data_["HidePlayerFilter"])
-        {
-            if(map_.name_ == "Nexus")
-            {
-                if(this != map_.player_)
-                {
-                    if(numStars_ <= Parameters.data_.chatStarRequirement)
-                    {
-                        return;
-                    }
-                }
-            }
+		if (Parameters.data_.HidePlayerFilter && map_.name_ == "Nexus" && this != map_.player_) {
+			if (numStars_ <= Parameters.data_.chatStarRequirement) {
+				return;
+			}
         }
         super.draw(_arg_1, _arg_2, _arg_3);
         if (this != map_.player_) {
@@ -1463,18 +1512,17 @@ public class Player extends Character {
         var _local_10:int;
         var _local_11:int;
         if (map_ == null || isPaused()) {
-            return (false);
+            return false;
         }
         var useItemId:int = equipment_[1];
         if (useItemId == -1) {
-            return (false);
+            return false;
         }
         var thisAbilXML:XML = ObjectLibrary.xmlLibrary_[useItemId];
-        if (thisAbilXML == null || !thisAbilXML.hasOwnProperty("Usable")) {
-            return (false);
-        }
+        /*if (thisAbilXML == null || !thisAbilXML.hasOwnProperty("Usable")) {
+            return false;
+        }*/
         var _local_6:Point = sToW(_arg_1, _arg_2); //allows using ability outside of the map
-        //var _local_6:Point = map_.pSTopW(_arg_1, _arg_2);
         if (_local_6 == null) {
             SoundEffectLibrary.play("error");
             return (false);
@@ -1491,11 +1539,6 @@ public class Player extends Character {
         if (_arg_3 == UseType.START_USE) {
             if (abilUseTime < this.nextAltAttack_) { //on cooldown
                 SoundEffectLibrary.play("error");
-                return (false);
-            }
-            _local_10 = int(thisAbilXML.MpCost);
-            if (_local_10 > this.mp_) {
-                SoundEffectLibrary.play("no_mana");
                 return (false);
             }
 			if (abFreq > 0) {
@@ -1563,16 +1606,19 @@ public class Player extends Character {
         var _loc16_:Number = 0;
         var _loc17_:Number = int.MAX_VALUE;
         var _loc18_:Number = int.MAX_VALUE;
+        var i:int;
         aimAssistTarget = null;
         for each(_loc5_ in map_.goDict_) {
             if (_loc5_.props_.isEnemy_) {
                 _loc6_ = false;
-                for each(_loc7_ in Parameters.data_.AAException) { //get exceptions
-                    if (_loc7_ == _loc5_.props_.type_) {
-                        _loc6_ = true;
-                        break;
-                    }
-                }
+				if (!Parameters.data_.tombHack && _loc5_.props_.type_ >= 3366 && _loc5_.props_.type_ <= 3368) { //tomb hack off -> don't shoot shielded bosses
+					for each(_loc7_ in Parameters.data_.AAException) { //get exceptions
+						if (_loc7_ == _loc5_.props_.type_) {
+							_loc6_ = true;
+							break;
+						}
+					}
+				}
                 if (!(!_loc6_ && !(_loc5_ is Character))) {
                     if (!(!_loc6_ && (_loc5_.isStasis() || _loc5_.isInvulnerable() || _loc5_.isInvincible()))) {
                         _loc8_ = false;
@@ -1583,7 +1629,7 @@ public class Player extends Character {
                             }
                         }
                         if (!_loc8_) {
-                            if (_loc5_.jittery || !Parameters.data_.AATargetLead) {
+                            if (_loc5_.jittery || !Parameters.data_.AATargetLead || _loc5_.objectType_ == 3334) {
                                 _loc9_ = new Vector3D(_loc5_.x_,_loc5_.y_);
                             }
                             else {
@@ -1595,14 +1641,6 @@ public class Player extends Character {
                                     if(_loc13_ == 1) { //aimmode: highest hp
                                         _loc12_ = _loc5_.maxHP_;
 										switch (_loc5_.objectType_) {
-											case 6282: //tesla
-											case 1646: //abyss big gunner
-											case 0x717e: //abandoned switches
-											case 0x727c:
-											case 0x727d:
-											case 0x736e:
-											case 0x736f:
-												_loc12_ = int.MAX_VALUE;
 											case 1625: //ghost god
 												_loc12_ = 3000;
 											case 3369: //sarc
@@ -1610,8 +1648,10 @@ public class Player extends Character {
 											case 3371: //fem priest
 												_loc12_ = 8000;
 										}
-										if (_loc5_.objectType_ >= 0x724a && _loc5_.objectType_ <= 0x724e) { //more switches
-											_loc12_ = int.MAX_VALUE;
+										for each(i in Parameters.data_.AAPriority) { //prioritize list
+											if (i == _loc5_.objectType_) {
+												_loc12_ = int.MAX_VALUE;
+											}
 										}
 										if (Parameters.data_.tombHack && ((_loc5_.objectType_ >= 3366 && _loc5_.objectType_ <= 3368) || (_loc5_.objectType_ >= 32692 && _loc5_.objectType_ <= 32694))) { //tomb bosses
 											if (_loc5_.objectType_ != Parameters.data_.curBoss && _loc5_.objectType_ != Parameters.data_.curBoss + 29326) {
@@ -1726,8 +1766,7 @@ public class Player extends Character {
         return Number.MAX_VALUE;
     }
     
-    public function sToW(param1:Number, param2:Number) : Point
-    {
+    public function sToW(param1:Number, param2:Number):Point {
         var _loc3_:* = Parameters.data_.cameraAngle;
         var _loc4_:* = Math.cos(_loc3_);
         var _loc5_:* = Math.sin(_loc3_);

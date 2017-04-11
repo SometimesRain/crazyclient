@@ -106,7 +106,7 @@
          <File>chars16x16rEncounters</File>
          <Index>22</Index>
       </AnimatedTexture>
-      <MaxHitPoints>65000</MaxHitPoints>
+      <MaxHitPoints>80000</MaxHitPoints>
       <Defense>55</Defense>
       <XpMult>0.35</XpMult>
       <Size>40</Size>

@@ -1511,4 +1511,48 @@
       <ShadowSize>0</ShadowSize>
       <Size>0</Size>
    </Object>
+   <Object type="0x6a7" id="Pet Rock">
+      <Class>Character</Class>
+      <RandomTexture>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0x7a</Index>
+         </Texture>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0x7b</Index>
+         </Texture>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0x7c</Index>
+         </Texture>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0x7d</Index>
+         </Texture>
+      </RandomTexture>
+      <NoMiniMap/>
+      <MinSize>80</MinSize>
+      <MaxSize>100</MaxSize>
+   </Object>
+   <Object type="0x6a8" id="Pet Rock Item">
+      <DisplayId>Pet Rock</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x7a</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <ExtraTooltipData>
+         <EffectInfo name="Cooldown" description="20 seconds"/>
+      </ExtraTooltipData>
+      <Description>The Pets of Tomorrow in your very own pocket! Available to those who survived the great Pet Bug of March 2017.</Description>
+      <Sound>use_potion</Sound>
+      <Activate hideEffect="true" cooldown="20" objectId="Pet Rock">Pet</Activate>
+      <InvUse/>
+      <BagType>5</BagType>
+      <Soulbound/>
+      <feedPower>100</feedPower>
+   </Object>
 </Objects>

@@ -1,6 +1,246 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <Objects>
+   <Object type="0xbb2" id="Prod Enemy Item">
+      <DisplayId>Enemy Spawner</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiChar8x8</File>
+         <Index>0xb5</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>Can spawn certain enemies. For testing purposes.</Description>
+      <Sound>use_key</Sound>
+      <Consumable/>
+      <Soulbound/>
+      <Activate id="Prod Enemy Spawner">Create</Activate>
+   </Object>
+   <Object type="0xbb3" id="Prod Enemy Spawner">
+      <DisplayId>Enemy Spawner</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x64e" id="Key Spawner">
+      <Class>Character</Class>
+      <Enemy/>
+      <NoMiniMap/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <MaxHitPoints>50000</MaxHitPoints>
+   </Object>
+   <Object type="0x66c" id="Key Dropper 1">
+      <Class>Character</Class>
+      <StasisImmune/>
+      <Enemy/>
+      <NoMiniMap/>
+      <MaxHitPoints>100</MaxHitPoints>
+      <XpMult>0.0</XpMult>
+      <Size>80</Size>
+      <Texture>
+         <File>lofiObj</File>
+         <Index>0x21</Index>
+      </Texture>
+   </Object>
+   <Object type="0x674" id="Key Dropper 2">
+      <Class>Character</Class>
+      <StasisImmune/>
+      <Enemy/>
+      <NoMiniMap/>
+      <MaxHitPoints>100</MaxHitPoints>
+      <XpMult>0.0</XpMult>
+      <Size>80</Size>
+      <Texture>
+         <File>lofiObj</File>
+         <Index>0x20</Index>
+      </Texture>
+   </Object>
+   <Object type="0x6c3" id="Key Dropper 3">
+      <Class>Character</Class>
+      <StasisImmune/>
+      <Enemy/>
+      <NoMiniMap/>
+      <MaxHitPoints>100</MaxHitPoints>
+      <XpMult>0.0</XpMult>
+      <Size>80</Size>
+      <Texture>
+         <File>lofiObj</File>
+         <Index>0x22</Index>
+      </Texture>
+   </Object>
+   <Object type="0x6d9" id="Key Dropper 4">
+      <Class>Character</Class>
+      <StasisImmune/>
+      <Enemy/>
+      <NoMiniMap/>
+      <MaxHitPoints>100</MaxHitPoints>
+      <XpMult>0.0</XpMult>
+      <Size>80</Size>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x5f</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1fb" id="Testing Gift Spawner">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <Size>90</Size>
+      <Enemy/>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <Texture>
+         <File>lofiEnvironment3</File>
+         <Index>0x22</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lofiEnvironment3</File>
+            <Index>0x23</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lofiEnvironment3</File>
+            <Index>0x24</Index>
+         </Texture>
+      </AltTexture>
+   </Object>
+   <Object type="0x956" id="Testing Pet Stasis">
+      <Class>Character</Class>
+      <StasisImmune/>
+      <Enemy/>
+      <NoMiniMap/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <XpMult>0.0</XpMult>
+      <Projectile id="1">
+         <ObjectId>Puppet Green Wheel</ObjectId>
+         <Speed>0</Speed>
+         <Damage>0</Damage>
+         <Size>60</Size>
+         <LifetimeMS>1000</LifetimeMS>
+         <ConditionEffect duration="20" target="1">Stasis</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x50d" id="GH1 Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Guild Hall 1 Portal</DisplayId>
+      <DungeonName>Guild Hall</DungeonName>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x54</Index>
+      </Texture>
+   </Object>
+   <Object type="0x608" id="GH1 Key">
+      <Class>Equipment</Class>
+      <Item/>
+      <DisplayId>Guild Hall 1 Key</DisplayId>
+      <Texture>
+         <File>lofiObj</File>
+         <Index>0x22</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A key which opens an entrance to Guild Hall. For testing purposes.</Description>
+      <Sound>use_key</Sound>
+      <Consumable/>
+      <Soulbound/>
+      <Activate id="GH1 Portal">Create</Activate>
+      <feedPower>260</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0x611" id="GH2 Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Guild Hall 2 Portal</DisplayId>
+      <DungeonName>Guild Hall 2</DungeonName>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x54</Index>
+      </Texture>
+   </Object>
+   <Object type="0x61b" id="GH2 Key">
+      <Class>Equipment</Class>
+      <Item/>
+      <DisplayId>Guild Hall 2 Key</DisplayId>
+      <Texture>
+         <File>lofiObj</File>
+         <Index>0x22</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A key which opens an entrance to Guild Hall 2. For testing purposes.</Description>
+      <Sound>use_key</Sound>
+      <Consumable/>
+      <Soulbound/>
+      <Activate id="GH2 Portal">Create</Activate>
+      <feedPower>260</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0x621" id="GH3 Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Guild Hall 3 Portal</DisplayId>
+      <DungeonName>Guild Hall 3</DungeonName>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x54</Index>
+      </Texture>
+   </Object>
+   <Object type="0x630" id="GH3 Key">
+      <Class>Equipment</Class>
+      <Item/>
+      <DisplayId>Guild Hall 3 Key</DisplayId>
+      <Texture>
+         <File>lofiObj</File>
+         <Index>0x22</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A key which opens an entrance to Guild Hall 3. For testing purposes.</Description>
+      <Sound>use_key</Sound>
+      <Consumable/>
+      <Soulbound/>
+      <Activate id="GH3 Portal">Create</Activate>
+      <feedPower>260</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0x627" id="GH4 Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Guild Hall 4 Portal</DisplayId>
+      <DungeonName>Guild Hall 4</DungeonName>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x54</Index>
+      </Texture>
+   </Object>
+   <Object type="0x628" id="GH4 Key">
+      <Class>Equipment</Class>
+      <Item/>
+      <DisplayId>Guild Hall 4 Key</DisplayId>
+      <Texture>
+         <File>lofiObj</File>
+         <Index>0x22</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A key which opens an entrance to Guild Hall 4. For testing purposes.</Description>
+      <Sound>use_key</Sound>
+      <Consumable/>
+      <Soulbound/>
+      <Activate id="GH4 Portal">Create</Activate>
+      <feedPower>260</feedPower>
+      <Track/>
+   </Object>
    <Object type="0x023b" id="Test Chicken">
       <Group>Test Chickens</Group>
       <Enemy/>
@@ -211,45 +451,13 @@
          <Index>0</Index>
       </Texture>
    </Object>
-   <Object type="0x1fb" id="Testing Gift Spawner">
-      <Class>Character</Class>
-      <NoMiniMap/>
-      <Size>90</Size>
-      <Enemy/>
-      <MaxHitPoints>10000</MaxHitPoints>
-      <Texture>
-         <File>lofiEnvironment3</File>
-         <Index>0x22</Index>
-      </Texture>
-      <AltTexture id="1">
-         <Texture>
-            <File>lofiEnvironment3</File>
-            <Index>0x23</Index>
-         </Texture>
-      </AltTexture>
-      <AltTexture id="2">
-         <Texture>
-            <File>lofiEnvironment3</File>
-            <Index>0x24</Index>
-         </Texture>
-      </AltTexture>
-      <Projectile id="1">
-         <ObjectId>Puppet Green Wheel</ObjectId>
-         <Speed>0</Speed>
-         <Damage>0</Damage>
-         <Size>80</Size>
-         <LifetimeMS>1000</LifetimeMS>
-         <ConditionEffect duration="10" target="1">Stasis</ConditionEffect>
-         <MultiHit/>
-      </Projectile>
-   </Object>
    <Object type="0x203" id="Testing Gift Ring">
       <Group>Testing Gifts</Group>
       <Class>Character</Class>
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
@@ -263,7 +471,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
@@ -277,7 +485,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
@@ -291,7 +499,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
@@ -305,7 +513,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
@@ -335,7 +543,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
@@ -349,7 +557,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
@@ -363,7 +571,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
@@ -377,7 +585,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
@@ -407,7 +615,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
@@ -437,7 +645,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
@@ -467,7 +675,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
@@ -481,7 +689,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
@@ -495,7 +703,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
@@ -733,7 +941,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
@@ -747,7 +955,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
@@ -761,7 +969,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
@@ -775,7 +983,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
@@ -789,7 +997,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
@@ -803,7 +1011,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
@@ -817,7 +1025,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
@@ -831,7 +1039,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
@@ -845,7 +1053,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
@@ -859,7 +1067,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
@@ -873,7 +1081,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
@@ -887,7 +1095,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
@@ -901,7 +1109,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
@@ -915,7 +1123,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
@@ -929,7 +1137,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>40</Size>
       <AnimatedTexture>
@@ -943,7 +1151,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>40</Size>
       <AnimatedTexture>
@@ -957,7 +1165,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>40</Size>
       <AnimatedTexture>
@@ -971,7 +1179,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>40</Size>
       <AnimatedTexture>
@@ -985,7 +1193,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>40</Size>
       <AnimatedTexture>
@@ -999,7 +1207,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>40</Size>
       <AnimatedTexture>
@@ -1013,7 +1221,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>40</Size>
       <AnimatedTexture>

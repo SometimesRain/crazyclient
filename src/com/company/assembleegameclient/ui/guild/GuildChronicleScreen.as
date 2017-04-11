@@ -41,7 +41,7 @@ public class GuildChronicleScreen extends Sprite {
     }
 
     private function addList():void {
-        if (((this.guildPlayerList_) && (this.guildPlayerList_.parent))) {
+        if (this.guildPlayerList_ && this.guildPlayerList_.parent) {
             this.container.removeChild(this.guildPlayerList_);
         }
         var _local_1:Player = this.gs_.map.player_;

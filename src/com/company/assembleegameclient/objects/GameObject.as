@@ -1133,8 +1133,7 @@ public class GameObject extends BasicObject {
     }
 
     override public function draw(_arg_1:Vector.<IGraphicsData>, _arg_2:Camera, _arg_3:int):void {
-        if(MapUserInput.skipRender == true)
-		{
+        if (MapUserInput.skipRender) {
 			return;
 		}
         var _local_8:BitmapData;
@@ -1290,21 +1289,10 @@ public class GameObject extends BasicObject {
     }
 
     override public function drawShadow(_arg_1:Vector.<IGraphicsData>, _arg_2:Camera, _arg_3:int):void {
-		if(Parameters.data_["HidePlayerFilter"] != false)
-        {
-            if(this is Player)
-            {
-                if(this != map_.player_)
-                {
-                    if(map_.name_ == "Nexus")
-                    {
-                        if((this as Player).numStars_ <= Parameters.data_.chatStarRequirement)
-                        {
-                            return;
-                        }
-                    }
-                }
-            }
+		if (Parameters.data_.HidePlayerFilter != false && this is Player && this != map_.player_ && map_.name_ == "Nexus") {
+			if ((this as Player).numStars_ <= Parameters.data_.chatStarRequirement) {
+				return;
+			}
         }
         if (this.shadowGradientFill_ == null) {
             this.shadowGradientFill_ = new GraphicsGradientFill(GradientType.RADIAL, [this.props_.shadowColor_, this.props_.shadowColor_], [0.5, 0], null, new Matrix());
@@ -1326,9 +1314,8 @@ public class GameObject extends BasicObject {
     }
 
     public function toString():String {
-        return ((((((((((("[" + getQualifiedClassName(this)) + " id: ") + objectId_) + " type: ") + ObjectLibrary.typeToDisplayId_[this.objectType_]) + " pos: ") + x_) + ", ") + y_) + "]"));
+        return "[" + getQualifiedClassName(this) + " id: " + objectId_ + " type: " + ObjectLibrary.typeToDisplayId_[this.objectType_] + " pos: " + x_ + ", " + y_ + "]";
     }
-
 
 }
 }//package com.company.assembleegameclient.objects

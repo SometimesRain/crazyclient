@@ -1,20 +1,29 @@
 ﻿package kabam.rotmg.ui.view {
 import com.company.assembleegameclient.game.AGameSprite;
 import com.company.assembleegameclient.game.GameSprite;
+import com.company.assembleegameclient.game.MapUserInput;
 import com.company.assembleegameclient.objects.Player;
 import com.company.assembleegameclient.parameters.Parameters;
 import com.company.assembleegameclient.ui.BoostPanelButton;
 import com.company.assembleegameclient.ui.TradePanel;
+import com.company.assembleegameclient.ui.icons.SimpleIconButton;
 import com.company.assembleegameclient.ui.panels.InteractPanel;
 import com.company.assembleegameclient.ui.panels.itemgrids.EquippedGrid;
 import com.company.assembleegameclient.ui.panels.itemgrids.InventoryGrid;
+import com.company.util.AssetLibrary;
 import com.company.util.GraphicsUtil;
 import com.company.util.SpriteUtil;
+import flash.display.Bitmap;
+import flash.display.BitmapData;
 import flash.display.StageScaleMode;
+import flash.events.MouseEvent;
 import kabam.rotmg.core.StaticInjectorContext;
+import kabam.rotmg.dialogs.control.OpenDialogSignal;
+import kabam.rotmg.friends.view.FriendListView;
 import kabam.rotmg.game.view.components.StatsView;
 import kabam.rotmg.pets.data.PetsModel;
 import kabam.rotmg.pets.view.components.PetsTabContentView;
+import org.swiftsuspenders.Injector;
 
 import flash.display.GraphicsPath;
 import flash.display.GraphicsSolidFill;
@@ -30,25 +39,6 @@ import kabam.rotmg.minimap.view.MiniMapImp;
 import flash.utils.getTimer;
 
 public class HUDView extends Sprite implements UnFocusAble {
-
-    private const BG_POSITION:Point = new Point(0, 0);
-    private const MAP_POSITION:Point = new Point(4, 4);
-    private const CHARACTER_DETAIL_PANEL_POSITION:Point = new Point(0, 198);
-    private const STAT_METERS_POSITION:Point = new Point(12, 244);
-    private const EQUIPMENT_INVENTORY_POSITION:Point = new Point(14, 200);
-    private const INTERACT_PANEL_POSITION:Point = new Point(0, 500);
-	
-    private const INV_POS:Point = new Point(14, 304);
-    private const BP_POS:Point = new Point(14, 392);
-    private const POT_POS:Point = new Point(14, 480);
-	
-    //private const QUEST_BAR_POS:Point = new Point(-596, 16);
-    private const STATS_POS:Point = new Point(14, 298);
-    private const PET_POS:Point = new Point(5, 354);
-    private const CD_POS:Point = new Point(58, 200);
-	
-    public var petModel:PetsModel;
-    private var player:Player;
 
 	//other
     public var characterDetails:CharacterDetailsView; //name, class icon, options, nexus, boost icons
@@ -66,13 +56,19 @@ public class HUDView extends Sprite implements UnFocusAble {
     public var interactPanel:InteractPanel;
     public var tradePanel:TradePanel;
 	
-	//private var questBar:QuestHealthBar;
     private var stats:StatsView;
     private var cdtimer:CooldownTimer;
 	private var mainView:Boolean = true;
+	
+    private var petModel:PetsModel;
+	private var openDialog:OpenDialogSignal;
+    private var player:Player;
+	private var gs_:GameSprite;
 
     public function HUDView() {
-        this.petModel = StaticInjectorContext.getInjector().getInstance(PetsModel);
+		var injector:Injector = StaticInjectorContext.getInjector();
+        this.petModel = injector.getInstance(PetsModel);
+        this.openDialog = injector.getInstance(OpenDialogSignal);
         this.createAssets();
         this.addAssets();
         this.positionAssets();
@@ -83,8 +79,6 @@ public class HUDView extends Sprite implements UnFocusAble {
         this.miniMap = new MiniMapImp(192, 192);
 		this.potions = new PotionInventoryView();
 		this.stats = new StatsView();
-		
-        //this.questBar = new QuestHealthBar();
         this.cdtimer = new CooldownTimer();
     }
 
@@ -93,57 +87,59 @@ public class HUDView extends Sprite implements UnFocusAble {
         addChild(this.miniMap);
         addChild(this.potions);
 		addChild(this.stats);
-		
-        //addChild(this.questBar);
     }
 
     private function positionAssets():void {
-        this.background.x = this.BG_POSITION.x;
-        this.background.y = this.BG_POSITION.y;
-        this.miniMap.x = this.MAP_POSITION.x;
-        this.miniMap.y = this.MAP_POSITION.y;
-        this.potions.x = this.POT_POS.x;
-        this.potions.y = this.POT_POS.y;
-		this.stats.x = this.STATS_POS.x;
-		this.stats.y = this.STATS_POS.y;
+        this.miniMap.x = 4;
+        this.miniMap.y = 4;
+        this.potions.x = 14;
+        this.potions.y = 480;
+		this.stats.x = 14;
+		this.stats.y = 298;
 		this.stats.visible = false;
-		
-        //this.questBar.x = this.QUEST_BAR_POS.x; //-596 -> -1396
-        //this.questBar.y = this.QUEST_BAR_POS.y;
-		//winw 800 -> -596 winw 1680 -> -974
-		/*if (Parameters.data_.stageScale == StageScaleMode.NO_SCALE) { //fs = on
-			var _loc12_:Number = 800 / WebMain.sWidth; //1680 -> 0.47619047619047619048
-			var _loc13_:Number = 600 / WebMain.sHeight; //977 -> 0.61412487205731832139
-			//0.77539682539682539683
-			if (Parameters.data_.uiscale) {
-				this.questBar.x = this.QUEST_BAR_POS.x * (_loc13_ / _loc12_);
-			}
-			else {
-				//this.hudView.scaleX = _loc12_;
-				//this.hudView.scaleY = _loc13_;
-				//this.hudView.y = 300 * (1 - _loc13_);
-			}
-		}*/
-        this.cdtimer.x = this.CD_POS.x;
-        this.cdtimer.y = this.CD_POS.y;
+        this.cdtimer.x = 58;
+        this.cdtimer.y = 200;
 		this.cdtimer.mouseEnabled = false;
 		this.cdtimer.mouseChildren = false;
     }
 
     public function setPlayerDependentAssets(_arg_1:GameSprite):void { //equipment
         this.player = _arg_1.map.player_;
+		this.gs_ = _arg_1;
         this.createEquippedGrid(); //equipment
         this.createPetWindow(); //pet
         this.createInventories(); //inventory, backpack, potions
         this.createInteractPanel(_arg_1); //nearby players
         this.createCooldownTimer(); //custom
+		this.createButtons();
     }
+	
+	private function createButtons():void {
+        var button:SimpleIconButton = new SimpleIconButton(AssetLibrary.getImageFromSet("lofiInterfaceBig", 5));
+        button.x = 176;
+        button.y = 176;
+        button.addEventListener(MouseEvent.CLICK, this.openOptions);
+        addChild(button);
+        button = new SimpleIconButton(AssetLibrary.getImageFromSet("lofiInterfaceBig", 13));
+        button.x = 176;
+        button.y = 156;
+        button.addEventListener(MouseEvent.CLICK, this.openFriends);
+        addChild(button);
+	}
+	
+	private function openOptions(e:MouseEvent):void {
+		gs_.mui_.openOptions();
+	}
+	
+	private function openFriends(e:MouseEvent):void {
+		openDialog.dispatch(new FriendListView());
+	}
 
     private function createPetWindow():void {
 		if (petModel.getActivePet()) {
 			pet = new PetsTabContentView();
-			this.pet.x = this.PET_POS.x;
-			this.pet.y = this.PET_POS.y;
+			this.pet.x = 5;
+			this.pet.y = 354;
 			this.pet.visible = false;
 			addChild(this.pet);
 		}
@@ -168,17 +164,17 @@ public class HUDView extends Sprite implements UnFocusAble {
 
     private function createInventories():void {
 		this.inventory = new InventoryGrid(player,player,4);
-		this.inventory.x = this.BP_POS.x;
-		this.inventory.y = this.BP_POS.y;
+		this.inventory.x = 14;
+		this.inventory.y = 392;
 		if (player.hasBackpack_) {
 			this.backpack = new InventoryGrid(player,player,12);
 			this.statMeters = new StatMetersView(4, true);
-			this.inventory.x = this.INV_POS.x;
-			this.inventory.y = this.INV_POS.y;
-			this.backpack.x = this.BP_POS.x;
-			this.backpack.y = this.BP_POS.y;
-			this.stats.y = this.INV_POS.y + 6;
-			this.statMeters.y = this.STAT_METERS_POSITION.y;
+			this.inventory.x = 14;
+			this.inventory.y = 304;
+			this.backpack.x = 14;
+			this.backpack.y = 392;
+			this.stats.y = 310;
+			this.statMeters.y = 244;
 			addChild(this.backpack);
 			if (player.tierBoost || player.dropBoost) {
 				this.dropBoost = new BoostPanelButton(player);
@@ -191,14 +187,13 @@ public class HUDView extends Sprite implements UnFocusAble {
 			this.stats.visible = true;
 			this.statMeters = new StatMetersView(8, true);
 			this.characterDetails = new CharacterDetailsView();
-			this.equippedGrid.y = this.EQUIPMENT_INVENTORY_POSITION.y + 148;
-			this.cdtimer.y = this.CD_POS.y + 148;
-			this.statMeters.y = this.STAT_METERS_POSITION.y - 16;
-			this.characterDetails.x = this.CHARACTER_DETAIL_PANEL_POSITION.x;
-			this.characterDetails.y = this.CHARACTER_DETAIL_PANEL_POSITION.y;
+			this.equippedGrid.y = 348;
+			this.cdtimer.y = 348;
+			this.statMeters.y = 228;
+			this.characterDetails.y = 198;
 			addChild(this.characterDetails); //class and name
 		}
-        this.statMeters.x = this.STAT_METERS_POSITION.x;
+        this.statMeters.x = 12;
         addChild(this.inventory);
         addChild(this.statMeters); //fame, health, mana
     }
@@ -209,15 +204,14 @@ public class HUDView extends Sprite implements UnFocusAble {
 
     private function createInteractPanel(_arg_1:GameSprite):void {
         this.interactPanel = new InteractPanel(_arg_1, this.player, 200, 100);
-        this.interactPanel.x = this.INTERACT_PANEL_POSITION.x;
-        this.interactPanel.y = this.INTERACT_PANEL_POSITION.y;
+        this.interactPanel.y = 500;
         addChild(this.interactPanel);
     }
 
     private function createEquippedGrid():void {
         this.equippedGrid = new EquippedGrid(this.player, this.player.slotTypes_, this.player);
-        this.equippedGrid.x = this.EQUIPMENT_INVENTORY_POSITION.x;
-        this.equippedGrid.y = this.EQUIPMENT_INVENTORY_POSITION.y;
+        this.equippedGrid.x = 14;
+        this.equippedGrid.y = 200;
         addChild(this.equippedGrid);
     }
 

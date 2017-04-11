@@ -3967,4 +3967,26 @@
       </RandomTexture>
       <AngleCorrection>1</AngleCorrection>
    </Object>
+   <Object type="0x6aa" id="Apo Feather">
+      <Class>Projectile</Class>
+      <RandomTexture>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0xce</Index>
+         </Texture>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0xcf</Index>
+         </Texture>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0xde</Index>
+         </Texture>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0xdf</Index>
+         </Texture>
+      </RandomTexture>
+      <Rotation>185</Rotation>
+   </Object>
 </Objects>

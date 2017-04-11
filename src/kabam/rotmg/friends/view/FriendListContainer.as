@@ -39,7 +39,7 @@ public class FriendListContainer extends Sprite {
     public function addListItem(_arg_1:FListItem):void {
         _arg_1.y = this._currentY;
         this._itemContainer.addChild(_arg_1);
-        this._currentY = (this._currentY + (_arg_1.height + this.GAP_Y));
+        this._currentY = (this._currentY + (45 + this.GAP_Y)); //smaller gap
         this.updateScrollbar((this._currentY > this._height));
     }
 

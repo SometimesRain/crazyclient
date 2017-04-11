@@ -43,14 +43,17 @@ public class FriendListItem extends FListItem {
         this._portrait.y = -8;
         this._portrait.scaleX = (this._portrait.scaleY = 1.2);
         addChild(this._portrait);
+		
         this._nameText = new TextFieldDisplayConcrete().setSize(18).setColor(((this._isOnline) ? this.ONLINE_COLOR : this.NORMAL_COLOR));
         this._nameText.setStringBuilder(new StaticStringBuilder(this._senderName));
         this._nameText.y = 4;
         addChild(this._nameText);
+		
         this._serverText = new TextFieldDisplayConcrete().setSize(16).setColor(this.NORMAL_COLOR);
         this._serverText.x = (this.width - 250);
         this._serverText.setStringBuilder(new StaticStringBuilder(this._serverName));
         addChild(this._serverText);
+		
         var _local_3:IconButtonFactory = StaticInjectorContext.getInjector().getInstance(IconButtonFactory);
         this._jumpButton = _local_3.create(AssetLibrary.getImageFromSet("lofiInterface2", 3), TextKey.FRIEND_TELEPORT_TITLE, "", "");
         this._jumpButton.setToolTipTitle(TextKey.FRIEND_TELEPORT_TITLE);
@@ -58,16 +61,19 @@ public class FriendListItem extends FListItem {
         this._jumpButton.y = 4;
         this._jumpButton.addEventListener(MouseEvent.CLICK, this.onJumpClicked);
         addChild(this._jumpButton);
+		
         this._whisperButton = _local_3.create(AssetLibrary.getImageFromSet("lofiInterfaceBig", 21), TextKey.PLAYERMENU_PM, "", "");
         this._whisperButton.x = (this.width - 130);
         this._whisperButton.y = 4;
         this._whisperButton.addEventListener(MouseEvent.CLICK, this.onWhisperClicked);
         addChild(this._whisperButton);
+		
         this._removeButton = new FriendRemoveButton(TextKey.FRIEND_REMOVE_BUTTON, TextKey.FRIEND_REMOVE_BUTTON_DESC);
         this._removeButton.addEventListener(MouseEvent.CLICK, this.onRemoveClicked);
         this._removeButton.x = (this.width - 30);
         this._removeButton.y = 11;
         addChild(this._removeButton);
+		
         this.addEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromState);
     }
 

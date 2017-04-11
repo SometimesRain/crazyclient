@@ -33,7 +33,7 @@ public class FriendListView extends Sprite implements DialogCloser {
 
     public static const TEXT_WIDTH:int = 500;
     public static const TEXT_HEIGHT:int = 500;
-    public static const LIST_ITEM_WIDTH:int = 490;
+    public static const LIST_ITEM_WIDTH:int = 474; //490
     public static const LIST_ITEM_HEIGHT:int = 40;
     private const closeButton:DialogCloseButton = PetsViewAssetFactory.returnCloseButton(TEXT_WIDTH);
     public var closeDialogSignal:Signal;
@@ -53,13 +53,9 @@ public class FriendListView extends Sprite implements DialogCloser {
     private var _currentServerName:String;
     private var backgroundFill_:GraphicsSolidFill = new GraphicsSolidFill(0x333333, 1);
     private var outlineFill_:GraphicsSolidFill = new GraphicsSolidFill(0xFFFFFF, 1);
-    private var lineStyle_:GraphicsStroke = new GraphicsStroke(
-            2, false, LineScaleMode.NORMAL, CapsStyle.NONE, JointStyle.ROUND, 3, outlineFill_
-    );
+    private var lineStyle_:GraphicsStroke = new GraphicsStroke(2, false, LineScaleMode.NORMAL, CapsStyle.NONE, JointStyle.ROUND, 3, outlineFill_);
     private var path_:GraphicsPath = new GraphicsPath(new Vector.<int>(), new Vector.<Number>());
-    private const graphicsData_:Vector.<IGraphicsData> = new <IGraphicsData>[
-        lineStyle_, backgroundFill_, path_, GraphicsUtil.END_FILL, GraphicsUtil.END_STROKE
-    ];
+    private const graphicsData_:Vector.<IGraphicsData> = new <IGraphicsData>[lineStyle_, backgroundFill_, path_, GraphicsUtil.END_FILL, GraphicsUtil.END_STROKE];
 
     public function FriendListView() {
         this.closeDialogSignal = new Signal();
@@ -76,6 +72,7 @@ public class FriendListView extends Sprite implements DialogCloser {
         addChild(this._tabView);
         this.createFriendTab();
         this.createInvitationsTab();
+		closeButton.y = -2;
         addChild(this.closeButton);
         this.drawBackground();
         this._currentServerName = _arg_3;
@@ -157,35 +154,42 @@ public class FriendListView extends Sprite implements DialogCloser {
 
     private function createFriendTab():void {
         var _local_1:Sprite = new Sprite();
-        _local_1.name = FriendConstant.FRIEND_TAB;
+        _local_1.name = "Friends";
+		
         this._nameInput = new TextInputField(TextKey.FRIEND_ADD_TITLE, false);
         this._nameInput.x = 3;
         this._nameInput.y = 0;
         this._nameInput.addEventListener(FocusEvent.FOCUS_IN, this.onFocusIn);
         _local_1.addChild(this._nameInput);
+		
         this._addButton = new DeprecatedTextButton(14, TextKey.FRIEND_ADD_BUTTON, 110);
         this._addButton.y = 30;
         this._addButton.x = 253;
         this._addButton.addEventListener(MouseEvent.CLICK, this.onAddFriendClicked);
         _local_1.addChild(this._addButton);
-        this._findButton = new DeprecatedTextButton(14, TextKey.EDITOR_SEARCH, 110);
+		
+        this._findButton = new DeprecatedTextButton(14, "Search", 110);
         this._findButton.y = 30;
         this._findButton.x = 380;
         this._findButton.addEventListener(MouseEvent.CLICK, this.onSearchFriendClicked);
         _local_1.addChild(this._findButton);
+		
         this._friendDefaultText = new TextFieldDisplayConcrete().setSize(18).setColor(0xFFFFFF).setBold(true).setAutoSize(TextFieldAutoSize.CENTER);
         this._friendDefaultText.setStringBuilder(new LineBuilder().setParams(TextKey.FRIEND_DEFAULT_TEXT));
         this._friendDefaultText.x = 250;
         this._friendDefaultText.y = 200;
         _local_1.addChild(this._friendDefaultText);
+		
         this._friendTotalText = new TextFieldDisplayConcrete().setSize(16).setColor(0xFFFFFF).setBold(true).setAutoSize(TextFieldAutoSize.CENTER);
         this._friendTotalText.x = 400;
         this._friendTotalText.y = 0;
         _local_1.addChild(this._friendTotalText);
+		
         this._friendsContainer = new FriendListContainer(TEXT_WIDTH, (TEXT_HEIGHT - 110));
         this._friendsContainer.x = 3;
         this._friendsContainer.y = 80;
         _local_1.addChild(this._friendsContainer);
+		
         var _local_2:BaseSimpleText = new BaseSimpleText(18, 0xFFFFFF, false, 100, 26);
         _local_2.setAlignment(TextFormatAlign.CENTER);
         _local_2.text = FriendConstant.FRIEND_TAB;
@@ -195,17 +199,20 @@ public class FriendListView extends Sprite implements DialogCloser {
     private function createInvitationsTab():void {
         var _local_1:Sprite;
         _local_1 = new Sprite();
-        _local_1.name = FriendConstant.INVITE_TAB;
+        _local_1.name = "Invitations";
+		
         this._invitationsContainer = new FriendListContainer(TEXT_WIDTH, (TEXT_HEIGHT - 30));
         this._invitationsContainer.x = 3;
         _local_1.addChild(this._invitationsContainer);
+		
         this._inviteDefaultText = new TextFieldDisplayConcrete().setSize(18).setColor(0xFFFFFF).setBold(true).setAutoSize(TextFieldAutoSize.CENTER);
         this._inviteDefaultText.setStringBuilder(new LineBuilder().setParams(TextKey.FRIEND_INVITATION_DEFAULT_TEXT));
         this._inviteDefaultText.x = 250;
         this._inviteDefaultText.y = 200;
         _local_1.addChild(this._inviteDefaultText);
+		
         var _local_2:BaseSimpleText = new BaseSimpleText(18, 0xFFFFFF, false, 100, 26);
-        _local_2.text = FriendConstant.INVITE_TAB;
+        _local_2.text = "Invites";
         _local_2.setAlignment(TextFormatAlign.CENTER);
         this._tabView.addTab(_local_2, _local_1);
     }
@@ -253,8 +260,8 @@ public class FriendListView extends Sprite implements DialogCloser {
 
     private function drawBackground():void {
         this._h = (TEXT_HEIGHT + 8);
-        x = ((800 / 2) - (this._w / 2));
-        y = ((600 / 2) - (this._h / 2));
+        x = (400 - (this._w / 2));
+        y = (300 - (this._h / 2));
         graphics.clear();
         GraphicsUtil.clearPath(this.path_);
         GraphicsUtil.drawCutEdgeRect(-6, -6, (this._w + 12), (this._h + 12), 4, [1, 1, 1, 1], this.path_);

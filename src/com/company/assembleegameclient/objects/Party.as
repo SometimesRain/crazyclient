@@ -12,7 +12,7 @@ public class Party {
     public static const NUM_MEMBERS:int = 6;
     private static const SORT_ON_FIELDS:Array = ["starred_", "distSqFromThisPlayer_", "objectId_"];
     private static const SORT_ON_PARAMS:Array = [(Array.NUMERIC | Array.DESCENDING), Array.NUMERIC, Array.NUMERIC];
-    private static const PARTY_DISTANCE_SQ:int = (50 * 50);//2500
+    private static const PARTY_DISTANCE_SQ:int = 2500; //50 tiles
 
     public var map_:Map;
     public var members_:Array;
@@ -42,11 +42,12 @@ public class Party {
         }
         for each (_local_4 in this.map_.goDict_) {
             _local_5 = (_local_4 as Player);
-            if (!(((_local_5 == null)) || ((_local_5 == _local_3)))) {
+            if (!(_local_5 == null || _local_5 == _local_3)) {
                 _local_5.starred_ = !((this.starred_[_local_5.accountId_] == undefined));
                 _local_5.ignored_ = !((this.ignored_[_local_5.accountId_] == undefined));
                 _local_5.distSqFromThisPlayer_ = PointUtil.distanceSquaredXY(_local_3.x_, _local_3.y_, _local_5.x_, _local_5.y_);
-                if (!(_local_5.distSqFromThisPlayer_ > PARTY_DISTANCE_SQ && !_local_5.starred_)) {
+				//add far away players to party, does this affect performance?
+                if (!(_local_5.distSqFromThisPlayer_ > PARTY_DISTANCE_SQ && !_local_5.starred_) || members_.length < 6) {
 					if (!(map_.name_ == "Nexus" && Parameters.data_.HidePlayerFilter && _local_5.numStars_ <= Parameters.data_.chatStarRequirement)) {
 						this.members_.push(_local_5);
 					}

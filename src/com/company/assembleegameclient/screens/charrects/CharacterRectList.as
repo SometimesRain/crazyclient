@@ -44,7 +44,7 @@ public class CharacterRectList extends Sprite {
         this.newCharacter = new Signal();
         this.buyCharacterSlot = new Signal();
         var _local_2:String = this.model.getName();
-        var _local_3:int = 0; //4
+        var _local_3:int = 0;
         var _local_4:Vector.<SavedCharacter> = this.model.getSavedCharacters();
 		//
         for each (_local_5 in _local_4) {
@@ -71,14 +71,14 @@ public class CharacterRectList extends Sprite {
 				_local_11.x = ((_local_3 % 2) * (CharacterRect.WIDTH + 5));
 				_local_11.y = (int((_local_3 / 2)) * (CharacterRect.HEIGHT + 4));
                 addChild(_local_11);
-                _local_3 = (_local_3 + (CharacterRect.HEIGHT + 4));
+				_local_3++;
                 _local_10++;
             }
         }
         _local_6 = new BuyCharacterRect(this.model); //buy slot
         _local_6.addEventListener(MouseEvent.MOUSE_DOWN, this.onBuyCharSlot);
 		_local_6.x = ((_local_3 % 2) * (CharacterRect.WIDTH + 5));
-		_local_6.y = (int((_local_3 / 2)) * (CharacterRect.HEIGHT + 4));
+		_local_6.y = (int(_local_3 / 2) * (CharacterRect.HEIGHT + 4));
         addChild(_local_6);
     }
 

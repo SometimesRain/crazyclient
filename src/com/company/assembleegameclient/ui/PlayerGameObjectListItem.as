@@ -50,7 +50,12 @@ public class PlayerGameObjectListItem extends GameObjectListItem implements Tool
     }
 
     private function onRClick(_arg_1:MouseEvent):void {
-		go.map_.gs_.gsc_.teleport(go.objectId_);
+		if (go.map_.name_ == "Nexus") {
+			go.map_.gs_.gsc_.requestTrade(go.name_);
+		}
+		else {
+			go.map_.gs_.gsc_.teleport(go.name_);
+		}
     }
 
     private function onMouseOver(_arg_1:MouseEvent):void {

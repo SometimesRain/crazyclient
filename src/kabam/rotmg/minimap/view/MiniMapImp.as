@@ -152,7 +152,8 @@ public class MiniMapImp extends MiniMap {
 
     private function onMapRightClick(_arg_1:MouseEvent):void {
 		if (players_.length != 0) {
-			players_[0].map_.gs_.gsc_.playerText("/teleport "+players_[0].name_);
+			//players_[0].map_.gs_.gsc_.playerText("/teleport "+players_[0].name_);
+			players_[0].map_.gs_.gsc_.teleport(players_[0].name_);
 		}
         //this._rotateEnableFlag = ((!(this._rotateEnableFlag)) && (Parameters.data_.allowMiniMapRotation));
     }

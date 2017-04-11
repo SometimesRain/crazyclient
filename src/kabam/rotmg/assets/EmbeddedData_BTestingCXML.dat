@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <Objects>
-
-
+   <Object type="0x702" id="Test Enemy Item">
+      <DisplayId>Enemy Spawner</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiChar8x8</File>
+         <Index>0xb5</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>Can spawn certain enemies. For testing purposes.</Description>
+      <Sound>use_key</Sound>
+      <Consumable/>
+      <Soulbound/>
+      <Activate id="Test Encounter Spawner">Create</Activate>
+   </Object>
+   <Object type="0x716" id="Test Enemy Spawner">
+      <DisplayId>Enemy Spawner</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x934" id="Testing Key Dropper">
+      <Class>Character</Class>
+      <StasisImmune/>
+      <Enemy/>
+      <NoMiniMap/>
+      <Texture>
+         <File>lofiObj</File>
+         <Index>0x20</Index>
+      </Texture>
+      <Size>80</Size>
+      <MaxHitPoints>500</MaxHitPoints>
+      <XpMult>0.0</XpMult>
+   </Object>
 </Objects>

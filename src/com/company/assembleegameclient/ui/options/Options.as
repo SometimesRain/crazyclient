@@ -403,8 +403,7 @@ public class Options extends Sprite {
 		var _loc1_:ChoiceOption;
 		var _loc2_:int = 0;
 		for each(_loc1_ in options_) {
-			if(_loc1_.paramName_ == "uiscale")
-			{
+			if (_loc1_.paramName_ == "uiscale") {
 				_loc1_.enable(Parameters.data_.stageScale == StageScaleMode.EXACT_FIT);
 			}
 		}
@@ -414,13 +413,10 @@ public class Options extends Sprite {
     {
         var _loc1_:ChoiceOption;
         var _loc2_:int;
-        while(_loc2_ < options_.length)
-        {
+        while(_loc2_ < options_.length) {
             _loc1_ = options_[_loc2_] as ChoiceOption;
-            if(_loc1_ != null)
-            {
-                if(_loc1_.paramName_ == "noOption")
-                {
+            if (_loc1_ != null) {
+                if (_loc1_.paramName_ == "noOption") {
                     _loc1_.setDescription(new StaticStringBuilder("Current Effect ID: "+calcEffId()));
                 }
             }
@@ -462,7 +458,7 @@ public class Options extends Sprite {
         addOptionAndPosition(new KeyMapper("kdbDazed", "Dazed", "Toggles the effect"));
         addOptionAndPosition(new KeyMapper("kdbPre3", Parameters.data_.dbPre3[0], "EffectId: "+Parameters.data_.dbPre3[1]+"\\nUse /eff 3 <effect id> <name> to change this preset."));
         addOptionAndPosition(new KeyMapper("kdbParalyzed", "Paralyzed", "Toggles the effect."));
-		addOptionAndPosition(new NullOption());
+		addOptionAndPosition(new ChoiceOption("deactPre",makeOnOffLabels(),[true,false],"Auto Deactivate Presets","Deactivates presets when leaving a dungeon.",null));
         addOptionAndPosition(new KeyMapper("kdbSick", "Sick", "Toggles the effect."));
 		addOptionAndPosition(new NullOption());
         addOptionAndPosition(new KeyMapper("kdbSlowed", "Slowed", "Toggles the effect."));
@@ -555,8 +551,10 @@ public class Options extends Sprite {
 		addOptionAndPosition(new ChoiceOption("SWNoTileMove",makeOnOffLabels(),[true,false],"No Tile Movement","Disable tile movement in Sprite World.",null));
 		addOptionAndPosition(new ChoiceOption("SWTrees",makeOnOffLabels(),[true,false],"Disable Trees","Removes trees in Sprite World.",null));
 		addOptionAndPosition(new ChoiceOption("SWSpeed", makeOnOffLabels(), [true, false], "Speed Hack", "Move 60% faster.", null));
+		addOptionAndPosition(new ChoiceOption("autoSprite", makeOnOffLabels(), [true, false], "Auto Sprite", "Start at boss room and autofollow the boss. Not recommended to be used with lightspeed.", null));
 		addOptionAndPosition(new ChoiceOption("SWLight", makeOnOffLabels(), [true, false], "Lightspeed", "Move 400% faster. Lightspeed is automatically enabled when you enter a Sprite World.", null));
 		addOptionAndPosition(new KeyMapper("SWLightKey","Toggle Lightspeed","Toggles between lightspeed and boosted speed in Sprite World."));
+		//addOptionAndPosition(new ChoiceOption("leaveSprite", makeOnOffLabels(), [true, false], "Leave Occupied Sprite Worlds", "Reconnects to the realm if anyone else enters the Sprite World. Useful for not getting caught.", null));
 	}
     
     private function aimAssist() : void
@@ -609,6 +607,7 @@ public class Options extends Sprite {
         addOptionAndPosition(new ChoiceOption("lootHP",makeOnOffLabels(),[true,false],"Loot HP Potions to Inventory","Loots health potions from ground to inventory.",null));
         addOptionAndPosition(new ChoiceOption("potsMinor",makeOnOffLabels(),[true,false],"Loot SPD/DEX/VIT/WIS","Low value potions.",updateWanted));
         addOptionAndPosition(new ChoiceOption("lootMP",makeOnOffLabels(),[true,false],"Loot MP Potions to Inventory","Loots magic potions from ground to inventory.",null));
+        addOptionAndPosition(new ChoiceOption("drinkPot",makeOnOffLabels(),[true,false],"Drink Excess Potions","Drinks potions when an item is about to be looted on its slot.",null));
         loot_options();
     }
     
@@ -663,6 +662,7 @@ public class Options extends Sprite {
 		addOptionAndPosition(new ChoiceOption("HidePlayerFilter",makeOnOffLabels(),[true,false],"Star Requirement (Hide)","Hide players in nexus that are filtered by the star requirement option.",null));
         addOptionAndPosition(new ChoiceOption("AntiLag",makeOnOffLabels(),[true,false],"Anti Lag","Aggressively disables particles.",null));
 		addOptionAndPosition(new ChoiceOption("showMobInfo",makeOnOffLabels(),[true,false],"Display Mob Info","Display mob name and id. Useful for finding ids for use with auto aim exception and ignore list.",showMobInfo_));
+		addOptionAndPosition(new ChoiceOption("questClosest",makeOnOffLabels(),[true,false],"Show Closest Player to Quest","Extends the quest bar to show closest player to quest and the distance from it.",showMobInfo_));
     }
         
     private function nillyOther() : void
@@ -678,6 +678,8 @@ public class Options extends Sprite {
 		addOptionAndPosition(new ChoiceOption("autoAbil", makeOnOffLabels(), [true, false], "Auto Ability", "Automatically uses your ability on warrior, paladin and rogue. Activated by pressing space.", null));
         addOptionAndPosition(new ChoiceOption("slideOnIce", makeOnOffLabels(), [true, false], "Slide on Ice", "Toggles sliding on ice.", null));
 		addOptionAndPosition(new ChoiceOption("rclickTp",makeOnOffLabels(),[true,false],"Right-click Chat Teleport","Right click a chat name to teleport. No menu will be shown.",null));
+		addOptionAndPosition(new ChoiceOption("autoTp",makeOnOffLabels(),[true,false],"Teleport Queue","Automatically teleports after teleport cooldown if you have tried to teleport to someone during the cooldown.",null));
+		//addOptionAndPosition(new ChoiceOption("ninjaTap",makeOnOffLabels(),[true,false],"One-Tap Ninja Ability","Makes space toggle the state of the ability. Tap to turn on, tap to turn off.",null));
 		addOptionAndPosition(new KeyMapper("enterPortal", "Portal Enter", "Enters nearest portal."));
 		addOptionAndPosition(new KeyMapper("resetCHP","Reset Client HP","Use this hotkey if your CL bar doesn't match your HP bar."));
         addOptionAndPosition(new KeyMapper("incFinder","Inc Finder","Goes through everyone's inventory and backpack then reports if they have an incantation."));

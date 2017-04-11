@@ -12,6 +12,7 @@ import flash.net.URLRequest;
 import flash.utils.Dictionary;
 import flash.utils.Timer;
 import kabam.rotmg.dialogs.control.OpenDialogSignal;
+import kabam.rotmg.friends.view.FriendListView;
 import kabam.rotmg.servers.api.Server;
 import kabam.rotmg.ui.signals.NameChangedSignal;
 import kabam.rotmg.ui.view.CharacterDetailsView;
@@ -92,140 +93,167 @@ public class ParseChatMessageCommand {
         }
         return false;
     }
-    
-    private function aimAssistCommands():Boolean {
-        var _loc1_:Array = null;
+	
+    private function listCommands():Boolean {
+		var lower:String = data.toLowerCase();
+		return addCommands(lower) || remCommands(lower) || lstCommands(lower) || defCommands(lower) || clrCommands(lower);
+	}
+	
+    private function addCommands(lower:String):Boolean {
+        var _loc1_:Array;
         var _loc2_:Boolean = false;
         var _loc3_:int = 0;
-        var _loc4_:int = 0;
-        _loc1_ = data.toLowerCase().match("/aex (\\d+)$");
-        if(_loc1_ != null)
-        {
+		var itid:int;
+        _loc1_ = lower.match("/aex (\\d+)$");
+        if (_loc1_ != null) {
             _loc2_ = false;
-            for each(_loc3_ in Parameters.data_.AAException)
-            {
-                if(_loc3_ == _loc1_[1])
-                {
+            for each(_loc3_ in Parameters.data_.AAException) {
+                if (_loc3_ == _loc1_[1]) {
                     _loc2_ = true;
                     addTextLine.dispatch(ChatMessage.make("*Help*",_loc1_[1] + " (" + (ObjectLibrary.xmlLibrary_[_loc1_[1]] != undefined ? ObjectLibrary.xmlLibrary_[_loc1_[1]].@id:"") + ") already exists in exception list."));
                     break;
                 }
             }
-            if(_loc2_ == false)
-            {
-                if(ObjectLibrary.xmlLibrary_[_loc1_[1]] != undefined)
-                {
+            if (_loc2_ == false) {
+                if (ObjectLibrary.xmlLibrary_[_loc1_[1]] != undefined) {
                     Parameters.data_.AAException.push(_loc1_[1]);
                     addTextLine.dispatch(ChatMessage.make("*Help*","Added " + _loc1_[1] + " (" + ObjectLibrary.xmlLibrary_[_loc1_[1]].@id + ") to exception list."));
                 }
-                else
-                {
+                else {
                     addTextLine.dispatch(ChatMessage.make("*Help*","No mob has the type " + _loc1_[1] + "."));
                 }
             }
             Parameters.save();
             return true;
         }
-        _loc1_ = data.toLowerCase().match("/aig (\\d+)$");
-        if(_loc1_ != null)
-        {
+        _loc1_ = lower.match("/aig (\\d+)$");
+        if (_loc1_ != null) {
             _loc2_ = false;
-            for each(_loc3_ in Parameters.data_.AAIgnore)
-            {
-                if(_loc3_ == _loc1_[1])
-                {
+            for each(_loc3_ in Parameters.data_.AAIgnore) {
+                if (_loc3_ == _loc1_[1]) {
                     _loc2_ = true;
                     addTextLine.dispatch(ChatMessage.make("*Help*",_loc1_[1] + " (" + (ObjectLibrary.xmlLibrary_[_loc1_[1]] != undefined?ObjectLibrary.xmlLibrary_[_loc1_[1]].@id:"") + ") already exists in ignore list."));
                     break;
                 }
             }
-            if(_loc2_ == false)
-            {
-                if(ObjectLibrary.xmlLibrary_[_loc1_[1]] != undefined)
-                {
+            if (_loc2_ == false) {
+                if (ObjectLibrary.xmlLibrary_[_loc1_[1]] != undefined) {
                     Parameters.data_.AAIgnore.push(_loc1_[1]);
                     addTextLine.dispatch(ChatMessage.make("*Help*","Added " + _loc1_[1] + " (" + ObjectLibrary.xmlLibrary_[_loc1_[1]].@id + ") to ignore list."));
                 }
-                else
-                {
+                else {
                     addTextLine.dispatch(ChatMessage.make("*Help*","No mob has the type " + _loc1_[1] + "."));
                 }
             }
             Parameters.save();
             return true;
         }
-        _loc1_ = data.toLowerCase().match("/asp (.+)$");
-        if(_loc1_ != null)
-        {
+        _loc1_ = lower.match("/asp (.+)$");
+        if (_loc1_ != null) {
             _loc2_ = false;
-            for each(_loc3_ in Parameters.data_.spamFilter)
-            {
-                if(_loc3_ == _loc1_[1])
-                {
+            for each(_loc3_ in Parameters.data_.spamFilter) {
+                if (_loc3_ == _loc1_[1]) {
                     _loc2_ = true;
                     addTextLine.dispatch(ChatMessage.make("*Help*","\""+_loc1_[1] +"\" already being filtered out."));
                     break;
                 }
             }
-            if(_loc2_ == false)
-            {
+            if (_loc2_ == false) {
                 Parameters.data_.spamFilter.push(_loc1_[1]);
                 addTextLine.dispatch(ChatMessage.make("*Help*","Added \"" + _loc1_[1] + "\" to spamfilter list."));
             }
             Parameters.save();
             return true;
         }
-        _loc1_ = data.toLowerCase().match("/afr (\\w+)$");
-        if(_loc1_ != null)
-        {
+        _loc1_ = lower.match("/afr (\\w+)$");
+        if (_loc1_ != null) {
             _loc2_ = false;
-            for each(_loc3_ in Parameters.data_.friendList2)
-            {
-                if(_loc3_ == _loc1_[1])
-                {
+            for each(_loc3_ in Parameters.data_.friendList2) {
+                if (_loc3_ == _loc1_[1]) {
                     _loc2_ = true;
                     addTextLine.dispatch(ChatMessage.make("*Help*","\""+_loc1_[1] +"\" already exists in friend list."));
                     break;
                 }
             }
-            if(_loc2_ == false)
-            {
+            if (_loc2_ == false) {
                 Parameters.data_.friendList2.push(_loc1_[1]);
                 addTextLine.dispatch(ChatMessage.make("*Help*","Added \"" + _loc1_[1] + "\" to friend list."));
             }
             Parameters.save();
             return true;
         }
-        _loc1_ = data.toLowerCase().match("/atp (\\w+)$");
-        if(_loc1_ != null)
-        {
+        _loc1_ = lower.match("/atp (\\w+)$");
+        if (_loc1_ != null) {
             _loc2_ = false;
-            for each(_loc3_ in Parameters.data_.tptoList)
-            {
-                if(_loc3_ == _loc1_[1])
-                {
+            for each(_loc3_ in Parameters.data_.tptoList) {
+                if (_loc3_ == _loc1_[1]) {
                     _loc2_ = true;
                     addTextLine.dispatch(ChatMessage.make("*Help*","\""+_loc1_[1] +"\" already exists in teleport keyword list."));
                     break;
                 }
             }
-            if(_loc2_ == false)
-            {
+            if (_loc2_ == false) {
                 Parameters.data_.tptoList.push(_loc1_[1]);
                 addTextLine.dispatch(ChatMessage.make("*Help*","Added \"" + _loc1_[1] + "\" to teleport keyword list."));
             }
             Parameters.save();
             return true;
         }
-        _loc1_ = data.toLowerCase().match("/rig (\\d+)$");
-        if(_loc1_ != null)
-        {
+        _loc1_ = lower.match("/apr (\\d+)$");
+        if (_loc1_ != null) {
+            _loc2_ = false;
+            for each(_loc3_ in Parameters.data_.AAPriority) {
+                if (_loc3_ == _loc1_[1]) {
+                    _loc2_ = true;
+                    addTextLine.dispatch(ChatMessage.make("*Help*",_loc1_[1] + " (" + (ObjectLibrary.xmlLibrary_[_loc1_[1]] != undefined ? ObjectLibrary.xmlLibrary_[_loc1_[1]].@id:"") + ") already exists in auto aim priority list."));
+                    break;
+                }
+            }
+            if (_loc2_ == false) {
+                if (ObjectLibrary.xmlLibrary_[_loc1_[1]] != undefined) {
+                    Parameters.data_.AAPriority.push(_loc1_[1]);
+                    addTextLine.dispatch(ChatMessage.make("*Help*","Added " + _loc1_[1] + " (" + ObjectLibrary.xmlLibrary_[_loc1_[1]].@id + ") to auto aim priority list."));
+                }
+                else {
+                    addTextLine.dispatch(ChatMessage.make("*Help*","No mob has the type " + _loc1_[1] + "."));
+                }
+            }
+            Parameters.save();
+            return true;
+        }
+        _loc1_ = lower.match("/ali (.+)$");
+        if (_loc1_ != null) {
+			itid = findMatch2(_loc1_[1]);
+            for each(_loc3_ in Parameters.data_.lootIgnore) {
+                if (_loc3_ == itid) {
+                    addTextLine.dispatch(ChatMessage.make("*Help*",itid+" ("+ObjectLibrary.getIdFromType(itid) + ") already exists in loot ignore list."));
+                    return true;
+                }
+            }
+            if (itid != 0xa15) { //dirk
+                Parameters.data_.lootIgnore.push(itid);
+                addTextLine.dispatch(ChatMessage.make("*Help*","Added " + itid + " (" + ObjectLibrary.getIdFromType(itid) + ") to loot ignore list."));
+            }
+            else {
+                addTextLine.dispatch(ChatMessage.make("*Help*","No item matched the query."));
+            }
+            Parameters.save();
+            return true;
+        }
+        return false;
+	}
+	
+    private function remCommands(lower:String):Boolean {
+        var _loc1_:Array;
+        var _loc2_:Boolean = false;
+        var _loc4_:int = 0;
+        var itid:int = 0;
+        _loc1_ = lower.match("/rig (\\d+)$");
+        if (_loc1_ != null) {
             _loc2_ = false;
             _loc4_ = 0;
-            while(_loc4_ < Parameters.data_.AAIgnore.length)
-            {
-                if(Parameters.data_.AAIgnore[_loc4_] == _loc1_[1])
-                {
+            while(_loc4_ < Parameters.data_.AAIgnore.length) {
+                if (Parameters.data_.AAIgnore[_loc4_] == _loc1_[1]) {
                     _loc2_ = true;
                     Parameters.data_.AAIgnore.splice(_loc4_,1);
                     addTextLine.dispatch(ChatMessage.make("*Help*",_loc1_[1] + " (" + (ObjectLibrary.xmlLibrary_[_loc1_[1]] != undefined?ObjectLibrary.xmlLibrary_[_loc1_[1]].@id:"") + ") removed from ignore list."));
@@ -233,29 +261,23 @@ public class ParseChatMessageCommand {
                 }
                 _loc4_++;
             }
-            if(_loc2_ == false)
-            {
-                if(ObjectLibrary.xmlLibrary_[_loc1_[1]] != undefined)
-                {
+            if (_loc2_ == false) {
+                if (ObjectLibrary.xmlLibrary_[_loc1_[1]] != undefined) {
                     addTextLine.dispatch(ChatMessage.make("*Help*",_loc1_[1] + " (" + ObjectLibrary.xmlLibrary_[_loc1_[1]].@id + ") not found in ignore list."));
                 }
-                else
-                {
+                else {
                     addTextLine.dispatch(ChatMessage.make("*Help*",_loc1_[1] + " not found in ignore list."));
                 }
             }
             Parameters.save();
             return true;
         }
-        _loc1_ = data.toLowerCase().match("/rex (\\d+)$");
-        if(_loc1_ != null)
-        {
+        _loc1_ = lower.match("/rex (\\d+)$");
+        if (_loc1_ != null) {
             _loc2_ = false;
             _loc4_ = 0;
-            while(_loc4_ < Parameters.data_.AAException.length)
-            {
-                if(Parameters.data_.AAException[_loc4_] == _loc1_[1])
-                {
+            while(_loc4_ < Parameters.data_.AAException.length) {
+                if (Parameters.data_.AAException[_loc4_] == _loc1_[1]) {
                     _loc2_ = true;
                     Parameters.data_.AAException.splice(_loc4_,1);
                     addTextLine.dispatch(ChatMessage.make("*Help*",_loc1_[1] + " (" + (ObjectLibrary.xmlLibrary_[_loc1_[1]] != undefined?ObjectLibrary.xmlLibrary_[_loc1_[1]].@id:"") + ") removed from exception list."));
@@ -263,29 +285,23 @@ public class ParseChatMessageCommand {
                 }
                 _loc4_++;
             }
-            if(_loc2_ == false)
-            {
-                if(ObjectLibrary.xmlLibrary_[_loc1_[1]] != undefined)
-                {
+            if (_loc2_ == false) {
+                if (ObjectLibrary.xmlLibrary_[_loc1_[1]] != undefined) {
                     addTextLine.dispatch(ChatMessage.make("*Help*",_loc1_[1] + " (" + ObjectLibrary.xmlLibrary_[_loc1_[1]].@id + ") not found in exception list."));
                 }
-                else
-                {
+                else {
                     addTextLine.dispatch(ChatMessage.make("*Help*",_loc1_[1] + " not found in exception list."));
                 }
             }
             Parameters.save();
             return true;
         }
-        _loc1_ = data.toLowerCase().match("/rsp (.+)$");
-        if(_loc1_ != null)
-        {
+        _loc1_ = lower.match("/rsp (.+)$");
+        if (_loc1_ != null) {
             _loc2_ = false;
             _loc4_ = 0;
-            while(_loc4_ < Parameters.data_.spamFilter.length)
-            {
-                if(Parameters.data_.spamFilter[_loc4_] == _loc1_[1])
-                {
+            while(_loc4_ < Parameters.data_.spamFilter.length) {
+                if (Parameters.data_.spamFilter[_loc4_] == _loc1_[1]) {
                     _loc2_ = true;
                     Parameters.data_.spamFilter.splice(_loc4_,1);
                     addTextLine.dispatch(ChatMessage.make("*Help*","\""+_loc1_[1] + "\" removed from spamfilter list."));
@@ -293,22 +309,18 @@ public class ParseChatMessageCommand {
                 }
                 _loc4_++;
             }
-            if(_loc2_ == false)
-            {
+            if (_loc2_ == false) {
                 addTextLine.dispatch(ChatMessage.make("*Help*","\""+_loc1_[1] + "\" not found in spamfilter list."));
             }
             Parameters.save();
             return true;
         }
-        _loc1_ = data.toLowerCase().match("/rfr (\\w+)$");
-        if(_loc1_ != null)
-        {
+        _loc1_ = lower.match("/rfr (\\w+)$");
+        if (_loc1_ != null) {
             _loc2_ = false;
             _loc4_ = 0;
-            while(_loc4_ < Parameters.data_.friendList2.length)
-            {
-                if(Parameters.data_.friendList2[_loc4_] == _loc1_[1])
-                {
+            while(_loc4_ < Parameters.data_.friendList2.length) {
+                if (Parameters.data_.friendList2[_loc4_] == _loc1_[1]) {
                     _loc2_ = true;
                     Parameters.data_.friendList2.splice(_loc4_,1);
                     addTextLine.dispatch(ChatMessage.make("*Help*","\""+_loc1_[1] + "\" removed from friend list."));
@@ -316,22 +328,18 @@ public class ParseChatMessageCommand {
                 }
                 _loc4_++;
             }
-            if(_loc2_ == false)
-            {
+            if (_loc2_ == false) {
                 addTextLine.dispatch(ChatMessage.make("*Help*","\""+_loc1_[1] + "\" not found in friend list."));
             }
             Parameters.save();
             return true;
         }
-        _loc1_ = data.toLowerCase().match("/rtp (\\w+)$");
-        if(_loc1_ != null)
-        {
+        _loc1_ = lower.match("/rtp (\\w+)$");
+        if (_loc1_ != null) {
             _loc2_ = false;
             _loc4_ = 0;
-            while(_loc4_ < Parameters.data_.tptoList.length)
-            {
-                if(Parameters.data_.tptoList[_loc4_] == _loc1_[1])
-                {
+            while(_loc4_ < Parameters.data_.tptoList.length) {
+                if (Parameters.data_.tptoList[_loc4_] == _loc1_[1]) {
                     _loc2_ = true;
                     Parameters.data_.tptoList.splice(_loc4_,1);
                     addTextLine.dispatch(ChatMessage.make("*Help*","\""+_loc1_[1] + "\" removed from teleport keyword list."));
@@ -339,136 +347,216 @@ public class ParseChatMessageCommand {
                 }
                 _loc4_++;
             }
-            if(_loc2_ == false)
-            {
+            if (_loc2_ == false) {
                 addTextLine.dispatch(ChatMessage.make("*Help*","\""+_loc1_[1] + "\" not found in teleport keyword list."));
             }
             Parameters.save();
             return true;
         }
-        if(data.toLowerCase() == "/exlist")
-        {
-            addTextLine.dispatch(ChatMessage.make("*Help*","Auto aim  exception list (" + Parameters.data_.AAException.length + " mobs):"));
+        _loc1_ = lower.match("/rpr (\\d+)$");
+        if (_loc1_ != null) {
+            _loc2_ = false;
             _loc4_ = 0;
-            while(_loc4_ < Parameters.data_.AAException.length)
-            {
+            while(_loc4_ < Parameters.data_.AAPriority.length) {
+                if (Parameters.data_.AAPriority[_loc4_] == _loc1_[1]) {
+                    _loc2_ = true;
+                    Parameters.data_.AAPriority.splice(_loc4_,1);
+                    addTextLine.dispatch(ChatMessage.make("*Help*",_loc1_[1] + " (" + (ObjectLibrary.xmlLibrary_[_loc1_[1]] != undefined?ObjectLibrary.xmlLibrary_[_loc1_[1]].@id:"") + ") removed from auto aim priority list."));
+                    break;
+                }
+                _loc4_++;
+            }
+            if (_loc2_ == false) {
+                if (ObjectLibrary.xmlLibrary_[_loc1_[1]] != undefined) {
+                    addTextLine.dispatch(ChatMessage.make("*Help*",_loc1_[1] + " (" + ObjectLibrary.xmlLibrary_[_loc1_[1]].@id + ") not found in auto aim priority list."));
+                }
+                else {
+                    addTextLine.dispatch(ChatMessage.make("*Help*",_loc1_[1] + " not found in auto aim priority list."));
+                }
+            }
+            Parameters.save();
+            return true;
+        }
+        _loc1_ = lower.match("/rli (.+)$");
+        if (_loc1_ != null) {
+			itid = findMatch2(_loc1_[1]);
+			//
+            _loc4_ = 0;
+            while(_loc4_ < Parameters.data_.lootIgnore.length) {
+                if (Parameters.data_.lootIgnore[_loc4_] == itid) {
+                    Parameters.data_.lootIgnore.splice(_loc4_,1);
+                    addTextLine.dispatch(ChatMessage.make("*Help*",itid + " (" + ObjectLibrary.getIdFromType(itid) + ") removed from loot ignore list."));
+                    return true;
+                }
+                _loc4_++;
+            }
+            if (itid != 0xa15) { //dirk
+                addTextLine.dispatch(ChatMessage.make("*Help*",itid + " (" + ObjectLibrary.getIdFromType(itid) + ") not found in loot ignore list."));
+            }
+            else {
+                addTextLine.dispatch(ChatMessage.make("*Help*","No item matched the query."));
+            }
+            Parameters.save();
+            return true;
+        }
+        return false;
+	}
+	
+    private function lstCommands(lower:String):Boolean {
+        var _loc4_:int = 0;
+        if (lower == "/exlist") {
+            addTextLine.dispatch(ChatMessage.make("*Help*","Auto aim exception list (" + Parameters.data_.AAException.length + " mobs):"));
+            _loc4_ = 0;
+            while(_loc4_ < Parameters.data_.AAException.length) {
                 addTextLine.dispatch(ChatMessage.make("*Help*",Parameters.data_.AAException[_loc4_] + " - " + (ObjectLibrary.xmlLibrary_[Parameters.data_.AAException[_loc4_]] != undefined?ObjectLibrary.xmlLibrary_[Parameters.data_.AAException[_loc4_]].@id:"")));
                 _loc4_++;
             }
             return true;
         }
-        if(data.toLowerCase() == "/iglist")
-        {
+        if (lower == "/iglist") {
             addTextLine.dispatch(ChatMessage.make("*Help*","Auto aim ignore list (" + Parameters.data_.AAIgnore.length + " mobs):"));
             _loc4_ = 0;
-            while(_loc4_ < Parameters.data_.AAIgnore.length)
-            {
+            while(_loc4_ < Parameters.data_.AAIgnore.length) {
                 addTextLine.dispatch(ChatMessage.make("*Help*",Parameters.data_.AAIgnore[_loc4_] + " - " + (ObjectLibrary.xmlLibrary_[Parameters.data_.AAIgnore[_loc4_]] != undefined?ObjectLibrary.xmlLibrary_[Parameters.data_.AAIgnore[_loc4_]].@id:"")));
                 _loc4_++;
             }
             return true;
         }
-        if(data.toLowerCase() == "/splist")
-        {
+        if (lower == "/splist") {
             addTextLine.dispatch(ChatMessage.make("*Help*","Spamfilter list (" + Parameters.data_.spamFilter.length + " filtered words):"));
             _loc4_ = 0;
-            while(_loc4_ < Parameters.data_.spamFilter.length)
-            {
+            while(_loc4_ < Parameters.data_.spamFilter.length) {
                 addTextLine.dispatch(ChatMessage.make("*Help*",Parameters.data_.spamFilter[_loc4_]));
                 _loc4_++;
             }
             return true;
         }
-        if(data.toLowerCase() == "/frlist")
-        {
+        if (lower == "/frlist") {
             addTextLine.dispatch(ChatMessage.make("*Help*","Friend list (" + Parameters.data_.friendList2.length + " friends):"));
             _loc4_ = 0;
-            while(_loc4_ < Parameters.data_.friendList2.length)
-            {
+            while(_loc4_ < Parameters.data_.friendList2.length) {
                 addTextLine.dispatch(ChatMessage.make("*Help*",Parameters.data_.friendList2[_loc4_]));
                 _loc4_++;
             }
             return true;
         }
-        if(data.toLowerCase() == "/tplist")
-        {
+        if (lower == "/tplist") {
             addTextLine.dispatch(ChatMessage.make("*Help*","Teleport keyword list (" + Parameters.data_.tptoList.length + " keywords):"));
             _loc4_ = 0;
-            while(_loc4_ < Parameters.data_.tptoList.length)
-            {
+            while(_loc4_ < Parameters.data_.tptoList.length) {
                 addTextLine.dispatch(ChatMessage.make("*Help*",Parameters.data_.tptoList[_loc4_]));
                 _loc4_++;
             }
             return true;
         }
-        if(data.toLowerCase() == "/igclear")
-        {
+        if (lower == "/prlist") {
+            addTextLine.dispatch(ChatMessage.make("*Help*","Auto aim priority list (" + Parameters.data_.AAPriority.length + " mobs):"));
+            _loc4_ = 0;
+            while(_loc4_ < Parameters.data_.AAPriority.length) {
+                addTextLine.dispatch(ChatMessage.make("*Help*",Parameters.data_.AAPriority[_loc4_] + " - " + (ObjectLibrary.xmlLibrary_[Parameters.data_.AAPriority[_loc4_]] != undefined?ObjectLibrary.xmlLibrary_[Parameters.data_.AAPriority[_loc4_]].@id:"")));
+                _loc4_++;
+            }
+            return true;
+        }
+        if (lower == "/lilist") {
+            addTextLine.dispatch(ChatMessage.make("*Help*","Loot ignore list (" + Parameters.data_.lootIgnore.length + " items):"));
+            _loc4_ = 0;
+            while(_loc4_ < Parameters.data_.lootIgnore.length) {
+                addTextLine.dispatch(ChatMessage.make("*Help*",Parameters.data_.lootIgnore[_loc4_] + " - " + ObjectLibrary.getIdFromType(Parameters.data_.lootIgnore[_loc4_])));
+                _loc4_++;
+            }
+            return true;
+        }
+        return false;
+	}
+	
+    private function clrCommands(lower:String):Boolean {
+        if (lower == "/igclear") {
             Parameters.data_.AAIgnore = new Array();
             addTextLine.dispatch(ChatMessage.make("*Help*","Auto aim ignore list cleared."));
             Parameters.save();
             return true;
         }
-        if(data.toLowerCase() == "/exclear")
-        {
+        if (lower == "/exclear") {
             Parameters.data_.AAException = new Array();
             addTextLine.dispatch(ChatMessage.make("*Help*","Auto aim exception list cleared."));
             Parameters.save();
             return true;
         }
-        if(data.toLowerCase() == "/spclear")
-        {
+        if (lower == "/spclear") {
             Parameters.data_.spamFilter = new Array();
             addTextLine.dispatch(ChatMessage.make("*Help*","Spamfilter list cleared."));
             Parameters.save();
             return true;
         }
-        if(data.toLowerCase() == "/frclear")
-        {
+        if (lower == "/frclear") {
             Parameters.data_.friendList2 = new Array();
             addTextLine.dispatch(ChatMessage.make("*Help*","Friend list cleared."));
             Parameters.save();
             return true;
         }
-        if(data.toLowerCase() == "/tpclear")
-        {
+        if (lower == "/tpclear") {
             Parameters.data_.tptoList = new Array();
             addTextLine.dispatch(ChatMessage.make("*Help*","Teleport keyword list cleared."));
             Parameters.save();
             return true;
         }
-        if(data.toLowerCase() == "/igdefault")
-        {
+		if (lower == "/prclear") {
+            Parameters.data_.AAPriority = new Array();
+            addTextLine.dispatch(ChatMessage.make("*Help*","Auto aim priority list cleared."));
+            Parameters.save();
+            return true;
+        }
+		if (lower == "/liclear") {
+            Parameters.data_.lootIgnore = new Array();
+            addTextLine.dispatch(ChatMessage.make("*Help*","Loot ignore list cleared."));
+            Parameters.save();
+            return true;
+        }
+        return false;
+	}
+	
+    private function defCommands(lower:String):Boolean {
+        if (lower == "/igdefault") {
             Parameters.data_.AAIgnore = [1550,1551,1552,1619,1715,2309,2310,2311,2371,3441,2312,2313,2370,2392,2393,2400,2401,3335,3336,3337,3338,3413,3418,3419,3420,3421,3427,3454,3638,3645,6157,28715,28716,28717,28718,28719,28730,28731,28732,28733,28734,29306,29568,29594,29597,29710,29711,29742,29743,29746,29748,30001];
             addTextLine.dispatch(ChatMessage.make("*Help*","Default ignore list restored."));
             Parameters.save();
             return true;
         }
-        if(data.toLowerCase() == "/exdefault")
-        {
+        if (lower == "/exdefault") {
             Parameters.data_.AAException = [3448,3449,3472,3334,5952,2354,2369,3368,3366,3367,3391,3389,3390,5920,2314,3412,3639,3634,2327,1755,24582,24351,24363,24135,24133,24134,24132,24136,3356,3357,3358,3359,3360,3361,3362,3363,3364,2352,28780,28781,28795,28942,28957,28988,28938,29291,29018,29517,24338,29580,29712,6282,0x717e,0x727c,0x727d,0x736e,0x736f,0x724a,0x724b,0x724c,0x724d,0x724e];
             addTextLine.dispatch(ChatMessage.make("*Help*","Default exception list restored."));
             Parameters.save();
             return true;
         }
-        if(data.toLowerCase() == "/spdefault")
-        {
+        if (lower == "/spdefault") {
             Parameters.data_.spamFilter = ["realmk!ngs", "oryx.ln", "realmpower.net", "oryxsh0p.net", "lifepot. org"];
             addTextLine.dispatch(ChatMessage.make("*Help*","Default spamfilter list restored."));
             Parameters.save();
             return true;
         }
-        if(data.toLowerCase() == "/tpdefault")
-        {
+        if (lower == "/tpdefault") {
             Parameters.data_.tptoList = ["lab","manor", "sew"];
             addTextLine.dispatch(ChatMessage.make("*Help*","Default teleport keyword list restored."));
+            Parameters.save();
+            return true;
+        }
+		if (lower == "/prdefault") {
+            Parameters.data_.AAPriority = [0x717e,0x727c,0x727d,0x736e,0x736f,0x724a,0x724b,0x724c,0x724d,0x724e,6282,1646];
+            addTextLine.dispatch(ChatMessage.make("*Help*","Default auto aim priority list restored."));
+            Parameters.save();
+            return true;
+        }
+		if (lower == "/lidefault") {
+            Parameters.data_.lootIgnore = [0x233a,0x233b,0x233c,0x233d,0x233e,0x233f,0x2340,0x2341,0xf15,0xa4b];
+            addTextLine.dispatch(ChatMessage.make("*Help*","Default loot ignore list restored."));
             Parameters.save();
             return true;
         }
         return false;
     }
     
-    private function cjCommands() : Boolean
-    {
+    private function cjCommands():Boolean {
 		var i:int;
 		switch (data.toLowerCase()) {
 			/*case "/list":
@@ -557,6 +645,9 @@ public class ParseChatMessageCommand {
 				Parameters.save();
 				hudModel.gameSprite.hudView.characterDetails.setName(hudModel.gameSprite.map.player_.name_);
 				return true;
+			case "/flist":
+				openDialog.dispatch(new FriendListView());
+				return true;
 		}
 		var splice:Array = data.toLowerCase().match("/player (\\w+)$")
 		if (splice != null) {
@@ -589,33 +680,33 @@ public class ParseChatMessageCommand {
 			hudModel.gameSprite.hudView.characterDetails.setName("");
 			return true;
 		}
-		splice = data.match("/timer (\\d+) (\\d+)$");
+		splice = data.toLowerCase().match("/timer (\\d+) (\\d+)$");
 		if (splice != null) {
 			hudModel.gameSprite.map.player_.startTimer(splice[1], splice[2]);
 			return true;
 		}
-		splice = data.match("/autopot (\\d+)$");
+		splice = data.toLowerCase().match("/autopot (\\d+)$");
 		if (splice != null) {
 			Parameters.data_.autoPot = splice[1];
 			Parameters.save();
             addTextLine.dispatch(ChatMessage.make("*Help*","Auto pot percentage set to "+splice[1]));
 			return true;
 		}
-		splice = data.match("/autonex (\\d+)$");
+		splice = data.toLowerCase().match("/autonex (\\d+)$");
 		if (splice != null) {
 			Parameters.data_.AutoNexus = splice[1];
 			Parameters.save();
             addTextLine.dispatch(ChatMessage.make("*Help*","Auto nexus percentage set to "+splice[1]));
 			return true;
 		}
-		splice = data.match("/autoheal (\\d+)$");
+		splice = data.toLowerCase().match("/autoheal (\\d+)$");
 		if (splice != null) {
 			Parameters.data_.autoHealP = splice[1];
 			Parameters.save();
             addTextLine.dispatch(ChatMessage.make("*Help*","Auto heal percentage set to "+splice[1]));
 			return true;
 		}
-		splice = data.match("/give (\\w+) (\\d{1,8})$");
+		splice = data.toLowerCase().match("/give (\\w+) (\\d{1,8})$");
 		//splice = data.match("/give (\\w+) ([0-1])?([0-1])?([0-1])?([0-1])?([0-1])?([0-1])?([0-1])?([0-1])$"); //such efficiency
 		if (splice != null) {
 			hudModel.gameSprite.gsc_.playerText("/tell "+splice[1]+" g="+splice[2]);
@@ -637,7 +728,7 @@ public class ParseChatMessageCommand {
 			findItem(parseInt(splice[1]));
 			return true;
 		}*/
-		splice = data.match("/find (.+)$");
+		splice = data.toLowerCase().match("/find (.+)$");
 		if (splice != null) {
 			findItem(findMatch2(splice[1])); //length-match
 			return true;
@@ -647,27 +738,37 @@ public class ParseChatMessageCommand {
 			hudModel.gameSprite.gsc_.playerText("/tell "+splice[1]+" whats that name dude?");
 			return true;
 		}*/
-		splice = data.match("/take (.+)$");
+		splice = data.toLowerCase().match("/take (.+)$");
 		if (splice != null) {
 			if (hudModel.gameSprite.map.name_ != "Vault") {
 				addTextLine.dispatch(ChatMessage.make("*Help*", "Use the command in vault and run over the chest you wish to interact with."));
+				return true;
+			}
+			if (splice[1] == "pots") {
+				hudModel.gameSprite.map.player_.collect = int.MAX_VALUE;
+				addTextLine.dispatch(ChatMessage.make("*Help*", "Taking Potion(s) from vault chests"));
 				return true;
 			}
 			hudModel.gameSprite.map.player_.collect = findMatch2(splice[1]);
-            addTextLine.dispatch(ChatMessage.make("*Help*","Taking "+ObjectLibrary.getIdFromType(hudModel.gameSprite.map.player_.collect)+"s from vault chests"));
+            addTextLine.dispatch(ChatMessage.make("*Help*","Taking "+ObjectLibrary.getIdFromType(hudModel.gameSprite.map.player_.collect)+"(s) from vault chests"));
 			return true;
 		}
-		splice = data.match("/put (.+)$");
+		splice = data.toLowerCase().match("/put (.+)$");
 		if (splice != null) {
 			if (hudModel.gameSprite.map.name_ != "Vault") {
 				addTextLine.dispatch(ChatMessage.make("*Help*", "Use the command in vault and run over the chest you wish to interact with."));
 				return true;
 			}
+			if (splice[1] == "pots") {
+				hudModel.gameSprite.map.player_.collect = int.MIN_VALUE;
+				addTextLine.dispatch(ChatMessage.make("*Help*", "Putting Potion(s) to vault chests"));
+				return true;
+			}
 			hudModel.gameSprite.map.player_.collect = 0 - findMatch2(splice[1]);
-            addTextLine.dispatch(ChatMessage.make("*Help*","Putting "+ObjectLibrary.getIdFromType(0 - hudModel.gameSprite.map.player_.collect)+"s to vault chests"));
+            addTextLine.dispatch(ChatMessage.make("*Help*","Putting "+ObjectLibrary.getIdFromType(0 - hudModel.gameSprite.map.player_.collect)+"(s) to vault chests"));
 			return true;
 		}
-		splice = data.match("/tp (\\w+)$");
+		splice = data.toLowerCase().match("/tp (\\w+)$");
 		if (splice != null) {
 			fixedTeleport(splice[1]);
 			return true;
@@ -725,8 +826,9 @@ public class ParseChatMessageCommand {
 				break;
 			}
 		}
-        addTextLine.dispatch(ChatMessage.make("*Help*", "Teleporting to: " + itemname));
-		hudModel.gameSprite.gsc_.playerText("/teleport "+itemname);
+		//hudModel.gameSprite.map.player_.notifyPlayer("Teleporting to: "+itemname, 0x00ff00, 1500);
+		//hudModel.gameSprite.gsc_.playerText("/teleport "+itemname);
+		hudModel.gameSprite.gsc_.teleport(itemname);
 	}
 	
 	private function findMatch2(input:String):int {
@@ -753,7 +855,6 @@ public class ParseChatMessageCommand {
 				itemname = curStr;
 			}
 		}
-        //addTextLine.dispatch(ChatMessage.make("*Help*", "Finding players with " + itemname));
 		return ObjectLibrary.idToType_[itemname];
 	}
 	
@@ -876,63 +977,65 @@ public class ParseChatMessageCommand {
 			Parameters.data_.dbPre2[2] = false;
 		}
 		else if (splice2[1] == "3") {
-			Parameters.data_.dbPre2[0] = splice2[3];
-			Parameters.data_.dbPre2[1] = parseInt(splice2[2]);
+			Parameters.data_.dbPre3[0] = splice2[3];
+			Parameters.data_.dbPre3[1] = parseInt(splice2[2]);
 			Parameters.data_.dbPre3[2] = false;
 		}
 		addTextLine.dispatch(ChatMessage.make("*Help*","A new preset was created for effect ID "+splice2[2]));
 		Parameters.save();
 		return true;
 	}
+	
+	private function tellHandle():Boolean {
+		var str:String = "";
+		if (data.substr(0,3) == "/t " || data.substr(0,3) == "/w ") {
+			str = data.substr(3)
+		}
+		else if (data.substr(0,6) == "/tell ") {
+			str = data.substr(6)
+		}
+		else if (data.substr(0,9) == "/whisper ") {
+			str = data.substr(9)
+		}
+		if (str != "") {
+			var splice:Array = str.match("(\\w+) (.+)");
+			if (splice != null) {
+				lastTellTo = splice[1];
+				lastTell = splice[2];
+				lastMsg = data;
+				this.hudModel.gameSprite.gsc_.playerText(data);
+				return true;
+			}
+		}
+		return false;
+	}
 
     public function execute():void {
-	
-        if(aimAssistCommands())
-        {
+		if (tellHandle()) {
+			return;
+		}
+        else if (listCommands()) {
             return;
         }
-        else if(cjCommands())
-        {
+        else if (cjCommands()) {
             return;
         }
-        else if(custMessages())
-        {
+        else if (custMessages()) {
             return;
         }
-        else if(effCom())
-        {
+        else if (effCom()) {
             return;
         }
-        else if(this.fsCommands(this.data))
-        {
+        else if (this.fsCommands(this.data)) {
             return;
         }
         else if (this.data == "/help") {
             this.addTextLine.dispatch(ChatMessage.make(Parameters.HELP_CHAT_NAME, TextKey.HELP_COMMAND));
         }
-        else {
-			var splice:Array = data.match("/tell (\\w+) (.+)");
-			if (splice != null) {
-				lastTellTo = splice[1];
-				lastTell = splice[2];
-			} //send message even if it matches above
+        else { //send message as normal
 			lastMsg = data;
-			this.hudModel.gameSprite.gsc_.playerText(data); //send message as normal
+			this.hudModel.gameSprite.gsc_.playerText(data);
         }
-        /*else {
-			lastMsg = data;
-            this.hudModel.gameSprite.gsc_.playerText(data);
-        }*/
-        /*switch(this.data)
-        {
-			case aimAssistCommands():
-				break;
-            case "/help":
-                this.addTextLine.dispatch(ChatMessage.make(Parameters.HELP_CHAT_NAME,TextKey.HELP_COMMAND));
-                break;
-            default:
-                this.hudModel.gameSprite.gsc_.playerText(this.data);
-		}*/
     }
 }
 }//package kabam.rotmg.chat.control

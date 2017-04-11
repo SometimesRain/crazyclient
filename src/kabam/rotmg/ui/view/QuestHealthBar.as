@@ -28,6 +28,23 @@ public class QuestHealthBar extends Sprite {
         addChild(this.questBar2);
         addChild(this.questBar3);
     }
+	
+	private function genClosest(p:Player):String {
+		var go:GameObject;
+		var closest:GameObject;
+		var dist:int = int.MAX_VALUE;
+		var temp:int;
+		for each(go in p.map_.goDict_) {
+			if (go is Player) {
+				temp = Math.abs(go.x_ - p.questMob.x_) + Math.abs(go.y_ - p.questMob.y_); //not sq -> abs
+				if (temp < dist) {
+					dist = temp;
+					closest = go;
+				}
+			}
+		}
+		return " - " + closest.name_ + ": " + dist;
+	}
 
     public function update(_arg_1:Player):void {
 		var active:String = "";
@@ -37,6 +54,9 @@ public class QuestHealthBar extends Sprite {
 			var type:int = whichMob.objectType_;
 			if (type != 0x714b && type != 0x715d && type != 0x716f) {
 				active = (Parameters.data_.tombHack && Parameters.data_.curBoss == 3368 && whichMob == _arg_1.questMob1) ? ": Active" : "";
+			}
+			if (Parameters.data_.questClosest && _arg_1.questMob != null) {
+				active = genClosest(_arg_1);
 			}
 			questBar.setLabelText(ObjectLibrary.typeToDisplayId_[whichMob.objectType_]+active);
 			questBar.visible = true;

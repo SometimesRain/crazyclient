@@ -25,7 +25,6 @@ public class CurrentCharacterRect extends CharacterRect {
     public const deleteCharacter:Signal = new Signal();
     public const showToolTip:Signal = new Signal(Sprite);
     public const hideTooltip:Signal = new Signal();
-	//public static var charDict:Dictionary = new Dictionary();
 	public static var charnames:Vector.<String> = new <String>[];
 	public static var charids:Vector.<int> = new <int>[];
 
@@ -53,26 +52,18 @@ public class CurrentCharacterRect extends CharacterRect {
 			}
 		}
         var _local_5:String = _arg_2.name;
-		/*if (_local_5 == "Necromancer") { //class names are in this format
+		/*if (_local_5 == "Necromancer") {
 			_local_5 = "Necro";
 		}*/
-        var _local_6:String = maxed + "/8";//_arg_3.charId();
+        var _local_6:String = maxed + "/8";
         //var _local_6:int = _arg_3.charXML_.Level;
         super.className = new LineBuilder().setParams(TextKey.CURRENT_CHARACTER_DESCRIPTION, {
             "className": _local_5,
             "level": _local_6
         });
-		//trace("chardict",_local_5);
-		var key:String = _local_5.toLowerCase();
-		if (!containsVal(charnames, key)) {
-			charnames.push(key);
-			charids.push(char.charId());
-		}
-		else {
-			key += "2";
-			charnames.push(key);
-			charids.push(char.charId());
-		}
+		//
+		setCharCon(_local_5.toLowerCase(), char.charId());
+		//
         super.color = 0x5C5C5C;
         super.overColor = 0x7F7F7F;
         super.init();
@@ -80,19 +71,45 @@ public class CurrentCharacterRect extends CharacterRect {
         //this.makeDeleteButton();
         this.addEventListeners();
     }
+
+    /*private function makeDeleteButton():void {
+        deleteButton = new DeleteXGraphic();
+        deleteButton.addEventListener(MouseEvent.MOUSE_DOWN, this.onDeleteDown);
+        deleteButton.x = 1;
+        deleteButton.y = 1;
+        addChild(deleteButton);
+    }
+
+    private function onDeleteDown(_arg_1:MouseEvent):void {
+        _arg_1.stopImmediatePropagation();
+        dispatchEvent(new DeleteCharacterEvent(this.char));
+    }*/
 	
-	private function containsVal(vect:Vector.<String>, val:String):Boolean {
-		for each (var s:String in vect) {
-			if (s == val) {
-				return true;
+	private function setCharCon(key:String, thisid:int):void {
+		for (var i:int = 0; i < charnames.length; i++) {
+			if (charnames[i] == key) {
+				if (charids[i] < thisid) {
+					key += "2";
+					charnames.push(key);
+					charids.push(thisid);
+				}
+				else {
+					key += "2";
+					charnames.push(key);
+					charids.push(charids[i]);
+					charids[i] = thisid;
+				}
+				return;
 			}
 		}
-		return false;
+		charnames.push(key);
+		charids.push(thisid);
 	}
 
     private function addEventListeners():void {
         addEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromStage);
         selectContainer.addEventListener(MouseEvent.CLICK, this.onSelect);
+        selectContainer.addEventListener(MouseEvent.RIGHT_CLICK, this.onDelete);
         //this.deleteButton.addEventListener(MouseEvent.CLICK, this.onDelete);
     }
 
@@ -131,14 +148,6 @@ public class CurrentCharacterRect extends CharacterRect {
         return (FameUtil.nextStarFame((((this.charStats == null)) ? 0 : this.charStats.bestFame()), this.char.fame()));
     }
 
-    /*private function makeDeleteButton():void {
-        this.deleteButton = new DeleteXGraphic();
-        this.deleteButton.addEventListener(MouseEvent.MOUSE_DOWN, this.onDeleteDown);
-        this.deleteButton.x = (WIDTH - 40);
-        this.deleteButton.y = ((HEIGHT - this.deleteButton.height) * 0.5);
-        addChild(this.deleteButton);
-    }*/
-
     override protected function onMouseOver(_arg_1:MouseEvent):void {
         super.onMouseOver(_arg_1);
         this.removeToolTip();
@@ -159,12 +168,6 @@ public class CurrentCharacterRect extends CharacterRect {
     private function removeToolTip():void {
         this.hideTooltip.dispatch();
     }
-
-    private function onDeleteDown(_arg_1:MouseEvent):void {
-        _arg_1.stopImmediatePropagation();
-        dispatchEvent(new DeleteCharacterEvent(this.char));
-    }
-
 
 }
 }//package com.company.assembleegameclient.screens.charrects
