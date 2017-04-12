@@ -105,6 +105,7 @@ public class Player extends Character {
 	private var startTime:int = 0;
 	private var endCount:int = 0;
 	private var timercback:Function;
+	public var remBuff:Vector.<int> = new <int>[];
 	
 	private var nextAutoAbil:int = 0;
     public var mapAutoAbil:Boolean = false;
@@ -970,6 +971,27 @@ public class Player extends Character {
             }
 		}
 	}
+	
+	public function getItemHp():int {
+		var total:int = 0;
+		var item:XML;
+		var act:XML;
+		for (var i:int = 0; i < 4; i++) {
+			if (equipment_[i] == -1) {
+				continue;
+			}
+			item = ObjectLibrary.xmlLibrary_[equipment_[i]];
+			if (item.hasOwnProperty("ActivateOnEquip")) {
+				for each (act in item.ActivateOnEquip) {
+					if (act.@stat == 0) {
+						total += act.@amount;
+					}
+				}
+			}
+		}
+		//addTextLine.dispatch(ChatMessage.make("*Help*", total + " hp from equips"));
+		return total;
+	}
 
     override public function update(_arg_1:int, _arg_2:int):Boolean {
 		if (this == map_.player_) {
@@ -1022,6 +1044,18 @@ public class Player extends Character {
 				getOut = false;
 				map_.gs_.dispatchEvent(MapUserInput.reconRealm);
 			}*/
+			if (remBuff.length > 0 && getTimer() >= remBuff[remBuff.length - 1]) { //how to deal with double delete?
+				var mhpboost:int = maxHPBoost_;
+				var itemhp:int = getItemHp();
+				if (itemhp != mhpboost) {
+					//addTextLine.dispatch(ChatMessage.make("", remBuff.length+": no change"));
+					maxHP_ -= mhpboost - itemhp;
+					maxHPBoost_ = itemhp;
+				}
+				//else addTextLine.dispatch(ChatMessage.make("", remBuff.length+": no change"));
+				remBuff.length--;
+				//addTextLine.dispatch(ChatMessage.make("", "set to "+remBuff.length));
+			}
 			if (wantedList == null) //autoloot wanted list
 			{
 				wantedList = genWantedList();

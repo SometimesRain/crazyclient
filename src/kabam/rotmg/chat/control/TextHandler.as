@@ -153,7 +153,7 @@ public class TextHandler {
 				break;
 			}
 		}
-        if (_arg_1.objectId_ >= 0 && _arg_1.numStars_ > Parameters.data_.chatStarRequirement) {
+        if (_arg_1.objectId_ >= 0 && (_arg_1.numStars_ > Parameters.data_.chatStarRequirement || _arg_1.numStars_ == -1)) {
             this.showSpeechBaloon(_arg_1, _local_3);
         }
         //if ((_local_2) || ((this.account.isRegistered()) && (!Parameters.data_.hidePlayerChat || isSpecialRecipientChat(_arg_1.name_)))) {

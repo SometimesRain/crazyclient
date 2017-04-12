@@ -302,7 +302,7 @@ public class MapUserInput {
     }
 	
 	private function handleAutoAbil(player:Player):Boolean {
-		if (!(player.objectType_ == 0x0300 || player.objectType_ == 0x031d || player.objectType_ == 0x031d)) {
+		if (!(player.objectType_ == 0x0300 || player.objectType_ == 0x031d || player.objectType_ == 0x031f)) {
 			return false; //not rogue, warrior, paladin
 		}
 		if (spaceSpam >= getTimer()) {

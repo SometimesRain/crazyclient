@@ -1271,7 +1271,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         var _loc8_:ReconnectEvent = new ReconnectEvent(_loc2_,_loc3_,_loc4_,_loc5_,_loc6_,_loc7_,isFromArena_);
         MapUserInput.reconVault = _loc8_;
 		//set nexus recon
-		if (param1.gameId_ == -2 || param1.gameId_ == -11 || param1.gameId_ == -5) {
+		if (param1.gameId_ == -2 || param1.gameId_ == -11) { //|| param1.gameId_ == -5
 			reconNexus = new ReconnectEvent(new Server().setName("Nexus").setAddress(server_.address).setPort(server_.port),-2,false,charId_,getTimer(),new ByteArray(),false);
 		}
     }
@@ -1722,24 +1722,31 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 		var wismod:Number = (1 + (go.wisdom_ + go.wisdomBoost_) / 150);
 		var rangeSq:Number;
 		var distSq:Number;
+		var dur:int;
 		switch (go.equipment_[1]) {
 			case 0xa53: //T2
 				hpbuff = 10 * wismod;
+				dur = 3000 * wismod;
 				break;
 			case 0xada: //T3
 				hpbuff = 25 * wismod;
+				dur = 3500 * wismod;
 				break;
 			case 0xa54: //T4
 				hpbuff = 45 * wismod;
+				dur = 3500 * wismod;
 				break;
 			case 0xa55: //T5
 				hpbuff = 55 * wismod;
+				dur = 4000 * wismod;
 				break;
 			case 0xb26: //T6
 				hpbuff = 75 * wismod;
+				dur = 4000 * wismod;
 				break;
 			case 0x2366: //ST
 				hpbuff = 60 * wismod;
+				dur = 4000 * wismod;
 				break;
 		}
 		if (hpbuff == 0) { //not a paladin
@@ -1752,36 +1759,16 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 				return;
 			}
 		}
-		if (player.maxHPBoost_ == getItemHp()) { //max hp is not boosted
+		if (player.maxHPBoost_ == player.getItemHp()) { //max hp is not boosted -> boost
 			player.maxHPBoost_ += int(hpbuff);
 			player.maxHP_ += int(hpbuff);
+			player.remBuff.push(dur+getTimer());
 		}
 		player.chp += hpbuff;
 		if (player.chp > player.maxHP_) { //no overflow
 			player.chp = player.maxHP_;
 		}
 		player.notifyPlayer("+"+hpbuff.toFixed(0), 0x00ff00, 1500); //paladin buff notification
-	}
-	
-	private function getItemHp():int {
-		var total:int = 0;
-		var item:XML;
-		var act:XML;
-		for (var i:int = 0; i < 4; i++) {
-			if (player.equipment_[i] == -1) {
-				continue;
-			}
-			item = ObjectLibrary.xmlLibrary_[player.equipment_[i]];
-			if (item.hasOwnProperty("ActivateOnEquip")) {
-				for each (act in item.ActivateOnEquip) {
-					if (act.@stat == 0) {
-						total += act.@amount;
-					}
-				}
-			}
-		}
-		//addTextLine.dispatch(ChatMessage.make("*Help*", total + " hp from equips"));
-		return total;
 	}
 
     private function onShowEffect(_arg_1:ShowEffect):void {
