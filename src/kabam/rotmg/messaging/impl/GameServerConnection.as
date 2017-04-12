@@ -192,6 +192,9 @@ public class GameServerConnection {
 
     public function teleport(_arg_1:String):void { //int
     }
+	
+    public function teleportId(_arg_1:int):void {
+    }
 
     public function usePortal(_arg_1:int):void {
     }

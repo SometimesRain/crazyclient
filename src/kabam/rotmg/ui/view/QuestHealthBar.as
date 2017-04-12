@@ -8,12 +8,15 @@ import com.company.assembleegameclient.parameters.Parameters;
 
 import flash.display.Sprite;
 import flash.events.Event;
+import flash.utils.getTimer;
 
 public class QuestHealthBar extends Sprite {
 
     private var questBar:StatusBar;
     private var questBar2:StatusBar;
     private var questBar3:StatusBar;
+	private var nextUpdate:int = 0;
+	private var showstr:String;
 
     public function QuestHealthBar() {
         questBar = new StatusBar(194, 16, 0xC52222, 0x545454, "Quest", true);
@@ -52,11 +55,16 @@ public class QuestHealthBar extends Sprite {
 			var whichMob:GameObject = _arg_1.questMob1 || _arg_1.questMob;
 			questBar.draw(whichMob.hp_, whichMob.maxHP_, 0);
 			var type:int = whichMob.objectType_;
-			if (type != 0x714b && type != 0x715d && type != 0x716f) {
+			if (type == 3368) {
 				active = (Parameters.data_.tombHack && Parameters.data_.curBoss == 3368 && whichMob == _arg_1.questMob1) ? ": Active" : "";
 			}
 			if (Parameters.data_.questClosest && _arg_1.questMob != null) {
-				active = genClosest(_arg_1);
+				//trace("will update:", nextUpdate <= getTimer(), nextUpdate, "<=", getTimer());
+				if (nextUpdate <= getTimer()) {
+					showstr = genClosest(_arg_1);
+					nextUpdate = getTimer() + 500;
+				}
+				active = showstr;
 			}
 			questBar.setLabelText(ObjectLibrary.typeToDisplayId_[whichMob.objectType_]+active);
 			questBar.visible = true;

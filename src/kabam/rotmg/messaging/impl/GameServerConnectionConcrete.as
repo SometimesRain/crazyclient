@@ -242,6 +242,8 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 	private var oncd:Boolean = false;
 	private var tptarget:String = "";
 	private var lasttptime:int = 0;
+	private var totPlayers:int = 0;
+	//private var pingtime:int = int.MAX_VALUE;
 
     private var petUpdater:PetUpdater;
     private var messages:MessageProvider;
@@ -282,7 +284,6 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 	private var ignoreNext:Boolean = false;
 	public static var sRec:Boolean = false;
 	public static var whereto:String;
-	public static var onlychar:Boolean = false;
 	public static var claimkey:String = "";
 	public static var ignoredBag:int = -1;
 	public static var receivingGift:Vector.<Boolean>;
@@ -707,8 +708,10 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 		var gameid:int = -2;
 		var charid:int = charId_;
 		var conrealm:Boolean = false;
+		var onlychar:Boolean = false;
 		var conserv:Server;
 		var realmarr:Array;
+		var i:int;
 		if (concom != null) {
 			for (var j:int = 1; j < 4; j++) {
 				if (concom[j] != "") {
@@ -718,7 +721,6 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 					//connect to vault
 					if (concom[j].substr(0,1) == "v") {
 						gameid = -5;
-						onlychar = false;
 						continue;
 					}
 					//connect to proxy
@@ -729,8 +731,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 					}
 					//connect to server
 					else if ((concom[j].length > 2 && (concom[j].substr(0,2) == "eu" || concom[j].substr(0,2) == "us" || concom[j].substr(0,3) == "ase")) || (concom[j].length == 2 && concom[j].substr(0,2) == "ae")) {
-						for (var i:int = 0; i < abbrs.length; i++) 
-						{
+						for (i = 0; i < abbrs.length; i++)  {
 							if (concom[j] == abbrs[i]) {
 								Parameters.data_.preferredServer = servs[i];
 								Parameters.save();
@@ -760,23 +761,6 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 								break;
 							}
 						}
-						/*for each (var s:String in dict) {
-							wanChar = concom[j];
-							addTextLine.dispatch(ChatMessage.make("*Help*", s+" "+wanChar.substr(wanChar.length-1, 1)+" "+s.substr(s.length-1,1)));
-							if (wanChar.substr(wanChar.length-1,1) == "2" && s.substr(s.length-1,1) == "2") {
-								addTextLine.dispatch(ChatMessage.make("*Help*", s.substring(0,wanChar.length-1)+" "+wanChar.substr(0,wanChar.length-1)));
-								if (s.substring(0,wanChar.length-1) == wanChar.substr(0,wanChar.length-1)) {
-									addTextLine.dispatch(ChatMessage.make("*Help*","new "+s.substring(0,wanChar.length-1)+" == "+wanChar.substr(0,wanChar.length-1)+" -> "+s));
-									concom[j] = s
-									break;
-								}
-							}
-							else if (s.substring(0,wanChar.length) == wanChar) {
-								//addTextLine.dispatch(ChatMessage.make("*Help*","reg "+s.substring(0,wanChar.length)+" == "+wanChar+" -> "+s));
-								concom[j] = s
-								break;
-							}
-						}*/
 						var result:int = concom[j];
 						if (result > 0) {
 							charid = result;
@@ -786,13 +770,12 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 						}
 						//connect to realm
 						else {
-							for (var k:int = 0; k < realms.length; k++) 
-							{
-								if (concom[j] == realms[k].substring(0, concom[j].length).toLowerCase()) {
+							for (i = 0; i < realms.length; i++) {
+								if (concom[j] == realms[i].substring(0, concom[j].length).toLowerCase()) {
 									var temparr:Array = PlayGameCommand.visited;
 									for each (var iprealm:String in temparr) {
 										realmarr = iprealm.split(' ') //realm ip, server, realm
-										if (realmarr[1] == Parameters.data_.preferredServer && realmarr[2] == realms[k]) {
+										if (realmarr[1] == Parameters.data_.preferredServer && realmarr[2] == realms[i]) {
 											gameid = 0;
 											conrealm = true;
 											break;
@@ -801,7 +784,6 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 									break;
 								}
 							}
-							continue;
 						}
 					}
 				}
@@ -823,7 +805,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 				sRec = false;
 				
 			}
-			else if (onlychar) { //TODO
+			else if (onlychar) {
 				conserv = new Server();
 				conserv.name = ""; //may add later
 				conserv.address = PlayGameCommand.curip;
@@ -840,6 +822,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 				PlayGameCommand.currealm = realmarr[2];
 				conserv.port = 2050;
 			}
+			//addTextLine.dispatch(ChatMessage.make("*Help*", "connecting "+conserv.name+" "+gameid+" "+conserv.address));
 			gs_.dispatchEvent(new ReconnectEvent(conserv, gameid, false, charid, -1, new ByteArray(), false));
 			return;
 		}
@@ -1077,6 +1060,13 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 			lasttptime = getTimer();
 		}
     }
+
+    override public function teleportId(_arg_1:int):void { //int
+        var _local_2:Teleport = (this.messages.require(TELEPORT) as Teleport);
+        _local_2.objectId_ = _arg_1;
+        serverConnection.sendMessage(_local_2);
+		//lasttptime = getTimer();
+    }
 	
 	public function retryTeleport():void {
 		oncd = false;
@@ -1161,16 +1151,17 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         //var _local_2:RequestTrade = (this.messages.require(REQUESTTRADE) as RequestTrade);
         //_local_2.name_ = _arg_1;
 		playerText("/trade "+_arg_1);
+        //addTextLine.dispatch(ChatMessage.make("","You have requested a trade with "+_arg_1));
         //serverConnection.sendMessage(_local_2);
     }
 
     override public function changeTrade(_arg_1:Vector.<Boolean>):void {
         var _local_2:ChangeTrade = (this.messages.require(CHANGETRADE) as ChangeTrade);
         _local_2.offer_ = _arg_1;
-		trace("CHANGE", _local_2.offer_.length);
+		/*trace("CHANGE", _local_2.offer_.length);
 		for each (var btr:Boolean in _local_2.offer_) {
 			trace(btr);
-		}
+		}*/
         serverConnection.sendMessage(_local_2);
     }
 
@@ -1178,7 +1169,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         var _local_3:AcceptTrade = (this.messages.require(ACCEPTTRADE) as AcceptTrade);
         _local_3.myOffer_ = _arg_1;
         _local_3.yourOffer_ = _arg_2;
-		var btr:Boolean;
+		/*var btr:Boolean;
 		trace("ACCEPT MYOFFER", _local_3.myOffer_.length);
 		for each (btr in _local_3.myOffer_) {
 			trace(btr);
@@ -1186,7 +1177,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 		trace("ACCEPT YOUROFFER", _local_3.yourOffer_.length);
 		for each (btr in _local_3.yourOffer_) {
 			trace(btr);
-		}
+		}*/
         serverConnection.sendMessage(_local_3);
     }
 
@@ -1242,11 +1233,16 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 
     private function onConnected():void {
         var _local_1:Account = StaticInjectorContext.getInjector().getInstance(Account);
-        this.addTextLine.dispatch(ChatMessage.make(Parameters.CLIENT_CHAT_NAME, TextKey.CHAT_CONNECTED));
+        this.addTextLine.dispatch(ChatMessage.make("*Client*", "Connected"));
         this.encryptConnection();
         var _local_2:Hello = (this.messages.require(HELLO) as Hello);
-        _local_2.buildVersion_ = ((Parameters.BUILD_VERSION + ".") + "0");
-        _local_2.gameId_ = claimkey == "" ? gameId_ : -11;
+        _local_2.buildVersion_ = Parameters.BUILD_VERSION + ".0";
+		if (claimkey != "") {
+			_local_2.gameId_ = -11;
+		}
+		else {
+			_local_2.gameId_ = gameId_;
+		}
         _local_2.guid_ = this.rsaEncrypt(_local_1.getUserId());
         _local_2.password_ = this.rsaEncrypt(_local_1.getPassword());
         _local_2.secret_ = this.rsaEncrypt(_local_1.getSecret());
@@ -1260,13 +1256,11 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         _local_2.playPlatform = _local_1.playPlatform();
         _local_2.platformToken = _local_1.getPlatformToken();
         _local_2.userToken = _local_1.getToken();
-		//trace("HELLOING",_local_2.buildVersion_);
         serverConnection.sendMessage(_local_2);
 		createVaultRecon(_local_2);
     }
         
-    private function createVaultRecon(param1:Hello) : void
-    {
+    private function createVaultRecon(param1:Hello):void {
         var _loc2_:Server = new Server().setName("{\"text\":\"server.vault\"}").setAddress(server_.address).setPort(server_.port);
         var _loc3_:int = -5;
         var _loc4_:Boolean = createCharacter_;
@@ -1277,7 +1271,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         var _loc8_:ReconnectEvent = new ReconnectEvent(_loc2_,_loc3_,_loc4_,_loc5_,_loc6_,_loc7_,isFromArena_);
         MapUserInput.reconVault = _loc8_;
 		//set nexus recon
-		if (param1.gameId_ == -2 || param1.gameId_ == -11) {
+		if (param1.gameId_ == -2 || param1.gameId_ == -11 || param1.gameId_ == -5) {
 			reconNexus = new ReconnectEvent(new Server().setName("Nexus").setAddress(server_.address).setPort(server_.port),-2,false,charId_,getTimer(),new ByteArray(),false);
 		}
     }
@@ -1295,6 +1289,10 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 		if (claimkey != "") { //TODO
 			openDialog.dispatch(new DailyLoginModal());
 			claimkey = "";
+		}
+		if (Parameters.data_.spriteId != 0) {
+			resetSpriteSettings();
+			addTextLine.dispatch(ChatMessage.make("*Help*","Sprite settings restored"));
 		}
     }
 
@@ -1401,7 +1399,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         if (Parameters.data_.showTradePopup && receivingGift == null) {
             gs_.hudView.interactPanel.setOverride(new TradeRequestPanel(gs_, _arg_1.name_));
         }
-        this.addTextLine.dispatch(ChatMessage.make("", ((((_arg_1.name_ + " wants to ") + 'trade with you.  Type "/trade ') + _arg_1.name_) + '" to trade.')));
+        this.addTextLine.dispatch(ChatMessage.make("", _arg_1.name_ + " wants to " + 'trade with you.  Type "/trade ' + _arg_1.name_ + '" to trade.'));
     }
 
     private function onTradeStart(_arg_1:TradeStart):void {
@@ -1485,6 +1483,64 @@ public class GameServerConnectionConcrete extends GameServerConnection {
             _local_3++;
         }
     }
+	
+	private function calcSpriteId():int {
+		var i:int = 0;
+		if (Parameters.data_.SWNoSlow) {
+			i += 1;
+		}
+		if (Parameters.data_.NoClip) {
+			i += 2;
+		}
+		if (Parameters.data_.SWNoTileMove) {
+			i += 4;
+		}
+		if (Parameters.data_.SWTrees) {
+			i += 8;
+		}
+		if (Parameters.data_.SWSpeed) {
+			i += 16;
+		}
+		if (Parameters.data_.autoSprite) {
+			i += 32;
+		}
+		if (Parameters.data_.SWLight) {
+			i += 64;
+		}
+		return i;
+	}
+	
+	private function resetSpriteSettings():void {
+		for (var i:int = 0; i < 7; i++) {
+			if ((Parameters.data_.spriteId & 1 << i) != 0) {
+				switch (i) {
+					case 0:
+						Parameters.data_.SWNoSlow = true;
+						break;
+					case 1:
+						Parameters.data_.NoClip = true;
+						break;
+					case 2:
+						Parameters.data_.SWNoTileMove = true;
+						break;
+					case 3:
+						Parameters.data_.SWTrees = true;
+						break;
+					case 4:
+						Parameters.data_.SWSpeed = true;
+						break;
+					case 5:
+						Parameters.data_.autoSprite = true;
+						break;
+					case 6:
+						Parameters.data_.SWLight = true;
+						break;
+				}
+			}
+		}
+		Parameters.data_.spriteId = 0;
+		Parameters.save();
+	}
 
     private function addObject(_arg_1:ObjectData):void {
 		if (Parameters.data_.SWTrees && _arg_1.objectType_ < 378 && _arg_1.objectType_ > 371) {
@@ -1498,10 +1554,22 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         if (_local_3 == null) {
             return;
         }
-		/*if (gs_.map.name_ == "Sprite World" && Parameters.data_.leaveSprite && _local_3 is Player && _local_3 != player) {
-			addTextLine.dispatch(ChatMessage.make("*Help*","Another player entered the Sprite World"));
-			player.getOut = true;
-		}*/
+		if (gs_.map.name_ == "Sprite World" && Parameters.data_.leaveSprite && _local_3 is Player) {
+			if (totPlayers > 0) {
+				addTextLine.dispatch(ChatMessage.make("*Help*", "Another player entered the Sprite World"));
+				Parameters.data_.spriteId = calcSpriteId();
+				Parameters.data_.SWNoSlow = false;
+				Parameters.data_.NoClip = false;
+				Parameters.data_.SWNoTileMove = false;
+				Parameters.data_.dbParalyzed = false;
+				Parameters.data_.SWTrees = false;
+				Parameters.data_.SWSpeed = false;
+				Parameters.data_.autoSprite = false;
+				Parameters.data_.SWLight = false;
+				Parameters.save();
+			}
+			totPlayers++;
+		}
         if (!Parameters.data_.showPests && _local_3 is Pet) {
 			switch (player.map_.name_) {
 				case Map.PET_YARD_1:
@@ -1647,7 +1715,9 @@ public class GameServerConnectionConcrete extends GameServerConnection {
     }
 	
 	private function handleSeal(go:Player):void {
-		//addTextLine.dispatch(ChatMessage.make("*Help*", "HANDLE_SEAL"));
+		if (go == null) {
+			return;
+		}
 		var hpbuff:Number = 0;
 		var wismod:Number = (1 + (go.wisdom_ + go.wisdomBoost_) / 150);
 		var rangeSq:Number;
@@ -1868,7 +1938,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
     }
 
     private function onGoto(_arg_1:Goto):void {
-		if (lasttptime + 200 > getTimer()) { //trickster fix
+		if (lasttptime + 200 > getTimer() && Parameters.data_.autoTp) { //trickster fix
 			oncd = true;
 			player.startTimer(20, 500, retryTeleport);
 			lasttptime = 0;
@@ -2329,6 +2399,10 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         var _local_2:Pong = (this.messages.require(PONG) as Pong);
         _local_2.serial_ = _arg_1.serial_;
         _local_2.time_ = getTimer();
+		/*if (_local_2.time_-pingtime > 1010) {
+			player.notifyPlayer("High latency", 0xff0000, 1500);
+		}
+		pingtime = _local_2.time_;*/
         serverConnection.sendMessage(_local_2);
     }
 
@@ -2340,6 +2414,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
     }
 
     private function onMapInfo(_arg_1:MapInfo):void {
+		totPlayers = 0;
         var _local_2:String;
         var _local_3:String;
         for each (_local_2 in _arg_1.clientXML_) {
@@ -2350,7 +2425,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         }
         changeMapSignal.dispatch();
         this.closeDialogs.dispatch();
-        gs_.applyMapInfo(_arg_1); //todo
+        gs_.applyMapInfo(_arg_1); //hack?
         this.rand_ = new Random(_arg_1.fp_);
         if (createCharacter_) {
             this.create();

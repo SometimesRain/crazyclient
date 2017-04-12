@@ -58,8 +58,8 @@ public class TextHandler {
         var _local_4:String;
         var _local_5:String;
 		var lower:String;
-        var _local_2:Boolean = (((_arg_1.numStars_ == -1)) || ((_arg_1.objectId_ == -1)));
-        if (!Parameters.data_.chatAll && _arg_1.name_ != model.player.name_ && !_local_2 && !isSpecialRecipientChat(_arg_1.recipient_)) {
+        var _local_2:Boolean = _arg_1.numStars_ == -1; //|| _arg_1.objectId_ == -1
+        if (!Parameters.data_.chatAll && _arg_1.name_ != model.player.name_ && !_local_2) { //&& !isSpecialRecipientChat(_arg_1.recipient_)
             if (!(_arg_1.recipient_ == Parameters.GUILD_CHAT_NAME && Parameters.data_.chatGuild)) {
                 if (!(_arg_1.recipient_ != "" && Parameters.data_.chatWhisper)) {
                     return;
@@ -67,12 +67,14 @@ public class TextHandler {
             }
         }
         if (_arg_1.recipient_ != "" && Parameters.data_.chatFriend && !friendModel.isMyFriend(_arg_1.recipient_)) {
-            return;
+            return; //ignore messages from non-friends if the option is enabled
         }
-		//
-        if (_arg_1.numStars_ <= Parameters.data_.chatStarRequirement && _arg_1.name_ != model.player.name_ && !_local_2 && !isSpecialRecipientChat(_arg_1.recipient_)) {
-            return;
+        if (_arg_1.numStars_ <= Parameters.data_.chatStarRequirement && _arg_1.name_ != model.player.name_ && !_local_2 && _arg_1.recipient_ == "") { //&& !isSpecialRecipientChat(_arg_1.recipient_)
+            return; //ignore messages from players under star filter
         }
+		if (hudModel.gameSprite.map.name_ == "Nexus" && _arg_1.name_.length > 0 && _arg_1.name_.charAt(0) == "#") {
+			return; //ignore enemy speech in nexus
+		}
 		//SPAMFILTER
 		lower = _arg_1.text_.toLowerCase();
 		for each (var str:String in Parameters.data_.spamFilter) {
@@ -81,7 +83,7 @@ public class TextHandler {
 			}
 		}
         if (_arg_1.recipient_) {
-            if (_arg_1.recipient_ != this.model.player.name_ && !isSpecialRecipientChat(_arg_1.recipient_)) {
+            if (_arg_1.recipient_ != this.model.player.name_) { //&& !isSpecialRecipientChat(_arg_1.recipient_)
 				if (_arg_1.recipient_ != "MrEyeball") {
 					tellModel.push(_arg_1.recipient_);
 					tellModel.resetRecipients();
@@ -124,56 +126,6 @@ public class TextHandler {
 				}
             }
         }
-        /*if (_arg_1.recipient_) {
-			if (_arg_1.recipient_ == this.model.player.name_) {
-				//if (_arg_1.text_ == "whats that name dude?" && Parameters.data_.gsCLO) {
-				//	lower = "shhh, this is a secret feature";
-				//	addTextLine.dispatch(ChatMessage.make(Parameters.ERROR_CHAT_NAME, "Lost connection to server"));
-				//	hudModel.gameSprite.gsc_.gs_.closed.dispatch();
-				//	return;
-				//}
-				//RESPOND REALM/PORTAL
-				lower = _arg_1.name_.toLowerCase();
-				if (_arg_1.text_ == "s?") {
-					if (isLocalFriend(lower)) {
-						hudModel.gameSprite.gsc_.playerText("/tell "+_arg_1.name_+" s="+PlayGameCommand.curip+" "+PlayGameCommand.curloc);
-					}
-					return;
-				}
-				else if (_arg_1.text_.substring(0, 2) == "g=") {
-					if (isLocalFriend(lower)) {
-						var splice:Array = _arg_1.text_.match("g=(\\d{1,8})$");
-						var result:Vector.<Boolean> = new <Boolean>[false,false,false,false,false,false,false,false,false,false,false,false];
-						for (var i:int = 4; i < 12; i++) {
-							//trace("TEXTHANDLER",splice[1].substr(i-4, 1));
-							if (splice[1].substr(i-4, 1) == "1") {
-								result[i] = true;
-							}
-						}
-						GameServerConnectionConcrete.receivingGift = result;
-						hudModel.gameSprite.gsc_.requestTrade(_arg_1.name_);
-						addTextLine.dispatch(ChatMessage.make("*Help*", "Received item(s) as a gift from "+_arg_1.name_));
-					}
-					return;
-				}
-				else if (_arg_1.text_.substring(0,2) == "s=") {
-					var textarr2:Array = _arg_1.text_.substr(2).split(' ');
-					PlayGameCommand.curip = textarr2[0];
-					GameServerConnectionConcrete.sRec = true;
-					GameServerConnectionConcrete.whereto = textarr2[1];
-				}
-			}
-        }
-        if (_arg_1.numStars_ <= Parameters.data_.chatStarRequirement && _arg_1.name_ != model.player.name_ && !_local_2 && !isSpecialRecipientChat(_arg_1.recipient_)) {
-            return;
-        }
-        if (_arg_1.recipient_) {
-            if (_arg_1.recipient_ != model.player.name_ && _arg_1.recipient_ != "MrEyeball" && !isSpecialRecipientChat(_arg_1.recipient_)) {
-                this.tellModel.push(_arg_1.recipient_);
-                this.tellModel.resetRecipients();
-            }
-        }*/
-		//
         if (this.useCleanString(_arg_1)) {
             _local_3 = _arg_1.cleanText_;
 			if (_local_3.length > 19 && _local_3.substr(7,12) == "NexusPortal.") {
@@ -192,7 +144,6 @@ public class TextHandler {
 			if (_arg_1.text_ == "{\"key\":\"server.oryx_closed_realm\"}") { //realm shake timer
 				model.player.startTimer(120, 1000);
 			}
-			trace(_arg_1.text_);
             _local_3 = this.getLocalizedString(_local_3);
         }
 		//TPTO
@@ -202,53 +153,11 @@ public class TextHandler {
 				break;
 			}
 		}
-		//WHO COUNT
-		/*if (_arg_1.text_.indexOf("Players online:") != -1) {
-            var total:int = 1;
-            for (var i:int = 0; i < _arg_1.text_.length; i++)
-            {
-                if (_arg_1.text_.charAt(i) == ",")
-				{
-                    total++;
-				}
-            }
-			_arg_1.text_ = "Players online: " + total;
-		}*/
-		//
-        /*if (((_local_2) && ((TextureDataConcrete.remoteTexturesUsed == true)))) {
-            TextureDataConcrete.remoteTexturesUsed = false;
-            _local_4 = _arg_1.name_;
-            _local_5 = _arg_1.text_;
-            _arg_1.name_ = "";
-            _arg_1.text_ = "Remote Textures used in this build";
-            this.addTextAsTextLine(_arg_1);
-            _arg_1.name_ = _local_4;
-            _arg_1.text_ = _local_5;
-        }
-        if (_local_2) {
-            if ((((((((_arg_1.text_ == "Please verify your email before chat")) && (!((this.hudModel == null))))) && ((this.hudModel.gameSprite.map.name_ == "Nexus")))) && (!((this.openDialogSignal == null))))) {
-                this.openDialogSignal.dispatch(new ConfirmEmailModal());
-            }
-            else {
-                if (_arg_1.name_ == "@ANNOUNCEMENT") {
-                    //if (((((!((this.hudModel == null))) && (!((this.hudModel.gameSprite == null))))) && (!((this.hudModel.gameSprite.newsTicker == null))))) {
-                    //    this.hudModel.gameSprite.newsTicker.activateNewScrollText(_arg_1.text_);
-                    //}
-                    //else {
-                    //    NewsTicker.setPendingScrollText(_arg_1.text_);
-                    //}
-                }
-                else {
-                    if ((((_arg_1.name_ == "#{objects.ft_shopkeep}")) && (!(FortuneModel.HAS_FORTUNES)))) {
-                        return;
-                    }
-                }
-            }
-        }*/
-        if (_arg_1.objectId_ >= 0) {
+        if (_arg_1.objectId_ >= 0 && _arg_1.numStars_ > Parameters.data_.chatStarRequirement) {
             this.showSpeechBaloon(_arg_1, _local_3);
         }
-        if ((_local_2) || ((this.account.isRegistered()) && (!Parameters.data_.hidePlayerChat || isSpecialRecipientChat(_arg_1.name_)))) {
+        //if ((_local_2) || ((this.account.isRegistered()) && (!Parameters.data_.hidePlayerChat || isSpecialRecipientChat(_arg_1.name_)))) {
+        if (_local_2 || !Parameters.data_.hidePlayerChat) {
             this.addTextAsTextLine(_arg_1);
         }
     }
@@ -263,7 +172,7 @@ public class TextHandler {
 	}
 
     private function isSpecialRecipientChat(_arg_1:String):Boolean {
-        return ((((_arg_1.length > 0)) && ((((_arg_1.charAt(0) == "#")) || ((_arg_1.charAt(0) == "*"))))));
+        return (_arg_1.length > 0 && (_arg_1.charAt(0) == "#" || _arg_1.charAt(0) == "*"));
     }
 
     public function addTextAsTextLine(_arg_1:Text):void {

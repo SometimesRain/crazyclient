@@ -544,8 +544,7 @@ public class Options extends Sprite {
         }
 	}
         
-	private function spriteWorld() : void
-	{
+	private function spriteWorld() : void {
 		addOptionAndPosition(new ChoiceOption("SWNoSlow",makeOnOffLabels(),[true,false],"No Slow","Disable slow debuff while in Sprite World.",null));
 		addOptionAndPosition(new ChoiceOption("NoClip",makeOnOffLabels(),[true,false],"No-Clip","Enable no-clip while in Sprite World.",null));
 		addOptionAndPosition(new ChoiceOption("SWNoTileMove",makeOnOffLabels(),[true,false],"No Tile Movement","Disable tile movement in Sprite World.",null));
@@ -554,11 +553,10 @@ public class Options extends Sprite {
 		addOptionAndPosition(new ChoiceOption("autoSprite", makeOnOffLabels(), [true, false], "Auto Sprite", "Start at boss room and autofollow the boss. Not recommended to be used with lightspeed.", null));
 		addOptionAndPosition(new ChoiceOption("SWLight", makeOnOffLabels(), [true, false], "Lightspeed", "Move 400% faster. Lightspeed is automatically enabled when you enter a Sprite World.", null));
 		addOptionAndPosition(new KeyMapper("SWLightKey","Toggle Lightspeed","Toggles between lightspeed and boosted speed in Sprite World."));
-		//addOptionAndPosition(new ChoiceOption("leaveSprite", makeOnOffLabels(), [true, false], "Leave Occupied Sprite Worlds", "Reconnects to the realm if anyone else enters the Sprite World. Useful for not getting caught.", null));
+		addOptionAndPosition(new ChoiceOption("leaveSprite", makeOnOffLabels(), [true, false], "Panic Mode", "Automatically turns off all sprite hacks if someone else is in the same sprite world with you.", null));
 	}
     
-    private function aimAssist() : void
-    {
+    private function aimAssist():void {
         addOptionAndPosition(new ChoiceOption("AAAddOne",makeOnOffLabels(),[true,false],"+0.5 Range","Increase the range at which auto aim will lock on and shoot at mobs by half a tile.",null));
         addOptionAndPosition(new KeyMapper("AAHotkey","Auto Aim","A key that toggles auto aim on and off."));
         addOptionAndPosition(new ChoiceOption("AABoundingDist",BoundingDistValues(),[1,2,3,4,5,6,7,8,9,10,15,20],"Bounding Distance","Restrict auto aim to see only as far as the bounding distance from the mouse cursor in closest to cursor aim mode.",null));
@@ -570,22 +568,20 @@ public class Options extends Sprite {
         addOptionAndPosition(new NullOption());
         addOptionAndPosition(new NullOption());
         addOptionAndPosition(new ChoiceOption("perfectBomb",makeOnOffLabels(),[true,false],"Spell Bomb Aim","Targets the mob with highest max health in 15 tile radius from the player.",pbOptions));
-        addOptionAndPosition(new ChoiceOption("perfectQuiv", makeOnOffLabels(), [true, false], "Quiver/Shield Aim", "Targets the mob with highest max health in 15/3.2 tile radius from the player.", null));
+        addOptionAndPosition(new ChoiceOption("perfectQuiv", makeOnOffLabels(), [true, false], "Quiver Aim", "Targets the mob with highest max health in 15 tile radius from the player.", null));
+        addOptionAndPosition(new ChoiceOption("perfectStun", makeOnOffLabels(), [true, false], "Shield Aim", "Targets the mob with highest max health in 3.2 tile radius from the player.", null));
+        addOptionAndPosition(new ChoiceOption("perfectLead", makeOnOffLabels(), [true, false], "Ability Aim Target Lead", "Enables leading of ability aim targets.", null));
 		addOptionAndPosition(new KeyMapper("pbToggle", "Toggle Ability Aim", "Toggles ability aim."));
 		pbOptions();
     }
       
-    private function pbOptions() : void
-    {
+    private function pbOptions():void {
         var _loc1_:ChoiceOption;
         var _loc2_:int;
-        while(_loc2_ < options_.length)
-        {
+        while(_loc2_ < options_.length) {
             _loc1_ = options_[_loc2_] as ChoiceOption;
-            if(_loc1_ != null)
-            {
-                if(_loc1_.paramName_ == "perfectQuiv")
-                {
+            if (_loc1_ != null) {
+                if (_loc1_.paramName_ == "perfectQuiv") {
                     _loc1_.enable(!Parameters.data_.perfectBomb);
                 }
             }
@@ -673,13 +669,13 @@ public class Options extends Sprite {
 		addOptionAndPosition(new ChoiceOption("TradeDelay",makeOnOffLabels(),[true,false],"Disable Trade Delay","Removes trade delay. Indicator still shows.",null));
 		addOptionAndPosition(new ChoiceOption("SafeWalk",makeOnOffLabels(),[true,false],"Safe Walk","Block movement onto tiles that cause damage. Click and hold left mouse to walk over these tiles.",null));
 		addOptionAndPosition(new ChoiceOption("bestServ", ServerPrefValues(), ["Default", "USWest", "USMidWest", "EUWest", "USEast", "AsiaSouthEast", "USSouth", "USSouthWest", "EUEast", "EUNorth", "EUSouthWest", "USEast3", "USWest2", "USMidWest2", "USEast2", "USNorthWest", "AsiaEast", "USSouth3", "EUNorth2", "EUWest2", "EUSouth", "USSouth2", "USWest3"], "Best Server", "Select your best server.", null));
-		
+	
 		addOptionAndPosition(new ChoiceOption("spellVoid", makeOnOffLabels(), [true, false], "Unsafe Prism Use", "Allows using prism through walls. If you land on void you will get disconnected.", null));
 		addOptionAndPosition(new ChoiceOption("autoAbil", makeOnOffLabels(), [true, false], "Auto Ability", "Automatically uses your ability on warrior, paladin and rogue. Activated by pressing space.", null));
         addOptionAndPosition(new ChoiceOption("slideOnIce", makeOnOffLabels(), [true, false], "Slide on Ice", "Toggles sliding on ice.", null));
 		addOptionAndPosition(new ChoiceOption("rclickTp",makeOnOffLabels(),[true,false],"Right-click Chat Teleport","Right click a chat name to teleport. No menu will be shown.",null));
 		addOptionAndPosition(new ChoiceOption("autoTp",makeOnOffLabels(),[true,false],"Teleport Queue","Automatically teleports after teleport cooldown if you have tried to teleport to someone during the cooldown.",null));
-		//addOptionAndPosition(new ChoiceOption("ninjaTap",makeOnOffLabels(),[true,false],"One-Tap Ninja Ability","Makes space toggle the state of the ability. Tap to turn on, tap to turn off.",null));
+		addOptionAndPosition(new ChoiceOption("ninjaTap",makeOnOffLabels(),[true,false],"One-Tap Ninja Ability","Makes space toggle the state of the ability. Tap to turn on, tap to turn off.",null));
 		addOptionAndPosition(new KeyMapper("enterPortal", "Portal Enter", "Enters nearest portal."));
 		addOptionAndPosition(new KeyMapper("resetCHP","Reset Client HP","Use this hotkey if your CL bar doesn't match your HP bar."));
         addOptionAndPosition(new KeyMapper("incFinder","Inc Finder","Goes through everyone's inventory and backpack then reports if they have an incantation."));

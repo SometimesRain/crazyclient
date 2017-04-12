@@ -53,6 +53,7 @@ public class InteractiveItemTile extends ItemTile {
     }
 
     public function startCollect(_arg_1:MouseEvent):void {
+		//addTextLine.dispatch(ChatMessage.make("*Help*","collecting from "+ownerGrid.owner.name_));
 		if (ownerGrid.owner == player) {
 			player.collect = 0 - itemSprite.itemId;
             //addTextLine.dispatch(ChatMessage.make("*Help*","Putting "+ObjectLibrary.getIdFromType(itemSprite.itemId)+"(s) to vault chests"));

@@ -1,5 +1,7 @@
 ﻿package com.company.assembleegameclient.ui {
 import com.company.assembleegameclient.game.AGameSprite;
+import com.company.assembleegameclient.objects.ObjectLibrary;
+import com.company.assembleegameclient.objects.Player;
 import com.company.ui.BaseSimpleText;
 
 import flash.display.Sprite;
@@ -56,13 +58,37 @@ public class TradeInventory extends Sprite {
             _local_7.setPlayer(this.gs_.map.player_);
             _local_7.x = (int((_local_5 % 4)) * (Slot.WIDTH + 4));
             _local_7.y = ((int((_local_5 / 4)) * (Slot.HEIGHT + 4)) + 46);
-            if (((_arg_4) && (_local_6.tradeable_))) {
+            if (_arg_4 && _local_6.tradeable_) {
                 _local_7.addEventListener(MouseEvent.MOUSE_DOWN, this.onSlotClick);
+                _local_7.addEventListener(MouseEvent.RIGHT_CLICK, this.selectAll);
             }
             this.slots_.push(_local_7);
             addChild(_local_7);
             _local_5++;
         }
+    }
+
+    private function onSlotClick(_arg_1:MouseEvent):void {
+        var _local_2:TradeSlot = (_arg_1.currentTarget as TradeSlot);
+        _local_2.setIncluded(!(_local_2.included_));
+        dispatchEvent(new Event(Event.CHANGE));
+    }
+
+    private function selectAll(_arg_1:MouseEvent):void {
+		var i:int;
+		var select:Vector.<Boolean> = new <Boolean>[false,false,false,false,false,false,false,false,false,false,false,false];
+		var p:Player = gs_.map.player_;
+		var xml:XML;
+		for (i = 4; i < 12; i++) {
+			if (p.equipment_[i] != -1) {
+				xml = ObjectLibrary.xmlLibrary_[p.equipment_[i]];
+				if (!xml.hasOwnProperty("Soulbound")) {
+					select[i] = true;
+					slots_[i].setIncluded(!slots_[i].included_);
+				}
+			}
+		}
+		gs_.gsc_.changeTrade(select);
     }
 
     public function getOffer():Vector.<Boolean> {
@@ -144,13 +170,6 @@ public class TradeInventory extends Sprite {
         }
         this.taglineText_.setStringBuilder(new LineBuilder().setParams(_local_2));
     }
-
-    private function onSlotClick(_arg_1:MouseEvent):void {
-        var _local_2:TradeSlot = (_arg_1.currentTarget as TradeSlot);
-        _local_2.setIncluded(!(_local_2.included_));
-        dispatchEvent(new Event(Event.CHANGE));
-    }
-
 
 }
 }//package com.company.assembleegameclient.ui

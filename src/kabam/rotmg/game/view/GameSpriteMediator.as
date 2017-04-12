@@ -2,6 +2,7 @@
 import com.company.assembleegameclient.game.GameSprite;
 import com.company.assembleegameclient.game.events.ReconnectEvent;
 import com.company.assembleegameclient.objects.Player;
+import kabam.rotmg.messaging.impl.GameServerConnectionConcrete;
 
 import flash.utils.getTimer;
 
@@ -144,6 +145,11 @@ public class GameSpriteMediator extends Mediator {
         var _local_2:GameInitData = new GameInitData();
         _local_2.server = _arg_1.server_;
         _local_2.gameId = _arg_1.gameId_;
+		//trace("GSMED CALLED");
+		/*if (GameServerConnectionConcrete.vaultcon) {
+			GameServerConnectionConcrete.vaultcon = false;
+			_local_2.gameId = -5;
+		}*/
         _local_2.createCharacter = _arg_1.createCharacter_;
         _local_2.charId = _arg_1.charId_;
         _local_2.keyTime = _arg_1.keyTime_;

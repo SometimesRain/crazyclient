@@ -14,7 +14,7 @@ public class Parameters {
 
     public static const BUILD_VERSION:String = "27.7";
     public static const MINOR_VERSION:String = "X12.1";
-    public static const CRAZY_VERSION:String = "v7";
+    public static const CRAZY_VERSION:String = "v7.1";
     public static const ENABLE_ENCRYPTION:Boolean = true;
     public static const PORT:int = 2050;
     public static const ALLOW_SCREENSHOT_MODE:Boolean = false;
@@ -42,6 +42,7 @@ public class Parameters {
     public static const TUTORIAL_GAMEID:int = -1;
     public static const NEXUS_GAMEID:int = -2;
     public static const RANDOM_REALM_GAMEID:int = -3;
+    public static const VAULT_GAMEID:int = -5;
     public static const MAPTEST_GAMEID:int = -6;
     public static const DAILYQUESTROOM_GAMEID:int = -11;
     public static const MAX_SINK_LEVEL:Number = 18;
@@ -309,8 +310,8 @@ public class Parameters {
         setDefault("AAAddOne",false);
         setDefault("AABoundingDist",20);
         setDefault("showMobInfo",false);
-        setDefault("AAException",[3448,3449,3472,3334,5952,2354,2369,3368,3366,3367,3391,3389,3390,5920,2314,3412,3639,3634,2327,1755,24582,24351,24363,24135,24133,24134,24132,24136,3356,3357,3358,3359,3360,3361,3362,3363,3364,2352,28780,28781,28795,28942,28957,28988,28938,29291,29018,29517,24338,29580,29712,6282,0x717e,0x727c,0x727d,0x736e,0x736f,0x724a,0x724b,0x724c,0x724d,0x724e]);
-        setDefault("AAIgnore",[1550,1551,1552,1619,1715,2309,2310,2311,2371,3441,2312,2313,2370,2392,2393,2400,2401,3335,3336,3337,3338,3413,3418,3419,3420,3421,3427,3454,3638,3645,6157,28715,28716,28717,28718,28719,28730,28731,28732,28733,28734,29306,29568,29594,29597,29710,29711,29742,29743,29746,29748,30001]);
+        setDefault("AAException",[3414,3417,3448,3449,3472,3334,5952,2354,2369,3368,3366,3367,3391,3389,3390,5920,2314,3412,3639,3634,2327,1755,24582,24351,24363,24135,24133,24134,24132,24136,3356,3357,3358,3359,3360,3361,3362,3363,3364,2352,28780,28781,28795,28942,28957,28988,28938,29291,29018,29517,24338,29580,29712,6282,0x717e,0x727c,0x727d,0x736e,0x736f,0x724a,0x724b,0x724c,0x724d,0x724e]);
+        setDefault("AAIgnore",[1550,1551,1552,1619,1715,2309,2310,2311,2371,3441,2312,2313,2370,2392,2393,2400,2401,3335,3336,3337,3338,3413,3418,3419,3420,3421,3427,3454,3638,3645,6157,28715,28716,28717,28718,28719,28730,28731,28732,28733,28734,29306,29568,29594,29597,29710,29711,29742,29743,29746,29748,30001,29752]);
         setDefault("AAPriority", [0x717e,0x727c,0x727d,0x736e,0x736f,0x724a,0x724b,0x724c,0x724d,0x724e,6282,1646]);
 		setDefault("damageIgnored", false);
 		//
@@ -337,7 +338,9 @@ public class Parameters {
         setDefault("sizer",true);
         setDefaultKey("enterPortal",KeyCodes.UNSET);
         setDefault("perfectBomb",true);
-        setDefault("perfectQuiv",false);
+        setDefault("perfectQuiv",true);
+        setDefault("perfectStun",false);
+        setDefault("perfectLead",true);
         setDefault("spellVoid",false);
         setDefault("tombHack",true);
         setDefault("curBoss",3368); //3368 -> 3366 -> 3367
@@ -400,11 +403,12 @@ public class Parameters {
         setDefault("rclickTp",false);
         setDefault("autoTp",true);
         setDefault("autoSprite",true);
-        //setDefault("leaveSprite",false);
+        setDefault("leaveSprite",false);
+        setDefault("spriteId",0);
         setDefault("questClosest",true);
         setDefault("drinkPot",true);
         setDefault("deactPre",true);
-        //setDefault("ninjaTap",true);
+        setDefault("ninjaTap",true);
 		//
     }
 

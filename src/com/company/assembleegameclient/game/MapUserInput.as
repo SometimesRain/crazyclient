@@ -7,14 +7,13 @@ import com.company.assembleegameclient.objects.ObjectLibrary;
 import com.company.assembleegameclient.objects.Player;
 import com.company.assembleegameclient.objects.Portal;
 import com.company.assembleegameclient.parameters.Parameters;
-import com.company.assembleegameclient.tutorial.Tutorial;
-import com.company.assembleegameclient.tutorial.doneAction;
 import com.company.assembleegameclient.ui.options.Options;
 import com.company.assembleegameclient.util.TextureRedrawer;
 import com.company.util.KeyCodes;
 import flash.display.Sprite;
 import flash.display.StageScaleMode;
 import flash.geom.Point;
+import flash.geom.Vector3D;
 import flash.utils.Dictionary;
 import kabam.rotmg.chat.control.TextHandler;
 import kabam.rotmg.servers.api.Server;
@@ -259,7 +258,6 @@ public class MapUserInput {
         else {
             _local_3 = Math.atan2(this.gs_.map.mouseY, this.gs_.map.mouseX);
         }
-        doneAction(this.gs_, Tutorial.ATTACK_ACTION);
         if (_local_2.isUnstable()) {
             _local_2.attemptAttackAngle((Math.random() * 360));
         }
@@ -289,7 +287,6 @@ public class MapUserInput {
     private function onEnterFrame(_arg_1:Event):void {
         var _local_2:Player;
         var _local_3:Number;
-        doneAction(this.gs_, Tutorial.UPDATE_ACTION);
         if (enablePlayerInput_ && (mouseDown_ || autofire_) || Parameters.data_.AAOn) {
             _local_2 = this.gs_.map.player_;
             if (_local_2 != null) {
@@ -313,7 +310,7 @@ public class MapUserInput {
 				player.mapAutoAbil = false
 				player.notifyPlayer("Auto Ability: Disabled", 0x00FF00, 1500);
 			}
-			return false; //not time yet
+			return true; //not time yet
 		}
 		spaceSpam = getTimer() + 500;
 		switch(player.equipment_[1]) {
@@ -346,15 +343,13 @@ public class MapUserInput {
 		return false;
 	}
 	
-	private function handlePerfectQuiv(player:Player):Boolean {
-		if (!(player.objectType_ == 775 || player.objectType_ == 798)) {
-			return false;
-		}
+	private function handlePerfectAim(player:Player):void {
 		var po:Point = player.sToW(gs_.map.mouseX,gs_.map.mouseY);
 		var target:GameObject;
 		var obj:GameObject;
 		var distSq:int = int.MAX_VALUE;
 		var temp:int;
+		var projspd:Number = 0.015;
 		//find closest target to mouse with at least 1000 health
 		for each (obj in gs_.map.goDict_) {
 			if (obj.props_.isEnemy_ && obj.maxHP_ >= 1000 && !isIgnored(obj.objectType_)) {
@@ -368,16 +363,31 @@ public class MapUserInput {
 		if (target == null) {
 			player.notifyPlayer("No targets nearby!", 0x00FF00, 1500);
 		}
-		else {
+		else { //TODO see if enemy is too far
 			player.notifyPlayer(ObjectLibrary.typeToDisplayId_[target.objectType_], 0x00FF00, 1500);
-			gs_.gsc_.useItem(getTimer(), player.objectId_, 1, player.equipment_[1], target.x_, target.y_, UseType.START_USE);
-			player.doShoot(getTimer(), player.equipment_[1], ObjectLibrary.xmlLibrary_[player.equipment_[1]], (Parameters.data_.cameraAngle + Math.atan2(target.y_ - player.y_, target.x_ - player.x_)), false);
+			if (!Parameters.data_.perfectLead) {
+				aimAt(player, new Vector3D(target.x_, target.y_));
+			}
+			else {
+				if (player.objectType_ == 798 || player.equipment_[1] == 0x1413) {
+					projspd = 0.016;
+				}
+				if (player.equipment_[1] == 0x0d43) {
+					projspd = 0.014;
+				}
+				aimAt(player, player.leadPos(new Vector3D(player.x_,player.y_), new Vector3D(target.x_,target.y_), new Vector3D(target.moveVec_.x,target.moveVec_.y), projspd));
+			}
 		}
-		return true;
+	}
+	
+	private function aimAt(player:Player, t:Vector3D):void {
+		gs_.gsc_.useItem(getTimer(), player.objectId_, 1, player.equipment_[1], t.x, t.y, UseType.START_USE);
+		player.doShoot(getTimer(), player.equipment_[1], ObjectLibrary.xmlLibrary_[player.equipment_[1]], (Parameters.data_.cameraAngle + Math.atan2(t.y - player.y_, t.x - player.x_)), false);
 	}
 	
 	private function handlePerfectBomb(player:Player):Boolean {
-		if (Parameters.data_.perfectQuiv && handlePerfectQuiv(player)) {
+		if ((Parameters.data_.perfectQuiv && player.objectType_ == 775) || (Parameters.data_.perfectStun && player.objectType_ == 798)) {
+			handlePerfectAim(player);
 			return true;
 		}
 		if (player.objectType_ != 782) {
@@ -433,7 +443,7 @@ public class MapUserInput {
 		return true;
 	}
 	
-	public function abilityUsed(player:Player, abilXML:XML):void {
+	private function abilityUsed(player:Player, abilXML:XML):void {
 		specialKeyDown_ = true;
         if (player == null)
 			return;
@@ -450,7 +460,7 @@ public class MapUserInput {
 			handleCooldown(player, abilXML);
 			return;
 		}
-		if (ninjaTap(player)) { //Parameter.data_.ninjaTap
+		if (Parameters.data_.ninjaTap && ninjaTap(player)) { //Parameter.data_.ninjaTap
 			return;
 		}
 		if (maxprism && (player.objectType_ == 804 || player.equipment_[1] == 0xa5a)) { //trickster or plane
@@ -498,19 +508,15 @@ public class MapUserInput {
         }
         switch (_arg_1.keyCode) {
             case Parameters.data_.moveUp:
-                //doneAction(this.gs_, Tutorial.MOVE_FORWARD_ACTION);
                 this.moveUp_ = true;
                 break;
             case Parameters.data_.moveDown:
-                //doneAction(this.gs_, Tutorial.MOVE_BACKWARD_ACTION);
                 this.moveDown_ = true;
                 break;
             case Parameters.data_.moveLeft:
-                //doneAction(this.gs_, Tutorial.MOVE_LEFT_ACTION);
                 this.moveLeft_ = true;
                 break;
             case Parameters.data_.moveRight:
-                //doneAction(this.gs_, Tutorial.MOVE_RIGHT_ACTION);
                 this.moveRight_ = true;
                 break;
             case Parameters.data_.useSpecial:
@@ -601,12 +607,10 @@ public class MapUserInput {
                 break;
             case Parameters.data_.rotateLeft:
                 if (!Parameters.data_.allowRotation) break;
-                //doneAction(this.gs_, Tutorial.ROTATE_LEFT_ACTION);
                 this.rotateLeft_ = true;
                 break;
             case Parameters.data_.rotateRight:
                 if (!Parameters.data_.allowRotation) break;
-                //doneAction(this.gs_, Tutorial.ROTATE_RIGHT_ACTION);
                 this.rotateRight_ = true;
                 break;
             case Parameters.data_.resetToDefaultCameraAngle:
@@ -954,8 +958,6 @@ public class MapUserInput {
 			}
 		}
 		for (var i:int = 0; i < 10; i++) {
-			var a:int = 1 << i;
-			var b:int = effTotal & a;
 			if ((effTotal & 1 << i) != 0) {
 				switch (i) {
 					case 0:
@@ -1045,6 +1047,9 @@ public class MapUserInput {
                 break;
             case Parameters.data_.useSpecial:
 				this.specialKeyDown_ = false;
+				if (!Parameters.data_.ninjaTap) {
+					gs_.map.player_.useAltWeapon(gs_.map.mouseX, gs_.map.mouseY, UseType.END_USE)
+				}
                 break;
         }
         this.setPlayerMovement();

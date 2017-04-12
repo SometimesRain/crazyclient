@@ -867,7 +867,7 @@ public class Player extends Character {
 					case 0xa35:
 					case 0xae9:
 					case 0xaea:
-						suitSlot = 1;
+						suitSlot = i;
 						break;
 				}
 			}
@@ -879,23 +879,19 @@ public class Player extends Character {
 		}
 		for each(goCont in map_.goDict_) { //find nearest chest
 			if (goCont.objectType_ == VAULT_CHEST) {
-				//trace("chest found");
 				if (cont == null) {
 					cont = (goCont as Container);
 					dist = int((x_ -cont.x_) * (x_ -cont.x_) + (y_ -cont.y_) * (y_ -cont.y_));
-					//trace("chest set",cont.objectId_,"dist",dist);
 				}
 				else {
 					locDist = int((x_ -goCont.x_) * (x_ -goCont.x_) + (y_ -goCont.y_) * (y_ -goCont.y_));
 					if (locDist < dist) {
 						dist = locDist;
 						cont = (goCont as Container);
-						//trace("chest updated",cont.objectId_,"dist",dist);
 					}
 				}
 			}
 		}
-		//trace("nearest",dist);
 		if (cont == null) {
 			return;
 		}
@@ -904,13 +900,11 @@ public class Player extends Character {
 		}
 		for (i = 0; i < cont.equipment_.length; i++) {
 			if (cont.equipment_[i] == collect) { //take
-				//addTextLine.dispatch(ChatMessage.make("*Help*","Switch slot #"+suitSlot+" with vault slot #"+i));
 				map_.gs_.gsc_.invSwap(this, cont, i, cont.equipment_[i], this, suitSlot, equipment_[suitSlot]);
 				lastLootTime = getTimer();
 				return;
 			}
 			else if (cont.equipment_[i] == -1 && collect < 0) { //put
-				//addTextLine.dispatch(ChatMessage.make("*Help*","Switch slot #"+suitSlot+" with vault slot #"+i));
 				map_.gs_.gsc_.invSwap(this, this, suitSlot, equipment_[suitSlot], cont, i, cont.equipment_[i]);
 				lastLootTime = getTimer();
 				return;
@@ -979,15 +973,7 @@ public class Player extends Character {
 
     override public function update(_arg_1:int, _arg_2:int):Boolean {
 		if (this == map_.player_) {
-			/*if (lastMaxHPBoost == -1) {
-				lastMaxHPBoost = maxHPBoost_;
-			}*/
-			if (vitTime == -1) {
-				vitTime = getTimer();
-				//var hppms:Number = Number((1 + 0.12 * vitality_) / 1000);
-				//addTextLine.dispatch(ChatMessage.make("Vitality", vitality_ +" -> "+hppms));
-			}
-			else { //TODO drowning
+			if (vitTime != -1) {
 				if (isBleeding()) { //no vit and -20 hp/s
 					chp -= (getTimer() - vitTime) * 0.02;
 				}
@@ -1000,30 +986,21 @@ public class Player extends Character {
 				else { //vit
 					chp += (getTimer() - vitTime) * Number((1 + 0.12 * vitality_) / 1000);
 				}
-				if (breath_ == 0) { //other effects and -96 hp/s
-					chp -= (getTimer() - vitTime) * 0.096;
+				//drowning
+				if (breath_ == 0) { //other effects and -94 hp/s
+					chp -= (getTimer() - vitTime) * 0.094;
 				}
-				/*if (isHpBoosted() && !hpBoostApplied) {
-					hpBoostApplied = true;
-					chp += maxHPBoost_ - lastMaxHPBoost;
-					GameServerConnectionConcrete.recentHeal += maxHPBoost_ - lastMaxHPBoost;
-				}
-				else if (!isHpBoosted() && hpBoostApplied) {
-					hpBoostApplied = false;
-				}
-				else {
-					lastMaxHPBoost = maxHPBoost_;
-				}*/
+				//save from dot
 				if (chp / maxHP_ * 100 <= 15) {
 					addTextLine.dispatch(ChatMessage.make("", "You were saved at "+chp.toFixed(0)+" health"));
 					map_.gs_.gsc_.escape();
 				}
+				//stop overflow
 				if (chp > maxHP_) {
-					//addTextLine.dispatch(ChatMessage.make("", "Overflow prevented "+chp));
 					chp = maxHP_;
 				}
-				vitTime = getTimer();
 			}
+			vitTime = getTimer();
 			var qid:int = -1; 
 			if (map_.quest_.getObject(1) != null) { //questbar id prerequisite
 				var qob:GameObject = map_.quest_.getObject(1);
@@ -1032,9 +1009,9 @@ public class Player extends Character {
 					onGoto(qob.x_, qob.y_ + 2, map_.gs_.lastUpdate_);
 				}
 			}
-			if (objectType_ == 782 && map_.gs_.mui_.specialKeyDown_) { //wizard
+			/*if (objectType_ == 782 && map_.gs_.mui_.specialKeyDown_) { //wizard
 				map_.gs_.mui_.abilityUsed(this, ObjectLibrary.xmlLibrary_[equipment_[1]]);
-			}
+			}*/
 			if (qid != 3366 && qid != 3367 && qid != 3368) { //questbar mod set
 				questMob = qob;
 			}
@@ -1519,9 +1496,9 @@ public class Player extends Character {
             return false;
         }
         var thisAbilXML:XML = ObjectLibrary.xmlLibrary_[useItemId];
-        /*if (thisAbilXML == null || !thisAbilXML.hasOwnProperty("Usable")) {
-            return false;
-        }*/
+		if (int(thisAbilXML.MpCost) > mp_) { //this is here for auto ability
+			return false;
+		}
         var _local_6:Point = sToW(_arg_1, _arg_2); //allows using ability outside of the map
         if (_local_6 == null) {
             SoundEffectLibrary.play("error");
@@ -1589,8 +1566,7 @@ public class Player extends Character {
     }
     
 	//AIM BEGIN
-    public function autoAim_(param1:Vector3D, param2:Vector3D, param3:ProjectileProperties) : Vector3D
-    {
+    public function autoAim_(param1:Vector3D, param2:Vector3D, param3:ProjectileProperties) : Vector3D {
         var _loc4_:Vector3D;
         var _loc5_:GameObject;
         var _loc6_:Boolean = false;
@@ -1611,15 +1587,16 @@ public class Player extends Character {
         for each(_loc5_ in map_.goDict_) {
             if (_loc5_.props_.isEnemy_) {
                 _loc6_ = false;
-				if (!Parameters.data_.tombHack && _loc5_.props_.type_ >= 3366 && _loc5_.props_.type_ <= 3368) { //tomb hack off -> don't shoot shielded bosses
-					for each(_loc7_ in Parameters.data_.AAException) { //get exceptions
-						if (_loc7_ == _loc5_.props_.type_) {
-							_loc6_ = true;
-							break;
-						}
+				for each(_loc7_ in Parameters.data_.AAException) { //get exceptions
+					if (_loc7_ == _loc5_.props_.type_) {
+						_loc6_ = true;
+						break;
 					}
 				}
-                if (!(!_loc6_ && !(_loc5_ is Character))) {
+				if (!Parameters.data_.tombHack && _loc5_.props_.type_ >= 3366 && _loc5_.props_.type_ <= 3368) { //tomb hack off -> don't shoot shielded bosses
+					_loc6_ = false;
+				}
+                if (_loc6_ || _loc5_ is Character) {
                     if (!(!_loc6_ && (_loc5_.isStasis() || _loc5_.isInvulnerable() || _loc5_.isInvincible()))) {
                         _loc8_ = false;
                         for each(_loc7_ in Parameters.data_.AAIgnore) {
@@ -1713,38 +1690,32 @@ public class Player extends Character {
         return _loc4_;
     }
     
-    public function getDist(param1:Number, param2:Number, param3:Number, param4:Number) : Number
-    {
+    public function getDist(param1:Number, param2:Number, param3:Number, param4:Number):Number {
         var _loc5_:* = param1 - param3;
         var _loc6_:* = param2 - param4;
         return Math.sqrt(_loc6_ * _loc6_ + _loc5_ * _loc5_);
     }
     
-    public function leadPos(param1:Vector3D, param2:Vector3D, param3:Vector3D, param4:Number) : Vector3D
-    {
+    public function leadPos(param1:Vector3D, param2:Vector3D, param3:Vector3D, param4:Number):Vector3D {
         var _loc5_:Vector3D = param2.subtract(param1);
         var _loc6_:* = param3.dotProduct(param3) - param4 * param4;
         var _loc7_:* = 2 * _loc5_.dotProduct(param3);
         var _loc8_:* = _loc5_.dotProduct(_loc5_);
         var _loc9_:* = (-_loc7_ + Math.sqrt(_loc7_ * _loc7_ - 4 * _loc6_ * _loc8_)) / (2 * _loc6_);
         var _loc10_:* = (-_loc7_ - Math.sqrt(_loc7_ * _loc7_ - 4 * _loc6_ * _loc8_)) / (2 * _loc6_);
-        if(_loc9_ < _loc10_ && _loc9_ >= 0)
-        {
+        if (_loc9_ < _loc10_ && _loc9_ >= 0) {
             param3.scaleBy(_loc9_);
         }
-        else if(_loc10_ >= 0)
-        {
+        else if (_loc10_ >= 0) {
             param3.scaleBy(_loc10_);
         }
-        else
-        {
+        else {
             return null;
         }
         return param2.add(param3);
     }
     
-    public function getAimAngle() : Number
-    {
+    public function getAimAngle():Number {
         var _loc1_:Vector3D = null;
         var _loc2_:Vector3D = null;
         var _loc3_:Point = null;
