@@ -104,7 +104,6 @@ public class Player extends Character {
 	private var timerCount:int = 1;
 	private var startTime:int = 0;
 	private var endCount:int = 0;
-	private var timercback:Function;
 	public var remBuff:Vector.<int> = new <int>[];
 	
 	private var nextAutoAbil:int = 0;
@@ -286,20 +285,9 @@ public class Player extends Character {
         return (!(((_arg_1.isPaused()) || (_arg_1.isInvisible()))));
     }
 
-    public function msUtilTeleport():int {
-        //var _local_1:int = getTimer();
-        //return (Math.max(0, (this.nextTeleportAt_ - _local_1)));
-		return 0;
-    }
-
     public function teleportTo(_arg_1:Player):Boolean {
         if (isPaused()) {
             this.addTextLine.dispatch(this.makeErrorMessage(TextKey.PLAYER_NOTELEPORTWHILEPAUSED));
-            return (false);
-        }
-        var _local_2:int = this.msUtilTeleport();
-        if (_local_2 > 0) {
-            this.addTextLine.dispatch(this.makeErrorMessage(TextKey.PLAYER_TELEPORT_COOLDOWN, {"seconds": int(((_local_2 / 1000) + 1))}));
             return (false);
         }
         if (!this.isTeleportEligible(_arg_1)) {
@@ -312,7 +300,6 @@ public class Player extends Character {
             return (false);
         }
         map_.gs_.gsc_.teleport(_arg_1.name_);
-        this.nextTeleportAt_ = (getTimer() + MS_BETWEEN_TELEPORT);
         return (true);
     }
 
@@ -948,11 +935,10 @@ public class Player extends Character {
 		}
 	}
 	
-	public function startTimer(count:int, step:int = 500, cback:Function = null):void { //uses milliseconds
+	public function startTimer(count:int, step:int = 500):void { //uses milliseconds
 		timerCount = 0;
 		endCount = count;
 		timerStep = step;
-		timercback = cback;
 		startTime = getTimer();
 	}
 
@@ -1031,19 +1017,15 @@ public class Player extends Character {
 					onGoto(qob.x_, qob.y_ + 2, map_.gs_.lastUpdate_);
 				}
 			}
-			/*if (objectType_ == 782 && map_.gs_.mui_.specialKeyDown_) { //wizard
-				map_.gs_.mui_.abilityUsed(this, ObjectLibrary.xmlLibrary_[equipment_[1]]);
-			}*/
 			if (qid != 3366 && qid != 3367 && qid != 3368) { //questbar mod set
 				questMob = qob;
 			}
 			else {
 				questMob = null;
 			}
-			/*if (getOut) {
-				getOut = false;
-				map_.gs_.dispatchEvent(MapUserInput.reconRealm);
-			}*/
+			if (map_.gs_.gsc_.tptarget != "" && getTimer() >= nextTeleportAt_) {
+				map_.gs_.gsc_.retryTeleport();
+			}
 			if (remBuff.length > 0 && getTimer() >= remBuff[remBuff.length - 1]) { //how to deal with double delete?
 				var mhpboost:int = maxHPBoost_;
 				var itemhp:int = getItemHp();
@@ -1051,6 +1033,7 @@ public class Player extends Character {
 					//addTextLine.dispatch(ChatMessage.make("", remBuff.length+": no change"));
 					maxHP_ -= mhpboost - itemhp;
 					maxHPBoost_ = itemhp;
+					notifyPlayer("-"+(mhpboost - itemhp), 0xff0000, 1500);
 				}
 				//else addTextLine.dispatch(ChatMessage.make("", remBuff.length+": no change"));
 				remBuff.length--;
@@ -1109,9 +1092,6 @@ public class Player extends Character {
 				}
 				else {
 					notifyPlayer(time.toFixed(timerStep < 1000 ? 1 : 0), GameObject.green2red(100 - (cur / end) * 100));
-				}
-				if (timerCount == endCount && timercback != null) {
-					timercback();
 				}
 				timerCount++;
 			}

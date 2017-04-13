@@ -805,6 +805,10 @@ public class MapUserInput {
 				Parameters.save()
 				player.notifyPlayer("Active boss: "+ObjectLibrary.typeToDisplayId_[Parameters.data_.curBoss],0x00FF00,1500);
 				break;
+            case Parameters.data_.kautoSprite:
+				Parameters.data_.autoSprite = !Parameters.data_.autoSprite;
+				Parameters.save();
+                break;
             case Parameters.data_.kdbArmorBroken:
 				Parameters.data_.dbArmorBroken = !Parameters.data_.dbArmorBroken;
 				Parameters.save();

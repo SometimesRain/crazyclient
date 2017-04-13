@@ -50,28 +50,14 @@ public class TeleportMenuOption extends MenuOption {
     }
 
     private function onEnterFrame(_arg_1:Event):void {
-        var _local_3:Number;
-        var _local_2:int = this.player_.msUtilTeleport();
-        if (_local_2 > 0) {
-            if (!contains(this.barText_)) {
-                addChild(this.barText_);
-                addChild(this.barMask);
-                this.barText_.mask = this.barMask;
-            }
-            _local_3 = (this.barTextOrigWidth_ * (1 - (_local_2 / Player.MS_BETWEEN_TELEPORT)));
-            this.barMask.width = _local_3;
-            setColorTransform(inactiveCT);
+        if (contains(this.barText_)) {
+            removeChild(this.barText_);
+        }
+        if (this.mouseOver_) {
+            setColorTransform(mouseOverCT);
         }
         else {
-            if (contains(this.barText_)) {
-                removeChild(this.barText_);
-            }
-            if (this.mouseOver_) {
-                setColorTransform(mouseOverCT);
-            }
-            else {
-                setColorTransform(null);
-            }
+            setColorTransform(null);
         }
     }
 

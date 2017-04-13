@@ -550,10 +550,11 @@ public class Options extends Sprite {
 		addOptionAndPosition(new ChoiceOption("SWNoTileMove",makeOnOffLabels(),[true,false],"No Tile Movement","Disable tile movement in Sprite World.",null));
 		addOptionAndPosition(new ChoiceOption("SWTrees",makeOnOffLabels(),[true,false],"Disable Trees","Removes trees in Sprite World.",null));
 		addOptionAndPosition(new ChoiceOption("SWSpeed", makeOnOffLabels(), [true, false], "Speed Hack", "Move 60% faster.", null));
-		addOptionAndPosition(new ChoiceOption("autoSprite", makeOnOffLabels(), [true, false], "Auto Sprite", "Start at boss room and autofollow the boss. Not recommended to be used with lightspeed.", null));
+		addOptionAndPosition(new ChoiceOption("leaveSprite", makeOnOffLabels(), [true, false], "Panic Mode", "Automatically turns off all sprite hacks if someone else is in the same sprite world with you.", null));
 		addOptionAndPosition(new ChoiceOption("SWLight", makeOnOffLabels(), [true, false], "Lightspeed", "Move 400% faster. Lightspeed is automatically enabled when you enter a Sprite World.", null));
 		addOptionAndPosition(new KeyMapper("SWLightKey","Toggle Lightspeed","Toggles between lightspeed and boosted speed in Sprite World."));
-		addOptionAndPosition(new ChoiceOption("leaveSprite", makeOnOffLabels(), [true, false], "Panic Mode", "Automatically turns off all sprite hacks if someone else is in the same sprite world with you.", null));
+		addOptionAndPosition(new ChoiceOption("autoSprite", makeOnOffLabels(), [true, false], "Auto Sprite", "Start at boss room and autofollow the boss. Not recommended to be used with lightspeed.", null));
+		addOptionAndPosition(new KeyMapper("kautoSprite","Toggle Auto Sprite","Toggles auto sprite."));
 	}
     
     private function aimAssist():void {
@@ -568,10 +569,10 @@ public class Options extends Sprite {
         addOptionAndPosition(new NullOption());
         addOptionAndPosition(new NullOption());
         addOptionAndPosition(new ChoiceOption("perfectBomb",makeOnOffLabels(),[true,false],"Spell Bomb Aim","Targets the mob with highest max health in 15 tile radius from the player.",pbOptions));
-        addOptionAndPosition(new ChoiceOption("perfectQuiv", makeOnOffLabels(), [true, false], "Quiver Aim", "Targets the mob with highest max health in 15 tile radius from the player.", null));
+		addOptionAndPosition(new KeyMapper("pbToggle", "Toggle Ability Aim", "Toggles ability aim."));
         addOptionAndPosition(new ChoiceOption("perfectStun", makeOnOffLabels(), [true, false], "Shield Aim", "Targets the mob with highest max health in 3.2 tile radius from the player.", null));
         addOptionAndPosition(new ChoiceOption("perfectLead", makeOnOffLabels(), [true, false], "Ability Aim Target Lead", "Enables leading of ability aim targets.", null));
-		addOptionAndPosition(new KeyMapper("pbToggle", "Toggle Ability Aim", "Toggles ability aim."));
+        addOptionAndPosition(new ChoiceOption("perfectQuiv", makeOnOffLabels(), [true, false], "Quiver Aim", "Targets the mob with highest max health in 15 tile radius from the player.", null));
 		pbOptions();
     }
       

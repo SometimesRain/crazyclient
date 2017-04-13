@@ -59,7 +59,7 @@ public class TextHandler {
         var _local_5:String;
 		var lower:String;
         var _local_2:Boolean = _arg_1.numStars_ == -1; //|| _arg_1.objectId_ == -1
-        if (!Parameters.data_.chatAll && _arg_1.name_ != model.player.name_ && !_local_2) { //&& !isSpecialRecipientChat(_arg_1.recipient_)
+        if (!Parameters.data_.chatAll && _arg_1.name_ != model.player.name_ && !_local_2 && !isSpecialRecipientChat(_arg_1.recipient_)) {
             if (!(_arg_1.recipient_ == Parameters.GUILD_CHAT_NAME && Parameters.data_.chatGuild)) {
                 if (!(_arg_1.recipient_ != "" && Parameters.data_.chatWhisper)) {
                     return;
@@ -69,7 +69,7 @@ public class TextHandler {
         if (_arg_1.recipient_ != "" && Parameters.data_.chatFriend && !friendModel.isMyFriend(_arg_1.recipient_)) {
             return; //ignore messages from non-friends if the option is enabled
         }
-        if (_arg_1.numStars_ <= Parameters.data_.chatStarRequirement && _arg_1.name_ != model.player.name_ && !_local_2 && _arg_1.recipient_ == "") { //&& !isSpecialRecipientChat(_arg_1.recipient_)
+        if (_arg_1.numStars_ <= Parameters.data_.chatStarRequirement && _arg_1.name_ != model.player.name_ && !_local_2 && _arg_1.recipient_ == "" && !isSpecialRecipientChat(_arg_1.recipient_)) {
             return; //ignore messages from players under star filter
         }
 		if (hudModel.gameSprite.map.name_ == "Nexus" && _arg_1.name_.length > 0 && _arg_1.name_.charAt(0) == "#") {
@@ -83,7 +83,7 @@ public class TextHandler {
 			}
 		}
         if (_arg_1.recipient_) {
-            if (_arg_1.recipient_ != this.model.player.name_) { //&& !isSpecialRecipientChat(_arg_1.recipient_)
+            if (_arg_1.recipient_ != this.model.player.name_ && !isSpecialRecipientChat(_arg_1.recipient_)) {
 				if (_arg_1.recipient_ != "MrEyeball") {
 					tellModel.push(_arg_1.recipient_);
 					tellModel.resetRecipients();
@@ -156,8 +156,7 @@ public class TextHandler {
         if (_arg_1.objectId_ >= 0 && (_arg_1.numStars_ > Parameters.data_.chatStarRequirement || _arg_1.numStars_ == -1)) {
             this.showSpeechBaloon(_arg_1, _local_3);
         }
-        //if ((_local_2) || ((this.account.isRegistered()) && (!Parameters.data_.hidePlayerChat || isSpecialRecipientChat(_arg_1.name_)))) {
-        if (_local_2 || !Parameters.data_.hidePlayerChat) {
+        if ((_local_2) || ((this.account.isRegistered()) && (!Parameters.data_.hidePlayerChat || isSpecialRecipientChat(_arg_1.name_)))) {
             this.addTextAsTextLine(_arg_1);
         }
     }

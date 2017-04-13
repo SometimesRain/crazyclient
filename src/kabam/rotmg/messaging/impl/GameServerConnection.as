@@ -125,7 +125,8 @@ public class GameServerConnection {
     public var lastTickId_:int = -1;
     public var jitterWatcher_:JitterWatcher;
     public var serverConnection:SocketServer;
-    public var outstandingBuy_:OutstandingBuy = null;
+    public var outstandingBuy_:OutstandingBuy;
+	public var tptarget:String = "";
 
 
     public function chooseName(_arg_1:String):void {
@@ -194,6 +195,9 @@ public class GameServerConnection {
     }
 	
     public function teleportId(_arg_1:int):void {
+    }
+	
+    public function retryTeleport():void {
     }
 
     public function usePortal(_arg_1:int):void {

@@ -240,7 +240,6 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 	public static var portid:int = 0;
     private static var reconNexus:ReconnectEvent;
 	private var oncd:Boolean = false;
-	private var tptarget:String = "";
 	private var lasttptime:int = 0;
 	private var totPlayers:int = 0;
 	//private var pingtime:int = int.MAX_VALUE;
@@ -1067,14 +1066,6 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         serverConnection.sendMessage(_local_2);
 		//lasttptime = getTimer();
     }
-	
-	public function retryTeleport():void {
-		oncd = false;
-		if (tptarget != "" && Parameters.data_.autoTp) {
-			teleport(tptarget);
-			tptarget = "";
-		}
-	}
 
     override public function usePortal(_arg_1:int):void {
         var _local_2:UsePortal = (this.messages.require(USEPORTAL) as UsePortal);
@@ -1923,11 +1914,20 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 			}
 		}
     }
+	
+	override public function retryTeleport():void {
+		oncd = false;
+		if (tptarget != "" && Parameters.data_.autoTp) {
+			teleport(tptarget);
+			tptarget = "";
+		}
+	}
 
     private function onGoto(_arg_1:Goto):void {
 		if (lasttptime + 200 > getTimer() && Parameters.data_.autoTp) { //trickster fix
 			oncd = true;
-			player.startTimer(20, 500, retryTeleport);
+			player.startTimer(20, 500);
+			player.nextTeleportAt_ = getTimer() + 10000;
 			lasttptime = 0;
 		}
         this.gotoAck(gs_.lastUpdate_);
