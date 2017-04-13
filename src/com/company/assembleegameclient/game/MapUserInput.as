@@ -809,6 +809,11 @@ public class MapUserInput {
 				Parameters.data_.autoSprite = !Parameters.data_.autoSprite;
 				Parameters.save();
                 break;
+            case Parameters.data_.kdbPetrify:
+				Parameters.data_.dbPetrify = !Parameters.data_.dbPetrify;
+				Parameters.save();
+				player.notifyPlayer(Parameters.data_.dbPetrify ? "Petrify: On" : "Petrify: Off", Parameters.data_.dbPetrify ? 0xff0000 : 0x00ff00, 1500);
+                break;
             case Parameters.data_.kdbArmorBroken:
 				Parameters.data_.dbArmorBroken = !Parameters.data_.dbArmorBroken;
 				Parameters.save();
@@ -961,7 +966,7 @@ public class MapUserInput {
 					break;
 			}
 		}
-		for (var i:int = 0; i < 10; i++) {
+		for (var i:int = 0; i < 11; i++) {
 			if ((effTotal & 1 << i) != 0) {
 				switch (i) {
 					case 0:
@@ -993,6 +998,9 @@ public class MapUserInput {
 						break;
 					case 9:
 						Parameters.data_.dbPetStasis = state;
+						break;
+					case 10:
+						Parameters.data_.dbPetrify = state;
 						break;
 				}
 			}

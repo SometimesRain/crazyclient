@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<GroundTypes>
+   <Ground type="0x6fb9" id="Urushi Landmark A">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x57</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0x6fb8" id="Japanese Landmark A">
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x356</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xab30" id="Jyari dark with Edge">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x2b</Index>
+      </Texture>
+      <Edge>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x7a</Index>
+         </Texture>
+      </Edge>
+      <InnerCorner>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x7b</Index>
+         </Texture>
+      </InnerCorner>
+      <Corner>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x7b</Index>
+         </Texture>
+      </Corner>
+      <RandomOffset/>
+      <BlendPriority>9</BlendPriority>
+   </Ground>
+   <Ground type="0xab2f" id="Jyari light with Edge">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <Edge>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x7a</Index>
+         </Texture>
+      </Edge>
+      <InnerCorner>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x7b</Index>
+         </Texture>
+      </InnerCorner>
+      <Corner>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x7b</Index>
+         </Texture>
+      </Corner>
+      <RandomOffset/>
+      <BlendPriority>10</BlendPriority>
+   </Ground>
+   <Ground type="0xab17" id="Japanese Pond 2 Dark">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x5a</Index>
+      </Texture>
+      <BlendPriority>3</BlendPriority>
+      <Sink/>
+   </Ground>
+   <Ground type="0xab16" id="Japanese Pond 2">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x59</Index>
+      </Texture>
+      <BlendPriority>5</BlendPriority>
+      <Sink/>
+   </Ground>
+   <Ground type="0xab15" id="Japanese Rock Blue">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x58</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xab14" id="Japanese Urushi Floor Dark">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x57</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xab0c" id="Japanese Pond Dark">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x48</Index>
+      </Texture>
+      <BlendPriority>3</BlendPriority>
+      <Sink/>
+   </Ground>
+   <Ground type="0xab0b" id="Japanese Pond">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x47</Index>
+      </Texture>
+      <BlendPriority>5</BlendPriority>
+      <Sink/>
+   </Ground>
+   <Ground type="0xab0a" id="Japanese Pebbles Black">
+      <SameTypeEdgeMode/>
+      <RandomOffset/>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x44</Index>
+      </Texture>
+      <Edge>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x45</Index>
+         </Texture>
+      </Edge>
+      <InnerCorner>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x46</Index>
+         </Texture>
+      </InnerCorner>
+      <Corner>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x46</Index>
+         </Texture>
+      </Corner>
+   </Ground>
+   <Ground type="0xab09" id="Japanese Pebbles Black No Edge">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x44</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xab08" id="Japanese Urushi Floor">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x43</Index>
+      </Texture>
+      <BlendPriority>3</BlendPriority>
+   </Ground>
+   <Ground type="0xab07" id="Japanese Urushi Floor Light">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x42</Index>
+      </Texture>
+      <BlendPriority>5</BlendPriority>
+   </Ground>
+   <Ground type="0xab06" id="Japanese Rock Dark">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x41</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xab05" id="Japanese Rock">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x40</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xaac8" id="Zen Sand Beige Corner BL dirty">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x08</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xaac9" id="Zen Sand Beige Corner BL clean">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x09</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xaaca" id="Zen Sand Beige Corner BR clean">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x0a</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xaacb" id="Zen Sand Beige Corner TR clean">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x0b</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xaacc" id="Zen Sand Beige Corner BR dirty">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x0c</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xaacd" id="Zen Sand Beige Horizontal Top dark">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x0d</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xaace" id="Zen Sand Beige Horizontal Bot dark">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x0e</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xaacf" id="Zen Sand Beige no line">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x0f</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xaad0" id="Zen Sand Beige Corner TL clean">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x10</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xaad1" id="Zen Sand Beige Corner TL dirty">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x11</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xaad2" id="Zen Sand Beige Corner TR dirty">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x12</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xaad3" id="Zen Sand Beige vertical left dark">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x13</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xaad4" id="Zen Sand Beige vertical right dark">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x14</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xaad5" id="Zen Sand Beige horizontal top dark V2">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x17</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xaad6" id="Zen Sand Beige TL circle">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x18</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xaad7" id="Zen Sand Beige TM circle">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x19</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xaad8" id="Zen Sand Beige TR circle">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x1a</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xaadf" id="Zen Sand Beige ML circle">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x1b</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xaad9" id="Zen Sand Beige inner circle">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x1c</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xaada" id="Zen Sand Beige MR circle">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x1d</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xaadb" id="Zen Sand Beige BL circle">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x1e</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xaadc" id="Zen Sand Beige BM circle">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x1f</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xaadd" id="Zen Sand Beige BR circle">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x20</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xaae2" id="Engawa V TdL">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x2f</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xaae3" id="Engawa V BdL">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x30</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xaae4" id="Engawa TL">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x31</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xaae5" id="Engawa TR">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x32</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xaae6" id="Engawa LdL">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x33</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xaae7" id="Engawa RdL">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x34</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xaae8" id="Jyari dark">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x2b</Index>
+      </Texture>
+      <RandomOffset/>
+      <BlendPriority>9</BlendPriority>
+   </Ground>
+   <Ground type="0xaae9" id="Jyari light">
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <RandomOffset/>
+      <BlendPriority>10</BlendPriority>
+   </Ground>
+</GroundTypes>

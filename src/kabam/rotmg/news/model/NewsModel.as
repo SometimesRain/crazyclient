@@ -1,127 +1,167 @@
-﻿package kabam.rotmg.news.model {
-import com.company.assembleegameclient.parameters.Parameters;
-
-import kabam.rotmg.account.core.Account;
-import kabam.rotmg.news.controller.NewsButtonRefreshSignal;
-import kabam.rotmg.news.controller.NewsDataUpdatedSignal;
-import kabam.rotmg.news.view.NewsModalPage;
-
-public class NewsModel {
-
-    private static const COUNT:int = 3;
-    public static const MODAL_PAGE_COUNT:int = 4;
-
-    [Inject]
-    public var update:NewsDataUpdatedSignal;
-    [Inject]
-    public var updateNoParams:NewsButtonRefreshSignal;
-    [Inject]
-    public var account:Account;
-    public var news:Vector.<NewsCellVO>;
-    public var modalPages:Vector.<NewsModalPage>;
-    public var modalPageData:Vector.<NewsCellVO>;
-
-
-    public function initNews():void {
-        this.news = new Vector.<NewsCellVO>(COUNT, true);
-        var _local_1:int;
-        while (_local_1 < COUNT) {
-            this.news[_local_1] = new DefaultNewsCellVO(_local_1);
-            _local_1++;
-        }
-    }
-
-    public function updateNews(_arg_1:Vector.<NewsCellVO>):void {
-        var _local_3:NewsCellVO;
-        var _local_4:int;
-        var _local_5:int;
-        this.initNews();
-        var _local_2:Vector.<NewsCellVO> = new Vector.<NewsCellVO>();
-        this.modalPageData = new Vector.<NewsCellVO>(4, true);
-        for each (_local_3 in _arg_1) {
-            if (_local_3.slot <= 3) {
-                _local_2.push(_local_3);
+package kabam.rotmg.news.model
+{
+   import kabam.rotmg.news.controller.NewsDataUpdatedSignal;
+   import kabam.rotmg.news.controller.NewsButtonRefreshSignal;
+   import kabam.rotmg.account.core.Account;
+   import kabam.rotmg.news.view.NewsModalPage;
+   import com.company.assembleegameclient.parameters.Parameters;
+   
+   public class NewsModel
+   {
+      
+      private static const COUNT:int = 3;
+      
+      public static const MODAL_PAGE_COUNT:int = 4;
+       
+      
+      [Inject]
+      public var update:NewsDataUpdatedSignal;
+      
+      [Inject]
+      public var updateNoParams:NewsButtonRefreshSignal;
+      
+      [Inject]
+      public var account:Account;
+      
+      public var news:Vector.<kabam.rotmg.news.model.NewsCellVO>;
+      
+      public var modalPages:Vector.<NewsModalPage>;
+      
+      public var modalPageData:Vector.<kabam.rotmg.news.model.NewsCellVO>;
+      
+      private var inGameNews:Vector.<kabam.rotmg.news.model.InGameNews>;
+      
+      public function NewsModel()
+      {
+         this.inGameNews = new Vector.<kabam.rotmg.news.model.InGameNews>();
+         super();
+      }
+      
+      public function addInGameNews(param1:kabam.rotmg.news.model.InGameNews) : void
+      {
+         if(this.isValidForPlatform(param1))
+         {
+            this.inGameNews.push(param1);
+         }
+         this.sortNews();
+      }
+      
+      private function sortNews() : *
+      {
+         this.inGameNews.sort(function(param1:InGameNews, param2:InGameNews):*
+         {
+            if(param1.weight > param2.weight)
+            {
+               return -1;
             }
-            else {
-                _local_4 = (_local_3.slot - 4);
-                _local_5 = (_local_4 + 1);
-                this.modalPageData[_local_4] = _local_3;
-                if (Parameters.data_[("newsTimestamp" + _local_5)] != _local_3.endDate) {
-                    Parameters.data_[("newsTimestamp" + _local_5)] = _local_3.endDate;
-                    Parameters.data_[("hasNewsUpdate" + _local_5)] = true;
-                }
+            if(param1.weight == param2.weight)
+            {
+               return 0;
             }
-        }
-        this.sortByPriority(_local_2);
-        this.update.dispatch(this.news);
-        this.updateNoParams.dispatch();
-    }
-
-    public function hasValidNews():Boolean {
-        return (((((!((this.news[0] == null))) && (!((this.news[1] == null))))) && (!((this.news[2] == null)))));
-    }
-
-    public function hasValidModalNews():Boolean {
-        var _local_1:int;
-        while (_local_1 < MODAL_PAGE_COUNT) {
-            if (this.modalPageData[_local_1] == null) {
-                return (false);
+            return 1;
+         });
+      }
+      
+      public function markAsRead() : void
+      {
+         var _loc1_:kabam.rotmg.news.model.InGameNews = this.getFirstNews();
+         if(_loc1_ != null)
+         {
+            Parameters.data_["lastNewsKey"] = _loc1_.newsKey;
+            Parameters.save();
+         }
+      }
+      
+      public function hasUpdates() : Boolean
+      {
+         var _loc1_:kabam.rotmg.news.model.InGameNews = this.getFirstNews();
+         if(_loc1_ == null || Parameters.data_["lastNewsKey"] == _loc1_.newsKey)
+         {
+            return false;
+         }
+         return true;
+      }
+      
+      public function getFirstNews() : kabam.rotmg.news.model.InGameNews
+      {
+         if(this.inGameNews && this.inGameNews.length > 0)
+         {
+            return this.inGameNews[0];
+         }
+         return null;
+      }
+      
+      public function initNews() : void
+      {
+         this.news = new Vector.<kabam.rotmg.news.model.NewsCellVO>(COUNT,true);
+         var _loc1_:int = 0;
+         while(_loc1_ < COUNT)
+         {
+            this.news[_loc1_] = new DefaultNewsCellVO(_loc1_);
+            _loc1_++;
+         }
+      }
+      
+      public function updateNews(param1:Vector.<kabam.rotmg.news.model.NewsCellVO>) : void
+      {
+         var _loc3_:kabam.rotmg.news.model.NewsCellVO = null;
+         var _loc4_:int = 0;
+         var _loc5_:int = 0;
+         this.initNews();
+         var _loc2_:Vector.<kabam.rotmg.news.model.NewsCellVO> = new Vector.<kabam.rotmg.news.model.NewsCellVO>();
+         this.modalPageData = new Vector.<kabam.rotmg.news.model.NewsCellVO>(4,true);
+         for each(_loc3_ in param1)
+         {
+            if(_loc3_.slot <= 3)
+            {
+               _loc2_.push(_loc3_);
             }
-            _local_1++;
-        }
-        return (true);
-    }
-
-    private function sortByPriority(_arg_1:Vector.<NewsCellVO>):void {
-        var _local_2:NewsCellVO;
-        for each (_local_2 in _arg_1) {
-            if (((this.isNewsTimely(_local_2)) && (this.isValidForPlatform(_local_2)))) {
-                this.prioritize(_local_2);
+            else
+            {
+               _loc4_ = _loc3_.slot - 4;
+               _loc5_ = _loc4_ + 1;
+               this.modalPageData[_loc4_] = _loc3_;
+               if(Parameters.data_["newsTimestamp" + _loc5_] != _loc3_.endDate)
+               {
+                  Parameters.data_["newsTimestamp" + _loc5_] = _loc3_.endDate;
+                  Parameters.data_["hasNewsUpdate" + _loc5_] = true;
+               }
             }
-        }
-    }
-
-    private function prioritize(_arg_1:NewsCellVO):void {
-        var _local_2:uint = (_arg_1.slot - 1);
-        if (this.news[_local_2]) {
-            _arg_1 = this.comparePriority(this.news[_local_2], _arg_1);
-        }
-        this.news[_local_2] = _arg_1;
-    }
-
-    private function comparePriority(_arg_1:NewsCellVO, _arg_2:NewsCellVO):NewsCellVO {
-        return ((((_arg_1.priority) < _arg_2.priority) ? _arg_1 : _arg_2));
-    }
-
-    private function isNewsTimely(_arg_1:NewsCellVO):Boolean {
-        var _local_2:Number = new Date().getTime();
-        return ((((_arg_1.startDate < _local_2)) && ((_local_2 < _arg_1.endDate))));
-    }
-
-    public function buildModalPages():void {
-        if (!this.hasValidModalNews()) {
-            return;
-        }
-        this.modalPages = new Vector.<NewsModalPage>(MODAL_PAGE_COUNT, true);
-        var _local_1:int;
-        while (_local_1 < MODAL_PAGE_COUNT) {
-            this.modalPages[_local_1] = new NewsModalPage((this.modalPageData[_local_1] as NewsCellVO).headline, (this.modalPageData[_local_1] as NewsCellVO).linkDetail);
-            _local_1++;
-        }
-    }
-
-    public function getModalPage(_arg_1:int):NewsModalPage {
-        if (((((((!((this.modalPages == null))) && ((_arg_1 > 0)))) && ((_arg_1 <= this.modalPages.length)))) && (!((this.modalPages[(_arg_1 - 1)] == null))))) {
-            return (this.modalPages[(_arg_1 - 1)]);
-        }
-        return (new NewsModalPage("No new information", "Please check back later."));
-    }
-
-    private function isValidForPlatform(_arg_1:NewsCellVO):Boolean {
-        var _local_2:String = this.account.gameNetwork();
-        return (!((_arg_1.networks.indexOf(_local_2) == -1)));
-    }
-
-
+         }
+         this.update.dispatch(this.news);
+         this.updateNoParams.dispatch();
+      }
+      
+      public function hasValidNews() : Boolean
+      {
+         return this.news[0] != null && this.news[1] != null && this.news[2] != null;
+      }
+      
+      public function hasValidModalNews() : Boolean
+      {
+         return this.inGameNews.length > 0;
+      }
+      
+      public function get numberOfNews() : int
+      {
+         return this.inGameNews.length;
+      }
+      
+      public function getModalPage(param1:int) : NewsModalPage
+      {
+         var _loc2_:kabam.rotmg.news.model.InGameNews = null;
+         if(this.hasValidModalNews())
+         {
+            _loc2_ = this.inGameNews[param1 - 1];
+            return new NewsModalPage(_loc2_.title,_loc2_.text);
+         }
+         return new NewsModalPage("No new information","Please check back later.");
+      }
+      
+      private function isValidForPlatform(param1:kabam.rotmg.news.model.InGameNews) : Boolean
+      {
+         var _loc2_:String = this.account.gameNetwork();
+         return param1.platform.indexOf(_loc2_) != -1;
+      }
+   }
 }
-}//package kabam.rotmg.news.model

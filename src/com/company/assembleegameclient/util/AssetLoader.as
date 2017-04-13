@@ -88,8 +88,12 @@ public class AssetLoader {
         AssetLibrary.addImageSet("d2LofiObjBigEmbed", new EmbeddedAssets.d2LofiObjBigEmbed_().bitmapData, 16, 16);
         AssetLibrary.addImageSet("d1lofiObjBig", new EmbeddedAssets.d1LofiObjBigEmbed_().bitmapData, 16, 16);
         AssetLibrary.addImageSet("cursorsEmbed", new EmbeddedAssets.cursorsEmbed_().bitmapData, 32, 32);
-        AssetLibrary.addImageSet("stPatricksObjects8x8",new EmbeddedAssets.stPatricksObjects8x8Embed_().bitmapData,8,8);
-        AssetLibrary.addImageSet("stPatricksObjects16x16",new EmbeddedAssets.stPatricksObjects16x16Embed_().bitmapData,16,16);
+		AssetLibrary.addImageSet("mountainTempleObjects8x8",new EmbeddedAssets.mountainTempleObjects8x8Embed_().bitmapData,8,8);
+		AssetLibrary.addImageSet("mountainTempleObjects16x16",new EmbeddedAssets.mountainTempleObjects16x16Embed_().bitmapData,16,16);
+		AssetLibrary.addImageSet("stPatricksObjects8x8",new EmbeddedAssets.stPatricksObjects8x8Embed_().bitmapData,8,8);
+		AssetLibrary.addImageSet("stPatricksObjects16x16",new EmbeddedAssets.stPatricksObjects16x16Embed_().bitmapData,16,16);
+		AssetLibrary.addImageSet("buffedBunnyObjects8x8",new EmbeddedAssets.buffedBunnyObjects8x8Embed_().bitmapData,8,8);
+		AssetLibrary.addImageSet("buffedBunnyObjects16x16",new EmbeddedAssets.buffedBunnyObjects16x16Embed_().bitmapData,16,16);
         AssetLibrary.addImageSet("SakuraEnvironment16x16",new EmbeddedAssets.SakuraEnvironment16x16Embed_().bitmapData,16,16);
         AssetLibrary.addImageSet("SakuraEnvironment8x8",new EmbeddedAssets.SakuraEnvironment8x8Embed_().bitmapData,8,8);
         AssetLibrary.addImageSet("HanamiParts",new EmbeddedAssets.HanamiParts8x8Embed_().bitmapData,8,8);
@@ -128,6 +132,9 @@ public class AssetLoader {
         AnimatedChars.add("d1chars16x16r", new EmbeddedAssets.d1Chars16x16rEmbed_().bitmapData, null, 16, 16, 112, 16, AnimatedChar.RIGHT);
         AnimatedChars.add("stPatricksChars8x8",new EmbeddedAssets.stPatricksChars8x8Embed_().bitmapData,null,8,8,56,8,AnimatedChar.RIGHT);
         AnimatedChars.add("stPatricksChars16x16",new EmbeddedAssets.stPatricksChars16x16Embed_().bitmapData,null,16,16,112,16,AnimatedChar.RIGHT);
+		AnimatedChars.add("buffedBunnyChars16x16",new EmbeddedAssets.buffedBunnyChars16x16Embed_().bitmapData,null,16,16,112,16,AnimatedChar.RIGHT);
+		AnimatedChars.add("mountainTempleChars8x8",new EmbeddedAssets.mountainTempleChars8x8Embed_().bitmapData,null,8,8,56,8,AnimatedChar.RIGHT);
+		AnimatedChars.add("mountainTempleChars16x16",new EmbeddedAssets.mountainTempleChars16x16Embed_().bitmapData,null,16,16,112,16,AnimatedChar.RIGHT);
         AnimatedChars.add("Hanami8x8chars",new EmbeddedAssets.Hanami8x8charsEmbed_().bitmapData,null,8,8,64,8,AnimatedChar.RIGHT);
     }
 

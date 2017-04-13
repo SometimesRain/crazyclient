@@ -239,7 +239,6 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 	public static var totalfamegain:int = 0;
 	public static var portid:int = 0;
     private static var reconNexus:ReconnectEvent;
-	private var oncd:Boolean = false;
 	private var lasttptime:int = 0;
 	private var totPlayers:int = 0;
 	//private var pingtime:int = int.MAX_VALUE;

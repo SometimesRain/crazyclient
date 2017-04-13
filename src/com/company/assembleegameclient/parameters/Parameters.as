@@ -13,8 +13,8 @@ import flash.utils.Dictionary;
 public class Parameters {
 
     public static const BUILD_VERSION:String = "27.7";
-    public static const MINOR_VERSION:String = "X12.1";
-    public static const CRAZY_VERSION:String = "v7.2b3";
+    public static const MINOR_VERSION:String = "X13";
+    public static const CRAZY_VERSION:String = "v7.2";
     public static const ENABLE_ENCRYPTION:Boolean = true;
     public static const PORT:int = 2050;
     public static const ALLOW_SCREENSHOT_MODE:Boolean = false;
@@ -259,6 +259,7 @@ public class Parameters {
         setDefault("dbQuietCastle", true);
         setDefault("dbUnstableAbil", false);
         setDefault("dbPetStasis", false);
+        setDefault("dbPetrify",false);
 		//
         setDefault("SWNoSlow",true);
         setDefault("SWNoTileMove",true);
@@ -394,6 +395,7 @@ public class Parameters {
         setDefaultKey("kdbWeak", KeyCodes.UNSET);
         setDefaultKey("kdbQuiet",KeyCodes.UNSET);
         setDefaultKey("kdbPetStasis",KeyCodes.UNSET);
+        setDefaultKey("kdbPetrify",KeyCodes.UNSET);
         setDefaultKey("kdbPre1",KeyCodes.UNSET);
         setDefaultKey("kdbPre2",KeyCodes.UNSET);
         setDefaultKey("kdbPre3", KeyCodes.UNSET);

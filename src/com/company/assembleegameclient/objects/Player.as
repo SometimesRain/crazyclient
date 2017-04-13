@@ -1023,7 +1023,7 @@ public class Player extends Character {
 			else {
 				questMob = null;
 			}
-			if (map_.gs_.gsc_.tptarget != "" && getTimer() >= nextTeleportAt_) {
+			if (map_.gs_.gsc_.oncd && getTimer() >= nextTeleportAt_) { //teleport timer
 				map_.gs_.gsc_.retryTeleport();
 			}
 			if (remBuff.length > 0 && getTimer() >= remBuff[remBuff.length - 1]) { //how to deal with double delete?
@@ -1033,7 +1033,7 @@ public class Player extends Character {
 					//addTextLine.dispatch(ChatMessage.make("", remBuff.length+": no change"));
 					maxHP_ -= mhpboost - itemhp;
 					maxHPBoost_ = itemhp;
-					notifyPlayer("-"+(mhpboost - itemhp), 0xff0000, 1500);
+					//notifyPlayer("-"+(mhpboost - itemhp), 0xff0000, 1500);
 				}
 				//else addTextLine.dispatch(ChatMessage.make("", remBuff.length+": no change"));
 				remBuff.length--;

@@ -115,6 +115,7 @@ import kabam.rotmg.ui.view.UnFocusAble;
 import kabam.rotmg.ui.view.components.PotionSlotMediator;
 import kabam.rotmg.ui.view.components.PotionSlotView;
 import kabam.rotmg.dailyLogin.tasks.FetchPlayerCalendarTask;
+import kabam.rotmg.news.services.GetInGameNewsTask;
 
 import org.swiftsuspenders.Injector;
 
@@ -197,6 +198,7 @@ public class UIConfig implements IConfig {
         this.startup.addTask(LoadAccountTask);
         this.startup.addTask(GetCharListTask);
 		this.startup.addTask(FetchPlayerCalendarTask);
+		this.startup.addTask(GetInGameNewsTask);
         this.startup.addSignal(ShowTitleUISignal, StartupSequence.LAST);
     }
 

@@ -1062,6 +1062,7 @@
       </Projectile>
    </Object>
    <Object type="0x0d50" id="Lord of the Lost Lands">
+      <DisplayId>Lord of the Lost Lands</DisplayId>
       <Group>Knights of the Lost Lands</Group>
       <Enemy/>
       <Class>Character</Class>
@@ -1283,6 +1284,7 @@
    </Object>
    <Object type="0x0d56" id="Skull Shrine">
       <Class>Character</Class>
+      <DisplayId>Skull Shrine</DisplayId>
       <Texture>
          <File>lofiChar216x16</File>
          <Index>0x35</Index>
@@ -1310,6 +1312,7 @@
       <Group>Flaming Skulls</Group>
       <Class>Character</Class>
       <Enemy/>
+      <DisplayId>Red Flaming Skull</DisplayId>
       <Texture>
          <File>lofiChar8x8</File>
          <Index>0x65</Index>
@@ -1332,6 +1335,7 @@
       <Group>Flaming Skulls</Group>
       <Class>Character</Class>
       <Enemy/>
+      <DisplayId>Blue Flaming Skull</DisplayId>
       <Texture>
          <File>lofiChar8x8</File>
          <Index>0x66</Index>
@@ -2166,6 +2170,7 @@
    <Object type="0x0e4f" id="Water Mine">
       <Enemy/>
       <Class>Character</Class>
+      <DisplayId>Water Mine</DisplayId>
       <AnimatedTexture>
          <File>chars16x16rEncounters</File>
          <Index>38</Index>
@@ -2187,8 +2192,8 @@
    </Object>
    <Object type="0x0e4e" id="Water Mine Path">
       <Enemy/>
-      <DisplayId>Water Mine</DisplayId>
       <Class>Character</Class>
+      <DisplayId>Water Mine</DisplayId>
       <AnimatedTexture>
          <File>chars16x16rEncounters</File>
          <Index>38</Index>
@@ -2211,6 +2216,7 @@
    <Object type="0x0e3d" id="Beach Spectre">
       <Enemy/>
       <Class>Character</Class>
+      <DisplayId>Beach Spectre</DisplayId>
       <AnimatedTexture>
          <File>chars8x8rEncounters</File>
          <Index>35</Index>
@@ -2253,6 +2259,7 @@
          <File>invisible</File>
          <Index>0</Index>
       </Texture>
+      <DisplayId>Tempest Cloud</DisplayId>
       <AltTexture id="1">
          <Texture>
             <File>lofiObjBig</File>
@@ -2324,6 +2331,7 @@
    </Object>
    <Object type="0x0e39" id="Vengeful Spirit">
       <Class>Character</Class>
+      <DisplayId>Vengeful Spirit</DisplayId>
       <AnimatedTexture>
          <File>chars16x16rEncounters</File>
          <Index>39</Index>
@@ -2375,23 +2383,11 @@
    <Object type="0x0e37" id="Ghost Ship">
       <Enemy/>
       <Class>Character</Class>
+      <DisplayId>Ghost Ship</DisplayId>
       <AnimatedTexture>
          <File>chars16x16rEncounters</File>
          <Index>37</Index>
       </AnimatedTexture>
-      <HitSound>monster/stone_walls_death</HitSound>
-      <DeathSound>monster/flaming_skulls_death</DeathSound>
-      <Size>130</Size>
-      <ShadowSize>100</ShadowSize>
-      <MaxHitPoints>42000</MaxHitPoints>
-      <Defense>40</Defense>
-      <Flying/>
-      <Hero/>
-      <Level>20</Level>
-      <Quest/>
-      <God/>
-      <StasisImmune/>
-      <KeepDamageRecord/>
       <AltTexture id="1">
          <AnimatedTexture>
             <File>chars16x16rEncounters</File>
@@ -2405,6 +2401,19 @@
          </AnimatedTexture>
          <Effect particle="SwirlingMist" cooldown="0.2">XMLEffect</Effect>
       </AltTexture>
+      <HitSound>monster/stone_walls_death</HitSound>
+      <DeathSound>monster/flaming_skulls_death</DeathSound>
+      <Size>130</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>42000</MaxHitPoints>
+      <Defense>40</Defense>
+      <Flying/>
+      <Hero/>
+      <Level>20</Level>
+      <Quest/>
+      <God/>
+      <StasisImmune/>
+      <KeepDamageRecord/>
       <Projectile id="0">
          <ObjectId>Cannonball</ObjectId>
          <Damage>80</Damage>

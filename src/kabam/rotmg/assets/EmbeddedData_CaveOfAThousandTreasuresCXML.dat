@@ -15,6 +15,7 @@
       <MaxHitPoints>10000</MaxHitPoints>
       <Defense>10</Defense>
       <XpMult>0.7</XpMult>
+      <DisplayId>{cave.Treasure_Thief}</DisplayId>
    </Object>
    <Object type="0x1e18" id="Treasure Dropper">
       <Class>Character</Class>
@@ -25,6 +26,7 @@
       </Texture>
       <NoMiniMap/>
       <ShadowSize>0</ShadowSize>
+      <DisplayId>{cave.Treasure_Dropper}</DisplayId>
    </Object>
    <Object type="0x1e40" id="Treasure Pile">
       <Class>GameObject</Class>
@@ -75,6 +77,7 @@
       <EnemyOccupySquare/>
       <NoMiniMap/>
       <Static/>
+      <DisplayId>{cave.Treasure_Pile}</DisplayId>
    </Object>
    <Object type="0x1e41" id="Treasure Chests">
       <Class>GameObject</Class>
@@ -97,8 +100,10 @@
       <EnemyOccupySquare/>
       <NoMiniMap/>
       <Static/>
+      <DisplayId>{cave.Treasure_Chests}</DisplayId>
    </Object>
    <Object type="0x1e42" id="Treasure Enemy">
+      <DisplayId>{cave.Treasure_Enemy}</DisplayId>
       <Class>Character</Class>
       <Enemy/>
       <AnimatedTexture>
@@ -127,6 +132,7 @@
       </Projectile>
    </Object>
    <Object type="0x1e43" id="Log Trap Clockwise">
+      <DisplayId>{cave.Log_Trap_Clockwise}</DisplayId>
       <Class>Character</Class>
       <Enemy/>
       <Texture>
@@ -189,8 +195,10 @@
          <Damage>120</Damage>
          <LifetimeMS>1000</LifetimeMS>
       </Projectile>
+      <DisplayId>{cave.Treasure_Rat}</DisplayId>
    </Object>
    <Object type="0x5e1e" id="Treasure Flame Trap 1.2 Sec">
+      <DisplayId>{cave.Treasure_Flame_Trap_1.2_Sec}</DisplayId>
       <Class>GameObject</Class>
       <Enemy/>
       <DrawOnGround/>
@@ -238,6 +246,7 @@
       </Projectile>
    </Object>
    <Object type="0x5e3b" id="Treasure Flame Trap 1.7 Sec">
+      <DisplayId>{cave.Treasure_Flame_Trap_1.7_Sec}</DisplayId>
       <Class>GameObject</Class>
       <Enemy/>
       <DrawOnGround/>
@@ -304,6 +313,7 @@
          <LifetimeMS>100</LifetimeMS>
          <Size>100</Size>
       </Projectile>
+      <DisplayId>{cave.Treasure_Plunderer}</DisplayId>
    </Object>
    <Object type="0x5e2b" id="Treasure Robber">
       <Class>Character</Class>
@@ -367,6 +377,7 @@
          <LifetimeMS>1000</LifetimeMS>
          <Size>100</Size>
       </Projectile>
+      <DisplayId>{cave.Treasure_Robber}</DisplayId>
    </Object>
    <Object type="0x5e2c" id="Golden Oryx Effigy">
       <Class>Character</Class>
@@ -411,6 +422,7 @@
          <LifetimeMS>3000</LifetimeMS>
          <Size>150</Size>
       </Projectile>
+      <DisplayId>{cave.Golden_Oryx_Effigy}</DisplayId>
    </Object>
    <Object type="0x5e3a" id="Treasure Oryx Defender">
       <Class>Character</Class>
@@ -432,6 +444,7 @@
          <LifetimeMS>3000</LifetimeMS>
          <Size>125</Size>
       </Projectile>
+      <DisplayId>{cave.Treasure_Oryx_Defender}</DisplayId>
    </Object>
    <Object type="0x5e3c" id="Treasure Pot">
       <Class>Character</Class>
@@ -461,6 +474,7 @@
       <MaxHitPoints>500</MaxHitPoints>
       <Defense>10</Defense>
       <XpMult>0.0</XpMult>
+      <DisplayId>{cave.Treasure_Pot}</DisplayId>
    </Object>
    <Object type="0x5e3d" id="Boulder">
       <Class>Character</Class>
@@ -501,6 +515,7 @@
          <Size>75</Size>
          <MultiHit/>
       </Projectile>
+      <DisplayId>{cave.Boulder}</DisplayId>
    </Object>
    <Object type="0x5e3f" id="Boulder Spawner">
       <Class>Character</Class>
@@ -511,6 +526,7 @@
       <NoMiniMap/>
       <Size>0</Size>
       <StasisImmune/>
+      <DisplayId>{cave.Boulder_Spawner}</DisplayId>
    </Object>
    <Object type="0x5e4a" id="Gold Planet">
       <Class>Character</Class>
@@ -541,6 +557,7 @@
          <LifetimeMS>900</LifetimeMS>
          <Size>150</Size>
       </Projectile>
+      <DisplayId>{cave.Gold_Planet}</DisplayId>
    </Object>
    <Object type="0x5e4b" id="Realm Portal Opener">
       <Class>Character</Class>
@@ -551,6 +568,7 @@
       <NoMiniMap/>
       <Size>0</Size>
       <StasisImmune/>
+      <DisplayId>{cave.Realm_Portal_Opener}</DisplayId>
    </Object>
    <Object type="0x5e4e" id="Treasure Rocks">
       <Class>GameObject</Class>
@@ -581,5 +599,6 @@
       <EnemyOccupySquare/>
       <NoMiniMap/>
       <Static/>
+      <DisplayId>{cave.Treasure_Rocks}</DisplayId>
    </Object>
 </Objects>

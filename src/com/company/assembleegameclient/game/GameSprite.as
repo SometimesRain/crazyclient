@@ -18,6 +18,8 @@ import com.company.util.MoreObjectUtil;
 import com.company.util.PointUtil;
 import flash.display.StageScaleMode;
 import kabam.rotmg.core.view.Layers;
+import kabam.rotmg.game.view.NewsModalButton;
+import kabam.rotmg.news.model.NewsModel;
 import kabam.rotmg.ui.view.QuestHealthBar;
 
 import flash.display.DisplayObject;
@@ -63,6 +65,7 @@ public class GameSprite extends AGameSprite {
     public const drawCharacterWindow:Signal = new Signal(Player);
 
     public var chatBox_:Chat;
+    public var newsModalButton:NewsModalButton;
     public var rankText_:RankText;
     public var guildText_:GuildText;
     public var creditDisplay_:CreditDisplay;
@@ -243,7 +246,44 @@ public class GameSprite extends AGameSprite {
     private function showSafeAreaDisplays():void {
         this.showRankText();
         this.showGuildText();
+		this.showNewsUpdate();
     }
+	
+    private function showNewsUpdate(_arg_1:Boolean = true):void {
+        var _local_3:NewsModalButton;
+        var _local_2:NewsModel = StaticInjectorContext.getInjector().getInstance(NewsModel);
+        if (_local_2.hasValidModalNews()) {
+            _local_3 = new NewsModalButton();
+            _local_3.x = 6;
+            _local_3.y = 34; //92
+            if (_arg_1) {
+                this.displaysPosY = (this.displaysPosY + UIUtils.NOTIFICATION_SPACE);
+            }
+            if (this.newsModalButton != null) {
+                removeChild(this.newsModalButton);
+            }
+            this.newsModalButton = _local_3;
+            addChild(this.newsModalButton);
+        }
+    }
+	
+	/*private function showNewsUpdate(param1:Boolean = true):void {
+		var _loc4_:NewsModalButton = null;
+		var _loc3_:NewsModel = StaticInjectorContext.getInjector().getInstance(NewsModel);
+		if (_loc3_.hasValidModalNews()) {
+			_loc4_ = new NewsModalButton();
+			_loc4_.x = 6;
+			_loc4_.y = 92;
+			if (param1) {
+				this.displaysPosY = this.displaysPosY + UIUtils.NOTIFICATION_SPACE;
+			}
+			if (this.newsModalButton != null) {
+				removeChild(this.newsModalButton);
+			}
+			this.newsModalButton = _loc4_;
+			addChild(this.newsModalButton);
+		}
+	}*/
 
     private function showTimer():void {
         this.arenaTimer = new ArenaTimer();

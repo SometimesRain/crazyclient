@@ -1,0 +1,4023 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x6fc6" id="Temple Orange Trident">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x128</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6fc5" id="Temple Orange Wave">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x129</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6fc4" id="Temple Orange Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x12a</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6fc3" id="Temple Orange Missile">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x12b</Index>
+      </Texture>
+      <Rotation>100</Rotation>
+   </Object>
+   <Object type="0x6fc2" id="Temple Orange Spin">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x12c</Index>
+      </Texture>
+      <Rotation>75</Rotation>
+   </Object>
+   <Object type="0x6fc1" id="Temple Green Trident">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x12d</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6fc0" id="Temple Green Wave">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x12e</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6fbf" id="Temple Green Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x12f</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6fbe" id="Temple Green Missile">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x130</Index>
+      </Texture>
+      <Rotation>100</Rotation>
+   </Object>
+   <Object type="0x6fbd" id="Temple Green Spin">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x131</Index>
+      </Texture>
+      <Rotation>75</Rotation>
+   </Object>
+   <Object type="0x6ab" id="Staruu Missile">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x9e</Index>
+      </Texture>
+      <Rotation>80</Rotation>
+   </Object>
+   <Object type="0x137" id="Mountain Temple Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Mountain Temple</DisplayId>
+      <DungeonName>Mountain Temple</DungeonName>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xcc</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x6fe4" id="Daichi Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Daichi Fight</DisplayId>
+      <DungeonName>Daichi Fight</DungeonName>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xcc</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x6ffe" id="Elemental missiles">
+      <Class>Projectile</Class>
+      <RandomTexture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xa0</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xa1</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xa2</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xa3</Index>
+         </Texture>
+      </RandomTexture>
+      <Rotation>100</Rotation>
+   </Object>
+   <Object type="0x183b" id="Wand of the Fallen">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x9d</Index>
+      </Texture>
+      <SlotType>8</SlotType>
+      <Description>Made from a cherry tree branch. This wand was gifted by Xil to Daichi for bringing him into this world.</Description>
+      <RateOfFire>0.85</RateOfFire>
+      <Sound>weapon/wand_of_death</Sound>
+      <Projectile>
+         <ObjectId>Elemental missiles</ObjectId>
+         <Speed>125</Speed>
+         <MinDamage>120</MinDamage>
+         <MaxDamage>190</MaxDamage>
+         <LifetimeMS>550</LifetimeMS>
+         <Size>100</Size>
+         <ParticleTrail intensity="0.1" lifetimeMS="100">0xFABFE2</ParticleTrail>
+      </Projectile>
+      <BagType>6</BagType>
+      <NumProjectiles>1</NumProjectiles>
+      <FameBonus>5</FameBonus>
+      <OldSound>magicShoot</OldSound>
+      <feedPower>650</feedPower>
+      <Soulbound/>
+   </Object>
+   <Object type="0x183d" id="Kageboshi">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x9e</Index>
+      </Texture>
+      <SlotType>25</SlotType>
+      <Description>Imbued with energy from another place, the blade will pierce through any foe.</Description>
+      <Sound>spell/fire_spray</Sound>
+      <ExtraTooltipData>
+         <EffectInfo name="While Key Held" description=""/>
+         <EffectInfo name="" description="Speedy on self"/>
+         <EffectInfo name="" description="Drain 10 MP/sec"/>
+         <EffectInfo name="When Key Released" description=""/>
+      </ExtraTooltipData>
+      <Projectile>
+         <ObjectId>Staruu Missile</ObjectId>
+         <Speed>140</Speed>
+         <MinDamage>360</MinDamage>
+         <MaxDamage>440</MaxDamage>
+         <LifetimeMS>600</LifetimeMS>
+         <Size>100</Size>
+         <PassesCover/>
+         <MultiHit/>
+      </Projectile>
+      <ActivateOnEquip stat="21" amount="2">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip stat="26" amount="5">IncrementStat</ActivateOnEquip>
+      <Usable/>
+      <BagType>6</BagType>
+      <FameBonus>5</FameBonus>
+      <MpCost>0</MpCost>
+      <MpEndCost>80</MpEndCost>
+      <MultiPhase/>
+      <Activate>ShurikenAbility</Activate>
+      <feedPower>800</feedPower>
+      <Soulbound/>
+   </Object>
+   <Object type="0x12f" id="Mountain Temple Key">
+      <Class>Equipment</Class>
+      <Item/>
+      <DisplayId>Mountain Temple key</DisplayId>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xcb</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A key which opens an entrance to The Mountain Temple.</Description>
+      <Sound>use_key</Sound>
+      <Consumable/>
+      <Soulbound/>
+      <Activate id="Mountain Temple Portal">Create</Activate>
+      <Track/>
+   </Object>
+   <Object type="0x6fe5" id="Daichi Key">
+      <Class>Equipment</Class>
+      <Item/>
+      <DisplayId>Mountain Temple key</DisplayId>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xcb</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A key which opens an entrance to The Mountain Temple.</Description>
+      <Sound>use_key</Sound>
+      <Consumable/>
+      <Soulbound/>
+      <Activate id="Daichi Portal">Create</Activate>
+      <Track/>
+   </Object>
+   <Object type="0x1790" id="RW Bullet">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x03</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1791" id="RB Bullet">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x04</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1792" id="BR Bullet">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x05</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1793" id="WR Bullet">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x06</Index>
+      </Texture>
+   </Object>
+   <Object type="0x6ffd" id="Fire Elemental missiles">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xa8</Index>
+      </Texture>
+      <Rotation>100</Rotation>
+   </Object>
+   <Object type="0x6ffc" id="Earth Elemental missiles">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xa9</Index>
+      </Texture>
+      <Rotation>100</Rotation>
+   </Object>
+   <Object type="0x6ffa" id="Water Elemental missiles">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xaa</Index>
+      </Texture>
+      <Rotation>100</Rotation>
+   </Object>
+   <Object type="0x6ff9" id="Air Elemental missiles">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xab</Index>
+      </Texture>
+      <Rotation>100</Rotation>
+   </Object>
+   <Object type="0x6ff8" id="Fire Elemental Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6ff7" id="Earth Elemental Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xa5</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6ff6" id="Water Elemental Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xa6</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6ff5" id="Air Elemental Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xa7</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6ff4" id="Spear Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xb0</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6ff3" id="Spear Wave">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xb1</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6ff2" id="Bowman arrow">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xb2</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6ff1" id="Bowman Cursed">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xb3</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6fe2" id="Caster Cursed Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xb4</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6fe1" id="Monk Mini Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xb7</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6fe0" id="Monk Mini Flame">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xb8</Index>
+      </Texture>
+      <Rotation>200</Rotation>
+   </Object>
+   <Object type="0x6fdf" id="Branch Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xb9</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6fde" id="Cursed Leave">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xba</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6fdd" id="Cursed Slash">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xbd</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6fdc" id="Armor Snipe">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xbe</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6fdb" id="Armor Wave">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xbf</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6ff0" id="Small Pink Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xc0</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6fef" id="Medium Pink Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xc1</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6fee" id="Pink Wave">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xc2</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6fed" id="Large Pink Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xc3</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6fec" id="Pink Orb">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xc4</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6feb" id="Etheral Missile">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects16x16</File>
+         <Index>0x26</Index>
+      </Texture>
+   </Object>
+   <Object type="0x6fea" id="Big Pink Missile">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects16x16</File>
+         <Index>0x27</Index>
+      </Texture>
+      <Rotation>100</Rotation>
+   </Object>
+   <Object type="0x6fe9" id="Big Pink Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects16x16</File>
+         <Index>0x28</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6fe3" id="Gatling missile">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xca</Index>
+      </Texture>
+      <Rotation>100</Rotation>
+   </Object>
+   <Object type="0xab55" id="Lantern Flicker">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>160</Size>
+      <ShadowSize>100</ShadowSize>
+      <ShadowColor>0xF1E4FF</ShadowColor>
+   </Object>
+   <Object type="0xab54" id="Temple Lantern 2">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>mountainTempleObjects16x16</File>
+         <Index>0x39</Index>
+      </Texture>
+      <Size>120</Size>
+      <ShadowSize>100</ShadowSize>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0xab53" id="Temple Lantern 1">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>mountainTempleObjects16x16</File>
+         <Index>0x38</Index>
+      </Texture>
+      <Size>120</Size>
+      <ShadowSize>100</ShadowSize>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0xab52" id="Temple Jizo Statue">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>mountainTempleObjects16x16</File>
+         <Index>0x36</Index>
+      </Texture>
+      <Size>40</Size>
+      <ShadowSize>80</ShadowSize>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0xab51" id="Temple Stone Monument">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>mountainTempleObjects16x16</File>
+         <Index>0x37</Index>
+      </Texture>
+      <Size>40</Size>
+      <ShadowSize>80</ShadowSize>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0xab50" id="Temple Candle Stand NoFire">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>mountainTempleObjects16x16</File>
+         <Index>0x34</Index>
+      </Texture>
+      <Size>100</Size>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Static/>
+   </Object>
+   <Object type="0xab49" id="Temple Corrupted Candle Stand Static">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>mountainTempleObjects16x16</File>
+         <Index>0x30</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects16x16</File>
+               <Index>0x30</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects16x16</File>
+               <Index>0x31</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects16x16</File>
+               <Index>0x32</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects16x16</File>
+               <Index>0x33</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <ShadowColor>0xF1E4FF</ShadowColor>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Static/>
+   </Object>
+   <Object type="0xab48" id="Temple Candle Stand">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>mountainTempleObjects16x16</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects16x16</File>
+               <Index>0x2c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects16x16</File>
+               <Index>0x2d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects16x16</File>
+               <Index>0x2e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects16x16</File>
+               <Index>0x2f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <ShadowColor>0xFBDA9D</ShadowColor>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Static/>
+   </Object>
+   <Object type="0xab47" id="Temple Void Crack Wall 3">
+      <Class>Wall</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x124</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xdb</Index>
+         </Texture>
+      </Top>
+      <Animation sync="true" prob="1" period="3.2">
+         <Frame time="0.8">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x124</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x125</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x126</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x127</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x126</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x125</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0xab46" id="Temple Void Crack Wall 2">
+      <Class>Wall</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x120</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xdb</Index>
+         </Texture>
+      </Top>
+      <Animation sync="true" prob="1" period="3.2">
+         <Frame time="0.8">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x120</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x121</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x122</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x123</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x122</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x121</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0xab45" id="Temple Void Crack Wall 1">
+      <Class>Wall</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x11c</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xdb</Index>
+         </Texture>
+      </Top>
+      <Animation sync="true" prob="1" period="3.2">
+         <Frame time="0.8">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x11c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x11d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x11e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x11f</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x11e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x11d</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0xab44" id="Temple Void Crack 11">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x118</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period="3.2">
+         <Frame time="0.8">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x118</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x119</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x11a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x11b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x11a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x119</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+   </Object>
+   <Object type="0xab43" id="Temple Void Crack 10">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x114</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period="3.2">
+         <Frame time="0.8">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x114</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x115</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x116</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x117</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x116</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x115</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+   </Object>
+   <Object type="0xab42" id="Temple Void Crack 9">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x110</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period="3.2">
+         <Frame time="0.8">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x110</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x111</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x112</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x113</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x112</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x111</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+   </Object>
+   <Object type="0xab41" id="Temple Void Crack 8">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x10c</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period="3.2">
+         <Frame time="0.8">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x10c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x10d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x10e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x10f</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x10e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x10d</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+   </Object>
+   <Object type="0xab40" id="Temple Void Crack 7">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x108</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period="3.2">
+         <Frame time="0.8">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x108</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x109</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x10a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x10b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x10a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x109</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+   </Object>
+   <Object type="0xab3f" id="Temple Void Crack 6">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x104</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period="3.2">
+         <Frame time="0.8">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x104</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x105</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x106</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x107</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x106</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x105</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+   </Object>
+   <Object type="0xab3e" id="Temple Void Crack 5">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x100</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period="3.2">
+         <Frame time="0.8">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x100</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x101</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x102</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x103</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x102</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x101</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+   </Object>
+   <Object type="0xab3d" id="Temple Void Crack 4">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xfc</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period="3.2">
+         <Frame time="0.8">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0xfc</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0xfd</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0xfe</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0xff</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0xfe</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0xfd</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+   </Object>
+   <Object type="0xab3c" id="Temple Void Crack 3">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xf8</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period="3.2">
+         <Frame time="0.8">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0xf8</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0xf9</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0xfa</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0xfb</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0xfa</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0xf9</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+   </Object>
+   <Object type="0xab3b" id="Temple Void Crack 2">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xf4</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period="3.2">
+         <Frame time="0.8">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0xf4</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0xf5</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0xf6</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0xf7</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0xf6</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0xf5</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+   </Object>
+   <Object type="0xab3a" id="Temple Void Crack 1">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xf0</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period="3.2">
+         <Frame time="0.8">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0xf0</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0xf1</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0xf2</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0xf3</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0xf2</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0xf1</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+   </Object>
+   <Object type="0xab39" id="Japanese Temple Gate 6">
+      <Class>Wall</Class>
+      <Top>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x37</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xe5</Index>
+      </Texture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+      <Static/>
+   </Object>
+   <Object type="0xab38" id="Japanese Temple Gate 5">
+      <Class>Wall</Class>
+      <Top>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xdf</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xe4</Index>
+      </Texture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+      <Static/>
+   </Object>
+   <Object type="0xab37" id="Japanese Temple Gate 4">
+      <Class>Wall</Class>
+      <Top>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xde</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xe3</Index>
+      </Texture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+      <Static/>
+   </Object>
+   <Object type="0xab36" id="Japanese Temple Gate 3">
+      <Class>Wall</Class>
+      <Top>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xdd</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xe2</Index>
+      </Texture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+      <Static/>
+   </Object>
+   <Object type="0xab35" id="Japanese Temple Gate 2">
+      <Class>Wall</Class>
+      <Top>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xdc</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xe1</Index>
+      </Texture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+      <Static/>
+   </Object>
+   <Object type="0xab34" id="Japanese Temple Gate 1">
+      <Class>Wall</Class>
+      <Top>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x37</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+      <Static/>
+   </Object>
+   <Object type="0xab33" id="Tatami Holes">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xd7</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xd8</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xd9</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xda</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <DrawOnGround/>
+   </Object>
+   <Object type="0xab32" id="Japanese Wall Inside 1 Crack">
+      <Class>Wall</Class>
+      <Top>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xdb</Index>
+         </Texture>
+      </Top>
+      <RandomTexture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xd3</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xd4</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xd5</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xd6</Index>
+         </Texture>
+      </RandomTexture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+      <Static/>
+   </Object>
+   <Object type="0xab31" id="Urushi Holes">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xcf</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xd0</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xd1</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xd2</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <DrawOnGround/>
+   </Object>
+   <Object type="0xab2e" id="Temple Waterfall Ripple UpL">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x98</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x98</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x99</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x9a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x9b</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+   </Object>
+   <Object type="0xab2d" id="Temple Waterfall Ripple UpM">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x94</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x94</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x95</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x96</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x97</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+   </Object>
+   <Object type="0xab2c" id="Temple Waterfall Ripple UpR">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x90</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x90</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x91</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x92</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x93</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+   </Object>
+   <Object type="0xab2b" id="Temple Waterfall Ripple DownL">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x8c</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x8c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x8d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x8e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x8f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+   </Object>
+   <Object type="0xab2a" id="Temple Waterfall Ripple DownM">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x88</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x88</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x89</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x8a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x8b</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+   </Object>
+   <Object type="0xab29" id="Temple Waterfall Ripple DownR">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x84</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x84</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x85</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x86</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x87</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+   </Object>
+   <Object type="0xab28" id="Temple Rock Wall">
+      <Class>Wall</Class>
+      <Top>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xce</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x9c</Index>
+      </Texture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+      <Static/>
+   </Object>
+   <Object type="0xab27" id="Temple Rock Wall Double">
+      <Class>DoubleWall</Class>
+      <Top>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x9c</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xce</Index>
+      </Texture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+      <Static/>
+   </Object>
+   <Object type="0xab26" id="Temple Waterfall">
+      <Class>Wall</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x80</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xce</Index>
+         </Texture>
+      </Top>
+      <Animation sync="true" prob="1" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x80</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x81</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x82</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x83</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0xab25" id="Temple Waterfall Double">
+      <Class>DoubleWall</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x80</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xce</Index>
+         </Texture>
+      </Top>
+      <Animation sync="true" prob="1" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x80</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x81</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x82</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>mountainTempleObjects8x8</File>
+               <Index>0x83</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0xab24" id="Japanese Temple Grass">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x7c</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x7d</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x7e</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x7f</Index>
+         </Texture>
+      </RandomTexture>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>60</ShadowSize>
+      <MinSize>90</MinSize>
+      <MaxSize>110</MaxSize>
+      <SizeStep>5</SizeStep>
+      <Static/>
+   </Object>
+   <Object type="0xab23" id="Pond Grass">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x77</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x78</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x79</Index>
+         </Texture>
+      </RandomTexture>
+      <ShadowSize>0</ShadowSize>
+      <Size>80</Size>
+      <Static/>
+   </Object>
+   <Object type="0xab22" id="Japanese Wall Inside 1 Kakejiku">
+      <Class>Wall</Class>
+      <Top>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xdb</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x76</Index>
+      </Texture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+      <Static/>
+   </Object>
+   <Object type="0xab21" id="Japanese Mossy Gravestones">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x72</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x73</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x74</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x75</Index>
+         </Texture>
+      </RandomTexture>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>60</ShadowSize>
+      <MinSize>90</MinSize>
+      <MaxSize>110</MaxSize>
+      <SizeStep>5</SizeStep>
+      <Static/>
+   </Object>
+   <Object type="0xab20" id="Japanese Tree Fallen Leaves Red">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x6f</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x70</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x71</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <DrawOnGround/>
+   </Object>
+   <Object type="0xab1f" id="Japanese Tree Fallen Leaves Pink">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x6c</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x6d</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x6e</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <DrawOnGround/>
+   </Object>
+   <Object type="0xab1e" id="Japanese Tree Fallen Leaves">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x69</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x6a</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x6b</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <DrawOnGround/>
+   </Object>
+   <Object type="0xab1d" id="Japanese Tree Mini Red">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x66</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x67</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x68</Index>
+         </Texture>
+      </RandomTexture>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>60</ShadowSize>
+      <MinSize>90</MinSize>
+      <MaxSize>120</MaxSize>
+      <SizeStep>5</SizeStep>
+      <Static/>
+   </Object>
+   <Object type="0xab1c" id="Japanese Tree Mini Pink">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x63</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x64</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x65</Index>
+         </Texture>
+      </RandomTexture>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>60</ShadowSize>
+      <MinSize>90</MinSize>
+      <MaxSize>120</MaxSize>
+      <SizeStep>5</SizeStep>
+      <Static/>
+   </Object>
+   <Object type="0xab1b" id="Japanese Tree Mini">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x60</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x61</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x62</Index>
+         </Texture>
+      </RandomTexture>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>60</ShadowSize>
+      <MinSize>90</MinSize>
+      <MaxSize>120</MaxSize>
+      <SizeStep>5</SizeStep>
+      <Static/>
+   </Object>
+   <Object type="0xab1a" id="Japanese Trees Red">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>mountainTempleObjects16x16</File>
+            <Index>0x20</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects16x16</File>
+            <Index>0x21</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects16x16</File>
+            <Index>0x22</Index>
+         </Texture>
+      </RandomTexture>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>80</ShadowSize>
+      <MinSize>110</MinSize>
+      <MaxSize>140</MaxSize>
+      <SizeStep>5</SizeStep>
+      <Static/>
+   </Object>
+   <Object type="0xab19" id="Japanese Trees Pink">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>mountainTempleObjects16x16</File>
+            <Index>0x1d</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects16x16</File>
+            <Index>0x1e</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects16x16</File>
+            <Index>0x1f</Index>
+         </Texture>
+      </RandomTexture>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>80</ShadowSize>
+      <MinSize>110</MinSize>
+      <MaxSize>140</MaxSize>
+      <SizeStep>5</SizeStep>
+      <Static/>
+   </Object>
+   <Object type="0xab13" id="Armor Stand">
+      <Class>GameObject</Class>
+      <ShadowSize>80</ShadowSize>
+      <Size>80</Size>
+      <Static/>
+      <Texture>
+         <File>mountainTempleObjects16x16</File>
+         <Index>0x1c</Index>
+      </Texture>
+   </Object>
+   <Object type="0xab12" id="Pond Lotus Flower">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x5f</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+      <Size>60</Size>
+      <Static/>
+      <Flying/>
+   </Object>
+   <Object type="0xab11" id="Pond Lotus Leaf">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x5b</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x5c</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x5d</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x5e</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <DrawOnGround/>
+   </Object>
+   <Object type="0xab04" id="Pond Rocks">
+      <Class>GameObject</Class>
+      <ShadowSize>80</ShadowSize>
+      <MinSize>100</MinSize>
+      <MaxSize>120</MaxSize>
+      <SizeStep>5</SizeStep>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Static/>
+      <RandomTexture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x53</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x54</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x55</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x56</Index>
+         </Texture>
+      </RandomTexture>
+   </Object>
+   <Object type="0xab03" id="Pond Rocks Mossy">
+      <Class>GameObject</Class>
+      <ShadowSize>80</ShadowSize>
+      <MinSize>100</MinSize>
+      <MaxSize>120</MaxSize>
+      <SizeStep>5</SizeStep>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Static/>
+      <RandomTexture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x4f</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x50</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x51</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x52</Index>
+         </Texture>
+      </RandomTexture>
+   </Object>
+   <Object type="0xab02" id="Japanese Yellow Rock Path">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x4c</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x4d</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x4e</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+   </Object>
+   <Object type="0xab01" id="Zen Sand Rock Path">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x49</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x4a</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x4b</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+   </Object>
+   <Object type="0xab00" id="Bamboo Fence">
+      <Class>ConnectedWall</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x3f</Index>
+      </Texture>
+      <BaseIndent>0.4</BaseIndent>
+      <TopIndent>0.4</TopIndent>
+      <Height>0.75</Height>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Connects/>
+   </Object>
+   <Object type="0xaaff" id="Japanese Wall Inside 1">
+      <Class>Wall</Class>
+      <Top>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xdb</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x3e</Index>
+      </Texture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+      <Static/>
+   </Object>
+   <Object type="0xaafe" id="Japanese Wall Inside 1 Window">
+      <Class>Wall</Class>
+      <Top>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xdb</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x3d</Index>
+      </Texture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+      <Static/>
+   </Object>
+   <Object type="0xaafd" id="Japanese Window Light N">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x3c</Index>
+      </Texture>
+      <Static/>
+      <DrawOnGround/>
+   </Object>
+   <Object type="0xaafc" id="Japanese Window Light W">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x3b</Index>
+      </Texture>
+      <Static/>
+      <DrawOnGround/>
+   </Object>
+   <Object type="0xaafb" id="Japanese Window Light S">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x3a</Index>
+      </Texture>
+      <Static/>
+      <DrawOnGround/>
+   </Object>
+   <Object type="0xaafa" id="Japanese Window Light E">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x39</Index>
+      </Texture>
+      <Static/>
+      <DrawOnGround/>
+   </Object>
+   <Object type="0xaaf9" id="Japanese Wall Outside 2">
+      <Class>Wall</Class>
+      <Top>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x37</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x38</Index>
+      </Texture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+      <Static/>
+   </Object>
+   <Object type="0xaaf8" id="Japanese Wall Outside 1">
+      <Class>Wall</Class>
+      <Top>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x35</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0x36</Index>
+      </Texture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+      <Static/>
+   </Object>
+   <Object type="0xaaf1" id="Japanese Painting 1">
+      <Class>Wall</Class>
+      <Top>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xdb</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>mountainTempleObjects16x16</File>
+         <Index>0x10</Index>
+      </Texture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+      <Static/>
+   </Object>
+   <Object type="0xaaf2" id="Japanese Painting 2">
+      <Class>Wall</Class>
+      <Top>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xdb</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>mountainTempleObjects16x16</File>
+         <Index>0x11</Index>
+      </Texture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+      <Static/>
+   </Object>
+   <Object type="0xaaf3" id="Japanese Painting 3">
+      <Class>Wall</Class>
+      <Top>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xdb</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>mountainTempleObjects16x16</File>
+         <Index>0x12</Index>
+      </Texture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+      <Static/>
+   </Object>
+   <Object type="0xaaf4" id="Japanese Painting 4">
+      <Class>Wall</Class>
+      <Top>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xdb</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>mountainTempleObjects16x16</File>
+         <Index>0x13</Index>
+      </Texture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+      <Static/>
+   </Object>
+   <Object type="0xaaf5" id="Japanese Painting 5">
+      <Class>Wall</Class>
+      <Top>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xdb</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>mountainTempleObjects16x16</File>
+         <Index>0x14</Index>
+      </Texture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+      <Static/>
+   </Object>
+   <Object type="0xaaf6" id="Japanese Painting 6">
+      <Class>Wall</Class>
+      <Top>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xdb</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>mountainTempleObjects16x16</File>
+         <Index>0x15</Index>
+      </Texture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+      <Static/>
+   </Object>
+   <Object type="0xaaf7" id="Japanese Painting 7">
+      <Class>Wall</Class>
+      <Top>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0xdb</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>mountainTempleObjects16x16</File>
+         <Index>0x16</Index>
+      </Texture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+      <Static/>
+   </Object>
+   <Object type="0xaaf0" id="Waterfall Temple">
+      <Class>Wall</Class>
+      <Texture>
+         <File>lofiEnvironment3</File>
+         <Index>0xe2</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>lofiEnvironment3</File>
+            <Index>0xe3</Index>
+         </Texture>
+      </Top>
+      <Animation sync="true" prob="1" period="0.4">
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiEnvironment3</File>
+               <Index>0xe2</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiEnvironment3</File>
+               <Index>0xe3</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0xaade" id="Zen rock">
+      <Class>GameObject</Class>
+      <ShadowSize>0</ShadowSize>
+      <MinSize>100</MinSize>
+      <MaxSize>120</MaxSize>
+      <SizeStep>5</SizeStep>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Static/>
+      <RandomTexture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x21</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x22</Index>
+         </Texture>
+         <Texture>
+            <File>mountainTempleObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+      </RandomTexture>
+   </Object>
+   <Object type="0xaaea" id="Japanese Chest">
+      <Class>GameObject</Class>
+      <ShadowSize>0</ShadowSize>
+      <MinSize>100</MinSize>
+      <MaxSize>120</MaxSize>
+      <SizeStep>5</SizeStep>
+      <Static/>
+      <Texture>
+         <File>mountainTempleObjects16x16</File>
+         <Index>0x02</Index>
+      </Texture>
+   </Object>
+   <Object type="0xaaeb" id="Komainu">
+      <Class>GameObject</Class>
+      <ShadowSize>0</ShadowSize>
+      <MinSize>100</MinSize>
+      <MaxSize>120</MaxSize>
+      <SizeStep>5</SizeStep>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Texture>
+         <File>mountainTempleObjects16x16</File>
+         <Index>0x03</Index>
+      </Texture>
+   </Object>
+   <Object type="0xaaec" id="Komainu Agyo">
+      <Class>GameObject</Class>
+      <ShadowSize>0</ShadowSize>
+      <MinSize>100</MinSize>
+      <MaxSize>120</MaxSize>
+      <SizeStep>5</SizeStep>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Texture>
+         <File>mountainTempleObjects16x16</File>
+         <Index>0x04</Index>
+      </Texture>
+   </Object>
+   <Object type="0xaaed" id="Katana Stand">
+      <Class>GameObject</Class>
+      <ShadowSize>80</ShadowSize>
+      <Size>80</Size>
+      <Static/>
+      <Texture>
+         <File>mountainTempleObjects16x16</File>
+         <Index>0x05</Index>
+      </Texture>
+   </Object>
+   <Object type="0xaaee" id="Japanese Prayer Tree">
+      <Class>GameObject</Class>
+      <ShadowSize>0</ShadowSize>
+      <MinSize>100</MinSize>
+      <MaxSize>120</MaxSize>
+      <SizeStep>5</SizeStep>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Static/>
+      <Texture>
+         <File>mountainTempleObjects16x16</File>
+         <Index>0x06</Index>
+      </Texture>
+   </Object>
+   <Object type="0x6fe7" id="chasingHorror">
+      <DisplayId>Soulblast</DisplayId>
+      <Class>Character</Class>
+      <Group>Statue</Group>
+      <Enemy/>
+      <Texture>
+         <File>mountainTempleObjects16x16</File>
+         <Index>0x26</Index>
+      </Texture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>30</Defense>
+      <XpMult>0</XpMult>
+      <Level>20</Level>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Etheral Missile</ObjectId>
+         <Speed>100</Speed>
+         <Damage>90</Damage>
+         <LifetimeMS>4000</LifetimeMS>
+         <ArmorPiercing/>
+         <Size>200</Size>
+         <ConditionEffect duration="2">Unstable</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xaaa1" id="Daichi the Fallen">
+      <Enemy/>
+      <DisplayId>Daichi the Fallen</DisplayId>
+      <Class>Character</Class>
+      <Group>Daichi</Group>
+      <AnimatedTexture>
+         <File>mountainTempleChars16x16</File>
+         <Index>1</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <Texture>
+            <File>mountainTempleObjects16x16</File>
+            <Index>0x23</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>mountainTempleObjects16x16</File>
+            <Index>0x24</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>mountainTempleObjects16x16</File>
+            <Index>0x25</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <AnimatedTexture>
+            <File>mountainTempleChars16x16</File>
+            <Index>1</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <God/>
+      <Quest/>
+      <NoArticle/>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>200000</MaxHitPoints>
+      <Defense>50</Defense>
+      <XpMult>0</XpMult>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Pink Orb</ObjectId>
+         <Damage>75</Damage>
+         <Speed>30</Speed>
+         <Size>120</Size>
+         <LifetimeMS>6000</LifetimeMS>
+         <ConditionEffect duration="5" target="1">Stasis</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Gatling missile</ObjectId>
+         <Damage>100</Damage>
+         <Speed>50</Speed>
+         <Size>100</Size>
+         <LifetimeMS>8000</LifetimeMS>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Fire Elemental missiles</ObjectId>
+         <Damage>100</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>6000</LifetimeMS>
+         <ConditionEffect duration="2">Armor Broken</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Air Elemental missiles</ObjectId>
+         <Damage>100</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>6000</LifetimeMS>
+         <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Water Elemental missiles</ObjectId>
+         <Damage>100</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>6000</LifetimeMS>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>Earth Elemental missiles</ObjectId>
+         <Damage>100</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>6000</LifetimeMS>
+         <ConditionEffect duration="2">Bleeding</ConditionEffect>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>Medium Pink Bolt</ObjectId>
+         <Speed>30</Speed>
+         <Damage>100</Damage>
+         <Size>90</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration="3">Weak</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>Big Pink Bolt</ObjectId>
+         <Speed>100</Speed>
+         <Damage>280</Damage>
+         <Size>250</Size>
+         <LifetimeMS>1600</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="8">
+         <ObjectId>Pink Wave</ObjectId>
+         <Speed>150</Speed>
+         <Damage>10</Damage>
+         <Size>100</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration="10">Petrify</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xab18" id="Mini Corrupted Armor">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>mountainTempleChars8x8</File>
+         <Index>7</Index>
+      </AnimatedTexture>
+      <HitSound>monster/greater_demons_hit</HitSound>
+      <DeathSound>monster/greater_demons_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>1250</MaxHitPoints>
+      <Defense>12</Defense>
+      <Flying/>
+      <God/>
+      <Projectile id="0">
+         <ObjectId>Cursed Slash</ObjectId>
+         <Damage>75</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>100</Size>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xaae0" id="Corrupted Armor">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>mountainTempleChars16x16</File>
+         <Index>3</Index>
+      </AnimatedTexture>
+      <HitSound>monster/greater_demons_hit</HitSound>
+      <DeathSound>monster/greater_demons_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>12</Defense>
+      <Flying/>
+      <God/>
+      <Projectile id="0">
+         <ObjectId>Large Pink Bolt</ObjectId>
+         <Damage>75</Damage>
+         <Speed>140</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="4">Quiet</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Armor Wave</ObjectId>
+         <Damage>1</Damage>
+         <Speed>32</Speed>
+         <LifetimeMS>600</LifetimeMS>
+         <Size>80</Size>
+         <ConditionEffect duration="1.6">Quiet</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xaaa2" id="Corrupted Spearman">
+      <Enemy/>
+      <DisplayId>Corrupted Spearman</DisplayId>
+      <Class>Character</Class>
+      <Group>Daichi</Group>
+      <AnimatedTexture>
+         <File>mountainTempleChars8x8</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>50</ShadowSize>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>30</Defense>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Spear Bolt</ObjectId>
+         <Damage>80</Damage>
+         <Speed>120</Speed>
+         <LifetimeMS>400</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Spear Wave</ObjectId>
+         <Damage>1</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>250</LifetimeMS>
+         <Size>60</Size>
+         <ConditionEffect duration="1.2">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xaaa3" id="Corrupted Bowman">
+      <Enemy/>
+      <DisplayId>Corrupted Spearman</DisplayId>
+      <Class>Character</Class>
+      <Group>Daichi</Group>
+      <AnimatedTexture>
+         <File>mountainTempleChars8x8</File>
+         <Index>1</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>50</ShadowSize>
+      <MaxHitPoints>1750</MaxHitPoints>
+      <Defense>30</Defense>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Bowman arrow</ObjectId>
+         <Damage>80</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Bowman Cursed</ObjectId>
+         <Damage>145</Damage>
+         <Speed>125</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>140</Size>
+         <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xaaa4" id="Corrupted Caster">
+      <Enemy/>
+      <DisplayId>Caster Cursed Bolt</DisplayId>
+      <Class>Character</Class>
+      <Group>Daichi</Group>
+      <AnimatedTexture>
+         <File>mountainTempleChars8x8</File>
+         <Index>2</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>50</ShadowSize>
+      <MaxHitPoints>3750</MaxHitPoints>
+      <Defense>25</Defense>
+      <XpMult>0</XpMult>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Caster Cursed Bolt</ObjectId>
+         <Damage>120</Damage>
+         <Speed>100</Speed>
+         <LifetimeMS>2500</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Pink Wave</ObjectId>
+         <Damage>95</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="5">Confused</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xaae1" id="Corrupted Monk">
+      <Enemy/>
+      <DisplayId>Corrupted Monk</DisplayId>
+      <Class>Character</Class>
+      <Group>Daichi</Group>
+      <AnimatedTexture>
+         <File>mountainTempleChars8x8</File>
+         <Index>3</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>50</ShadowSize>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Defense>30</Defense>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Monk Mini Flame</ObjectId>
+         <Damage>75</Damage>
+         <Speed>120</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <Size>100</Size>
+         <Boomerang/>
+         <PassesCover/>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+         <ConditionEffect duration="2">Darkness</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xaaa9" id="Corrupted Spawn">
+      <Enemy/>
+      <DisplayId>Corrupted Spawn</DisplayId>
+      <Class>Character</Class>
+      <Group>Daichi</Group>
+      <AnimatedTexture>
+         <File>mountainTempleChars8x8</File>
+         <Index>5</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>50</ShadowSize>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Defense>35</Defense>
+      <StasisImmune/>
+      <Flying/>
+      <XpMult>0.0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Branch Bolt</ObjectId>
+         <Damage>60</Damage>
+         <Speed>85</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+         <ConditionEffect duration="5" target="1">Stasis</ConditionEffect>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0xaab0" id="Fire Elemental">
+      <Enemy/>
+      <DisplayId>Fire Elemental</DisplayId>
+      <Class>Character</Class>
+      <Group>DaichiElemental</Group>
+      <AnimatedTexture>
+         <File>mountainTempleChars16x16</File>
+         <Index>11</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>50</ShadowSize>
+      <MaxHitPoints>25000</MaxHitPoints>
+      <Defense>25</Defense>
+      <XpMult>0</XpMult>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Fire Elemental missiles</ObjectId>
+         <Damage>100</Damage>
+         <Speed>75</Speed>
+         <Size>100</Size>
+         <LifetimeMS>3000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xaab1" id="Fire Tornado">
+      <Enemy/>
+      <DisplayId>Fire Tornado</DisplayId>
+      <Class>Character</Class>
+      <Group>Daichi</Group>
+      <AnimatedTexture>
+         <File>mountainTempleChars16x16</File>
+         <Index>8</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>50</ShadowSize>
+      <MaxHitPoints>25000</MaxHitPoints>
+      <Defense>25</Defense>
+      <XpMult>0</XpMult>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Speed>50</Speed>
+         <Damage>20</Damage>
+         <LifetimeMS>100</LifetimeMS>
+         <Size>0</Size>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0xaab2" id="Air Elemental">
+      <Enemy/>
+      <DisplayId>Air Elemental</DisplayId>
+      <Class>Character</Class>
+      <Group>DaichiElemental</Group>
+      <AnimatedTexture>
+         <File>mountainTempleChars16x16</File>
+         <Index>10</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>50</ShadowSize>
+      <MaxHitPoints>25000</MaxHitPoints>
+      <Defense>25</Defense>
+      <XpMult>0</XpMult>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Air Elemental missiles</ObjectId>
+         <Damage>75</Damage>
+         <Speed>112</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xaab3" id="Thunder Strike">
+      <Enemy/>
+      <DisplayId>Thunder Strike</DisplayId>
+      <Class>Character</Class>
+      <Group>Daichi</Group>
+      <AnimatedTexture>
+         <File>mountainTempleChars16x16</File>
+         <Index>9</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>180</Size>
+      <ShadowSize>50</ShadowSize>
+      <MaxHitPoints>25000</MaxHitPoints>
+      <Defense>25</Defense>
+      <XpMult>0</XpMult>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Air Elemental Bolt</ObjectId>
+         <Damage>10</Damage>
+         <Speed>75</Speed>
+         <Size>120</Size>
+         <LifetimeMS>500</LifetimeMS>
+         <ConditionEffect duration=".5">Paralyzed</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Thunderbolt</ObjectId>
+         <Damage>10</Damage>
+         <Speed>50</Speed>
+         <Size>80</Size>
+         <LifetimeMS>1000</LifetimeMS>
+         <ConditionEffect duration="0.2">Paralyzed</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Invisible</ObjectId>
+         <Speed>50</Speed>
+         <Damage>0</Damage>
+         <LifetimeMS>100</LifetimeMS>
+         <Size>0</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xaab4" id="Water Elemental">
+      <Enemy/>
+      <DisplayId>Water Elemental</DisplayId>
+      <Class>Character</Class>
+      <Group>DaichiElemental</Group>
+      <AnimatedTexture>
+         <File>mountainTempleChars16x16</File>
+         <Index>13</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>50</ShadowSize>
+      <MaxHitPoints>25000</MaxHitPoints>
+      <Defense>25</Defense>
+      <XpMult>0</XpMult>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <SlowImmune/>
+      <Projectile id="0">
+         <ObjectId>Water Elemental missiles</ObjectId>
+         <Damage>5</Damage>
+         <Speed>50</Speed>
+         <Size>100</Size>
+         <LifetimeMS>500</LifetimeMS>
+         <ConditionEffect duration=".6">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xaab5" id="Earth Elemental">
+      <Enemy/>
+      <DisplayId>Earth Elemental</DisplayId>
+      <Class>Character</Class>
+      <Group>DaichiElemental</Group>
+      <AnimatedTexture>
+         <File>mountainTempleChars16x16</File>
+         <Index>12</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>50</ShadowSize>
+      <MaxHitPoints>25000</MaxHitPoints>
+      <Defense>25</Defense>
+      <XpMult>0</XpMult>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Earth Elemental missiles</ObjectId>
+         <Damage>67</Damage>
+         <Speed>30</Speed>
+         <Size>120</Size>
+         <LifetimeMS>3500</LifetimeMS>
+         <ConditionEffect duration="3.6">Bleeding</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xaab6" id="Fire Power">
+      <Enemy/>
+      <DisplayId>Fire Power</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x3a7</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x3a7</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x3c3</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x3c4</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x3c5</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <AltTexture id="1">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <Size>100</Size>
+      <ShadowSize>60</ShadowSize>
+      <Z>.4</Z>
+      <Flying/>
+      <MaxHitPoints>200000</MaxHitPoints>
+      <Defense>99</Defense>
+      <NoMiniMap/>
+      <Projectile id="1">
+         <ObjectId>Fire Elemental Bolt</ObjectId>
+         <Damage>100</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>6000</LifetimeMS>
+         <ConditionEffect duration="2">Armor Broken</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xaabc" id="Earth Power">
+      <Enemy/>
+      <DisplayId>Earth Power</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x3a8</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x3a8</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x3c6</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x3c7</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x3c8</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <AltTexture id="1">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <Size>100</Size>
+      <ShadowSize>60</ShadowSize>
+      <Z>.4</Z>
+      <Flying/>
+      <MaxHitPoints>200000</MaxHitPoints>
+      <Defense>99</Defense>
+      <NoMiniMap/>
+      <Projectile id="1">
+         <ObjectId>Earth Elemental Bolt</ObjectId>
+         <Damage>100</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>6000</LifetimeMS>
+         <ConditionEffect duration="2">Bleeding</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xaabd" id="Water Power">
+      <Enemy/>
+      <DisplayId>Water Power</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x3a6</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x3a6</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x3c0</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x3c1</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x3c2</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <AltTexture id="1">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <Size>100</Size>
+      <ShadowSize>60</ShadowSize>
+      <Z>.4</Z>
+      <Flying/>
+      <MaxHitPoints>200000</MaxHitPoints>
+      <Defense>99</Defense>
+      <NoMiniMap/>
+      <Projectile id="1">
+         <ObjectId>Water Elemental Bolt</ObjectId>
+         <Damage>100</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>6000</LifetimeMS>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xaabe" id="Air Power">
+      <Enemy/>
+      <DisplayId>Air Power</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x3a9</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x3a9</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x3c9</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x3ca</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x3cb</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <AltTexture id="1">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <Size>100</Size>
+      <ShadowSize>60</ShadowSize>
+      <Z>.4</Z>
+      <Flying/>
+      <MaxHitPoints>200000</MaxHitPoints>
+      <Defense>99</Defense>
+      <NoMiniMap/>
+      <Projectile id="1">
+         <ObjectId>Air Elemental Bolt</ObjectId>
+         <Damage>100</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>6000</LifetimeMS>
+         <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xaaaf" id="altar">
+      <DisplayId>altar</DisplayId>
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>100</Size>
+   </Object>
+   <Object type="0xaab7" id="Fire socket">
+      <DisplayId>Fire socket</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>100</Size>
+   </Object>
+   <Object type="0xaab8" id="Water socket">
+      <DisplayId>Water socket</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>100</Size>
+   </Object>
+   <Object type="0xaab9" id="Air socket">
+      <DisplayId>Air socket</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>100</Size>
+   </Object>
+   <Object type="0xaaba" id="Earth socket">
+      <DisplayId>Air socket</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>100</Size>
+   </Object>
+   <Object type="0xaac5" id="Water Pulse1">
+      <Enemy/>
+      <DisplayId>Water Pulse 1</DisplayId>
+      <Class>Character</Class>
+      <Group>Daichi</Group>
+      <AnimatedTexture>
+         <File>mountainTempleChars8x8</File>
+         <Index>6</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>50</ShadowSize>
+      <MaxHitPoints>25000</MaxHitPoints>
+      <Defense>25</Defense>
+      <XpMult>0</XpMult>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <SlowImmune/>
+      <Projectile id="0">
+         <ObjectId>Water Storm</ObjectId>
+         <Damage>5</Damage>
+         <Speed>50</Speed>
+         <Size>80</Size>
+         <LifetimeMS>400</LifetimeMS>
+         <ConditionEffect duration=".6">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xaac6" id="Water Pulse2">
+      <Enemy/>
+      <DisplayId>Water Pulse 2</DisplayId>
+      <Class>Character</Class>
+      <Group>Daichi</Group>
+      <AnimatedTexture>
+         <File>mountainTempleChars8x8</File>
+         <Index>6</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>50</ShadowSize>
+      <MaxHitPoints>25000</MaxHitPoints>
+      <Defense>25</Defense>
+      <XpMult>0</XpMult>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <SlowImmune/>
+      <Projectile id="0">
+         <ObjectId>Water Storm</ObjectId>
+         <Damage>5</Damage>
+         <Speed>50</Speed>
+         <Size>60</Size>
+         <LifetimeMS>300</LifetimeMS>
+         <ConditionEffect duration=".4">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xaac7" id="Water Pulse3">
+      <Enemy/>
+      <DisplayId>Water Pulse 3</DisplayId>
+      <Class>Character</Class>
+      <Group>Daichi</Group>
+      <AnimatedTexture>
+         <File>mountainTempleChars8x8</File>
+         <Index>6</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>50</ShadowSize>
+      <MaxHitPoints>25000</MaxHitPoints>
+      <Defense>25</Defense>
+      <XpMult>0</XpMult>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <SlowImmune/>
+      <Projectile id="0">
+         <ObjectId>Water Storm</ObjectId>
+         <Damage>5</Damage>
+         <Speed>50</Speed>
+         <Size>40</Size>
+         <LifetimeMS>200</LifetimeMS>
+         <ConditionEffect duration=".2">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x6fcc" id="Encounter Altar">
+      <Enemy/>
+      <DisplayId>Mysterious voice</DisplayId>
+      <Class>Character</Class>
+      <Group>DaichiElemental</Group>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>30000</MaxHitPoints>
+      <Defense>45</Defense>
+      <XpMult>0</XpMult>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <SlowImmune/>
+      <AltTexture id="1">
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x466</Index>
+         </Texture>
+      </AltTexture>
+   </Object>
+   <Object type="0x6fcb" id="Jade Statue">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>mountainTempleChars16x16</File>
+         <Index>14</Index>
+      </AnimatedTexture>
+      <HitSound>monster/greater_demons_hit</HitSound>
+      <DeathSound>monster/greater_demons_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>75000</MaxHitPoints>
+      <Defense>12</Defense>
+      <Flying/>
+      <Hero/>
+      <Quest/>
+      <God/>
+      <Level>20</Level>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Temple Green Bolt</ObjectId>
+         <Damage>125</Damage>
+         <Speed>95</Speed>
+         <Size>100</Size>
+         <LifetimeMS>3000</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Temple Green Wave</ObjectId>
+         <Damage>100</Damage>
+         <Speed>75</Speed>
+         <Size>100</Size>
+         <LifetimeMS>350</LifetimeMS>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Temple Green Missile</ObjectId>
+         <Damage>75</Damage>
+         <Speed>55</Speed>
+         <Size>100</Size>
+         <LifetimeMS>6000</LifetimeMS>
+         <ConditionEffect duration="5" target="1">Stasis</ConditionEffect>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Temple Green Trident</ObjectId>
+         <Damage>175</Damage>
+         <Speed>75</Speed>
+         <Size>120</Size>
+         <LifetimeMS>5000</LifetimeMS>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>Temple Green Spin</ObjectId>
+         <Damage>125</Damage>
+         <Speed>95</Speed>
+         <Size>100</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <ConditionEffect duration="3">Unstable</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x6fca" id="Garnet Statue">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>mountainTempleChars16x16</File>
+         <Index>15</Index>
+      </AnimatedTexture>
+      <HitSound>monster/greater_demons_hit</HitSound>
+      <DeathSound>monster/greater_demons_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>75000</MaxHitPoints>
+      <Defense>12</Defense>
+      <Flying/>
+      <Hero/>
+      <Quest/>
+      <God/>
+      <Level>20</Level>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Temple Orange Bolt</ObjectId>
+         <Damage>125</Damage>
+         <Speed>95</Speed>
+         <Size>100</Size>
+         <LifetimeMS>3000</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Temple Orange Wave</ObjectId>
+         <Damage>125</Damage>
+         <Speed>75</Speed>
+         <Size>100</Size>
+         <LifetimeMS>350</LifetimeMS>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Temple Orange Missile</ObjectId>
+         <Damage>75</Damage>
+         <Speed>55</Speed>
+         <Size>100</Size>
+         <LifetimeMS>6000</LifetimeMS>
+         <ConditionEffect duration="5" target="1">Stasis</ConditionEffect>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Temple Orange Trident</ObjectId>
+         <Damage>175</Damage>
+         <Speed>75</Speed>
+         <Size>120</Size>
+         <LifetimeMS>5000</LifetimeMS>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>Temple Orange Spin</ObjectId>
+         <Damage>125</Damage>
+         <Speed>95</Speed>
+         <Size>100</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <ConditionEffect duration="3">Weak</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x6fc9" id="A helper">
+      <Enemy/>
+      <NoMiniMap/>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <HitSound>monster/greater_demons_hit</HitSound>
+      <DeathSound>monster/greater_demons_death</DeathSound>
+      <Size>1</Size>
+      <MaxHitPoints>75000</MaxHitPoints>
+      <Defense>12</Defense>
+      <Flying/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+   </Object>
+   <Object type="0x6fc8" id="B helper">
+      <Enemy/>
+      <NoMiniMap/>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <HitSound>monster/greater_demons_hit</HitSound>
+      <DeathSound>monster/greater_demons_death</DeathSound>
+      <Size>1</Size>
+      <MaxHitPoints>75000</MaxHitPoints>
+      <Defense>12</Defense>
+      <Flying/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+   </Object>
+   <Object type="0x6fc7" id="Temple Encounter">
+      <Enemy/>
+      <NoMiniMap/>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <HitSound>monster/greater_demons_hit</HitSound>
+      <DeathSound>monster/greater_demons_death</DeathSound>
+      <Size>1</Size>
+      <MaxHitPoints>75000</MaxHitPoints>
+      <Defense>12</Defense>
+      <Flying/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <Encounter/>
+      <PerRealmMax>1</PerRealmMax>
+      <Hero/>
+   </Object>
+   <Object type="0x6fbc" id="Daichi Outro">
+      <Enemy/>
+      <DisplayId>Daichi's Soul</DisplayId>
+      <NoMiniMap/>
+      <Class>Character</Class>
+      <Texture>
+         <File>mountainTempleObjects16x16</File>
+         <Index>0x3d</Index>
+      </Texture>
+      <HitSound>monster/greater_demons_hit</HitSound>
+      <DeathSound>monster/greater_demons_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>75000</MaxHitPoints>
+      <Defense>12</Defense>
+      <Flying/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <AltTexture id="1">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+   </Object>
+   <Object type="0x6fbb" id="Xil Hand">
+      <Enemy/>
+      <NoMiniMap/>
+      <Class>Character</Class>
+      <Texture>
+         <File>mountainTempleObjects16x16</File>
+         <Index>0x43</Index>
+      </Texture>
+      <HitSound>monster/greater_demons_hit</HitSound>
+      <DeathSound>monster/greater_demons_death</DeathSound>
+      <Size>120</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>75000</MaxHitPoints>
+      <Defense>12</Defense>
+      <Flying/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <AltTexture id="19">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="1">
+         <Texture>
+            <File>mountainTempleObjects16x16</File>
+            <Index>0x53</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>mountainTempleObjects16x16</File>
+            <Index>0x52</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>mountainTempleObjects16x16</File>
+            <Index>0x51</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>mountainTempleObjects16x16</File>
+            <Index>0x50</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>mountainTempleObjects16x16</File>
+            <Index>0x42</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="6">
+         <Texture>
+            <File>mountainTempleObjects16x16</File>
+            <Index>0x43</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="7">
+         <Texture>
+            <File>mountainTempleObjects16x16</File>
+            <Index>0x47</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="8">
+         <Texture>
+            <File>mountainTempleObjects16x16</File>
+            <Index>0x46</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="9">
+         <Texture>
+            <File>mountainTempleObjects16x16</File>
+            <Index>0x45</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="10">
+         <Texture>
+            <File>mountainTempleObjects16x16</File>
+            <Index>0x44</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="11">
+         <Texture>
+            <File>mountainTempleObjects16x16</File>
+            <Index>0x48</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="12">
+         <Texture>
+            <File>mountainTempleObjects16x16</File>
+            <Index>0x49</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="13">
+         <Texture>
+            <File>mountainTempleObjects16x16</File>
+            <Index>0x4a</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="14">
+         <Texture>
+            <File>mountainTempleObjects16x16</File>
+            <Index>0x4b</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="15">
+         <Texture>
+            <File>mountainTempleObjects16x16</File>
+            <Index>0x4c</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="16">
+         <Texture>
+            <File>mountainTempleObjects16x16</File>
+            <Index>0x4d</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="17">
+         <Texture>
+            <File>mountainTempleObjects16x16</File>
+            <Index>0x4e</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="18">
+         <Texture>
+            <File>mountainTempleObjects16x16</File>
+            <Index>0x4f</Index>
+         </Texture>
+      </AltTexture>
+   </Object>
+   <Object type="0x6fba" id="Outro">
+      <Enemy/>
+      <NoMiniMap/>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>1</Size>
+      <MaxHitPoints>75000</MaxHitPoints>
+      <Defense>12</Defense>
+      <Flying/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+   </Object>
+   <Object type="0x6fb7" id="Corrupted Sprite">
+      <Enemy/>
+      <DisplayId>Corrupted Sprite</DisplayId>
+      <Class>Character</Class>
+      <Group>Daichi</Group>
+      <AnimatedTexture>
+         <File>mountainTempleChars8x8</File>
+         <Index>8</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>50</ShadowSize>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Defense>35</Defense>
+      <StasisImmune/>
+      <Flying/>
+      <XpMult>0.0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Branch Bolt</ObjectId>
+         <Damage>60</Damage>
+         <Speed>85</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+         <ConditionEffect duration="5" target="1">Stasis</ConditionEffect>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0x6fb6" id="Corrupted Spirit">
+      <Enemy/>
+      <DisplayId>Corrupted Spirit</DisplayId>
+      <Class>Character</Class>
+      <Group>Daichi</Group>
+      <AnimatedTexture>
+         <File>mountainTempleChars8x8</File>
+         <Index>9</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>50</ShadowSize>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Defense>35</Defense>
+      <StasisImmune/>
+      <Flying/>
+      <XpMult>0.0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Branch Bolt</ObjectId>
+         <Damage>60</Damage>
+         <Speed>85</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+         <ConditionEffect duration="5" target="1">Stasis</ConditionEffect>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+</Objects>

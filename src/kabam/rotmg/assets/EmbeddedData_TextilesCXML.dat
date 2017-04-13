@@ -3,6 +3,7 @@
 <Objects>
    <Object type="0x1200" id="Large Purple Pinstripe Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Purple_Pinstripe_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -23,6 +24,7 @@
    </Object>
    <Object type="0x1300" id="Small Purple Pinstripe Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Purple_Pinstripe_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -43,6 +45,7 @@
    </Object>
    <Object type="0x1201" id="Large Brown Lined Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Brown_Lined_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -63,6 +66,7 @@
    </Object>
    <Object type="0x1301" id="Small Brown Lined Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Brown_Lined_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -83,6 +87,7 @@
    </Object>
    <Object type="0x1202" id="Large Blue Striped Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Blue_Striped_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -103,6 +108,7 @@
    </Object>
    <Object type="0x1302" id="Small Blue Striped Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Blue_Striped_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -123,6 +129,7 @@
    </Object>
    <Object type="0x1203" id="Large Black Striped Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Black_Striped_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -143,6 +150,7 @@
    </Object>
    <Object type="0x1303" id="Small Black Striped Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Black_Striped_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -163,6 +171,7 @@
    </Object>
    <Object type="0x1204" id="Large Rainbow Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Rainbow_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -183,6 +192,7 @@
    </Object>
    <Object type="0x1304" id="Small Rainbow Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Rainbow_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -203,6 +213,7 @@
    </Object>
    <Object type="0x1205" id="Large Starry Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Starry_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -223,6 +234,7 @@
    </Object>
    <Object type="0x1305" id="Small Starry Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Starry_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -243,6 +255,7 @@
    </Object>
    <Object type="0x1206" id="Large Brown Stitch Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Brown_Stitch_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -263,6 +276,7 @@
    </Object>
    <Object type="0x1306" id="Small Brown Stitch Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Brown_Stitch_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -283,6 +297,7 @@
    </Object>
    <Object type="0x1207" id="Large Tan Diamond Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Tan_Diamond_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -303,6 +318,7 @@
    </Object>
    <Object type="0x1307" id="Small Tan Diamond Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Tan_Diamond_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -323,6 +339,7 @@
    </Object>
    <Object type="0x1208" id="Large Green Weave Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Green_Weave_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -343,6 +360,7 @@
    </Object>
    <Object type="0x1308" id="Small Green Weave Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Green_Weave_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -363,6 +381,7 @@
    </Object>
    <Object type="0x1209" id="Large Blue Wave Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Blue_Wave_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -383,6 +402,7 @@
    </Object>
    <Object type="0x1309" id="Small Blue Wave Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Blue_Wave_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -403,6 +423,7 @@
    </Object>
    <Object type="0x120a" id="Large Yellow Wire Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Yellow_Wire_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -423,6 +444,7 @@
    </Object>
    <Object type="0x130a" id="Small Yellow Wire Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Yellow_Wire_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -443,6 +465,7 @@
    </Object>
    <Object type="0x120b" id="Large Futuristic Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Futuristic_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -463,6 +486,7 @@
    </Object>
    <Object type="0x130b" id="Small Futuristic Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Futuristic_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -483,6 +507,7 @@
    </Object>
    <Object type="0x120c" id="Large Stony Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Stony_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -503,6 +528,7 @@
    </Object>
    <Object type="0x130c" id="Small Stony Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Stony_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -523,6 +549,7 @@
    </Object>
    <Object type="0x120d" id="Large Heart Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Heart_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -543,6 +570,7 @@
    </Object>
    <Object type="0x130d" id="Small Heart Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Heart_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -563,6 +591,7 @@
    </Object>
    <Object type="0x120e" id="Large Skull Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Skull_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -583,6 +612,7 @@
    </Object>
    <Object type="0x130e" id="Small Skull Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Skull_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -603,6 +633,7 @@
    </Object>
    <Object type="0x120f" id="Large Red Diamond Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Red_Diamond_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -623,6 +654,7 @@
    </Object>
    <Object type="0x130f" id="Small Red Diamond Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Red_Diamond_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -643,6 +675,7 @@
    </Object>
    <Object type="0x1210" id="Large Jester Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Jester_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -663,6 +696,7 @@
    </Object>
    <Object type="0x1310" id="Small Jester Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Jester_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -683,6 +717,7 @@
    </Object>
    <Object type="0x1211" id="Large Crossbox Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Crossbox_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -703,6 +738,7 @@
    </Object>
    <Object type="0x1311" id="Small Crossbox Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Crossbox_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -723,6 +759,7 @@
    </Object>
    <Object type="0x1212" id="Large White Diamond Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_White_Diamond_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -743,6 +780,7 @@
    </Object>
    <Object type="0x1312" id="Small White Diamond Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_White_Diamond_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -763,6 +801,7 @@
    </Object>
    <Object type="0x1213" id="Large Grey Scaly Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Grey_Scaly_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -783,6 +822,7 @@
    </Object>
    <Object type="0x1313" id="Small Grey Scaly Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Grey_Scaly_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -803,6 +843,7 @@
    </Object>
    <Object type="0x1214" id="Large Red Spotted Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Red_Spotted_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -823,6 +864,7 @@
    </Object>
    <Object type="0x1314" id="Small Red Spotted Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Red_Spotted_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -843,6 +885,7 @@
    </Object>
    <Object type="0x1215" id="Large Smiley Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Smiley_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -863,6 +906,7 @@
    </Object>
    <Object type="0x1315" id="Small Smiley Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Smiley_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -883,6 +927,7 @@
    </Object>
    <Object type="0x1216" id="Large Bold Diamond Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Bold_Diamond_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -903,6 +948,7 @@
    </Object>
    <Object type="0x1316" id="Small Bold Diamond Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Bold_Diamond_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -923,6 +969,7 @@
    </Object>
    <Object type="0x1217" id="Large Blue Lace Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Blue_Lace_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -943,6 +990,7 @@
    </Object>
    <Object type="0x1317" id="Small Blue Lace Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Blue_Lace_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -963,6 +1011,7 @@
    </Object>
    <Object type="0x1218" id="Large Loud Spotted Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Loud_Spotted_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -983,6 +1032,7 @@
    </Object>
    <Object type="0x1318" id="Small Loud Spotted Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Loud_Spotted_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1003,6 +1053,7 @@
    </Object>
    <Object type="0x1219" id="Large Red Weft Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Red_Weft_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1023,6 +1074,7 @@
    </Object>
    <Object type="0x1319" id="Small Red Weft Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Red_Weft_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1043,6 +1095,7 @@
    </Object>
    <Object type="0x121a" id="Large Pink Sparkly Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Pink_Sparkly_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1063,6 +1116,7 @@
    </Object>
    <Object type="0x131a" id="Small Pink Sparkly Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Pink_Sparkly_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1083,6 +1137,7 @@
    </Object>
    <Object type="0x121b" id="Large Red Lace Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Red_Lace_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1103,6 +1158,7 @@
    </Object>
    <Object type="0x131b" id="Small Red Lace Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Red_Lace_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1123,6 +1179,7 @@
    </Object>
    <Object type="0x121c" id="Large Pink Maze Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Pink_Maze_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1143,6 +1200,7 @@
    </Object>
    <Object type="0x131c" id="Small Pink Maze Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Pink_Maze_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1163,6 +1221,7 @@
    </Object>
    <Object type="0x121d" id="Large Yellow Dot Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Yellow_Dot_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1183,6 +1242,7 @@
    </Object>
    <Object type="0x131d" id="Small Yellow Dot Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Yellow_Dot_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1203,6 +1263,7 @@
    </Object>
    <Object type="0x121e" id="Large Cloud Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Cloud_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1223,6 +1284,7 @@
    </Object>
    <Object type="0x131e" id="Small Cloud Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Cloud_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1243,6 +1305,7 @@
    </Object>
    <Object type="0x121f" id="Large Glowthread Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Glowthread_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1263,6 +1326,7 @@
    </Object>
    <Object type="0x131f" id="Small Glowthread Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Glowthread_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1283,6 +1347,7 @@
    </Object>
    <Object type="0x1220" id="Large Sweater Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Sweater_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1303,6 +1368,7 @@
    </Object>
    <Object type="0x1320" id="Small Sweater Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Sweater_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1323,6 +1389,7 @@
    </Object>
    <Object type="0x1221" id="Large Bee Stripe Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Bee_Stripe_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1343,6 +1410,7 @@
    </Object>
    <Object type="0x1321" id="Small Bee Stripe Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Bee_Stripe_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1363,6 +1431,7 @@
    </Object>
    <Object type="0x1222" id="Large Western Stripe Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Western_Stripe_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1383,6 +1452,7 @@
    </Object>
    <Object type="0x1322" id="Small Western Stripe Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Western_Stripe_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1403,6 +1473,7 @@
    </Object>
    <Object type="0x1223" id="Large Blue Point Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Blue_Point_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1423,6 +1494,7 @@
    </Object>
    <Object type="0x1323" id="Small Blue Point Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Blue_Point_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1443,6 +1515,7 @@
    </Object>
    <Object type="0x1224" id="Large Robber Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Robber_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1463,6 +1536,7 @@
    </Object>
    <Object type="0x1324" id="Small Robber Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Robber_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1483,6 +1557,7 @@
    </Object>
    <Object type="0x1225" id="Large Chainmail Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Chainmail_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1503,6 +1578,7 @@
    </Object>
    <Object type="0x1325" id="Small Chainmail Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Chainmail_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1523,6 +1599,7 @@
    </Object>
    <Object type="0x1226" id="Large Dark Blue Stripe Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Dark_Blue_Stripe_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1543,6 +1620,7 @@
    </Object>
    <Object type="0x1326" id="Small Dark Blue Stripe Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Dark_Blue_Stripe_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1563,6 +1641,7 @@
    </Object>
    <Object type="0x1227" id="Large Vine Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Vine_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1583,6 +1662,7 @@
    </Object>
    <Object type="0x1327" id="Small Vine Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Vine_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1603,6 +1683,7 @@
    </Object>
    <Object type="0x1228" id="Large Party Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Party_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1623,6 +1704,7 @@
    </Object>
    <Object type="0x1328" id="Small Party Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Party_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1643,6 +1725,7 @@
    </Object>
    <Object type="0x1229" id="Large Viva Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Viva_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1663,6 +1746,7 @@
    </Object>
    <Object type="0x1329" id="Small Viva Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Viva_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1683,6 +1767,7 @@
    </Object>
    <Object type="0x122a" id="Large Nautical Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Nautical_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1703,6 +1788,7 @@
    </Object>
    <Object type="0x132a" id="Small Nautical Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Nautical_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1723,6 +1809,7 @@
    </Object>
    <Object type="0x122b" id="Large Cactus Zag Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Cactus_Zag_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1743,6 +1830,7 @@
    </Object>
    <Object type="0x132b" id="Small Cactus Zag Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Cactus_Zag_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1763,6 +1851,7 @@
    </Object>
    <Object type="0x122c" id="Large Big-Stripe Blue Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Big-Stripe_Blue_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1783,6 +1872,7 @@
    </Object>
    <Object type="0x132c" id="Small Big-Stripe Blue Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Big-Stripe_Blue_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1803,6 +1893,7 @@
    </Object>
    <Object type="0x122d" id="Large Big-Stripe Red Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Big-Stripe_Red_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1823,6 +1914,7 @@
    </Object>
    <Object type="0x132d" id="Small Big-Stripe Red Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Big-Stripe_Red_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1843,6 +1935,7 @@
    </Object>
    <Object type="0x122e" id="Large Starry Night Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Starry_Night_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1863,6 +1956,7 @@
    </Object>
    <Object type="0x132e" id="Small Starry Night Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Starry_Night_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1883,6 +1977,7 @@
    </Object>
    <Object type="0x122f" id="Large Lemon-Lime Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Lemon-Lime_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1903,6 +1998,7 @@
    </Object>
    <Object type="0x132f" id="Small Lemon-Lime Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Lemon-Lime_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1923,6 +2019,7 @@
    </Object>
    <Object type="0x1230" id="Large Floral Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Floral_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1943,6 +2040,7 @@
    </Object>
    <Object type="0x1330" id="Small Floral Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Floral_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1963,6 +2061,7 @@
    </Object>
    <Object type="0x1231" id="Large Pink Dot Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Pink_Dot_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -1983,6 +2082,7 @@
    </Object>
    <Object type="0x1331" id="Small Pink Dot Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Pink_Dot_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2003,6 +2103,7 @@
    </Object>
    <Object type="0x1232" id="Large Dark Eyes Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Dark_Eyes_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2023,6 +2124,7 @@
    </Object>
    <Object type="0x1332" id="Small Dark Eyes Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Dark_Eyes_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2043,6 +2145,7 @@
    </Object>
    <Object type="0x1233" id="Large Wind Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Wind_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2063,6 +2166,7 @@
    </Object>
    <Object type="0x1333" id="Small Wind Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Wind_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2083,6 +2187,7 @@
    </Object>
    <Object type="0x1234" id="Large Shamrock Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Shamrock_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2103,6 +2208,7 @@
    </Object>
    <Object type="0x1334" id="Small Shamrock Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Shamrock_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2123,6 +2229,7 @@
    </Object>
    <Object type="0x1235" id="Large Bright Stripes Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Bright_Stripes_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2143,6 +2250,7 @@
    </Object>
    <Object type="0x1335" id="Small Bright Stripes Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Bright_Stripes_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2163,6 +2271,7 @@
    </Object>
    <Object type="0x1236" id="Large USA Flag Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_USA_Flag_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2183,6 +2292,7 @@
    </Object>
    <Object type="0x1336" id="Small USA Flag Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_USA_Flag_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2203,6 +2313,7 @@
    </Object>
    <Object type="0x1237" id="Large Flannel Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Flannel_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2223,6 +2334,7 @@
    </Object>
    <Object type="0x1337" id="Small Flannel Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Flannel_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2243,6 +2355,7 @@
    </Object>
    <Object type="0x1238" id="Large Cow Print Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Cow_Print_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2263,6 +2376,7 @@
    </Object>
    <Object type="0x1338" id="Small Cow Print Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Cow_Print_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2283,6 +2397,7 @@
    </Object>
    <Object type="0x1239" id="Large Lush Camo Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Lush_Camo_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2303,6 +2418,7 @@
    </Object>
    <Object type="0x1339" id="Small Lush Camo Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Lush_Camo_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2323,6 +2439,7 @@
    </Object>
    <Object type="0x123a" id="Large Dark Camo Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Dark_Camo_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2343,6 +2460,7 @@
    </Object>
    <Object type="0x133a" id="Small Dark Camo Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Dark_Camo_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2363,6 +2481,7 @@
    </Object>
    <Object type="0x123b" id="Large Teal Crystal Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Teal_Crystal_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2383,6 +2502,7 @@
    </Object>
    <Object type="0x133b" id="Small Teal Crystal Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Teal_Crystal_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2403,6 +2523,7 @@
    </Object>
    <Object type="0x123c" id="Large Blue Fireworks Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Blue_Fireworks_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2423,6 +2544,7 @@
    </Object>
    <Object type="0x133c" id="Small Blue Fireworks Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Blue_Fireworks_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2443,6 +2565,7 @@
    </Object>
    <Object type="0x123d" id="Large Crisscross Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Crisscross_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2463,6 +2586,7 @@
    </Object>
    <Object type="0x133d" id="Small Crisscross Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Crisscross_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2483,6 +2607,7 @@
    </Object>
    <Object type="0x123e" id="Large Diamond Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Diamond_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2503,6 +2628,7 @@
    </Object>
    <Object type="0x133e" id="Small Diamond Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Diamond_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2523,6 +2649,7 @@
    </Object>
    <Object type="0x123f" id="Large Egyptian Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Egyptian_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2543,6 +2670,7 @@
    </Object>
    <Object type="0x133f" id="Small Egyptian Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Egyptian_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2563,6 +2691,7 @@
    </Object>
    <Object type="0x1240" id="Large Purple Bones Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Purple_Bones_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2583,6 +2712,7 @@
    </Object>
    <Object type="0x1340" id="Small Purple Bones Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Purple_Bones_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2603,6 +2733,7 @@
    </Object>
    <Object type="0x1241" id="Large Plaid Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Plaid_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2623,6 +2754,7 @@
    </Object>
    <Object type="0x1341" id="Small Plaid Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Plaid_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2643,6 +2775,7 @@
    </Object>
    <Object type="0x1242" id="Large Red USA Star Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Red_USA_Star_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2663,6 +2796,7 @@
    </Object>
    <Object type="0x1342" id="Small Red USA Star Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Red_USA_Star_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2683,6 +2817,7 @@
    </Object>
    <Object type="0x1243" id="Large Blue USA Star Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Blue_USA_Star_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2703,6 +2838,7 @@
    </Object>
    <Object type="0x1343" id="Small Blue USA Star Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Blue_USA_Star_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2723,6 +2859,7 @@
    </Object>
    <Object type="0x1244" id="Large USA Star Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_USA_Star_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2743,6 +2880,7 @@
    </Object>
    <Object type="0x1344" id="Small USA Star Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_USA_Star_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2763,6 +2901,7 @@
    </Object>
    <Object type="0x1245" id="Large Purple Stripes Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Purple_Stripes_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2783,6 +2922,7 @@
    </Object>
    <Object type="0x1345" id="Small Purple Stripes Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Purple_Stripes_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2803,6 +2943,7 @@
    </Object>
    <Object type="0x1246" id="Large Bright Floral Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Bright_Floral_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2823,6 +2964,7 @@
    </Object>
    <Object type="0x1346" id="Small Bright Floral Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Bright_Floral_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2843,6 +2985,7 @@
    </Object>
    <Object type="0x1247" id="Large Clanranald Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Clanranald_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2863,6 +3006,7 @@
    </Object>
    <Object type="0x1347" id="Small Clanranald Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Clanranald_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2883,6 +3027,7 @@
    </Object>
    <Object type="0x1248" id="Large American Flag Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_American_Flag_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2903,6 +3048,7 @@
    </Object>
    <Object type="0x1348" id="Small American Flag Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_American_Flag_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2923,6 +3069,7 @@
    </Object>
    <Object type="0x1249" id="Large Relief Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Relief_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2943,6 +3090,7 @@
    </Object>
    <Object type="0x1349" id="Small Relief Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Relief_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2963,6 +3111,7 @@
    </Object>
    <Object type="0x124a" id="Large Intense Clovers Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Intense_Clovers_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -2983,6 +3132,7 @@
    </Object>
    <Object type="0x134a" id="Small Intense Clovers Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Intense_Clovers_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3003,6 +3153,7 @@
    </Object>
    <Object type="0x124b" id="Large Celtic Knot Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Celtic_Knot_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3023,6 +3174,7 @@
    </Object>
    <Object type="0x134b" id="Small Celtic Knot Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Celtic_Knot_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3043,6 +3195,7 @@
    </Object>
    <Object type="0x124c" id="Large Flame Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Flame_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3063,6 +3216,7 @@
    </Object>
    <Object type="0x134c" id="Small Flame Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Flame_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3083,6 +3237,7 @@
    </Object>
    <Object type="0x124d" id="Large Heavy Chainmail Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Heavy_Chainmail_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3103,6 +3258,7 @@
    </Object>
    <Object type="0x134d" id="Small Heavy Chainmail Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Heavy_Chainmail_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3123,6 +3279,7 @@
    </Object>
    <Object type="0x124e" id="Large Leopard Print Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Leopard_Print_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3143,6 +3300,7 @@
    </Object>
    <Object type="0x134e" id="Small Leopard Print Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Leopard_Print_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3163,6 +3321,7 @@
    </Object>
    <Object type="0x124f" id="Large Zebra Print Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Zebra_Print_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3183,6 +3342,7 @@
    </Object>
    <Object type="0x134f" id="Small Zebra Print Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Zebra_Print_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3203,6 +3363,7 @@
    </Object>
    <Object type="0x1250" id="Large Colored Egg Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Colored_Egg_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3223,6 +3384,7 @@
    </Object>
    <Object type="0x1350" id="Small Colored Egg Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Colored_Egg_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3243,6 +3405,7 @@
    </Object>
    <Object type="0x1251" id="Large Spring Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Spring_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3263,6 +3426,7 @@
    </Object>
    <Object type="0x1351" id="Small Spring Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Spring_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3283,6 +3447,7 @@
    </Object>
    <Object type="0x1252" id="Large Hibiscus Beach Wrap Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Hibiscus_Beach_Wrap_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3303,6 +3468,7 @@
    </Object>
    <Object type="0x1352" id="Small Hibiscus Beach Wrap Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Hibiscus_Beach_Wrap_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3323,6 +3489,7 @@
    </Object>
    <Object type="0x1253" id="Large Blue Camo Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Blue_Camo_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3343,6 +3510,7 @@
    </Object>
    <Object type="0x1353" id="Small Blue Camo Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Blue_Camo_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3363,6 +3531,7 @@
    </Object>
    <Object type="0x1254" id="Large Sunburst Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Sunburst_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3383,6 +3552,7 @@
    </Object>
    <Object type="0x1354" id="Small Sunburst Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Sunburst_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3403,6 +3573,7 @@
    </Object>
    <Object type="0x1255" id="Large Ivory Dragon Scale Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Ivory_Dragon_Scale_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3423,6 +3594,7 @@
    </Object>
    <Object type="0x1355" id="Small Ivory Dragon Scale Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Ivory_Dragon_Scale_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3443,6 +3615,7 @@
    </Object>
    <Object type="0x1256" id="Large Green Dragon Scale Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Green_Dragon_Scale_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3463,6 +3636,7 @@
    </Object>
    <Object type="0x1356" id="Small Green Dragon Scale Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Green_Dragon_Scale_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3483,6 +3657,7 @@
    </Object>
    <Object type="0x1257" id="Large Midnight Dragon Scale Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Midnight_Dragon_Scale_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3503,6 +3678,7 @@
    </Object>
    <Object type="0x1357" id="Small Midnight Dragon Scale Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Midnight_Dragon_Scale_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3523,6 +3699,7 @@
    </Object>
    <Object type="0x1258" id="Large Blue Dragon Scale Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Blue_Dragon_Scale_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3543,6 +3720,7 @@
    </Object>
    <Object type="0x1358" id="Small Blue Dragon Scale Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Blue_Dragon_Scale_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3563,6 +3741,7 @@
    </Object>
    <Object type="0x1259" id="Large Red Dragon Scale Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Red_Dragon_Scale_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3583,6 +3762,7 @@
    </Object>
    <Object type="0x1359" id="Small Red Dragon Scale Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Red_Dragon_Scale_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3603,6 +3783,7 @@
    </Object>
    <Object type="0x125a" id="Large Jester Argyle Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Jester_Argyle_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3623,6 +3804,7 @@
    </Object>
    <Object type="0x135a" id="Small Jester Argyle Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Jester_Argyle_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3643,6 +3825,7 @@
    </Object>
    <Object type="0x125b" id="Large Alchemist Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Alchemist_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3663,6 +3846,7 @@
    </Object>
    <Object type="0x135b" id="Small Alchemist Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Alchemist_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3683,6 +3867,7 @@
    </Object>
    <Object type="0x125c" id="Large Spooky Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Spooky_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3703,6 +3888,7 @@
    </Object>
    <Object type="0x135c" id="Small Spooky Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Spooky_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3723,6 +3909,7 @@
    </Object>
    <Object type="0x125d" id="Large Mosaic Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Large_Mosaic_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>
@@ -3743,6 +3930,7 @@
    </Object>
    <Object type="0x135d" id="Small Mosaic Cloth">
       <Class>Dye</Class>
+      <DisplayId>{textiles.Small_Mosaic_Cloth}</DisplayId>
       <Item/>
       <Texture>
          <File>lofiObj3</File>

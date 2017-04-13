@@ -5,6 +5,7 @@ import kabam.rotmg.news.controller.NewsDataUpdatedSignal;
 import kabam.rotmg.news.controller.OpenSkinSignal;
 import kabam.rotmg.news.model.NewsModel;
 import kabam.rotmg.news.services.GetAppEngineNewsTask;
+import kabam.rotmg.news.services.GetInGameNewsTask;
 import kabam.rotmg.news.view.NewsCell;
 import kabam.rotmg.news.view.NewsCellMediator;
 import kabam.rotmg.news.view.NewsMediator;
@@ -41,6 +42,7 @@ public class NewsConfig implements IConfig {
         this.injector.map(NewsButtonRefreshSignal).asSingleton();
         this.injector.map(NewsModel).asSingleton();
         this.injector.map(GetAppEngineNewsTask).asSingleton();
+		this.injector.map(GetInGameNewsTask);
         this.mediatorMap.map(NewsView).toMediator(NewsMediator);
         this.mediatorMap.map(NewsCell).toMediator(NewsCellMediator);
         this.mediatorMap.map(NewsModalButton).toMediator(NewsModalMediator);

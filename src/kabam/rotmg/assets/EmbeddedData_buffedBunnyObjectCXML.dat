@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x893" id="BB Bunny Blaster">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>buffedBunnyObjects8x8</File>
+         <Index>0x12</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x894" id="BB Bunny Slash">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>buffedBunnyObjects8x8</File>
+         <Index>0x13</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x895" id="BB Bunny Bullet 1">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>buffedBunnyObjects8x8</File>
+         <Index>0x10</Index>
+      </Texture>
+      <Rotation>50</Rotation>
+   </Object>
+   <Object type="0x896" id="BB Bunny Bullet 2">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>buffedBunnyObjects8x8</File>
+         <Index>0x11</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x897" id="BB Egg Cannon 1">
+      <Class>Projectile</Class>
+      <RandomTexture>
+         <Texture>
+            <File>buffedBunnyObjects8x8</File>
+            <Index>0x14</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects8x8</File>
+            <Index>0x15</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects8x8</File>
+            <Index>0x16</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects8x8</File>
+            <Index>0x17</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects8x8</File>
+            <Index>0x18</Index>
+         </Texture>
+      </RandomTexture>
+      <Rotation>50</Rotation>
+   </Object>
+   <Object type="0x898" id="BB Egg Cannon 2">
+      <Class>Projectile</Class>
+      <RandomTexture>
+         <Texture>
+            <File>buffedBunnyObjects8x8</File>
+            <Index>0x0</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects8x8</File>
+            <Index>0x1</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects8x8</File>
+            <Index>0x2</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects8x8</File>
+            <Index>0x3</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects8x8</File>
+            <Index>0x4</Index>
+         </Texture>
+      </RandomTexture>
+      <Rotation>50</Rotation>
+   </Object>
+   <Object type="0x8aa" id="BB Carrot Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>buffedBunnyObjects8x8</File>
+         <Index>0x22</Index>
+      </Texture>
+      <Rotation>50</Rotation>
+   </Object>
+   <Object type="0x899" id="Dagger of the Hasteful Rabbit">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>buffedBunnyObjects8x8</File>
+         <Index>0x1f</Index>
+      </Texture>
+      <SlotType>2</SlotType>
+      <Description>An incredible dagger forged from the teeth of a murderous rabbit, it has the incredible power to summon angry rabbits.</Description>
+      <RateOfFire>1</RateOfFire>
+      <Sound>weapon/fire_dagger</Sound>
+      <Projectile>
+         <ObjectId>BB Bunny Bullet 1</ObjectId>
+         <Speed>140</Speed>
+         <MinDamage>90</MinDamage>
+         <MaxDamage>175</MaxDamage>
+         <LifetimeMS>400</LifetimeMS>
+         <Frequency>1</Frequency>
+         <Size>100</Size>
+      </Projectile>
+      <NumProjectiles>1</NumProjectiles>
+      <BagType>4</BagType>
+      <FameBonus>3</FameBonus>
+      <OldSound>daggerSwing</OldSound>
+      <feedPower>310</feedPower>
+      <Soulbound/>
+      <DisplayId>Dagger of the Hasteful Rabbit</DisplayId>
+   </Object>
+   <Object type="0x8a8" id="Helm of the Swift Bunny">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>buffedBunnyObjects8x8</File>
+         <Index>0x20</Index>
+      </Texture>
+      <SlotType>16</SlotType>
+      <Description>Made from the remains of a violent bunny, whoever wears this helm is given the magical ability to hop as fast as a bunny!</Description>
+      <ActivateOnEquip stat="21" amount="5">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip stat="22" amount="5">IncrementStat</ActivateOnEquip>
+      <Usable/>
+      <BagType>6</BagType>
+      <FameBonus>5</FameBonus>
+      <MpCost>85</MpCost>
+      <Activate effect="Speedy" duration="12">ConditionEffectSelf</Activate>
+      <Cooldown>13</Cooldown>
+      <feedPower>700</feedPower>
+      <DisplayId>Helm of the Swift Bunny</DisplayId>
+      <Soulbound/>
+   </Object>
+   <Object type="0x8a9" id="Vitamine Buster">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>buffedBunnyObjects8x8</File>
+         <Index>0x21</Index>
+      </Texture>
+      <SlotType>11</SlotType>
+      <Description>A bizzare spell fabricated by a powerful bunny magician, they don't only do trick shows inside those magic hats!</Description>
+      <Sound>spell/magic_nova</Sound>
+      <Projectile>
+         <ObjectId>BB Carrot Shot</ObjectId>
+         <Speed>60</Speed>
+         <MinDamage>0</MinDamage>
+         <MaxDamage>210</MaxDamage>
+         <LifetimeMS>2500</LifetimeMS>
+      </Projectile>
+      <ActivateOnEquip stat="26" amount="10">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip stat="22" amount="2">IncrementStat</ActivateOnEquip>
+      <Usable/>
+      <BagType>6</BagType>
+      <FameBonus>4</FameBonus>
+      <MpCost>75</MpCost>
+      <Activate>BulletNova</Activate>
+      <DisplayId>Vitamine Buster</DisplayId>
+      <Soulbound/>
+      <feedPower>700</feedPower>
+   </Object>
+   <Object type="0x89a" id="BB Low Egg">
+      <Enemy/>
+      <Class>Character</Class>
+      <RandomTexture>
+         <Texture>
+            <File>buffedBunnyObjects16x16</File>
+            <Index>0x0</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects16x16</File>
+            <Index>0x1</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects16x16</File>
+            <Index>0x2</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects16x16</File>
+            <Index>0xc</Index>
+         </Texture>
+      </RandomTexture>
+      <HitSound>monster/eggs_hit</HitSound>
+      <DeathSound>monster/eggs_death</DeathSound>
+      <Size>60</Size>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>0</Defense>
+      <StasisImmune/>
+      <Terrain>LowPlains</Terrain>
+      <PerRealmMax>5</PerRealmMax>
+      <SpawnProb>1.0</SpawnProb>
+      <Quest/>
+      <Level>13</Level>
+      <DisplayId>Easter Egg</DisplayId>
+   </Object>
+   <Object type="0x89b" id="BB Mid Egg">
+      <Enemy/>
+      <Class>Character</Class>
+      <RandomTexture>
+         <Texture>
+            <File>buffedBunnyObjects16x16</File>
+            <Index>0x0</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects16x16</File>
+            <Index>0x1</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects16x16</File>
+            <Index>0x2</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects16x16</File>
+            <Index>0xc</Index>
+         </Texture>
+      </RandomTexture>
+      <HitSound>monster/eggs_hit</HitSound>
+      <DeathSound>monster/eggs_death</DeathSound>
+      <Size>60</Size>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>0</Defense>
+      <StasisImmune/>
+      <Terrain>MidPlains</Terrain>
+      <PerRealmMax>5</PerRealmMax>
+      <SpawnProb>1.0</SpawnProb>
+      <Quest/>
+      <Level>13</Level>
+      <DisplayId>Easter Egg</DisplayId>
+   </Object>
+   <Object type="0x89c" id="BB High Egg">
+      <Enemy/>
+      <Class>Character</Class>
+      <RandomTexture>
+         <Texture>
+            <File>buffedBunnyObjects16x16</File>
+            <Index>0x0</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects16x16</File>
+            <Index>0x1</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects16x16</File>
+            <Index>0x2</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects16x16</File>
+            <Index>0xc</Index>
+         </Texture>
+      </RandomTexture>
+      <HitSound>monster/eggs_hit</HitSound>
+      <DeathSound>monster/eggs_death</DeathSound>
+      <Size>60</Size>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>0</Defense>
+      <StasisImmune/>
+      <Terrain>HighPlains</Terrain>
+      <PerRealmMax>5</PerRealmMax>
+      <SpawnProb>1.0</SpawnProb>
+      <Quest/>
+      <Level>13</Level>
+      <DisplayId>Easter Egg</DisplayId>
+   </Object>
+   <Object type="0x89d" id="BB God Egg">
+      <Enemy/>
+      <Class>Character</Class>
+      <RandomTexture>
+         <Texture>
+            <File>buffedBunnyObjects16x16</File>
+            <Index>0x0</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects16x16</File>
+            <Index>0x1</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects16x16</File>
+            <Index>0x2</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects16x16</File>
+            <Index>0xc</Index>
+         </Texture>
+      </RandomTexture>
+      <HitSound>monster/eggs_hit</HitSound>
+      <DeathSound>monster/eggs_death</DeathSound>
+      <Size>60</Size>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>0</Defense>
+      <StasisImmune/>
+      <Terrain>Mountains</Terrain>
+      <PerRealmMax>1</PerRealmMax>
+      <SpawnProb>1.0</SpawnProb>
+      <Quest/>
+      <Level>13</Level>
+      <DisplayId>Easter Egg</DisplayId>
+   </Object>
+   <Object type="0x89e" id="BB Biff Summoner">
+      <Enemy/>
+      <NoMiniMap/>
+      <Class>Character</Class>
+      <Texture>
+         <File>buffedBunnyObjects16x16</File>
+         <Index>0x3</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>buffedBunnyObjects16x16</File>
+            <Index>0x13</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>buffedBunnyObjects16x16</File>
+            <Index>0x14</Index>
+         </Texture>
+      </AltTexture>
+      <HitSound>monster/eggs_hit</HitSound>
+      <DeathSound>monster/eggs_death</DeathSound>
+      <Size>120</Size>
+      <MaxHitPoints>300000</MaxHitPoints>
+      <Defense>0</Defense>
+      <StasisImmune/>
+      <Terrain>Mountains</Terrain>
+      <PerRealmMax>1</PerRealmMax>
+      <SpawnProb>1.0</SpawnProb>
+      <ShadowSize>0</ShadowSize>
+      <DisplayId>Mysterious Egg</DisplayId>
+   </Object>
+   <Object type="0x89f" id="BB Biff the Buffed Bunny">
+      <DisplayId>Biff the Buffed Bunny</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>buffedBunnyChars16x16</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <HitSound>monster/archdemon_hit</HitSound>
+      <DeathSound>monster/archdemon_death</DeathSound>
+      <Size>120</Size>
+      <Quest/>
+      <Level>20</Level>
+      <MaxHitPoints>160000</MaxHitPoints>
+      <Defense>0</Defense>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>BB Egg Cannon 1</ObjectId>
+         <Damage>150</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+         <ConditionEffect duration="2.5">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>BB Bunny Blaster</ObjectId>
+         <Damage>130</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1400</LifetimeMS>
+         <ConditionEffect duration="5" target="1">Stasis</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>BB Bunny Blaster</ObjectId>
+         <Damage>130</Damage>
+         <Speed>100</Speed>
+         <LifetimeMS>1400</LifetimeMS>
+         <ConditionEffect duration="5" target="1">Stasis</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>BB Egg Cannon 1</ObjectId>
+         <Damage>150</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="2.5">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>BB Egg Cannon 1</ObjectId>
+         <Damage>150</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>2200</LifetimeMS>
+         <ConditionEffect duration="2.5">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>BB Bunny Blaster</ObjectId>
+         <Damage>130</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+         <ConditionEffect duration="5" target="1">Stasis</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x8a0" id="BB Bunny Girl W">
+      <Class>Character</Class>
+      <Texture>
+         <File>buffedBunnyObjects16x16</File>
+         <Index>4</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>buffedBunnyObjects16x16</File>
+            <Index>5</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>buffedBunnyObjects16x16</File>
+            <Index>6</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>buffedBunnyObjects16x16</File>
+            <Index>7</Index>
+         </Texture>
+      </AltTexture>
+      <Size>80</Size>
+      <ShadowSize>50</ShadowSize>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Defense>10</Defense>
+   </Object>
+   <Object type="0x8a1" id="BB Bunny Girl B">
+      <Class>Character</Class>
+      <Texture>
+         <File>buffedBunnyObjects16x16</File>
+         <Index>0x8</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>buffedBunnyObjects16x16</File>
+            <Index>0x9</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>buffedBunnyObjects16x16</File>
+            <Index>0xa</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>buffedBunnyObjects16x16</File>
+            <Index>0xb</Index>
+         </Texture>
+      </AltTexture>
+      <Size>80</Size>
+      <ShadowSize>50</ShadowSize>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Defense>10</Defense>
+   </Object>
+   <Object type="0x8a2" id="BB Egg Basket Big">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>buffedBunnyObjects16x16</File>
+         <Index>0x17</Index>
+      </Texture>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x8a3" id="BB Egg Basket Small 1">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>buffedBunnyObjects8x8</File>
+         <Index>0xe</Index>
+      </Texture>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x8a4" id="BB Egg Basket Small 2">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>buffedBunnyObjects8x8</File>
+         <Index>0xf</Index>
+      </Texture>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x8a5" id="BB Colored Eggs inGrass">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>buffedBunnyObjects8x8</File>
+            <Index>0x5</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects8x8</File>
+            <Index>0x6</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects8x8</File>
+            <Index>0x7</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects8x8</File>
+            <Index>0x8</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects8x8</File>
+            <Index>0x9</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects8x8</File>
+            <Index>0xa</Index>
+         </Texture>
+      </RandomTexture>
+      <MinSize>60</MinSize>
+      <MaxSize>100</MaxSize>
+      <SizeStep>10</SizeStep>
+      <ShadowSize>80</ShadowSize>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x8a6" id="BB Egg Grass">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>buffedBunnyObjects8x8</File>
+            <Index>0xb</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects8x8</File>
+            <Index>0xc</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects8x8</File>
+            <Index>0xd</Index>
+         </Texture>
+      </RandomTexture>
+      <MinSize>60</MinSize>
+      <MaxSize>100</MaxSize>
+      <SizeStep>10</SizeStep>
+      <ShadowSize>80</ShadowSize>
+      <Static/>
+   </Object>
+   <Object type="0x8a7" id="BB Colored Eggs noGrass">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>buffedBunnyObjects8x8</File>
+            <Index>0x19</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects8x8</File>
+            <Index>0x1a</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects8x8</File>
+            <Index>0x1b</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects8x8</File>
+            <Index>0x1c</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects8x8</File>
+            <Index>0x1d</Index>
+         </Texture>
+         <Texture>
+            <File>buffedBunnyObjects8x8</File>
+            <Index>0x1e</Index>
+         </Texture>
+      </RandomTexture>
+      <MinSize>60</MinSize>
+      <MaxSize>100</MaxSize>
+      <SizeStep>10</SizeStep>
+      <ShadowSize>80</ShadowSize>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+</Objects>

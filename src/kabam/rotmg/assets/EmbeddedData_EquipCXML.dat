@@ -1054,7 +1054,7 @@
       </Texture>
       <SlotType>26</SlotType>
       <Tier>3</Tier>
-      <Description>A legendary pet egg of an unknown pet family..</Description>
+      <Description>A legendary pet egg of an unknown pet family.</Description>
       <Rarity>Legendary</Rarity>
       <Activate>CreatePet</Activate>
       <Consumable/>
@@ -1415,16 +1415,12 @@
       <Soulbound/>
    </Object>
    <Object type="0xa03" id="Crystal Sword">
-      <Class>Equipment</Class>
-      <Item/>
+      <DisplayId>Crystal Sword</DisplayId>
       <Texture>
          <File>lofiObj2</File>
          <Index>0x68</Index>
       </Texture>
-      <SlotType>1</SlotType>
       <Description>A lightweight blade that seems to dance in your hands.</Description>
-      <RateOfFire>1</RateOfFire>
-      <Sound>weapon/glass_sword</Sound>
       <Projectile>
          <ObjectId>Aqua Slash</ObjectId>
          <Speed>100</Speed>
@@ -1432,6 +1428,11 @@
          <MaxDamage>210</MaxDamage>
          <LifetimeMS>450</LifetimeMS>
       </Projectile>
+      <Class>Equipment</Class>
+      <Item/>
+      <SlotType>1</SlotType>
+      <RateOfFire>1</RateOfFire>
+      <Sound>weapon/glass_sword</Sound>
       <BagType>6</BagType>
       <FameBonus>3</FameBonus>
       <OldSound>bladeSwing</OldSound>
@@ -2427,16 +2428,16 @@
    <Object type="0xaf9" id="Hydra Skin Armor">
       <Class>Equipment</Class>
       <Item/>
+      <DisplayId>Hydra Skin Armor</DisplayId>
+      <Description>Superlative leather armor fashioned from the skin of a twelve-headed swamp hydra.</Description>
       <Texture>
          <File>lofiObj5</File>
          <Index>0x0c</Index>
       </Texture>
       <SlotType>6</SlotType>
       <Tier>13</Tier>
-      <Description>Superlative leather armor fashioned from the skin of a twelve-headed swamp hydra.</Description>
       <ActivateOnEquip stat="21" amount="17">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="28" amount="5">IncrementStat</ActivateOnEquip>
-      <ActivateOnEquip stat="3" amount="1">IncrementStat</ActivateOnEquip>
       <BagType>4</BagType>
       <FameBonus>4</FameBonus>
       <feedPower>435</feedPower>
@@ -8592,7 +8593,7 @@
          <Index>0xf4</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens an entrance to an Undead Lair.</Description>
+      <Description>A key which opens an entrance to an Undead Lair.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -8608,7 +8609,7 @@
          <Index>0xf0</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens an entrance to a Pirate Cave.</Description>
+      <Description>A key which opens an entrance to a Pirate Cave.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -8624,7 +8625,7 @@
          <Index>0xf1</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens an entrance to a Spider Den.</Description>
+      <Description>A key which opens an entrance to a Spider Den.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -8640,7 +8641,7 @@
          <Index>0xf3</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens an entrance to an Abyss of Demons.</Description>
+      <Description>A key which opens an entrance to an Abyss of Demons.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -8656,7 +8657,7 @@
          <Index>0xf5</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens an entrance to a Snake Pit.</Description>
+      <Description>A key which opens an entrance to a Snake Pit.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -8672,7 +8673,7 @@
          <Index>0xf6</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens an entrance to the Tomb of the Ancients.</Description>
+      <Description>A key which opens an entrance to the Tomb of the Ancients.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -8688,7 +8689,7 @@
          <Index>0xf6</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens an entrance to the Tomb of the Ancients (Heroic).</Description>
+      <Description>A key which opens an entrance to the Tomb of the Ancients (Heroic).\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -8704,7 +8705,7 @@
          <Index>0xf2</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens an entrance to a Sprite World.</Description>
+      <Description>A key which opens an entrance to a Sprite World.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -8720,7 +8721,7 @@
          <Index>0xbb</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>An incantation that unlocks the Wine Cellar.</Description>
+      <Description>An incantation that unlocks the Wine Cellar. \n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <BagType>4</BagType>
@@ -8736,7 +8737,7 @@
          <Index>0x05</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens an entrance to an Ocean Trench.</Description>
+      <Description>A key which opens an entrance to an Ocean Trench.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -8752,7 +8753,7 @@
          <Index>0x427</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>Enter this destroyed Nexus at your own peril.</Description>
+      <Description>Enter this destroyed Nexus at your own peril.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -8894,7 +8895,7 @@
          <Index>0x18</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens a passage to the Forbidden Jungle.</Description>
+      <Description>A key which opens a passage to the Forbidden Jungle.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -8910,7 +8911,7 @@
          <Index>0x54E</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>It's cold in here.</Description>
+      <Description>It's cold in here.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -9136,7 +9137,7 @@
          <Index>0x29</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens a passage to the Manor of the Immortals.</Description>
+      <Description>A key which opens a passage to the Manor of the Immortals.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -9349,7 +9350,7 @@
          <Index>0x109</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key that opens the way to Davy Jones' Locker.</Description>
+      <Description>A key that opens the way to Davy Jones' Locker.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -9623,7 +9624,7 @@
          <Index>0x177</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens a portal to the Beachzone.</Description>
+      <Description>A key which opens a portal to the Beachzone.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -9690,7 +9691,7 @@
          <Index>0x1b3</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which reveals the way to the Mad Lab.</Description>
+      <Description>A key which reveals the way to the Mad Lab.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -10526,7 +10527,7 @@
          <Index>0x28d</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens the way to the Candyland Hunting Grounds.</Description>
+      <Description>A key which opens the way to the Candyland Hunting Grounds.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -10775,7 +10776,7 @@
          <Index>0x317</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens a portal to the Haunted Cemetery.</Description>
+      <Description>A key which opens a portal to the Haunted Cemetery.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -10791,7 +10792,7 @@
          <Index>0x59c</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens a portal to the Halloween Cemetery.</Description>
+      <Description>A key which opens a portal to the Halloween Cemetery.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -11217,7 +11218,7 @@
          <Index>0x3af</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens a portal to the Lair of Draconis.</Description>
+      <Description>A key which opens a portal to the Lair of Draconis.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -11501,7 +11502,7 @@
          <Index>0x3de</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens an entrance to the Forest Maze.</Description>
+      <Description>A key which opens an entrance to the Forest Maze.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -11517,7 +11518,7 @@
          <Index>0x3e6</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens an entrance to the Woodland Labyrinth.</Description>
+      <Description>A key which opens an entrance to the Woodland Labyrinth.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -11533,7 +11534,7 @@
          <Index>0x3eb</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens an entrance to Deadwater Docks.</Description>
+      <Description>A key which opens an entrance to Deadwater Docks.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -11549,7 +11550,7 @@
          <Index>0x3e9</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens an entrance to The Crawling Depths.</Description>
+      <Description>A key which opens an entrance to The Crawling Depths.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -11565,7 +11566,7 @@
          <Index>43</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>A key which opens an entrance to The Shatters.</Description>
+      <Description>A key which opens an entrance to The Shatters.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -12301,7 +12302,7 @@
          <Index>0x4B9</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens an entrance to Belladonna's Garden.</Description>
+      <Description>A key which opens an entrance to Belladonna's Garden.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -12342,7 +12343,7 @@
          <Index>0x4BC</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A molten Key that links directly to the Lair of Shaitan, Advisor to Oryx.</Description>
+      <Description>A molten Key that links directly to the Lair of Shaitan, Advisor to Oryx.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -13058,7 +13059,7 @@
          <Index>0x4FF</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens an entrance to the Puppet Master's Theatre</Description>
+      <Description>A key which opens an entrance to the Puppet Master's Theatre.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -13125,7 +13126,7 @@
          <Index>0x4FB</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens a random dungeon.</Description>
+      <Description>A key which opens a random dungeon.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -13141,7 +13142,7 @@
          <Index>0x4FC</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens a random dungeon.</Description>
+      <Description>A key which opens a random dungeon.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -13157,7 +13158,7 @@
          <Index>0x4FD</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens a random dungeon.</Description>
+      <Description>A key which opens a random dungeon.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -13808,7 +13809,7 @@
          <Index>0x1b</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens an entrance to the Puppet Master's Encore.</Description>
+      <Description>A key which opens an entrance to the Puppet Master's Encore.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -14606,7 +14607,7 @@
          <Index>0x56d</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens an entrance to the Dank Sewer.</Description>
+      <Description>A key which opens an entrance to the Dank Sewer.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -14689,7 +14690,7 @@
          <Index>0x56d</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens an entrance to the Toxic Sewers.</Description>
+      <Description>A key which opens an entrance to the Toxic Sewers.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -14706,7 +14707,7 @@
          <Index>0x58b</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens an entrance to The Hive.</Description>
+      <Description>A key which opens an entrance to The Hive.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -14907,7 +14908,7 @@
          <Index>0x5a0</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>Unlocks a character slot!</Description>
+      <Description>Unlocks a character slot! Once activated, do not change maps before the confirmation message appears or the item might disappear!</Description>
       <Sound>use_potion</Sound>
       <Activate slot="char">Unlock</Activate>
       <Consumable/>
@@ -14922,7 +14923,7 @@
          <Index>0x5a1</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>Unlocks a vault chest!</Description>
+      <Description>Unlocks a vault chest! Once activated, do not change maps before the confirmation message appears or the item might disappear!</Description>
       <Sound>use_potion</Sound>
       <Activate slot="vault">Unlock</Activate>
       <Consumable/>
@@ -15030,7 +15031,7 @@
          <Index>0x5f</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens an entrance to Oryx's Castle. For testing purposes.</Description>
+      <Description>A key which opens an entrance to Oryx's Castle. For testing purposes.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -15047,7 +15048,7 @@
          <Index>0x5f</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens an entrance to the Wine Cellar. For testing purposes.</Description>
+      <Description>A key which opens an entrance to the Wine Cellar. For testing purposes.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -15064,7 +15065,7 @@
          <Index>0x5f</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens an entrance to Oryx's Chamber. For testing purposes.</Description>
+      <Description>A key which opens an entrance to Oryx's Chamber. For testing purposes.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -15081,7 +15082,7 @@
          <Index>0x5f</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens an entrance to the Court of Oryx. Say hi to Craig for me. For testing purposes.</Description>
+      <Description>A key which opens an entrance to the Court of Oryx. Say hi to Craig for me. For testing purposes.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -15098,7 +15099,7 @@
          <Index>0x5f</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens an entrance to the Oryx Chicken Chamber. For testing purposes.</Description>
+      <Description>A key which opens an entrance to the Oryx Chicken Chamber. For testing purposes.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -15115,7 +15116,7 @@
          <Index>0x08</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A key which opens an entrance to Ice Tomb.</Description>
+      <Description>A key which opens an entrance to Ice Tomb.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -15259,7 +15260,7 @@
          <Index>0x20e</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>A map that reveals the way to hidden treasure.</Description>
+      <Description>A map that reveals the way to hidden treasure.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
@@ -16583,5 +16584,515 @@
       <FameBonus>4</FameBonus>
       <feedPower>1000</feedPower>
       <Soulbound/>
+   </Object>
+   <Object type="0x4aaa" id="Shoveguy Skin (SB)">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>37</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Customize your Warrior with the Shoveguy Skin.</Description>
+      <Activate skinType="883">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x4aab" id="B.B. Wolf Skin (SB)">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>58</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>He's big, he's bad, and he's a wolf.\n\nSprite Credits: Beige</Description>
+      <Activate skinType="8967">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x4aac" id="Agent Skin (SB)">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>36</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Customize your Assassin with the Agent Skin. Rarity: Rare</Description>
+      <Activate skinType="912">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x4aad" id="Brigand Skin (SB)">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>44</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Customize your Rogue with the Brigand Skin. Rarity: Uncommon</Description>
+      <Activate skinType="913">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x4aae" id="Sorceress Skin (SB)">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>47</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Not all sorcerers are male.</Description>
+      <Activate skinType="899">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x4aaf" id="Iceman Skin (SB)">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>50</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>A new look to get any Knight ready for the holidays. Double-Click to send this skin to your Vault Wardrobe</Description>
+      <Activate skinType="902">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x4ab0" id="Scarlett Skin (SB)">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>48</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Customize your Huntress with the Scarlett Skin.</Description>
+      <Activate skinType="900">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x4ab1" id="Lil Red Skin (SB)">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>59</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>A trend-setter when it comes to hoods.\n\nSprite Credits: Beige</Description>
+      <Activate skinType="8968">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x4ab2" id="Platinum Warrior Skin (SB)">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>56</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Warrior of the Platinum Order.\n\nSprite Credits: DELer</Description>
+      <Activate skinType="8965">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x4ab3" id="Ranger Skin (SB)">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>42</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Customize your Archer with the Ranger Skin.\n\nSprite Credits: Radiek</Description>
+      <Activate skinType="888">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x4ab4" id="Huntsman Skin (SB)">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>77</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Unlocked during Halloween 2014.\n\nSprite Credits: WunderWafe</Description>
+      <Activate skinType="29799">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x4ab5" id="Holy Avenger Skin (SB)">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>39</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Customize your Paladin with the Holy Avenger Skin.\n\nSprite Credits: Uomo</Description>
+      <Activate skinType="885">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x4ab6" id="Hunchback Skin (SB)">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>80</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Unlocked during Halloween 2014.\n\nSprite Credits: Hawkmin</Description>
+      <Activate skinType="29816">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x4ab7" id="Witch Doctor Skin (SB)">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>46</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>I'm not really sure where the term 'witch' came from.</Description>
+      <Activate skinType="898">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x4ab8" id="Nun Skin (SB)">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>38</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Don't make me hit you with this ruler!</Description>
+      <Activate skinType="884">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x4ab9" id="Witch Skin (SB)">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>71</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>A stylish witch, community choice winner: Project Realmway 2.\n\nSprite Credits: DieGo</Description>
+      <Activate skinType="9012">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x4aba" id="Artemis Skin (SB)">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>53</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Found during Valentines Day 2014. Made by SlugKing.</Description>
+      <Activate skinType="901">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x4abb" id="Bashing Bride Skin (SB)">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>51</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Blushing? I'm not blushing. Found during Valentines Day 2014.</Description>
+      <Activate skinType="915">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x4abc" id="Eligible Bachelor Skin (SB)">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>52</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Looking for a Valentine. Found during Valentines Day 2014.</Description>
+      <Activate skinType="916">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x4abd" id="Dark Elf Huntress Skin (SB)">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>79</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Unlocked during Halloween 2014.\n\nSprite Credits: Beige</Description>
+      <Activate skinType="29801">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x4abe" id="Drow Trickster Skin (SB)">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>70</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>One of the Dark Elves that have recently began showing up in the Realm.\n\nSprite Credits: SteeleAlt</Description>
+      <Activate skinType="8979">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x4abf" id="Ascended Sorcerer Skin (SB)">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>67</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Unlocked during Halloween 2014.</Description>
+      <Activate skinType="8976">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x4ac0" id="King Knifeula Skin (SB)">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>60</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Cursed by responsibility and awesome knife skills.\n\nSprite Credits: IrondogdogROTMG</Description>
+      <Activate skinType="8969">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x4ac1" id="Platinum Knight Skin (SB)">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>55</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Knight of the Platinum Order.\n\nSprite Credits: DELer</Description>
+      <Activate skinType="8964">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x4ac2" id="Platinum Rogue Skin (SB)">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>57</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Rogue of the Platinum Order.\n\nSprite Credits: DELer</Description>
+      <Activate skinType="8966">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x4ac3" id="Deadly Vixen Skin (SB)">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>49</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Never judge a book by its cover.</Description>
+      <Activate skinType="917">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>500</feedPower>
+   </Object>
+   <Object type="0x4ad8" id="Mystic Emeritus Skin">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>157</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>A strikingly realistic statue of a famous mystic who disappeared after a catastrophic spell failure.\n\nSprite Credits: Poshun</Description>
+      <Activate skinType="19152">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x4ad9" id="Silver Ninja Skin">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>158</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>The last ninja from the Five Wolf Samurai group.\n\nSprite Credits: Kingged</Description>
+      <Activate skinType="19153">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x4ada" id="Woodland Huntress Skin">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>159</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>A protector of the Realm's forests and a master of archery. She's sometimes seen having tea with forest fairies and taking walks with her silver doe.\n\nSprite Credits: Poshun</Description>
+      <Activate skinType="19154">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x4adb" id="Bunny Trickster Skin">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>160</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>A talented dancer and one of the few people that knows how to calm down an enraged bunny.\n\nSprite Credits: Poshun</Description>
+      <Activate skinType="19155">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x4adc" id="Shrine Priestess Skin">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>161</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>An elegant shrine priestess, always quick to help others. Unfortunately, she rarely receives donations.\n\nSprite Credits: Poshun</Description>
+      <Activate skinType="19156">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x4add" id="Red Outlaw Skin">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>162</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>This rouge rogue skin will make your character look rad in red.\n\nSprite Credits: Poshun</Description>
+      <Activate skinType="19157">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x4ade" id="Shadow Mage Skin">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>163</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>He's known for dropping the sickest heals. All the witches love him!\n\nSprite Credits: Poshun</Description>
+      <Activate skinType="19158">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x4adf" id="Shield Maiden Skin">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>164</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Not all princesses need a prince to rescue them!\n\nSprite Credits: Beige</Description>
+      <Activate skinType="19159">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>6</BagType>
+      <Soulbound/>
+      <feedPower>5000</feedPower>
    </Object>
 </Objects>

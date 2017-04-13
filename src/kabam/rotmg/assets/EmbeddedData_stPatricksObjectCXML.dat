@@ -95,8 +95,6 @@
       </AnimatedTexture>
       <HitSound>monster/dwarves_hit</HitSound>
       <DeathSound>monster/dwarves_death</DeathSound>
-      <Terrain>MidForest</Terrain>
-      <SpawnProb>0.10</SpawnProb>
       <PerRealmMax>1</PerRealmMax>
       <Size>20</Size>
       <ShadowSize>60</ShadowSize>

@@ -4726,4 +4726,226 @@
       <DisplayId>Nut's Artifact Pet Stone</DisplayId>
       <feedPower>5000</feedPower>
    </Object>
+   <Object id="Mini Sphinx" type="0x4af0">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Mini Sphinx Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x4ac4" id="Mini Sphinx Skin">
+      <PetSkin/>
+      <DisplayId>Mini Sphinx</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>130</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x4ac5" id="Mini Sphinx Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>130</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>You hide like cowards... But you can&#8217;t deny its cuteness!</Description>
+      <Activate skinId="19184">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Mini Sphinx Pet Stone</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object id="Mini Crystal Steed" type="0x4af1">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Mini Crystal Steed Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x4ac6" id="Mini Crystal Steed Skin">
+      <PetSkin/>
+      <DisplayId>Mini Crystak Steed</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>131</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x4ac7" id="Mini Crystal Steed Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>131</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Call all your friends to help you pet this little steed! Made by Poshun</Description>
+      <Activate skinId="19185">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Mini Crystal Steed Pet Stone</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object id="Carnivorous Plant" type="0x4af2">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Carnivorous Plant Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x4ac8" id="Carnivorous Plant Skin">
+      <PetSkin/>
+      <DisplayId>Carnivorous Plant</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>132</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x4ac9" id="Carnivorous Plant Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>132</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>This little plant loves to chew on insects! Made by Kingged</Description>
+      <Activate skinId="19186">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Carnivorous Plant Pet Stone</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object id="Knight Companion" type="0x4af3">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Knight Companion Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x4aca" id="Knight Companion Skin">
+      <PetSkin/>
+      <DisplayId>Knight Companion</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>133</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x4acb" id="Knight Companion Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>133</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>i'm a ppe btw lel xd Made by Poshun</Description>
+      <Activate skinId="19187">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Knight Companion Pet Stone</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object id="Mr Cactus Jr." type="0x4af4">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Mr Cactus Jr. Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x4acc" id="Mr Cactus Jr. Skin">
+      <PetSkin/>
+      <DisplayId>Mr Cactus Jr.</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>134</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x4acd" id="Mr Cactus Jr. Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>134</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Bueno pa' gozar, Mulata. Made by Beige</Description>
+      <Activate skinId="19188">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Mr Cactus Jr. Pet Stone</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object id="Mr Cactus" type="0x4af5">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Mr Cactus Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x4ace" id="Mr Cactus Skin">
+      <PetSkin/>
+      <DisplayId>Mr Cactus</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>38</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x4acf" id="Mr Cactus Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>38</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>¡Oye Como Va, Mi ritmo! Made by Beige</Description>
+      <Activate skinId="19189">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Mr Cactus Pet Stone</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
 </Objects>

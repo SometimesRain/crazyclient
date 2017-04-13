@@ -446,6 +446,7 @@ public class Options extends Sprite {
         addOptionAndPosition(new ChoiceOption("dbQuiet",makeOnOffLabels(),[true,false],"Quiet","Red means you will take this status effect. Increases risk of getting disconnected when turned off.",quietCastle_options,Parameters.data_.dbQuiet ? 0xFF0000 : 0xFFFFFF, true));
         addOptionAndPosition(new ChoiceOption("dbQuietCastle",makeOnOffLabels(),[true,false],"Quiet in Castle","This should be turned on. If you choose not to take quiet in castle you're almost guaranteed to get disconnected.",null,Parameters.data_.dbQuietCastle ? 0xFFFFFF : 0xFF0000, true));
         addOptionAndPosition(new ChoiceOption("dbPetStasis",makeOnOffLabels(),[true,false],"Pet Stasis","Red means you will take this status effect. Increases risk of getting disconnected when turned off.",updateEffId,Parameters.data_.dbPetStasis ? 0xFF0000 : 0xFFFFFF, true));
+        addOptionAndPosition(new ChoiceOption("dbPetrify",makeOnOffLabels(),[true,false],"Petrify","Red means you will take this status effect. Increases risk of getting disconnected when turned off.",updateEffId,Parameters.data_.dbPetrify ? 0xFF0000 : 0xFFFFFF, true));
         quietCastle_options();
     }
       
@@ -470,6 +471,7 @@ public class Options extends Sprite {
         addOptionAndPosition(new KeyMapper("kdbQuiet", "Quiet", "Toggles the effect."));
 		addOptionAndPosition(new NullOption());
         addOptionAndPosition(new KeyMapper("kdbPetStasis", "Pet Stasis", "Toggles the effect."));
+        addOptionAndPosition(new KeyMapper("kdbPetrify", "Petrify", "Toggles the effect."));
     }
 	
 	private function calcEffId():int {
@@ -503,6 +505,9 @@ public class Options extends Sprite {
 		}
 		if (Parameters.data_.dbPetStasis) {
 			i += 512;
+		}
+		if (Parameters.data_.dbPetrify) {
+			i += 1024;
 		}
 		return i;
 	}

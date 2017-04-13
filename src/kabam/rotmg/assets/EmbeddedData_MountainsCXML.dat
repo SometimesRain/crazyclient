@@ -459,8 +459,8 @@
       <Enemy/>
       <Class>Character</Class>
       <AnimatedTexture>
-         <File>d3Chars16x16rEmbed</File>
-         <Index>24</Index>
+         <File>chars16x16dEncounters</File>
+         <Index>6</Index>
       </AnimatedTexture>
       <HitSound>monster/ghost_god_hit</HitSound>
       <DeathSound>monster/ghost_god_death</DeathSound>
@@ -482,8 +482,8 @@
       <Enemy/>
       <Class>Character</Class>
       <AnimatedTexture>
-         <File>d3Chars16x16rEmbed</File>
-         <Index>25</Index>
+         <File>chars16x16rEncounters</File>
+         <Index>0</Index>
       </AnimatedTexture>
       <HitSound>monster/cyclops_hit</HitSound>
       <DeathSound>monster/cyclops_death</DeathSound>

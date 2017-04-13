@@ -365,6 +365,10 @@ public class Projectile extends BasicObject {
 					if (!Parameters.data_.dbArmorBroken)
 						return "Armor Broken";
 					break;
+				case 35:
+					if (!Parameters.data_.dbPetrify)
+						return "Petrify";
+					break;
 				case 8:
 				case 9:
 				case 10:
