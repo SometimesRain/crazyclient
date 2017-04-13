@@ -1714,6 +1714,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 		var rangeSq:Number;
 		var distSq:Number;
 		var dur:int;
+		var inthpbuff:int;
 		switch (go.equipment_[1]) {
 			case 0xa53: //T2
 				hpbuff = 10 * wismod;
@@ -1750,16 +1751,17 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 				return;
 			}
 		}
+		inthpbuff = int(hpbuff);
 		if (player.maxHPBoost_ == player.getItemHp()) { //max hp is not boosted -> boost
-			player.maxHPBoost_ += int(hpbuff);
-			player.maxHP_ += int(hpbuff);
+			player.maxHPBoost_ += inthpbuff;
+			player.maxHP_ += inthpbuff;
 			player.remBuff.push(dur+getTimer());
 		}
 		player.chp += hpbuff;
 		if (player.chp > player.maxHP_) { //no overflow
 			player.chp = player.maxHP_;
 		}
-		player.notifyPlayer("+"+hpbuff.toFixed(0), 0x00ff00, 1500); //paladin buff notification
+		player.notifyPlayer("+"+inthpbuff, 0x00ff00, 1500); //paladin buff notification
 	}
 
     private function onShowEffect(_arg_1:ShowEffect):void {

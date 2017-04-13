@@ -664,25 +664,26 @@ public class Options extends Sprite {
         
     private function nillyOther() : void
     {
-		addOptionAndPosition(new ChoiceOption("AutoNexus",AutoNexusValues(),[0,25,30,35,40,45,50],"Auto Nexus","Will attempt to Nexus the player when health drops below the given percentage. You can still die with this on.",null));
-		addOptionAndPosition(new ChoiceOption("autoHealP",AutoHealValues(),[0,50,55,60,65,70,75,80],"Auto Heal Percentage","Heals you once your HP drops low enough on priest or paladin.",null));
-		addOptionAndPosition(new ChoiceOption("autoPot",AutoPotValues(),[0,50,55,60,65,70,75,80],"Auto Pot Percentage","Automatically drink a potion if your hp falls below a certain percentage.",null));
+		addOptionAndPosition(new ChoiceOption("AutoNexus",AutoNexusValues(),[0,15,20,25,30],"Auto Nexus","Will attempt to Nexus the player when health drops below the given percentage. You can still die with this on.",null));
+		addOptionAndPosition(new ChoiceOption("autoHealP",AutoHealValues(),[0,50,55,60,65,70,75,80],"Auto Heal","Heals you once your HP drops low enough on priest or paladin.",null));
+		addOptionAndPosition(new ChoiceOption("autoPot",AutoPotValues(),[0,50,55,60,65,70,75,80],"Auto Pot","Automatically drink a potion if your hp falls below a certain percentage.",null));
+		addOptionAndPosition(new ChoiceOption("bestServ", ServerPrefValues(), ["Default", "USWest", "USMidWest", "EUWest", "USEast", "AsiaSouthEast", "USSouth", "USSouthWest", "EUEast", "EUNorth", "EUSouthWest", "USEast3", "USWest2", "USMidWest2", "USEast2", "USNorthWest", "AsiaEast", "USSouth3", "EUNorth2", "EUWest2", "EUSouth", "USSouth2", "USWest3"], "Best Server", "Select your best server.", null));
+		
 		addOptionAndPosition(new ChoiceOption("TradeDelay",makeOnOffLabels(),[true,false],"Disable Trade Delay","Removes trade delay. Indicator still shows.",null));
 		addOptionAndPosition(new ChoiceOption("SafeWalk",makeOnOffLabels(),[true,false],"Safe Walk","Block movement onto tiles that cause damage. Click and hold left mouse to walk over these tiles.",null));
-		addOptionAndPosition(new ChoiceOption("bestServ", ServerPrefValues(), ["Default", "USWest", "USMidWest", "EUWest", "USEast", "AsiaSouthEast", "USSouth", "USSouthWest", "EUEast", "EUNorth", "EUSouthWest", "USEast3", "USWest2", "USMidWest2", "USEast2", "USNorthWest", "AsiaEast", "USSouth3", "EUNorth2", "EUWest2", "EUSouth", "USSouth2", "USWest3"], "Best Server", "Select your best server.", null));
-	
-		addOptionAndPosition(new ChoiceOption("spellVoid", makeOnOffLabels(), [true, false], "Unsafe Prism Use", "Allows using prism through walls. If you land on void you will get disconnected.", null));
 		addOptionAndPosition(new ChoiceOption("autoAbil", makeOnOffLabels(), [true, false], "Auto Ability", "Automatically uses your ability on warrior, paladin and rogue. Activated by pressing space.", null));
+		addOptionAndPosition(new ChoiceOption("palaSpam", makeOnOffLabels(), [true, false], "Spam Paladin Ability", "Uses paladin ability every 0.5 seconds if auto ability is enabled", null));
+		addOptionAndPosition(new ChoiceOption("spellVoid", makeOnOffLabels(), [true, false], "Unsafe Prism Use", "Allows using prism through walls. If you land on void you will get disconnected.", null));
+        addOptionAndPosition(new KeyMapper("maxPrism","Teleport Max Distance","Always teleports the maximum distance on Trickster. You will have to stand still for this to work."));
+		addOptionAndPosition(new ChoiceOption("ninjaTap",makeOnOffLabels(),[true,false],"One-Tap Ninja Ability","Makes space toggle the state of the ability. Tap to turn on, tap to turn off.",null));
         addOptionAndPosition(new ChoiceOption("slideOnIce", makeOnOffLabels(), [true, false], "Slide on Ice", "Toggles sliding on ice.", null));
+        addOptionAndPosition(new KeyMapper("incFinder", "Inc Finder", "Goes through everyone's inventory and backpack then reports if they have an incantation."));
+		addOptionAndPosition(new KeyMapper("enterPortal", "Portal Enter", "Enters nearest portal."));
 		addOptionAndPosition(new ChoiceOption("rclickTp",makeOnOffLabels(),[true,false],"Right-click Chat Teleport","Right click a chat name to teleport. No menu will be shown.",null));
 		addOptionAndPosition(new ChoiceOption("autoTp",makeOnOffLabels(),[true,false],"Teleport Queue","Automatically teleports after teleport cooldown if you have tried to teleport to someone during the cooldown.",null));
-		addOptionAndPosition(new ChoiceOption("ninjaTap",makeOnOffLabels(),[true,false],"One-Tap Ninja Ability","Makes space toggle the state of the ability. Tap to turn on, tap to turn off.",null));
-		addOptionAndPosition(new KeyMapper("enterPortal", "Portal Enter", "Enters nearest portal."));
-		addOptionAndPosition(new KeyMapper("resetCHP","Reset Client HP","Use this hotkey if your CL bar doesn't match your HP bar."));
-        addOptionAndPosition(new KeyMapper("incFinder","Inc Finder","Goes through everyone's inventory and backpack then reports if they have an incantation."));
-        addOptionAndPosition(new KeyMapper("maxPrism","Teleport Max Distance","Always teleports the maximum distance on Trickster. You will have to stand still for this to work."));
         addOptionAndPosition(new KeyMapper("QuestTeleport","Closest Player to Quest Teleport","Teleports to the player that is closest to your quest."));
         addOptionAndPosition(new KeyMapper("tpto","Teleport to Caller","Teleport to a person calling a dungeon. Current keywords: "+Parameters.data_.tptoList));
+		addOptionAndPosition(new KeyMapper("resetCHP","Reset Client HP","Use this hotkey if your CL bar doesn't match your HP bar."));
 	}
     
     private function miscMenu() : void
@@ -698,7 +699,7 @@ public class Options extends Sprite {
     
     private function AutoNexusValues() : Vector.<StringBuilder>
     {
-        return new <StringBuilder>[new StaticStringBuilder(Parameters.data_.AutoNexus == 0 ? "Off" : Parameters.data_.AutoNexus+"%"),new StaticStringBuilder("25%"),new StaticStringBuilder("30%"),new StaticStringBuilder("35%"),new StaticStringBuilder("40%"),new StaticStringBuilder("45%"),new StaticStringBuilder("50%")];
+        return new <StringBuilder>[new StaticStringBuilder(Parameters.data_.AutoNexus == 0 ? "Off" : Parameters.data_.AutoNexus+"%"),new StaticStringBuilder("15%"),new StaticStringBuilder("20%"),new StaticStringBuilder("25%"),new StaticStringBuilder("30%")];
     }
     
     private function AutoHealValues() : Vector.<StringBuilder>

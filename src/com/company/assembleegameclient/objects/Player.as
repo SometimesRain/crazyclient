@@ -1029,7 +1029,7 @@ public class Player extends Character {
 			if (remBuff.length > 0 && getTimer() >= remBuff[remBuff.length - 1]) { //how to deal with double delete?
 				var mhpboost:int = maxHPBoost_;
 				var itemhp:int = getItemHp();
-				if (itemhp != mhpboost) {
+				if (itemhp != mhpboost && !isHpBoosted()) {
 					//addTextLine.dispatch(ChatMessage.make("", remBuff.length+": no change"));
 					maxHP_ -= mhpboost - itemhp;
 					maxHPBoost_ = itemhp;
@@ -1113,7 +1113,12 @@ public class Player extends Character {
 						break;
 					case 0xb26: //gcookie
 					case 0xa55: //zseal
-						abilFreq = 4000 * (1 + (wisdom_ + wisdomBoost_) / 150);
+						if (Parameters.data_.palaSpam) {
+							abilFreq = 500;
+						}
+						else {
+							abilFreq = 4000 * (1 + (wisdom_ + wisdomBoost_) / 150);
+						}
 						break;
 				}
 				if (abilFreq > 0) {
