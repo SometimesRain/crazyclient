@@ -648,6 +648,9 @@ public class ParseChatMessageCommand {
 			case "/flist":
 				openDialog.dispatch(new FriendListView());
 				return true;
+			case "/nexus":
+				hudModel.gameSprite.gsc_.escapeUnsafe();
+				return true;
 		}
 		var splice:Array = data.toLowerCase().match("/player (\\w+)$")
 		if (splice != null) {

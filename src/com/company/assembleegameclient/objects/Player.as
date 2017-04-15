@@ -1252,16 +1252,26 @@ public class Player extends Character {
         }
         var _local_1:Square = map_.getSquare(x_, y_);
         if (_local_1.props_.sinking_) {
-            sinkLevel_ = Math.min((sinkLevel_ + 1), Parameters.MAX_SINK_LEVEL);
-            this.moveMultiplier_ = (0.1 + ((1 - (sinkLevel_ / Parameters.MAX_SINK_LEVEL)) * (_local_1.props_.speed_ - 0.1)));
+			if (Parameters.data_.noSink) { //EXPERIMENTAL
+				sinkLevel_ = Math.min((sinkLevel_ + 1), Parameters.MAX_SINK_LEVEL);
+				if (sinkLevel_ == Parameters.MAX_SINK_LEVEL) {
+					this.moveMultiplier_ = (0.1 + ((1 - (sinkLevel_ / Parameters.MAX_SINK_LEVEL)) * (_local_1.props_.speed_ - 0.1)));
+				}
+				else {
+					this.moveMultiplier_ = _local_1.props_.speed_;
+				}
+			}
+			else {
+				sinkLevel_ = Math.min((sinkLevel_ + 1), Parameters.MAX_SINK_LEVEL);
+				this.moveMultiplier_ = (0.1 + ((1 - (sinkLevel_ / Parameters.MAX_SINK_LEVEL)) * (_local_1.props_.speed_ - 0.1)));
+			}
         }
         else {
             sinkLevel_ = 0;
             this.moveMultiplier_ = _local_1.props_.speed_;
         }
-        if (Parameters.data_["SWSpeed"] && map_.name_ == "Sprite World")
-		{
-			if (!mapLightSpeed && Parameters.data_["SWLight"]) {
+        if (Parameters.data_.SWSpeed && map_.name_ == "Sprite World") {
+			if (!mapLightSpeed && Parameters.data_.SWLight) {
 				moveMultiplier_ = 5;
 			}
 			else {
@@ -1279,12 +1289,11 @@ public class Player extends Character {
         return (_local_3);
     }
 
-    private function getNameColor():uint { //name under
+    private function getNameColor():uint { //name under the player
         if (this.isFellowGuild_) {
             return (Parameters.FELLOW_GUILD_COLOR);
         }
-        if (Parameters.data_.lockHighlight && starred_)
-        {
+        if (Parameters.data_.lockHighlight && starred_) {
 			return 4240365;
         }
         if (this.nameChosen_) {
@@ -1356,10 +1365,10 @@ public class Player extends Character {
             return ((MIN_MOVE_SPEED * this.moveMultiplier_));
         }
         var _local_1:Number = (MIN_MOVE_SPEED + ((this.speed_ / 75) * (MAX_MOVE_SPEED - MIN_MOVE_SPEED)));
-        if (((isSpeedy()) || (isNinjaSpeedy()))) {
+        if (!Parameters.data_.speedy && (isSpeedy() || isNinjaSpeedy())) {
             _local_1 = (_local_1 * 1.5);
         }
-        return ((_local_1 * this.moveMultiplier_));
+        return (_local_1 * this.moveMultiplier_);
     }
 
     public function attackFrequency():Number {

@@ -57,6 +57,13 @@ public class HUDView extends Sprite implements UnFocusAble {
     public var interactPanel:InteractPanel;
     public var tradePanel:TradePanel;
 	
+	private var optButton:SimpleIconButton;
+	private var frButton:SimpleIconButton;
+	private var helpButton:SimpleIconButton;
+	private var showButton:SimpleIconButton;
+	private var upArrow:BitmapData;
+	private var downArrow:BitmapData;
+	
     private var stats:StatsView;
     private var cdtimer:CooldownTimer;
 	private var mainView:Boolean = true;
@@ -73,6 +80,9 @@ public class HUDView extends Sprite implements UnFocusAble {
         this.createAssets();
         this.addAssets();
         this.positionAssets();
+		upArrow = AssetLibrary.getImageFromSet("lofiInterface", 54);
+		downArrow = AssetLibrary.getImageFromSet("lofiInterface", 55);
+		this.createButtons(); //must come after minimap
     }
 
     private function createAssets():void {
@@ -112,25 +122,41 @@ public class HUDView extends Sprite implements UnFocusAble {
         this.createInventories(); //inventory, backpack, potions
         this.createInteractPanel(_arg_1); //nearby players
         this.createCooldownTimer(); //custom
-		this.createButtons();
     }
 	
 	private function createButtons():void {
-        var button:SimpleIconButton = new SimpleIconButton(AssetLibrary.getImageFromSet("lofiInterfaceBig", 5));
-        button.x = 176;
-        button.y = 176;
-        button.addEventListener(MouseEvent.CLICK, this.openOptions);
-        addChild(button);
-        button = new SimpleIconButton(AssetLibrary.getImageFromSet("lofiInterfaceBig", 13));
-        button.x = 176;
-        button.y = 156;
-        button.addEventListener(MouseEvent.CLICK, this.openFriends);
-        addChild(button);
-        button = new SimpleIconButton(AssetLibrary.getImageFromSet("lofiInterfaceBig", 15));
-        button.x = 176;
-        button.y = 136;
-        button.addEventListener(MouseEvent.CLICK, this.openHelp);
-        addChild(button);
+        optButton = new SimpleIconButton(AssetLibrary.getImageFromSet("lofiInterfaceBig", 5));
+        optButton.x = 176;
+        optButton.y = 160;
+		optButton.visible = false;
+        optButton.addEventListener(MouseEvent.CLICK, openOptions);
+        addChild(optButton);
+        frButton = new SimpleIconButton(AssetLibrary.getImageFromSet("lofiInterfaceBig", 13));
+        frButton.x = 176;
+        frButton.y = 140;
+		frButton.visible = false;
+        frButton.addEventListener(MouseEvent.CLICK, openFriends);
+        addChild(frButton);
+        helpButton = new SimpleIconButton(AssetLibrary.getImageFromSet("lofiInterfaceBig", 15));
+        helpButton.x = 176;
+        helpButton.y = 120;
+		helpButton.visible = false;
+        helpButton.addEventListener(MouseEvent.CLICK, openHelp);
+        addChild(helpButton);
+        showButton = new SimpleIconButton(upArrow);
+        showButton.x = 176;
+        showButton.y = 176;
+        showButton.scaleX = 2;
+        showButton.scaleY = 2;
+        showButton.addEventListener(MouseEvent.CLICK, toggleIcons);
+        addChild(showButton);
+	}
+	
+	private function toggleIcons(e:MouseEvent):void {
+		optButton.visible = !optButton.visible;
+		frButton.visible = !frButton.visible;
+		helpButton.visible = !helpButton.visible;
+		showButton.changeIcon(showButton.iconBitmapData_ == upArrow ? downArrow : upArrow);
 	}
 	
 	private function openOptions(e:MouseEvent):void {

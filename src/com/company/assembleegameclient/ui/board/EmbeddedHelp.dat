@@ -42,6 +42,10 @@
       <Explanation>Starts a timer which will be shown on top of your character&#xA;Count specifies how many timer the timer should tick&#xA;Step is an optional parameter, it specifies how often a tick happens (in milliseconds)&#xA;Step defaults to 1000</Explanation>
    </Article>
    <Article>
+      <Command>/nexus</Command>
+      <Explanation>Sends you to nexus&#xA;Can be used to fix the issue with nexus key sending you to realm</Explanation>
+   </Article>
+   <Article>
       <Command>/re</Command>
       <Explanation>Repeats you last message</Explanation>
    </Article>

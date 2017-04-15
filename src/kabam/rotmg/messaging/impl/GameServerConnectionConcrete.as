@@ -1193,7 +1193,20 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         else {
 			reconNexus.charId_ = charId_;
 			gs_.dispatchEvent(reconNexus);
-            //serverConnection.sendMessage(this.messages.require(ESCAPE));
+            this.checkDavyKeyRemoval();
+        }
+    }
+
+    override public function escapeUnsafe():void {
+        if (this.playerId_ == -1) {
+            return;
+        }
+        if (((gs_.map) && ((gs_.map.name_ == "Arena")))) {
+            serverConnection.sendMessage(this.messages.require(ACCEPT_ARENA_DEATH));
+        }
+        else {
+			reconNexus.charId_ = charId_;
+            serverConnection.sendMessage(this.messages.require(ESCAPE));
             this.checkDavyKeyRemoval();
         }
     }
@@ -2176,6 +2189,9 @@ public class GameServerConnectionConcrete extends GameServerConnection {
                     if (!_arg_3) {
                         _local_4.sinkLevel_ = _local_8;
                     }
+					if (_local_4 == player) {
+						addTextLine.dispatch(ChatMessage.make("","Sink: "+_local_4.sinkLevel_));
+					}
                     break;
                 case StatData.ALT_TEXTURE_STAT:
                     _arg_1.setAltTexture(_local_8);

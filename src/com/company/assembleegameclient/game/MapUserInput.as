@@ -343,7 +343,7 @@ public class MapUserInput {
 		return false;
 	}
 	
-	private function handlePerfectAim(player:Player):void {
+	public function handlePerfectAim(player:Player):void {
 		var po:Point = player.sToW(gs_.map.mouseX,gs_.map.mouseY);
 		var target:GameObject;
 		var obj:GameObject;

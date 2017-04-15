@@ -147,6 +147,9 @@ public class GameServerConnection {
 
     public function escape():void {
     }
+	
+    public function escapeUnsafe():void {
+    }
 
     public function useItem(_arg_1:int, _arg_2:int, _arg_3:int, _arg_4:int, _arg_5:Number, _arg_6:Number, _arg_7:int):void {
     }

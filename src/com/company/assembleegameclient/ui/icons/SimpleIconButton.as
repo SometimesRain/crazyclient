@@ -13,7 +13,7 @@ public class SimpleIconButton extends Sprite {
     protected static const mouseOverCT:ColorTransform = new ColorTransform(1, (220 / 0xFF), (133 / 0xFF));
     protected static const disableCT:ColorTransform = new ColorTransform(0.6, 0.6, 0.6, 1);
 
-    protected var iconBitmapData_:BitmapData;
+    public var iconBitmapData_:BitmapData;
     protected var icon_:Bitmap;
     protected var ct_:ColorTransform;
 
@@ -31,6 +31,13 @@ public class SimpleIconButton extends Sprite {
         this.iconBitmapData_ = null;
         this.icon_ = null;
     }
+	
+	public function changeIcon(_arg_1:BitmapData):void {
+		removeChild(icon_);
+        iconBitmapData_ = _arg_1;
+        icon_ = new Bitmap(this.iconBitmapData_);
+        addChild(icon_);
+	}
 
     public function setColorTransform(_arg_1:ColorTransform):void {
         if (_arg_1 == this.ct_) {

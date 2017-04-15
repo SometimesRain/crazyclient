@@ -1,5 +1,6 @@
 ﻿package kabam.rotmg.chat.control {
 import com.company.assembleegameclient.objects.GameObject;
+import com.company.assembleegameclient.objects.Player;
 import com.company.assembleegameclient.objects.TextureDataConcrete;
 import com.company.assembleegameclient.parameters.Parameters;
 import kabam.rotmg.game.commands.PlayGameCommand;
@@ -59,6 +60,10 @@ public class TextHandler {
         var _local_5:String;
 		var lower:String;
         var _local_2:Boolean = _arg_1.numStars_ == -1; //|| _arg_1.objectId_ == -1
+		var p:Player = hudModel.gameSprite.map.player_;
+		if (_local_2 && p.objectType_ == 775 && _arg_1.text_ == "EYE see you!") {
+			hudModel.gameSprite.mui_.handlePerfectAim(p); //auto paralyze avatar eyes
+		}
         if (!Parameters.data_.chatAll && _arg_1.name_ != model.player.name_ && !_local_2 && !isSpecialRecipientChat(_arg_1.recipient_)) {
             if (!(_arg_1.recipient_ == Parameters.GUILD_CHAT_NAME && Parameters.data_.chatGuild)) {
                 if (!(_arg_1.recipient_ != "" && Parameters.data_.chatWhisper)) {

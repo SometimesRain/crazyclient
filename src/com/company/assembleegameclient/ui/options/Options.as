@@ -690,6 +690,7 @@ public class Options extends Sprite {
         addOptionAndPosition(new KeyMapper("QuestTeleport","Closest Player to Quest Teleport","Teleports to the player that is closest to your quest."));
         addOptionAndPosition(new KeyMapper("tpto","Teleport to Caller","Teleport to a person calling a dungeon. Current keywords: "+Parameters.data_.tptoList));
 		addOptionAndPosition(new KeyMapper("resetCHP","Reset Client HP","Use this hotkey if your CL bar doesn't match your HP bar."));
+		addOptionAndPosition(new ChoiceOption("speedy",makeOnOffLabels(),[true,false],"Disable Speedy","Makes your character unaffected by speedy.",null));
 	}
     
     private function miscMenu() : void
@@ -728,6 +729,7 @@ public class Options extends Sprite {
         addOptionAndPosition(new ChoiceOption("curBoss",bossNames(),[3368,3366,3367],"Current Boss","You will only be able to hit the current boss.",null));
         addOptionAndPosition(new ChoiceOption("tombHack",makeOnOffLabels(),[true,false],"Tomb Hack","Tomb hack allows you to only damage the selected boss, leaving others unharmed even if you shoot them.",tombDeactivate));
 		addOptionAndPosition(new KeyMapper("tombCycle", "Next Boss", "Selects the next boss.", !Parameters.data_.tombHack));
+        addOptionAndPosition(new ChoiceOption("noSink",makeOnOffLabels(),[true,false],"No Sink EXPERIMENTAL","Makes you not sink in the quicksand.",null));
 		tombDeactivate();
         //addOptionAndPosition(new ChoiceOption("AutoHealPercentage",AutoHealValues(),[0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100],"Auto Heal Threshold","NillyOptions.AutoAbility.Heal.desc",null));
         //addOptionAndPosition(new KeyMapper("AutoAbilityHotkey","Toggle Auto Ability","NillyOptions.AutoAbility.Hotkey.desc"));
