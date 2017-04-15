@@ -12,14 +12,8 @@ import kabam.rotmg.dialogs.control.CloseDialogsSignal;
 
 import flash.events.MouseEvent;
 
-import kabam.rotmg.text.model.TextKey;
-
-import org.osflash.signals.Signal;
-
 public class FindMenu extends Frame {
 	
-    //public const cancel:Signal = new Signal();
-    //public var panels:Vector.<PlayerGameObjectListItem>; //32h 100w per panel
     public var gs_:GameSprite;
     public var closeDialogs:CloseDialogsSignal;
 	public var p_:Vector.<Player>;

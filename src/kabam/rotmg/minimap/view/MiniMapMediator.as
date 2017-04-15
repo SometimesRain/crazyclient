@@ -1,6 +1,8 @@
 ﻿package kabam.rotmg.minimap.view {
 import com.company.assembleegameclient.objects.GameObject;
 import com.company.assembleegameclient.objects.Player;
+import kabam.rotmg.minimap.control.UpdateLootBagSignal;
+import kabam.rotmg.minimap.model.UpdateLootBagVO;
 
 import flash.utils.Dictionary;
 
@@ -37,6 +39,8 @@ public class MiniMapMediator implements IMediator {
     public var exitGameSignal:ExitGameSignal;
     [Inject]
     public var layers:Layers;
+    [Inject]
+    public var updateLootBagSignal:UpdateLootBagSignal;
 
 
     public function initialize():void {
@@ -44,6 +48,7 @@ public class MiniMapMediator implements IMediator {
         this.setFocus.add(this.onSetFocus);
         this.updateHUD.add(this.onUpdateHUD);
         this.updateGameObjectTileSignal.add(this.onUpdateGameObjectTile);
+        this.updateLootBagSignal.add(this.onUpdateLootBag);
         this.updateGroundTileSignal.add(this.onUpdateGroundTile);
         this.miniMapZoomSignal.add(this.onMiniMapZoom);
         this.exitGameSignal.add(this.onExitGame);
@@ -58,9 +63,14 @@ public class MiniMapMediator implements IMediator {
         this.setFocus.remove(this.onSetFocus);
         this.updateHUD.remove(this.onUpdateHUD);
         this.updateGameObjectTileSignal.remove(this.onUpdateGameObjectTile);
+        this.updateLootBagSignal.remove(this.onUpdateLootBag);
         this.updateGroundTileSignal.remove(this.onUpdateGroundTile);
         this.miniMapZoomSignal.remove(this.onMiniMapZoom);
         this.exitGameSignal.remove(this.onExitGame);
+    }
+
+    private function onUpdateLootBag(_arg_1:UpdateLootBagVO):void {
+        this.view.setLootBag(_arg_1.tileX, _arg_1.tileY, _arg_1.objectId, _arg_1.remove);
     }
 
     private function onSetFocus(_arg_1:String):void {
@@ -94,10 +104,8 @@ public class MiniMapMediator implements IMediator {
         if (_arg_1 == MiniMapZoomSignal.IN) {
             this.view.zoomIn();
         }
-        else {
-            if (_arg_1 == MiniMapZoomSignal.OUT) {
-                this.view.zoomOut();
-            }
+        else if (_arg_1 == MiniMapZoomSignal.OUT) {
+            this.view.zoomOut();
         }
     }
 

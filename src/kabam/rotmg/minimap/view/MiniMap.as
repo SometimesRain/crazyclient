@@ -10,7 +10,6 @@ public class MiniMap extends Sprite {
     public var map:AbstractMap;
     public var menuLayer:DisplayObjectContainer;
 
-
     public function setMap(_arg_1:AbstractMap):void {
     }
 
@@ -24,6 +23,9 @@ public class MiniMap extends Sprite {
     }
 
     public function setGameObjectTile(_arg_1:int, _arg_2:int, _arg_3:GameObject):void {
+    }
+
+    public function setLootBag(_arg_1:int, _arg_2:int, _arg_3:int, _arg_4:Boolean):void {
     }
 
     public function zoomIn():void {

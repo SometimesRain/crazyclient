@@ -6,6 +6,7 @@ import com.company.assembleegameclient.objects.Player;
 import com.company.assembleegameclient.parameters.Parameters;
 import com.company.assembleegameclient.ui.BoostPanelButton;
 import com.company.assembleegameclient.ui.TradePanel;
+import com.company.assembleegameclient.ui.board.HelpBoard;
 import com.company.assembleegameclient.ui.icons.SimpleIconButton;
 import com.company.assembleegameclient.ui.panels.InteractPanel;
 import com.company.assembleegameclient.ui.panels.itemgrids.EquippedGrid;
@@ -125,6 +126,11 @@ public class HUDView extends Sprite implements UnFocusAble {
         button.y = 156;
         button.addEventListener(MouseEvent.CLICK, this.openFriends);
         addChild(button);
+        button = new SimpleIconButton(AssetLibrary.getImageFromSet("lofiInterfaceBig", 15));
+        button.x = 176;
+        button.y = 136;
+        button.addEventListener(MouseEvent.CLICK, this.openHelp);
+        addChild(button);
 	}
 	
 	private function openOptions(e:MouseEvent):void {
@@ -133,6 +139,10 @@ public class HUDView extends Sprite implements UnFocusAble {
 	
 	private function openFriends(e:MouseEvent):void {
 		openDialog.dispatch(new FriendListView());
+	}
+	
+	private function openHelp(e:MouseEvent):void {
+		openDialog.dispatch(new HelpBoard());
 	}
 
     private function createPetWindow():void {

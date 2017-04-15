@@ -610,6 +610,7 @@ public class Options extends Sprite {
         addOptionAndPosition(new ChoiceOption("potsMinor",makeOnOffLabels(),[true,false],"Loot SPD/DEX/VIT/WIS","Low value potions.",updateWanted));
         addOptionAndPosition(new ChoiceOption("lootMP",makeOnOffLabels(),[true,false],"Loot MP Potions to Inventory","Loots magic potions from ground to inventory.",null));
         addOptionAndPosition(new ChoiceOption("drinkPot",makeOnOffLabels(),[true,false],"Drink Excess Potions","Drinks potions when an item is about to be looted on its slot.",null));
+        addOptionAndPosition(new ChoiceOption("grandmaMode",makeOnOffLabels(),[true,false],"Large Loot Bags and Chests","For those of you who are legally blind.",null));
         loot_options();
     }
     

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Articles>
+   <Article>
+      <Command>/con &lt;server?&gt; &lt;character?&gt; &lt;realm?&gt;</Command>
+      <Explanation>Connects you to different servers and worlds&#xA;All parameters are optional (indicated by ?)&#xA;Server specifies the server to connect to (e.g. uss2)&#xA;Character is the class you want to connect as, name doesn't have to be written in its entirety (e.g. /con kn)&#xA;2 can be postfixed to indicate the second instance of the said character (e.g. kn2 for second knight)&#xA;Realm selects a realm to connect to, the realm must have been visited before (e.g. med for medusa)&#xA;v can be used for vault&#xA;If no parameters are given you'll be connected the a server told by a friend&#xA;To ask a friend to tell their server, tell them s? (note: they must have added you as a friend with /afr command)</Explanation>
+   </Article>
+   <Article>
+      <Command>/eff &lt;preset id&gt; &lt;effect id&gt; &lt;preset name&gt;</Command>
+      <Explanation>Sets a preset which can toggle multiple status effects at once&#xA;Preset ID must be between 1 and 3&#xA;Effect ID will be shown for the selected debuffs on Options -> Debuffs&#xA;Preset name identifies the preset, if set to a dungeon name it automatically activates when entering the dungeon</Explanation>
+   </Article>
+   <Article>
+      <Command>/setmsg &lt;message id&gt; &lt;message&gt;</Command>
+      <Explanation>Sets a message to be used with a hotkey (Options -> Messages)&#xA;Message ID must be between 1 and 3</Explanation>
+   </Article>
+   <Article>
+      <Command>/tp &lt;malformed player name&gt;</Command>
+      <Explanation>Corrects your typos and teleports to the player whose name best matches with the parameter</Explanation>
+   </Article>
+   <Article>
+      <Command>/find &lt;partial item name&gt;</Command>
+      <Explanation>Finds players holding the specified item in their inventory and opens a dialog where you can trade with them&#xA;You can trade with invidual players by clicking their name</Explanation>
+   </Article>
+   <Article>
+      <Command>/give &lt;player name&gt; &lt;inventory array&gt;</Command>
+      <Explanation>Gives items to the specified player&#xA;Only works with players who have friended you&#xA;Inventory array is 8 digits long and consists of 1s and 0s&#xA;Set 1 for every item you want to give (e.g. to give items 2 and 4 use 01010000)&#xA;Preceding 0s can be left out (e.g. 0101 for items 2 and 4)</Explanation>
+   </Article>
+   <Article>
+      <Command>/autonex &lt;percentage&gt;</Command>
+      <Explanation>Sets your autonexus percentage&#xA;Set to 0 to turn off (not recommended)</Explanation>
+   </Article>
+   <Article>
+      <Command>/autoheal &lt;percentage&gt;</Command>
+      <Explanation>Sets your autoheal percentage&#xA;Set to 0 to turn off</Explanation>
+   </Article>
+   <Article>
+      <Command>/autopot &lt;percentage&gt;</Command>
+      <Explanation>Sets your autopot percentage&#xA;Set to 0 to turn off</Explanation>
+   </Article>
+   <Article>
+      <Command>/timer &lt;count&gt; &lt;step?&gt;</Command>
+      <Explanation>Starts a timer which will be shown on top of your character&#xA;Count specifies how many timer the timer should tick&#xA;Step is an optional parameter, it specifies how often a tick happens (in milliseconds)&#xA;Step defaults to 1000</Explanation>
+   </Article>
+   <Article>
+      <Command>/re</Command>
+      <Explanation>Repeats you last message</Explanation>
+   </Article>
+   <Article>
+      <Command>/re &lt;player name&gt;</Command>
+      <Explanation>Repeats you last tell and changes the recipient to the specified name</Explanation>
+   </Article>
+   <Article>
+      <Command>/flist</Command>
+      <Explanation>Opens Deca's friends list</Explanation>
+   </Article>
+   <Article>
+      <Command>/name &lt;name&gt;</Command>
+      <Explanation>Changes the name displayed on the HUD&#xA;Does not change your name on chat&#xA;The name will only be displayed on characters that have no backpack</Explanation>
+   </Article>
+   <Article>
+      <Command>/name</Command>
+      <Explanation>Changes the name displayed on the HUD back to normal</Explanation>
+   </Article>
+   <Article>
+      <Command>/take &lt;partial item name&gt;</Command>
+      <Explanation>Starts moving items from the nearest vault to your inventory chest&#xA;By using parameter "pots" all stat potions are considered move targets</Explanation>
+   </Article>
+   <Article>
+      <Command>/put &lt;partial item name&gt;</Command>
+      <Explanation>Starts moving items from your inventory to the nearest vault chest&#xA;By using parameter "pots" all stat potions are considered move targets</Explanation>
+   </Article>
+   <Article>
+      <Command>/s</Command>
+      <Explanation>Switches items from backpack to inventory</Explanation>
+   </Article>
+   <Article>
+      <Command>/fame</Command>
+      <Explanation>Shows fame gain statistics on you current session</Explanation>
+   </Article>
+   <Article>
+      <Command>/tr</Command>
+      <Explanation>Trades with the last player you've sent a tell to</Explanation>
+   </Article>
+   <Article>
+      <Command>/tut</Command>
+      <Explanation>Takes you to the nexus tutorial</Explanation>
+   </Article>
+   <Article>
+      <Command>/l2m</Command>
+      <Explanation>Calculates potions needed to max you current character</Explanation>
+   </Article>
+   <Article>
+      <Command>/buy &lt;item name&gt; &lt;for item name?&gt;</Command>
+      <Explanation>Takes you to the page on realmeye showing who's trading the specified items&#xA;Item names don't have to be complete&#xA;Second parameters is optional, if not given the parameter defaults to Potion of Life</Explanation>
+   </Article>
+   <Article>
+      <Command>/sell &lt;item name&gt; &lt;for item name?&gt;</Command>
+      <Explanation>Takes you to the page on realmeye showing who's trading the specified items&#xA;Item names don't have to be complete&#xA;Second parameters is optional, if not given the parameter defaults to Potion of Life</Explanation>
+   </Article>
+   <Article>
+      <Command>/sell &lt;slot id&gt;</Command>
+      <Explanation>Takes you to the page on realmeye showing who's buying the item on the specified slot&#xA;Use 1-8 for inventory and 9-16 for backpack</Explanation>
+   </Article>
+   <Article>
+      <Command>/player &lt;player name&gt;</Command>
+      <Explanation>Takes you to specified player's realmeye page</Explanation>
+   </Article>
+   <Article>
+      <Command>/roll</Command>
+      <Explanation>Gets your roll from realmeye</Explanation>
+   </Article>
+   <Article>
+      <Command>/mates</Command>
+      <Explanation>Shows all your realmeye guild mates who are online</Explanation>
+   </Article>
+   <Article>
+      <Command>/fr</Command>
+      <Explanation>Shows all your realmeye friends who are online</Explanation>
+   </Article>
+   <Article>
+      <Command>/hide</Command>
+      <Explanation>Hides you on realmeye</Explanation>
+   </Article>
+   <Article>
+      <Command>/serv</Command>
+      <Explanation>Shows the server and realm you're on</Explanation>
+   </Article>
+   <Article>
+      <Command>/fs</Command>
+      <Explanation>Toggles fullscreen</Explanation>
+   </Article>
+   <Article>
+      <Command>/scaleui</Command>
+      <Explanation>Toggles UI scaling</Explanation>
+   </Article>
+   <Article>
+      <Command>/mscale &lt;decimal value&gt;</Command>
+      <Explanation>Changes the map zoom&#xA;Default is 1</Explanation>
+   </Article>
+   <!-- list commands -->
+   <Article>
+      <Command>/aig &lt;mob id&gt;</Command>
+      <Explanation>Adds a mob to the ignore list&#xA;Mobs on the ignore list will not be targeted</Explanation>
+   </Article>
+   <Article>
+      <Command>/rig &lt;mob id&gt;</Command>
+      <Explanation>Removes a mob from the ignore list</Explanation>
+   </Article>
+   <Article>
+      <Command>/iglist</Command>
+      <Explanation>Prints out the ignore list</Explanation>
+   </Article>
+   <Article>
+      <Command>/igdefault</Command>
+      <Explanation>Sets the ignore list to its default values</Explanation>
+   </Article>
+   <Article>
+      <Command>/igclear</Command>
+      <Explanation>Clears the ignore list</Explanation>
+   </Article>
+   <Article>
+      <Command>/aex &lt;mob id&gt;</Command>
+      <Explanation>Adds a mob to the exception list&#xA;Mobs on the exception list are targeted even when they're invulnerable</Explanation>
+   </Article>
+   <Article>
+      <Command>/rex &lt;mob id&gt;</Command>
+      <Explanation>Removes a mob from the exception list</Explanation>
+   </Article>
+   <Article>
+      <Command>/exlist</Command>
+      <Explanation>Prints out the exception list</Explanation>
+   </Article>
+   <Article>
+      <Command>/exdefault</Command>
+      <Explanation>Sets the exception list to its default values</Explanation>
+   </Article>
+   <Article>
+      <Command>/exclear</Command>
+      <Explanation>Clears the exception list</Explanation>
+   </Article>
+   <Article>
+      <Command>/apr &lt;mob id&gt;</Command>
+      <Explanation>Adds a mob to the priority list&#xA;Mobs on the priority list are targeted over other mobs</Explanation>
+   </Article>
+   <Article>
+      <Command>/rpr &lt;mob id&gt;</Command>
+      <Explanation>Removes a mob from the priority list</Explanation>
+   </Article>
+   <Article>
+      <Command>/prlist</Command>
+      <Explanation>Prints out the priority list</Explanation>
+   </Article>
+   <Article>
+      <Command>/prdefault</Command>
+      <Explanation>Sets the priority list to its default values</Explanation>
+   </Article>
+   <Article>
+      <Command>/prclear</Command>
+      <Explanation>Clears the priority list</Explanation>
+   </Article>
+   <Article>
+      <Command>/afr &lt;player name&gt;</Command>
+      <Explanation>Adds a player to the local friends list&#xA;You can ask for a server ip from a player who has friended you with by telling them s?</Explanation>
+   </Article>
+   <Article>
+      <Command>/rfr &lt;player id&gt;</Command>
+      <Explanation>Removes a player from the local friends list</Explanation>
+   </Article>
+   <Article>
+      <Command>/frlist</Command>
+      <Explanation>Prints out the local friends list</Explanation>
+   </Article>
+   <Article>
+      <Command>/frclear</Command>
+      <Explanation>Clears the local friends list</Explanation>
+   </Article>
+   <Article>
+      <Command>/asp &lt;word&gt;</Command>
+      <Explanation>Adds a word to the spam filter list&#xA;Messages containing filtered words will not be displayed</Explanation>
+   </Article>
+   <Article>
+      <Command>/rsp &lt;word&gt;</Command>
+      <Explanation>Removes a word from the spam filter list</Explanation>
+   </Article>
+   <Article>
+      <Command>/splist</Command>
+      <Explanation>Prints out the spam filter list</Explanation>
+   </Article>
+   <Article>
+      <Command>/spdefault</Command>
+      <Explanation>Sets the spam filter list to its default values</Explanation>
+   </Article>
+   <Article>
+      <Command>/spclear</Command>
+      <Explanation>Clears the spam filter list</Explanation>
+   </Article>
+   <Article>
+      <Command>/atp &lt;word&gt;</Command>
+      <Explanation>Adds a word to the teleport keyword list&#xA;You can teleport to the last person saying the keyword with a hotkey set in options</Explanation>
+   </Article>
+   <Article>
+      <Command>/rtp &lt;word&gt;</Command>
+      <Explanation>Removes a word from the teleport keyword list</Explanation>
+   </Article>
+   <Article>
+      <Command>/tplist</Command>
+      <Explanation>Prints out the teleport keyword list</Explanation>
+   </Article>
+   <Article>
+      <Command>/tpdefault</Command>
+      <Explanation>Sets the teleport keyword list to its default values</Explanation>
+   </Article>
+   <Article>
+      <Command>/tpclear</Command>
+      <Explanation>Clears the teleport keyword list</Explanation>
+   </Article>
+   <Article>
+      <Command>/ali &lt;partial item name&gt;</Command>
+      <Explanation>Adds a mob to the loot ignore list&#xA;Items on the loot ignore list will not be auto looted or show loot notifications</Explanation>
+   </Article>
+   <Article>
+      <Command>/rli &lt;partial item name&gt;</Command>
+      <Explanation>Removes a mob from the loot ignore list</Explanation>
+   </Article>
+   <Article>
+      <Command>/lilist</Command>
+      <Explanation>Prints out the loot ignore list</Explanation>
+   </Article>
+   <Article>
+      <Command>/lidefault</Command>
+      <Explanation>Sets the loot ignore list to its default values</Explanation>
+   </Article>
+   <Article>
+      <Command>/liclear</Command>
+      <Explanation>Clears the loot ignore list</Explanation>
+   </Article>
+</Articles>

@@ -1117,7 +1117,7 @@ public class Player extends Character {
 							abilFreq = 500;
 						}
 						else {
-							abilFreq = 4000 * (1 + (wisdom_ + wisdomBoost_) / 150);
+							abilFreq = 4000 * (1 + wisdom_ / 150);
 						}
 						break;
 				}
@@ -1152,7 +1152,7 @@ public class Player extends Character {
             }
         }
         if (((isHealing()) && (!(isPaused())))) { //healing
-            if (!Parameters.data_["AntiLag"] && this.healingEffect_ == null) {
+            if (!Parameters.data_.AntiLag && this.healingEffect_ == null) {
                 this.healingEffect_ = new HealingEffect(this);
                 map_.addObj(this.healingEffect_, x_, y_);
             }
@@ -1558,12 +1558,29 @@ public class Player extends Character {
 				//arrows and shields
                 this.doShoot(abilUseTime, useItemId, thisAbilXML, (Parameters.data_.cameraAngle + shootAngle), false);
             }
-			//cloak timer
-			if (equipment_[1] == 0xa5a || equipment_[1] == 0x21a2) { //plane or drape
-				startTimer(11);
-			}
-			else if (thisAbilXML.hasOwnProperty("Activate") && thisAbilXML.Activate == "ConditionEffectSelf") {
-				startTimer(Number(thisAbilXML.Activate.@duration)*1000/500);
+			//cloak timer, now ability timer
+			var wismod:Number = (1 + wisdom_ / 150);
+			switch (equipment_[1]) {
+				case 0xa5a: //plane
+				case 0x21a2: //drape
+				case 0xae1: //twi
+				case 0xb27: //ghostly
+					startTimer(11); //5.5
+					break;
+				case 0xc08: //jugg
+					startTimer(9); //4.5
+					break;
+				case 0xb29: //ggen
+				case 0xa6b: //ghelm
+					startTimer(12); //6.0
+					break;
+				case 0xc06: //oreo
+					startTimer(int(10*wismod));
+					break;
+				case 0xb26: //gcookie
+				case 0xa55: //zseal
+					startTimer(int(8*wismod));
+					break;
 			}
         }
         else {

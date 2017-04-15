@@ -49,7 +49,7 @@ public class Frame extends Sprite {
         GraphicsUtil.END_STROKE
     ];
 
-    public function Frame(_arg_1:String, _arg_2:String, _arg_3:String, _arg_5:int = 288) {
+    public function Frame(_arg_1:String, _arg_2:String = "", _arg_3:String = "", _arg_5:int = 288) {
         super();
         this.w_ = _arg_5;
         this.titleText_ = new TextFieldDisplayConcrete().setSize(13).setColor(0xB3B3B3);
@@ -186,7 +186,7 @@ public class Frame extends Sprite {
     protected function onAddedToStage(_arg_1:Event):void {
         this.draw();
         x = (400 - ((this.w_ - 6) / 2));
-        y = (300 - (height / 2));
+        y = (300 - (h_ / 2)); //was height
         if (this.textInputFields_.length > 0) {
             stage.focus = this.textInputFields_[0].inputText_;
         }

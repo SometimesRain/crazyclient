@@ -5,6 +5,7 @@ import com.company.assembleegameclient.game.AGameSprite;
 import com.company.assembleegameclient.map.mapoverlay.MapOverlay;
 import com.company.assembleegameclient.map.partyoverlay.PartyOverlay;
 import com.company.assembleegameclient.objects.BasicObject;
+import com.company.assembleegameclient.objects.Container;
 import com.company.assembleegameclient.objects.GameObject;
 import com.company.assembleegameclient.objects.Party;
 import com.company.assembleegameclient.objects.particles.ParticleEffect;
@@ -13,6 +14,8 @@ import com.company.assembleegameclient.util.ConditionEffect;
 import flash.display.StageScaleMode;
 import kabam.rotmg.chat.model.ChatMessage;
 import kabam.rotmg.game.signals.AddTextLineSignal;
+import kabam.rotmg.minimap.control.UpdateLootBagSignal;
+import kabam.rotmg.minimap.model.UpdateLootBagVO;
 import org.swiftsuspenders.Injector;
 
 import flash.display.BitmapData;
@@ -75,8 +78,10 @@ public class Map extends AbstractMap {
     public var topSquares_:Vector.<Square>;
 	
 	private var addTextLine:AddTextLineSignal;
+	private var updateLootBagSignal:UpdateLootBagSignal;
 
     public function Map(_arg_1:AGameSprite) {
+		var injector:Injector = StaticInjectorContext.getInjector();
         this.objsToAdd_ = new Vector.<BasicObject>();
         this.idsToRemove_ = new Vector.<int>();
         this.forceSoftwareMap = new Dictionary();
@@ -97,23 +102,10 @@ public class Map extends AbstractMap {
         party_ = new Party(this);
         quest_ = new Quest(this);
         this.loopMonitor = StaticInjectorContext.getInjector().getInstance(RollingMeanLoopMonitor);
-        StaticInjectorContext.getInjector().getInstance(GameModel).gameObjects = goDict_;
-        /*this.forceSoftwareMap[PET_YARD_1] = true;
-        this.forceSoftwareMap[PET_YARD_2] = true;
-        this.forceSoftwareMap[PET_YARD_3] = true;
-        this.forceSoftwareMap[PET_YARD_4] = true;
-        this.forceSoftwareMap[PET_YARD_5] = true;
-        this.forceSoftwareMap["Nexus"] = true;
-        this.forceSoftwareMap["Tomb of the Ancients"] = true;
-        this.forceSoftwareMap["Tomb of the Ancients (Heroic)"] = true;
-        this.forceSoftwareMap["Mad Lab"] = true;
-        this.forceSoftwareMap["Guild Hall"] = true;
-        this.forceSoftwareMap["Guild Hall 2"] = true;
-        this.forceSoftwareMap["Guild Hall 3"] = true;
-        this.forceSoftwareMap["Guild Hall 4"] = true;
-        this.forceSoftwareMap["Cloth Bazaar"] = true;*/
+        injector.getInstance(GameModel).gameObjects = goDict_;
+		addTextLine = injector.getInstance(AddTextLineSignal);;
+        updateLootBagSignal = injector.getInstance(UpdateLootBagSignal);
         wasLastFrameGpu = Parameters.isGpuRender();
-		addTextLine = StaticInjectorContext.getInjector().getInstance(AddTextLineSignal);;
     }
 
     override public function setProps(_arg_1:int, _arg_2:int, _arg_3:String, _arg_4:int, _arg_5:Boolean, _arg_6:Boolean):void {
@@ -292,6 +284,9 @@ public class Map extends AbstractMap {
             }
         }
         _local_3.removeFromMap();
+		if (_local_3 is Container) {
+			updateLootBagSignal.dispatch(new UpdateLootBagVO(_local_3.x_, _local_3.y_, _local_3.objectId_, true));
+		}
         delete _local_2[_arg_1];
     }
 

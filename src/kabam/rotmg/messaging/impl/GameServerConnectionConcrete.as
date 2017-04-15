@@ -62,6 +62,8 @@ import flash.system.System;
 import flash.utils.Dictionary;
 import kabam.rotmg.dailyLogin.view.DailyLoginModal;
 import kabam.rotmg.game.commands.PlayGameCommand;
+import kabam.rotmg.minimap.control.UpdateLootBagSignal;
+import kabam.rotmg.minimap.model.UpdateLootBagVO;
 
 import flash.display.BitmapData;
 import flash.events.Event;
@@ -257,6 +259,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
     private var addSpeechBalloon:AddSpeechBalloonSignal;
     private var updateGroundTileSignal:UpdateGroundTileSignal;
     private var updateGameObjectTileSignal:UpdateGameObjectTileSignal;
+    private var updateLootBagSignal:UpdateLootBagSignal;
     private var logger:ILogger;
     private var handleDeath:HandleDeathSignal;
     private var zombify:ZombifySignal;
@@ -307,6 +310,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         this.addSpeechBalloon = this.injector.getInstance(AddSpeechBalloonSignal);
         this.updateGroundTileSignal = this.injector.getInstance(UpdateGroundTileSignal);
         this.updateGameObjectTileSignal = this.injector.getInstance(UpdateGameObjectTileSignal);
+        this.updateLootBagSignal = this.injector.getInstance(UpdateLootBagSignal);
         this.petFeedResult = this.injector.getInstance(PetFeedResultSignal);
         this.updateBackpackTab = StaticInjectorContext.getInjector().getInstance(UpdateBackpackTabSignal);
         this.updateActivePet = this.injector.getInstance(UpdateActivePet);
@@ -1574,11 +1578,6 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         }
         var _local_4:ObjectStatusData = _arg_1.status_;
         _local_3.setObjectId(_local_4.objectId_);
-		if (ignoreNext && _local_3 is Container) {
-			ignoredBag = _local_3.objectId_;
-			//addTextLine.dispatch(ChatMessage.make("", "Ignoring bag id "+ignoredBag));
-			ignoreNext = false;
-		}
 		/*if (Parameters.data_.autoSprite && _arg_1.objectType_ == 0x070e) { //sprite world exit
 			player.onGoto(_local_4.pos_.x_, _local_4.pos_.y_, gs_.lastUpdate_);
 		}*/
@@ -1587,9 +1586,16 @@ public class GameServerConnectionConcrete extends GameServerConnection {
             this.handleNewPlayer((_local_3 as Player), _local_2);
         }
         this.processObjectStatus(_local_4, 0, -1);
-        if (((((_local_3.props_.static_) && (_local_3.props_.occupySquare_))) && (!(_local_3.props_.noMiniMap_)))) {
+        if (_local_3.props_.static_ && _local_3.props_.occupySquare_ && !_local_3.props_.noMiniMap_) {
             this.updateGameObjectTileSignal.dispatch(new UpdateGameObjectTileVO(_local_3.x_, _local_3.y_, _local_3));
         }
+		if (_local_3 is Container) {
+			updateLootBagSignal.dispatch(new UpdateLootBagVO(_local_3.x_, _local_3.y_, _local_3.objectId_, false));
+			if (ignoreNext) {
+				ignoredBag = _local_3.objectId_;
+				ignoreNext = false;
+			}
+		}
 		switch (_local_3.objectType_) { //tomb hack
 			case 3368: //bes
 			case 32694: //ice bes
@@ -1709,7 +1715,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 			return;
 		}
 		var hpbuff:Number = 0;
-		var wismod:Number = (1 + (go.wisdom_ + go.wisdomBoost_) / 150);
+		var wismod:Number = (1 + go.wisdom_ / 150);
 		var rangeSq:Number;
 		var distSq:Number;
 		var dur:int;
@@ -1992,9 +1998,12 @@ public class GameServerConnectionConcrete extends GameServerConnection {
                 case StatData.SIZE_STAT:
 					if (_local_4)
 						break;
-					//if (Parameters.data_.sizer) { //if skins shown, resize all; if not, don't resize players
-						_arg_1.size_ = _local_8 < 100 ? _local_8 : 100;
-					//}
+					if (Parameters.data_.grandmaMode && (_arg_1 is Container || ObjectLibrary.typeToDisplayId_[_arg_1.objectType_].indexOf("Chest") != -1)) {
+						_arg_1.size_ = 150;
+					}
+					else {
+						_arg_1.size_ = _local_8 < 100 ? _local_8 : 100; //resize if size > 100
+					}
                     break;
                 case StatData.MAX_MP_STAT:
                     _local_4.maxMP_ = _local_8;
@@ -2335,10 +2344,15 @@ public class GameServerConnectionConcrete extends GameServerConnection {
     }
 
     private function onReconnect(_arg_1:Reconnect):void {
-		player.questMob1 = null; //tomb hack remove bars
-		player.questMob2 = null;
-		player.questMob3 = null;
-		player.collect = 0;
+		if (player != null) {
+			player.questMob1 = null; //tomb hack remove bars
+			player.questMob2 = null;
+			player.questMob3 = null;
+			player.collect = 0;
+		}
+		else {
+			addTextLine.dispatch(ChatMessage.make("*Error*","Player not found"));
+		}
 		Parameters.data_.curBoss = 3368; //set first boss to bes
 		Parameters.save();
         var _local_2:Server = new Server().setName(_arg_1.name_).setAddress((((_arg_1.host_) != "") ? _arg_1.host_ : server_.address)).setPort((((_arg_1.host_) != "") ? _arg_1.port_ : server_.port));
@@ -2352,12 +2366,9 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         var _local_8:ReconnectEvent = new ReconnectEvent(_local_2, _local_3, _local_4, _local_5, _local_6, _local_7, isFromArena_);
         //var changeServ:ReconnectEvent = new ReconnectEvent(serv, -2, false, GameServerConnectionConcrete.CHARID_, -1, new byte[0], false);
 		//
-        if(_arg_1.name_ != "Nexus" && _arg_1.name_ != "{objects.Pirate_Cave_Portal}" && _arg_1.name_ != "{\"text\":\"server.nexus\"}" && _arg_1.name_ != "{\"text\":\"server.vault\"}" && _arg_1.name_ != "Pet Yard" && _arg_1.name_ != "Guild Hall" && _arg_1.name_ != "{objects.Cloth_Bazaar_Portal}" && _arg_1.name_ != "Tutorial" && _arg_1.name_ != "{objects.Nexus_Explanation_Portal}" && _arg_1.name_ != "{\"text\":\"server.vault_explanation\"}" && _arg_1.name_ != "{\"text\":\"server.enter_the_portal\"}")
-        {
-            if(_arg_1.name_.search("NexusPortal.") < 0)
-            {
-                if(_arg_1.name_ != "Realm")
-                {
+        if(_arg_1.name_ != "Nexus" && _arg_1.name_ != "{objects.Pirate_Cave_Portal}" && _arg_1.name_ != "{\"text\":\"server.nexus\"}" && _arg_1.name_ != "{\"text\":\"server.vault\"}" && _arg_1.name_ != "Pet Yard" && _arg_1.name_ != "Guild Hall" && _arg_1.name_ != "{objects.Cloth_Bazaar_Portal}" && _arg_1.name_ != "Tutorial" && _arg_1.name_ != "{objects.Nexus_Explanation_Portal}" && _arg_1.name_ != "{\"text\":\"server.vault_explanation\"}" && _arg_1.name_ != "{\"text\":\"server.enter_the_portal\"}") {
+            if(_arg_1.name_.search("NexusPortal.") < 0) {
+                if (_arg_1.name_ != "Realm") {
                     MapUserInput.reconDung = _local_8;
                     MapUserInput.dungTime = getTimer();
 					Parameters.data_.dservName = _local_8.server_.name;
@@ -2368,8 +2379,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 					Parameters.save();
                 }
             }
-            else
-            {
+            else {
                 MapUserInput.reconRealm = _local_8;
 				Parameters.data_.servName = _local_8.server_.name;
 				Parameters.data_.servAddr = _local_8.server_.address;

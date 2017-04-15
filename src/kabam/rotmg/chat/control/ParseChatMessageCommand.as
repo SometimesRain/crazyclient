@@ -660,7 +660,7 @@ public class ParseChatMessageCommand {
 			navigateToURL(new URLRequest("https://www.realmeye.com/offers-to/buy/" + GameServerConnectionConcrete.PLAYER_.equipment_[slot] + "/2793"), "_blank");
 			return true;
 		}
-		splice = data.toLowerCase().match("^/re$");
+		splice = data.toLowerCase().match("/re$");
 		if (splice != null) {
 			hudModel.gameSprite.gsc_.playerText(lastMsg);
 			return true;
@@ -680,9 +680,14 @@ public class ParseChatMessageCommand {
 			hudModel.gameSprite.hudView.characterDetails.setName("");
 			return true;
 		}
-		splice = data.toLowerCase().match("/timer (\\d+) (\\d+)$");
+		splice = data.toLowerCase().match("/timer (\\d+) ?(\\d*)$");
 		if (splice != null) {
-			hudModel.gameSprite.map.player_.startTimer(splice[1], splice[2]);
+			if (splice[2] == "") {
+				hudModel.gameSprite.map.player_.startTimer(splice[1], 1000);
+			}
+			else {
+				hudModel.gameSprite.map.player_.startTimer(splice[1], splice[2]);
+			}
 			return true;
 		}
 		splice = data.toLowerCase().match("/autopot (\\d+)$");
@@ -937,7 +942,7 @@ public class ParseChatMessageCommand {
 			openDialog.dispatch(new FindMenu(hudModel.gameSprite, holders, ObjectLibrary.getIdFromType(id)));
 		}
 		else {
-			addTextLine.dispatch(ChatMessage.make("*Help*", "No one has the item"));
+			addTextLine.dispatch(ChatMessage.make("*Help*", "No one has "+ObjectLibrary.getIdFromType(id)));
 		}
 		//addTextLine.dispatch(ChatMessage.make("*Help*", holders.length+" players have the item"));
 	}
