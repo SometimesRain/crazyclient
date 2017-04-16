@@ -71,14 +71,15 @@ public class MapUserInput {
 	private var spaceSpam:int = 0; //makes sure you don't dc when spamming
 	public static var optionsOpen:Boolean = false;
 	public var ninjaTapped:Boolean = false;
+	public static var inputting:Boolean = false;
 
     public var gs_:GameSprite;
-    private var moveLeft_:Boolean = false;
-    private var moveRight_:Boolean = false;
-    private var moveUp_:Boolean = false;
-    private var moveDown_:Boolean = false;
-    private var rotateLeft_:Boolean = false;
-    private var rotateRight_:Boolean = false;
+    private var moveLeft_:int = 0;
+    private var moveRight_:int = 0;
+    private var moveUp_:int = 0;
+    private var moveDown_:int = 0;
+    private var rotateLeft_:int = 0;
+    private var rotateRight_:int = 0;
     public var mouseDown_:Boolean = false;
     public var autofire_:Boolean = false;
     private var currentString:String = "";
@@ -136,12 +137,12 @@ public class MapUserInput {
     }
 
     public function clearInput():void {
-        this.moveLeft_ = false;
-        this.moveRight_ = false;
-        this.moveUp_ = false;
-        this.moveDown_ = false;
-        this.rotateLeft_ = false;
-        this.rotateRight_ = false;
+        this.moveLeft_ = 0;
+        this.moveRight_ = 0;
+        this.moveUp_ = 0;
+        this.moveDown_ = 0;
+        this.rotateLeft_ = 0;
+        this.rotateRight_ = 0;
         this.mouseDown_ = false;
         this.autofire_ = false;
         this.lightSpeed = false;
@@ -343,7 +344,7 @@ public class MapUserInput {
 		return false;
 	}
 	
-	public function handlePerfectAim(player:Player):void {
+	private function handlePerfectAim(player:Player):void {
 		var po:Point = player.sToW(gs_.map.mouseX,gs_.map.mouseY);
 		var target:GameObject;
 		var obj:GameObject;
@@ -381,6 +382,10 @@ public class MapUserInput {
 	}
 	
 	private function aimAt(player:Player, t:Vector3D):void {
+		if (Parameters.data_.inaccurate) {
+			t.x = int(t.x) + 1 / 2;
+			t.y = int(t.y) + 1 / 2;
+		}
 		gs_.gsc_.useItem(getTimer(), player.objectId_, 1, player.equipment_[1], t.x, t.y, UseType.START_USE);
 		player.doShoot(getTimer(), player.equipment_[1], ObjectLibrary.xmlLibrary_[player.equipment_[1]], (Parameters.data_.cameraAngle + Math.atan2(t.y - player.y_, t.x - player.x_)), false);
 	}
@@ -390,7 +395,7 @@ public class MapUserInput {
 			handlePerfectAim(player);
 			return true;
 		}
-		if (player.objectType_ != 782) {
+		if (!(player.objectType_ == 782 || player.objectType_ == 800)) { //wiz assassin
 			return false;
 		}
 		var target:GameObject;
@@ -415,7 +420,12 @@ public class MapUserInput {
 		}
 		else {
 			player.notifyPlayer(ObjectLibrary.typeToDisplayId_[target.objectType_], 0x00FF00, 1500);
-			gs_.gsc_.useItem(getTimer(), player.objectId_, 1, player.equipment_[1], target.x_, target.y_, UseType.START_USE);
+			if (Parameters.data_.inaccurate) {
+				gs_.gsc_.useItem(getTimer(), player.objectId_, 1, player.equipment_[1], int(target.x_) + 1/2, int(target.y_) + 1/2, UseType.START_USE);
+			}
+			else {
+				gs_.gsc_.useItem(getTimer(), player.objectId_, 1, player.equipment_[1], target.x_, target.y_, UseType.START_USE);
+			}
 		}
 		return true;
 	}
@@ -508,16 +518,16 @@ public class MapUserInput {
         }
         switch (_arg_1.keyCode) {
             case Parameters.data_.moveUp:
-                this.moveUp_ = true;
+                this.moveUp_ = 1;
                 break;
             case Parameters.data_.moveDown:
-                this.moveDown_ = true;
+                this.moveDown_ = 1;
                 break;
             case Parameters.data_.moveLeft:
-                this.moveLeft_ = true;
+                this.moveLeft_ = 1;
                 break;
             case Parameters.data_.moveRight:
-                this.moveRight_ = true;
+                this.moveRight_ = 1;
                 break;
             case Parameters.data_.useSpecial:
 				abilityUsed(player, ObjectLibrary.xmlLibrary_[player.equipment_[1]]);
@@ -607,11 +617,11 @@ public class MapUserInput {
                 break;
             case Parameters.data_.rotateLeft:
                 if (!Parameters.data_.allowRotation) break;
-                this.rotateLeft_ = true;
+                this.rotateLeft_ = 1;
                 break;
             case Parameters.data_.rotateRight:
                 if (!Parameters.data_.allowRotation) break;
-                this.rotateRight_ = true;
+                this.rotateRight_ = 1;
                 break;
             case Parameters.data_.resetToDefaultCameraAngle:
                 Parameters.data_.cameraAngle = Parameters.data_.defaultCameraAngle;
@@ -1040,26 +1050,26 @@ public class MapUserInput {
         var _local_3:Number;
         switch (_arg_1.keyCode) {
             case Parameters.data_.moveUp:
-                this.moveUp_ = false;
+                this.moveUp_ = 0;
                 break;
             case Parameters.data_.moveDown:
-                this.moveDown_ = false;
+                this.moveDown_ = 0;
                 break;
             case Parameters.data_.moveLeft:
-                this.moveLeft_ = false;
+                this.moveLeft_ = 0;
                 break;
             case Parameters.data_.moveRight:
-                this.moveRight_ = false;
+                this.moveRight_ = 0;
                 break;
             case Parameters.data_.rotateLeft:
-                this.rotateLeft_ = false;
+                this.rotateLeft_ = 0;
                 break;
             case Parameters.data_.rotateRight:
-                this.rotateRight_ = false;
+                this.rotateRight_ = 0;
                 break;
             case Parameters.data_.useSpecial:
 				this.specialKeyDown_ = false;
-				if (!Parameters.data_.ninjaTap) {
+				if (!Parameters.data_.ninjaTap && !inputting) {
 					gs_.map.player_.useAltWeapon(gs_.map.mouseX, gs_.map.mouseY, UseType.END_USE)
 				}
                 break;
@@ -1070,8 +1080,8 @@ public class MapUserInput {
     private function setPlayerMovement():void {
         var _local_1:Player = this.gs_.map.player_;
         if (_local_1 != null) {
-            if (this.enablePlayerInput_) {
-                _local_1.setRelativeMovement((((this.rotateRight_) ? 1 : 0) - ((this.rotateLeft_) ? 1 : 0)), (((this.moveRight_) ? 1 : 0) - ((this.moveLeft_) ? 1 : 0)), (((this.moveDown_) ? 1 : 0) - ((this.moveUp_) ? 1 : 0)));
+            if (enablePlayerInput_) {
+                _local_1.setRelativeMovement(rotateRight_ - rotateLeft_, moveRight_ - moveLeft_, moveDown_ - moveUp_);
             }
             else {
                 _local_1.setRelativeMovement(0, 0, 0);

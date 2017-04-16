@@ -13,6 +13,7 @@ import flash.utils.Dictionary;
 import flash.utils.Timer;
 import kabam.rotmg.dialogs.control.OpenDialogSignal;
 import kabam.rotmg.friends.view.FriendListView;
+import kabam.rotmg.messaging.impl.GameServerConnection;
 import kabam.rotmg.servers.api.Server;
 import kabam.rotmg.ui.signals.NameChangedSignal;
 import kabam.rotmg.ui.view.CharacterDetailsView;
@@ -518,7 +519,7 @@ public class ParseChatMessageCommand {
 	
     private function defCommands(lower:String):Boolean {
         if (lower == "/igdefault") {
-            Parameters.data_.AAIgnore = [1550,1551,1552,1619,1715,2309,2310,2311,2371,3441,2312,2313,2370,2392,2393,2400,2401,3335,3336,3337,3338,3413,3418,3419,3420,3421,3427,3454,3638,3645,6157,28715,28716,28717,28718,28719,28730,28731,28732,28733,28734,29306,29568,29594,29597,29710,29711,29742,29743,29746,29748,30001,29752];
+            Parameters.data_.AAIgnore = [1550,1551,1552,1619,1715,2309,2310,2311,2371,3441,2312,2313,2370,2392,2393,2400,2401,3335,3336,3337,3338,3413,3418,3419,3420,3421,3427,3454,3638,3645,6157,28715,28716,28717,28718,28719,28730,28731,28732,28733,28734,29306,29568,29594,29597,29710,29711,29742,29743,29746,29748,30001,29752,0xaab6,0xaabc,0xaabd,0xaabe];
             addTextLine.dispatch(ChatMessage.make("*Help*","Default ignore list restored."));
             Parameters.save();
             return true;
@@ -555,9 +556,11 @@ public class ParseChatMessageCommand {
         }
         return false;
     }
-    
+	
     private function cjCommands():Boolean {
 		var i:int;
+		var player:Player = hudModel.gameSprite.map.player_;
+		var gsc:GameServerConnection = hudModel.gameSprite.gsc_;
 		switch (data.toLowerCase()) {
 			/*case "/list":
 				var file:FileReference = new FileReference();
@@ -569,21 +572,21 @@ public class ParseChatMessageCommand {
 				file.save(savedata, 'addr.txt');
 				return true;*/
 			case "/serv":
-				hudModel.gameSprite.gsc_.playerText("/server");
+				gsc.playerText("/server");
 				return true;
 			case "/hide":
-				hudModel.gameSprite.gsc_.playerText("/tell mreyeball hide me");
+				gsc.playerText("/tell mreyeball hide me");
 				return true;
 			case "/friends":
 			case "/fr":
-				hudModel.gameSprite.gsc_.playerText("/tell mreyeball friends");
+				gsc.playerText("/tell mreyeball friends");
 				return true;
 			case "/l2m":
 			case "/left2max":
 			case "/lefttomax":
 				needed = "You need ";
 				var youre88:Boolean = true;
-				var p:Player = hudModel.gameSprite.map.player_;
+				var p:Player = player;
 				var diffs:Array = new Array(
 						int((p.maxHPMax_ - p.maxHP_ + p.maxHPBoost_) / 5 + ((p.maxHPMax_ - p.maxHP_ + p.maxHPBoost_) % 5 > 0 ? 1 : 0)), 
 						int((p.maxMPMax_ - p.maxMP_ + p.maxMPBoost_) / 5 + ((p.maxMPMax_ - p.maxMP_ + p.maxMPBoost_) % 5 > 0 ? 1 : 0)), 
@@ -606,17 +609,17 @@ public class ParseChatMessageCommand {
 				return true;
 			case "/stats":
 			case "/roll":
-				hudModel.gameSprite.gsc_.playerText("/tell mreyeball stats");
+				gsc.playerText("/tell mreyeball stats");
 				return true;
 			case "/mates":
-				hudModel.gameSprite.gsc_.playerText("/tell mreyeball mates");
+				gsc.playerText("/tell mreyeball mates");
 				return true;
 			case "/tut":
 			//case "/tutorial":
-				hudModel.gameSprite.gsc_.playerText("/nexustutorial");
+				gsc.playerText("/nexustutorial");
 				return true;
 			case "/tr":
-				hudModel.gameSprite.gsc_.playerText("/trade "+lastTellTo);
+				gsc.playerText("/trade "+lastTellTo);
 				return true;
 			case "/fame":
 				var playTime:int = (getTimer() - PlayGameCommand.startTime) / 60000;
@@ -627,12 +630,12 @@ public class ParseChatMessageCommand {
 				else {
 					fpm = Math.round(GameServerConnectionConcrete.totalfamegain / playTime * 100) / 100;
 				}
-				hudModel.gameSprite.map.player_.notifyPlayer(GameServerConnectionConcrete.totalfamegain+" fame\n"+playTime+" minutes\n"+fpm+" fame/min", 0xE25F00, 3000);
+				player.notifyPlayer(GameServerConnectionConcrete.totalfamegain+" fame\n"+playTime+" minutes\n"+fpm+" fame/min", 0xE25F00, 3000);
 				return true;
 			case "/s":
 			case "/switch":
 			case "/swap":
-				if (hudModel.gameSprite.map.player_.hasBackpack_) {
+				if (player.hasBackpack_) {
 					switch_ = true;
 				}
 				else {
@@ -643,13 +646,17 @@ public class ParseChatMessageCommand {
 			case "/name":
 				Parameters.data_.fakeName = null;
 				Parameters.save();
-				hudModel.gameSprite.hudView.characterDetails.setName(hudModel.gameSprite.map.player_.name_);
+				hudModel.gameSprite.hudView.characterDetails.setName(player.name_);
 				return true;
 			case "/flist":
 				openDialog.dispatch(new FriendListView());
 				return true;
 			case "/nexus":
-				hudModel.gameSprite.gsc_.escapeUnsafe();
+				gsc.escapeUnsafe();
+				return true;
+			case "/follow":
+				player.followTarget = null;
+				player.notifyPlayer("Stopped following");
 				return true;
 		}
 		var splice:Array = data.toLowerCase().match("/player (\\w+)$")
@@ -665,13 +672,13 @@ public class ParseChatMessageCommand {
 		}
 		splice = data.toLowerCase().match("/re$");
 		if (splice != null) {
-			hudModel.gameSprite.gsc_.playerText(lastMsg);
+			gsc.playerText(lastMsg);
 			return true;
 		}
 		splice = data.toLowerCase().match("/re (\\w+)$");
 		if (splice != null) {
 			var newMsg:String = "/tell " + splice[1] + " " + lastTell;
-			hudModel.gameSprite.gsc_.playerText(newMsg);
+			gsc.playerText(newMsg);
 			lastTellTo = splice[1];
 			lastMsg = newMsg;
 			return true;
@@ -686,10 +693,10 @@ public class ParseChatMessageCommand {
 		splice = data.toLowerCase().match("/timer (\\d+) ?(\\d*)$");
 		if (splice != null) {
 			if (splice[2] == "") {
-				hudModel.gameSprite.map.player_.startTimer(splice[1], 1000);
+				player.startTimer(splice[1], 1000);
 			}
 			else {
-				hudModel.gameSprite.map.player_.startTimer(splice[1], splice[2]);
+				player.startTimer(splice[1], splice[2]);
 			}
 			return true;
 		}
@@ -717,8 +724,8 @@ public class ParseChatMessageCommand {
 		splice = data.toLowerCase().match("/give (\\w+) (\\d{1,8})$");
 		//splice = data.match("/give (\\w+) ([0-1])?([0-1])?([0-1])?([0-1])?([0-1])?([0-1])?([0-1])?([0-1])$"); //such efficiency
 		if (splice != null) {
-			hudModel.gameSprite.gsc_.playerText("/tell "+splice[1]+" g="+splice[2]);
-			hudModel.gameSprite.gsc_.requestTrade(splice[1]);
+			gsc.playerText("/tell "+splice[1]+" g="+splice[2]);
+			gsc.requestTrade(splice[1]);
 			var result:Vector.<Boolean> = new <Boolean>[false,false,false,false,false,false,false,false,false,false,false,false];
 			for (i = 4; i < 12; i++) {
 				//trace("PARSECOMMAND",splice[2].substr(i-4, 1));
@@ -743,7 +750,7 @@ public class ParseChatMessageCommand {
 		}
 		/*splice = data.match("/dc (\\w+)$");
 		if (splice != null) {
-			hudModel.gameSprite.gsc_.playerText("/tell "+splice[1]+" whats that name dude?");
+			gsc.playerText("/tell "+splice[1]+" whats that name dude?");
 			return true;
 		}*/
 		splice = data.toLowerCase().match("/take (.+)$");
@@ -753,12 +760,12 @@ public class ParseChatMessageCommand {
 				return true;
 			}
 			if (splice[1] == "pots") {
-				hudModel.gameSprite.map.player_.collect = int.MAX_VALUE;
+				player.collect = int.MAX_VALUE;
 				addTextLine.dispatch(ChatMessage.make("*Help*", "Taking Potion(s) from vault chests"));
 				return true;
 			}
-			hudModel.gameSprite.map.player_.collect = findMatch2(splice[1]);
-            addTextLine.dispatch(ChatMessage.make("*Help*","Taking "+ObjectLibrary.getIdFromType(hudModel.gameSprite.map.player_.collect)+"(s) from vault chests"));
+			player.collect = findMatch2(splice[1]);
+            addTextLine.dispatch(ChatMessage.make("*Help*","Taking "+ObjectLibrary.getIdFromType(player.collect)+"(s) from vault chests"));
 			return true;
 		}
 		splice = data.toLowerCase().match("/put (.+)$");
@@ -768,17 +775,12 @@ public class ParseChatMessageCommand {
 				return true;
 			}
 			if (splice[1] == "pots") {
-				hudModel.gameSprite.map.player_.collect = int.MIN_VALUE;
+				player.collect = int.MIN_VALUE;
 				addTextLine.dispatch(ChatMessage.make("*Help*", "Putting Potion(s) to vault chests"));
 				return true;
 			}
-			hudModel.gameSprite.map.player_.collect = 0 - findMatch2(splice[1]);
-            addTextLine.dispatch(ChatMessage.make("*Help*","Putting "+ObjectLibrary.getIdFromType(0 - hudModel.gameSprite.map.player_.collect)+"(s) to vault chests"));
-			return true;
-		}
-		splice = data.toLowerCase().match("/tp (\\w+)$");
-		if (splice != null) {
-			fixedTeleport(splice[1]);
+			player.collect = 0 - findMatch2(splice[1]);
+            addTextLine.dispatch(ChatMessage.make("*Help*","Putting "+ObjectLibrary.getIdFromType(0 - player.collect)+"(s) to vault chests"));
 			return true;
 		}
 		splice = data.toLowerCase().match("/buy (\\w+) ?(\\w*)$");
@@ -803,6 +805,33 @@ public class ParseChatMessageCommand {
 			}
 			return true;
 		}
+		splice = data.toLowerCase().match("/dye1 (.+)$");
+		if (splice != null) {
+			Parameters.data_.setTex1 = getTex1(findMatch2(splice[1]));
+			Parameters.save();
+			player.setTex1(Parameters.data_.setTex1);
+			return true;
+		}
+		splice = data.toLowerCase().match("/dye2 (.+)$");
+		if (splice != null) {
+			Parameters.data_.setTex2 = getTex1(findMatch2(splice[1]));
+			Parameters.save();
+			player.setTex2(Parameters.data_.setTex2);
+			return true;
+		}
+		splice = data.toLowerCase().match("/tp (\\w+)$");
+		if (splice != null) {
+			gsc.teleport(fixedName(splice[1]).name_);
+			return true;
+		}
+		splice = data.toLowerCase().match("/follow (\\w+)$");
+		if (splice != null) {
+			var target:GameObject = fixedName(splice[1]);
+			player.notifyPlayer("Following "+target.name_);
+			gsc.teleport(target.name_);
+			player.followTarget = target;
+			return true;
+		}
 		/*splice = data.match("/spam (.+)$");
 		if (splice != null) {
 			return true;
@@ -815,11 +844,16 @@ public class ParseChatMessageCommand {
         return false;
     }
 	
-	private function fixedTeleport(input:String):void {
+	private function getTex1(item:int):uint {
+        var dye:XML = ObjectLibrary.xmlLibrary_[item];
+		return dye.Tex1;
+	}
+	
+	private function fixedName(input:String):GameObject {
 		var dist2:int = int.MAX_VALUE;
 		var temp:int;
 		var go_:GameObject;
-		var itemname:String;
+		var target:GameObject;
 		for each(go_ in hudModel.gameSprite.map.goDict_) {
 			if (!(go_ is Player)) {
 				continue;
@@ -828,15 +862,13 @@ public class ParseChatMessageCommand {
 			if (temp < dist2) {
 				//addTextLine.dispatch(ChatMessage.make("*Help*",temp+" < "+dist2+", so player = "+go_.name_));
 				dist2 = temp;
-				itemname = go_.name_;
+				target = go_;
 			}
 			if (dist2 == 0) {
 				break;
 			}
 		}
-		//hudModel.gameSprite.map.player_.notifyPlayer("Teleporting to: "+itemname, 0x00ff00, 1500);
-		//hudModel.gameSprite.gsc_.playerText("/teleport "+itemname);
-		hudModel.gameSprite.gsc_.teleport(itemname);
+		return target;
 	}
 	
 	private function findMatch2(input:String):int {

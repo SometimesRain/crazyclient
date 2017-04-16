@@ -4,6 +4,7 @@ import com.company.assembleegameclient.parameters.Parameters;
 import com.company.assembleegameclient.util.AssetLoader;
 import com.company.assembleegameclient.util.StageProxy;
 import flash.external.ExternalInterface;
+//import flash.system.Security;
 import kabam.rotmg.chat.model.ChatMessage;
 import kabam.rotmg.dailyLogin.config.DailyLoginConfig;
 import kabam.rotmg.game.signals.AddTextLineSignal;
@@ -68,10 +69,10 @@ public class WebMain extends Sprite {
     protected var context:IContext;
 	public static var sWidth:Number = 800;
 	public static var sHeight:Number = 600;
-	//public static var chatY:Number = 300;
 
     public function WebMain() {
 		//ExternalInterface.addCallback("main", addMessage);
+		//Security.loadPolicyFile("http://localhost:843"); //must use port 843
         if (stage) {
 			stage.addEventListener(Event.RESIZE,this.onStageResize);
             this.setup();
@@ -88,12 +89,6 @@ public class WebMain extends Sprite {
 			this.scaleY = stage.stageHeight / 600;
 			this.x = (800 - stage.stageWidth) / 2;
 			this.y = (600 - stage.stageHeight) / 2;
-			/*if (!Parameters.data_.uiscale) {
-				chatY = 300 + 300 * (1 - (600 / sHeight));
-			}
-			else {
-				chatY = 300;
-			}*/
 		}
 		else {
 			this.scaleX = 1;

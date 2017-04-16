@@ -14,7 +14,7 @@ public class Parameters {
 
     public static const BUILD_VERSION:String = "27.7";
     public static const MINOR_VERSION:String = "X13";
-    public static const CRAZY_VERSION:String = "v8b2";
+    public static const CRAZY_VERSION:String = "v8b3";
     public static const ENABLE_ENCRYPTION:Boolean = true;
     public static const PORT:int = 2050;
     public static const ALLOW_SCREENSHOT_MODE:Boolean = false;
@@ -312,7 +312,7 @@ public class Parameters {
         setDefault("AABoundingDist",20);
         setDefault("showMobInfo",false);
         setDefault("AAException",[3414,3417,3448,3449,3472,3334,5952,2354,2369,3368,3366,3367,3391,3389,3390,5920,2314,3412,3639,3634,2327,1755,24582,24351,24363,24135,24133,24134,24132,24136,3356,3357,3358,3359,3360,3361,3362,3363,3364,2352,28780,28781,28795,28942,28957,28988,28938,29291,29018,29517,24338,29580,29712,6282,0x717e,0x727c,0x727d,0x736e,0x736f,0x724a,0x724b,0x724c,0x724d,0x724e]);
-        setDefault("AAIgnore",[1550,1551,1552,1619,1715,2309,2310,2311,2371,3441,2312,2313,2370,2392,2393,2400,2401,3335,3336,3337,3338,3413,3418,3419,3420,3421,3427,3454,3638,3645,6157,28715,28716,28717,28718,28719,28730,28731,28732,28733,28734,29306,29568,29594,29597,29710,29711,29742,29743,29746,29748,30001,29752]);
+        setDefault("AAIgnore",[1550,1551,1552,1619,1715,2309,2310,2311,2371,3441,2312,2313,2370,2392,2393,2400,2401,3335,3336,3337,3338,3413,3418,3419,3420,3421,3427,3454,3638,3645,6157,28715,28716,28717,28718,28719,28730,28731,28732,28733,28734,29306,29568,29594,29597,29710,29711,29742,29743,29746,29748,30001,29752,0xaab6,0xaabc,0xaabd,0xaabe]);
         setDefault("AAPriority", [0x717e,0x727c,0x727d,0x736e,0x736f,0x724a,0x724b,0x724c,0x724d,0x724e,6282,1646]);
 		setDefault("damageIgnored", false);
 		//
@@ -327,7 +327,7 @@ public class Parameters {
         setDefault("QuestToolTipMod", true);
         setDefault("SkipRender", false);
         setDefaultKey("SkipRenderKey",KeyCodes.UNSET);
-        setDefault("ChatNotifierList",[]);
+        //setDefault("ChatNotifierList",[]);
 		//CJ's Settings
         setDefault("AntiLag",true);
         setDefault("bestServ","Default");
@@ -416,6 +416,10 @@ public class Parameters {
         setDefault("grandmaMode",false);
         setDefault("speedy",false);
         setDefault("noSink",false);
+        setDefault("setTex1",0);
+        setDefault("setTex2",0);
+        setDefault("showDyes",true);
+        setDefault("inaccurate",false);
 		//
     }
 

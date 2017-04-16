@@ -22,7 +22,7 @@ public class FindMenu extends Frame {
 	private const padY:int = 28;
 
     public function FindMenu(gs:GameSprite, players:Vector.<Player>, itemname:String) {
-        super("Players with "+itemname, "", "");
+        super(itemname+" (Click to trade)", "", "");
 		gs_ = gs;
 		p_ = players;
 		var le:int = p_.length;

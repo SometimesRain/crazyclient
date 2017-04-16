@@ -149,37 +149,31 @@ public class ChatMediator extends Mediator {
     }
 
     private function checkForInputTrigger(_arg_1:uint):void {
-        if ((((this.stage.focus == null)) || ((_arg_1 == this.shortcuts.getTellShortcut())))) {
+        if (this.stage.focus == null || _arg_1 == this.shortcuts.getTellShortcut()) {
             if (_arg_1 == this.shortcuts.getCommandShortcut()) {
                 this.triggerOrPromptRegistration("/");
             }
-            else {
-                if (_arg_1 == this.shortcuts.getChatShortcut()) {
-                    this.triggerOrPromptRegistration("");
-                }
-                else {
-                    if (_arg_1 == this.shortcuts.getGuildShortcut()) {
-                        this.triggerOrPromptRegistration("/g ");
-                    }
-                    else {
-                        if (_arg_1 == this.shortcuts.getTellShortcut()) {
-                            this.triggerOrPromptRegistration((("/tell " + this.tellModel.getNext()) + " "));
-                        }
-                    }
-                }
-            }
+			else if (_arg_1 == this.shortcuts.getChatShortcut()) {
+				this.triggerOrPromptRegistration("");
+			}
+			else if (_arg_1 == this.shortcuts.getGuildShortcut()) {
+				this.triggerOrPromptRegistration("/g ");
+			}
+			else if (_arg_1 == this.shortcuts.getTellShortcut()) {
+				this.triggerOrPromptRegistration((("/tell " + this.tellModel.getNext()) + " "));
+			}
         }
     }
 
     private function triggerOrPromptRegistration(_arg_1:String):void {
-        if (this.account.isRegistered()) {
+        //if (this.account.isRegistered()) {
             this.showChatInput.dispatch(true, _arg_1);
-        }
+        /*}
         else {
             if (((!((this.hudModel.gameSprite == null))) && (this.hudModel.gameSprite.evalIsNotInCombatMapArea()))) {
                 this.openDialog.dispatch(new RegisterPromptDialog(TextKey.CHAT_REGISTER_TO_CHAT));
             }
-        }
+        }*/
     }
 
 

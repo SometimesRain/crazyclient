@@ -1,6 +1,8 @@
 ﻿package kabam.rotmg.chat.view {
+import com.company.assembleegameclient.game.MapUserInput;
 import flash.display.Sprite;
 import flash.events.Event;
+import flash.events.FocusEvent;
 import flash.events.KeyboardEvent;
 import flash.filters.GlowFilter;
 import flash.text.TextField;
@@ -18,10 +20,11 @@ public class ChatInput extends Sprite {
 
     private var input:TextField;
     private var enteredText:Boolean;
+	private var oldText:String = "";
 
     public function ChatInput() {
         visible = false;
-        this.enteredText = false;
+        enteredText = false;
     }
 
     public function setup(_arg_1:ChatModel, _arg_2:TextField):void {
@@ -32,10 +35,15 @@ public class ChatInput extends Sprite {
     }
 
     public function activate(_arg_1:String, _arg_2:Boolean):void {
-        this.enteredText = false;
-        if (_arg_1 != null) {
-            this.input.text = _arg_1;
+		//trace("ACTIVATED "+_arg_1)
+		MapUserInput.inputting = true;
+        enteredText = false;
+        if (_arg_1 != null && _arg_1 != "") {
+            input.text = _arg_1;
         }
+		else {
+			input.text = oldText;
+		}
         var _local_3:int = ((_arg_1) ? _arg_1.length : 0);
         this.input.setSelection(_local_3, _local_3);
         if (_arg_2) {
@@ -48,15 +56,19 @@ public class ChatInput extends Sprite {
     }
 
     public function deactivate():void {
+		//trace("REMOVED");
+		MapUserInput.inputting = false;
+		oldText = "";
         this.enteredText = false;
         removeEventListener(KeyboardEvent.KEY_UP, this.onKeyUp);
+		removeEventListener(FocusEvent.FOCUS_OUT, unfocused);
         stage.removeEventListener(KeyboardEvent.KEY_UP, this.onTextChange);
         visible = false;
         ((stage) && ((stage.focus = null)));
     }
 
     public function hasEnteredText():Boolean {
-        return (this.enteredText);
+        return enteredText;
     }
 
     private function activateEnabled():void {
@@ -68,12 +80,19 @@ public class ChatInput extends Sprite {
         this.input.height = 18;
         this.input.filters = [new GlowFilter(0, 1, 3, 3, 2, 1)];
         addEventListener(KeyboardEvent.KEY_UP, this.onKeyUp);
+		addEventListener(FocusEvent.FOCUS_OUT, unfocused);
         stage.addEventListener(KeyboardEvent.KEY_UP, this.onTextChange);
         ((stage) && ((stage.focus = this.input)));
     }
 
-    private function onTextChange(_arg_1:Event):void {
-        this.enteredText = true;
+    private function unfocused(_arg_1:FocusEvent):void {
+		//trace("DEACTIVATED, SAVED "+input.text);
+		MapUserInput.inputting = false;
+		oldText = input.text;
+	}
+
+    private function onTextChange(_arg_1:KeyboardEvent):void {
+        enteredText = true;
     }
 
     private function activateDisabled():void {
@@ -83,6 +102,7 @@ public class ChatInput extends Sprite {
         this.input.filters = [new GlowFilter(0, 1, 3, 3, 2, 1)];
         this.input.height = 18;
         removeEventListener(KeyboardEvent.KEY_UP, this.onKeyUp);
+		removeEventListener(FocusEvent.FOCUS_OUT, unfocused);
         stage.removeEventListener(KeyboardEvent.KEY_UP, this.onTextChange);
     }
 
@@ -97,7 +117,6 @@ public class ChatInput extends Sprite {
             _arg_1.stopImmediatePropagation();
         }
     }
-
 
 }
 }//package kabam.rotmg.chat.view

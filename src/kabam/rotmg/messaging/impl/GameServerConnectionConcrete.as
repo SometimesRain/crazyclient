@@ -243,6 +243,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
     private static var reconNexus:ReconnectEvent;
 	private var lasttptime:int = 0;
 	private var totPlayers:int = 0;
+	private var timedShots:Vector.<int> = new <int>[];
 	//private var pingtime:int = int.MAX_VALUE;
 
     private var petUpdater:PetUpdater;
@@ -636,8 +637,15 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         }
     }
 
-    override public function playerShoot(_arg_1:int, _arg_2:Projectile):void {
+    override public function playerShoot(_arg_1:int, _arg_2:Projectile):void { //todo stuntimer
         var _local_3:PlayerShoot = (this.messages.require(PLAYERSHOOT) as PlayerShoot);
+		if (timedShots.length > 0 && shotsPassed(timedShots[timedShots.length-1], _arg_2.bulletId_) >= 5) { //reset shots when enough shots are added, start 1 when 127 -> next is 0
+			timedShots.length = 0; //clear
+		}
+		var msecs:int = needsTimer(_local_3.containerType_);
+		if (msecs > 0) {
+			timedShots.push(_local_3.bulletId_);
+		}
         _local_3.time_ = _arg_1;
         _local_3.bulletId_ = _arg_2.bulletId_;
         _local_3.containerType_ = _arg_2.containerType_;
@@ -647,20 +655,54 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         serverConnection.sendMessage(_local_3);
     }
 
-    override public function playerHit(_arg_1:int, _arg_2:int):void {
-        var _local_3:PlayerHit = (this.messages.require(PLAYERHIT) as PlayerHit);
-        _local_3.bulletId_ = _arg_1;
-        _local_3.objectId_ = _arg_2;
-        serverConnection.sendMessage(_local_3);
-    }
-
-    override public function enemyHit(_arg_1:int, _arg_2:int, _arg_3:int, _arg_4:Boolean):void {
+    override public function enemyHit(_arg_1:int, _arg_2:int, _arg_3:int, _arg_4:Boolean):void { //todo stuntimer
         var _local_5:EnemyHit = (this.messages.require(ENEMYHIT) as EnemyHit);
+		if (containsShot(timedShots, _arg_2)) {
+			//gs_.map.goDict_[_arg_3] //show timer on the mob?
+			player.startTimer(needsTimer(player.equipment_[1])); //unreliable
+			timedShots.length = 0;
+		}
         _local_5.time_ = _arg_1;
         _local_5.bulletId_ = _arg_2;
         _local_5.targetId_ = _arg_3;
         _local_5.kill_ = _arg_4;
         serverConnection.sendMessage(_local_5);
+    }
+	
+	private function containsShot(vect:Vector.<int>, shot:int):Boolean {
+		for each(var i:int in vect) {
+			if (i == shot) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	private function shotsPassed(last:int, newest:int):int {
+		if (last < newest)
+			return newest - last;
+		else
+			return 128 + newest - last;
+	}
+	
+	private function needsTimer(cont:int):int {
+		switch (cont) {
+			case 0xa0c: //mithril shield
+			case 2850: //colossus shield
+			case 9017: //mad god shield
+				return 6; //ticks
+			case 3395: //scutum
+			case 0xc0f: //ogmur
+				return 8; //ticks
+		}
+		return 0;
+	}
+
+    override public function playerHit(_arg_1:int, _arg_2:int):void {
+        var _local_3:PlayerHit = (this.messages.require(PLAYERHIT) as PlayerHit);
+        _local_3.bulletId_ = _arg_1;
+        _local_3.objectId_ = _arg_2;
+        serverConnection.sendMessage(_local_3);
     }
 
     override public function otherHit(_arg_1:int, _arg_2:int, _arg_3:int, _arg_4:int):void {
@@ -922,7 +964,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         _local_8.itemUsePos_.x_ = _arg_5;
         _local_8.itemUsePos_.y_ = _arg_6;
         _local_8.useType_ = _arg_7;
-		//addTextLine.dispatch(ChatMessage.make("*Help*", "usetype: "+_arg_7));
+		//addTextLine.dispatch(ChatMessage.make("*Help*", "use pos: "+_arg_5+" "+_arg_6));
         serverConnection.sendMessage(_local_8);
     }
 
@@ -931,17 +973,17 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         var _local_4:XML = ObjectLibrary.xmlLibrary_[_local_3];
         if (((((_local_4) && (!(_arg_1.isPaused())))) && (((_local_4.hasOwnProperty("Consumable")) || (_local_4.hasOwnProperty("InvUse")))))) {
             if (!this.validStatInc(_local_3, _arg_1)) {
-                this.addTextLine.dispatch(ChatMessage.make("", (_local_4.attribute("id") + " not consumed. Already at max.")));
+                this.addTextLine.dispatch(ChatMessage.make("", _local_4.attribute("id") + " not consumed. Already at max."));
                 return (false);
             }
-            if (isStatPotion(_local_3)) {
+            /*if (isStatPotion(_local_3)) {
                 this.addTextLine.dispatch(ChatMessage.make("", (_local_4.attribute("id") + " consumed")));
-            }
+            }*/
             this.applyUseItem(_arg_1, _arg_2, _local_3, _local_4);
             SoundEffectLibrary.play("use_potion");
             return (true);
         }
-        if(swapEquip(_arg_1,_arg_2,_local_4))
+        if (swapEquip(_arg_1,_arg_2,_local_4))
         {
             return true;
         }
@@ -1018,8 +1060,22 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         _local_3.conditionDuration_ = _arg_2;
         serverConnection.sendMessage(_local_3);
     }
+	
+	/*private var lasty:Number = 0;
+	private var lastx:Number = 0;
+	private var lastt:int = 0;*/
 
     public function move(_arg_1:int, _arg_2:Player):void {
+		/*if (lastt != 0) {
+			var dy:Number = Math.abs(lasty - player.y_);
+			var dx:Number = Math.abs(lastx - player.x_);
+			var dt:int = Math.abs(getTimer() - lastt);
+			addTextLine.dispatch(ChatMessage.make("","ly "+lasty+" py "+player.y_));
+			addTextLine.dispatch(ChatMessage.make("","dy "+dy+" dx "+dx+" dt "+dt)); //speedhack -> longer distance, longer time diff
+		}
+		lasty = player.y_;
+		lastx = player.x_;
+		lastt = getTimer();*/
         var _local_7:int;
         var _local_8:int;
         var _local_3:Number = -1;
@@ -1293,7 +1349,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         gs_.initialize();
         createCharacter_ = false;
 		
-		if (claimkey != "") { //TODO
+		if (claimkey != "") {
 			openDialog.dispatch(new DailyLoginModal());
 			claimkey = "";
 		}
@@ -1789,7 +1845,6 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         var _local_6:uint;
         var _local_2:AbstractMap = gs_.map;
 		if (_arg_1.effectType_ == 5) { //paladin heal area
-			//addTextLine.dispatch(ChatMessage.make("*Help*", ""+_arg_1.color_));
 			if (_arg_1.color_ == 0xff0000) {
 				handleSeal((_local_2.goDict_[_arg_1.targetObjectId_]) as Player);
 			}
@@ -1806,7 +1861,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 				case ShowEffect.JITTER_EFFECT_TYPE: //14 oryx shake
 					gs_.camera_.startJitter();
 					return;
-				case ShowEffect.FLASH_EFFECT_TYPE: //15
+				case ShowEffect.FLASH_EFFECT_TYPE: //15 blinking effect
 					_local_3 = _local_2.goDict_[_arg_1.targetObjectId_];
 					if ((((_local_3 == null)) || (!(this.canShowEffect(_local_3))))) break;
 					_local_3.flash_ = new FlashDescription(getTimer(), _arg_1.color_, _arg_1.pos1_.x_, _arg_1.pos1_.y_);
@@ -1816,6 +1871,14 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 					if (((!((_local_3 == null))) && (!(this.canShowEffect(_local_3))))) break;
 					_local_4 = new ThrowProjectileEffect(_arg_1.color_, _arg_1.pos2_.toPoint(), _arg_1.pos1_.toPoint());
 					_local_2.addObj(_local_4, _local_5.x, _local_5.y);
+					return;
+				case ShowEffect.BURST_EFFECT_TYPE: //8 necro blast
+					if (_arg_1.targetObjectId_ == player.objectId_) {
+						_local_3 = _local_2.goDict_[_arg_1.targetObjectId_];
+						if ((((_local_3 == null)) || (!(this.canShowEffect(_local_3))))) break;
+						_local_4 = new BurstEffect(_local_3, _arg_1.pos1_, _arg_1.pos2_, _arg_1.color_);
+						_local_2.addObj(_local_4, _arg_1.pos1_.x_, _arg_1.pos1_.y_);
+					}
 					return;
 			}
 		}
@@ -2085,10 +2148,26 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 					}
                     break;
                 case StatData.TEX1_STAT:
-                    _arg_1.setTex1(_local_8);
+					if (_local_4 == player && Parameters.data_.setTex1 != 0) {
+						_arg_1.setTex1(Parameters.data_.setTex1);
+					}
+					else if (!Parameters.data_.showDyes) {
+						_arg_1.setTex1(0);
+					}
+					else {
+						_arg_1.setTex1(_local_8);
+					}
                     break;
                 case StatData.TEX2_STAT:
-                    _arg_1.setTex2(_local_8);
+					if (_local_4 == player && Parameters.data_.setTex2 != 0) {
+						_arg_1.setTex2(Parameters.data_.setTex2);
+					}
+					else if (!Parameters.data_.showDyes) {
+						_arg_1.setTex2(0);
+					}
+					else {
+						_arg_1.setTex2(_local_8);
+					}
                     break;
                 case StatData.MERCHANDISE_TYPE_STAT:
                     _local_5.setMerchandiseType(_local_8);
@@ -2189,7 +2268,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
                     if (!_arg_3) {
                         _local_4.sinkLevel_ = _local_8;
                     }
-					if (_local_4 == player) {
+					if (_local_4 == player && Parameters.data_.noSink) {
 						addTextLine.dispatch(ChatMessage.make("","Sink: "+_local_4.sinkLevel_));
 					}
                     break;
@@ -2360,15 +2439,14 @@ public class GameServerConnectionConcrete extends GameServerConnection {
     }
 
     private function onReconnect(_arg_1:Reconnect):void {
+		//addTextLine.dispatch(ChatMessage.make("*Client*","Reconnect"));
 		if (player != null) {
 			player.questMob1 = null; //tomb hack remove bars
 			player.questMob2 = null;
 			player.questMob3 = null;
 			player.collect = 0;
 		}
-		else {
-			addTextLine.dispatch(ChatMessage.make("*Error*","Player not found"));
-		}
+		//else addTextLine.dispatch(ChatMessage.make("*Error*","Player not found"));
 		Parameters.data_.curBoss = 3368; //set first boss to bes
 		Parameters.save();
         var _local_2:Server = new Server().setName(_arg_1.name_).setAddress((((_arg_1.host_) != "") ? _arg_1.host_ : server_.address)).setPort((((_arg_1.host_) != "") ? _arg_1.port_ : server_.port));

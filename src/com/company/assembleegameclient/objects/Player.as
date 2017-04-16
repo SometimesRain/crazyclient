@@ -92,7 +92,7 @@ public class Player extends Character {
     public static var nextLootSlot:int = -1;
 	private var nextSwap:int = 0;
 	private var bools:Array = new Array(false,false,false,false,false,false,false,false);
-    //public var getOut:Boolean = false;
+    public var followTarget:GameObject;
 	
     public var questMob:GameObject;
     public var questMob1:GameObject;
@@ -1166,14 +1166,31 @@ public class Player extends Character {
         if ((((map_.player_ == this)) && (isPaused()))) {
             return (true);
         }
+		//movement
         if (this.relMoveVec_ != null) {
             _local_3 = Parameters.data_.cameraAngle;
             if (this.rotate_ != 0) {
                 _local_3 = (_local_3 + ((_arg_2 * Parameters.PLAYER_ROTATE_SPEED) * this.rotate_));
                 Parameters.data_.cameraAngle = _local_3;
             }
-            if (this.relMoveVec_.x != 0 || this.relMoveVec_.y != 0) {
-                _local_4 = this.getMoveSpeed();
+			_local_4 = this.getMoveSpeed();
+			/*
+            float angle = (float)Math.Atan2(target.Y - start.Y, target.X - start.X);
+            if (angle < 0)
+                angle += (float)Math.PI * 2;*/
+			if (followTarget != null) {
+				_local_5 = Math.abs(followTarget.y_ - y_) + Math.abs(followTarget.x_ - x_);
+				if (_local_5 < 0.2) {
+                    moveVec_.x = 0;
+                    moveVec_.y = 0;
+				}
+				else {
+					_local_5 = Math.atan2(followTarget.y_ - y_, followTarget.x_ - x_); //angle
+					moveVec_.x = _local_4 * Math.cos(_local_3 + _local_5);
+					moveVec_.y = _local_4 * Math.sin(_local_3 + _local_5);
+				}
+			}
+            else if (this.relMoveVec_.x != 0 || this.relMoveVec_.y != 0) {
                 _local_5 = Math.atan2(this.relMoveVec_.y, this.relMoveVec_.x);
                 if (square_.props_.slideAmount_ > 0 && Parameters.data_.slideOnIce) { //ice sliding, makes it harder to gain speed
                     _local_6 = new Vector3D();
@@ -1188,6 +1205,7 @@ public class Player extends Character {
                     }
                 }
                 else {
+					//default move vec
                     moveVec_.x = _local_4 * Math.cos(_local_3 + _local_5);
                     moveVec_.y = _local_4 * Math.sin(_local_3 + _local_5);
                 }
@@ -1197,13 +1215,13 @@ public class Player extends Character {
                     moveVec_.scaleBy(square_.props_.slideAmount_);
                 }
                 else {
+					//default move vec
                     moveVec_.x = 0;
                     moveVec_.y = 0;
                 }
             }
-            if (((!((square_ == null))) && (square_.props_.push_))) {
-                if(Parameters.data_["SWNoTileMove"] == false)
-                {
+            if (square_ != null && square_.props_.push_) {
+                if (Parameters.data_.SWNoTileMove == false) {
 					moveVec_.x = (moveVec_.x - (square_.props_.animate_.dx_ / 1000));
 					moveVec_.y = (moveVec_.y - (square_.props_.animate_.dy_ / 1000));
                 }
@@ -1516,6 +1534,7 @@ public class Player extends Character {
         var shootAngle:Number;
         var _local_10:int;
         var _local_11:int;
+		var _local_6:Point;
         if (map_ == null || isPaused()) {
             return false;
         }
@@ -1527,7 +1546,12 @@ public class Player extends Character {
 		if (int(thisAbilXML.MpCost) > mp_) { //this is here for auto ability
 			return false;
 		}
-        var _local_6:Point = sToW(_arg_1, _arg_2); //allows using ability outside of the map
+		if (Parameters.data_.inaccurate) {
+			_local_6 = pSTopW(_arg_1, _arg_2);
+		}
+		else {
+			_local_6 = sToW(_arg_1, _arg_2); //allows using ability outside of the map
+		}
         if (_local_6 == null) {
             SoundEffectLibrary.play("error");
             return (false);
@@ -1782,7 +1806,14 @@ public class Player extends Character {
         return Number.MAX_VALUE;
     }
     
-    public function sToW(param1:Number, param2:Number):Point {
+	public function pSTopW(param1:Number, param2:Number):Point { //inaccurate
+		var po:Point = sToW(param1, param2);
+		po.x = int(po.x) + 1 / 2;
+		po.y = int(po.y) + 1 / 2;
+		return po;
+	}
+	
+    public function sToW(param1:Number, param2:Number):Point { //accurate
         var _loc3_:* = Parameters.data_.cameraAngle;
         var _loc4_:* = Math.cos(_loc3_);
         var _loc5_:* = Math.sin(_loc3_);

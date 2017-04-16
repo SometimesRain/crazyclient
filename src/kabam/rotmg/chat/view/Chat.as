@@ -37,8 +37,8 @@ public class Chat extends Sprite {
     }
 
     private function addChatInput():void {
-        this.input = new ChatInput();
-        addChild(this.input);
+        input = new ChatInput();
+        addChild(input);
     }
 
     private function addInputNotAllowed():void {
@@ -48,11 +48,11 @@ public class Chat extends Sprite {
     }
 
     public function removeRegisterBlock():void {
-        if (((!((this.notAllowed == null))) && (contains(this.notAllowed)))) {
-            removeChild(this.notAllowed);
+        if (notAllowed != null && contains(notAllowed)) {
+            removeChild(notAllowed);
         }
-        if ((((this.input == null)) || (!(contains(this.input))))) {
-            this.addChatInput();
+        if (input == null || !contains(input)) {
+            addChatInput();
         }
     }
 

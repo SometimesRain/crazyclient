@@ -575,9 +575,10 @@ public class Options extends Sprite {
         addOptionAndPosition(new NullOption());
         addOptionAndPosition(new ChoiceOption("perfectBomb",makeOnOffLabels(),[true,false],"Spell Bomb Aim","Targets the mob with highest max health in 15 tile radius from the player.",pbOptions));
 		addOptionAndPosition(new KeyMapper("pbToggle", "Toggle Ability Aim", "Toggles ability aim."));
-        addOptionAndPosition(new ChoiceOption("perfectStun", makeOnOffLabels(), [true, false], "Shield Aim", "Targets the mob with highest max health in 3.2 tile radius from the player.", null));
+        addOptionAndPosition(new ChoiceOption("perfectQuiv", makeOnOffLabels(), [true, false], "Quiver Aim", "Targets the mob closest to cursor.", null));
         addOptionAndPosition(new ChoiceOption("perfectLead", makeOnOffLabels(), [true, false], "Ability Aim Target Lead", "Enables leading of ability aim targets.", null));
-        addOptionAndPosition(new ChoiceOption("perfectQuiv", makeOnOffLabels(), [true, false], "Quiver Aim", "Targets the mob with highest max health in 15 tile radius from the player.", null));
+        addOptionAndPosition(new ChoiceOption("perfectStun", makeOnOffLabels(), [true, false], "Shield Aim", "Targets the mob closest to cursor.", null));
+        addOptionAndPosition(new ChoiceOption("inaccurate", makeOnOffLabels(), [true, false], "Inaccurate Ability Aim", "Look more legit by aiming inaccurately.", null));
 		pbOptions();
     }
       
@@ -588,6 +589,15 @@ public class Options extends Sprite {
             _loc1_ = options_[_loc2_] as ChoiceOption;
             if (_loc1_ != null) {
                 if (_loc1_.paramName_ == "perfectQuiv") {
+                    _loc1_.enable(!Parameters.data_.perfectBomb);
+                }
+				else if (_loc1_.paramName_ == "perfectStun") {
+                    _loc1_.enable(!Parameters.data_.perfectBomb);
+                }
+				else if (_loc1_.paramName_ == "perfectLead") {
+                    _loc1_.enable(!Parameters.data_.perfectBomb);
+                }
+				else if (_loc1_.paramName_ == "pbToggle") {
                     _loc1_.enable(!Parameters.data_.perfectBomb);
                 }
             }
@@ -653,7 +663,7 @@ public class Options extends Sprite {
         addOptionAndPosition(new ChoiceOption("uiscale", makeOnOffLabels(), [true, false], "Scale UI", "Scales the UI to fit the screen.", this.scaleui));
 		fsv3_options();
         addOptionAndPosition(new ChoiceOption("STDamage", makeOnOffLabels(), [true, false], "Show Damage", "Show damage done to players and enemies.", null));
-		addOptionAndPosition(new ChoiceOption("showSkins", makeOnOffLabels(), [true, false], "Show Skins", "Forces default texture to everyone when turned off.", null));
+		addOptionAndPosition(new ChoiceOption("showSkins", makeOnOffLabels(), [true, false], "Show Skins", "Forces default skin to everyone when turned off.", null));
         addOptionAndPosition(new ChoiceOption("STHealth",makeOnOffLabels(),[true,false],"Show Health","Show total health points of players and enemies as they take damage.",null));
 		addOptionAndPosition(new ChoiceOption("showPests", makeOnOffLabels(), [true, false], "Show Pets", "Animal abuse.", null));
         addOptionAndPosition(new ChoiceOption("STColor",makeOnOffLabels(),[true,false],"Dynamic Color","Changes the status text color based on the percentage of health the player or enemy has.",null));
@@ -666,6 +676,7 @@ public class Options extends Sprite {
         addOptionAndPosition(new ChoiceOption("AntiLag",makeOnOffLabels(),[true,false],"Anti Lag","Aggressively disables particles.",null));
 		addOptionAndPosition(new ChoiceOption("showMobInfo",makeOnOffLabels(),[true,false],"Display Mob Info","Display mob name and id. Useful for finding ids for use with auto aim exception and ignore list.",showMobInfo_));
 		addOptionAndPosition(new ChoiceOption("questClosest",makeOnOffLabels(),[true,false],"Show Closest Player to Quest","Extends the quest bar to show closest player to quest and the distance from it.",showMobInfo_));
+        addOptionAndPosition(new ChoiceOption("showDyes", makeOnOffLabels(), [true, false], "Show Dyes", "Makes every player use the default dye.", null));
     }
         
     private function nillyOther() : void

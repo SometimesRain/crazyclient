@@ -80,13 +80,13 @@ public class ChatInputMediator extends Mediator {
     }
 
     private function onKeyUp(_arg_1:KeyboardEvent):void {
-        if (((this.view.visible) && ((((_arg_1.keyCode == this.chatShortcutModel.getTellShortcut())) || ((((this.stage.focus == null)) || (this.viewDoesntHaveFocus()))))))) {
+        if (view.visible && (_arg_1.keyCode == chatShortcutModel.getTellShortcut() || this.stage.focus == null || viewDoesntHaveFocus())) {
             this.processKeyUp(_arg_1);
         }
     }
 
     private function viewDoesntHaveFocus():Boolean {
-        return (((!((this.stage.focus.parent == this.view))) && (!((this.stage.focus == this.view)))));
+        return (stage.focus.parent != view && stage.focus != view);
     }
 
     private function processKeyUp(_arg_1:KeyboardEvent):void {
@@ -104,15 +104,15 @@ public class ChatInputMediator extends Mediator {
 			case chatShortcutModel.getTellShortcut():
                 handleTell();
 				break;
-			case Parameters.data_.hackChat:
+			/*case Parameters.data_.hackChat:
 				view.activate("/b ", true);
-				break;
+				break;*/
 		}
     }
 
     private function handleTell():void {
         if (!this.view.hasEnteredText()) {
-            this.view.activate((("/tell " + this.tellModel.getNext()) + " "), true);
+            this.view.activate("/tell " + tellModel.getNext() + " ", true);
         }
     }
 
