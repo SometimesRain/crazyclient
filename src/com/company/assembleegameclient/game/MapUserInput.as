@@ -303,8 +303,8 @@ public class MapUserInput {
     }
 	
 	private function handleAutoAbil(player:Player):Boolean {
-		if (!(player.objectType_ == 0x0300 || player.objectType_ == 0x031d || player.objectType_ == 0x031f)) {
-			return false; //not rogue, warrior, paladin
+		if (!(player.objectType_ == 0x0300 || player.objectType_ == 0x031d || player.objectType_ == 0x031f || (player.objectType_ == 0x0310 && Parameters.data_.priestAA))) {
+			return false; //not rogue, warrior, paladin, priest
 		}
 		if (spaceSpam >= getTimer()) {
 			if (player.mapAutoAbil) {
@@ -323,6 +323,8 @@ public class MapUserInput {
 			case 0xb26: //gcookie
 			case 0xa55: //zseal
 			case 0x21a2: //drape
+			case 0xc1e: //prot
+			case 0x16de: //ice prot
 				player.mapAutoAbil = !player.mapAutoAbil;
 				player.notifyPlayer(player.mapAutoAbil ? "Auto Ability: Enabled" : "Auto Ability: Disabled", 0x00FF00, 1500);
 				return true;

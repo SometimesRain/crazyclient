@@ -128,7 +128,7 @@ public class GameServerConnection {
     public var outstandingBuy_:OutstandingBuy;
 	public var tptarget:String = "";
 	public var oncd:Boolean = false;
-
+	public var player:Player;
 
     public function chooseName(_arg_1:String):void {
     }
@@ -203,6 +203,9 @@ public class GameServerConnection {
 	
     public function retryTeleport():void {
     }
+	
+    public function setPlayerSkinTemplate(_arg_1:Player, _arg_2:int):void {
+	}
 
     public function usePortal(_arg_1:int):void {
     }

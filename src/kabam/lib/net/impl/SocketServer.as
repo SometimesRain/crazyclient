@@ -1,4 +1,5 @@
 ﻿package kabam.lib.net.impl {
+import com.company.assembleegameclient.parameters.Parameters;
 import com.hurlant.crypto.symmetric.ICipher;
 
 import flash.events.Event;
@@ -142,8 +143,14 @@ public class SocketServer {
         this.closed.dispatch();
     }
 
-    private function onIOError(_arg_1:IOErrorEvent):void {
-        var _local_2:String = this.parseString("Socket-Server IO Error: {0}", [_arg_1.text]);
+    private function onIOError(_arg_1:IOErrorEvent):void { //2031
+		var _local_2:String;
+		if (Parameters.data_.preferredServer == "Proxy") {
+			_local_2 = "Proxy is not running";
+		}
+		else {
+			_local_2 = parseString("Socket-Server IO Error: {0}", [_arg_1.text]);
+		}
         this.error.dispatch(_local_2);
         this.closed.dispatch();
     }

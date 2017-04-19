@@ -39,7 +39,8 @@ public class QuestHealthBar extends Sprite {
 		var temp:int;
 		for each(go in p.map_.goDict_) {
 			if (go is Player) {
-				temp = Math.abs(go.x_ - p.questMob.x_) + Math.abs(go.y_ - p.questMob.y_); //not sq -> abs
+				//temp = Math.abs(go.x_ - p.questMob.x_) + Math.abs(go.y_ - p.questMob.y_); //wtf
+				temp = (go.x_ - p.questMob.x_) * (go.x_ - p.questMob.x_) + (go.y_ - p.questMob.y_) * (go.y_ - p.questMob.y_);
 				if (temp < dist) {
 					dist = temp;
 					closest = go;

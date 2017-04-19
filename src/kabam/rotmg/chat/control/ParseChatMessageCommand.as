@@ -5,12 +5,14 @@ import com.company.assembleegameclient.objects.GameObject;
 import com.company.assembleegameclient.objects.Player;
 import com.company.assembleegameclient.parameters.Parameters;
 import com.company.assembleegameclient.ui.menu.FindMenu;
+import com.company.assembleegameclient.util.AnimatedChars;
 import flash.events.TimerEvent;
 import flash.external.ExternalInterface;
 import flash.net.FileReference;
 import flash.net.URLRequest;
 import flash.utils.Dictionary;
 import flash.utils.Timer;
+import kabam.rotmg.assets.EmbeddedData;
 import kabam.rotmg.dialogs.control.OpenDialogSignal;
 import kabam.rotmg.friends.view.FriendListView;
 import kabam.rotmg.messaging.impl.GameServerConnection;
@@ -807,16 +809,64 @@ public class ParseChatMessageCommand {
 		}
 		splice = data.toLowerCase().match("/dye1 (.+)$");
 		if (splice != null) {
-			Parameters.data_.setTex1 = getTex1(findMatch2(splice[1]));
-			Parameters.save();
-			player.setTex1(Parameters.data_.setTex1);
+			if (splice[1] == "none") {
+				Parameters.data_.setTex1 = 0;
+				Parameters.save();
+				player.setTex1(0);
+			}
+			else {
+				Parameters.data_.setTex1 = getTex1(findMatch2(splice[1]+" cloth"));
+				Parameters.save();
+				player.setTex1(Parameters.data_.setTex1);
+			}
 			return true;
 		}
 		splice = data.toLowerCase().match("/dye2 (.+)$");
 		if (splice != null) {
-			Parameters.data_.setTex2 = getTex1(findMatch2(splice[1]));
-			Parameters.save();
-			player.setTex2(Parameters.data_.setTex2);
+			if (splice[1] == "none") {
+				Parameters.data_.setTex2 = 0;
+				Parameters.save();
+				player.setTex2(0);
+			}
+			else {
+				Parameters.data_.setTex2 = getTex1(findMatch2(splice[1]+" cloth"));
+				Parameters.save();
+				player.setTex2(Parameters.data_.setTex2);
+			}
+			return true;
+		}
+		splice = data.toLowerCase().match("/dye (.+)$");
+		if (splice != null) {
+			if (splice[1] == "none") {
+				Parameters.data_.setTex1 = 0;
+				Parameters.data_.setTex2 = 0;
+				Parameters.save();
+				player.setTex1(0);
+				player.setTex2(0);
+			}
+			else {
+				splice[1] = getTex1(findMatch2(splice[1] + " cloth"));
+				Parameters.data_.setTex1 = splice[1];
+				Parameters.data_.setTex2 = splice[1];
+				Parameters.save();
+				player.setTex1(Parameters.data_.setTex1);
+				player.setTex2(Parameters.data_.setTex2);
+			}
+			return true;
+		}
+		splice = data.toLowerCase().match("/skin (.+)$");
+		if (splice != null) {
+			if (splice[1] == "none") {
+				Parameters.data_.setSkin = -1;
+				Parameters.save();
+				gsc.setPlayerSkinTemplate(player, 0);
+			}
+			else {
+				Parameters.data_.setSkin = findSkinIndex(splice[1]);
+				Parameters.save();
+				//player.skin = AnimatedChars.getAnimatedChar("playerskins", Parameters.data_.setSkin); //not working
+				//gsc.setPlayerSkinTemplate(player, Parameters.data_.setSkin); //old
+			}
 			return true;
 		}
 		splice = data.toLowerCase().match("/tp (\\w+)$");
@@ -843,6 +893,52 @@ public class ParseChatMessageCommand {
 		}*/
         return false;
     }
+	
+	private function findSkinIndex(input:String):int {
+		var splice:Array = input.split(' ');
+		var splice2:Array;
+		var curxml:XML;
+		var dist2:int = int.MAX_VALUE;
+		var temp:int;
+		var skinid:String;
+        var _local_1:XML;
+        var _local_2:XMLList;
+        _local_1 = EmbeddedData.skinsXML;
+        _local_2 = _local_1.children();
+		
+        for each (curxml in _local_2) {
+			splice2 = curxml.@id.toLowerCase().split(' ');
+			temp = scoredMatch(curxml.@id.toString().length, splice, splice2);
+			if (temp < dist2) {
+				dist2 = temp;
+				skinid = curxml.AnimatedTexture.Index;
+			}
+        }
+		return parseInt(skinid);
+	}
+	
+	/*private function findSkin(input:String):int {
+		var splice:Array = input.split(' ');
+		var splice2:Array;
+		var curxml:XML;
+		var dist2:int = int.MAX_VALUE;
+		var temp:int;
+		var skinid:String;
+        var _local_1:XML;
+        var _local_2:XMLList;
+        _local_1 = EmbeddedData.skinsXML;
+        _local_2 = _local_1.children();
+		
+        for each (curxml in _local_2) {
+			splice2 = curxml.@id.toLowerCase().split(' ');
+			temp = scoredMatch(curxml.@id.length, splice, splice2);
+			if (temp < dist2) {
+				dist2 = temp;
+				skinid = curxml.@type;
+			}
+        }
+		return parseInt(skinid);
+	}*/
 	
 	private function getTex1(item:int):uint {
         var dye:XML = ObjectLibrary.xmlLibrary_[item];
@@ -899,6 +995,7 @@ public class ParseChatMessageCommand {
 	}
 	
 	private function scoredMatch(init:int, inpu:Array, comp:Array):int {
+		//addTextLine.dispatch(ChatMessage.make("*Help*", "match for "+inpu[0]+"("+init+")"));
 		var outer:String;
 		var inner:String;
 		for each(outer in comp) {
@@ -908,6 +1005,7 @@ public class ParseChatMessageCommand {
 				}
 			}
 		}
+		//addTextLine.dispatch(ChatMessage.make("*Help*", "match is "+init));
 		return init;
 	}
 	

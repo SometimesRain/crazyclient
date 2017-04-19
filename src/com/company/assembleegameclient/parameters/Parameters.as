@@ -14,7 +14,7 @@ public class Parameters {
 
     public static const BUILD_VERSION:String = "27.7";
     public static const MINOR_VERSION:String = "X13";
-    public static const CRAZY_VERSION:String = "v8b3";
+    public static const CRAZY_VERSION:String = "v8";
     public static const ENABLE_ENCRYPTION:Boolean = true;
     public static const PORT:int = 2050;
     public static const ALLOW_SCREENSHOT_MODE:Boolean = false;
@@ -415,11 +415,13 @@ public class Parameters {
         setDefault("palaSpam",true);
         setDefault("grandmaMode",false);
         setDefault("speedy",false);
-        setDefault("noSink",false);
         setDefault("setTex1",0);
         setDefault("setTex2",0);
+        setDefault("setSkin",-1);
         setDefault("showDyes",true);
         setDefault("inaccurate",false);
+        setDefault("priestAA",false);
+        setDefault("abilTimer",true);
 		//
     }
 

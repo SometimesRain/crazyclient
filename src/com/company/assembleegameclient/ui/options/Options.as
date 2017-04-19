@@ -41,15 +41,17 @@ import kabam.rotmg.servers.model.LiveServerModel;
 
 public class Options extends Sprite {
 
-    private static const TABS:Vector.<String> = new < String > [TextKey.OPTIONS_CONTROLS, TextKey.OPTIONS_HOTKEYS, TextKey.OPTIONS_CHAT, TextKey.OPTIONS_GRAPHICS, TextKey.OPTIONS_SOUND, AUTOAIM_, HPDISP_,DEBUFF_, AUTOABIL_,LOOT_,RECON_,SPRITE_,OTHER_,MISC_,DBKEYS_];
+    private static const TABS:Vector.<String> = new < String > [TextKey.OPTIONS_CONTROLS, OPT_HOT, TextKey.OPTIONS_CHAT, TextKey.OPTIONS_GRAPHICS, TextKey.OPTIONS_SOUND, AUTOAIM_, ABILMENU,HPDISP_,DEBUFF_, AUTOABIL_,LOOT_,RECON_,SPRITE_,OTHER_,MISC_,DBKEYS_];
+	private static const OPT_HOT:String = "Hotkeys ";
 	private static const AUTOAIM_:String = "Auto Aim";
 	private static const AUTOABIL_:String = "Tomb";
 	private static const DEBUFF_:String = "Debuffs";
 	private static const DBKEYS_:String = "Hotkeys";
 	private static const HPDISP_:String = "Visual";
+	private static const ABILMENU:String = "Ability";
 	private static const LOOT_:String = "Loot";
 	private static const RECON_:String = "Reconnect";
-	private static const SPRITE_:String = "Sprite World";
+	private static const SPRITE_:String = "Sprite";
 	private static const OTHER_:String = "Other";
 	private static const MISC_:String = "Messages";
     public static const Y_POSITION:int = 550;
@@ -71,7 +73,7 @@ public class Options extends Sprite {
 
     public function Options(_arg_1:GameSprite) {
         var _local_2:TextFieldDisplayConcrete;
-        var _local_5:int;
+        var kier:int;
         var _local_6:OptionsTabTitle;
         this.tabs_ = new Vector.<OptionsTabTitle>();
         this.options_ = new Vector.<Sprite>();
@@ -109,31 +111,28 @@ public class Options extends Sprite {
         this.homeButton_.setAutoSize(TextFieldAutoSize.RIGHT);
         this.homeButton_.addEventListener(MouseEvent.CLICK, this.onHomeClick);
         addChild(this.homeButton_);
-        var pad:int = 10;
-        var kier:int;
+        var pad:int = 8;
+		const perrow:int = 8;
         while (kier < TABS.length) {
             var _local_3:OptionsTabTitle = new OptionsTabTitle(TABS[kier]);
             _local_3.x = pad;
-            _local_3.y = 50 + 25 * int(kier / 7);
-            if (kier % 7 == 0)
-            {
-               pad = 10;
+            _local_3.y = 50 + 25 * int(kier / perrow);
+            if (kier % perrow == 0) {
+               pad = 8;
                _local_3.x = pad;
             }
-			if (kier == 7) {
-				_local_3.x = 10;
+			if (kier == 8) {
+				_local_3.x = 8;
 				_local_3.y = 70;
 			}
-			else if (kier == 14) {
-				_local_3.x = 10;
+			else if (kier == 15) {
+				_local_3.x = 8;
 				_local_3.y = 85;
-				//_local_3.x = 75;
-				//_local_3.y = 75;
 			}
             addChild(_local_3);
             _local_3.addEventListener(MouseEvent.CLICK, this.onTabClick);
             this.tabs_.push(_local_3);
-            pad = pad + 114;
+            pad = pad + 800 / perrow;
             kier++;
         }
         addEventListener(Event.ADDED_TO_STAGE, this.onAddedToStage);
@@ -260,7 +259,7 @@ public class Options extends Sprite {
             case TextKey.OPTIONS_CONTROLS:
                 this.addControlsOptions();
                 return;
-            case TextKey.OPTIONS_HOTKEYS:
+            case OPT_HOT:
                 this.addHotKeysOptions();
                 return;
             case TextKey.OPTIONS_CHAT:
@@ -293,6 +292,9 @@ public class Options extends Sprite {
 			case AUTOAIM_:
 				aimAssist();
 				return;
+			case ABILMENU:
+				abilOptions();
+				return;
 			case HPDISP_:
 				hpBars();
 				return;
@@ -322,7 +324,7 @@ public class Options extends Sprite {
         this.resetToDefaultsButton_.y = Y_POSITION;
         this.homeButton_.x = 780;
         this.homeButton_.y = Y_POSITION;
-        this.setSelected(this.tabs_[7]);
+        this.setSelected(this.tabs_[8]); //which tab we start on
         stage.addEventListener(KeyboardEvent.KEY_DOWN, this.onKeyDown, false, 1);
         stage.addEventListener(KeyboardEvent.KEY_UP, this.onKeyUp, false, 1);
     }
@@ -571,14 +573,23 @@ public class Options extends Sprite {
 		addOptionAndPosition(new ChoiceOption("PassesCover",makeOnOffLabels(),[true,false],"Projectile No-Clip","Toggle allowing projectiles to pass through solid objects as well as invulnerable enemies. Only you can see the effect.",null));
         addOptionAndPosition(new ChoiceOption("AATargetLead",makeOnOffLabels(),[true,false],"Target Lead","Enables leading of targets.",null));
         addOptionAndPosition(new KeyMapper("tPassCover","Toggle Projectile No-Clip","Toggles the hack on and off."));
-        addOptionAndPosition(new NullOption());
-        addOptionAndPosition(new NullOption());
-        addOptionAndPosition(new ChoiceOption("perfectBomb",makeOnOffLabels(),[true,false],"Spell Bomb Aim","Targets the mob with highest max health in 15 tile radius from the player.",pbOptions));
+    }
+    
+    private function abilOptions():void {
+        addOptionAndPosition(new ChoiceOption("perfectBomb",makeOnOffLabels(),[true,false],"Spell Bomb and Poison Aim","Targets the mob with highest max health in 15 tile radius from the player.",pbOptions));
 		addOptionAndPosition(new KeyMapper("pbToggle", "Toggle Ability Aim", "Toggles ability aim."));
         addOptionAndPosition(new ChoiceOption("perfectQuiv", makeOnOffLabels(), [true, false], "Quiver Aim", "Targets the mob closest to cursor.", null));
         addOptionAndPosition(new ChoiceOption("perfectLead", makeOnOffLabels(), [true, false], "Ability Aim Target Lead", "Enables leading of ability aim targets.", null));
         addOptionAndPosition(new ChoiceOption("perfectStun", makeOnOffLabels(), [true, false], "Shield Aim", "Targets the mob closest to cursor.", null));
         addOptionAndPosition(new ChoiceOption("inaccurate", makeOnOffLabels(), [true, false], "Inaccurate Ability Aim", "Look more legit by aiming inaccurately.", null));
+		addOptionAndPosition(new ChoiceOption("autoAbil", makeOnOffLabels(), [true, false], "Auto Ability", "Automatically uses your ability on warrior, paladin and rogue. Activated by pressing space.", null));
+		addOptionAndPosition(new ChoiceOption("palaSpam", makeOnOffLabels(), [true, false], "Spam Paladin Ability", "Uses paladin ability every 0.5 seconds if auto ability is enabled", null));
+		addOptionAndPosition(new ChoiceOption("spellVoid", makeOnOffLabels(), [true, false], "Unsafe Prism Use", "Allows using prism through walls. If you land on void you will get disconnected.", null));
+        addOptionAndPosition(new KeyMapper("maxPrism","Teleport Max Distance","Always teleports the maximum distance on Trickster. You will have to stand still for this to work."));
+		addOptionAndPosition(new ChoiceOption("ninjaTap",makeOnOffLabels(),[true,false],"One-Tap Ninja Ability","Makes space toggle the state of the ability. Tap to turn on, tap to turn off.",null));
+		addOptionAndPosition(new ChoiceOption("speedy",makeOnOffLabels(),[true,false],"Disable Speedy","Makes your character unaffected by speedy. Helps with warrior helms.",null));
+		addOptionAndPosition(new ChoiceOption("priestAA",makeOnOffLabels(),[true,false],"Prot Auto Ability","Keeps you armored on a priest when using Tome of Holy Protection. For infinite boost, a level 79 magic heal pet is required.",null));
+		addOptionAndPosition(new ChoiceOption("abilTimer",makeOnOffLabels(),[true,false],"Ability Timer","Shows time remaining on abilities that give buffs.",null));
 		pbOptions();
     }
       
@@ -666,8 +677,8 @@ public class Options extends Sprite {
 		addOptionAndPosition(new ChoiceOption("showSkins", makeOnOffLabels(), [true, false], "Show Skins", "Forces default skin to everyone when turned off.", null));
         addOptionAndPosition(new ChoiceOption("STHealth",makeOnOffLabels(),[true,false],"Show Health","Show total health points of players and enemies as they take damage.",null));
 		addOptionAndPosition(new ChoiceOption("showPests", makeOnOffLabels(), [true, false], "Show Pets", "Animal abuse.", null));
-        addOptionAndPosition(new ChoiceOption("STColor",makeOnOffLabels(),[true,false],"Dynamic Color","Changes the status text color based on the percentage of health the player or enemy has.",null));
-        addOptionAndPosition(new ChoiceOption("clientSwap",makeOnOffLabels(),[true,false],"Disable Client Swap","Prevents items from teleporting out of your inventory or moving back after switching positions.",null));
+        addOptionAndPosition(new ChoiceOption("STColor", makeOnOffLabels(), [true, false], "Dynamic Color", "Changes the status text color based on the percentage of health the player or enemy has.", null));
+        addOptionAndPosition(new ChoiceOption("showDyes", makeOnOffLabels(), [true, false], "Show Dyes", "Makes every player use the default dye.", null));
 		//addOptionAndPosition(new ChoiceOption("sizer", makeOnOffLabels(), [true, false], "Shrink Large Objects", "Sets the \"size\" stat to 100.", null));
 		addOptionAndPosition(new ChoiceOption("InvViewer",makeOnOffLabels(),[true,false],"Inventory Viewer","See the inventory items of other players.",null));
 		addOptionAndPosition(new ChoiceOption("StatsViewer",makeOnOffLabels(),[true,false],"Stat Viewer","See the stats of other players.",null));
@@ -675,8 +686,8 @@ public class Options extends Sprite {
 		addOptionAndPosition(new ChoiceOption("HidePlayerFilter",makeOnOffLabels(),[true,false],"Star Requirement (Hide)","Hide players in nexus that are filtered by the star requirement option.",null));
         addOptionAndPosition(new ChoiceOption("AntiLag",makeOnOffLabels(),[true,false],"Anti Lag","Aggressively disables particles.",null));
 		addOptionAndPosition(new ChoiceOption("showMobInfo",makeOnOffLabels(),[true,false],"Display Mob Info","Display mob name and id. Useful for finding ids for use with auto aim exception and ignore list.",showMobInfo_));
-		addOptionAndPosition(new ChoiceOption("questClosest",makeOnOffLabels(),[true,false],"Show Closest Player to Quest","Extends the quest bar to show closest player to quest and the distance from it.",showMobInfo_));
-        addOptionAndPosition(new ChoiceOption("showDyes", makeOnOffLabels(), [true, false], "Show Dyes", "Makes every player use the default dye.", null));
+		addOptionAndPosition(new ChoiceOption("questClosest",makeOnOffLabels(),[true,false],"Show Closest Player to Quest","Extends the quest bar to show closest player to quest and the distance from it.",null));
+        addOptionAndPosition(new ChoiceOption("clientSwap",makeOnOffLabels(),[true,false],"Disable Client Swap","Prevents items from teleporting out of your inventory or moving back after switching positions.",null));
     }
         
     private function nillyOther() : void
@@ -688,11 +699,6 @@ public class Options extends Sprite {
 		
 		addOptionAndPosition(new ChoiceOption("TradeDelay",makeOnOffLabels(),[true,false],"Disable Trade Delay","Removes trade delay. Indicator still shows.",null));
 		addOptionAndPosition(new ChoiceOption("SafeWalk",makeOnOffLabels(),[true,false],"Safe Walk","Block movement onto tiles that cause damage. Click and hold left mouse to walk over these tiles.",null));
-		addOptionAndPosition(new ChoiceOption("autoAbil", makeOnOffLabels(), [true, false], "Auto Ability", "Automatically uses your ability on warrior, paladin and rogue. Activated by pressing space.", null));
-		addOptionAndPosition(new ChoiceOption("palaSpam", makeOnOffLabels(), [true, false], "Spam Paladin Ability", "Uses paladin ability every 0.5 seconds if auto ability is enabled", null));
-		addOptionAndPosition(new ChoiceOption("spellVoid", makeOnOffLabels(), [true, false], "Unsafe Prism Use", "Allows using prism through walls. If you land on void you will get disconnected.", null));
-        addOptionAndPosition(new KeyMapper("maxPrism","Teleport Max Distance","Always teleports the maximum distance on Trickster. You will have to stand still for this to work."));
-		addOptionAndPosition(new ChoiceOption("ninjaTap",makeOnOffLabels(),[true,false],"One-Tap Ninja Ability","Makes space toggle the state of the ability. Tap to turn on, tap to turn off.",null));
         addOptionAndPosition(new ChoiceOption("slideOnIce", makeOnOffLabels(), [true, false], "Slide on Ice", "Toggles sliding on ice.", null));
         addOptionAndPosition(new KeyMapper("incFinder", "Inc Finder", "Goes through everyone's inventory and backpack then reports if they have an incantation."));
 		addOptionAndPosition(new KeyMapper("enterPortal", "Portal Enter", "Enters nearest portal."));
@@ -701,7 +707,6 @@ public class Options extends Sprite {
         addOptionAndPosition(new KeyMapper("QuestTeleport","Closest Player to Quest Teleport","Teleports to the player that is closest to your quest."));
         addOptionAndPosition(new KeyMapper("tpto","Teleport to Caller","Teleport to a person calling a dungeon. Current keywords: "+Parameters.data_.tptoList));
 		addOptionAndPosition(new KeyMapper("resetCHP","Reset Client HP","Use this hotkey if your CL bar doesn't match your HP bar."));
-		addOptionAndPosition(new ChoiceOption("speedy",makeOnOffLabels(),[true,false],"Disable Speedy","Makes your character unaffected by speedy.",null));
 	}
     
     private function miscMenu() : void
@@ -740,7 +745,6 @@ public class Options extends Sprite {
         addOptionAndPosition(new ChoiceOption("curBoss",bossNames(),[3368,3366,3367],"Current Boss","You will only be able to hit the current boss.",null));
         addOptionAndPosition(new ChoiceOption("tombHack",makeOnOffLabels(),[true,false],"Tomb Hack","Tomb hack allows you to only damage the selected boss, leaving others unharmed even if you shoot them.",tombDeactivate));
 		addOptionAndPosition(new KeyMapper("tombCycle", "Next Boss", "Selects the next boss.", !Parameters.data_.tombHack));
-        addOptionAndPosition(new ChoiceOption("noSink",makeOnOffLabels(),[true,false],"No Sink EXPERIMENTAL","Makes you not sink in the quicksand.",null));
 		tombDeactivate();
         //addOptionAndPosition(new ChoiceOption("AutoHealPercentage",AutoHealValues(),[0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100],"Auto Heal Threshold","NillyOptions.AutoAbility.Heal.desc",null));
         //addOptionAndPosition(new KeyMapper("AutoAbilityHotkey","Toggle Auto Ability","NillyOptions.AutoAbility.Hotkey.desc"));
@@ -844,16 +848,15 @@ public class Options extends Sprite {
         this.addOptionAndPosition(new KeyMapper(CHAT_COMMAND, TextKey.OPTIONS_START_CHAT, TextKey.OPTIONS_START_CHAT_DESC));
         this.addOptionAndPosition(new KeyMapper(TELL, TextKey.OPTIONS_BEGIN_TELL, TextKey.OPTIONS_BEGIN_TELL_DESC));
         this.addOptionAndPosition(new KeyMapper(GUILD_CHAT, TextKey.OPTIONS_BEGIN_GUILD_CHAT, TextKey.OPTIONS_BEGIN_GUILD_CHAT_DESC));
-        this.addOptionAndPosition(new ChoiceOption("filterLanguage", makeOnOffLabels(), [true, false], TextKey.OPTIONS_FILTER_OFFENSIVE_LANGUAGE, TextKey.OPTIONS_FILTER_OFFENSIVE_LANGUAGE_DESC, null));
         this.addOptionAndPosition(new KeyMapper(SCROLL_CHAT_UP, TextKey.OPTIONS_SCROLL_CHAT_UP, TextKey.OPTIONS_SCROLL_CHAT_UP_DESC));
         this.addOptionAndPosition(new KeyMapper(SCROLL_CHAT_DOWN, TextKey.OPTIONS_SCROLL_CHAT_DOWN, TextKey.OPTIONS_SCROLL_CHAT_DOWN_DESC));
         this.addOptionAndPosition(new ChoiceOption("forceChatQuality", makeOnOffLabels(), [true, false], TextKey.OPTIONS_FORCE_CHAT_QUALITY, TextKey.OPTIONS_FORCE_CHAT_QUALITY_DESC, null));
         this.addOptionAndPosition(new ChoiceOption("hidePlayerChat", makeOnOffLabels(), [true, false], TextKey.OPTIONS_HIDE_PLAYER_CHAT, TextKey.OPTIONS_HIDE_PLAYER_CHAT_DESC, null));
-        this.addOptionAndPosition(new ChoiceOption("chatStarRequirement", makeStarSelectLabels(), [0, 13, 27, 41, 55, 69, 70], TextKey.OPTIONS_STAR_REQ, TextKey.OPTIONS_CHAT_STAR_REQ_DESC, null));
         this.addOptionAndPosition(new ChoiceOption("chatAll", makeOnOffLabels(), [true, false], TextKey.OPTIONS_CHAT_ALL, TextKey.OPTIONS_CHAT_ALL_DESC, this.onAllChatEnabled));
         this.addOptionAndPosition(new ChoiceOption("chatWhisper", makeOnOffLabels(), [true, false], TextKey.OPTIONS_CHAT_WHISPER, TextKey.OPTIONS_CHAT_WHISPER_DESC, this.onAllChatDisabled));
         this.addOptionAndPosition(new ChoiceOption("chatGuild", makeOnOffLabels(), [true, false], TextKey.OPTIONS_CHAT_GUILD, TextKey.OPTIONS_CHAT_GUILD_DESC, this.onAllChatDisabled));
         this.addOptionAndPosition(new ChoiceOption("chatTrade", makeOnOffLabels(), [true, false], TextKey.OPTIONS_CHAT_TRADE, TextKey.OPTIONS_CHAT_TRADE_DESC, null));
+        this.addOptionAndPosition(new ChoiceOption("chatStarRequirement", makeStarSelectLabels(), [0, 13, 27, 41, 55, 69, 70], TextKey.OPTIONS_STAR_REQ, TextKey.OPTIONS_CHAT_STAR_REQ_DESC, null));
     }
 
     private static function makeStarSelectLabels():Vector.<StringBuilder> {
@@ -927,9 +930,6 @@ public class Options extends Sprite {
             _local_2 = 16724787;
         }
         this.addOptionAndPosition(new ChoiceOption("GPURender", makeOnOffLabels(), [true, false], TextKey.OPTIONS_HARDWARE_ACC_TITLE, _local_1, null, _local_2));
-        /*if (Capabilities.playerType == "Desktop") {
-            this.addOptionAndPosition(new ChoiceOption("fullscreenMode", makeOnOffLabels(), [true, false], TextKey.OPTIONS_FULLSCREEN_MODE, TextKey.OPTIONS_FULLSCREEN_MODE_DESC, this.onFullscreenChange));
-        }*/
         this.addOptionAndPosition(new ChoiceOption("toggleBarText", makeOnOffLabels(), [true, false], TextKey.OPTIONS_TOGGLE_BARTEXT, TextKey.OPTIONS_TOGGLE_BARTEXT_DESC, onBarTextToggle));
         this.addOptionAndPosition(new ChoiceOption("particleEffect", makeHighLowLabels(), [true, false], TextKey.OPTIONS_TOGGLE_PARTICLE_EFFECT, TextKey.OPTIONS_TOGGLE_PARTICLE_EFFECT_DESC, null));
         this.addOptionAndPosition(new ChoiceOption("uiQuality", makeHighLowLabels(), [true, false], TextKey.OPTIONS_TOGGLE_UI_QUALITY, TextKey.OPTIONS_TOGGLE_UI_QUALITY_DESC, onUIQualityToggle));

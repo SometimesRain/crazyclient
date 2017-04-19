@@ -1097,6 +1097,7 @@ public class Player extends Character {
 			}
 			if (mapAutoAbil && nextAutoAbil <= getTimer()) {
 				var abilFreq:int = 0;
+				var wismod:Number = 1 + wisdom_ / 150;
 				switch(equipment_[1]) {
 					case 0xb27: //ghostly
 					case 0xae1: //twi
@@ -1117,8 +1118,12 @@ public class Player extends Character {
 							abilFreq = 500;
 						}
 						else {
-							abilFreq = 4000 * (1 + wisdom_ / 150);
+							abilFreq = 4000 * wismod;
 						}
+						break;
+					case 0xc1e: //prot
+					case 0x16de: //ice prot
+						abilFreq = 4000 * wismod;
 						break;
 				}
 				if (abilFreq > 0) {
@@ -1270,19 +1275,8 @@ public class Player extends Character {
         }
         var _local_1:Square = map_.getSquare(x_, y_);
         if (_local_1.props_.sinking_) {
-			if (Parameters.data_.noSink) { //EXPERIMENTAL
-				sinkLevel_ = Math.min((sinkLevel_ + 1), Parameters.MAX_SINK_LEVEL);
-				if (sinkLevel_ == Parameters.MAX_SINK_LEVEL) {
-					this.moveMultiplier_ = (0.1 + ((1 - (sinkLevel_ / Parameters.MAX_SINK_LEVEL)) * (_local_1.props_.speed_ - 0.1)));
-				}
-				else {
-					this.moveMultiplier_ = _local_1.props_.speed_;
-				}
-			}
-			else {
-				sinkLevel_ = Math.min((sinkLevel_ + 1), Parameters.MAX_SINK_LEVEL);
-				this.moveMultiplier_ = (0.1 + ((1 - (sinkLevel_ / Parameters.MAX_SINK_LEVEL)) * (_local_1.props_.speed_ - 0.1)));
-			}
+			sinkLevel_ = Math.min((sinkLevel_ + 1), Parameters.MAX_SINK_LEVEL);
+			this.moveMultiplier_ = (0.1 + ((1 - (sinkLevel_ / Parameters.MAX_SINK_LEVEL)) * (_local_1.props_.speed_ - 0.1)));
         }
         else {
             sinkLevel_ = 0;
@@ -1592,28 +1586,32 @@ public class Player extends Character {
                 this.doShoot(abilUseTime, useItemId, thisAbilXML, (Parameters.data_.cameraAngle + shootAngle), false);
             }
 			//cloak timer, now ability timer
-			var wismod:Number = (1 + wisdom_ / 150);
-			switch (equipment_[1]) {
-				case 0xa5a: //plane
-				case 0x21a2: //drape
-				case 0xae1: //twi
-				case 0xb27: //ghostly
-					startTimer(11); //5.5
-					break;
-				case 0xc08: //jugg
-					startTimer(9); //4.5
-					break;
-				case 0xb29: //ggen
-				case 0xa6b: //ghelm
-					startTimer(12); //6.0
-					break;
-				case 0xc06: //oreo
-					startTimer(int(10*wismod));
-					break;
-				case 0xb26: //gcookie
-				case 0xa55: //zseal
-					startTimer(int(8*wismod));
-					break;
+			if (Parameters.data_.abilTimer) {
+				var wismod:Number = 1 + wisdom_ / 150;
+				switch (equipment_[1]) {
+					case 0xa5a: //plane
+					case 0x21a2: //drape
+					case 0xae1: //twi
+					case 0xb27: //ghostly
+						startTimer(11); //5.5
+						break;
+					case 0xc08: //jugg
+						startTimer(9); //4.5
+						break;
+					case 0xb29: //ggen
+					case 0xa6b: //ghelm
+						startTimer(12); //6.0
+						break;
+					case 0xc06: //oreo
+						startTimer(int(10*wismod));
+						break;
+					case 0xb26: //gcookie
+					case 0xa55: //zseal
+					case 0xc1e: //prot
+					case 0x16de: //ice prot
+						startTimer(int(8*wismod));
+						break;
+			}
 			}
         }
         else {

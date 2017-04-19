@@ -19,6 +19,7 @@ public class CharacterFactory {
 
 
     public function makeCharacter(_arg_1:CharacterTemplate):AnimatedChar {
+		//trace(_arg_1.file, _arg_1.index);
         return (AnimatedChars.getAnimatedChar(_arg_1.file, _arg_1.index));
     }
 

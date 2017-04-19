@@ -131,20 +131,11 @@ public class TextHandler {
 				}
             }
         }
-        if (this.useCleanString(_arg_1)) {
-            _local_3 = _arg_1.cleanText_;
-			if (_local_3.length > 19 && _local_3.substr(7,12) == "NexusPortal.") {
-				_local_3 = _local_3.substr(0, 7) + _local_3.substr(19);
-			}
-            _arg_1.cleanText_ = this.replaceIfSlashServerCommand(_local_3);
-        }
-        else {
-            _local_3 = _arg_1.text_;
-			if (_local_3.length > 19 && _local_3.substr(7,12) == "NexusPortal.") {
-				_local_3 = _local_3.substr(0, 7) + _local_3.substr(19);
-			}
-            _arg_1.text_ = this.replaceIfSlashServerCommand(_local_3);
-        }
+        _local_3 = _arg_1.text_;
+		if (_local_3.length > 19 && _local_3.substr(7,12) == "NexusPortal.") {
+			_local_3 = _local_3.substr(0, 7) + _local_3.substr(19);
+		}
+        _arg_1.text_ = this.replaceIfSlashServerCommand(_local_3);
         if (_local_2 && isToBeLocalized(_local_3)) { //localizer
 			if (_arg_1.text_ == "{\"key\":\"server.oryx_closed_realm\"}") { //realm shake timer
 				model.player.startTimer(120, 1000);
@@ -199,7 +190,7 @@ public class TextHandler {
             message.tokens = lb.tokens;
         }
         catch (error:Error) {
-            message.text = ((useCleanString(text)) ? text.cleanText_ : text.text_);
+            message.text = text.text_;
         }
     }
 
@@ -250,10 +241,6 @@ public class TextHandler {
             return (this.TELL_SPEECH_COLORS);
         }
         return (this.NORMAL_SPEECH_COLORS);
-    }
-
-    private function useCleanString(_arg_1:Text):Boolean {
-        return (((((Parameters.data_.filterLanguage) && ((_arg_1.cleanText_.length > 0)))) && (!((_arg_1.objectId_ == this.model.player.objectId_)))));
     }
 
 }

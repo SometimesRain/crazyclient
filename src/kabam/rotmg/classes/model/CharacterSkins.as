@@ -19,7 +19,7 @@ public class CharacterSkins {
     }
 
     public function getSelectedSkin():CharacterSkin {
-		if(!Parameters.data_["showSkins"]) {
+		if(!Parameters.data_.showSkins) {
 			return (this.defaultSkin);
 		}
 		return (this.selectedSkin);

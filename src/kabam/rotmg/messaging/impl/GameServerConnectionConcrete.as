@@ -47,6 +47,7 @@ import com.company.assembleegameclient.ui.dialogs.Dialog;
 import com.company.assembleegameclient.ui.dialogs.NotEnoughFameDialog;
 import com.company.assembleegameclient.ui.panels.GuildInvitePanel;
 import com.company.assembleegameclient.ui.panels.TradeRequestPanel;
+import com.company.assembleegameclient.util.AnimatedChars;
 import com.company.assembleegameclient.util.ConditionEffect;
 import com.company.assembleegameclient.util.Currency;
 import com.company.assembleegameclient.util.FreeList;
@@ -249,7 +250,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
     private var petUpdater:PetUpdater;
     private var messages:MessageProvider;
     private var playerId_:int = -1;
-    public var player:Player;
+    //public var player:Player;
     private var retryConnection_:Boolean = true;
     private var rand_:Random = null;
     private var giftChestUpdateSignal:GiftStatusUpdateSignal;
@@ -2268,9 +2269,6 @@ public class GameServerConnectionConcrete extends GameServerConnection {
                     if (!_arg_3) {
                         _local_4.sinkLevel_ = _local_8;
                     }
-					if (_local_4 == player && Parameters.data_.noSink) {
-						addTextLine.dispatch(ChatMessage.make("","Sink: "+_local_4.sinkLevel_));
-					}
                     break;
                 case StatData.ALT_TEXTURE_STAT:
                     _arg_1.setAltTexture(_local_8);
@@ -2283,9 +2281,6 @@ public class GameServerConnectionConcrete extends GameServerConnection {
                     break;
                 case StatData.BREATH_STAT:
                     _local_4.breath_ = _local_8;
-					/*if (_local_4 == player) {
-						addTextLine.dispatch(ChatMessage.make("","Breath: "+_local_4.breath_));
-					}*/
                     break;
                 case StatData.XP_BOOSTED_STAT:
                     _local_4.xpBoost_ = _local_8;
@@ -2306,8 +2301,12 @@ public class GameServerConnectionConcrete extends GameServerConnection {
                     _local_4.magicPotionCount_ = _local_8;
                     break;
                 case StatData.TEXTURE_STAT:
-					if(Parameters.data_.showSkins) {
-						(_local_4.skinId != _local_8 && this.setPlayerSkinTemplate(_local_4, _local_8));
+					//addTextLine.dispatch(ChatMessage.make("*Help*", "SKINID: "+_local_8));
+					if (_local_4 == player && Parameters.data_.setSkin != -1) {
+						player.skin = AnimatedChars.getAnimatedChar("playerskins", Parameters.data_.setSkin);
+					}
+					else if (Parameters.data_.showSkins) {
+						setPlayerSkinTemplate(_local_4, _local_8);
 					}
                     break;
                 case StatData.HASBACKPACK_STAT:
@@ -2344,7 +2343,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         }
     }
 
-    private function setPlayerSkinTemplate(_arg_1:Player, _arg_2:int):void {
+    override public function setPlayerSkinTemplate(_arg_1:Player, _arg_2:int):void {
         var _local_3:Reskin = (this.messages.require(RESKIN) as Reskin);
         _local_3.skinID = _arg_2;
         _local_3.player = _arg_1;

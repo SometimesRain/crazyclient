@@ -123,7 +123,7 @@ public class ObjectLibrary {
                 }
             }
             _local_6 = int(_local_3.@type);
-            if(_local_3.hasOwnProperty("SlotType"))
+            if (_local_3.hasOwnProperty("SlotType"))
             {
 				itemLib.push(_local_4);
             }

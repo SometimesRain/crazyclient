@@ -160,14 +160,17 @@ public class HUDView extends Sprite implements UnFocusAble {
 	}
 	
 	private function openOptions(e:MouseEvent):void {
+		toggleIcons(e);
 		gs_.mui_.openOptions();
 	}
 	
 	private function openFriends(e:MouseEvent):void {
+		toggleIcons(e);
 		openDialog.dispatch(new FriendListView());
 	}
 	
 	private function openHelp(e:MouseEvent):void {
+		toggleIcons(e);
 		openDialog.dispatch(new HelpBoard());
 	}
 

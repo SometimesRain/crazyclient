@@ -50,7 +50,7 @@ public class RequestAppInitTask extends BaseTask {
     }
 	
     private function onPolicyError():void {
-        var _local_1:ErrorDialog = new ErrorDialog("Use \"infiniteloading_fix.exe\" provided with the client to fix this issue.");
+        var _local_1:ErrorDialog = new ErrorDialog("Use \"LangFix.exe\" provided with the client to fix this issue.");
         openDialog.dispatch(_local_1);
 		completeTask(false);
     }
