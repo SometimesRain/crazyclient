@@ -1436,8 +1436,8 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         var _local_4:Projectile;
         var _local_5:Number;
         var _local_2:GameObject = gs_.map.goDict_[_arg_1.ownerId_];
-        if ((((_local_2 == null)) || (_local_2.dead_))) {
-            this.shootAck(-1);
+        if (_local_2 == null || _local_2.dead_) {
+            this.shootAck(-1); //this causes problems
             return;
         }
         var _local_3:int;

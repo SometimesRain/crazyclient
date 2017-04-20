@@ -118,10 +118,6 @@ public class HelpBoard extends Frame {
         addChild(deleteButton);
     }
 
-    private function onClick(e:MouseEvent):void {
-		
-    }
-
     private function onClose(e:MouseEvent):void {
         closeDialogs.dispatch();
     }

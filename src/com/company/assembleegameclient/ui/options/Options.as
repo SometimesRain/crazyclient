@@ -73,7 +73,7 @@ public class Options extends Sprite {
 
     public function Options(_arg_1:GameSprite) {
         var _local_2:TextFieldDisplayConcrete;
-        var kier:int;
+        var kier:int = 0;
         var _local_6:OptionsTabTitle;
         this.tabs_ = new Vector.<OptionsTabTitle>();
         this.options_ = new Vector.<Sprite>();
@@ -87,7 +87,7 @@ public class Options extends Sprite {
         graphics.moveTo(0, 100);
         graphics.lineTo(800, 100);
         graphics.lineStyle();
-        _local_2 = new TextFieldDisplayConcrete().setSize(36).setColor(0xFFFFFF);
+        _local_2 = new TextFieldDisplayConcrete().setSize(32).setColor(0xFFFFFF);
         _local_2.setBold(true);
         _local_2.setStringBuilder(new LineBuilder().setParams(TextKey.OPTIONS_TITLE));
         _local_2.setAutoSize(TextFieldAutoSize.CENTER);
@@ -121,11 +121,11 @@ public class Options extends Sprite {
                pad = 8;
                _local_3.x = pad;
             }
-			if (kier == 8) {
+			if (kier == 8) { //debuffs tab
 				_local_3.x = 8;
 				_local_3.y = 70;
 			}
-			else if (kier == 15) {
+			else if (kier == 15) { //debuffs
 				_local_3.x = 8;
 				_local_3.y = 85;
 			}
