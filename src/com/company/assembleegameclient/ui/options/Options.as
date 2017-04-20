@@ -73,7 +73,7 @@ public class Options extends Sprite {
 
     public function Options(_arg_1:GameSprite) {
         var _local_2:TextFieldDisplayConcrete;
-        var kier:int;
+        var kier:int = 0;
         var _local_6:OptionsTabTitle;
         this.tabs_ = new Vector.<OptionsTabTitle>();
         this.options_ = new Vector.<Sprite>();
@@ -87,7 +87,7 @@ public class Options extends Sprite {
         graphics.moveTo(0, 100);
         graphics.lineTo(800, 100);
         graphics.lineStyle();
-        _local_2 = new TextFieldDisplayConcrete().setSize(36).setColor(0xFFFFFF);
+        _local_2 = new TextFieldDisplayConcrete().setSize(24).setColor(0xFFFFFF);
         _local_2.setBold(true);
         _local_2.setStringBuilder(new LineBuilder().setParams(TextKey.OPTIONS_TITLE));
         _local_2.setAutoSize(TextFieldAutoSize.CENTER);
@@ -111,28 +111,30 @@ public class Options extends Sprite {
         this.homeButton_.setAutoSize(TextFieldAutoSize.RIGHT);
         this.homeButton_.addEventListener(MouseEvent.CLICK, this.onHomeClick);
         addChild(this.homeButton_);
+
         var pad:int = 8;
-		const perrow:int = 8;
+		const perRow:int = 8;
         while (kier < TABS.length) {
             var _local_3:OptionsTabTitle = new OptionsTabTitle(TABS[kier]);
             _local_3.x = pad;
-            _local_3.y = 50 + 25 * int(kier / perrow);
-            if (kier % perrow == 0) {
-               pad = 8;
-               _local_3.x = pad;
+            _local_3.y = 40;
+            if (kier % perRow == 0)
+                pad = 8;
+			if (kier >= 8)
+            {
+                _local_3.x = pad;
+                _local_3.y = 60;
             }
-			if (kier == 8) {
-				_local_3.x = 8;
-				_local_3.y = 70;
-			}
-			else if (kier == 15) {
-				_local_3.x = 8;
-				_local_3.y = 85;
-			}
+            if (kier >= 16)
+            {
+                _local_3.x = pad;
+                _local_3.y = 80;
+            }
+
             addChild(_local_3);
             _local_3.addEventListener(MouseEvent.CLICK, this.onTabClick);
             this.tabs_.push(_local_3);
-            pad = pad + 800 / perrow;
+            pad = pad + 800 / perRow;
             kier++;
         }
         addEventListener(Event.ADDED_TO_STAGE, this.onAddedToStage);

@@ -51,7 +51,7 @@ public class MysteryBoxSelectModal extends Sprite {
     }
 
     public static function getRightBorderX():int {
-        return ((300 + (modalWidth / 2)));
+        return modalWidth;
     }
 
     private static function makeModalBackground(_arg_1:int, _arg_2:int):PopupWindowBackground {
@@ -77,7 +77,7 @@ public class MysteryBoxSelectModal extends Sprite {
 
     private function positionAndStuff():void {
         this.box_.x = ((600 / 2) - (modalWidth / 2));
-        this.box_.y = ((WebMain.STAGE.stageHeight / 2) - (modalHeight / 2));
+        this.box_.y = ((600 / 2) - (modalHeight / 2));
     }
 
     private function addBoxChildren():void {
@@ -86,6 +86,7 @@ public class MysteryBoxSelectModal extends Sprite {
         var _local_4:Number;
         var _local_5:int;
         var _local_6:MysteryBoxSelectEntry;
+        var _local_7:int;
         for each (_local_1 in this.mysteryData) {
             modalHeight = (modalHeight + aMysteryBoxHeight);
         }
@@ -102,15 +103,18 @@ public class MysteryBoxSelectModal extends Sprite {
         var _local_3:Number = 20;
         _local_4 = 50;
         _local_5 = 0;
+        _local_7 = 1;
         for each (_local_1 in this.mysteryData) {
             if (_local_5 == 6) break;
             _local_6 = new MysteryBoxSelectEntry(_local_1);
             _local_6.x = (x + _local_3);
             _local_6.y = (y + _local_4);
+            _local_6.it = _local_7;
             _local_4 = (_local_4 + aMysteryBoxHeight);
             this.box_.addChild(_local_6);
             this.selectEntries.push(_local_6);
             _local_5++;
+            _local_7++;
         }
     }
 

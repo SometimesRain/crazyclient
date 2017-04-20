@@ -32,8 +32,8 @@ public class EmptyFrame extends Sprite {
     public function EmptyFrame(_arg_1:int = 288, _arg_2:int = 150, _arg_3:String = "") {
         this.modalWidth = _arg_1;
         this.modalHeight = _arg_2;
-        x = ((WebMain.STAGE.stageWidth / 2) - (this.modalWidth / 2));
-        y = ((WebMain.STAGE.stageHeight / 2) - (this.modalHeight / 2));
+        x = ((800 / 2) - (this.modalWidth / 2));
+        y = ((600 / 2) - (this.modalHeight / 2));
         if (_arg_3 != "") {
             this.setTitle(_arg_3, true);
         }
@@ -57,13 +57,13 @@ public class EmptyFrame extends Sprite {
 
     public function setWidth(_arg_1:Number):void {
         this.modalWidth = _arg_1;
-        x = ((WebMain.STAGE.stageWidth / 2) - (this.modalWidth / 2));
+        x = ((800 / 2) - (this.modalWidth / 2));
         this.refreshBackground();
     }
 
     public function setHeight(_arg_1:Number):void {
         this.modalHeight = _arg_1;
-        y = ((WebMain.STAGE.stageHeight / 2) - (this.modalHeight / 2));
+        y = ((600 / 2) - (this.modalHeight / 2));
         this.refreshBackground();
     }
 
@@ -126,8 +126,8 @@ public class EmptyFrame extends Sprite {
     }
 
     protected function makeModalBackground():Sprite {
-        x = ((WebMain.STAGE.stageWidth / 2) - (this.modalWidth / 2));
-        y = ((WebMain.STAGE.stageHeight / 2) - (this.modalHeight / 2));
+        x = ((800 / 2) - (this.modalWidth / 2));
+        y = ((600 / 2) - (this.modalHeight / 2));
         var _local_1:PopupWindowBackground = new PopupWindowBackground();
         _local_1.draw(this.modalWidth, this.modalHeight, PopupWindowBackground.TYPE_DEFAULT_GREY);
         if (this.title != null) {

@@ -48,12 +48,15 @@ public class MysteryBoxSelectEntry extends Sprite {
     private var quantity_:int;
     private var title:TextFieldDisplayConcrete;
 
+    public var it:int;
+
     public function MysteryBoxSelectEntry(_arg_1:MysteryBoxInfo):void {
         var _local_2:DisplayObject;
         this.redbar = new redBarEmbed();
         this.redbar.y = -5;
         this.redbar.width = (MysteryBoxSelectModal.modalWidth - 5);
         this.redbar.height = (MysteryBoxSelectModal.aMysteryBoxHeight - 8);
+        this.it = 1;
         addChild(this.redbar);
         _local_2 = new redBarEmbed();
         _local_2.y = 0;
@@ -320,12 +323,12 @@ public class MysteryBoxSelectEntry extends Sprite {
         var _local_1:int = 8;
         this.infoImage.width = (291 - _local_1);
         this.infoImage.height = ((598 - (_local_1 * 2)) - 2);
-        var _local_2:Point = this.globalToLocal(new Point(MysteryBoxSelectModal.getRightBorderX() + 1 + 14, 2 + _local_1));
-        this.infoImage.x = _local_2.x;
-        this.infoImage.y = _local_2.y;
+        this.infoImage.x = MysteryBoxSelectModal.getRightBorderX() - 15;
+        this.infoImage.y = -(this.it * 75) - 8;
         if (((this.hoverState) && (!(this.descriptionShowing)))) {
             this.descriptionShowing = true;
             addChild(this.infoImage);
+
             this.infoImageBorder = new PopupWindowBackground();
             this.infoImageBorder.draw(this.infoImage.width, (this.infoImage.height + 2), PopupWindowBackground.TYPE_TRANSPARENT_WITHOUT_HEADER);
             this.infoImageBorder.x = this.infoImage.x;
