@@ -691,8 +691,8 @@ public class MysteryBoxRollModal extends Sprite {
     }
 
     private function centerModal():void {
-        x = ((WebMain.STAGE.stageWidth / 2) - (WIDTH / 2));
-        y = ((WebMain.STAGE.stageHeight / 2) - (HEIGHT / 2));
+        x = ((800 / 2) - (WIDTH / 2));
+        y = ((600 / 2) - (HEIGHT / 2));
     }
 
     private function onNavClick(_arg_1:MouseEvent):void {

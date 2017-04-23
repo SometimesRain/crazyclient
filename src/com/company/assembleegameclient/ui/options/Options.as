@@ -111,15 +111,19 @@ public class Options extends Sprite {
         this.homeButton_.setAutoSize(TextFieldAutoSize.RIGHT);
         this.homeButton_.addEventListener(MouseEvent.CLICK, this.onHomeClick);
         addChild(this.homeButton_);
+
         var pad:int = 8;
-		const perrow:int = 8;
+		const perRow:int = 8;
         while (kier < TABS.length) {
             var _local_3:OptionsTabTitle = new OptionsTabTitle(TABS[kier]);
             _local_3.x = pad;
-            _local_3.y = 50 + 25 * int(kier / perrow);
-            if (kier % perrow == 0) {
-               pad = 8;
-               _local_3.x = pad;
+            _local_3.y = 40;
+            if (kier % perRow == 0)
+                pad = 8;
+			if (kier >= 8)
+            {
+                _local_3.x = pad;
+                _local_3.y = 60;
             }
 			if (kier == 8) { //debuffs tab
 				_local_3.x = 8;
@@ -132,7 +136,7 @@ public class Options extends Sprite {
             addChild(_local_3);
             _local_3.addEventListener(MouseEvent.CLICK, this.onTabClick);
             this.tabs_.push(_local_3);
-            pad = pad + 800 / perrow;
+            pad = pad + 800 / perRow;
             kier++;
         }
         addEventListener(Event.ADDED_TO_STAGE, this.onAddedToStage);

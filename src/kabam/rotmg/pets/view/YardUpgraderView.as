@@ -105,8 +105,8 @@ public class YardUpgraderView extends Sprite {
     }
 
     private function positionThis():void {
-        this.x = ((stage.stageWidth - this.width) * 0.5);
-        this.y = ((stage.stageHeight - this.height) * 0.5);
+        this.x = ((800 - this.width) * 0.5);
+        this.y = ((600 - this.height) * 0.5);
     }
 
     private function waitForTextChanged():void {
