@@ -87,7 +87,7 @@ public class Options extends Sprite {
         graphics.moveTo(0, 100);
         graphics.lineTo(800, 100);
         graphics.lineStyle();
-        _local_2 = new TextFieldDisplayConcrete().setSize(24).setColor(0xFFFFFF);
+        _local_2 = new TextFieldDisplayConcrete().setSize(32).setColor(0xFFFFFF);
         _local_2.setBold(true);
         _local_2.setStringBuilder(new LineBuilder().setParams(TextKey.OPTIONS_TITLE));
         _local_2.setAutoSize(TextFieldAutoSize.CENTER);
@@ -125,12 +125,14 @@ public class Options extends Sprite {
                 _local_3.x = pad;
                 _local_3.y = 60;
             }
-            if (kier >= 16)
-            {
-                _local_3.x = pad;
-                _local_3.y = 80;
-            }
-
+			if (kier == 8) { //debuffs tab
+				_local_3.x = 8;
+				_local_3.y = 70;
+			}
+			else if (kier == 15) { //debuffs
+				_local_3.x = 8;
+				_local_3.y = 85;
+			}
             addChild(_local_3);
             _local_3.addEventListener(MouseEvent.CLICK, this.onTabClick);
             this.tabs_.push(_local_3);

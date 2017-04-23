@@ -401,7 +401,7 @@ public class Map extends AbstractMap {
         }
         for each (_local_13 in goDict_) {
             _local_13.drawn_ = false;
-            if (!_local_13.dead_) { //might cause invisible enemies
+            //if (!_local_13.dead_) { //might cause invisible enemies, experimental v9
                 _local_6 = _local_13.square_;
                 if (!(((_local_6 == null)) || (!((_local_6.lastVisible_ == _arg_2))))) {
                     _local_13.drawn_ = true;
@@ -418,7 +418,7 @@ public class Map extends AbstractMap {
                         this.visible_.push(_local_13);
                     }
                 }
-            }
+            //}
         }
         for each (_local_14 in boDict_) {
             _local_14.drawn_ = false;

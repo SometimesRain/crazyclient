@@ -255,11 +255,8 @@ public class Projectile extends BasicObject {
             if (_local_10) {
                 _local_11 = GameObject.damageWithDefense(this.damage_, _local_6.defense_, this.projProps_.armorPiercing_, _local_6.condition_);
                 _local_12 = false;
-                if (_local_6.hp_ < _local_11) {
+                if (_local_6.hp_ < _local_11) { //turning this off will make you unable to kill mobs
                     _local_12 = true;
-                    if (_local_6.props_.isEnemy_) {
-                        doneAction(map_.gs_, Tutorial.KILL_ACTION);
-                    }
                 }
                 if (_local_6 == _local_7) {
 					//player hit with cond effect SS DEBUFFS
