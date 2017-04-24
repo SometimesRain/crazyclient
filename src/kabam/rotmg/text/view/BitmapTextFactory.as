@@ -46,6 +46,7 @@ public class BitmapTextFactory {
 		else {
 			((_arg_1) && (_local_5.applyFilter(_local_5, _local_5.rect, PointUtil.ORIGIN, this.glowFilter)));
 		}
+		//trace("BMP_HEIGHT",_local_5.height);
         return (_local_5);
     }
 

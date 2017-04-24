@@ -55,10 +55,8 @@ public class ChatListMediator extends Mediator {
         if (_arg_1 > 0) {
             this.view.pageDown();
         }
-        else {
-            if (_arg_1 < 0) {
-                this.view.pageUp();
-            }
+        else  if (_arg_1 < 0) {
+            this.view.pageUp();
         }
     }
 

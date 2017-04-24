@@ -8,7 +8,7 @@ import kabam.rotmg.text.view.stringBuilder.LineBuilder;
 
 public class OptionsTabTitle extends Sprite {
 
-    private static const TEXT_SIZE:int = 15;
+    private static const TEXT_SIZE:int = 16;
 
     public var text_:String;
     protected var textText_:TextFieldDisplayConcrete;

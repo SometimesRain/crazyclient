@@ -316,8 +316,8 @@
       </Texture>
       <AltTexture id="1">
          <Texture>
-            <File>invisible</File>
-            <Index>0</Index>
+            <File>buffedBunnyObjects16x16</File>
+            <Index>0x3</Index>
          </Texture>
       </AltTexture>
       <AltTexture id="2">

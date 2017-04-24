@@ -55,6 +55,8 @@ public class ParseChatMessageCommand {
 	
 	private static var needed:String;
 	public static var switch_:Boolean = false;
+	
+	private static var afkStart:Date = new Date(1970,0,1,0,0,0,0);;
 
     private function fsCommands(param1:String):Boolean {
         param1 = param1.toLowerCase();
@@ -521,7 +523,7 @@ public class ParseChatMessageCommand {
 	
     private function defCommands(lower:String):Boolean {
         if (lower == "/igdefault") {
-            Parameters.data_.AAIgnore = [1550,1551,1552,1619,1715,2309,2310,2311,2371,3441,2312,2313,2370,2392,2393,2400,2401,3335,3336,3337,3338,3413,3418,3419,3420,3421,3427,3454,3638,3645,6157,28715,28716,28717,28718,28719,28730,28731,28732,28733,28734,29306,29568,29594,29597,29710,29711,29742,29743,29746,29748,30001,29752,0xaab6,0xaabc,0xaabd,0xaabe];
+            Parameters.data_.AAIgnore = [1550,1551,1552,1619,1715,2309,2310,2311,2371,3441,2312,2313,2370,2392,2393,2400,2401,3335,3336,3337,3338,3413,3418,3419,3420,3421,3427,3454,3638,3645,6157,28715,28716,28717,28718,28719,28730,28731,28732,28733,28734,29306,29568,29594,29597,29710,29711,29742,29743,29746,29748,30001,29752,0xaab6,0xaabc,0xaabd,0xaabe,3389,3390,3391,24223,2304,2305,2306,1536,1537,1538,1539,1540];
             addTextLine.dispatch(ChatMessage.make("*Help*","Default ignore list restored."));
             Parameters.save();
             return true;
@@ -634,6 +636,13 @@ public class ParseChatMessageCommand {
 				}
 				player.notifyPlayer(GameServerConnectionConcrete.totalfamegain+" fame\n"+playTime+" minutes\n"+fpm+" fame/min", 0xE25F00, 3000);
 				return true;
+			case "/fameclear":
+				PlayGameCommand.startTime = getTimer();
+				GameServerConnectionConcrete.totalfamegain = 0;
+				return true;
+			case "/pos":
+				addTextLine.dispatch(ChatMessage.make("*Help*", "X: " + player.x_ +" Y: " + player.y_));
+				return true;
 			case "/s":
 			case "/switch":
 			case "/swap":
@@ -659,6 +668,20 @@ public class ParseChatMessageCommand {
 			case "/follow":
 				player.followTarget = null;
 				player.notifyPlayer("Stopped following");
+				return true;
+			case "/afk":
+				TextHandler.afk = !TextHandler.afk;
+				if (!TextHandler.afk) {
+					addTextLine.dispatch(ChatMessage.make("*Help*", TextHandler.afkTells.length+" messages since "+afkStart.getHours()+":"+afkStart.getMinutes()));
+					for each(var cm:ChatMessage in TextHandler.afkTells) {
+						addTextLine.dispatch(cm);
+					}
+					TextHandler.afkTells.length = 0;
+				}
+				else {
+					afkStart = new Date();
+					addTextLine.dispatch(ChatMessage.make("*Help*", "Your messages will be saved, have fun."));
+				}
 				return true;
 		}
 		var splice:Array = data.toLowerCase().match("/player (\\w+)$")
@@ -857,15 +880,16 @@ public class ParseChatMessageCommand {
 		splice = data.toLowerCase().match("/skin (.+)$");
 		if (splice != null) {
 			if (splice[1] == "none") {
-				Parameters.data_.setSkin = -1;
+				Parameters.data_.nsetSkin[0] = "";
+				Parameters.data_.nsetSkin[1] = -1;
 				Parameters.save();
-				gsc.setPlayerSkinTemplate(player, 0);
+				player.size_ = 100;
+				gsc.setPlayerSkinTemplate(player, 0); //requires skin to be for your class
 			}
 			else {
-				Parameters.data_.setSkin = findSkinIndex(splice[1]);
+				Parameters.data_.nsetSkin = findSkinIndex(splice[1]);
 				Parameters.save();
 				//player.skin = AnimatedChars.getAnimatedChar("playerskins", Parameters.data_.setSkin); //not working
-				//gsc.setPlayerSkinTemplate(player, Parameters.data_.setSkin); //old
 			}
 			return true;
 		}
@@ -882,6 +906,11 @@ public class ParseChatMessageCommand {
 			player.followTarget = target;
 			return true;
 		}
+		splice = data.toLowerCase().match("/setspd (-?\\d+)$");
+		if (splice != null) {
+			player.speed_ = parseInt(splice[1]);
+			return true;
+		}
 		/*splice = data.match("/spam (.+)$");
 		if (splice != null) {
 			return true;
@@ -894,12 +923,13 @@ public class ParseChatMessageCommand {
         return false;
     }
 	
-	private function findSkinIndex(input:String):int {
+	private function findSkinIndex(input:String):Array {
 		var splice:Array = input.split(' ');
 		var splice2:Array;
 		var curxml:XML;
 		var dist2:int = int.MAX_VALUE;
 		var temp:int;
+		var skinfile:String;
 		var skinid:String;
         var _local_1:XML;
         var _local_2:XMLList;
@@ -911,10 +941,11 @@ public class ParseChatMessageCommand {
 			temp = scoredMatch(curxml.@id.toString().length, splice, splice2);
 			if (temp < dist2) {
 				dist2 = temp;
+				skinfile = curxml.AnimatedTexture.File;
 				skinid = curxml.AnimatedTexture.Index;
 			}
         }
-		return parseInt(skinid);
+		return new Array(skinfile, skinid);
 	}
 	
 	/*private function findSkin(input:String):int {
@@ -1172,7 +1203,7 @@ public class ParseChatMessageCommand {
         }
         else { //send message as normal
 			lastMsg = data;
-			this.hudModel.gameSprite.gsc_.playerText(data);
+			hudModel.gameSprite.gsc_.playerText(data);
         }
     }
 }

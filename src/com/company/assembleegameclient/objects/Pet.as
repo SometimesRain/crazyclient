@@ -22,7 +22,7 @@ public class Pet extends GameObject implements IInteractiveObject {
     public var defaultSkin:AnimatedChar;
     public var skinId:int;
     public var isDefaultAnimatedChar:Boolean = false;
-    private var petsModel:PetsModel;
+    public var petsModel:PetsModel;
 
     public function Pet(_arg_1:XML) {
         super(_arg_1);

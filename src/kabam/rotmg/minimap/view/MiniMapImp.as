@@ -2,6 +2,7 @@
 import com.company.assembleegameclient.map.AbstractMap;
 import com.company.assembleegameclient.map.GroundLibrary;
 import com.company.assembleegameclient.objects.Character;
+import com.company.assembleegameclient.objects.Container;
 import com.company.assembleegameclient.objects.GameObject;
 import com.company.assembleegameclient.objects.GuildHallPortal;
 import com.company.assembleegameclient.objects.Player;
@@ -332,9 +333,12 @@ public class MiniMapImp extends MiniMap {
                         }
                     }
                     else {
-                        if ((((_local_10 is Portal)) || ((_local_10 is GuildHallPortal)))) {
+                        if (_local_10 is Portal || _local_10 is GuildHallPortal) { //add lootbag 0xff6a00
                             _local_15 = 0xFF;
                         }
+						else if (_local_10 is Container && _local_10.objectType_ != 1284 && _local_10.objectType_ != 1860) {
+                            _local_15 = 0xff6a00;
+						}
                         else {
                             continue;
                         }

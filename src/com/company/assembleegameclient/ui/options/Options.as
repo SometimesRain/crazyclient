@@ -92,7 +92,7 @@ public class Options extends Sprite {
         _local_2.setStringBuilder(new LineBuilder().setParams(TextKey.OPTIONS_TITLE));
         _local_2.setAutoSize(TextFieldAutoSize.CENTER);
         _local_2.filters = [new DropShadowFilter(0, 0, 0)];
-        _local_2.x = ((800 / 2) - (_local_2.width / 2));
+        _local_2.x = (400 - (_local_2.width / 2));
         _local_2.y = 8;
         addChild(_local_2);
         addChild(new ScreenGraphic());
@@ -111,19 +111,15 @@ public class Options extends Sprite {
         this.homeButton_.setAutoSize(TextFieldAutoSize.RIGHT);
         this.homeButton_.addEventListener(MouseEvent.CLICK, this.onHomeClick);
         addChild(this.homeButton_);
-
         var pad:int = 8;
-		const perRow:int = 8;
+		const perrow:int = 8;
         while (kier < TABS.length) {
             var _local_3:OptionsTabTitle = new OptionsTabTitle(TABS[kier]);
             _local_3.x = pad;
-            _local_3.y = 40;
-            if (kier % perRow == 0)
-                pad = 8;
-			if (kier >= 8)
-            {
-                _local_3.x = pad;
-                _local_3.y = 60;
+            _local_3.y = 50 + 25 * int(kier / perrow);
+            if (kier % perrow == 0) {
+               pad = 8;
+               _local_3.x = pad;
             }
 			if (kier == 8) { //debuffs tab
 				_local_3.x = 8;
@@ -136,7 +132,7 @@ public class Options extends Sprite {
             addChild(_local_3);
             _local_3.addEventListener(MouseEvent.CLICK, this.onTabClick);
             this.tabs_.push(_local_3);
-            pad = pad + 800 / perRow;
+            pad = pad + 800 / perrow;
             kier++;
         }
         addEventListener(Event.ADDED_TO_STAGE, this.onAddedToStage);
@@ -475,7 +471,7 @@ public class Options extends Sprite {
         addOptionAndPosition(new KeyMapper("kdbWeak", "Weak", "Toggles the effect."));
 		addOptionAndPosition(new NullOption());
         addOptionAndPosition(new KeyMapper("kdbQuiet", "Quiet", "Toggles the effect."));
-		addOptionAndPosition(new NullOption());
+        addOptionAndPosition(new KeyMapper("kdbAll", "All", "Toggles all effects that can disconnect you."));
         addOptionAndPosition(new KeyMapper("kdbPetStasis", "Pet Stasis", "Toggles the effect."));
         addOptionAndPosition(new KeyMapper("kdbPetrify", "Petrify", "Toggles the effect."));
     }
@@ -569,7 +565,7 @@ public class Options extends Sprite {
 	}
     
     private function aimAssist():void {
-        addOptionAndPosition(new ChoiceOption("AAAddOne",makeOnOffLabels(),[true,false],"+0.5 Range","Increase the range at which auto aim will lock on and shoot at mobs by half a tile.",null));
+        addOptionAndPosition(new ChoiceOption("AAAddOne",makeOnOffLabels(),[true,false],"+0.5 Search Radius","Increase the range at which auto aim will lock on and shoot at mobs by half a tile.",null));
         addOptionAndPosition(new KeyMapper("AAHotkey","Auto Aim","A key that toggles auto aim on and off."));
         addOptionAndPosition(new ChoiceOption("AABoundingDist",BoundingDistValues(),[1,2,3,4,5,6,7,8,9,10,15,20],"Bounding Distance","Restrict auto aim to see only as far as the bounding distance from the mouse cursor in closest to cursor aim mode.",null));
         addOptionAndPosition(new KeyMapper("AAModeHotkey","Cycle Mode","Key that will cycle through the various auto aim modes."));
@@ -705,12 +701,16 @@ public class Options extends Sprite {
 		addOptionAndPosition(new ChoiceOption("SafeWalk",makeOnOffLabels(),[true,false],"Safe Walk","Block movement onto tiles that cause damage. Click and hold left mouse to walk over these tiles.",null));
         addOptionAndPosition(new ChoiceOption("slideOnIce", makeOnOffLabels(), [true, false], "Slide on Ice", "Toggles sliding on ice.", null));
         addOptionAndPosition(new KeyMapper("incFinder", "Inc Finder", "Goes through everyone's inventory and backpack then reports if they have an incantation."));
-		addOptionAndPosition(new KeyMapper("enterPortal", "Portal Enter", "Enters nearest portal."));
 		addOptionAndPosition(new ChoiceOption("rclickTp",makeOnOffLabels(),[true,false],"Right-click Chat Teleport","Right click a chat name to teleport. No menu will be shown.",null));
 		addOptionAndPosition(new ChoiceOption("autoTp",makeOnOffLabels(),[true,false],"Teleport Queue","Automatically teleports after teleport cooldown if you have tried to teleport to someone during the cooldown.",null));
         addOptionAndPosition(new KeyMapper("QuestTeleport","Closest Player to Quest Teleport","Teleports to the player that is closest to your quest."));
         addOptionAndPosition(new KeyMapper("tpto","Teleport to Caller","Teleport to a person calling a dungeon. Current keywords: "+Parameters.data_.tptoList));
-		addOptionAndPosition(new KeyMapper("resetCHP","Reset Client HP","Use this hotkey if your CL bar doesn't match your HP bar."));
+		//addOptionAndPosition(new KeyMapper("resetCHP", "Reset Client HP", "Use this hotkey if your CL bar doesn't match your HP bar."));
+		addOptionAndPosition(new KeyMapper("cam2quest", "Point Camera to Quest", "Turns your camera so that the quest is to your north."));
+		addOptionAndPosition(new KeyMapper("enterPortal", "Portal Enter", "Enters nearest portal."));
+		addOptionAndPosition(new KeyMapper("Cam45DegInc", "Rotate Left (45°)", "Turns your camera by 45 degrees to the left."));
+		addOptionAndPosition(new KeyMapper("Cam45DegDec", "Rotate Right (45°)", "Turns your camera by 45 degrees to the right."));
+		addOptionAndPosition(new ChoiceOption("instaSelect",makeOnOffLabels(),[true,false],"Instantly Select All Items","When turned on, a right click on the trade window will select all your items instantly. When turned off, selects only the items of same type, smoothy, like an actual player.",null));
 	}
     
     private function miscMenu() : void
@@ -721,6 +721,7 @@ public class Options extends Sprite {
         addOptionAndPosition(new KeyMapper("TextThessal","Dying Thessal Response","Says \"He lives and reigns and conquers the world.\""));
         addOptionAndPosition(new KeyMapper("msg3key", "Custom Message 3", "Currently set to \"" + Parameters.data_.msg3 + "\". Use /setmsg 3 <message> to replace this message."));
 		addOptionAndPosition(new ChoiceOption("wMenu",makeOnOffLabels(),[true,false],"Show Whisper Menu Option","Makes whisper appear under trade on player menu.",null));
+        addOptionAndPosition(new NullOption());
 		addOptionAndPosition(new ChoiceOption("conCom",makeOnOffLabels(),["/conn","/con"],"Replace /con with /conn","Helps proxy users who want to use said proxy's built-in connect command.",null));
     }
     

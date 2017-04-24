@@ -76,8 +76,8 @@ public class MysteryBoxSelectModal extends Sprite {
     }
 
     private function positionAndStuff():void {
-        this.box_.x = (300 - (modalWidth / 2));
-        this.box_.y = (300 - (modalHeight / 2));
+        this.box_.x = ((600 / 2) - (modalWidth / 2));
+        this.box_.y = ((WebMain.STAGE.stageHeight / 2) - (modalHeight / 2));
     }
 
     private function addBoxChildren():void {

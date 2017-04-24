@@ -52,8 +52,6 @@ public class Projectile extends BasicObject {
     private var staticVector3D_:Vector3D;
     protected var shadowGradientFill_:GraphicsGradientFill;
     protected var shadowPath_:GraphicsPath;
-	
-	public static var recentDmg:Vector.<int> = new <int>[];
 
     public function Projectile() {
         this.p_ = new Point3D(100);
@@ -265,6 +263,7 @@ public class Projectile extends BasicObject {
 						_local_7.notifyPlayer(effName, 0x00ff00, 1500);
 						effName = "";
 					}
+					_local_7.subtractHealth(_local_11);
 					if (effName == "") { //we're not taking any effects
 						_local_6.damage(this.containerType_, _local_11, this.projProps_.effects_, false, this); //if effects was removed could we use this?
 						map_.gs_.gsc_.playerHit(this.bulletId_, this.ownerId_); //needs to be ignored nonetheless
@@ -272,32 +271,26 @@ public class Projectile extends BasicObject {
 					else {
 						_local_7.notifyPlayer(effName, 0x00ff00, 1500);
 						if (_local_11 > 0) {
-							recentDmg.push(_local_11);
-							_local_7.negateHealth(_local_11);
-							GameObject.takeDmgNotif(_local_11, _local_7);
+							GameObject.takeDmgNotif(_local_11, _local_7); //to be removed
 						}
 						return false;
 					}
                 }
-                else {
-                    if (_local_6.props_.isEnemy_) {
-                        if (!damageIgnored(_local_6) || (_local_6.isInvulnerable() && !isStun() && Parameters.data_.PassesCover)) //don't hit invulnerable or ignored enemies
-                        {
-                            return true;
-                        }
-						if (Parameters.data_.tombHack && ((_local_6.objectType_ >= 3366 && _local_6.objectType_ <= 3368) || (_local_6.objectType_ >= 32692 && _local_6.objectType_ <= 32694))) { //tomb bosses
-							if (_local_6.objectType_ != Parameters.data_.curBoss && _local_6.objectType_ != Parameters.data_.curBoss + 29326) {
-								return true;
-							}
+                else if (_local_6.props_.isEnemy_) {
+                    if (!damageIgnored(_local_6) || (_local_6.isInvulnerable() && !isStun() && Parameters.data_.PassesCover)) //don't hit invulnerable or ignored enemies
+                    {
+                        return true;
+                    }
+					if (Parameters.data_.tombHack && ((_local_6.objectType_ >= 3366 && _local_6.objectType_ <= 3368) || (_local_6.objectType_ >= 32692 && _local_6.objectType_ <= 32694))) { //tomb bosses
+						if (_local_6.objectType_ != Parameters.data_.curBoss && _local_6.objectType_ != Parameters.data_.curBoss + 29326) {
+							return true;
 						}
-                        map_.gs_.gsc_.enemyHit(_arg_1, this.bulletId_, _local_6.objectId_, _local_12);
-                        _local_6.damage(this.containerType_, _local_11, this.projProps_.effects_, _local_12, this);
-                    }
-                    else {
-                        if (!this.projProps_.multiHit_) {
-                            map_.gs_.gsc_.otherHit(_arg_1, this.bulletId_, this.ownerId_, _local_6.objectId_);
-                        }
-                    }
+					}
+                    map_.gs_.gsc_.enemyHit(_arg_1, this.bulletId_, _local_6.objectId_, _local_12);
+                    _local_6.damage(this.containerType_, _local_11, this.projProps_.effects_, _local_12, this);
+                }
+                else if (!this.projProps_.multiHit_) {
+					map_.gs_.gsc_.otherHit(_arg_1, this.bulletId_, this.ownerId_, _local_6.objectId_);
                 }
             }
             if (this.projProps_.multiHit_) {

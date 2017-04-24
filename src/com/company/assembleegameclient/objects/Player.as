@@ -8,6 +8,7 @@ import com.company.assembleegameclient.parameters.Parameters;
 import com.company.assembleegameclient.sound.SoundEffectLibrary;
 import com.company.assembleegameclient.tutorial.Tutorial;
 import com.company.assembleegameclient.tutorial.doneAction;
+import com.company.assembleegameclient.ui.TradeInventory;
 import com.company.assembleegameclient.util.AnimatedChar;
 import com.company.assembleegameclient.util.ConditionEffect;
 import com.company.assembleegameclient.util.FameUtil;
@@ -104,7 +105,10 @@ public class Player extends Character {
 	private var timerCount:int = 1;
 	private var startTime:int = 0;
 	private var endCount:int = 0;
-	public var remBuff:Vector.<int> = new <int>[];
+	public var select_:int = -1;
+	private var nextSelect:int = 0;
+	private var loopStart:int = 4;
+	private var selected:Vector.<Boolean> = new <Boolean>[false,false,false,false,false,false,false,false,false,false,false,false];
 	
 	private var nextAutoAbil:int = 0;
     public var mapAutoAbil:Boolean = false;
@@ -113,10 +117,9 @@ public class Player extends Character {
     private var useBuyPotionSignal:UseBuyPotionSignal;
 	private var lastPotionUse:int = 0;
 	
-	public var chp:Number = -1;
-	private var vitTime:int = -1;
-	//private var hpBoostApplied:Boolean = false;
-	//private var lastMaxHPBoost:int = -1;
+	//public var chp:Number = -1;
+	//private var vitTime:int = -1;
+	//public var remBuff:Vector.<int> = new <int>[];
 
     public var xpTimer:int;
     public var skinId:int;
@@ -325,7 +328,7 @@ public class Player extends Character {
             this.levelUpEffect(TextKey.PLAYER_LEVELUP);
         }
 		if (objectId_ == map_.player_.objectId_) {
-			chp = maxHP_ + maxHPBoost_; //is this correct?
+			//chp = maxHP_ + maxHPBoost_;
 			var objxml:XML = ObjectLibrary.xmlLibrary_[objectType_];
 			var avggains:Array = new Array();
 			var msgout:String = "You rolled ";
@@ -585,7 +588,7 @@ public class Player extends Character {
 
     public function isFullOccupy(_arg_1:Number, _arg_2:Number):Boolean {
         var _local_3:Square = map_.lookupSquare(_arg_1, _arg_2);
-        return ((((((_local_3 == null)) || ((_local_3.tileType_ == 0xFF)))) || (((!((_local_3.obj_ == null))) && (_local_3.obj_.props_.fullOccupy_)))));
+        return ((_local_3 == null || _local_3.tileType_ == 0xFF) || (_local_3.obj_ != null && _local_3.obj_.props_.fullOccupy_));
     }
 	
     public function notifyPlayer(text:String, color:int = 0x00FF00, lifetime:int = 1500) : void
@@ -919,11 +922,22 @@ public class Player extends Character {
 	
 	private function swapInvBp(slot:int):void {
 		if (getTimer() >= nextSwap) {
-			var locPlayer:Player = map_.player_;
-			map_.gs_.gsc_.invSwap(locPlayer, locPlayer, slot + 4, locPlayer.equipment_[slot + 4], locPlayer, slot + 12, locPlayer.equipment_[slot + 12]);
+			map_.gs_.gsc_.invSwap(this, this, slot + 4, equipment_[slot + 4], this, slot + 12, equipment_[slot + 12]);
 			bools[slot] = false;
 			nextSwap = getTimer() + 550;
 		}
+	}
+	
+	private function selectSlot(slot:int):void {
+		selected[slot] = !selected[slot];
+		TradeInventory.staSlots[slot].setIncluded(selected[slot]);
+		nextSelect = getTimer() + 150;
+		map_.gs_.gsc_.changeTrade(selected);
+	}
+	
+	private function naturalize(i:int):int {
+		var vect:Vector.<int> = new <int>[4,8,5,9,6,10,7,11];
+		return vect[i];
 	}
 	
 	private function findSlots():void {
@@ -942,7 +956,7 @@ public class Player extends Character {
 		startTime = getTimer();
 	}
 
-    override public function damage(_arg_1:int, _arg_2:int, _arg_3:Vector.<uint>, _arg_4:Boolean, _arg_5:Projectile):void {
+    /*override public function damage(_arg_1:int, _arg_2:int, _arg_3:Vector.<uint>, _arg_4:Boolean, _arg_5:Projectile):void {
 		negateHealth(_arg_2);
         super.damage(_arg_1, _arg_2, _arg_3, false, _arg_5);
     }
@@ -975,13 +989,50 @@ public class Player extends Character {
 				}
 			}
 		}
-		//addTextLine.dispatch(ChatMessage.make("*Help*", total + " hp from equips"));
 		return total;
+	}*/
+	
+	public function checkAutonexus():void {
+		if (this == map_.player_ && !map_.gs_.isSafeMap) {
+			if (hp_ / maxHP_ * 100 <= Parameters.data_.AutoNexus)
+			{
+				map_.gs_.gsc_.escape();
+			}
+			if ((objectType_ == 784 || (objectType_ == 799 && !isHealing())) && hp_ / maxHP_ * 100 <= Parameters.data_.autoHealP && (!isSick() || equipment_[1] == 3081))
+			{
+				useAltWeapon(x_, y_, UseType.START_USE)
+			}
+			else if (hp_ / maxHP_ * 100 <= Parameters.data_.autoPot && !isSick()) {
+				if (this.potionInventoryModel.getPotionModel(PotionInventoryModel.HEALTH_POTION_ID).available && lastPotionUse + 500 <= getTimer()) {
+					this.useBuyPotionSignal.dispatch(new UseBuyPotionVO(PotionInventoryModel.HEALTH_POTION_ID, UseBuyPotionVO.CONTEXTBUY));
+					lastPotionUse = getTimer();
+				}
+			}
+		}
+	}
+	
+	public function subtractHealth(param1:int):void {
+		this.hp_ = this.hp_ - param1;
+		//show damage notif
+		this.checkHealth();
+	}
+	
+	public function checkHealth():void {
+		var _loc1_:int;
+		if (!map_.gs_.isSafeMap) {
+			_loc1_ = this.hp_ * 100 / this.maxHP_;
+			if (_loc1_ <= 15) {
+				//show health at which you were nexused
+				addTextLine.dispatch(ChatMessage.make("", "You were saved at "+hp_+" health")); //hp.toFixed(0)
+				this.map_.gs_.gsc_.escape();
+			}
+		}
 	}
 
     override public function update(_arg_1:int, _arg_2:int):Boolean {
+		var i:int;
 		if (this == map_.player_) {
-			if (vitTime != -1) {
+			/*if (vitTime != -1) {
 				if (isBleeding()) { //no vit and -20 hp/s
 					chp -= (getTimer() - vitTime) * 0.02;
 				}
@@ -1006,9 +1057,10 @@ public class Player extends Character {
 				//stop overflow
 				if (chp > maxHP_) {
 					chp = maxHP_;
-				}
-			}
-			vitTime = getTimer();
+				}*/
+				checkHealth();
+			/*}
+			vitTime = getTimer();*/
 			var qid:int = -1; 
 			if (map_.quest_.getObject(1) != null) { //questbar id prerequisite
 				var qob:GameObject = map_.quest_.getObject(1);
@@ -1026,7 +1078,7 @@ public class Player extends Character {
 			if (map_.gs_.gsc_.oncd && getTimer() >= nextTeleportAt_) { //teleport timer
 				map_.gs_.gsc_.retryTeleport();
 			}
-			if (remBuff.length > 0 && getTimer() >= remBuff[remBuff.length - 1]) { //how to deal with double delete?
+			/*if (remBuff.length > 0 && getTimer() >= remBuff[remBuff.length - 1]) { //how to deal with double delete?
 				var mhpboost:int = maxHPBoost_;
 				var itemhp:int = getItemHp();
 				if (itemhp != mhpboost && !isHpBoosted()) {
@@ -1038,7 +1090,7 @@ public class Player extends Character {
 				//else addTextLine.dispatch(ChatMessage.make("", remBuff.length+": no change"));
 				remBuff.length--;
 				//addTextLine.dispatch(ChatMessage.make("", "set to "+remBuff.length));
-			}
+			}*/
 			if (wantedList == null) //autoloot wanted list
 			{
 				wantedList = genWantedList();
@@ -1056,7 +1108,24 @@ public class Player extends Character {
 				findSlots();
 				ParseChatMessageCommand.switch_ = false;
 			}
-			for (var i:int = 0; i < 8; i++) { //swap command slot swapper
+			if (select_ != -1 && getTimer() >= nextSelect) {
+				for (i = loopStart; i < 12; i++) { //trade slot selecter
+					var slot:int = naturalize(i-4);
+					if (TradeInventory.staSlots[slot].item_ == select_ && !TradeInventory.staSlots[slot].included_) {
+						selectSlot(slot);
+						loopStart = i + 1;
+						if (i != 11) { //beautiful, I know
+							break;
+						}
+					}
+					if (i == 11) {
+						select_ = -1;
+						loopStart = 4;
+						selected = new <Boolean>[false,false,false,false,false,false,false,false,false,false,false,false];
+					}
+				}
+			}
+			for (i = 0; i < 8; i++) { //swap command slot swapper
 				if (bools[i]) {
 					swapInvBp(i);
 					break;
@@ -1118,12 +1187,12 @@ public class Player extends Character {
 							abilFreq = 500;
 						}
 						else {
-							abilFreq = 4000 * wismod;
+							abilFreq = 4000 * wismod - 200;
 						}
 						break;
 					case 0xc1e: //prot
 					case 0x16de: //ice prot
-						abilFreq = 4000 * wismod;
+						abilFreq = 4000 * wismod - 200;
 						break;
 				}
 				if (abilFreq > 0) {
@@ -1184,15 +1253,15 @@ public class Player extends Character {
             if (angle < 0)
                 angle += (float)Math.PI * 2;*/
 			if (followTarget != null) {
-				_local_5 = Math.abs(followTarget.y_ - y_) + Math.abs(followTarget.x_ - x_);
-				if (_local_5 < 0.2) {
+				_local_5 = (followTarget.y_ - y_) * (followTarget.y_ - y_) + (followTarget.x_ - x_) * (followTarget.x_ - x_);
+				if (_local_5 < 0.1) { //make smaller?
                     moveVec_.x = 0;
                     moveVec_.y = 0;
 				}
 				else {
 					_local_5 = Math.atan2(followTarget.y_ - y_, followTarget.x_ - x_); //angle
-					moveVec_.x = _local_4 * Math.cos(_local_3 + _local_5);
-					moveVec_.y = _local_4 * Math.sin(_local_3 + _local_5);
+					moveVec_.x = _local_4 * Math.cos(_local_5);
+					moveVec_.y = _local_4 * Math.sin(_local_5);
 				}
 			}
             else if (this.relMoveVec_.x != 0 || this.relMoveVec_.y != 0) {
@@ -1242,31 +1311,13 @@ public class Player extends Character {
             _local_8 = map_.gs_.gsc_.getNextDamage(square_.props_.minDamage_, square_.props_.maxDamage_);
             _local_9 = new Vector.<uint>();
             _local_9.push(ConditionEffect.GROUND_DAMAGE);
+			subtractHealth(_local_8);
             damage(-1, _local_8, _local_9, (hp_ <= _local_8), null);
             map_.gs_.gsc_.groundDamage(_arg_1, x_, y_);
             square_.lastDamage_ = _arg_1;
         }
-        if (this == map_.player_) //autonexus
-        {
-            if (map_.name_ != "Nexus" && map_.name_ != "Arena")
-            {
-                if (hp_ / maxHP_ * 100 <= Parameters.data_.AutoNexus)
-                {
-                    map_.gs_.gsc_.escape();
-                }
-                if ((objectType_ == 784 || (objectType_ == 799 && !isHealing())) && hp_ / maxHP_ * 100 <= Parameters.data_.autoHealP && (!isSick() || equipment_[1] == 3081)) //autoheal
-                {
-					useAltWeapon(x_, y_, UseType.START_USE)
-                }
-				else if (hp_ / maxHP_ * 100 <= Parameters.data_.autoPot && !isSick()) { //autopot
-					if (this.potionInventoryModel.getPotionModel(PotionInventoryModel.HEALTH_POTION_ID).available && lastPotionUse + 500 <= getTimer()) {
-						this.useBuyPotionSignal.dispatch(new UseBuyPotionVO(PotionInventoryModel.HEALTH_POTION_ID, UseBuyPotionVO.CONTEXTBUY));
-						lastPotionUse = getTimer();
-					}
-				}
-            }
-        }
-        return (true);
+		checkAutonexus(); //unnecessary?
+        return true;
     }
 
     public function onMove():void {

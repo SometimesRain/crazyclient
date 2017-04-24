@@ -40,7 +40,7 @@ public class QuestHealthBar extends Sprite {
 		for each(go in p.map_.goDict_) {
 			if (go is Player) {
 				//temp = Math.abs(go.x_ - p.questMob.x_) + Math.abs(go.y_ - p.questMob.y_); //wtf
-				temp = (go.x_ - p.questMob.x_) * (go.x_ - p.questMob.x_) + (go.y_ - p.questMob.y_) * (go.y_ - p.questMob.y_);
+				temp = Math.sqrt((go.x_ - p.questMob.x_) * (go.x_ - p.questMob.x_) + (go.y_ - p.questMob.y_) * (go.y_ - p.questMob.y_));
 				if (temp < dist) {
 					dist = temp;
 					closest = go;
@@ -63,7 +63,7 @@ public class QuestHealthBar extends Sprite {
 				//trace("will update:", nextUpdate <= getTimer(), nextUpdate, "<=", getTimer());
 				if (nextUpdate <= getTimer()) {
 					showstr = genClosest(_arg_1);
-					nextUpdate = getTimer() + 500;
+					nextUpdate = getTimer() + 1000;
 				}
 				active = showstr;
 			}

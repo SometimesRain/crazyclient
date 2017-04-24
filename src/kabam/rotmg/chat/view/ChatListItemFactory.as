@@ -26,7 +26,7 @@ public class ChatListItemFactory {
     private static const HELP:String = Parameters.HELP_CHAT_NAME;//"*Help*"
     private static const ERROR:String = Parameters.ERROR_CHAT_NAME;//"*Error*"
     private static const GUILD:String = Parameters.GUILD_CHAT_NAME;//"*Guild*"
-    private static const HACKER:String = "*Hacker*"; //make recipient for purple text
+    //private static const HACKER:String = "*Hacker*"; //make recipient for purple text
     private static const testField:TextField = makeTestTextField();
 
     [Inject]
@@ -85,7 +85,16 @@ public class ChatListItemFactory {
             _local_6 = _local_7;
             _local_4 = true;
         }
-        return (new ChatListItem(this.buffer, this.model.bounds.width, this.model.lineHeight, _arg_2, _arg_1.objectId, _local_6, (_arg_1.recipient == GUILD), _local_4));
+		_local_7 = "";
+		if (_arg_1.recipient.length > 0 && _arg_1.recipient.charAt(0) != "*") {
+			if (message.isToMe) {
+				_local_7 = _arg_1.name;
+			}
+			else {
+				_local_7 = _arg_1.recipient;
+			}
+		}
+        return new ChatListItem(this.buffer, this.model.bounds.width, this.model.lineHeight, _arg_2, _arg_1.objectId, _local_6, (_arg_1.recipient == GUILD), _local_4, _local_7);
     }
 
     private function makeStarsIcon():void {
@@ -98,7 +107,7 @@ public class ChatListItemFactory {
     private function makeWhisperText():void {
         var _local_1:StringBuilder;
         var _local_2:BitmapData;
-        if (((this.message.isWhisper) && (!(this.message.isToMe)))) {
+        if (((this.message.isWhisper) && !message.isToMe)) {
             _local_1 = new StaticStringBuilder("To: ");
             _local_2 = this.getBitmapData(_local_1, 61695);
             this.buffer.push(new Bitmap(_local_2));
@@ -197,7 +206,7 @@ public class ChatListItemFactory {
     }
 
     private function getNameColor():uint {
-        if (this.message.recipient == HACKER) return (0x0073FF); //0x8997DD
+        //if (this.message.recipient == HACKER) return (0x0073FF); //0x8997DD
         if (this.message.name.charAt(0) == "#") {
             return (0xFFA800);
         }
@@ -207,15 +216,15 @@ public class ChatListItemFactory {
         if (this.message.recipient == GUILD) {
             return (10944349);
         }
-        if (this.message.recipient != "" && this.message.recipient != HACKER) {
-            return (61695);
-        }
+        if (this.message.recipient != "") {
+			return (61695);
+		}
         return (0xFF00);
     }
 
     private function getTextColor():uint {
         var _local_1:String = this.message.name;
-        if (this.message.recipient == HACKER) return (0x8997DD);
+        //if (this.message.recipient == HACKER) return (0x8997DD);
         if (_local_1 == SERVER) {
             return (0xFFFF00);
         }

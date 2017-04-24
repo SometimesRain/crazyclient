@@ -1,5 +1,6 @@
 ﻿package com.company.assembleegameclient.ui {
 import com.company.assembleegameclient.game.AGameSprite;
+import com.company.assembleegameclient.parameters.Parameters;
 
 import flash.display.Sprite;
 import flash.events.Event;
@@ -38,11 +39,26 @@ public class TradePanel extends Sprite {
         this.tradeButton_ = new TradeButton(16, 80);
         this.tradeButton_.x = (((3 * WIDTH) / 4) - (this.tradeButton_.bWidth / 2));
         this.tradeButton_.addEventListener(MouseEvent.CLICK, this.onTradeClick);
+        this.tradeButton_.addEventListener(MouseEvent.RIGHT_CLICK, this.onRightClick);
         addChild(this.tradeButton_);
         this.checkTrade();
-        addEventListener(Event.ADDED_TO_STAGE, this.onAddedToStage);
-        addEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromStage);
     }
+
+    private function onTradeClick(_arg_1:MouseEvent):void {
+		if (tradeButton_.state == 1 || Parameters.data_.TradeDelay) {
+			accept();
+		}
+    }
+
+    private function onRightClick(_arg_1:MouseEvent):void {
+		accept();
+    }
+	
+	private function accept():void {
+		this.gs_.gsc_.acceptTrade(this.myInv_.getOffer(), this.yourInv_.getOffer());
+		this.myInv_.setMessage(TradeInventory.TRADEACCEPTED_MESSAGE);
+		tradeButton_.setState(2);
+	}
 
     private function onCancelTextChanged():void {
         this.cancelButton_.x = ((WIDTH / 4) - (this.cancelButton_.bWidth / 2));
@@ -61,18 +77,6 @@ public class TradePanel extends Sprite {
         }
     }
 
-    private function onAddedToStage(_arg_1:Event):void {
-        stage.addEventListener(Event.ACTIVATE, this.onActivate);
-    }
-
-    private function onRemovedFromStage(_arg_1:Event):void {
-        stage.removeEventListener(Event.ACTIVATE, this.onActivate);
-    }
-
-    private function onActivate(_arg_1:Event):void {
-        this.tradeButton_.reset();
-    }
-
     private function onMyInvChange(_arg_1:Event):void {
         this.gs_.gsc_.changeTrade(this.myInv_.getOffer());
         this.checkTrade();
@@ -81,11 +85,6 @@ public class TradePanel extends Sprite {
     private function onCancelClick(_arg_1:MouseEvent):void {
         this.gs_.gsc_.cancelTrade();
         dispatchEvent(new Event(Event.CANCEL));
-    }
-
-    private function onTradeClick(_arg_1:MouseEvent):void {
-        this.gs_.gsc_.acceptTrade(this.myInv_.getOffer(), this.yourInv_.getOffer());
-        this.myInv_.setMessage(TradeInventory.TRADEACCEPTED_MESSAGE);
     }
 
     public function checkTrade():void {
@@ -109,10 +108,10 @@ public class TradePanel extends Sprite {
             this.yourInv_.setMessage(TradeInventory.TRADEWAITING_MESSAGE);
         }
         if (_local_5) {
-            this.tradeButton_.reset();
+            tradeButton_.setState(0);
         }
         else {
-            this.tradeButton_.disable();
+            tradeButton_.setState(3);
         }
     }
 

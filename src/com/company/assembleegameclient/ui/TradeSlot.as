@@ -37,7 +37,7 @@ public class TradeSlot extends Slot implements TooltipAble {
     public var included_:Boolean;
     public var equipmentToolTipFactory:EquipmentToolTipFactory;
     private var id:uint;
-    private var item_:int;
+    public var item_:int;
     private var overlay_:Shape;
     private var overlayFill_:GraphicsSolidFill;
     private var lineStyle_:GraphicsStroke;

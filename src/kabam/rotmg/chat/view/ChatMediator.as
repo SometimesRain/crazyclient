@@ -119,10 +119,8 @@ public class ChatMediator extends Mediator {
         if (_arg_1.keyCode == this.shortcuts.getScrollUp()) {
             this.setupScroll(-1);
         }
-        else {
-            if (_arg_1.keyCode == this.shortcuts.getScrollDown()) {
-                this.setupScroll(1);
-            }
+        else if (_arg_1.keyCode == this.shortcuts.getScrollDown()) {
+            this.setupScroll(1);
         }
     }
 
@@ -143,7 +141,7 @@ public class ChatMediator extends Mediator {
         if (this.listenersAdded) {
             this.checkForInputTrigger(_arg_1.keyCode);
         }
-        if ((((_arg_1.keyCode == this.shortcuts.getScrollUp())) || ((_arg_1.keyCode == this.shortcuts.getScrollDown())))) {
+        if (_arg_1.keyCode == shortcuts.getScrollUp() || _arg_1.keyCode == shortcuts.getScrollDown()) {
             this.view.removeEventListener(Event.ENTER_FRAME, this.iterate);
         }
     }

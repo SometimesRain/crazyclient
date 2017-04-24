@@ -41,6 +41,10 @@ public class BackgroundFilledText extends Sprite {
         this.text_.y = MARGIN;
         addChild(this.text_);
     }
+	
+	protected function setColor(color:uint):void {
+		graphicsData_[0] = new GraphicsSolidFill(color, 1);
+	}
 
     protected function makeText():TextFieldDisplayConcrete {
         return (new TextFieldDisplayConcrete());

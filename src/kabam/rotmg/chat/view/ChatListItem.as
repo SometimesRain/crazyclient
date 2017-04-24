@@ -2,6 +2,8 @@
 import com.company.assembleegameclient.objects.GameObject;
 import com.company.assembleegameclient.objects.Player;
 import com.company.assembleegameclient.parameters.Parameters;
+import flash.net.URLRequest;
+import flash.net.navigateToURL;
 //import kabam.rotmg.chat.model.ChatMessage;
 //import kabam.rotmg.game.signals.AddTextLineSignal;
 import org.swiftsuspenders.Injector;
@@ -29,11 +31,12 @@ public class ChatListItem extends Sprite {
     public var playerName:String = "";
     public var fromGuild:Boolean = false;
     public var isTrade:Boolean = false;
+	private var rClickRealmeye:String = "";
 	
 	private var model:HUDModel;
 	//private var addTextLine:AddTextLineSignal;
 
-    public function ChatListItem(_arg_1:Vector.<DisplayObject>, _arg_2:int, _arg_3:int, _arg_4:Boolean, _arg_5:int, _arg_6:String, _arg_7:Boolean, _arg_8:Boolean) {
+    public function ChatListItem(_arg_1:Vector.<DisplayObject>, _arg_2:int, _arg_3:int, _arg_4:Boolean, _arg_5:int, _arg_6:String, _arg_7:Boolean, _arg_8:Boolean, rclick:String = "") {
         mouseEnabled = true;
         this.itemWidth = _arg_2;
         this.layoutHeight = _arg_3;
@@ -45,17 +48,20 @@ public class ChatListItem extends Sprite {
         this.playerName = _arg_6;
         this.fromGuild = _arg_7;
         this.isTrade = _arg_8;
+		rClickRealmeye = rclick;
         this.layoutItems();
         this.addItems();
         var _local_2:Injector = StaticInjectorContext.getInjector();
         //addTextLine = _local_2.getInstance(AddTextLineSignal);
         model = _local_2.getInstance(HUDModel);
         addEventListener(MouseEvent.RIGHT_CLICK, this.onRightMouseDown);
-        //addEventListener(MouseEvent.RIGHT_MOUSE_DOWN, this.onRightMouseDown);
     }
 
     public function onRightMouseDown(e:MouseEvent):void {
-		if (Parameters.data_.rclickTp) {
+		if (rClickRealmeye != "") {
+			navigateToURL(new URLRequest("https://www.realmeye.com/player/" + rClickRealmeye), "_blank");
+		}
+		else if (Parameters.data_.rclickTp) {
 			var go_:GameObject = model.gameSprite.map.goDict_[playerObjectId];
 			if (go_ != null && go_ is Player) {
 				model.gameSprite.gsc_.teleport(go_.name_);

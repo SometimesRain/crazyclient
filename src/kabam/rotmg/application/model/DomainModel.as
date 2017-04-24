@@ -24,7 +24,7 @@ public class DomainModel {
     }
 
     public function isLocalDomainValid():Boolean {
-        return (((this.client.isDesktop()) || (this.isLocalDomainInWhiteList())));
+        return true;
     }
 
     public function isLocalDomainProduction():Boolean {

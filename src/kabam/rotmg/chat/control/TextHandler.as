@@ -33,6 +33,8 @@ public class TextHandler {
     private const TELL_SPEECH_COLORS:TextColors = new TextColors(2493110, 61695, 13880567);
     private const GUILD_SPEECH_COLORS:TextColors = new TextColors(0x3E8A00, 10944349, 13891532);
 	public static var caller:String = "";
+	public static var afk:Boolean = false;
+	public static var afkTells:Vector.<ChatMessage> = new <ChatMessage>[];
 
     [Inject]
     public var account:Account;
@@ -95,6 +97,10 @@ public class TextHandler {
 				}
             }
             else if (_arg_1.recipient_ == this.model.player.name_) {
+				if (afk) {
+					var now:Date = new Date();
+					afkTells.push(ChatMessage.make("["+now.getHours()+":"+now.getMinutes()+"] "+_arg_1.name_, _arg_1.text_, -1, _arg_1.numStars_, _arg_1.recipient_))
+				}
 				if (_arg_1.name_ != "MrEyeball") {
 					tellModel.push(_arg_1.name_);
 					tellModel.resetRecipients();

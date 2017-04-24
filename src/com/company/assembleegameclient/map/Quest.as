@@ -1,5 +1,6 @@
 ﻿package com.company.assembleegameclient.map {
 import com.company.assembleegameclient.objects.GameObject;
+import flash.geom.Point;
 
 import flash.utils.getTimer;
 
@@ -27,9 +28,14 @@ public class Quest {
         this.questOldAt_ = this.questAvailableAt_;
     }
 
-    public function getObject(_arg_1:int):GameObject {
+    public function getObject(_arg_1:int = 0):GameObject {
         return (this.map_.goDict_[this.objectId_]);
     }
+	
+	public function getLoc():Point {
+		var go:GameObject = map_.goDict_[this.objectId_];
+		return new Point(go.x_, go.y_);
+	}
 
     public function isNew(_arg_1:int):Boolean {
         return ((_arg_1 < this.questOldAt_));

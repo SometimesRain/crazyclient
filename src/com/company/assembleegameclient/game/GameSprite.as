@@ -238,6 +238,7 @@ public class GameSprite extends AGameSprite {
         if (map.name_ == "Daily Quest Room") {
             QuestRewardsPanel.checkQuests();
         }
+		isSafeMap = this.evalIsNotInCombatMapArea();
         hidePreloader();
 		stage.dispatchEvent(new Event(Event.RESIZE));
 		this.parent.parent.setChildIndex((this.parent.parent as Layers).top,2);
@@ -249,41 +250,15 @@ public class GameSprite extends AGameSprite {
 		this.showNewsUpdate();
     }
 	
-    private function showNewsUpdate(_arg_1:Boolean = true):void {
-        var _local_3:NewsModalButton;
+    private function showNewsUpdate():void {
         var _local_2:NewsModel = StaticInjectorContext.getInjector().getInstance(NewsModel);
         if (_local_2.hasValidModalNews()) {
-            _local_3 = new NewsModalButton();
-            _local_3.x = 6;
-            _local_3.y = 34; //92
-            if (_arg_1) {
-                this.displaysPosY = (this.displaysPosY + UIUtils.NOTIFICATION_SPACE);
-            }
-            if (this.newsModalButton != null) {
-                removeChild(this.newsModalButton);
-            }
-            this.newsModalButton = _local_3;
+            newsModalButton = new NewsModalButton();
+            newsModalButton.x = 8;
+            newsModalButton.y = 34;
             addChild(this.newsModalButton);
         }
     }
-	
-	/*private function showNewsUpdate(param1:Boolean = true):void {
-		var _loc4_:NewsModalButton = null;
-		var _loc3_:NewsModel = StaticInjectorContext.getInjector().getInstance(NewsModel);
-		if (_loc3_.hasValidModalNews()) {
-			_loc4_ = new NewsModalButton();
-			_loc4_.x = 6;
-			_loc4_.y = 92;
-			if (param1) {
-				this.displaysPosY = this.displaysPosY + UIUtils.NOTIFICATION_SPACE;
-			}
-			if (this.newsModalButton != null) {
-				removeChild(this.newsModalButton);
-			}
-			this.newsModalButton = _loc4_;
-			addChild(this.newsModalButton);
-		}
-	}*/
 
     private function showTimer():void {
         this.arenaTimer = new ArenaTimer();
@@ -405,6 +380,18 @@ public class GameSprite extends AGameSprite {
 			this.rankText_.x = 8 * this.rankText_.scaleX;
 			this.rankText_.y = 4 * this.rankText_.scaleY;
 		}
+		if (newsModalButton != null) {
+			if (_loc2_) {
+				this.newsModalButton.scaleX = scaleX_;
+				this.newsModalButton.scaleY = 1;
+			}
+			else {
+				this.newsModalButton.scaleX = _loc12_;
+				this.newsModalButton.scaleY = _loc13_;
+			}
+			this.newsModalButton.x = 6 * this.newsModalButton.scaleX;
+			this.newsModalButton.y = 34 * this.newsModalButton.scaleY;
+		}
 		if (this.guildText_ != null) {
 			if (_loc2_) {
 				this.guildText_.scaleX = scaleX_;
@@ -483,7 +470,7 @@ public class GameSprite extends AGameSprite {
     }
 
     override public function evalIsNotInCombatMapArea():Boolean {
-        return ((((((((((((map.name_ == Map.NEXUS)) || ((map.name_ == Map.VAULT)))) || ((map.name_ == Map.GUILD_HALL)))) || ((map.name_ == Map.CLOTH_BAZAAR)))) || ((map.name_ == Map.NEXUS_EXPLANATION)))) || ((map.name_ == Map.DAILY_QUEST_ROOM))));
+		return map.name_ == Map.NEXUS || map.name_ == Map.VAULT || map.name_ == Map.GUILD_HALL || map.name_ == Map.CLOTH_BAZAAR || map.name_ == Map.NEXUS_EXPLANATION || map.name_ == Map.DAILY_QUEST_ROOM || map.name_ == "Arena";
     }
 
     private function onEnterFrame(_arg_1:Event):void {

@@ -10,16 +10,28 @@
       <Explanation>Sets a preset which can toggle multiple status effects at once&#xA;Preset ID must be between 1 and 3&#xA;Effect ID will be shown for the selected debuffs on Options -> Debuffs&#xA;Preset name identifies the preset, if set to a dungeon name it automatically activates when entering the dungeon</Explanation>
    </Article>
    <Article>
+      <Command>/afk</Command>
+      <Explanation>Toggles your afk state&#xA;When afk is on, all tells will be saved&#xA;When turned off, the saved tells will be displayed</Explanation>
+   </Article>
+   <Article>
+      <Command>/pos</Command>
+      <Explanation>Prints your position to chat</Explanation>
+   </Article>
+   <Article>
+      <Command>/setspd &lt;value&gt;</Command>
+      <Explanation>Sets your speed to the given value&#xA;Setting your speed higher than your real speed stat gets you disconnected&#xA;-54 is the lowest value</Explanation>
+   </Article>
+   <Article>
       <Command>/dye1 &lt;dye name&gt;</Command>
-      <Explanation>Sets your large dye/cloth.&#xA;Use none to remove the dye</Explanation>
+      <Explanation>Sets your large dye/cloth&#xA;Use none to remove the dye</Explanation>
    </Article>
    <Article>
       <Command>/dye2 &lt;dye name&gt;</Command>
-      <Explanation>Sets your small dye/cloth.&#xA;Use none to remove the dye</Explanation>
+      <Explanation>Sets your small dye/cloth&#xA;Use none to remove the dye</Explanation>
    </Article>
    <Article>
       <Command>/dye &lt;dye name&gt;</Command>
-      <Explanation>Sets your large and small dye/cloth.&#xA;Use none to remove the dye</Explanation>
+      <Explanation>Sets your large and small dye/cloth&#xA;Use none to remove the dye</Explanation>
    </Article>
    <Article>
       <Command>/skin &lt;skin name&gt;</Command>
@@ -96,6 +108,10 @@
    <Article>
       <Command>/fame</Command>
       <Explanation>Shows fame gain statistics on you current session</Explanation>
+   </Article>
+   <Article>
+      <Command>/fameclear</Command>
+      <Explanation>Clears fame statistics</Explanation>
    </Article>
    <Article>
       <Command>/tr</Command>

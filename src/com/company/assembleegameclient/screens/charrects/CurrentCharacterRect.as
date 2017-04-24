@@ -5,6 +5,7 @@ import com.company.assembleegameclient.screens.events.DeleteCharacterEvent;
 import com.company.assembleegameclient.ui.tooltip.MyPlayerToolTip;
 import com.company.assembleegameclient.util.FameUtil;
 import com.company.rotmg.graphics.DeleteXGraphic;
+import kabam.rotmg.messaging.impl.GameServerConnectionConcrete;
 
 import flash.display.DisplayObject;
 import flash.display.Sprite;
@@ -109,11 +110,17 @@ public class CurrentCharacterRect extends CharacterRect {
     private function addEventListeners():void {
         addEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromStage);
         selectContainer.addEventListener(MouseEvent.CLICK, this.onSelect);
-        selectContainer.addEventListener(MouseEvent.RIGHT_CLICK, this.onDelete);
+        selectContainer.addEventListener(MouseEvent.RIGHT_CLICK, this.onSelectVault);
+        selectContainer.addEventListener(MouseEvent.MIDDLE_CLICK, this.onDelete);
         //this.deleteButton.addEventListener(MouseEvent.CLICK, this.onDelete);
     }
 
     private function onSelect(_arg_1:MouseEvent):void {
+        this.selected.dispatch(this.char);
+    }
+
+    private function onSelectVault(_arg_1:MouseEvent):void {
+		GameServerConnectionConcrete.vaultSelect = true;
         this.selected.dispatch(this.char);
     }
 
@@ -162,6 +169,9 @@ public class CurrentCharacterRect extends CharacterRect {
     }
 
     private function onRemovedFromStage(_arg_1:Event):void {
+        selectContainer.removeEventListener(MouseEvent.CLICK, this.onSelect);
+        selectContainer.removeEventListener(MouseEvent.RIGHT_CLICK, this.onSelectVault);
+        selectContainer.removeEventListener(MouseEvent.MIDDLE_CLICK, this.onDelete);
         this.removeToolTip();
     }
 

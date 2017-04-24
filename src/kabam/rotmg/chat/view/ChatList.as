@@ -35,11 +35,11 @@ public class ChatList extends Sprite {
         var _local_2:ChatListItem;
         var _local_3:ChatListItem;
         for each (_local_2 in this.visibleItems) {
-            if (((_local_2.isTimedOut()) && (!(this.ignoreTimeOuts)))) {
+            if (_local_2.isTimedOut() && !ignoreTimeOuts) {
                 this.itemsToRemove.push(_local_2);
             }
             else {
-                break;
+                break; //no need to check further
             }
         }
         while (this.itemsToRemove.length > 0) {
@@ -65,7 +65,7 @@ public class ChatList extends Sprite {
             _local_2 = this.listItems.shift();
             this.onItemTimedOut(_local_2);
             this.index--;
-            if (((!(this.isCurrent)) && ((this.index < this.visibleItemCount)))) {
+            if (!this.isCurrent && this.index < this.visibleItemCount) {
                 this.pageDown();
             }
         }
@@ -122,18 +122,16 @@ public class ChatList extends Sprite {
             this.scrollToCurrent();
             this.onCheckTimeout(null);
         }
-        if (!this.isCurrent) {
+        if (!isCurrent) {
             this.scrollItemsDown();
         }
-        else {
-            if (this.ignoreTimeOuts) {
-                this.ignoreTimeOuts = false;
-            }
+        else if (ignoreTimeOuts) {
+            ignoreTimeOuts = false;
         }
     }
 
     public function scrollToCurrent():void {
-        while (!(this.isCurrent)) {
+        while (!isCurrent) {
             this.scrollItemsDown();
         }
     }
@@ -156,35 +154,22 @@ public class ChatList extends Sprite {
                 _local_1++;
             }
         }
+		timer.stop();
     }
 
     public function pageDown():void {
         var _local_1:int;
         while (_local_1 < this.visibleItemCount) {
-            if (!this.isCurrent) {
-                this.scrollItemsDown();
+            if (!isCurrent) {
+                scrollItemsDown();
             }
             else {
-                this.ignoreTimeOuts = false;
+				timer.start();
+                ignoreTimeOuts = false;
                 return;
             }
             _local_1++;
         }
-    }
-
-    private function addNewItem(_arg_1:ChatListItem):void {
-        this.visibleItems.push(_arg_1);
-        addChild(_arg_1);
-    }
-
-    private function removeOldestVisibleIfNeeded():void {
-        if (this.visibleItems.length > this.visibleItemCount) {
-            removeChild(this.visibleItems.shift());
-        }
-    }
-
-    private function canScrollUp():Boolean {
-        return ((this.index > this.visibleItemCount));
     }
 
     private function scrollItemsUp():void {
@@ -205,6 +190,21 @@ public class ChatList extends Sprite {
         this.removeOldestVisibleIfNeeded();
         this.isCurrent = (this.index == this.listItems.length);
         this.positionItems();
+    }
+
+    private function addNewItem(_arg_1:ChatListItem):void {
+        this.visibleItems.push(_arg_1);
+        addChild(_arg_1);
+    }
+
+    private function removeOldestVisibleIfNeeded():void {
+        if (this.visibleItems.length > this.visibleItemCount) {
+            removeChild(this.visibleItems.shift());
+        }
+    }
+
+    private function canScrollUp():Boolean {
+        return ((this.index > this.visibleItemCount));
     }
 
     private function addOldItem(_arg_1:ChatListItem):void {

@@ -18,33 +18,32 @@ import kabam.rotmg.text.model.TextKey;
 import kabam.rotmg.text.view.StaticTextDisplay;
 import kabam.rotmg.text.view.TextFieldDisplayConcrete;
 import kabam.rotmg.text.view.stringBuilder.LineBuilder;
-import com.company.assembleegameclient.parameters.Parameters;
 
 public class TradeButton extends BackgroundFilledText {
 
-    private static const WAIT_TIME:int = 2999;
-    private static const COUNTDOWN_STATE:int = 0;
-    private static const NORMAL_STATE:int = 1;
-    private static const WAITING_STATE:int = 2;
-    private static const DISABLED_STATE:int = 3;
-
+	private const WAIT_TIME:int = 2999;
+	
     public var statusBar_:Sprite;
     public var barMask_:Shape;
     public var myText:StaticTextDisplay;
     public var h_:int;
-    private var state_:int;
-    private var lastResetTime_:int;
     private var barGraphicsData_:Vector.<IGraphicsData>;
     private var outlineGraphicsData_:Vector.<IGraphicsData>;
+	
+    public var lastResetTime_:int;
+	public var state:int; //0 = oncd, 1 = ready, 2 = disabled
+	private var lastState:int;
 
-    public function TradeButton(_arg_1:int, _arg_2:int = 0) {
+    public function TradeButton(_arg_1:int, _arg_2:int) {
         super(_arg_2);
         this.makeGraphics();
         this.lastResetTime_ = getTimer();
+		//
         this.myText = new StaticTextDisplay();
         this.myText.setAutoSize(TextFieldAutoSize.CENTER).setVerticalAlign(TextFieldDisplayConcrete.MIDDLE);
         this.myText.setSize(_arg_1).setColor(0x363636).setBold(true);
         this.myText.setStringBuilder(new LineBuilder().setParams(TextKey.PLAYERMENU_TRADE));
+		//
         w_ = (((_arg_2) != 0) ? _arg_2 : (this.myText.width + 12));
         this.h_ = (this.myText.height + 8);
         this.myText.x = (w_ / 2);
@@ -59,7 +58,6 @@ public class TradeButton extends BackgroundFilledText {
         addEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromStage);
         addEventListener(MouseEvent.MOUSE_OVER, this.onMouseOver);
         addEventListener(MouseEvent.ROLL_OUT, this.onRollOut);
-        addEventListener(MouseEvent.CLICK, this.onClick);
     }
 
     private function makeGraphics():void {
@@ -70,41 +68,81 @@ public class TradeButton extends BackgroundFilledText {
         this.outlineGraphicsData_ = new <IGraphicsData>[_local_3, path_, GraphicsUtil.END_STROKE];
     }
 
-    public function reset():void {
+    private function setText(_arg_1:String):void {
+        this.myText.setStringBuilder(new LineBuilder().setParams(_arg_1));
+    }
+
+    /*public function reset():void {
         this.lastResetTime_ = getTimer();
-        this.state_ = COUNTDOWN_STATE;
+		onCd = true;
         this.setEnabled(false);
         this.setText(TextKey.PLAYERMENU_TRADE);
     }
 
     public function disable():void {
-        this.state_ = DISABLED_STATE;
+		onCd = false;
         this.setEnabled(false);
-        this.setText(TextKey.PLAYERMENU_TRADE);
-    }
-
-    private function setText(_arg_1:String):void {
-        this.myText.setStringBuilder(new LineBuilder().setParams(_arg_1));
+        this.setText(TextKey.PLAYERMENU_WAITING);
     }
 
     private function setEnabled(_arg_1:Boolean):void {
-        if(Parameters.data_["TradeDelay"])
-        {
-            _arg_1 = true;
-        }
-        if (_arg_1 == mouseEnabled) {
-            return;
-        }
-        mouseEnabled = _arg_1;
-        mouseChildren = _arg_1;
-        graphicsData_[0] = ((_arg_1) ? enabledFill_ : disabledFill_);
+		enabled = _arg_1;
         this.draw();
+    }*/
+	
+	public function setState(id:int):void { //0 = oncd, 1 = ready, 2 = disabled
+        lastResetTime_ = getTimer();
+		state = id;
+		draw();
+	}
+
+    private function draw():void {
+        var timepassed:int = getTimer() - lastResetTime_;
+		switch (state) {
+			case 0: //oncd
+				if (lastState != 0) {
+					statusBar_.visible = true;
+					graphicsData_[0] = enabledFill_;
+					setText("Trade");
+				}
+				if (timepassed >= WAIT_TIME) {
+					state = 1;
+				}
+				else {
+					drawCountDown(timepassed / WAIT_TIME);
+				}
+				break;
+			case 1: //ready
+				if (lastState != 1) {
+					statusBar_.visible = false;
+					graphicsData_[0] = enabledFill_;
+					setText("Trade");
+				}
+				break;
+			case 2: //disabled (button pressed)
+				if (lastState != 2) {
+					statusBar_.visible = false;
+					graphicsData_[0] = disabledFill_;
+					setText("Waiting");
+				}
+				break;
+			case 3: //disabled (not enough space)
+				if (lastState != 2) {
+					statusBar_.visible = false;
+					graphicsData_[0] = disabledFill_;
+					setText("Trade");
+				}
+				break;
+		}
+		lastState = state;
+        graphics.clear();
+        graphics.drawGraphicsData(graphicsData_);
     }
 
     private function onAddedToStage(_arg_1:Event):void {
         addEventListener(Event.ENTER_FRAME, this.onEnterFrame);
-        this.reset();
-        this.draw();
+        setState(0);
+        draw();
     }
 
     private function onRemovedFromStage(_arg_1:Event):void {
@@ -116,19 +154,13 @@ public class TradeButton extends BackgroundFilledText {
     }
 
     private function onMouseOver(_arg_1:MouseEvent):void {
-        enabledFill_.color = 16768133;
+        enabledFill_.color = 0xFFDC85;
         this.draw();
     }
 
     private function onRollOut(_arg_1:MouseEvent):void {
         enabledFill_.color = 0xFFFFFF;
         this.draw();
-    }
-
-    private function onClick(_arg_1:MouseEvent):void {
-        this.state_ = WAITING_STATE;
-        this.setEnabled(false);
-        this.setText(TextKey.PLAYERMENU_WAITING);
     }
 
     private function newStatusBar():Sprite {
@@ -146,42 +178,15 @@ public class TradeButton extends BackgroundFilledText {
         _local_4.graphics.clear();
         _local_4.graphics.drawGraphicsData(this.outlineGraphicsData_);
         _local_1.addChild(_local_4);
-        return (_local_1);
+        return _local_1;
     }
 
     private function drawCountDown(_arg_1:Number):void {
         this.barMask_.graphics.clear();
         this.barMask_.graphics.beginFill(0xBFBFBF);
-        this.barMask_.graphics.drawRect(0, 0, (w_ * _arg_1), this.h_);
+        this.barMask_.graphics.drawRect((w_ * _arg_1), 0, w_ - (w_ * _arg_1), this.h_);
         this.barMask_.graphics.endFill();
     }
-
-    private function draw():void {
-        var _local_1:int;
-        var _local_2:Number;
-        _local_1 = getTimer();
-        if (this.state_ == COUNTDOWN_STATE) {
-            if ((_local_1 - this.lastResetTime_) >= WAIT_TIME) {
-                this.state_ = NORMAL_STATE;
-                this.setEnabled(true);
-            }
-        }
-        switch (this.state_) {
-            case COUNTDOWN_STATE:
-                this.statusBar_.visible = true;
-                _local_2 = ((_local_1 - this.lastResetTime_) / WAIT_TIME);
-                this.drawCountDown(_local_2);
-                break;
-            case DISABLED_STATE:
-            case NORMAL_STATE:
-            case WAITING_STATE:
-                this.statusBar_.visible = false;
-                break;
-        }
-        graphics.clear();
-        graphics.drawGraphicsData(graphicsData_);
-    }
-
 
 }
 }//package com.company.assembleegameclient.ui

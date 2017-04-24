@@ -200,7 +200,7 @@ public class Map extends AbstractMap {
         party_.update(_arg_1, _arg_2);
     }
 
-    override public function pSTopW(_arg_1:Number, _arg_2:Number):Point {
+    override public function pSTopW(_arg_1:Number, _arg_2:Number):Point { //point screen to point world
         var _local_3:Square;
         for each (_local_3 in this.visibleSquares_) {
             if (((!((_local_3.faces_.length == 0))) && (_local_3.faces_[0].face_.contains(_arg_1, _arg_2)))) {
@@ -210,21 +210,22 @@ public class Map extends AbstractMap {
         return (null);
     }
 
-    override public function setGroundTile(_arg_1:int, _arg_2:int, _arg_3:uint):void {
+    override public function setGroundTile(_arg_1:int, _arg_2:int, _arg_3:uint):void { //x,y,type
         var _local_8:int;
         var _local_9:int;
         var _local_10:Square;
         var _local_4:Square = this.getSquare(_arg_1, _arg_2);
         _local_4.setTileType(_arg_3);
-        var _local_5:int = (((_arg_1 < (width_ - 1))) ? (_arg_1 + 1) : _arg_1);
-        var _local_6:int = (((_arg_2 < (height_ - 1))) ? (_arg_2 + 1) : _arg_2);
-        var _local_7:int = (((_arg_1 > 0)) ? (_arg_1 - 1) : _arg_1);
+		//
+        var _local_5:int = _arg_1 < width_ - 1 ? _arg_1 + 1 : _arg_1;
+        var _local_6:int = _arg_2 < height_ - 1 ? _arg_2 + 1 : _arg_2;
+        var _local_7:int = _arg_1 > 0 ? _arg_1 - 1 : _arg_1;
         while (_local_7 <= _local_5) {
-            _local_8 = (((_arg_2 > 0)) ? (_arg_2 - 1) : _arg_2);
+            _local_8 = _arg_2 > 0 ? (_arg_2 - 1) : _arg_2;
             while (_local_8 <= _local_6) {
                 _local_9 = (_local_7 + (_local_8 * width_));
                 _local_10 = squares_[_local_9];
-                if (((!((_local_10 == null))) && (((_local_10.props_.hasEdge_) || (!((_local_10.tileType_ == _arg_3))))))) {
+                if (_local_10 != null && (_local_10.props_.hasEdge_ || _local_10.tileType_ != _arg_3)) {
                     _local_10.faces_.length = 0;
                 }
                 _local_8++;
@@ -284,15 +285,15 @@ public class Map extends AbstractMap {
             }
         }
         _local_3.removeFromMap();
-		if (_local_3 is Container) {
+		/*if (_local_3 is Container) {
 			updateLootBagSignal.dispatch(new UpdateLootBagVO(_local_3.x_, _local_3.y_, _local_3.objectId_, true));
-		}
+		}*/
         delete _local_2[_arg_1];
     }
 
     public function getSquare(_arg_1:Number, _arg_2:Number):Square {
-        if ((((((((_arg_1 < 0)) || ((_arg_1 >= width_)))) || ((_arg_2 < 0)))) || ((_arg_2 >= height_)))) {
-            return (null);
+        if (_arg_1 < 0 || _arg_1 >= width_ || _arg_2 < 0 || _arg_2 >= height_) {
+            return null;
         }
         var _local_3:int = (int(_arg_1) + (int(_arg_2) * width_));
         var _local_4:Square = squares_[_local_3];
@@ -329,8 +330,7 @@ public class Map extends AbstractMap {
 	}
 
     override public function draw(_arg_1:Camera, _arg_2:int):void {
-        if(MapUserInput.skipRender == true)
-        {
+        if (MapUserInput.skipRender) {
             return;
         }
         var _local_6:Square;
@@ -401,7 +401,7 @@ public class Map extends AbstractMap {
         }
         for each (_local_13 in goDict_) {
             _local_13.drawn_ = false;
-            //if (!_local_13.dead_) { //might cause invisible enemies, experimental v9
+            if (!_local_13.dead_) { //removes the sprite for a dead enemy, clientside prediction
                 _local_6 = _local_13.square_;
                 if (!(((_local_6 == null)) || (!((_local_6.lastVisible_ == _arg_2))))) {
                     _local_13.drawn_ = true;
@@ -418,7 +418,7 @@ public class Map extends AbstractMap {
                         this.visible_.push(_local_13);
                     }
                 }
-            //}
+            }
         }
         for each (_local_14 in boDict_) {
             _local_14.drawn_ = false;

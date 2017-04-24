@@ -1136,6 +1136,9 @@ public class GameObject extends BasicObject {
         if (MapUserInput.skipRender) {
 			return;
 		}
+		if (this.size_ <= 0) {
+			return;
+		}
         var _local_8:BitmapData;
         var _local_9:uint;
         var _local_10:uint;

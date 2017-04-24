@@ -2,6 +2,7 @@
 import com.company.assembleegameclient.game.AGameSprite;
 import com.company.assembleegameclient.objects.ObjectLibrary;
 import com.company.assembleegameclient.objects.Player;
+import com.company.assembleegameclient.parameters.Parameters;
 import com.company.ui.BaseSimpleText;
 
 import flash.display.Sprite;
@@ -30,6 +31,7 @@ public class TradeInventory extends Sprite {
     private var nameText_:BaseSimpleText;
     private var taglineText_:TextFieldDisplayConcrete;
     public var slots_:Vector.<TradeSlot>;
+	public static var staSlots:Vector.<TradeSlot>;
 
     public function TradeInventory(_arg_1:AGameSprite, _arg_2:String, _arg_3:Vector.<TradeItem>, _arg_4:Boolean) {
         var _local_6:TradeItem;
@@ -41,14 +43,14 @@ public class TradeInventory extends Sprite {
         this.nameText_ = new BaseSimpleText(20, 0xB3B3B3, false, 0, 0);
         this.nameText_.setBold(true);
         this.nameText_.x = 0;
-        this.nameText_.y = 0;
+        this.nameText_.y = 4;
         this.nameText_.text = this.playerName_;
         this.nameText_.updateMetrics();
         this.nameText_.filters = [new DropShadowFilter(0, 0, 0)];
         addChild(this.nameText_);
         this.taglineText_ = new TextFieldDisplayConcrete().setSize(12).setColor(0xB3B3B3);
         this.taglineText_.x = 0;
-        this.taglineText_.y = 22;
+        this.taglineText_.y = 26;
         this.taglineText_.filters = [new DropShadowFilter(0, 0, 0)];
         addChild(this.taglineText_);
         var _local_5:int;
@@ -75,6 +77,17 @@ public class TradeInventory extends Sprite {
     }
 
     private function selectAll(_arg_1:MouseEvent):void {
+		if (Parameters.data_.instaSelect) {
+			selectAllInstantly();
+		}
+		else {
+			var select:Vector.<Boolean> = new <Boolean>[false,false,false,false,false,false,false,false,false,false,false,false];
+			staSlots = slots_;
+			gs_.map.player_.select_ = (_arg_1.currentTarget as TradeSlot).item_;
+		}
+    }
+	
+	private function selectAllInstantly():void {
 		var i:int;
 		var select:Vector.<Boolean> = new <Boolean>[false,false,false,false,false,false,false,false,false,false,false,false];
 		var p:Player = gs_.map.player_;
@@ -89,7 +102,7 @@ public class TradeInventory extends Sprite {
 			}
 		}
 		gs_.gsc_.changeTrade(select);
-    }
+	}
 
     public function getOffer():Vector.<Boolean> {
         var _local_1:Vector.<Boolean> = new Vector.<Boolean>();

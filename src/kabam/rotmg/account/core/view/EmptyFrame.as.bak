@@ -126,8 +126,8 @@ public class EmptyFrame extends Sprite {
     }
 
     protected function makeModalBackground():Sprite {
-        x = (400 - (this.modalWidth / 2));
-        y = (300 - (this.modalHeight / 2));
+        x = ((WebMain.STAGE.stageWidth / 2) - (this.modalWidth / 2));
+        y = ((WebMain.STAGE.stageHeight / 2) - (this.modalHeight / 2));
         var _local_1:PopupWindowBackground = new PopupWindowBackground();
         _local_1.draw(this.modalWidth, this.modalHeight, PopupWindowBackground.TYPE_DEFAULT_GREY);
         if (this.title != null) {

@@ -10,11 +10,14 @@ import com.company.assembleegameclient.parameters.Parameters;
 import com.company.assembleegameclient.ui.options.Options;
 import com.company.assembleegameclient.util.TextureRedrawer;
 import com.company.util.KeyCodes;
+import flash.desktop.Clipboard;
+import flash.desktop.ClipboardFormats;
 import flash.display.Sprite;
 import flash.display.StageScaleMode;
 import flash.geom.Point;
 import flash.geom.Vector3D;
 import flash.utils.Dictionary;
+import kabam.rotmg.chat.control.ParseChatMessageSignal;
 import kabam.rotmg.chat.control.TextHandler;
 import kabam.rotmg.servers.api.Server;
 import kabam.rotmg.ui.view.HUDView;
@@ -98,6 +101,7 @@ public class MapUserInput {
     private var exitGame:ExitGameSignal;
     private var areFKeysAvailable:Boolean;
     private var reskinPetFlowStart:ReskinPetFlowStartSignal;
+    private var parseChatMessage:ParseChatMessageSignal;
 
     public function MapUserInput(_arg_1:GameSprite) {
         this.gs_ = _arg_1;
@@ -116,6 +120,7 @@ public class MapUserInput {
         this.exitGame = _local_2.getInstance(ExitGameSignal);
         this.openDialogSignal = _local_2.getInstance(OpenDialogSignal);
         this.closeDialogSignal = _local_2.getInstance(CloseDialogsSignal);
+        this.parseChatMessage = _local_2.getInstance(ParseChatMessageSignal);
         var _local_3:ApplicationSetup = _local_2.getInstance(ApplicationSetup);
         this.areFKeysAvailable = _local_3.areDeveloperHotkeysEnabled();
         this.gs_.map.signalRenderSwitch.add(this.onRenderSwitch);
@@ -385,11 +390,11 @@ public class MapUserInput {
 	
 	private function aimAt(player:Player, t:Vector3D):void {
 		if (Parameters.data_.inaccurate) {
-			t.x = int(t.x) + 1 / 2;
-			t.y = int(t.y) + 1 / 2;
+			t.x = int(t.x) + 0.5;
+			t.y = int(t.y) + 0.5;
 		}
 		gs_.gsc_.useItem(getTimer(), player.objectId_, 1, player.equipment_[1], t.x, t.y, UseType.START_USE);
-		player.doShoot(getTimer(), player.equipment_[1], ObjectLibrary.xmlLibrary_[player.equipment_[1]], (Parameters.data_.cameraAngle + Math.atan2(t.y - player.y_, t.x - player.x_)), false);
+		player.doShoot(getTimer(), player.equipment_[1], ObjectLibrary.xmlLibrary_[player.equipment_[1]], Math.atan2(t.y - player.y_, t.x - player.x_), false);
 	}
 	
 	private function handlePerfectBomb(player:Player):Boolean {
@@ -760,7 +765,6 @@ public class MapUserInput {
                 break;
 			//
             case Parameters.data_.tpto:
-                //gs_.gsc_.playerText("/teleport "+TextHandler.caller);
 				gs_.gsc_.teleport(TextHandler.caller);
                 break;
             case Parameters.data_.TextPause:
@@ -771,15 +775,18 @@ public class MapUserInput {
                 break;
             case Parameters.data_.msg1key:
 				if (Parameters.data_.msg1 == null) break;
-                gs_.gsc_.playerText(Parameters.data_.msg1);
+				parseChatMessage.dispatch(Parameters.data_.msg1);
+                //gs_.gsc_.playerText(Parameters.data_.msg1);
                 break;
             case Parameters.data_.msg2key:
 				if (Parameters.data_.msg2 == null) break;
-                gs_.gsc_.playerText(Parameters.data_.msg2);
+				parseChatMessage.dispatch(Parameters.data_.msg2);
+                //gs_.gsc_.playerText(Parameters.data_.msg2);
                 break;
             case Parameters.data_.msg3key:
 				if (Parameters.data_.msg3 == null) break;
-                gs_.gsc_.playerText(Parameters.data_.msg3);
+				parseChatMessage.dispatch(Parameters.data_.msg3);
+                //gs_.gsc_.playerText(Parameters.data_.msg3);
                 break;
 			//
             case Parameters.data_.SkipRenderKey:
@@ -792,7 +799,6 @@ public class MapUserInput {
             case Parameters.data_.SWLightKey:
                 player.mapLightSpeed = (this.lightSpeed = !(this.lightSpeed));
                 break;
-            /*
             case Parameters.data_.Cam45DegInc:
                 Parameters.data_.cameraAngle = Parameters.data_.cameraAngle - 0.785398163397448;
                 Parameters.save();
@@ -801,7 +807,11 @@ public class MapUserInput {
                 Parameters.data_.cameraAngle = Parameters.data_.cameraAngle + 0.785398163397448;
                 Parameters.save();
                 break;
-			*/
+            case Parameters.data_.cam2quest:
+				var po:Point = gs_.map.quest_.getLoc();
+                Parameters.data_.cameraAngle = Math.atan2(player.y_ - po.y, player.x_ - po.x) - 1.57079632679;
+                Parameters.save();
+                break;
             case Parameters.data_.AAHotkey:
 				Parameters.data_.AAOn = !Parameters.data_.AAOn;
 				player.levelUpEffect(Parameters.data_.AAOn ? "Auto Aim: On" : "Auto Aim: Off");
@@ -812,7 +822,7 @@ public class MapUserInput {
             case Parameters.data_.tombCycle:
 				Parameters.data_.curBoss++;
 				if (Parameters.data_.curBoss > 3368) {
-					Parameters.data_.curBoss -= 3;
+					Parameters.data_.curBoss = 3366;
 				}
 				Parameters.save()
 				player.notifyPlayer("Active boss: "+ObjectLibrary.typeToDisplayId_[Parameters.data_.curBoss],0x00FF00,1500);
@@ -820,6 +830,7 @@ public class MapUserInput {
             case Parameters.data_.kautoSprite:
 				Parameters.data_.autoSprite = !Parameters.data_.autoSprite;
 				Parameters.save();
+				player.notifyPlayer(Parameters.data_.autoSprite ? "Auto Sprite: On" : "Auto Sprite: Off", 0x00ff00, 1500);
                 break;
             case Parameters.data_.kdbPetrify:
 				Parameters.data_.dbPetrify = !Parameters.data_.dbPetrify;
@@ -876,6 +887,22 @@ public class MapUserInput {
 				Parameters.save();
 				player.notifyPlayer(Parameters.data_.dbPetStasis ? "Pet Stasis: On" : "Pet Stasis: Off", Parameters.data_.dbPetStasis ? 0xff0000 : 0x00ff00, 1500);
                 break;
+            case Parameters.data_.kdbAll:
+				Parameters.data_.dbAll = !Parameters.data_.dbAll;
+				Parameters.data_.dbPetrify = Parameters.data_.dbAll;
+				Parameters.data_.dbArmorBroken = Parameters.data_.dbAll;
+				Parameters.data_.dbBleeding = Parameters.data_.dbAll;
+				Parameters.data_.dbDazed = Parameters.data_.dbAll;
+				Parameters.data_.dbParalyzed = Parameters.data_.dbAll;
+				Parameters.data_.dbSick = Parameters.data_.dbAll;
+				Parameters.data_.dbSlowed = Parameters.data_.dbAll;
+				Parameters.data_.dbStunned = Parameters.data_.dbAll;
+				Parameters.data_.dbWeak = Parameters.data_.dbAll;
+				Parameters.data_.dbQuiet = Parameters.data_.dbAll;
+				Parameters.data_.dbPetStasis = Parameters.data_.dbAll;
+				Parameters.save();
+				player.notifyPlayer(Parameters.data_.dbAll ? "All: On" : "All: Off", Parameters.data_.dbAll ? 0xff0000 : 0x00ff00, 1500);
+                break;
             case Parameters.data_.kdbPre1:
 				activatePreset(1);
                 break;
@@ -885,9 +912,9 @@ public class MapUserInput {
             case Parameters.data_.kdbPre3:
 				activatePreset(3);
                 break;
-            case Parameters.data_.resetCHP:
+            /*case Parameters.data_.resetCHP:
 				player.chp = player.hp_;
-                break;
+                break;*/
             case Parameters.data_.pbToggle:
 				Parameters.data_.perfectBomb = !Parameters.data_.perfectBomb;
 				Parameters.save();

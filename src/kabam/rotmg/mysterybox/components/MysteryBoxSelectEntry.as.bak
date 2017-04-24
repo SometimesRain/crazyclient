@@ -317,12 +317,11 @@ public class MysteryBoxSelectEntry extends Sprite {
         if (this.infoImage == null) {
             return;
         }
-        this.infoImage.width = 283;
-        this.infoImage.height = 580;
-		//
-        this.infoImage.x = 379.5;
-        this.infoImage.y = -29 - y;
-		//
+        var _local_1:int = 8;
+        this.infoImage.width = (291 - _local_1);
+        this.infoImage.height = ((598 - (_local_1 * 2)) - 2);
+        this.infoImage.x = MysteryBoxSelectModal.getRightBorderX() - 15;
+        this.infoImage.y = -(this.it * 75) - 8;
         if (((this.hoverState) && (!(this.descriptionShowing)))) {
             this.descriptionShowing = true;
             addChild(this.infoImage);

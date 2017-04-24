@@ -106,7 +106,7 @@ public class HUDView extends Sprite implements UnFocusAble {
         this.potions.x = 14;
         this.potions.y = 480;
 		this.stats.x = 14;
-		this.stats.y = 298;
+		this.stats.y = 294; //298
 		this.stats.visible = false;
         this.cdtimer.x = 58;
         this.cdtimer.y = 200;
@@ -207,7 +207,7 @@ public class HUDView extends Sprite implements UnFocusAble {
 		this.inventory.y = 392;
 		if (player.hasBackpack_) {
 			this.backpack = new InventoryGrid(player,player,12);
-			this.statMeters = new StatMetersView(4, true);
+			this.statMeters = new StatMetersView();
 			this.inventory.x = 14;
 			this.inventory.y = 304;
 			this.backpack.x = 14;
@@ -224,7 +224,7 @@ public class HUDView extends Sprite implements UnFocusAble {
 		}
 		else {
 			this.stats.visible = true;
-			this.statMeters = new StatMetersView(8, true);
+			this.statMeters = new StatMetersView();
 			this.characterDetails = new CharacterDetailsView();
 			this.equippedGrid.y = 348;
 			this.cdtimer.y = 348;
