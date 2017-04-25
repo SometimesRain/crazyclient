@@ -54,7 +54,8 @@ public class TextHandler {
     public var hudModel:HUDModel;
     [Inject]
     public var friendModel:FriendModel;
-
+	
+	private var now:Date
 
     public function execute(_arg_1:Text):void {
         var _local_3:String;
@@ -98,7 +99,7 @@ public class TextHandler {
             }
             else if (_arg_1.recipient_ == this.model.player.name_) {
 				if (afk) {
-					var now:Date = new Date();
+					now = new Date();
 					afkTells.push(ChatMessage.make("["+now.getHours()+":"+now.getMinutes()+"] "+_arg_1.name_, _arg_1.text_, -1, _arg_1.numStars_, _arg_1.recipient_))
 				}
 				if (_arg_1.name_ != "MrEyeball") {
@@ -146,7 +147,7 @@ public class TextHandler {
 			if (_arg_1.text_ == "{\"key\":\"server.oryx_closed_realm\"}") { //realm shake timer
 				model.player.startTimer(120, 1000);
 			}
-            _local_3 = this.getLocalizedString(_local_3);
+            _local_3 = this.getLocalizedString(_local_3, p);
         }
 		//TPTO
 		for each (var str3:String in Parameters.data_.tptoList) {
@@ -215,10 +216,10 @@ public class TextHandler {
         return ((((_arg_1.charAt(0) == "{")) && ((_arg_1.charAt((_arg_1.length - 1)) == "}"))));
     }
 
-    private function getLocalizedString(_arg_1:String):String {
+    private function getLocalizedString(_arg_1:String, p:Player):String {
         var _local_2:LineBuilder = LineBuilder.fromJSON(_arg_1);
         _local_2.setStringMap(this.stringMap);
-        return (_local_2.getString());
+        return (_local_2.getStringAlt(p));
     }
 
     private function showSpeechBaloon(_arg_1:Text, _arg_2:String):void {

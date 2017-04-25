@@ -203,11 +203,11 @@ public class HUDView extends Sprite implements UnFocusAble {
 
     private function createInventories():void {
 		this.inventory = new InventoryGrid(player,player,4);
+		this.statMeters = new StatMetersView(true);
 		this.inventory.x = 14;
 		this.inventory.y = 392;
 		if (player.hasBackpack_) {
 			this.backpack = new InventoryGrid(player,player,12);
-			this.statMeters = new StatMetersView();
 			this.inventory.x = 14;
 			this.inventory.y = 304;
 			this.backpack.x = 14;
@@ -224,7 +224,6 @@ public class HUDView extends Sprite implements UnFocusAble {
 		}
 		else {
 			this.stats.visible = true;
-			this.statMeters = new StatMetersView();
 			this.characterDetails = new CharacterDetailsView();
 			this.equippedGrid.y = 348;
 			this.cdtimer.y = 348;

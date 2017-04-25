@@ -1,4 +1,5 @@
 ﻿package kabam.rotmg.text.view.stringBuilder {
+import com.company.assembleegameclient.objects.Player;
 import kabam.rotmg.core.StaticInjectorContext;
 import kabam.rotmg.language.model.StringMap;
 
@@ -101,12 +102,14 @@ public class LineBuilder implements StringBuilder {
         var _local_1:String = stripCurlyBrackets(this.key);
         var _local_2:String = ((this.map.getValue(_local_1)) || (""));
         for (_local_3 in this.tokens) {
+			//trace("token",_local_3);
             _local_4 = this.tokens[_local_3];
             if ((((_local_4.charAt(0) == "{")) && ((_local_4.charAt((_local_4.length - 1)) == "}")))) {
                 _local_4 = this.map.getValue(_local_4.substr(1, (_local_4.length - 2)));
             }
             _local_5 = (("{" + _local_3) + "}");
             while (_local_2.indexOf(_local_5) != -1) {
+				//trace("repl",_local_5,_local_4);
                 _local_2 = _local_2.replace(_local_5, _local_4);
             }
         }
@@ -114,6 +117,30 @@ public class LineBuilder implements StringBuilder {
         return (((this.prefix + _local_2) + this.postfix));
     }
 
-
+    public function getStringAlt(p:Player = null):String {
+        var _local_3:String;
+        var _local_4:String;
+        var _local_5:String;
+        var _local_1:String = stripCurlyBrackets(this.key);
+        var _local_2:String = ((this.map.getValue(_local_1)) || (""));
+        for (_local_3 in this.tokens) {
+			//trace("token",_local_3);
+            _local_4 = this.tokens[_local_3];
+            if ((((_local_4.charAt(0) == "{")) && ((_local_4.charAt((_local_4.length - 1)) == "}")))) {
+                _local_4 = this.map.getValue(_local_4.substr(1, (_local_4.length - 2)));
+            }
+            _local_5 = (("{" + _local_3) + "}");
+            while (_local_2.indexOf(_local_5) != -1) {
+				//trace("repl",_local_5,_local_4);
+                _local_2 = _local_2.replace(_local_5, _local_4);
+            }
+        }
+        _local_2 = _local_2.replace(/\\n/g, "\n");
+		if (key == "server.no_teleport_new_connect") {
+			p.startTimer(parseInt(_local_4), 1000);
+		}
+        return (((this.prefix + _local_2) + this.postfix));
+    }
+	
 }
 }//package kabam.rotmg.text.view.stringBuilder

@@ -263,15 +263,14 @@ public class Projectile extends BasicObject {
 						_local_7.notifyPlayer(effName, 0x00ff00, 1500);
 						effName = "";
 					}
-					_local_7.subtractHealth(_local_11);
 					if (effName == "") { //we're not taking any effects
-						_local_6.damage(this.containerType_, _local_11, this.projProps_.effects_, false, this); //if effects was removed could we use this?
+						_local_6.damage(this.containerType_, _local_11, this.projProps_.effects_, false, this); //Q: if effects was removed could we use this? A: yes
 						map_.gs_.gsc_.playerHit(this.bulletId_, this.ownerId_); //needs to be ignored nonetheless
 					}
 					else {
 						_local_7.notifyPlayer(effName, 0x00ff00, 1500);
 						if (_local_11 > 0) {
-							GameObject.takeDmgNotif(_local_11, _local_7); //to be removed
+							_local_7.damageWithoutAck(_local_11);
 						}
 						return false;
 					}
@@ -398,16 +397,13 @@ public class Projectile extends BasicObject {
     
     public function damageIgnored(param1:GameObject) : Boolean //prevents you from damaging enemies
     {
-        var _loc2_:int = 0;
-        for each(_loc2_ in Parameters.data_.AAIgnore)
-        {
+        var _loc2_:int;
+        for each(_loc2_ in Parameters.data_.AAIgnore) {
 			if (_loc2_ == 1619 || _loc2_ == 3441) { //sprite child or oryx suit of armor
 				continue;
 			}
-            if (_loc2_ == param1.props_.type_)
-            {
-                if (!Parameters.data_.damageIgnored)
-                {
+            if (_loc2_ == param1.props_.type_) {
+                if (!Parameters.data_.damageIgnored) {
                     return false;
                 }
                 break;

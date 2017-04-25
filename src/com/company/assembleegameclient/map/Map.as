@@ -274,7 +274,6 @@ public class Map extends AbstractMap {
     }
 
     public function internalRemoveObj(_arg_1:int):void {
-		//this.addTextLine.dispatch(ChatMessage.make("*Help*", "Removed "+_arg_1));
         var _local_2:Dictionary = goDict_;
         var _local_3:BasicObject = _local_2[_arg_1];
         if (_local_3 == null) {

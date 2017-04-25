@@ -29,6 +29,5 @@ public class PatternBuilder implements StringBuilder {
         return (_local_1.replace(/\\n/g, "\n"));
     }
 
-
 }
 }//package kabam.rotmg.text.view.stringBuilder

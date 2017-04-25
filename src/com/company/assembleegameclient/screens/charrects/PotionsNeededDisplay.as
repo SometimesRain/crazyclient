@@ -41,6 +41,7 @@ public class PotionsNeededDisplay extends Sprite {
 		var maxstats:Array;
 		var stats:Array
 		var i:int;
+		var need:int;
         for each (curChar in charlist) { //loop through all characters
             curClass = this.classes.getCharacterClass(curChar.objectType());
 			maxstats = new Array(curClass.hp.max, curClass.mp.max, curClass.attack.max, curClass.defense.max, curClass.speed.max, curClass.dexterity.max, curClass.hpRegeneration.max, curClass.mpRegeneration.max);
@@ -49,11 +50,12 @@ public class PotionsNeededDisplay extends Sprite {
 				max = maxstats[i];
 				stat = stats[i];
 				if (max > stat) {
-					if (i > 1) {
+					if (i > 1) { //att, def, spd, dex, vit, wis
 						needed[i] += max - stat;
 					}
-					else { //life and mana
-						if (stat % 5 == 0) {
+					else { //life, mana
+						need = max - stat;
+						if (need % 5 == 0) {
 							needed[i] += int((max - stat) / 5);
 						}
 						else {

@@ -136,6 +136,7 @@ public class GameObject extends BasicObject {
 	public var jittery:Boolean = false;
     public var aimAssistPoint:Vector3D = null;
     public var aimAssistTarget:com.company.assembleegameclient.objects.GameObject = null;
+	public var lastUpdate:int; //custom
 
     public function GameObject(_arg_1:XML) {
         var _local_4:int;
@@ -871,7 +872,7 @@ public class GameObject extends BasicObject {
                 }
             }
         }
-        if (!((this.props_.isEnemy_) && (Parameters.data_.disableEnemyParticles))) {
+        if (!(this.props_.isEnemy_ && Parameters.data_.disableEnemyParticles)) {
             _local_14 = BloodComposition.getBloodComposition(this.objectType_, this.texture_, this.props_.bloodProb_, this.props_.bloodColor_);
             if (this.dead_) {
                 map_.addObj(new ExplosionEffect(_local_14, this.size_, 30), x_, y_);
@@ -886,7 +887,7 @@ public class GameObject extends BasicObject {
             }
         }
         if (_arg_2 > 0) {
-            _local_15 = ((((this.isArmorBroken()) || (((!((_arg_5 == null))) && (_arg_5.projProps_.armorPiercing_))))) || (_local_6));
+            _local_15 = (((this.isArmorBroken()) || (_arg_5 != null && _arg_5.projProps_.armorPiercing_)) || _local_6);
             this.showDamageText(_arg_2, _local_15);
         }
     }
@@ -907,20 +908,20 @@ public class GameObject extends BasicObject {
 		takeDmgNotif(_arg_1, this, _arg_2);
     }
 	
-    public static function takeDmgNotif(param1:int, param2:GameObject, param3:Boolean = false) : void {
+    public static function takeDmgNotif(param1:int, param2:GameObject, noArmor:Boolean = false) : void {
         var _loc3_:Boolean = Parameters.data_.STDamage;
         var _loc4_:Boolean = Parameters.data_.STHealth;
         var _loc5_:int = param2.hp_ - param1;
         _loc5_ = _loc5_ < 0 ? 0  : _loc5_;
         var _loc6_:int;
-		if (param3) {
-			_loc6_ = 9437439;
+		if (noArmor) {
+			_loc6_ = 0x9000ff;
 		}
 		else if (Parameters.data_.STColor) {
 			_loc6_ = green2red(param2.hp_ / param2.maxHP_ * 100);
 		}
 		else {
-			_loc6_ = 16711680;
+			_loc6_ = 0xff0000;
 		}
         var _loc7_:String = (_loc3_ ? "-" + param1 + (_loc4_ ? " [" : "" ) : "") + (_loc4_ ? _loc5_ + (_loc3_ ? "]" : "") :"");
         var _loc8_:CharacterStatusText = new CharacterStatusText(param2,_loc6_,1000);

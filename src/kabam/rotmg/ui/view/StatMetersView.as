@@ -13,21 +13,32 @@ public class StatMetersView extends Sprite {
     private var expBar_:StatusBar;
     private var fameBar_:StatusBar;
     private var hpBar_:StatusBar;
+    private var chpBar_:StatusBar;
     private var mpBar_:StatusBar;
     private var areTempXpListenersAdded:Boolean;
     private var curXPBoost:int;
     private var expTimer:ExperienceBoostTimerPopup;
     public var myPlayer:Boolean = true;
 
-    public function StatMetersView() {
+    public function StatMetersView(showchp:Boolean = false) {
         this.expBar_ = new StatusBar(176, 16, 5931045, 0x545454, TextKey.EXP_BAR_LEVEL);
         this.fameBar_ = new StatusBar(176, 16, 0xE25F00, 0x545454, TextKey.CURRENCY_FAME);
-        this.hpBar_ = new StatusBar(176, 16, 14693428, 0x545454, "HP");
-        this.mpBar_ = new StatusBar(176, 16, 6325472, 0x545454, "MP");
-        this.hpBar_.y = 20;
+        //this.hpBar_ = new StatusBar(176, 16, 14693428, 0x545454, "HP");
+        this.mpBar_ = new StatusBar(176, 16, 6325472, 0x545454, TextKey.STATUS_BAR_MANA_POINTS);
         this.mpBar_.y = 40;
         this.expBar_.visible = true;
         this.fameBar_.visible = false;
+		if (showchp) {
+			this.hpBar_ = new StatusBar(176, 12, 14693428, 0x545454, "HP");
+			this.hpBar_.y = 16;
+			this.chpBar_ = new StatusBar(176, 12, 14693428, 0x545454, "CL");
+			this.chpBar_.y = 28;
+			addChild(this.chpBar_);
+		}
+		else {
+			this.hpBar_ = new StatusBar(176, 16, 14693428, 0x545454, "HP");
+			this.hpBar_.y = 20;
+		}
         addChild(this.expBar_);
         addChild(this.fameBar_);
         addChild(this.hpBar_);
@@ -82,6 +93,9 @@ public class StatMetersView extends Sprite {
         }
         this.hpBar_.draw(_arg_1.hp_, _arg_1.maxHP_, _arg_1.maxHPBoost_, _arg_1.maxHPMax_);
         this.mpBar_.draw(_arg_1.mp_, _arg_1.maxMP_, _arg_1.maxMPBoost_, _arg_1.maxMPMax_);
+		if (chpBar_ != null) {
+			this.chpBar_.draw(int(_arg_1.chp), _arg_1.cmaxhp, _arg_1.cmaxhpboost, _arg_1.maxHPMax_);
+		}
     }
 
     private function onExpBarOver(_arg_1:Event):void {

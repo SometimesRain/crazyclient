@@ -705,11 +705,12 @@ public class Options extends Sprite {
 		addOptionAndPosition(new ChoiceOption("autoTp",makeOnOffLabels(),[true,false],"Teleport Queue","Automatically teleports after teleport cooldown if you have tried to teleport to someone during the cooldown.",null));
         addOptionAndPosition(new KeyMapper("QuestTeleport","Closest Player to Quest Teleport","Teleports to the player that is closest to your quest."));
         addOptionAndPosition(new KeyMapper("tpto","Teleport to Caller","Teleport to a person calling a dungeon. Current keywords: "+Parameters.data_.tptoList));
-		//addOptionAndPosition(new KeyMapper("resetCHP", "Reset Client HP", "Use this hotkey if your CL bar doesn't match your HP bar."));
-		addOptionAndPosition(new KeyMapper("cam2quest", "Point Camera to Quest", "Turns your camera so that the quest is to your north."));
-		addOptionAndPosition(new KeyMapper("enterPortal", "Portal Enter", "Enters nearest portal."));
+		addOptionAndPosition(new KeyMapper("resetCHP", "Reset Client HP", "Use this hotkey if your CL bar doesn't match your HP bar."));
+		addOptionAndPosition(new ChoiceOption("autoCorrCHP",makeOnOffLabels(),[true,false],"Auto Correct Client HP","Automatically corrects your health.",null));
 		addOptionAndPosition(new KeyMapper("Cam45DegInc", "Rotate Left (45°)", "Turns your camera by 45 degrees to the left."));
 		addOptionAndPosition(new KeyMapper("Cam45DegDec", "Rotate Right (45°)", "Turns your camera by 45 degrees to the right."));
+		addOptionAndPosition(new KeyMapper("cam2quest", "Point Camera to Quest", "Turns your camera so that the quest is to your north."));
+		addOptionAndPosition(new KeyMapper("enterPortal", "Portal Enter", "Enters nearest portal."));
 		addOptionAndPosition(new ChoiceOption("instaSelect",makeOnOffLabels(),[true,false],"Instantly Select All Items","When turned on, a right click on the trade window will select all your items instantly. When turned off, selects only the items of same type, smoothy, like an actual player.",null));
 	}
     

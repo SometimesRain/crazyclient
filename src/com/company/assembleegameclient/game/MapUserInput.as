@@ -773,20 +773,24 @@ public class MapUserInput {
             case Parameters.data_.TextThessal:
                 gs_.gsc_.playerText("He lives and reigns and conquers the world");
                 break;
+			//
             case Parameters.data_.msg1key:
-				if (Parameters.data_.msg1 == null) break;
+				if (Parameters.data_.msg1 == null)
+					break;
+					
 				parseChatMessage.dispatch(Parameters.data_.msg1);
-                //gs_.gsc_.playerText(Parameters.data_.msg1);
                 break;
             case Parameters.data_.msg2key:
-				if (Parameters.data_.msg2 == null) break;
+				if (Parameters.data_.msg2 == null)
+					break;
+					
 				parseChatMessage.dispatch(Parameters.data_.msg2);
-                //gs_.gsc_.playerText(Parameters.data_.msg2);
                 break;
             case Parameters.data_.msg3key:
-				if (Parameters.data_.msg3 == null) break;
+				if (Parameters.data_.msg3 == null)
+					break;
+					
 				parseChatMessage.dispatch(Parameters.data_.msg3);
-                //gs_.gsc_.playerText(Parameters.data_.msg3);
                 break;
 			//
             case Parameters.data_.SkipRenderKey:
@@ -912,9 +916,11 @@ public class MapUserInput {
             case Parameters.data_.kdbPre3:
 				activatePreset(3);
                 break;
-            /*case Parameters.data_.resetCHP:
+            case Parameters.data_.resetCHP:
 				player.chp = player.hp_;
-                break;*/
+				player.cmaxhp = player.maxHP_;
+				player.cmaxhpboost = player.maxHPBoost_;
+                break;
             case Parameters.data_.pbToggle:
 				Parameters.data_.perfectBomb = !Parameters.data_.perfectBomb;
 				Parameters.save();

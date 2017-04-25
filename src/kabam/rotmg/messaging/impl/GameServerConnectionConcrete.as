@@ -292,6 +292,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 	public static var ignoredBag:int = -1;
 	public static var receivingGift:Vector.<Boolean>;
 	public static var sendingGift:Vector.<Boolean>;
+	public static var revivedMobs:int = 0;
 	
 	private const servs:Vector.<String> = new <String>["EUEast", "EUNorth2", "EUNorth", "USWest", "USMidWest", "EUWest", "USEast", "AsiaSouthEast",
 										"USSouth", "USSouthWest", "EUSouthWest", "USEast3", "USWest2", "USMidWest2", "USEast2", "USNorthWest",
@@ -1437,7 +1438,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         var _local_5:Number;
         var _local_2:GameObject = gs_.map.goDict_[_arg_1.ownerId_];
         if (_local_2 == null || _local_2.dead_) {
-            this.shootAck(-1); //this causes problems
+            this.shootAck(-1); //this causes problems, solved
             return;
         }
         var _local_3:int;
@@ -1712,8 +1713,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 				if (_local_2.objectId_ == playerId_ && _arg_1.color_ == 0x00ff00) {
 					var short:String = _arg_1.message.substr(48);
 					var value:int = parseInt(short.substr(0, short.length - 3));
-					//player.chp += value; //player health
-					//player.hp_ += value; //disabled for now
+					player.chp += value; //player health
 				}
 				_local_4 = new CharacterStatusText(_local_2, _arg_1.color_, 1000);
 				_local_4.setStringBuilder(_local_3);
@@ -1780,7 +1780,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         return (true);
     }
 	
-	/*private function handleSeal(go:Player):void {
+	private function handleSeal(go:Player):void {
 		if (go == null) {
 			return;
 		}
@@ -1827,17 +1827,17 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 			}
 		}
 		inthpbuff = int(hpbuff);
-		if (player.maxHPBoost_ == player.getItemHp()) { //max hp is not boosted -> boost
-			player.maxHPBoost_ += inthpbuff;
-			player.maxHP_ += inthpbuff;
+		if (player.cmaxhpboost == player.getItemHp()) { //max hp is not boosted -> boost
+			player.cmaxhp += inthpbuff;
+			player.cmaxhpboost += inthpbuff;
 			player.remBuff.push(dur+getTimer());
 		}
 		player.chp += hpbuff;
-		if (player.chp > player.maxHP_) { //no overflow
-			player.chp = player.maxHP_;
+		if (player.chp > player.cmaxhp) { //no overflow
+			player.chp = player.cmaxhp;
 		}
 		player.notifyPlayer("+"+inthpbuff, 0x00ff00, 1500); //paladin buff notification
-	}*/
+	}
 
     private function onShowEffect(_arg_1:ShowEffect):void {
         var _local_3:GameObject;
@@ -1845,11 +1845,11 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         var _local_5:Point;
         var _local_6:uint;
         var _local_2:AbstractMap = gs_.map;
-		/*if (_arg_1.effectType_ == 5) { //paladin heal area
+		if (_arg_1.effectType_ == 5) { //paladin heal area
 			if (_arg_1.color_ == 0xff0000) {
 				handleSeal((_local_2.goDict_[_arg_1.targetObjectId_]) as Player);
 			}
-		}*/
+		}
         if (Parameters.data_.AntiLag) {
 			switch (_arg_1.effectType_) {
 				case ShowEffect.THROW_EFFECT_TYPE: //4 medusa bomb + huntress & assassin ability
@@ -2042,11 +2042,19 @@ public class GameServerConnectionConcrete extends GameServerConnection {
             switch (_local_7.statType_) {
                 case StatData.MAX_HP_STAT:
                     _arg_1.maxHP_ = _local_8;
+					if (_arg_1 == player) {
+						if (player.cmaxhp == -1 || Parameters.data_.autoCorrCHP) {
+							player.cmaxhp = _local_8;
+						}
+					}
                     break;
                 case StatData.HP_STAT:
                     _arg_1.hp_ = _local_8;
 					if (_arg_1 == player) {
                         player.checkAutonexus();
+						if (player.chp == -1 || Parameters.data_.autoCorrCHP) {
+							player.chp = _local_8;
+						}
 					}
                     break;
                 case StatData.SIZE_STAT:
@@ -2059,8 +2067,13 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 						}
 						break;
 					}
-					if (Parameters.data_.grandmaMode && _arg_1.objectType_ != 1860 && _arg_1.objectType_ != 1284 && (_arg_1 is Container || ObjectLibrary.typeToDisplayId_[_arg_1.objectType_].indexOf("Chest") != -1)) {
-						_arg_1.size_ = 150;
+					if (Parameters.data_.grandmaMode && _arg_1.objectType_ != 1859 && _arg_1.objectType_ != 1285 && _arg_1.objectType_ != 1860 && _arg_1.objectType_ != 1284) {
+						if (_arg_1 is Container) {
+							_arg_1.size_ = 150;
+						}
+						else if (ObjectLibrary.typeToDisplayId_[_arg_1.objectType_].indexOf("Chest") != -1 || ObjectLibrary.typeToDisplayId_[_arg_1.objectType_].indexOf("Loot Balloon") != -1) {
+							_arg_1.size_ = 175;
+						}
 					}
 					else {
 						_arg_1.size_ = _local_8 < 100 ? _local_8 : 100; //resize if size > 100
@@ -2198,6 +2211,11 @@ public class GameServerConnectionConcrete extends GameServerConnection {
                     break;
                 case StatData.MAX_HP_BOOST_STAT:
                     _local_4.maxHPBoost_ = _local_8;
+					if (_arg_1 == player) {
+						if (player.cmaxhpboost == -1 || Parameters.data_.autoCorrCHP) {
+							player.cmaxhpboost = _local_8;
+						}
+					}
                     break;
                 case StatData.MAX_MP_BOOST_STAT:
                     _local_4.maxMPBoost_ = _local_8;
@@ -2334,6 +2352,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
     }
 
     private function processObjectStatus(_arg_1:ObjectStatusData, _arg_2:int, _arg_3:int):void {
+		var timer:int = getTimer();
         var _local_8:int;
         var _local_9:int;
         var _local_10:int;
@@ -2350,7 +2369,13 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         if (_local_5 == null) {
             return;
         }
-		_local_5.dead_ = false; //ensures no dead entities are updated
+		//
+		if (_local_5.lastUpdate + 250 <= timer) { //0.25s and the mob is considered dead
+			_local_5.dead_ = false; //ensures no dead entities are updated
+			revivedMobs++;
+		}
+		_local_5.lastUpdate = timer;
+		//
         var _local_6:Boolean = (_arg_1.objectId_ == this.playerId_);
         if (!_arg_2 == 0 && !_local_6) {
             _local_5.onTickPos(_arg_1.pos_.x_, _arg_1.pos_.y_, _arg_2, _arg_3);
@@ -2428,6 +2453,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 			player.questMob2 = null;
 			player.questMob3 = null;
 			player.collect = 0;
+			player.remBuff.length = 0;
 		}
 		//else addTextLine.dispatch(ChatMessage.make("*Error*","Player not found"));
 		Parameters.data_.curBoss = 3368; //set first boss to bes
@@ -2628,7 +2654,6 @@ public class GameServerConnectionConcrete extends GameServerConnection {
                 _local_5 = new Vector.<uint>();
                 _local_5.push(_arg_1.effect_);
             }
-			player.subtractHealth(_local_4);
             this.player.damage(_arg_1.origType_, _local_4, _local_5, false, null);
         }
         this.aoeAck(gs_.lastUpdate_, this.player.x_, this.player.y_);

@@ -117,9 +117,11 @@ public class Player extends Character {
     private var useBuyPotionSignal:UseBuyPotionSignal;
 	private var lastPotionUse:int = 0;
 	
-	//public var chp:Number = -1;
-	//private var vitTime:int = -1;
-	//public var remBuff:Vector.<int> = new <int>[];
+	public var chp:Number = -1;
+	public var cmaxhp:int = -1;
+	public var cmaxhpboost:int = -1;
+	private var vitTime:int = -1;
+	public var remBuff:Vector.<int> = new <int>[];
 
     public var xpTimer:int;
     public var skinId:int;
@@ -328,7 +330,7 @@ public class Player extends Character {
             this.levelUpEffect(TextKey.PLAYER_LEVELUP);
         }
 		if (objectId_ == map_.player_.objectId_) {
-			//chp = maxHP_ + maxHPBoost_;
+			chp = maxHP_;
 			var objxml:XML = ObjectLibrary.xmlLibrary_[objectType_];
 			var avggains:Array = new Array();
 			var msgout:String = "You rolled ";
@@ -931,7 +933,7 @@ public class Player extends Character {
 	private function selectSlot(slot:int):void {
 		selected[slot] = !selected[slot];
 		TradeInventory.staSlots[slot].setIncluded(selected[slot]);
-		nextSelect = getTimer() + 150;
+		nextSelect = getTimer() + 175;
 		map_.gs_.gsc_.changeTrade(selected);
 	}
 	
@@ -956,9 +958,16 @@ public class Player extends Character {
 		startTime = getTimer();
 	}
 
-    /*override public function damage(_arg_1:int, _arg_2:int, _arg_3:Vector.<uint>, _arg_4:Boolean, _arg_5:Projectile):void {
+    override public function damage(_arg_1:int, _arg_2:int, _arg_3:Vector.<uint>, _arg_4:Boolean, _arg_5:Projectile):void {
 		negateHealth(_arg_2);
         super.damage(_arg_1, _arg_2, _arg_3, false, _arg_5);
+    }
+
+    public function damageWithoutAck(amount:int):void {
+		negateHealth(amount);
+		showDamageText(amount, false);
+		//if armor piercing bullets inflict an effect the color will not be correct
+		//can be fixed by including projprops in parameters
     }
 	
 	public function negateHealth(amount:int):void {
@@ -990,7 +999,7 @@ public class Player extends Character {
 			}
 		}
 		return total;
-	}*/
+	}
 	
 	public function checkAutonexus():void {
 		if (this == map_.player_ && !map_.gs_.isSafeMap) {
@@ -1010,29 +1019,11 @@ public class Player extends Character {
 			}
 		}
 	}
-	
-	public function subtractHealth(param1:int):void {
-		this.hp_ = this.hp_ - param1;
-		//show damage notif
-		this.checkHealth();
-	}
-	
-	public function checkHealth():void {
-		var _loc1_:int;
-		if (!map_.gs_.isSafeMap) {
-			_loc1_ = this.hp_ * 100 / this.maxHP_;
-			if (_loc1_ <= 15) {
-				//show health at which you were nexused
-				addTextLine.dispatch(ChatMessage.make("", "You were saved at "+hp_+" health")); //hp.toFixed(0)
-				this.map_.gs_.gsc_.escape();
-			}
-		}
-	}
 
     override public function update(_arg_1:int, _arg_2:int):Boolean {
 		var i:int;
 		if (this == map_.player_) {
-			/*if (vitTime != -1) {
+			if (vitTime != -1) {
 				if (isBleeding()) { //no vit and -20 hp/s
 					chp -= (getTimer() - vitTime) * 0.02;
 				}
@@ -1057,10 +1048,9 @@ public class Player extends Character {
 				//stop overflow
 				if (chp > maxHP_) {
 					chp = maxHP_;
-				}*/
-				checkHealth();
-			/*}
-			vitTime = getTimer();*/
+				}
+			}
+			vitTime = getTimer();
 			var qid:int = -1; 
 			if (map_.quest_.getObject(1) != null) { //questbar id prerequisite
 				var qob:GameObject = map_.quest_.getObject(1);
@@ -1078,19 +1068,19 @@ public class Player extends Character {
 			if (map_.gs_.gsc_.oncd && getTimer() >= nextTeleportAt_) { //teleport timer
 				map_.gs_.gsc_.retryTeleport();
 			}
-			/*if (remBuff.length > 0 && getTimer() >= remBuff[remBuff.length - 1]) { //how to deal with double delete?
-				var mhpboost:int = maxHPBoost_;
+			if (remBuff.length > 0 && getTimer() >= remBuff[remBuff.length - 1]) { //remove paladin buff
+				//var mhpboost:int = maxHPBoost_;
 				var itemhp:int = getItemHp();
-				if (itemhp != mhpboost && !isHpBoosted()) {
-					//addTextLine.dispatch(ChatMessage.make("", remBuff.length+": no change"));
+				if (itemhp != cmaxhpboost && !isHpBoosted()) {
+					cmaxhp -= cmaxhpboost - itemhp;
+					cmaxhpboost = itemhp;
+				}
+				/*if (itemhp != mhpboost && !isHpBoosted()) {
 					maxHP_ -= mhpboost - itemhp;
 					maxHPBoost_ = itemhp;
-					//notifyPlayer("-"+(mhpboost - itemhp), 0xff0000, 1500);
-				}
-				//else addTextLine.dispatch(ChatMessage.make("", remBuff.length+": no change"));
-				remBuff.length--;
-				//addTextLine.dispatch(ChatMessage.make("", "set to "+remBuff.length));
-			}*/
+				}*/
+				remBuff.pop();
+			}
 			if (wantedList == null) //autoloot wanted list
 			{
 				wantedList = genWantedList();
@@ -1307,16 +1297,15 @@ public class Player extends Character {
                 return (false);
             }
         }
-        if ((((((((((map_.player_ == this)) && ((square_.props_.maxDamage_ > 0)))) && (((square_.lastDamage_ + 500) < _arg_1)))) && (!(isInvincible())))) && ((((square_.obj_ == null)) || (!(square_.obj_.props_.protectFromGroundDamage_)))))) {
+		if (map_.player_ == this && square_.props_.maxDamage_ > 0 && square_.lastDamage_ + 500 < _arg_1 && !isInvincible() && (square_.obj_ == null || !square_.obj_.props_.protectFromGroundDamage_)) {
             _local_8 = map_.gs_.gsc_.getNextDamage(square_.props_.minDamage_, square_.props_.maxDamage_);
             _local_9 = new Vector.<uint>();
             _local_9.push(ConditionEffect.GROUND_DAMAGE);
-			subtractHealth(_local_8);
-            damage(-1, _local_8, _local_9, (hp_ <= _local_8), null);
+            damage(-1, _local_8, _local_9, hp_ < _local_8, null);
             map_.gs_.gsc_.groundDamage(_arg_1, x_, y_);
             square_.lastDamage_ = _arg_1;
         }
-		checkAutonexus(); //unnecessary?
+		//checkAutonexus(); //unnecessary?
         return true;
     }
 

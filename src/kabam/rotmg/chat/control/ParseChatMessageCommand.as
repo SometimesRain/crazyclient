@@ -81,7 +81,7 @@ public class ParseChatMessageCommand {
             addTextLine.dispatch(ChatMessage.make("*Help*","Map Scale: " + Parameters.data_.mscale + " - Usage: /mscale <any decimal number>."));
             return true;
         }
-        var _loc3_:Array = param1.match("/mscale (\\d*\\.*\\d+)$");
+        var _loc3_:Array = param1.match("^/mscale (\\d*\\.*\\d+)$");
         if(_loc3_ != null) {
             Parameters.data_.mscale = _loc3_[1];
             Parameters.save();
@@ -109,7 +109,7 @@ public class ParseChatMessageCommand {
         var _loc2_:Boolean = false;
         var _loc3_:int = 0;
 		var itid:int;
-        _loc1_ = lower.match("/aex (\\d+)$");
+        _loc1_ = lower.match("^/aex (\\d+)$");
         if (_loc1_ != null) {
             _loc2_ = false;
             for each(_loc3_ in Parameters.data_.AAException) {
@@ -131,7 +131,7 @@ public class ParseChatMessageCommand {
             Parameters.save();
             return true;
         }
-        _loc1_ = lower.match("/aig (\\d+)$");
+        _loc1_ = lower.match("^/aig (\\d+)$");
         if (_loc1_ != null) {
             _loc2_ = false;
             for each(_loc3_ in Parameters.data_.AAIgnore) {
@@ -153,7 +153,7 @@ public class ParseChatMessageCommand {
             Parameters.save();
             return true;
         }
-        _loc1_ = lower.match("/asp (.+)$");
+        _loc1_ = lower.match("^/asp (.+)$");
         if (_loc1_ != null) {
             _loc2_ = false;
             for each(_loc3_ in Parameters.data_.spamFilter) {
@@ -170,7 +170,7 @@ public class ParseChatMessageCommand {
             Parameters.save();
             return true;
         }
-        _loc1_ = lower.match("/afr (\\w+)$");
+        _loc1_ = lower.match("^/afr (\\w+)$");
         if (_loc1_ != null) {
             _loc2_ = false;
             for each(_loc3_ in Parameters.data_.friendList2) {
@@ -187,7 +187,7 @@ public class ParseChatMessageCommand {
             Parameters.save();
             return true;
         }
-        _loc1_ = lower.match("/atp (\\w+)$");
+        _loc1_ = lower.match("^/atp (\\w+)$");
         if (_loc1_ != null) {
             _loc2_ = false;
             for each(_loc3_ in Parameters.data_.tptoList) {
@@ -204,7 +204,7 @@ public class ParseChatMessageCommand {
             Parameters.save();
             return true;
         }
-        _loc1_ = lower.match("/apr (\\d+)$");
+        _loc1_ = lower.match("^/apr (\\d+)$");
         if (_loc1_ != null) {
             _loc2_ = false;
             for each(_loc3_ in Parameters.data_.AAPriority) {
@@ -226,7 +226,7 @@ public class ParseChatMessageCommand {
             Parameters.save();
             return true;
         }
-        _loc1_ = lower.match("/ali (.+)$");
+        _loc1_ = lower.match("^/ali (.+)$");
         if (_loc1_ != null) {
 			itid = findMatch2(_loc1_[1]);
             for each(_loc3_ in Parameters.data_.lootIgnore) {
@@ -253,7 +253,7 @@ public class ParseChatMessageCommand {
         var _loc2_:Boolean = false;
         var _loc4_:int = 0;
         var itid:int = 0;
-        _loc1_ = lower.match("/rig (\\d+)$");
+        _loc1_ = lower.match("^/rig (\\d+)$");
         if (_loc1_ != null) {
             _loc2_ = false;
             _loc4_ = 0;
@@ -277,7 +277,7 @@ public class ParseChatMessageCommand {
             Parameters.save();
             return true;
         }
-        _loc1_ = lower.match("/rex (\\d+)$");
+        _loc1_ = lower.match("^/rex (\\d+)$");
         if (_loc1_ != null) {
             _loc2_ = false;
             _loc4_ = 0;
@@ -301,7 +301,7 @@ public class ParseChatMessageCommand {
             Parameters.save();
             return true;
         }
-        _loc1_ = lower.match("/rsp (.+)$");
+        _loc1_ = lower.match("^/rsp (.+)$");
         if (_loc1_ != null) {
             _loc2_ = false;
             _loc4_ = 0;
@@ -320,7 +320,7 @@ public class ParseChatMessageCommand {
             Parameters.save();
             return true;
         }
-        _loc1_ = lower.match("/rfr (\\w+)$");
+        _loc1_ = lower.match("^/rfr (\\w+)$");
         if (_loc1_ != null) {
             _loc2_ = false;
             _loc4_ = 0;
@@ -339,7 +339,7 @@ public class ParseChatMessageCommand {
             Parameters.save();
             return true;
         }
-        _loc1_ = lower.match("/rtp (\\w+)$");
+        _loc1_ = lower.match("^/rtp (\\w+)$");
         if (_loc1_ != null) {
             _loc2_ = false;
             _loc4_ = 0;
@@ -358,7 +358,7 @@ public class ParseChatMessageCommand {
             Parameters.save();
             return true;
         }
-        _loc1_ = lower.match("/rpr (\\d+)$");
+        _loc1_ = lower.match("^/rpr (\\d+)$");
         if (_loc1_ != null) {
             _loc2_ = false;
             _loc4_ = 0;
@@ -382,7 +382,7 @@ public class ParseChatMessageCommand {
             Parameters.save();
             return true;
         }
-        _loc1_ = lower.match("/rli (.+)$");
+        _loc1_ = lower.match("^/rli (.+)$");
         if (_loc1_ != null) {
 			itid = findMatch2(_loc1_[1]);
 			//
@@ -625,6 +625,10 @@ public class ParseChatMessageCommand {
 			case "/tr":
 				gsc.playerText("/trade "+lastTellTo);
 				return true;
+			case "/revivedmobs":
+			case "/rm":
+				addTextLine.dispatch(ChatMessage.make("*Help*", "Invisible enemies revived "+GameServerConnectionConcrete.revivedMobs));
+				return true;
 			case "/fame":
 				var playTime:int = (getTimer() - PlayGameCommand.startTime) / 60000;
 				var fpm:Number;
@@ -684,23 +688,23 @@ public class ParseChatMessageCommand {
 				}
 				return true;
 		}
-		var splice:Array = data.toLowerCase().match("/player (\\w+)$")
+		var splice:Array = data.toLowerCase().match("^/player (\\w+)$")
 		if (splice != null) {
 			navigateToURL(new URLRequest("https://www.realmeye.com/player/" + splice[1]), "_blank");
 			return true;
 		}
-		splice = data.toLowerCase().match("/sell (\\d{1,2})$"); //incl backpack
+		splice = data.toLowerCase().match("^/sell (\\d{1,2})$"); //incl backpack
 		if (splice != null) {
 			var slot:int = int(splice[1]) + 3;
 			navigateToURL(new URLRequest("https://www.realmeye.com/offers-to/buy/" + GameServerConnectionConcrete.PLAYER_.equipment_[slot] + "/2793"), "_blank");
 			return true;
 		}
-		splice = data.toLowerCase().match("/re$");
+		splice = data.toLowerCase().match("^/re$");
 		if (splice != null) {
 			gsc.playerText(lastMsg);
 			return true;
 		}
-		splice = data.toLowerCase().match("/re (\\w+)$");
+		splice = data.toLowerCase().match("^/re (\\w+)$");
 		if (splice != null) {
 			var newMsg:String = "/tell " + splice[1] + " " + lastTell;
 			gsc.playerText(newMsg);
@@ -708,14 +712,14 @@ public class ParseChatMessageCommand {
 			lastMsg = newMsg;
 			return true;
 		}
-		splice = data.match("/name (.+)$");
+		splice = data.match("^/name (.+)$");
 		if (splice != null) {
 			Parameters.data_.fakeName = splice[1];
 			Parameters.save();
 			hudModel.gameSprite.hudView.characterDetails.setName("");
 			return true;
 		}
-		splice = data.toLowerCase().match("/timer (\\d+) ?(\\d*)$");
+		splice = data.toLowerCase().match("^/timer (\\d+) ?(\\d*)$");
 		if (splice != null) {
 			if (splice[2] == "") {
 				player.startTimer(splice[1], 1000);
@@ -725,29 +729,29 @@ public class ParseChatMessageCommand {
 			}
 			return true;
 		}
-		splice = data.toLowerCase().match("/autopot (\\d+)$");
+		splice = data.toLowerCase().match("^/autopot (\\d+)$");
 		if (splice != null) {
 			Parameters.data_.autoPot = splice[1];
 			Parameters.save();
             addTextLine.dispatch(ChatMessage.make("*Help*","Auto pot percentage set to "+splice[1]));
 			return true;
 		}
-		splice = data.toLowerCase().match("/autonex (\\d+)$");
+		splice = data.toLowerCase().match("^/autonex (\\d+)$");
 		if (splice != null) {
 			Parameters.data_.AutoNexus = splice[1];
 			Parameters.save();
             addTextLine.dispatch(ChatMessage.make("*Help*","Auto nexus percentage set to "+splice[1]));
 			return true;
 		}
-		splice = data.toLowerCase().match("/autoheal (\\d+)$");
+		splice = data.toLowerCase().match("^/autoheal (\\d+)$");
 		if (splice != null) {
 			Parameters.data_.autoHealP = splice[1];
 			Parameters.save();
             addTextLine.dispatch(ChatMessage.make("*Help*","Auto heal percentage set to "+splice[1]));
 			return true;
 		}
-		splice = data.toLowerCase().match("/give (\\w+) (\\d{1,8})$");
-		//splice = data.match("/give (\\w+) ([0-1])?([0-1])?([0-1])?([0-1])?([0-1])?([0-1])?([0-1])?([0-1])$"); //such efficiency
+		splice = data.toLowerCase().match("^/give (\\w+) (\\d{1,8})$");
+		//splice = data.match("^/give (\\w+) ([0-1])?([0-1])?([0-1])?([0-1])?([0-1])?([0-1])?([0-1])?([0-1])$"); //such efficiency
 		if (splice != null) {
 			gsc.playerText("/tell "+splice[1]+" g="+splice[2]);
 			gsc.requestTrade(splice[1]);
@@ -763,22 +767,22 @@ public class ParseChatMessageCommand {
 			GameServerConnectionConcrete.sendingGift = result;
 			return true;
 		}
-		/*splice = data.match("/find (\\d+)$");
+		/*splice = data.match("^/find (\\d+)$");
 		if (splice != null) {
 			findItem(parseInt(splice[1]));
 			return true;
 		}*/
-		splice = data.toLowerCase().match("/find (.+)$");
+		splice = data.toLowerCase().match("^/find (.+)$");
 		if (splice != null) {
 			findItem(findMatch2(splice[1])); //length-match
 			return true;
 		}
-		/*splice = data.match("/dc (\\w+)$");
+		/*splice = data.match("^/dc (\\w+)$");
 		if (splice != null) {
 			gsc.playerText("/tell "+splice[1]+" whats that name dude?");
 			return true;
 		}*/
-		splice = data.toLowerCase().match("/take (.+)$");
+		splice = data.toLowerCase().match("^/take (.+)$");
 		if (splice != null) {
 			if (hudModel.gameSprite.map.name_ != "Vault") {
 				addTextLine.dispatch(ChatMessage.make("*Help*", "Use the command in vault and run over the chest you wish to interact with."));
@@ -793,7 +797,7 @@ public class ParseChatMessageCommand {
             addTextLine.dispatch(ChatMessage.make("*Help*","Taking "+ObjectLibrary.getIdFromType(player.collect)+"(s) from vault chests"));
 			return true;
 		}
-		splice = data.toLowerCase().match("/put (.+)$");
+		splice = data.toLowerCase().match("^/put (.+)$");
 		if (splice != null) {
 			if (hudModel.gameSprite.map.name_ != "Vault") {
 				addTextLine.dispatch(ChatMessage.make("*Help*", "Use the command in vault and run over the chest you wish to interact with."));
@@ -808,7 +812,7 @@ public class ParseChatMessageCommand {
             addTextLine.dispatch(ChatMessage.make("*Help*","Putting "+ObjectLibrary.getIdFromType(0 - player.collect)+"(s) to vault chests"));
 			return true;
 		}
-		splice = data.toLowerCase().match("/buy (\\w+) ?(\\w*)$");
+		splice = data.toLowerCase().match("^/buy (\\w+) ?(\\w*)$");
 		if (splice != null) {
 			//navigateToURL(new URLRequest("https://www.realmeye.com/offers-to/sell/" + findMatch2(splice[1]) + "/2793"), "_blank");
 			if (splice[2] == "") {
@@ -819,7 +823,7 @@ public class ParseChatMessageCommand {
 			}
 			return true;
 		}
-		splice = data.toLowerCase().match("/sell (\\w+) ?(\\w*)$");
+		splice = data.toLowerCase().match("^/sell (\\w+) ?(\\w*)$");
 		if (splice != null) {
             //addTextLine.dispatch(ChatMessage.make("*Help*", splice[1]+" "+splice[2]));
 			if (splice[2] == "") {
@@ -830,7 +834,7 @@ public class ParseChatMessageCommand {
 			}
 			return true;
 		}
-		splice = data.toLowerCase().match("/dye1 (.+)$");
+		splice = data.toLowerCase().match("^/dye1 (.+)$");
 		if (splice != null) {
 			if (splice[1] == "none") {
 				Parameters.data_.setTex1 = 0;
@@ -844,7 +848,7 @@ public class ParseChatMessageCommand {
 			}
 			return true;
 		}
-		splice = data.toLowerCase().match("/dye2 (.+)$");
+		splice = data.toLowerCase().match("^/dye2 (.+)$");
 		if (splice != null) {
 			if (splice[1] == "none") {
 				Parameters.data_.setTex2 = 0;
@@ -858,7 +862,7 @@ public class ParseChatMessageCommand {
 			}
 			return true;
 		}
-		splice = data.toLowerCase().match("/dye (.+)$");
+		splice = data.toLowerCase().match("^/dye (.+)$");
 		if (splice != null) {
 			if (splice[1] == "none") {
 				Parameters.data_.setTex1 = 0;
@@ -877,7 +881,7 @@ public class ParseChatMessageCommand {
 			}
 			return true;
 		}
-		splice = data.toLowerCase().match("/skin (.+)$");
+		splice = data.toLowerCase().match("^/skin (.+)$");
 		if (splice != null) {
 			if (splice[1] == "none") {
 				Parameters.data_.nsetSkin[0] = "";
@@ -893,12 +897,12 @@ public class ParseChatMessageCommand {
 			}
 			return true;
 		}
-		splice = data.toLowerCase().match("/tp (\\w+)$");
+		splice = data.toLowerCase().match("^/tp (\\w+)$");
 		if (splice != null) {
 			gsc.teleport(fixedName(splice[1]).name_);
 			return true;
 		}
-		splice = data.toLowerCase().match("/follow (\\w+)$");
+		splice = data.toLowerCase().match("^/follow (\\w+)$");
 		if (splice != null) {
 			var target:GameObject = fixedName(splice[1]);
 			player.notifyPlayer("Following "+target.name_);
@@ -906,16 +910,16 @@ public class ParseChatMessageCommand {
 			player.followTarget = target;
 			return true;
 		}
-		splice = data.toLowerCase().match("/setspd (-?\\d+)$");
+		splice = data.toLowerCase().match("^/setspd (-?\\d+)$");
 		if (splice != null) {
 			player.speed_ = parseInt(splice[1]);
 			return true;
 		}
-		/*splice = data.match("/spam (.+)$");
+		/*splice = data.match("^/spam (.+)$");
 		if (splice != null) {
 			return true;
 		}*/
-		/*splice = data.match("/b (.+)");
+		/*splice = data.match("^/b (.+)");
 		if (splice != null) {
 			ExternalInterface.call("SendFromFlash", "Message", "", splice[1]);
 			return true;
@@ -1112,7 +1116,7 @@ public class ParseChatMessageCommand {
 	}
     
     private function custMessages() : Boolean {
-		var splice2:Array = data.match("/setmsg (\\d) (.+)$")
+		var splice2:Array = data.match("^/setmsg (\\d) (.+)$")
 		if (splice2 == null) {
 			return false;
 		}
@@ -1131,7 +1135,7 @@ public class ParseChatMessageCommand {
 	}
     
     private function effCom() : Boolean {
-		var splice2:Array = data.match("/eff (\\d) (\\d+) (.+)$")
+		var splice2:Array = data.match("^/eff (\\d) (\\d+) (.+)$")
 		if (splice2 == null) {
 			return false;
 		}
