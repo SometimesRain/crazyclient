@@ -3,6 +3,7 @@ import com.company.assembleegameclient.objects.GameObject;
 import com.company.assembleegameclient.objects.Player;
 import com.company.assembleegameclient.objects.TextureDataConcrete;
 import com.company.assembleegameclient.parameters.Parameters;
+import com.company.assembleegameclient.util.CJDateUtil;
 import kabam.rotmg.game.commands.PlayGameCommand;
 import kabam.rotmg.messaging.impl.GameServerConnectionConcrete;
 
@@ -25,6 +26,7 @@ import kabam.rotmg.news.view.NewsTicker;
 import kabam.rotmg.servers.api.ServerModel;
 import kabam.rotmg.text.view.stringBuilder.LineBuilder;
 import kabam.rotmg.ui.model.HUDModel;
+import flash.utils.getTimer;
 
 public class TextHandler {
 
@@ -32,9 +34,6 @@ public class TextHandler {
     private const ENEMY_SPEECH_COLORS:TextColors = new TextColors(5644060, 16549442, 13484223);
     private const TELL_SPEECH_COLORS:TextColors = new TextColors(2493110, 61695, 13880567);
     private const GUILD_SPEECH_COLORS:TextColors = new TextColors(0x3E8A00, 10944349, 13891532);
-	public static var caller:String = "";
-	public static var afk:Boolean = false;
-	public static var afkTells:Vector.<ChatMessage> = new <ChatMessage>[];
 
     [Inject]
     public var account:Account;
@@ -55,7 +54,12 @@ public class TextHandler {
     [Inject]
     public var friendModel:FriendModel;
 	
-	private var now:Date
+	public static var caller:String = "";
+	public static var afk:Boolean = false;
+	public static var afkTells:Vector.<ChatMessage> = new <ChatMessage>[];
+	public static var sendBacks:Vector.<String> = new <String>[];
+	public static var afkMsg:String = "";
+	private var now:CJDateUtil;
 
     public function execute(_arg_1:Text):void {
         var _local_3:String;
@@ -99,8 +103,13 @@ public class TextHandler {
             }
             else if (_arg_1.recipient_ == this.model.player.name_) {
 				if (afk) {
-					now = new Date();
-					afkTells.push(ChatMessage.make("["+now.getHours()+":"+now.getMinutes()+"] "+_arg_1.name_, _arg_1.text_, -1, _arg_1.numStars_, _arg_1.recipient_))
+					now = new CJDateUtil();
+					afkTells.push(ChatMessage.make("["+now.getFormattedTime()+ "] " + _arg_1.name_, _arg_1.text_, -1, _arg_1.numStars_, _arg_1.recipient_))
+					if (newSender(_arg_1.name_) && afkMsg != "") {
+						p.afkMsg = "/tell " + _arg_1.name_ +" " + afkMsg;
+						p.sendStr = getTimer() + 1337;
+						sendBacks.push(_arg_1.name_);
+					}
 				}
 				if (_arg_1.name_ != "MrEyeball") {
 					tellModel.push(_arg_1.name_);
@@ -163,6 +172,15 @@ public class TextHandler {
             this.addTextAsTextLine(_arg_1);
         }
     }
+	
+	private function newSender(name:String):Boolean {
+		for each(var match:String in sendBacks) {
+			if (match == name) {
+				return false;
+			}
+		}
+		return true;
+	}
 	
 	private function isLocalFriend(name:String):Boolean {
 		for each (var str:String in Parameters.data_.friendList2) {

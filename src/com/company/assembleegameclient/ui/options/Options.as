@@ -679,7 +679,6 @@ public class Options extends Sprite {
 		addOptionAndPosition(new ChoiceOption("showPests", makeOnOffLabels(), [true, false], "Show Pets", "Animal abuse.", null));
         addOptionAndPosition(new ChoiceOption("STColor", makeOnOffLabels(), [true, false], "Dynamic Color", "Changes the status text color based on the percentage of health the player or enemy has.", null));
         addOptionAndPosition(new ChoiceOption("showDyes", makeOnOffLabels(), [true, false], "Show Dyes", "Makes every player use the default dye.", null));
-		//addOptionAndPosition(new ChoiceOption("sizer", makeOnOffLabels(), [true, false], "Shrink Large Objects", "Sets the \"size\" stat to 100.", null));
 		addOptionAndPosition(new ChoiceOption("InvViewer",makeOnOffLabels(),[true,false],"Inventory Viewer","See the inventory items of other players.",null));
 		addOptionAndPosition(new ChoiceOption("StatsViewer",makeOnOffLabels(),[true,false],"Stat Viewer","See the stats of other players.",null));
 		addOptionAndPosition(new ChoiceOption("lockHighlight",makeOnOffLabels(),[true,false],"Highlight Locked Players","Highlights locked players name and minimap dot. Requires reloading of area for changes to take effect.",null));
@@ -688,6 +687,7 @@ public class Options extends Sprite {
 		addOptionAndPosition(new ChoiceOption("showMobInfo",makeOnOffLabels(),[true,false],"Display Mob Info","Display mob name and id. Useful for finding ids for use with auto aim exception and ignore list.",showMobInfo_));
 		addOptionAndPosition(new ChoiceOption("questClosest",makeOnOffLabels(),[true,false],"Show Closest Player to Quest","Extends the quest bar to show closest player to quest and the distance from it.",null));
         addOptionAndPosition(new ChoiceOption("clientSwap",makeOnOffLabels(),[true,false],"Disable Client Swap","Prevents items from teleporting out of your inventory or moving back after switching positions.",null));
+		addOptionAndPosition(new ChoiceOption("sizer", makeOnOffLabels(), [true, false], "Shrink Large Objects", "The default setting on other version of CrazyClient, now toggleable.", null));
     }
         
     private function nillyOther() : void
@@ -711,7 +711,7 @@ public class Options extends Sprite {
 		addOptionAndPosition(new KeyMapper("Cam45DegDec", "Rotate Right (45°)", "Turns your camera by 45 degrees to the right."));
 		addOptionAndPosition(new KeyMapper("cam2quest", "Point Camera to Quest", "Turns your camera so that the quest is to your north."));
 		addOptionAndPosition(new KeyMapper("enterPortal", "Portal Enter", "Enters nearest portal."));
-		addOptionAndPosition(new ChoiceOption("instaSelect",makeOnOffLabels(),[true,false],"Instantly Select All Items","When turned on, a right click on the trade window will select all your items instantly. When turned off, selects only the items of same type, smoothy, like an actual player.",null));
+		addOptionAndPosition(new ChoiceOption("instaSelect",makeOnOffLabels(),[true,false],"Instantly Select All Items","When turned on, a right click on the trade window will select all your items instantly. When turned off, selects only items of the same type, smoothly, like an actual player.",null));
 	}
     
     private function miscMenu() : void
@@ -862,11 +862,11 @@ public class Options extends Sprite {
         this.addOptionAndPosition(new ChoiceOption("chatWhisper", makeOnOffLabels(), [true, false], TextKey.OPTIONS_CHAT_WHISPER, TextKey.OPTIONS_CHAT_WHISPER_DESC, this.onAllChatDisabled));
         this.addOptionAndPosition(new ChoiceOption("chatGuild", makeOnOffLabels(), [true, false], TextKey.OPTIONS_CHAT_GUILD, TextKey.OPTIONS_CHAT_GUILD_DESC, this.onAllChatDisabled));
         this.addOptionAndPosition(new ChoiceOption("chatTrade", makeOnOffLabels(), [true, false], TextKey.OPTIONS_CHAT_TRADE, TextKey.OPTIONS_CHAT_TRADE_DESC, null));
-        this.addOptionAndPosition(new ChoiceOption("chatStarRequirement", makeStarSelectLabels(), [0, 13, 27, 41, 55, 69, 70], TextKey.OPTIONS_STAR_REQ, TextKey.OPTIONS_CHAT_STAR_REQ_DESC, null));
+        this.addOptionAndPosition(new ChoiceOption("chatStarRequirement", makeStarSelectLabels(), [0, 13, 27, 41, 55, 69, 70], TextKey.OPTIONS_STAR_REQ, "Blocks messages from players of this rank and below.", null));
     }
 
     private static function makeStarSelectLabels():Vector.<StringBuilder> {
-        return (new <StringBuilder>[new StaticStringBuilder("All"), new StaticStringBuilder("Light Blue"), new StaticStringBuilder("Blue"), new StaticStringBuilder("Red"), new StaticStringBuilder("Orange"), new StaticStringBuilder("Yellow"), new StaticStringBuilder("Alone")]);
+        return (new <StringBuilder>[new StaticStringBuilder("Off"), new StaticStringBuilder("Light Blue"), new StaticStringBuilder("Blue"), new StaticStringBuilder("Red"), new StaticStringBuilder("Orange"), new StaticStringBuilder("Yellow"), new StaticStringBuilder("Alone")]);
     }
 
     private function onAllChatDisabled():void {

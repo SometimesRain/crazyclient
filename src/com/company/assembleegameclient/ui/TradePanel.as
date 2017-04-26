@@ -15,10 +15,10 @@ public class TradePanel extends Sprite {
     public static const HEIGHT:int = 400;
 
     public var gs_:AGameSprite;
-    private var myInv_:TradeInventory;
+    public var myInv_:TradeInventory;
     private var yourInv_:TradeInventory;
     private var cancelButton_:DeprecatedTextButton;
-    private var tradeButton_:TradeButton;
+    public var tradeButton_:TradeButton;
 
     public function TradePanel(_arg_1:AGameSprite, _arg_2:TradeStart) {
         this.gs_ = _arg_1;

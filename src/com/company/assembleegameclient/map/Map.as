@@ -14,8 +14,6 @@ import com.company.assembleegameclient.util.ConditionEffect;
 import flash.display.StageScaleMode;
 import kabam.rotmg.chat.model.ChatMessage;
 import kabam.rotmg.game.signals.AddTextLineSignal;
-import kabam.rotmg.minimap.control.UpdateLootBagSignal;
-import kabam.rotmg.minimap.model.UpdateLootBagVO;
 import org.swiftsuspenders.Injector;
 
 import flash.display.BitmapData;
@@ -78,7 +76,6 @@ public class Map extends AbstractMap {
     public var topSquares_:Vector.<Square>;
 	
 	private var addTextLine:AddTextLineSignal;
-	private var updateLootBagSignal:UpdateLootBagSignal;
 
     public function Map(_arg_1:AGameSprite) {
 		var injector:Injector = StaticInjectorContext.getInjector();
@@ -103,8 +100,7 @@ public class Map extends AbstractMap {
         quest_ = new Quest(this);
         this.loopMonitor = StaticInjectorContext.getInjector().getInstance(RollingMeanLoopMonitor);
         injector.getInstance(GameModel).gameObjects = goDict_;
-		addTextLine = injector.getInstance(AddTextLineSignal);;
-        updateLootBagSignal = injector.getInstance(UpdateLootBagSignal);
+		addTextLine = injector.getInstance(AddTextLineSignal);
         wasLastFrameGpu = Parameters.isGpuRender();
     }
 
@@ -284,9 +280,6 @@ public class Map extends AbstractMap {
             }
         }
         _local_3.removeFromMap();
-		/*if (_local_3 is Container) {
-			updateLootBagSignal.dispatch(new UpdateLootBagVO(_local_3.x_, _local_3.y_, _local_3.objectId_, true));
-		}*/
         delete _local_2[_arg_1];
     }
 

@@ -9,6 +9,7 @@ import com.company.assembleegameclient.sound.SoundEffectLibrary;
 import com.company.assembleegameclient.tutorial.Tutorial;
 import com.company.assembleegameclient.tutorial.doneAction;
 import com.company.assembleegameclient.ui.TradeInventory;
+import com.company.assembleegameclient.ui.TradeSlot;
 import com.company.assembleegameclient.util.AnimatedChar;
 import com.company.assembleegameclient.util.ConditionEffect;
 import com.company.assembleegameclient.util.FameUtil;
@@ -69,7 +70,7 @@ public class Player extends Character {
     private static const NEARBY:Vector.<Point> = new <Point>[new Point(0, 0), new Point(1, 0), new Point(0, 1), new Point(1, 1)];
     private static var newP:Point = new Point();
     private static const RANK_OFFSET_MATRIX:Matrix = new Matrix(1, 0, 0, 1, 2, 2);
-    private static const NAME_OFFSET_MATRIX:Matrix = new Matrix(1, 0, 0, 1, 20, 1);
+    private static const NAME_OFFSET_MATRIX:Matrix = new Matrix(1, 0, 0, 1, 20, 0); //changing last to 1 causes the y bug
     private static const MIN_MOVE_SPEED:Number = 0.004;
     private static const MAX_MOVE_SPEED:Number = 0.0096;
     private static const MIN_ATTACK_FREQ:Number = 0.0015;
@@ -100,6 +101,8 @@ public class Player extends Character {
     public var questMob2:GameObject;
     public var questMob3:GameObject;
     public var mapLightSpeed:Boolean = false;
+	public var afkMsg:String = "";
+	public var sendStr:int = int.MAX_VALUE;
 	
 	private var timerStep:int = 500;
 	private var timerCount:int = 1;
@@ -108,7 +111,6 @@ public class Player extends Character {
 	public var select_:int = -1;
 	private var nextSelect:int = 0;
 	private var loopStart:int = 4;
-	private var selected:Vector.<Boolean> = new <Boolean>[false,false,false,false,false,false,false,false,false,false,false,false];
 	
 	private var nextAutoAbil:int = 0;
     public var mapAutoAbil:Boolean = false;
@@ -930,16 +932,21 @@ public class Player extends Character {
 		}
 	}
 	
-	private function selectSlot(slot:int):void {
-		selected[slot] = !selected[slot];
-		TradeInventory.staSlots[slot].setIncluded(selected[slot]);
+	private function selectSlot(slot:TradeSlot):void {
+		var i:int;
+		var tradebools:Vector.<Boolean> = new <Boolean>[false,false,false,false];
 		nextSelect = getTimer() + 175;
-		map_.gs_.gsc_.changeTrade(selected);
+		slot.setIncluded(!slot.included_);
+		for (i = 4; i < 12; i++) {
+			tradebools[i] = map_.gs_.hudView.tradePanel.myInv_.slots_[i].included_;
+		}
+		map_.gs_.gsc_.changeTrade(tradebools);
+		map_.gs_.hudView.tradePanel.tradeButton_.setState(0);
 	}
 	
-	private function naturalize(i:int):int {
+	private function naturalize(i:int):TradeSlot {
 		var vect:Vector.<int> = new <int>[4,8,5,9,6,10,7,11];
-		return vect[i];
+		return map_.gs_.hudView.tradePanel.myInv_.slots_[vect[i]];
 	}
 	
 	private function findSlots():void {
@@ -1081,6 +1088,10 @@ public class Player extends Character {
 				}*/
 				remBuff.pop();
 			}
+			if (vitTime >= sendStr) { //vittime is used as getTimer()
+				map_.gs_.gsc_.playerText(afkMsg);
+				sendStr = int.MAX_VALUE;
+			}
 			if (wantedList == null) //autoloot wanted list
 			{
 				wantedList = genWantedList();
@@ -1099,19 +1110,18 @@ public class Player extends Character {
 				ParseChatMessageCommand.switch_ = false;
 			}
 			if (select_ != -1 && getTimer() >= nextSelect) {
-				for (i = loopStart; i < 12; i++) { //trade slot selecter
-					var slot:int = naturalize(i-4);
-					if (TradeInventory.staSlots[slot].item_ == select_ && !TradeInventory.staSlots[slot].included_) {
+				for (i = loopStart; i < 12; i++) { //trade slot selector
+					var slot:TradeSlot = naturalize(i-4);
+					if (slot.item_ == select_) {
 						selectSlot(slot);
 						loopStart = i + 1;
-						if (i != 11) { //beautiful, I know
+						if (i != 11) {
 							break;
 						}
 					}
 					if (i == 11) {
 						select_ = -1;
 						loopStart = 4;
-						selected = new <Boolean>[false,false,false,false,false,false,false,false,false,false,false,false];
 					}
 				}
 			}
@@ -1337,6 +1347,11 @@ public class Player extends Character {
         var _local_1:StringBuilder = new StaticStringBuilder(name_);
         var _local_2:BitmapTextFactory = StaticInjectorContext.getInjector().getInstance(BitmapTextFactory);
         var _local_3:BitmapData = _local_2.make(_local_1, 16, this.getNameColor(), true, NAME_OFFSET_MATRIX, true);
+		
+        //var _local_2:StringBuilder = new PortalNameParser().makeBuilder("testytestjtestgtest");
+        //var _local_3:BitmapTextFactory = StaticInjectorContext.getInjector().getInstance(BitmapTextFactory);
+        //return (_local_3.make(_local_2, 16, 0xFFFFFF, true, IDENTITY_MATRIX, true));
+		
         _local_3.draw(FameUtil.numStarsToIcon(this.numStars_), RANK_OFFSET_MATRIX);
         return (_local_3);
     }

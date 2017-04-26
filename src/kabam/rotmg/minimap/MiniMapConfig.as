@@ -3,7 +3,6 @@ import kabam.rotmg.minimap.control.MiniMapZoomSignal;
 import kabam.rotmg.minimap.control.SetMiniMapMapSignal;
 import kabam.rotmg.minimap.control.UpdateGameObjectTileSignal;
 import kabam.rotmg.minimap.control.UpdateGroundTileSignal;
-import kabam.rotmg.minimap.control.UpdateLootBagSignal;
 import kabam.rotmg.minimap.view.MiniMap;
 import kabam.rotmg.minimap.view.MiniMapMediator;
 
@@ -27,7 +26,6 @@ public class MiniMapConfig implements IConfig {
         this.injector.map(MiniMapZoomSignal).asSingleton();
         this.injector.map(SetMiniMapMapSignal).asSingleton();
         this.injector.map(UpdateGameObjectTileSignal).asSingleton();
-        this.injector.map(UpdateLootBagSignal).asSingleton();
         this.injector.map(UpdateGroundTileSignal).asSingleton();
         this.mediatorMap.map(MiniMap).toMediator(MiniMapMediator);
     }

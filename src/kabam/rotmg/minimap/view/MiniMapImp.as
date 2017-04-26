@@ -51,8 +51,6 @@ public class MiniMapImp extends MiniMap {
     private var players_:Vector.<Player>;
     private var tempPoint:Point;
     private var _rotateEnableFlag:Boolean;
-	private var colorlist:Vector.<uint> = new <uint>[];
-	private var idlist:Vector.<uint> = new <uint>[];
 
     public function MiniMapImp(_arg_1:int, _arg_2:int) {
         this.zoomLevels = new Vector.<Number>();
@@ -138,8 +136,6 @@ public class MiniMapImp extends MiniMap {
     public function dispose():void {
         this.miniMapData_.dispose();
         this.miniMapData_ = null;
-		colorlist.length = 0;
-		idlist.length = 0;
         this.removeDecorations();
     }
 
@@ -191,29 +187,6 @@ public class MiniMapImp extends MiniMap {
     override public function setGameObjectTile(_arg_1:int, _arg_2:int, _arg_3:GameObject):void {
         var _local_4:uint = gameObjectToColor(_arg_3);
         this.miniMapData_.setPixel(_arg_1, _arg_2, _local_4);
-    }
-
-    override public function setLootBag(_arg_1:int, _arg_2:int, _arg_3:int, _arg_4:Boolean):void {
-		var i:int;
-		if (_arg_4) { //remove
-			for (i = 0; i < idlist.length; i++) {
-				if (idlist[i] == _arg_3) {
-					miniMapData_.setPixel(_arg_1, _arg_2, colorlist[i]);
-					break;
-				}
-			}
-			//idlist.splice(i,1);
-			//colorlist.splice(i,1);
-			idlist[i] = idlist[idlist.length - 1];
-			idlist.pop()
-			colorlist[i] = colorlist[colorlist.length-1];
-			colorlist.pop()
-		}
-		else {
-			colorlist.push(miniMapData_.getPixel(_arg_1, _arg_2));
-			idlist.push(_arg_3);
-			miniMapData_.setPixel(_arg_1, _arg_2, 0xff6a00);
-		}
     }
 
     private function removeDecorations():void {
@@ -337,7 +310,8 @@ public class MiniMapImp extends MiniMap {
                             _local_15 = 0xFF;
                         }
 						else if (_local_10 is Container && _local_10.objectType_ != 1284 && _local_10.objectType_ != 1860) {
-                            _local_15 = 0xff6a00;
+                            //_local_15 = 0xff6a00;
+                            _local_15 = gameObjectToColor(_local_10);
 						}
                         else {
                             continue;

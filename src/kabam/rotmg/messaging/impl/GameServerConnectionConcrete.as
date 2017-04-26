@@ -63,8 +63,6 @@ import flash.system.System;
 import flash.utils.Dictionary;
 import kabam.rotmg.dailyLogin.view.DailyLoginModal;
 import kabam.rotmg.game.commands.PlayGameCommand;
-import kabam.rotmg.minimap.control.UpdateLootBagSignal;
-import kabam.rotmg.minimap.model.UpdateLootBagVO;
 
 import flash.display.BitmapData;
 import flash.events.Event;
@@ -261,7 +259,6 @@ public class GameServerConnectionConcrete extends GameServerConnection {
     private var addSpeechBalloon:AddSpeechBalloonSignal;
     private var updateGroundTileSignal:UpdateGroundTileSignal;
     private var updateGameObjectTileSignal:UpdateGameObjectTileSignal;
-    private var updateLootBagSignal:UpdateLootBagSignal;
     private var logger:ILogger;
     private var handleDeath:HandleDeathSignal;
     private var zombify:ZombifySignal;
@@ -292,7 +289,6 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 	public static var ignoredBag:int = -1;
 	public static var receivingGift:Vector.<Boolean>;
 	public static var sendingGift:Vector.<Boolean>;
-	public static var revivedMobs:int = 0;
 	
 	private const servs:Vector.<String> = new <String>["EUEast", "EUNorth2", "EUNorth", "USWest", "USMidWest", "EUWest", "USEast", "AsiaSouthEast",
 										"USSouth", "USSouthWest", "EUSouthWest", "USEast3", "USWest2", "USMidWest2", "USEast2", "USNorthWest",
@@ -309,7 +305,6 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         this.addSpeechBalloon = this.injector.getInstance(AddSpeechBalloonSignal);
         this.updateGroundTileSignal = this.injector.getInstance(UpdateGroundTileSignal);
         this.updateGameObjectTileSignal = this.injector.getInstance(UpdateGameObjectTileSignal);
-        this.updateLootBagSignal = this.injector.getInstance(UpdateLootBagSignal);
         this.petFeedResult = this.injector.getInstance(PetFeedResultSignal);
         this.updateBackpackTab = StaticInjectorContext.getInjector().getInstance(UpdateBackpackTabSignal);
         this.updateActivePet = this.injector.getInstance(UpdateActivePet);
@@ -1438,7 +1433,8 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         var _local_5:Number;
         var _local_2:GameObject = gs_.map.goDict_[_arg_1.ownerId_];
         if (_local_2 == null || _local_2.dead_) {
-            this.shootAck(-1); //this causes problems, solved
+			//addTextLine.dispatch(ChatMessage.make("*Help*", "You're hit by an invisible enemy"));
+            this.shootAck(-1); //this causes problems
             return;
         }
         var _local_3:int;
@@ -1661,8 +1657,6 @@ public class GameServerConnectionConcrete extends GameServerConnection {
             this.updateGameObjectTileSignal.dispatch(new UpdateGameObjectTileVO(_local_3.x_, _local_3.y_, _local_3));
         }
 		if (_local_3 is Container) {
-			//updateLootBagSignal.dispatch(new UpdateLootBagVO(_local_3.x_, _local_3.y_, _local_3.objectId_, false));
-            //updateGameObjectTileSignal.dispatch(new UpdateGameObjectTileVO(_local_3.x_, _local_3.y_, _local_3));
 			if (ignoreNext) {
 				ignoredBag = _local_3.objectId_;
 				ignoreNext = false;
@@ -2067,16 +2061,21 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 						}
 						break;
 					}
+					else if (Parameters.data_.sizer) {
+						addTextLine.dispatch(ChatMessage.make("*Help*","Size: "+_local_8));
+						_arg_1.size_ = _local_8 < 100 ? _local_8 : 100; //resize if size > 100
+					}
+					else {
+						_arg_1.size_ = _local_8;
+					}
 					if (Parameters.data_.grandmaMode && _arg_1.objectType_ != 1859 && _arg_1.objectType_ != 1285 && _arg_1.objectType_ != 1860 && _arg_1.objectType_ != 1284) {
+						var displayId:String = ObjectLibrary.typeToDisplayId_[_arg_1.objectType_];
 						if (_arg_1 is Container) {
 							_arg_1.size_ = 150;
 						}
-						else if (ObjectLibrary.typeToDisplayId_[_arg_1.objectType_].indexOf("Chest") != -1 || ObjectLibrary.typeToDisplayId_[_arg_1.objectType_].indexOf("Loot Balloon") != -1) {
+						else if (displayId.indexOf("Chest") != -1 || displayId.indexOf("Loot Balloon") != -1) {
 							_arg_1.size_ = 175;
 						}
-					}
-					else {
-						_arg_1.size_ = _local_8 < 100 ? _local_8 : 100; //resize if size > 100
 					}
                     break;
                 case StatData.MAX_MP_STAT:
@@ -2372,7 +2371,6 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 		//
 		if (_local_5.lastUpdate + 250 <= timer) { //0.25s and the mob is considered dead
 			_local_5.dead_ = false; //ensures no dead entities are updated
-			revivedMobs++;
 		}
 		_local_5.lastUpdate = timer;
 		//

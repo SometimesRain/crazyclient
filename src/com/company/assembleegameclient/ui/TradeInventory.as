@@ -31,7 +31,6 @@ public class TradeInventory extends Sprite {
     private var nameText_:BaseSimpleText;
     private var taglineText_:TextFieldDisplayConcrete;
     public var slots_:Vector.<TradeSlot>;
-	public static var staSlots:Vector.<TradeSlot>;
 
     public function TradeInventory(_arg_1:AGameSprite, _arg_2:String, _arg_3:Vector.<TradeItem>, _arg_4:Boolean) {
         var _local_6:TradeItem;
@@ -82,7 +81,6 @@ public class TradeInventory extends Sprite {
 		}
 		else {
 			var select:Vector.<Boolean> = new <Boolean>[false,false,false,false,false,false,false,false,false,false,false,false];
-			staSlots = slots_;
 			gs_.map.player_.select_ = (_arg_1.currentTarget as TradeSlot).item_;
 		}
     }

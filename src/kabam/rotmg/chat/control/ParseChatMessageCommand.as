@@ -6,6 +6,7 @@ import com.company.assembleegameclient.objects.Player;
 import com.company.assembleegameclient.parameters.Parameters;
 import com.company.assembleegameclient.ui.menu.FindMenu;
 import com.company.assembleegameclient.util.AnimatedChars;
+import com.company.assembleegameclient.util.CJDateUtil;
 import flash.events.TimerEvent;
 import flash.external.ExternalInterface;
 import flash.net.FileReference;
@@ -56,7 +57,7 @@ public class ParseChatMessageCommand {
 	private static var needed:String;
 	public static var switch_:Boolean = false;
 	
-	private static var afkStart:Date = new Date(1970,0,1,0,0,0,0);;
+	private static var afkStart:CJDateUtil;
 
     private function fsCommands(param1:String):Boolean {
         param1 = param1.toLowerCase();
@@ -625,10 +626,6 @@ public class ParseChatMessageCommand {
 			case "/tr":
 				gsc.playerText("/trade "+lastTellTo);
 				return true;
-			case "/revivedmobs":
-			case "/rm":
-				addTextLine.dispatch(ChatMessage.make("*Help*", "Invisible enemies revived "+GameServerConnectionConcrete.revivedMobs));
-				return true;
 			case "/fame":
 				var playTime:int = (getTimer() - PlayGameCommand.startTime) / 60000;
 				var fpm:Number;
@@ -676,19 +673,32 @@ public class ParseChatMessageCommand {
 			case "/afk":
 				TextHandler.afk = !TextHandler.afk;
 				if (!TextHandler.afk) {
-					addTextLine.dispatch(ChatMessage.make("*Help*", TextHandler.afkTells.length+" messages since "+afkStart.getHours()+":"+afkStart.getMinutes()));
+					addTextLine.dispatch(ChatMessage.make("*Help*", TextHandler.afkTells.length+" messages since "+afkStart.getFormattedTime()));
 					for each(var cm:ChatMessage in TextHandler.afkTells) {
 						addTextLine.dispatch(cm);
 					}
 					TextHandler.afkTells.length = 0;
+					TextHandler.sendBacks.length = 0;
 				}
 				else {
-					afkStart = new Date();
+					afkStart = new CJDateUtil();
 					addTextLine.dispatch(ChatMessage.make("*Help*", "Your messages will be saved, have fun."));
 				}
+				TextHandler.afkMsg = "";
+				return true;
+			case "/re":
+				gsc.playerText(lastMsg);
 				return true;
 		}
-		var splice:Array = data.toLowerCase().match("^/player (\\w+)$")
+		var splice:Array = data.toLowerCase().match("^/afk (.+)$")
+		if (splice != null) {
+			TextHandler.afk = true;
+			TextHandler.afkMsg = splice[1];
+			afkStart = new CJDateUtil();
+			addTextLine.dispatch(ChatMessage.make("*Help*", "Your messages will be saved, have fun."));
+			return true;
+		}
+		splice = data.toLowerCase().match("^/player (\\w+)$")
 		if (splice != null) {
 			navigateToURL(new URLRequest("https://www.realmeye.com/player/" + splice[1]), "_blank");
 			return true;
@@ -697,11 +707,6 @@ public class ParseChatMessageCommand {
 		if (splice != null) {
 			var slot:int = int(splice[1]) + 3;
 			navigateToURL(new URLRequest("https://www.realmeye.com/offers-to/buy/" + GameServerConnectionConcrete.PLAYER_.equipment_[slot] + "/2793"), "_blank");
-			return true;
-		}
-		splice = data.toLowerCase().match("^/re$");
-		if (splice != null) {
-			gsc.playerText(lastMsg);
 			return true;
 		}
 		splice = data.toLowerCase().match("^/re (\\w+)$");
