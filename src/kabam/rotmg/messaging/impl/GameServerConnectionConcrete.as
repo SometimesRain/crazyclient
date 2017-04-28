@@ -2062,7 +2062,6 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 						break;
 					}
 					else if (Parameters.data_.sizer) {
-						addTextLine.dispatch(ChatMessage.make("*Help*","Size: "+_local_8));
 						_arg_1.size_ = _local_8 < 100 ? _local_8 : 100; //resize if size > 100
 					}
 					else {

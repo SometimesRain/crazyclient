@@ -1018,16 +1018,6 @@
       <PlayerClassType>0x0326</PlayerClassType>
       <NoSkinSelect/>
    </Object>
-   <Object type="0x7fc8" id="Dragon Tamer 16">
-      <Skin/>
-      <Class>Skin</Class>
-      <AnimatedTexture>
-         <File>playerskins16</File>
-         <Index>0x0a</Index>
-      </AnimatedTexture>
-      <PlayerClassType>0x031d</PlayerClassType>
-      <NoSkinSelect/>
-   </Object>
    <Object type="0x7ffe" id="Vampire Lord">
       <Skin/>
       <Class>Skin</Class>
@@ -1328,7 +1318,7 @@
       <PlayerClassType>0x0325</PlayerClassType>
       <NoSkinSelect/>
    </Object>
-   <Object type="0x1750" id="Huntress- Artist Extraordinaire">
+   <Object type="0x1750" id="Huntress - Artist Extraordinaire">
       <Skin/>
       <Class>Skin</Class>
       <AnimatedTexture>
@@ -1338,7 +1328,7 @@
       <PlayerClassType>0x0322</PlayerClassType>
       <NoSkinSelect/>
    </Object>
-   <Object type="0x1751" id="Mystic- Artist Extraordinaire">
+   <Object type="0x1751" id="Mystic - Artist Extraordinaire">
       <Skin/>
       <Class>Skin</Class>
       <AnimatedTexture>
@@ -1348,7 +1338,7 @@
       <PlayerClassType>0x0323</PlayerClassType>
       <NoSkinSelect/>
    </Object>
-   <Object type="0x1752" id="Trickster- Artist Extraordinaire">
+   <Object type="0x1752" id="Trickster - Artist Extraordinaire">
       <Skin/>
       <Class>Skin</Class>
       <AnimatedTexture>
@@ -1358,7 +1348,7 @@
       <PlayerClassType>0x0324</PlayerClassType>
       <NoSkinSelect/>
    </Object>
-   <Object type="0x176a" id="Wizard- Dungeon Mastermind">
+   <Object type="0x176a" id="Wizard - Dungeon Mastermind">
       <Skin/>
       <Class>Skin</Class>
       <AnimatedTexture>
@@ -1368,7 +1358,7 @@
       <PlayerClassType>0x30e</PlayerClassType>
       <NoSkinSelect/>
    </Object>
-   <Object type="0x176b" id="Priest- Dungeon Mastermind">
+   <Object type="0x176b" id="Priest - Dungeon Mastermind">
       <Skin/>
       <Class>Skin</Class>
       <AnimatedTexture>
@@ -1378,7 +1368,7 @@
       <PlayerClassType>0x0310</PlayerClassType>
       <NoSkinSelect/>
    </Object>
-   <Object type="0x176c" id="Necromancer- Dungeon Mastermind">
+   <Object type="0x176c" id="Necromancer - Dungeon Mastermind">
       <Skin/>
       <Class>Skin</Class>
       <AnimatedTexture>
@@ -1388,7 +1378,7 @@
       <PlayerClassType>0x0321</PlayerClassType>
       <NoSkinSelect/>
    </Object>
-   <Object type="0x176d" id="Sorcerer- Dungeon Mastermind">
+   <Object type="0x176d" id="Sorcerer - Dungeon Mastermind">
       <Skin/>
       <Class>Skin</Class>
       <AnimatedTexture>
@@ -1398,7 +1388,7 @@
       <PlayerClassType>0x0325</PlayerClassType>
       <NoSkinSelect/>
    </Object>
-   <Object type="0x176e" id="Mystic- Dungeon Mastermind">
+   <Object type="0x176e" id="Mystic - Dungeon Mastermind">
       <Skin/>
       <Class>Skin</Class>
       <AnimatedTexture>
@@ -1408,7 +1398,7 @@
       <PlayerClassType>0x0323</PlayerClassType>
       <NoSkinSelect/>
    </Object>
-   <Object type="0x176f" id="Rogue- Dungeon Mastermind">
+   <Object type="0x176f" id="Rogue - Dungeon Mastermind">
       <Skin/>
       <Class>Skin</Class>
       <AnimatedTexture>
@@ -1418,7 +1408,7 @@
       <PlayerClassType>0x0300</PlayerClassType>
       <NoSkinSelect/>
    </Object>
-   <Object type="0x1770" id="Warrior- Dungeon Mastermind">
+   <Object type="0x1770" id="Warrior - Dungeon Mastermind">
       <Skin/>
       <Class>Skin</Class>
       <AnimatedTexture>
@@ -1428,7 +1418,7 @@
       <PlayerClassType>0x031d</PlayerClassType>
       <NoSkinSelect/>
    </Object>
-   <Object type="0x1771" id="Assassin- Dungeon Mastermind">
+   <Object type="0x1771" id="Assassin - Dungeon Mastermind">
       <Skin/>
       <Class>Skin</Class>
       <AnimatedTexture>
@@ -1438,7 +1428,7 @@
       <PlayerClassType>0x0320</PlayerClassType>
       <NoSkinSelect/>
    </Object>
-   <Object type="0x1772" id="Ninja- Dungeon Mastermind">
+   <Object type="0x1772" id="Ninja - Dungeon Mastermind">
       <Skin/>
       <Class>Skin</Class>
       <AnimatedTexture>
@@ -1448,7 +1438,7 @@
       <PlayerClassType>0x0326</PlayerClassType>
       <NoSkinSelect/>
    </Object>
-   <Object type="0x1773" id="Paladin- Dungeon Mastermind">
+   <Object type="0x1773" id="Paladin - Dungeon Mastermind">
       <Skin/>
       <Class>Skin</Class>
       <AnimatedTexture>
@@ -1458,7 +1448,7 @@
       <PlayerClassType>0x031f</PlayerClassType>
       <NoSkinSelect/>
    </Object>
-   <Object type="0x1774" id="Knight- Dungeon Mastermind">
+   <Object type="0x1774" id="Knight - Dungeon Mastermind">
       <Skin/>
       <Class>Skin</Class>
       <AnimatedTexture>
@@ -1468,7 +1458,7 @@
       <PlayerClassType>0x031e</PlayerClassType>
       <NoSkinSelect/>
    </Object>
-   <Object type="0x1775" id="Trickster- Dungeon Mastermind">
+   <Object type="0x1775" id="Trickster - Dungeon Mastermind">
       <Skin/>
       <Class>Skin</Class>
       <AnimatedTexture>
@@ -1478,7 +1468,7 @@
       <PlayerClassType>0x0324</PlayerClassType>
       <NoSkinSelect/>
    </Object>
-   <Object type="0x1776" id="Huntress- Dungeon Mastermind">
+   <Object type="0x1776" id="Huntress - Dungeon Mastermind">
       <Skin/>
       <Class>Skin</Class>
       <AnimatedTexture>
@@ -1488,7 +1478,7 @@
       <PlayerClassType>0x0322</PlayerClassType>
       <NoSkinSelect/>
    </Object>
-   <Object type="0x1777" id="Archer- Dungeon Mastermind">
+   <Object type="0x1777" id="Archer - Dungeon Mastermind">
       <Skin/>
       <Class>Skin</Class>
       <AnimatedTexture>

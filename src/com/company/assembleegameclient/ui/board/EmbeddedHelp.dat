@@ -14,6 +14,10 @@
       <Explanation>Toggles your afk state&#xA;When afk is on, all tells will be saved&#xA;When turned off, the saved tells will be displayed</Explanation>
    </Article>
    <Article>
+      <Command>/afk &lt;message&gt;</Command>
+      <Explanation>Turns afk on and sets a message which will be sent when a tell is received&#xA;This message is sent after a delay and only once per player</Explanation>
+   </Article>
+   <Article>
       <Command>/pos</Command>
       <Explanation>Prints your position to chat</Explanation>
    </Article>

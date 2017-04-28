@@ -878,7 +878,7 @@
       <Group>Beam Priests</Group>
       <Enemy/>
       <Class>Character</Class>
-      <DisplayId>Worshiping Priest</DisplayId>
+      <DisplayId>Worshipping Priest</DisplayId>
       <AnimatedTexture>
          <File>chars8x8rEncounters</File>
          <Index>5</Index>
@@ -911,7 +911,7 @@
       <Group>Beam Priests</Group>
       <Enemy/>
       <Class>Character</Class>
-      <DisplayId>Worshiping Priestess</DisplayId>
+      <DisplayId>Worshipping Priestess</DisplayId>
       <AnimatedTexture>
          <File>chars8x8rEncounters</File>
          <Index>6</Index>

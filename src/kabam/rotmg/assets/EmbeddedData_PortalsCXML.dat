@@ -463,6 +463,153 @@
          </Frame>
       </Animation>
    </Object>
+   <Object type="0x5f25" id="Haunted Cemetery Gates Portal">
+      <Class>Portal</Class>
+      <Size>120</Size>
+      <IntergamePortal/>
+      <DisplayId>Gates</DisplayId>
+      <DungeonName>Haunted Cemetery Gates</DungeonName>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x30a</Index>
+      </Texture>
+      <Animation prob="0.6" period="1.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.6">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30a</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x5f26" id="Haunted Cemetery Graves Portal">
+      <Class>Portal</Class>
+      <Size>130</Size>
+      <IntergamePortal/>
+      <DisplayId>Graves</DisplayId>
+      <DungeonName>Haunted Cemetery Graves</DungeonName>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x30a</Index>
+      </Texture>
+      <Animation prob="0.8" period="1.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.6">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30a</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x5f29" id="Haunted Cemetery Final Rest Portal">
+      <Class>Portal</Class>
+      <Size>140</Size>
+      <IntergamePortal/>
+      <DisplayId>Final Battle</DisplayId>
+      <DungeonName>Haunted Cemetery Final Battle</DungeonName>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x30a</Index>
+      </Texture>
+      <Animation prob="1" period="2">
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.6">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.6">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x30a</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
    <Object type="0x135" id="Halloween Cemetery Portal">
       <Class>Portal</Class>
       <IntergamePortal/>

@@ -1211,11 +1211,9 @@
       </Texture>
       <SlotType>10</SlotType>
       <Description>This special sea slurp is trained to seek out the elusive Beer God.</Description>
-      <Sound>spell/fire_spray</Sound>
       <ExtraTooltipData>
          <EffectInfo name="" description="Helps locate Beer Gods in the Realm"/>
       </ExtraTooltipData>
-      <Sound>spell/light_heal</Sound>
       <InvUse/>
       <VaultItem/>
       <Soulbound/>

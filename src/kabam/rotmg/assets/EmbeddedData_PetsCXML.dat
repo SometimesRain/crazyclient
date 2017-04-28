@@ -4001,7 +4001,6 @@
    </Object>
    <Object type="0x19b5" id="Frilled Lizard Skin">
       <PetSkin/>
-      <PetSkin/>
       <DisplayId>Frilled Lizard</DisplayId>
       <Class>PetSkin</Class>
       <AnimatedTexture>
@@ -4152,7 +4151,6 @@
    </Object>
    <Object type="0x19bf" id="Fire Rooster Skin">
       <PetSkin/>
-      <PetSkin/>
       <DisplayId>Fire Rooster</DisplayId>
       <Class>PetSkin</Class>
       <AnimatedTexture>
@@ -4189,7 +4187,6 @@
       <Size>80</Size>
    </Object>
    <Object type="0x19c2" id="Rooster of Good Fortune Skin">
-      <PetSkin/>
       <PetSkin/>
       <DisplayId>Rooster of Good Fortune</DisplayId>
       <Class>PetSkin</Class>
@@ -4232,7 +4229,6 @@
    </Object>
    <Object type="0x19c5" id="Mini Chinese Dragon Skin">
       <PetSkin/>
-      <PetSkin/>
       <DisplayId>Red Dragon</DisplayId>
       <Class>PetSkin</Class>
       <AnimatedTexture>
@@ -4270,7 +4266,6 @@
    </Object>
    <Object type="0x19c8" id="Gingerbread Man Skin">
       <PetSkin/>
-      <PetSkin/>
       <DisplayId>Gingerbread Man</DisplayId>
       <Class>PetSkin</Class>
       <AnimatedTexture>
@@ -4307,7 +4302,6 @@
       <Size>80</Size>
    </Object>
    <Object type="0x19cb" id="Mini Polaris Skin">
-      <PetSkin/>
       <PetSkin/>
       <DisplayId>Mini Polaris</DisplayId>
       <Class>PetSkin</Class>
@@ -4350,7 +4344,6 @@
    </Object>
    <Object type="0x19ce" id="Mini Paper Lantern Skin">
       <PetSkin/>
-      <PetSkin/>
       <DisplayId>Mini Paper Lantern</DisplayId>
       <Class>PetSkin</Class>
       <AnimatedTexture>
@@ -4391,7 +4384,6 @@
       </WhileMoving>
    </Object>
    <Object type="0x19d1" id="Paper Lantern Skin">
-      <PetSkin/>
       <PetSkin/>
       <DisplayId>Paper Lantern</DisplayId>
       <Class>PetSkin</Class>
@@ -4435,7 +4427,6 @@
    </Object>
    <Object type="0x19d4" id="Chinese Dragon Skin">
       <PetSkin/>
-      <PetSkin/>
       <DisplayId>Chinese Dragon</DisplayId>
       <Class>PetSkin</Class>
       <AnimatedTexture>
@@ -4474,7 +4465,6 @@
    </Object>
    <Object type="0x19d7" id="Desert Cobra Skin">
       <PetSkin/>
-      <PetSkin/>
       <DisplayId>Desert Cobra</DisplayId>
       <Class>PetSkin</Class>
       <AnimatedTexture>
@@ -4511,7 +4501,6 @@
       <Size>80</Size>
    </Object>
    <Object type="0x2aa1" id="White Bounsheep Skin">
-      <PetSkin/>
       <PetSkin/>
       <DisplayId>White Bounsheep</DisplayId>
       <Class>PetSkin</Class>
@@ -4550,7 +4539,6 @@
    </Object>
    <Object type="0x2aa4" id="Grey Bounsheep Skin">
       <PetSkin/>
-      <PetSkin/>
       <DisplayId>Grey Bounsheep</DisplayId>
       <Class>PetSkin</Class>
       <AnimatedTexture>
@@ -4587,7 +4575,6 @@
       <Size>80</Size>
    </Object>
    <Object type="0x2aa7" id="Brown Bounsheep Skin">
-      <PetSkin/>
       <PetSkin/>
       <DisplayId>Brown Bounsheep</DisplayId>
       <Class>PetSkin</Class>
@@ -4626,7 +4613,6 @@
    </Object>
    <Object type="0x2aaa" id="Bes' Artifact Skin">
       <PetSkin/>
-      <PetSkin/>
       <DisplayId>Bes' Artifact</DisplayId>
       <Class>PetSkin</Class>
       <AnimatedTexture>
@@ -4664,7 +4650,6 @@
    </Object>
    <Object type="0x2aad" id="Geb's Artifact Skin">
       <PetSkin/>
-      <PetSkin/>
       <DisplayId>Geb's Artifact</DisplayId>
       <Class>PetSkin</Class>
       <AnimatedTexture>
@@ -4701,7 +4686,6 @@
       <Size>80</Size>
    </Object>
    <Object type="0x2ab0" id="Nut's Artifact Skin">
-      <PetSkin/>
       <PetSkin/>
       <DisplayId>Nut's Artifact</DisplayId>
       <Class>PetSkin</Class>

@@ -12,21 +12,6 @@
       </Texture>
       <ShadowSize>0</ShadowSize>
    </Object>
-   <Object type="0x1649" id="Rainbow Road Key">
-      <DisplayId>St. Patricks Key</DisplayId>
-      <Class>Equipment</Class>
-      <Item/>
-      <Texture>
-         <File>stPatricksObjects8x8</File>
-         <Index>0x07</Index>
-      </Texture>
-      <SlotType>10</SlotType>
-      <Description>Treasures await at the end of the rainbow.</Description>
-      <Sound>use_key</Sound>
-      <Consumable/>
-      <Soulbound/>
-      <Activate id="Rainbow Road">Create</Activate>
-   </Object>
    <Object type="0x164a" id="Clover Bow">
       <Class>Equipment</Class>
       <Item/>

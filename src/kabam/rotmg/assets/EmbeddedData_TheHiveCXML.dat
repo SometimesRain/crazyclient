@@ -130,7 +130,6 @@
          <Damage>70</Damage>
          <Speed>70</Speed>
          <Size>100</Size>
-         <AngleCorrection>1</AngleCorrection>
          <ConditionEffect duration="1.5">Dazed</ConditionEffect>
          <LifetimeMS>1000</LifetimeMS>
       </Projectile>

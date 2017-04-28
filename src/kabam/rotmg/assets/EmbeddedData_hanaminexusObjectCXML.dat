@@ -143,7 +143,7 @@
       <StasisImmune/>
       <Effect color="0xFABFE2" rate="4" life="3" lifeVariance=".25" speed="0" speedVariance=".5" size="5" rise="-.6" riseVariance=".1" rangeX="5" rangeY="5">CustomParticles</Effect>
    </Object>
-   <Object type="0xfa7" id="Hanami  White Butterfly">
+   <Object type="0xfa7" id="Hanami White Butterfly">
       <Class>Character</Class>
       <Texture>
          <File>SakuraEnvironment8x8</File>
@@ -171,7 +171,7 @@
       <ShadowSize>30</ShadowSize>
       <NoMiniMap/>
    </Object>
-   <Object type="0xfa8" id="Hanami  Orange Butterfly">
+   <Object type="0xfa8" id="Hanami Orange Butterfly">
       <Class>Character</Class>
       <Texture>
          <File>SakuraEnvironment8x8</File>
@@ -199,7 +199,7 @@
       <ShadowSize>30</ShadowSize>
       <NoMiniMap/>
    </Object>
-   <Object type="0xfa9" id="Hanami  Purple Butterfly">
+   <Object type="0xfa9" id="Hanami Purple Butterfly">
       <Class>Character</Class>
       <Texture>
          <File>SakuraEnvironment8x8</File>
@@ -227,7 +227,7 @@
       <ShadowSize>30</ShadowSize>
       <NoMiniMap/>
    </Object>
-   <Object type="0xfaa" id="Hanami  Cyan Butterfly">
+   <Object type="0xfaa" id="Hanami Cyan Butterfly">
       <Class>Character</Class>
       <Texture>
          <File>SakuraEnvironment8x8</File>
@@ -1074,7 +1074,6 @@
       <OccupySquare/>
       <EnemyOccupySquare/>
       <BlocksSight/>
-      <Static/>
    </Object>
    <Object type="0xff9" id="Onsen Waterfall Single">
       <Class>Wall</Class>

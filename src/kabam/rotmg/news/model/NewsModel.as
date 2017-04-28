@@ -128,8 +128,42 @@ package kabam.rotmg.news.model
                }
             }
          }
+         this.sortByPriority(_loc2_);
          this.update.dispatch(this.news);
          this.updateNoParams.dispatch();
+      }
+      
+      private function sortByPriority(param1:Vector.<kabam.rotmg.news.model.NewsCellVO>) : void
+      {
+         var _loc2_:kabam.rotmg.news.model.NewsCellVO = null;
+         for each(_loc2_ in param1)
+         {
+            if(this.isNewsTimely(_loc2_) && this.isValidForPlatformGlobal(_loc2_))
+            {
+               this.prioritize(_loc2_);
+            }
+         }
+      }
+      
+      private function prioritize(param1:kabam.rotmg.news.model.NewsCellVO) : void
+      {
+         var _loc2_:uint = param1.slot - 1;
+         if(this.news[_loc2_])
+         {
+            param1 = this.comparePriority(this.news[_loc2_],param1);
+         }
+         this.news[_loc2_] = param1;
+      }
+      
+      private function comparePriority(param1:kabam.rotmg.news.model.NewsCellVO, param2:kabam.rotmg.news.model.NewsCellVO) : kabam.rotmg.news.model.NewsCellVO
+      {
+         return param1.priority < param2.priority?param1:param2;
+      }
+      
+      private function isNewsTimely(param1:kabam.rotmg.news.model.NewsCellVO) : Boolean
+      {
+         var _loc2_:Number = new Date().getTime();
+         return param1.startDate < _loc2_ && _loc2_ < param1.endDate;
       }
       
       public function hasValidNews() : Boolean
@@ -156,6 +190,12 @@ package kabam.rotmg.news.model
             return new NewsModalPage(_loc2_.title,_loc2_.text);
          }
          return new NewsModalPage("No new information","Please check back later.");
+      }
+      
+      private function isValidForPlatformGlobal(param1:kabam.rotmg.news.model.NewsCellVO) : Boolean
+      {
+         var _loc2_:String = this.account.gameNetwork();
+         return param1.networks.indexOf(_loc2_) != -1;
       }
       
       private function isValidForPlatform(param1:kabam.rotmg.news.model.InGameNews) : Boolean

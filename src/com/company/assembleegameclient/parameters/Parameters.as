@@ -14,7 +14,7 @@ public class Parameters {
 
     public static const BUILD_VERSION:String = "27.7";
     public static const MINOR_VERSION:String = "X13";
-    public static const CRAZY_VERSION:String = "v9.2b";
+    public static const CRAZY_VERSION:String = "v9.2";
     public static const ENABLE_ENCRYPTION:Boolean = true;
     public static const PORT:int = 2050;
     public static const ALLOW_SCREENSHOT_MODE:Boolean = false;
@@ -405,7 +405,7 @@ public class Parameters {
         setDefaultKey("kdbAll", KeyCodes.UNSET);
 		//
         setDefaultKey("resetCHP",KeyCodes.UNSET);
-        setDefault("autoCorrCHP",true);
+        setDefault("autoCorrCHP",false);
         setDefaultKey("tPassCover",KeyCodes.UNSET);
         setDefaultKey("kautoSprite",KeyCodes.UNSET);
         setDefaultKey("Cam45DegInc",KeyCodes.UNSET);

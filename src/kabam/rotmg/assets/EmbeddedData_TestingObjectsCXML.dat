@@ -25,6 +25,19 @@
       </Texture>
       <Size>0</Size>
    </Object>
+   <Object type="0x638" id="Potion Gift">
+      <Class>Character</Class>
+      <StasisImmune/>
+      <Enemy/>
+      <NoMiniMap/>
+      <MaxHitPoints>200</MaxHitPoints>
+      <XpMult>0.0</XpMult>
+      <Size>80</Size>
+      <Texture>
+         <File>lofiObj</File>
+         <Index>0x02</Index>
+      </Texture>
+   </Object>
    <Object type="0x64e" id="Key Spawner">
       <Class>Character</Class>
       <Enemy/>
@@ -697,7 +710,7 @@
          <Index>0x21c</Index>
       </Texture>
    </Object>
-   <Object type="0x164" id="Testing Gift Katana Vani">
+   <Object type="0xbb5" id="Testing Gift Katana Vani">
       <Group>Testing Gifts Weapon</Group>
       <Class>Character</Class>
       <StasisImmune/>

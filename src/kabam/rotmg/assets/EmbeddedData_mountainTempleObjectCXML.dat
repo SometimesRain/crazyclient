@@ -198,26 +198,10 @@
       <feedPower>800</feedPower>
       <Soulbound/>
    </Object>
-   <Object type="0x12f" id="Mountain Temple Key">
-      <Class>Equipment</Class>
-      <Item/>
-      <DisplayId>Mountain Temple key</DisplayId>
-      <Texture>
-         <File>mountainTempleObjects8x8</File>
-         <Index>0xcb</Index>
-      </Texture>
-      <SlotType>10</SlotType>
-      <Description>A key which opens an entrance to The Mountain Temple.</Description>
-      <Sound>use_key</Sound>
-      <Consumable/>
-      <Soulbound/>
-      <Activate id="Mountain Temple Portal">Create</Activate>
-      <Track/>
-   </Object>
    <Object type="0x6fe5" id="Daichi Key">
       <Class>Equipment</Class>
       <Item/>
-      <DisplayId>Mountain Temple key</DisplayId>
+      <DisplayId>Daichi key</DisplayId>
       <Texture>
          <File>mountainTempleObjects8x8</File>
          <Index>0xcb</Index>
@@ -2767,11 +2751,12 @@
       <DeathSound>monster/dark_elves_death</DeathSound>
       <Size>100</Size>
       <ShadowSize>100</ShadowSize>
-      <MaxHitPoints>200000</MaxHitPoints>
-      <Defense>50</Defense>
+      <MaxHitPoints>300000</MaxHitPoints>
+      <Defense>65</Defense>
       <XpMult>0</XpMult>
       <StasisImmune/>
       <StunImmune/>
+      <XpMult>5.13</XpMult>
       <ParalyzeImmune/>
       <Projectile id="0">
          <ObjectId>Pink Orb</ObjectId>
@@ -2795,6 +2780,7 @@
          <Size>100</Size>
          <LifetimeMS>6000</LifetimeMS>
          <ConditionEffect duration="2">Armor Broken</ConditionEffect>
+         <MultiHit/>
       </Projectile>
       <Projectile id="3">
          <ObjectId>Air Elemental missiles</ObjectId>
@@ -2803,6 +2789,7 @@
          <Size>100</Size>
          <LifetimeMS>6000</LifetimeMS>
          <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+         <MultiHit/>
       </Projectile>
       <Projectile id="4">
          <ObjectId>Water Elemental missiles</ObjectId>
@@ -2811,6 +2798,7 @@
          <Size>100</Size>
          <LifetimeMS>6000</LifetimeMS>
          <ConditionEffect duration="2">Slowed</ConditionEffect>
+         <MultiHit/>
       </Projectile>
       <Projectile id="5">
          <ObjectId>Earth Elemental missiles</ObjectId>
@@ -2819,6 +2807,7 @@
          <Size>100</Size>
          <LifetimeMS>6000</LifetimeMS>
          <ConditionEffect duration="2">Bleeding</ConditionEffect>
+         <MultiHit/>
       </Projectile>
       <Projectile id="6">
          <ObjectId>Medium Pink Bolt</ObjectId>
@@ -2849,6 +2838,7 @@
    </Object>
    <Object type="0xab18" id="Mini Corrupted Armor">
       <Enemy/>
+      <DisplayId>Mini Corrupted Armor</DisplayId>
       <Class>Character</Class>
       <AnimatedTexture>
          <File>mountainTempleChars8x8</File>
@@ -2861,6 +2851,7 @@
       <Defense>12</Defense>
       <Flying/>
       <God/>
+      <XpMult>0</XpMult>
       <Projectile id="0">
          <ObjectId>Cursed Slash</ObjectId>
          <Damage>75</Damage>
@@ -2872,6 +2863,7 @@
       </Projectile>
    </Object>
    <Object type="0xaae0" id="Corrupted Armor">
+      <DisplayId>Corrupted Armor</DisplayId>
       <Enemy/>
       <Class>Character</Class>
       <AnimatedTexture>
@@ -2885,6 +2877,7 @@
       <Defense>12</Defense>
       <Flying/>
       <God/>
+      <XpMult>2</XpMult>
       <Projectile id="0">
          <ObjectId>Large Pink Bolt</ObjectId>
          <Damage>75</Damage>
@@ -2919,6 +2912,7 @@
       <Defense>30</Defense>
       <StasisImmune/>
       <ParalyzeImmune/>
+      <XpMult>0.77</XpMult>
       <Projectile id="0">
          <ObjectId>Spear Bolt</ObjectId>
          <Damage>80</Damage>
@@ -2936,7 +2930,7 @@
    </Object>
    <Object type="0xaaa3" id="Corrupted Bowman">
       <Enemy/>
-      <DisplayId>Corrupted Spearman</DisplayId>
+      <DisplayId>Corrupted Bowman</DisplayId>
       <Class>Character</Class>
       <Group>Daichi</Group>
       <AnimatedTexture>
@@ -2950,6 +2944,7 @@
       <MaxHitPoints>1750</MaxHitPoints>
       <Defense>30</Defense>
       <StasisImmune/>
+      <XpMult>0.77</XpMult>
       <Projectile id="0">
          <ObjectId>Bowman arrow</ObjectId>
          <Damage>80</Damage>
@@ -2967,7 +2962,7 @@
    </Object>
    <Object type="0xaaa4" id="Corrupted Caster">
       <Enemy/>
-      <DisplayId>Caster Cursed Bolt</DisplayId>
+      <DisplayId>Corrupted Caster</DisplayId>
       <Class>Character</Class>
       <Group>Daichi</Group>
       <AnimatedTexture>
@@ -2980,7 +2975,7 @@
       <ShadowSize>50</ShadowSize>
       <MaxHitPoints>3750</MaxHitPoints>
       <Defense>25</Defense>
-      <XpMult>0</XpMult>
+      <XpMult>0.77</XpMult>
       <StasisImmune/>
       <ParalyzeImmune/>
       <Projectile id="0">
@@ -3016,6 +3011,7 @@
       <Defense>30</Defense>
       <StasisImmune/>
       <ParalyzeImmune/>
+      <XpMult>0.77</XpMult>
       <Projectile id="0">
          <ObjectId>Monk Mini Flame</ObjectId>
          <Damage>75</Damage>
@@ -3080,33 +3076,6 @@
          <LifetimeMS>3000</LifetimeMS>
       </Projectile>
    </Object>
-   <Object type="0xaab1" id="Fire Tornado">
-      <Enemy/>
-      <DisplayId>Fire Tornado</DisplayId>
-      <Class>Character</Class>
-      <Group>Daichi</Group>
-      <AnimatedTexture>
-         <File>mountainTempleChars16x16</File>
-         <Index>8</Index>
-      </AnimatedTexture>
-      <HitSound>monster/dark_elves_hit</HitSound>
-      <DeathSound>monster/dark_elves_death</DeathSound>
-      <Size>100</Size>
-      <ShadowSize>50</ShadowSize>
-      <MaxHitPoints>25000</MaxHitPoints>
-      <Defense>25</Defense>
-      <XpMult>0</XpMult>
-      <StasisImmune/>
-      <Projectile id="0">
-         <ObjectId>Invisible</ObjectId>
-         <Speed>50</Speed>
-         <Damage>20</Damage>
-         <LifetimeMS>100</LifetimeMS>
-         <Size>0</Size>
-         <MultiHit/>
-         <ArmorPiercing/>
-      </Projectile>
-   </Object>
    <Object type="0xaab2" id="Air Elemental">
       <Enemy/>
       <DisplayId>Air Elemental</DisplayId>
@@ -3131,48 +3100,6 @@
          <Speed>112</Speed>
          <Size>100</Size>
          <LifetimeMS>1000</LifetimeMS>
-      </Projectile>
-   </Object>
-   <Object type="0xaab3" id="Thunder Strike">
-      <Enemy/>
-      <DisplayId>Thunder Strike</DisplayId>
-      <Class>Character</Class>
-      <Group>Daichi</Group>
-      <AnimatedTexture>
-         <File>mountainTempleChars16x16</File>
-         <Index>9</Index>
-      </AnimatedTexture>
-      <HitSound>monster/dark_elves_hit</HitSound>
-      <DeathSound>monster/dark_elves_death</DeathSound>
-      <Size>180</Size>
-      <ShadowSize>50</ShadowSize>
-      <MaxHitPoints>25000</MaxHitPoints>
-      <Defense>25</Defense>
-      <XpMult>0</XpMult>
-      <StasisImmune/>
-      <Projectile id="0">
-         <ObjectId>Air Elemental Bolt</ObjectId>
-         <Damage>10</Damage>
-         <Speed>75</Speed>
-         <Size>120</Size>
-         <LifetimeMS>500</LifetimeMS>
-         <ConditionEffect duration=".5">Paralyzed</ConditionEffect>
-      </Projectile>
-      <Projectile id="1">
-         <ObjectId>Thunderbolt</ObjectId>
-         <Damage>10</Damage>
-         <Speed>50</Speed>
-         <Size>80</Size>
-         <LifetimeMS>1000</LifetimeMS>
-         <ConditionEffect duration="0.2">Paralyzed</ConditionEffect>
-      </Projectile>
-      <Projectile id="3">
-         <ObjectId>Invisible</ObjectId>
-         <Speed>50</Speed>
-         <Damage>0</Damage>
-         <LifetimeMS>100</LifetimeMS>
-         <Size>0</Size>
-         <MultiHit/>
       </Projectile>
    </Object>
    <Object type="0xaab4" id="Water Elemental">
@@ -3284,6 +3211,7 @@
          <Size>100</Size>
          <LifetimeMS>6000</LifetimeMS>
          <ConditionEffect duration="2">Armor Broken</ConditionEffect>
+         <MultiHit/>
       </Projectile>
    </Object>
    <Object type="0xaabc" id="Earth Power">
@@ -3339,6 +3267,7 @@
          <Speed>60</Speed>
          <Size>100</Size>
          <LifetimeMS>6000</LifetimeMS>
+         <MultiHit/>
          <ConditionEffect duration="2">Bleeding</ConditionEffect>
       </Projectile>
    </Object>
@@ -3395,6 +3324,7 @@
          <Speed>60</Speed>
          <Size>100</Size>
          <LifetimeMS>6000</LifetimeMS>
+         <MultiHit/>
          <ConditionEffect duration="2">Slowed</ConditionEffect>
       </Projectile>
    </Object>
@@ -3451,6 +3381,7 @@
          <Speed>60</Speed>
          <Size>100</Size>
          <LifetimeMS>6000</LifetimeMS>
+         <MultiHit/>
          <ConditionEffect duration="1">Paralyzed</ConditionEffect>
       </Projectile>
    </Object>
@@ -3499,93 +3430,6 @@
          <Index>0</Index>
       </Texture>
       <Size>100</Size>
-   </Object>
-   <Object type="0xaac5" id="Water Pulse1">
-      <Enemy/>
-      <DisplayId>Water Pulse 1</DisplayId>
-      <Class>Character</Class>
-      <Group>Daichi</Group>
-      <AnimatedTexture>
-         <File>mountainTempleChars8x8</File>
-         <Index>6</Index>
-      </AnimatedTexture>
-      <HitSound>monster/dark_elves_hit</HitSound>
-      <DeathSound>monster/dark_elves_death</DeathSound>
-      <Size>100</Size>
-      <ShadowSize>50</ShadowSize>
-      <MaxHitPoints>25000</MaxHitPoints>
-      <Defense>25</Defense>
-      <XpMult>0</XpMult>
-      <StasisImmune/>
-      <StunImmune/>
-      <ParalyzeImmune/>
-      <SlowImmune/>
-      <Projectile id="0">
-         <ObjectId>Water Storm</ObjectId>
-         <Damage>5</Damage>
-         <Speed>50</Speed>
-         <Size>80</Size>
-         <LifetimeMS>400</LifetimeMS>
-         <ConditionEffect duration=".6">Slowed</ConditionEffect>
-      </Projectile>
-   </Object>
-   <Object type="0xaac6" id="Water Pulse2">
-      <Enemy/>
-      <DisplayId>Water Pulse 2</DisplayId>
-      <Class>Character</Class>
-      <Group>Daichi</Group>
-      <AnimatedTexture>
-         <File>mountainTempleChars8x8</File>
-         <Index>6</Index>
-      </AnimatedTexture>
-      <HitSound>monster/dark_elves_hit</HitSound>
-      <DeathSound>monster/dark_elves_death</DeathSound>
-      <Size>100</Size>
-      <ShadowSize>50</ShadowSize>
-      <MaxHitPoints>25000</MaxHitPoints>
-      <Defense>25</Defense>
-      <XpMult>0</XpMult>
-      <StasisImmune/>
-      <StunImmune/>
-      <ParalyzeImmune/>
-      <SlowImmune/>
-      <Projectile id="0">
-         <ObjectId>Water Storm</ObjectId>
-         <Damage>5</Damage>
-         <Speed>50</Speed>
-         <Size>60</Size>
-         <LifetimeMS>300</LifetimeMS>
-         <ConditionEffect duration=".4">Slowed</ConditionEffect>
-      </Projectile>
-   </Object>
-   <Object type="0xaac7" id="Water Pulse3">
-      <Enemy/>
-      <DisplayId>Water Pulse 3</DisplayId>
-      <Class>Character</Class>
-      <Group>Daichi</Group>
-      <AnimatedTexture>
-         <File>mountainTempleChars8x8</File>
-         <Index>6</Index>
-      </AnimatedTexture>
-      <HitSound>monster/dark_elves_hit</HitSound>
-      <DeathSound>monster/dark_elves_death</DeathSound>
-      <Size>100</Size>
-      <ShadowSize>50</ShadowSize>
-      <MaxHitPoints>25000</MaxHitPoints>
-      <Defense>25</Defense>
-      <XpMult>0</XpMult>
-      <StasisImmune/>
-      <StunImmune/>
-      <ParalyzeImmune/>
-      <SlowImmune/>
-      <Projectile id="0">
-         <ObjectId>Water Storm</ObjectId>
-         <Damage>5</Damage>
-         <Speed>50</Speed>
-         <Size>40</Size>
-         <LifetimeMS>200</LifetimeMS>
-         <ConditionEffect duration=".2">Slowed</ConditionEffect>
-      </Projectile>
    </Object>
    <Object type="0x6fcc" id="Encounter Altar">
       <Enemy/>
