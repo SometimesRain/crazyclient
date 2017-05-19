@@ -3352,7 +3352,7 @@
       <RateOfFire>1</RateOfFire>
       <Sound>weapon/golden_bow</Sound>
       <Projectile>
-         <ObjectId>Blue Arrow</ObjectId>
+         <ObjectId>Purple Arrow</ObjectId>
          <Speed>160</Speed>
          <MinDamage>48</MinDamage>
          <MaxDamage>65</MaxDamage>
@@ -3804,7 +3804,7 @@
          <Index>06</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Warrior with the Olive Gladiator Skin.</Description>
+      <Description>Customize your Warrior with the Olive Gladiator Skin.\n\nSkin Class: Warrior</Description>
       <Activate skinType="1027">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -3819,7 +3819,7 @@
          <Index>07</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Warrior with the Ivory Gladiator Skin.</Description>
+      <Description>Customize your Warrior with the Ivory Gladiator Skin.\n\nSkin Class: Warrior</Description>
       <Activate skinType="1028">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -3834,7 +3834,7 @@
          <Index>08</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Ninja with the Rosen Blade Skin.\n\nSprite Credits: Univoid</Description>
+      <Description>Customize your Ninja with the Rosen Blade Skin.\n\nSkin Class: Ninja\nSprite Credits: Univoid</Description>
       <Activate skinType="1029">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -3849,7 +3849,7 @@
          <Index>09</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Ninja with the Djinja Skin.</Description>
+      <Description>Customize your Ninja with the Djinja Skin.\n\nSkin Class: Ninja</Description>
       <Activate skinType="1030">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -3864,7 +3864,7 @@
          <Index>102</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Ninja with the Baby Djinja Skin.</Description>
+      <Description>Customize your Ninja with the Baby Djinja Skin.\n\nSkin Class: Ninja</Description>
       <Activate skinType="29840">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -3879,7 +3879,7 @@
          <Index>103</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>This rose might look peaceful, but her blade will strike you faster than you blink!\n\nSprite Credits: Lovens</Description>
+      <Description>This rose might look peaceful, but her blade will strike you faster than you blink!\n\nSkin Class: Ninja\nSprite Credits: Lovens</Description>
       <Activate skinType="29841">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -3894,7 +3894,7 @@
          <Index>98</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Priest with the Mini Geb Skin.</Description>
+      <Description>Customize your Priest with the Mini Geb Skin.\n\nSkin Class: Priest</Description>
       <Activate skinType="29842">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -3909,7 +3909,7 @@
          <Index>99</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Rogue with the Mini Skuld Skin.</Description>
+      <Description>Customize your Rogue with the Mini Skuld Skin.\n\nSkin Class: Rogue</Description>
       <Activate skinType="29843">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -3924,7 +3924,7 @@
          <Index>95</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Knight with the Mini Oryx Skin.</Description>
+      <Description>Customize your Knight with the Mini Oryx Skin.\n\nSkin Class: Knight</Description>
       <Activate skinType="29847">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -3939,7 +3939,7 @@
          <Index>97</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Paladin with the Mini Swoll Skin.</Description>
+      <Description>Customize your Paladin with the Mini Swoll Skin.\n\nSkin Class: Paladin</Description>
       <Activate skinType="29845">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -3954,7 +3954,7 @@
          <Index>100</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Wizard with the Mini Twilight Skin.</Description>
+      <Description>Customize your Wizard with the Mini Twilight Skin.\n\nSkin Class: Wizard</Description>
       <Activate skinType="29844">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -3969,7 +3969,7 @@
          <Index>96</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Mystic with the Mini Phylactery Skin.</Description>
+      <Description>Customize your Mystic with the Mini Phylactery Skin.\n\nSkin Class: Mystic</Description>
       <Activate skinType="29846">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -3984,7 +3984,7 @@
          <Index>94</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Huntress with the Mini Thessal Skin.</Description>
+      <Description>Customize your Huntress with the Mini Thessal Skin.\n\nSkin Class: Huntress</Description>
       <Activate skinType="29848">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -3999,7 +3999,7 @@
          <Index>107</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Knight with the Slurp Knight Skin.</Description>
+      <Description>Customize your Knight with the Slurp Knight Skin.\n\nSkin Class: Knight</Description>
       <Activate skinType="2521">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -4014,7 +4014,7 @@
          <Index>108</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Necromancer with the Vampire Lord Skin.</Description>
+      <Description>Customize your Necromancer with the Vampire Lord Skin.\n\nSkin Class: Necromancer</Description>
       <Activate skinType="32766">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -4029,7 +4029,7 @@
          <Index>109</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Paladin with the Headless Rider Skin.</Description>
+      <Description>Customize your Paladin with the Headless Rider Skin.\n\nSkin Class: Paladin</Description>
       <Activate skinType="32654">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -4044,7 +4044,7 @@
          <Index>110</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Paladin with the Pilgrim Father Skin.</Description>
+      <Description>Customize your Paladin with the Pilgrim Father Skin.\n\nSkin Class: Paladin</Description>
       <Activate skinType="32656">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -4059,7 +4059,7 @@
          <Index>111</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Mystic with the Pilgrim Mother Skin.</Description>
+      <Description>Customize your Mystic with the Pilgrim Mother Skin.\n\nSkin Class: Mystic</Description>
       <Activate skinType="32657">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -4074,7 +4074,7 @@
          <Index>112</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Wizard with the Wizard Supreme Skin.</Description>
+      <Description>Customize your Wizard with the Wizard Supreme Skin.\n\nSkin Class: Wizard</Description>
       <Activate skinType="32658">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -4089,7 +4089,7 @@
          <Index>113</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Warrior with Rudolph the Berzerk Skin.</Description>
+      <Description>Customize your Warrior with Rudolph the Berzerk Skin.\n\nSkin Class: Warrior</Description>
       <Activate skinType="32675">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -4104,7 +4104,7 @@
          <Index>114</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Paladin with Miss Santa Skin.</Description>
+      <Description>Customize your Paladin with Miss Santa Skin.\n\nSkin Class: Paladin</Description>
       <Activate skinType="32676">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -4119,7 +4119,7 @@
          <Index>115</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Wizard with Snow Queen Skin.</Description>
+      <Description>Customize your Wizard with Snow Queen Skin.\n\nSkin Class: Wizard\nSprite Credits: Beige</Description>
       <Activate skinType="32677">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -4134,7 +4134,7 @@
          <Index>116</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Warrior with Dragon Tamer Skin.</Description>
+      <Description>Customize your Warrior with Dragon Tamer Skin.\n\nSkin Class: Warrior</Description>
       <Activate skinType="32701">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -4149,7 +4149,7 @@
          <Index>117</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Archer with the Inuit Skin.</Description>
+      <Description>Customize your Archer with the Inuit Skin.\n\nSkin Class: Archer\nSprite Credits: Beige</Description>
       <Activate skinType="312">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -4164,7 +4164,7 @@
          <Index>118</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Rogue  with the Snowcloaked Rogue Skin.</Description>
+      <Description>Customize your Rogue with the Snowcloaked Rogue Skin.\n\nSkin Class: Rogue\nSprite Credits: Poshun</Description>
       <Activate skinType="313">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -5716,7 +5716,7 @@
          <Index>0x481</Index>
       </Texture>
       <SlotType>9</SlotType>
-      <Description>An odd stone, eminating a dark and mysterious energy.</Description>
+      <Description>An odd stone, emanating a dark and mysterious energy.</Description>
       <ActivateOnEquip stat="22" amount="6">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="21" amount="6">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="3" amount="110">IncrementStat</ActivateOnEquip>
@@ -11965,7 +11965,7 @@
          <Index>30</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Knight with the Slime Skin. Rarity: Uncommon</Description>
+      <Description>Customize your Knight with the Slime Skin.\n\nSkin Class: Knight</Description>
       <Activate skinType="903">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -11978,7 +11978,7 @@
          <Index>35</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Archer with the Slime Skin. Rarity: Common</Description>
+      <Description>Customize your Archer with the Slime Skin.\n\nSkin Class: Archer</Description>
       <Activate skinType="904">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -11991,7 +11991,7 @@
          <Index>31</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Priest with the Slime Skin. Rarity: Common</Description>
+      <Description>Customize your Priest with the Slime Skin.\n\nSkin Class: Priest</Description>
       <Activate skinType="905">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -12004,7 +12004,7 @@
          <Index>36</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Assassin with the Agent Skin. Rarity: Rare</Description>
+      <Description>Customize your Assassin with the Agent Skin.\n\nSkin Class: Assassin</Description>
       <Activate skinType="912">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -12017,7 +12017,7 @@
          <Index>44</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Rogue with the Brigand Skin. Rarity: Uncommon</Description>
+      <Description>Customize your Rogue with the Brigand Skin.\n\nSkin Class: Rogue</Description>
       <Activate skinType="913">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -12030,7 +12030,7 @@
          <Index>41</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Wizard with the Gentleman Skin. Rarity: Rare Indeed</Description>
+      <Description>Customize your Wizard with the Gentleman Skin.\n\nSkin Class: Wizard</Description>
       <Activate skinType="914">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -12045,7 +12045,7 @@
          <Index>48</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Huntress with the Scarlett Skin.</Description>
+      <Description>Customize your Huntress with the Scarlett Skin.\n\nSkin Class: Huntress</Description>
       <Activate skinType="900">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -12058,7 +12058,7 @@
          <Index>37</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Warrior with the Shoveguy Skin.</Description>
+      <Description>Customize your Warrior with the Shoveguy Skin.\n\nSkin Class: Warrior</Description>
       <Activate skinType="883">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -12071,7 +12071,7 @@
          <Index>22</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Ninja with the Slime Skin.</Description>
+      <Description>Customize your Ninja with the Slime Skin.\n\nSkin Class: Ninja</Description>
       <Activate skinType="856">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -12084,7 +12084,7 @@
          <Index>51</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Blushing? I'm not blushing. Found during Valentines Day 2014.</Description>
+      <Description>Blushing? I'm not blushing.\n\nSkin Class: Paladin</Description>
       <Activate skinType="915">UnlockSkin</Activate>
       <Consumable/>
       <BagType>6</BagType>
@@ -12097,7 +12097,7 @@
          <Index>52</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Looking for a Valentine. Found during Valentines Day 2014.</Description>
+      <Description>Looking for a Valentine.\n\nSkin Class: Rogue</Description>
       <Activate skinType="916">UnlockSkin</Activate>
       <Consumable/>
       <BagType>6</BagType>
@@ -12110,7 +12110,7 @@
          <Index>38</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Don't make me hit you with this ruler!</Description>
+      <Description>Don't make me hit you with this ruler!\n\nSkin Class: Priest</Description>
       <Activate skinType="884">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -12123,7 +12123,7 @@
          <Index>46</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>I'm not really sure where the term 'witch' came from.</Description>
+      <Description>I'm not really sure where the term 'witch' came from.\n\nSkin Class: Necromancer</Description>
       <Activate skinType="898">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -12136,7 +12136,7 @@
          <Index>47</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Not all sorcerers are male.</Description>
+      <Description>Not all sorcerers are male.\n\nSkin Class: Sorcerer</Description>
       <Activate skinType="899">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -12149,7 +12149,7 @@
          <Index>53</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Found during Valentines Day 2014. Made by SlugKing.</Description>
+      <Description>Goddess of the Hunt, Wilderness and many other things.\n\nSkin Class: Huntress\nSprite Credits: SlugKing.</Description>
       <Activate skinType="901">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -12327,7 +12327,7 @@
          <Index>32</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>This? Don't be afraid of me. My spell just backfired, it will wear off soon.</Description>
+      <Description>This? Don't be afraid of me. My spell just backfired, it will wear off soon.\n\nSkin Class: Wizard</Description>
       <Activate skinType="872">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -12340,7 +12340,7 @@
          <Index>49</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Never judge a book by its cover.</Description>
+      <Description>Never judge a book by its cover.\n\nSkin Class: Trickster</Description>
       <Activate skinType="917">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -12395,7 +12395,7 @@
          <Index>54</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>This bunny is hopping mad that players have been looting all the eggs he hid.</Description>
+      <Description>This bunny is hopping mad that players have been looting all the eggs he hid.\n\nSkin Class: Sorcerer</Description>
       <Activate skinType="8855">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -12408,7 +12408,7 @@
          <Index>54</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>This bunny is hopping mad that players have been looting all the eggs he hid.</Description>
+      <Description>This bunny is hopping mad that players have been looting all the eggs he hid.\n\nSkin Class: Sorcerer</Description>
       <Activate skinType="8855">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -12507,7 +12507,7 @@
          <Index>39</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Paladin with the Holy Avenger Skin.\n\nSprite Credits: Uomo</Description>
+      <Description>Customize your Paladin with the Holy Avenger Skin.\n\nSkin Class: Paladin\nSprite Credits: Uomo</Description>
       <Activate skinType="885">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -12598,7 +12598,7 @@
          <Index>68</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>A priestess who has devoted her life to the care-taking of the Nexus.\n\nSprite Credits: DG_spritemaker</Description>
+      <Description>A priestess who has devoted her life to the care-taking of the Nexus.\n\nSkin Class: Huntress\nSprite Credits: DG_spritemaker</Description>
       <Activate skinType="8977">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -12611,7 +12611,7 @@
          <Index>70</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>One of the Dark Elves that have recently began showing up in the Realm.\n\nSprite Credits: SteeleAlt</Description>
+      <Description>One of the Dark Elves that have recently began showing up in the Realm.\n\nSkin Class: Trickster\nSprite Credits: SteeleAlt</Description>
       <Activate skinType="8979">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -12624,7 +12624,7 @@
          <Index>58</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>He's big, he's bad, and he's a wolf.\n\nSprite Credits: Beige</Description>
+      <Description>He's big, he's bad, and he's a wolf.\n\nSkin Class: Warrior\nSprite Credits: Beige</Description>
       <Activate skinType="8967">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -12637,7 +12637,7 @@
          <Index>59</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>A trend-setter when it comes to hoods.\n\nSprite Credits: Beige</Description>
+      <Description>A trend-setter when it comes to hoods.\n\nSkin Class: Mystic\nSprite Credits: Beige</Description>
       <Activate skinType="8968">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -12774,7 +12774,7 @@
          <Index>60</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Cursed by responsibility and awesome knife skills.\n\nSprite Credits: IrondogdogROTMG</Description>
+      <Description>Cursed by responsibility and awesome knife skills.\n\nSkin Class: Trickster\nSprite Credits: IrondogdogROTMG</Description>
       <Activate skinType="8969">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -12787,7 +12787,7 @@
          <Index>42</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Archer with the Ranger Skin.\n\nSprite Credits: Radiek</Description>
+      <Description>Customize your Archer with the Ranger Skin.\n\nSkin Class: Archer\nSprite Credits: Radiek</Description>
       <Activate skinType="888">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -12800,7 +12800,7 @@
          <Index>55</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Knight of the Platinum Order.\n\nSprite Credits: DELer</Description>
+      <Description>Knight of the Platinum Order.\n\nSkin Class: Knight\nSprite Credits: DELer</Description>
       <Activate skinType="8964">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -12813,7 +12813,7 @@
          <Index>56</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Warrior of the Platinum Order.\n\nSprite Credits: DELer</Description>
+      <Description>Warrior of the Platinum Order.\n\nSkin Class: Warrior\nSprite Credits: DELer</Description>
       <Activate skinType="8965">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -12826,7 +12826,7 @@
          <Index>57</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Rogue of the Platinum Order.\n\nSprite Credits: DELer</Description>
+      <Description>Rogue of the Platinum Order.\n\nSkin Class: Rogue\nSprite Credits: DELer</Description>
       <Activate skinType="8966">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -12839,7 +12839,7 @@
          <Index>71</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>A stylish witch, community choice winner: Project Realmway 2.\n\nSprite Credits: DieGo</Description>
+      <Description>A stylish witch, community choice winner: Project Realmway 2.\n\nSkin Class: Wizard\nSprite Credits: DieGo</Description>
       <Activate skinType="9012">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -12996,7 +12996,7 @@
          <Index>23</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Sorcerer with the Slime Skin.</Description>
+      <Description>Customize your Sorcerer with the Slime Skin.\n\nSkin Class: Sorcerer</Description>
       <Activate skinType="9013">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -13009,7 +13009,7 @@
          <Index>24</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Trickster with the Slime Skin.</Description>
+      <Description>Customize your Trickster with the Slime Skin.\n\nSkin Class: Trickster</Description>
       <Activate skinType="9014">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -13022,7 +13022,7 @@
          <Index>25</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Mystic with the Slime Skin.</Description>
+      <Description>Customize your Mystic with the Slime Skin.\n\nSkin Class: Mystic</Description>
       <Activate skinType="9026">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -13035,7 +13035,7 @@
          <Index>26</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Huntress with the Slime Skin.</Description>
+      <Description>Customize your Huntress with the Slime Skin.\n\nSkin Class: Huntress</Description>
       <Activate skinType="9027">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -13048,7 +13048,7 @@
          <Index>27</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Necromancer with the Slime Skin.</Description>
+      <Description>Customize your Necromancer with the Slime Skin.\n\nSkin Class: Necromancer</Description>
       <Activate skinType="9028">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -13078,7 +13078,7 @@
          <Index>28</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Assassin with the Slime Skin.</Description>
+      <Description>Customize your Assassin with the Slime Skin.\n\nSkin Class: Assassin</Description>
       <Activate skinType="9029">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -13091,7 +13091,7 @@
          <Index>29</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Paladin with the Slime Skin.</Description>
+      <Description>Customize your Paladin with the Slime Skin.\n\nSkin Class: Paladin</Description>
       <Activate skinType="9030">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -13104,7 +13104,7 @@
          <Index>33</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Rogue with the Slime Skin.</Description>
+      <Description>Customize your Rogue with the Slime Skin.\n\nSkin Class: Rogue</Description>
       <Activate skinType="9031">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -13117,7 +13117,7 @@
          <Index>34</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Warrior with the Slime Skin.</Description>
+      <Description>Customize your Warrior with the Slime Skin.\n\nSkin Class: Warrior</Description>
       <Activate skinType="9032">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -13199,7 +13199,7 @@
          <Index>72</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>A stunning costume to wear for your theatre debut.</Description>
+      <Description>A stunning costume to wear for your theatre debut.\n\nSkin Class: Assassin</Description>
       <Activate skinType="29770">UnlockSkin</Activate>
       <Consumable/>
       <BagType>6</BagType>
@@ -13212,7 +13212,7 @@
          <Index>73</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Hee Hee, Ha Ha, Ho Ho! Want to hear a joke?\n\nSprite Credits: ViciousTwo and Thq32df</Description>
+      <Description>Hee Hee, Ha Ha, Ho Ho! Want to hear a joke?\n\nSkin Class: Trickster\nSprite Credits: ViciousTwo and Thq32df</Description>
       <Activate skinType="29771">UnlockSkin</Activate>
       <Consumable/>
       <BagType>6</BagType>
@@ -13573,7 +13573,7 @@
          <Index>75</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>A spooky ghost that haunts the Nexus.</Description>
+      <Description>A spooky ghost that haunts the Nexus.\n\nSkin Class: Huntress</Description>
       <Activate skinType="29789">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -13586,7 +13586,7 @@
          <Index>74</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Skeletons are basically the scariest thing ever.</Description>
+      <Description>Skeletons are basically the scariest thing ever.\n\nSkin Class: Warrior</Description>
       <Activate skinType="29790">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -13599,7 +13599,7 @@
          <Index>76</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Join my legions of infected, hero.\n\nSprite Credits: WunderWafe</Description>
+      <Description>Join my legions of infected, hero.\n\nSkin Class: Assassin\nSprite Credits: WunderWafe</Description>
       <Activate skinType="29791">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -13612,7 +13612,7 @@
          <Index>77</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Unlocked during Halloween 2014.\n\nSprite Credits: WunderWafe</Description>
+      <Description>Unlocked during Halloween 2014.\n\nSkin Class: Archer\nSprite Credits: WunderWafe</Description>
       <Activate skinType="29799">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -13625,7 +13625,7 @@
          <Index>78</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Unlocked during Halloween 2014.\n\nSprite Credits: WunderWafe</Description>
+      <Description>Unlocked during Halloween 2014.\n\nSkin Class: Paladin\nSprite Credits: WunderWafe</Description>
       <Activate skinType="29800">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -13638,7 +13638,7 @@
          <Index>79</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Unlocked during Halloween 2014.\n\nSprite Credits: Beige</Description>
+      <Description>Unlocked during Halloween 2014.\n\nSkin Class: Huntress\nSprite Credits: Beige</Description>
       <Activate skinType="29801">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -13651,7 +13651,7 @@
          <Index>80</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Unlocked during Halloween 2014.\n\nSprite Credits: Hawkmin</Description>
+      <Description>Unlocked during Halloween 2014.\n\nSkin Class: Warrior\nSprite Credits: Hawkmin</Description>
       <Activate skinType="29816">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -13664,7 +13664,7 @@
          <Index>81</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Unlocked during Halloween 2014.\n\nSprite Credits: Beige</Description>
+      <Description>Unlocked during Halloween 2014.\n\nSkin Class: Trickster\nSprite Credits: Beige</Description>
       <Activate skinType="29817">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -13677,7 +13677,7 @@
          <Index>82</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Unlocked during Halloween 2014.\n\nSprite Credits: Beige</Description>
+      <Description>Unlocked during Halloween 2014.\n\nSkin Class: Knight\nSprite Credits: Beige</Description>
       <Activate skinType="29818">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -13690,7 +13690,7 @@
          <Index>83</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Unlocked during Halloween 2014.\n\nSprite Credits: Beige</Description>
+      <Description>Unlocked during Halloween 2014.\n\nSkin Class: Rogue\nSprite Credits: Beige</Description>
       <Activate skinType="29808">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -13703,7 +13703,7 @@
          <Index>84</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Unlocked during Halloween 2014.\n\nSprite Credits: Thqdfthqdf</Description>
+      <Description>Unlocked during Halloween 2014.\n\nSkin Class: Ninja\nSprite Credits: Thqdfthqdf</Description>
       <Activate skinType="29809">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -13716,7 +13716,7 @@
          <Index>85</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Unlocked during Halloween 2014.\n\nSprite Credits: DG</Description>
+      <Description>Unlocked during Halloween 2014.\n\nSkin Class: Necromancer\nSprite Credits: DG</Description>
       <Activate skinType="29810">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -13729,7 +13729,7 @@
          <Index>86</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Unlocked during Halloween 2014.\n\nSprite Credits: Thqdfthqdf</Description>
+      <Description>Unlocked during Halloween 2014.\n\nSkin Class: Priest\nSprite Credits: Thqdfthqdf</Description>
       <Activate skinType="29811">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -13742,7 +13742,7 @@
          <Index>67</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Unlocked during Halloween 2014.</Description>
+      <Description>Unlocked during Halloween 2014.\n\nSkin Class: Sorcerer</Description>
       <Activate skinType="8976">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -13755,7 +13755,7 @@
          <Index>88</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Unlocked during Halloween 2014.\n\nSprite Credits: Beige</Description>
+      <Description>Unlocked during Halloween 2014.\n\nSkin Class: Wizard\nSprite Credits: Beige</Description>
       <Activate skinType="29813">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -13768,7 +13768,7 @@
          <Index>89</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Unlocked during Halloween 2014.\n\nSprite Credits: Thqdfthqdf</Description>
+      <Description>Unlocked during Halloween 2014.\n\nSkin Class: Assassin\nSprite Credits: Thqdfthqdf</Description>
       <Activate skinType="29814">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -13781,7 +13781,7 @@
          <Index>90</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Unlocked during Halloween 2014.\n\nSprite Credits: Beige</Description>
+      <Description>Unlocked during Halloween 2014.\n\nSkin Class: Mystic\nSprite Credits: Beige</Description>
       <Activate skinType="29815">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -13865,7 +13865,7 @@
          <Index>0x551</Index>
       </Texture>
       <SlotType>19</SlotType>
-      <Description>The skull still seems to contain some of the Dark Spirit's power.</Description>
+      <Description>The skull still seems to contain some of the Void Entity's power.</Description>
       <ActivateOnEquip stat="22" amount="-3">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="20" amount="4">IncrementStat</ActivateOnEquip>
       <Usable/>
@@ -14043,7 +14043,7 @@
       <ActivateOnEquip stat="26" amount="2">IncrementStat</ActivateOnEquip>
       <BagType>4</BagType>
       <FameBonus>4</FameBonus>
-      <OldSound>bladeSwing</OldSound>
+      <OldSound>magicShoot</OldSound>
       <NumProjectiles>2</NumProjectiles>
       <ArcGap>0</ArcGap>
       <feedPower>500</feedPower>
@@ -14544,7 +14544,7 @@
          <Index>16</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>A new look to get any Wizard ready for the holidays. Double-Click to send this skin to your Vault Wardrobe</Description>
+      <Description>A new look to get any Wizard ready for the holidays.\n\nSkin Class: Wizard</Description>
       <Activate skinType="850">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -14558,7 +14558,7 @@
          <Index>17</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>A new look to get any Archer ready for the holidays. Double-Click to send this skin to your Vault Wardrobe</Description>
+      <Description>A new look to get any Archer ready for the holidays.\n\nSkin Class: Archer</Description>
       <Activate skinType="851">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -14572,7 +14572,7 @@
          <Index>50</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>A new look to get any Knight ready for the holidays. Double-Click to send this skin to your Vault Wardrobe</Description>
+      <Description>A new look to get any Knight ready for the holidays.\n\nSkin Class: Knight</Description>
       <Activate skinType="902">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -14705,7 +14705,8 @@
       <Consumable/>
       <Soulbound/>
       <Activate id="Toxic Sewers Portal">Create</Activate>
-      <feedPower>260</feedPower>
+      <feedPower>200</feedPower>
+      <BagType>5</BagType>
       <Track/>
    </Object>
    <Object type="0x11b" id="The Hive Key">
@@ -15414,7 +15415,7 @@
          <Index>0x1e</Index>
       </Texture>
       <SlotType>14</SlotType>
-      <Description>An excellent robe, woven from icy threads. Its typically only worn by the most adept ice mages.\n\nSprite Credits: Poshun</Description>
+      <Description>An excellent robe, woven from icy threads. It's typically only worn by the most adept ice mages.\n\nSprite Credits: Poshun</Description>
       <ActivateOnEquip stat="20" amount="4">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="21" amount="13">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="27" amount="6">IncrementStat</ActivateOnEquip>
@@ -15485,7 +15486,7 @@
          <Index>119</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Fashionable AND dangerous.\n\nSprite Credits: Beige</Description>
+      <Description>Fashionable AND dangerous.\n\nSkin Class: Trickster\nSprite Credits: Beige</Description>
       <Activate skinType="5859">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -15500,7 +15501,7 @@
          <Index>120</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Looks a lot less cute once its sword is in your eye.\n\nSprite Credits: Beige</Description>
+      <Description>Looks a lot less cute once its sword is in your eye.\n\nSkin Class: Knight\nSprite Credits: Beige</Description>
       <Activate skinType="5860">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -15515,7 +15516,7 @@
          <Index>121</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Smaller than the real Frimar, but no less dangerous.\n\nSprite Credits: Poshun</Description>
+      <Description>Smaller than the real Frimar, but no less dangerous.\n\nSkin Class: Knight\nSprite Credits: Poshun</Description>
       <Activate skinType="5861">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -15530,7 +15531,7 @@
          <Index>122</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Once sat on a Frozen Throne, but decided to go adventuring.\n\nSprite Credits: Beige</Description>
+      <Description>Once sat on a Frozen Throne, but decided to go adventuring.\n\nSkin Class: Necromancer\nSprite Credits: Beige</Description>
       <Activate skinType="5862">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -15545,7 +15546,7 @@
          <Index>123</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Some say the world will end in fire, some say in ice.\n\nSprite Credits: Beige</Description>
+      <Description>Some say the world will end in fire, some say in ice.\n\nSkin Class: Sorcerer\nSprite Credits: Beige</Description>
       <Activate skinType="5863">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -15560,7 +15561,7 @@
          <Index>124</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Crown not included to preserve sanity.\n\nSprite Credits: Kingged</Description>
+      <Description>Crown not included to preserve sanity.\n\nSkin Class: Priest\nSprite Credits: Kingged</Description>
       <Activate skinType="5864">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -15575,7 +15576,7 @@
          <Index>125</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>In case of emergency use icicle to stab enemy.\n\nSprite Credits: Poshun</Description>
+      <Description>In case of emergency use icicle to stab enemy.\n\nSkin Class: Mystic\nSprite Credits: Poshun</Description>
       <Activate skinType="5865">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -15590,7 +15591,7 @@
          <Index>126</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Do not follow, unless you like frostbite.\n\nSprite Credits: Beige</Description>
+      <Description>Do not follow, unless you like frostbite.\n\nSkin Class: Mystic\nSprite Credits: Beige</Description>
       <Activate skinType="5866">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -16042,7 +16043,7 @@
          <Index>132</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Oh white bag, white bag! Wherefore art thou white bag?\n\nSprite Credits: Poshun</Description>
+      <Description>Oh white bag, white bag! Wherefore art thou white bag?\n\nSkin Class: Trickster\nSprite Credits: Poshun</Description>
       <Activate skinType="6022">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -16057,7 +16058,7 @@
          <Index>133</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>She's coming for your heart!\n\nSprite Credits: Beige</Description>
+      <Description>She's coming for your heart!\n\nSkin Class: Huntress\nSprite Credits: Beige</Description>
       <Activate skinType="6023">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -16072,7 +16073,7 @@
          <Index>134</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Is good loot a tender thing? It is too rare, too scarce, too extraordinary, and it pricks like a Poison Fang Dagger.\n\nSprite Credits: Poshun</Description>
+      <Description>Is good loot a tender thing? It is too rare, too scarce, too extraordinary, and it pricks like a Poison Fang Dagger.\n\nSkin Class: Assassin\nSprite Credits: Poshun</Description>
       <Activate skinType="6024">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -16087,7 +16088,7 @@
          <Index>135</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Let's get this clown fiesta started!\n\nSprite Credits: Poshun</Description>
+      <Description>Let's get this clown fiesta started!\n\nSkin Class: Sorcerer\nSprite Credits: Poshun</Description>
       <Activate skinType="6025">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -16102,7 +16103,7 @@
          <Index>136</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Totally not a Necromancer.\n\nSprite Credits: Beige</Description>
+      <Description>Totally not a Necromancer.\n\nSkin Class: Necromancer\nSprite Credits: Beige</Description>
       <Activate skinType="6026">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -16342,7 +16343,7 @@
          <Index>142</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Make sure to Equip a Wind Circle for style points!\n\nSprite Credits: Poshun</Description>
+      <Description>Make sure to Equip a Wind Circle for style points!\n\nSkin Class: Ninja\nSprite Credits: Poshun</Description>
       <Activate skinType="10959">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -16357,7 +16358,7 @@
          <Index>143</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Legends say she will lead you to a pot of gold if you catch her!\n\nSprite Credits: Beige</Description>
+      <Description>Legends say she will lead you to a pot of gold if you catch her!\n\nSkin Class: Mystic\nSprite Credits: Beige</Description>
       <Activate skinType="10960">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -16372,7 +16373,7 @@
          <Index>144</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>The goddess of the sky. Make sure not to vandalize her property.\n\nSprite Credits: Poshun</Description>
+      <Description>The goddess of the sky. Make sure not to vandalize her property.\n\nSkin Class: Archer\nSprite Credits: Poshun</Description>
       <Activate skinType="10961">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -16387,7 +16388,7 @@
          <Index>145</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>The most ladylike of all leprechauns, or so she says. Don't tell the Mystic!\n\nSprite Credits: Kingged</Description>
+      <Description>The most ladylike of all leprechauns, or so she says. Don't tell the Mystic!\n\nSkin Class: Wizard\nSprite Credits: Kingged</Description>
       <Activate skinType="10962">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -16402,7 +16403,7 @@
          <Index>146</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>200 POUNDS OF FLUFFY TESTOSTERONE!\n\nSprite Credits: Beige</Description>
+      <Description>200 POUNDS OF FLUFFY TESTOSTERONE!\n\nSkin Class: Warrior\nSprite Credits: Beige</Description>
       <Activate skinType="10963">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -16417,7 +16418,7 @@
          <Index>147</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Easily pulls his wool over people's eyes.\n\nSprite Credits: Beige</Description>
+      <Description>Easily pulls his wool over people's eyes.\n\nSkin Class: Rogue\nSprite Credits: Beige</Description>
       <Activate skinType="10964">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -16432,7 +16433,7 @@
          <Index>148</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Ever thought about all the wizards who got polymorphed into sheep? \n\nSprite Credits: Beige</Description>
+      <Description>Ever thought about all the wizards who got polymorphed into sheep?\n\nSkin Class: Wizard\nSprite Credits: Beige</Description>
       <Activate skinType="10965">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -16447,7 +16448,7 @@
          <Index>149</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>The hunters will now become the hunted! \n\nSprite Credits: Beige</Description>
+      <Description>The hunters will now become the hunted!\n\nSkin Class: Archer\nSprite Credits: Beige</Description>
       <Activate skinType="10966">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -16462,7 +16463,7 @@
          <Index>150</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Guides the lambs to greener pastures. \n\nSprite Credits: Beige</Description>
+      <Description>Guides the lambs to greener pastures.\n\nSkin Class: Priest\nSprite Credits: Beige</Description>
       <Activate skinType="10967">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -16477,7 +16478,7 @@
          <Index>151</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Little Bo-Peep has lost her sheep... \n\nSprite Credits: Beige</Description>
+      <Description>Little Bo-Peep has lost her sheep...\n\nSkin Class: Mystic\nSprite Credits: Beige</Description>
       <Activate skinType="10968">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -16492,7 +16493,7 @@
          <Index>152</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>It's a bird... It's a plane... It's... just another wizard. \n\nSprite Credits: Kingged</Description>
+      <Description>It's a bird... It's a plane... It's... just another wizard.\n\nSkin Class: Wizard\nSprite Credits: Kingged</Description>
       <Activate skinType="10969">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -16507,7 +16508,7 @@
          <Index>153</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>MARVEL AT HIS ABILITY! \n\nSprite Credits: Poshun</Description>
+      <Description>MARVEL AT HIS ABILITY!\n\nSkin Class: Wizard\nSprite Credits: Poshun</Description>
       <Activate skinType="10971">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -16522,7 +16523,7 @@
          <Index>154</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Dye it green to become Stheno's sister! \n\nSprite Credits: Poshun</Description>
+      <Description>Dye it green to become Stheno's sister!\n\nSkin Class: Assassin\nSprite Credits: Poshun</Description>
       <Activate skinType="10970">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -16537,7 +16538,7 @@
          <Index>155</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>A divine leader of war and an exceptional musical artist. \n\nSprite Credits: Poshun</Description>
+      <Description>A divine leader of war and an exceptional musical artist.\n\nSkin Class: Paladin\nSprite Credits: Poshun</Description>
       <Activate skinType="10974">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -16552,7 +16553,7 @@
          <Index>156</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Sails the seven seas to sell his life pots. For overpay, naturally. \n\nSprite Credits: Poshun</Description>
+      <Description>Sails the seven seas to sell his life pots. For overpay, naturally.\n\nSkin Class: Warrior\nSprite Credits: Poshun</Description>
       <Activate skinType="10972">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -16567,7 +16568,7 @@
          <Index>0x0b</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Rogue with the Beefcake Rogue Skin.</Description>
+      <Description>Customize your Rogue with the Beefcake Rogue Skin.\n\nSkin Class: Rogue</Description>
       <Activate skinType="10973">UnlockSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -16612,7 +16613,7 @@
          <Index>37</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Warrior with the Shoveguy Skin.</Description>
+      <Description>Customize your Warrior with the Shoveguy Skin.\n\nSkin Class: Warrior</Description>
       <Activate skinType="883">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -16627,7 +16628,7 @@
          <Index>58</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>He's big, he's bad, and he's a wolf.\n\nSprite Credits: Beige</Description>
+      <Description>He's big, he's bad, and he's a wolf.\n\nSkin Class: Warrior\nSprite Credits: Beige</Description>
       <Activate skinType="8967">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -16642,7 +16643,7 @@
          <Index>36</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Assassin with the Agent Skin. Rarity: Rare</Description>
+      <Description>Customize your Assassin with the Agent Skin.\n\nSkin Class: Assassin</Description>
       <Activate skinType="912">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -16657,7 +16658,7 @@
          <Index>44</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Rogue with the Brigand Skin. Rarity: Uncommon</Description>
+      <Description>Customize your Rogue with the Brigand Skin.\n\nSkin Class: Rogue</Description>
       <Activate skinType="913">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -16672,7 +16673,7 @@
          <Index>47</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Not all sorcerers are male.</Description>
+      <Description>Not all sorcerers are male.\n\nSkin Class: Sorcerer</Description>
       <Activate skinType="899">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -16687,7 +16688,7 @@
          <Index>50</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>A new look to get any Knight ready for the holidays. Double-Click to send this skin to your Vault Wardrobe</Description>
+      <Description>A new look to get any Knight ready for the holidays.\n\nSkin Class: Knight</Description>
       <Activate skinType="902">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -16702,7 +16703,7 @@
          <Index>48</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Huntress with the Scarlett Skin.</Description>
+      <Description>Customize your Huntress with the Scarlett Skin.\n\nSkin Class: Huntress</Description>
       <Activate skinType="900">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -16717,7 +16718,7 @@
          <Index>59</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>A trend-setter when it comes to hoods.\n\nSprite Credits: Beige</Description>
+      <Description>A trend-setter when it comes to hoods.\n\nSkin Class: Mystic\nSprite Credits: Beige</Description>
       <Activate skinType="8968">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -16732,7 +16733,7 @@
          <Index>56</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Warrior of the Platinum Order.\n\nSprite Credits: DELer</Description>
+      <Description>Warrior of the Platinum Order.\n\nSkin Class: Warrior\nSprite Credits: DELer</Description>
       <Activate skinType="8965">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -16747,7 +16748,7 @@
          <Index>42</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Archer with the Ranger Skin.\n\nSprite Credits: Radiek</Description>
+      <Description>Customize your Archer with the Ranger Skin.\n\nSkin Class: Archer\nSprite Credits: Radiek</Description>
       <Activate skinType="888">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -16762,7 +16763,7 @@
          <Index>77</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Unlocked during Halloween 2014.\n\nSprite Credits: WunderWafe</Description>
+      <Description>Unlocked during Halloween 2014.\n\nSkin Class: Archer\nSprite Credits: WunderWafe</Description>
       <Activate skinType="29799">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -16777,7 +16778,7 @@
          <Index>39</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Customize your Paladin with the Holy Avenger Skin.\n\nSprite Credits: Uomo</Description>
+      <Description>Customize your Paladin with the Holy Avenger Skin.\n\nSkin Class: Paladin\nSprite Credits: Uomo</Description>
       <Activate skinType="885">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -16792,7 +16793,7 @@
          <Index>80</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Unlocked during Halloween 2014.\n\nSprite Credits: Hawkmin</Description>
+      <Description>Unlocked during Halloween 2014.\n\nSkin Class: Warrior\nSprite Credits: Hawkmin</Description>
       <Activate skinType="29816">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -16807,7 +16808,7 @@
          <Index>46</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>I'm not really sure where the term 'witch' came from.</Description>
+      <Description>I'm not really sure where the term 'witch' came from.\n\nSkin Class: Necromancer</Description>
       <Activate skinType="898">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -16822,7 +16823,7 @@
          <Index>38</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Don't make me hit you with this ruler!</Description>
+      <Description>Don't make me hit you with this ruler!\n\nSkin Class: Priest</Description>
       <Activate skinType="884">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -16837,7 +16838,7 @@
          <Index>71</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>A stylish witch, community choice winner: Project Realmway 2.\n\nSprite Credits: DieGo</Description>
+      <Description>A stylish witch, community choice winner: Project Realmway 2.\n\nSkin Class: Wizard\nSprite Credits: DieGo</Description>
       <Activate skinType="9012">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -16852,7 +16853,7 @@
          <Index>53</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Found during Valentines Day 2014. Made by SlugKing.</Description>
+      <Description>Found during Valentines Day 2014.\n\nSkin Class: Huntress\nSprite Credits: SlugKing.</Description>
       <Activate skinType="901">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -16867,7 +16868,7 @@
          <Index>51</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Blushing? I'm not blushing. Found during Valentines Day 2014.</Description>
+      <Description>Blushing? I'm not blushing.\n\nSkin Class: Paladin</Description>
       <Activate skinType="915">UnlockSkin</Activate>
       <Consumable/>
       <BagType>6</BagType>
@@ -16882,7 +16883,7 @@
          <Index>52</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Looking for a Valentine. Found during Valentines Day 2014.</Description>
+      <Description>Looking for a Valentine.\n\nSkin Class: Rogue</Description>
       <Activate skinType="916">UnlockSkin</Activate>
       <Consumable/>
       <BagType>6</BagType>
@@ -16897,7 +16898,7 @@
          <Index>79</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Unlocked during Halloween 2014.\n\nSprite Credits: Beige</Description>
+      <Description>Unlocked during Halloween 2014.\n\nSkin Class: Huntress\nSprite Credits: Beige</Description>
       <Activate skinType="29801">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -16912,7 +16913,7 @@
          <Index>70</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>One of the Dark Elves that have recently began showing up in the Realm.\n\nSprite Credits: SteeleAlt</Description>
+      <Description>One of the Dark Elves that have recently began showing up in the Realm.\n\nSkin Class: Trickster\nSprite Credits: SteeleAlt</Description>
       <Activate skinType="8979">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -16927,7 +16928,7 @@
          <Index>67</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Unlocked during Halloween 2014.</Description>
+      <Description>Unlocked during Halloween 2014.\n\nSkin Class: Sorcerer</Description>
       <Activate skinType="8976">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -16942,7 +16943,7 @@
          <Index>60</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Cursed by responsibility and awesome knife skills.\n\nSprite Credits: IrondogdogROTMG</Description>
+      <Description>Cursed by responsibility and awesome knife skills.\n\nSkin Class: Trickster\nSprite Credits: IrondogdogROTMG</Description>
       <Activate skinType="8969">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -16957,7 +16958,7 @@
          <Index>55</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Knight of the Platinum Order.\n\nSprite Credits: DELer</Description>
+      <Description>Knight of the Platinum Order.\n\nSkin Class: Knight\nSprite Credits: DELer</Description>
       <Activate skinType="8964">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -16972,7 +16973,7 @@
          <Index>57</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Rogue of the Platinum Order.\n\nSprite Credits: DELer</Description>
+      <Description>Rogue of the Platinum Order.\n\nSkin Class: Rogue\nSprite Credits: DELer</Description>
       <Activate skinType="8966">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -16987,7 +16988,7 @@
          <Index>49</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Never judge a book by its cover.</Description>
+      <Description>Never judge a book by its cover.\n\nSkin Class: Trickster</Description>
       <Activate skinType="917">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -17002,7 +17003,7 @@
          <Index>157</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>A strikingly realistic statue of a famous mystic who disappeared after a catastrophic spell failure.\n\nSprite Credits: Poshun</Description>
+      <Description>A strikingly realistic statue of a famous mystic who disappeared after a catastrophic spell failure.\n\nSkin Class: Mystic\nSprite Credits: Poshun</Description>
       <Activate skinType="19152">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -17017,7 +17018,7 @@
          <Index>158</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>The last ninja from the Five Wolf Samurai group.\n\nSprite Credits: Kingged</Description>
+      <Description>The last ninja from the Five Wolf Samurai group.\n\nSkin Class: Ninja\nSprite Credits: Kingged</Description>
       <Activate skinType="19153">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -17032,7 +17033,7 @@
          <Index>159</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>A protector of the Realm's forests and a master of archery. She's sometimes seen having tea with forest fairies and taking walks with her silver doe.\n\nSprite Credits: Poshun</Description>
+      <Description>A protector of the Realm's forests and a master of archery. She's sometimes seen having tea with forest fairies and taking walks with her silver doe.\n\nSkin Class: Huntress\nSprite Credits: Poshun</Description>
       <Activate skinType="19154">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -17047,7 +17048,7 @@
          <Index>160</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>A talented dancer and one of the few people that knows how to calm down an enraged bunny.\n\nSprite Credits: Poshun</Description>
+      <Description>A talented dancer and one of the few people that knows how to calm down an enraged bunny.\n\nSkin Class: Trickster\nSprite Credits: Poshun</Description>
       <Activate skinType="19155">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -17062,7 +17063,7 @@
          <Index>161</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>An elegant shrine priestess, always quick to help others. Unfortunately, she rarely receives donations.\n\nSprite Credits: Poshun</Description>
+      <Description>An elegant shrine priestess, always quick to help others. Unfortunately, she rarely receives donations.\n\nSkin Class: Priest\nSprite Credits: Poshun</Description>
       <Activate skinType="19156">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -17077,7 +17078,7 @@
          <Index>162</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>This rouge rogue skin will make your character look rad in red.\n\nSprite Credits: Poshun</Description>
+      <Description>This rouge rogue skin will make your character look rad in red.\n\nSkin Class: Rogue\nSprite Credits: Poshun</Description>
       <Activate skinType="19157">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -17092,7 +17093,7 @@
          <Index>163</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>He's known for dropping the sickest heals. All the witches love him!\n\nSprite Credits: Poshun</Description>
+      <Description>He's known for dropping the sickest heals. All the witches love him!\n\nSkin Class: Necromancer\nSprite Credits: Poshun</Description>
       <Activate skinType="19158">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -17107,7 +17108,7 @@
          <Index>164</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Not all princesses need a prince to rescue them!\n\nSprite Credits: Beige</Description>
+      <Description>Not all princesses need a prince to rescue them!\n\nSkin Class: Knight\nSprite Credits: Beige</Description>
       <Activate skinType="19159">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
@@ -17149,5 +17150,111 @@
       <feedPower>200</feedPower>
       <BagType>5</BagType>
       <Track/>
+   </Object>
+   <Object type="0x4bb0" id="Markswoman Huntress Skin">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>165</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>She'll shoot through your heart!\n\nSkin Class: Huntress\nSprite Credits: DG</Description>
+      <Activate skinType="19370">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>5</BagType>
+      <Soulbound/>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x4bb1" id="Elf Archer Skin">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>166</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Get out of my forest!\n\nSkin Class: Archer\nSprite Credits: Thq32df
+        </Description>
+      <Activate skinType="19371">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>5</BagType>
+      <Soulbound/>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x4bb2" id="Ordinary Magician Skin">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>167</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>A normal human with no innate abilities. However, she is very capable of reciting the most powerful spells known in the realm.\n\nSkin Class: Wizard\nSprite Credits: Poshun</Description>
+      <Activate skinType="19372">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>5</BagType>
+      <Soulbound/>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x4bb3" id="Heroic Knight Skin">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>168</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>My boy, this peace is what all true knights strive for!\n\nSkin Class: Knight\nSprite Credits: Poshun</Description>
+      <Activate skinType="19373">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>5</BagType>
+      <Soulbound/>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x4bb4" id="Ancient Sorcerer Skin">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>169</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Coming from an age-old sect of powerful mages, this sorcerer is a master at wielding the scepter.\n\nSkin Class: Sorcerer\nSprite Credits: Poshun</Description>
+      <Activate skinType="19374">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>5</BagType>
+      <Soulbound/>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x4bb5" id="Dark Elf Assassin Skin">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>170</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>I'm an elf assassin. My skills are high and my blades are sharp.\n\nSkin Class: Assassin\nSprite Credits: BLOODQWEN</Description>
+      <Activate skinType="19375">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>5</BagType>
+      <Soulbound/>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x4bba" id="Cunning Sorcerer Skin">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>171</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>A power crystal will show me the right way. Forward to victory!\n\nSkin Class: Sorcerer\nSprite Credits: BLOODQWEN</Description>
+      <Activate skinType="19385">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>5</BagType>
+      <Soulbound/>
+      <feedPower>5000</feedPower>
    </Object>
 </Objects>

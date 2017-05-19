@@ -114,6 +114,7 @@ public class Player extends Character {
 	
 	private var nextAutoAbil:int = 0;
     public var mapAutoAbil:Boolean = false;
+    private var opFailed:Boolean = false;
 	
     private var potionInventoryModel:PotionInventoryModel;
     private var useBuyPotionSignal:UseBuyPotionSignal;
@@ -980,12 +981,20 @@ public class Player extends Character {
 	public function negateHealth(amount:int):void {
 		if (this == map_.player_) {
 			chp -= amount;
-            if (chp / maxHP_ * 100 <= 15) {
-				addTextLine.dispatch(ChatMessage.make("", "You were saved at "+chp.toFixed(0)+" health"));
-				//map_.gs_.closed.dispatch(); //disconnect
-				map_.gs_.gsc_.escape(); //this uses a reconnect event, SENDING A REAL ESCAPE PACKET MAKES YOU DIE
-            }
+			checkOPAuto();
 		}
+	}
+	
+	private function checkOPAuto():void {
+        if (chp / maxHP_ * 100 <= 15) {
+			addTextLine.dispatch(ChatMessage.make("", "You were saved at "+chp.toFixed(0)+" health"));
+			map_.gs_.gsc_.escape(); //this uses a reconnect event, SENDING A REAL ESCAPE PACKET KILLS YOU
+			if (opFailed) {
+				addTextLine.dispatch(ChatMessage.make("*Error*", "Unable to find Nexus, disconnecting"));
+				map_.gs_.closed.dispatch(); //disconnect
+			}
+			opFailed = true;
+        }
 	}
 	
 	public function getItemHp():int {
@@ -1030,7 +1039,7 @@ public class Player extends Character {
     override public function update(_arg_1:int, _arg_2:int):Boolean {
 		var i:int;
 		if (this == map_.player_) {
-			if (vitTime != -1) {
+			if (vitTime != -1 && !isPaused()) {
 				if (isBleeding()) { //no vit and -20 hp/s
 					chp -= (getTimer() - vitTime) * 0.02;
 				}
@@ -1047,11 +1056,8 @@ public class Player extends Character {
 				if (breath_ == 0) { //other effects and -94 hp/s
 					chp -= (getTimer() - vitTime) * 0.094;
 				}
-				//save from dot
-				if (chp / maxHP_ * 100 <= 15) {
-					addTextLine.dispatch(ChatMessage.make("", "You were saved at "+chp.toFixed(0)+" health"));
-					map_.gs_.gsc_.escape();
-				}
+				//save from DoT
+				checkOPAuto();
 				//stop overflow
 				if (chp > maxHP_) {
 					chp = maxHP_;

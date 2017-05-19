@@ -311,8 +311,10 @@ public class Map extends AbstractMap {
 			y = -_loc2_.y * 600 / (WebMain.sHeight / Parameters.data_.mscale);
 		}
 		else {
-			x = -_loc2_.x;
-			y = -_loc2_.y;
+			//x = -_loc2_.x * 800 / (WebMain.sWidth / Parameters.data_.mscale);
+			//y = -_loc2_.y * 600 / (WebMain.sHeight / Parameters.data_.mscale);
+			x = -_loc2_.x * Parameters.data_.mscale;
+			y = -_loc2_.y * Parameters.data_.mscale;
 		}
 		var _loc3_:Number = (-_loc2_.x - _loc2_.width / 2) / 50;
 		var _loc4_:Number = (-_loc2_.y - _loc2_.height / 2) / 50;

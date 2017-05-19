@@ -166,10 +166,10 @@ public class PetVO {
         return (this.skinID);
     }
 
-    public function getSkin():Bitmap {
+    public function getSkin(scale:Number = 1.0):Bitmap {
         this.makeSkin();
         var _local_1:MaskedImage = this.skin.imageFromAngle(0, AnimatedChar.STAND, 0);
-        var _local_2:int = (((this.rarity == PetRarityEnum.DIVINE.value)) ? 40 : 80);
+        var _local_2:int = (((this.rarity == PetRarityEnum.DIVINE.value)) ? 40 : 80) * scale;
         var _local_3:BitmapData = TextureRedrawer.resize(_local_1.image_, _local_1.mask_, _local_2, true, 0, 0);
         _local_3 = GlowRedrawer.outlineGlow(_local_3, 0);
         return (new Bitmap(_local_3));

@@ -38,9 +38,18 @@ public class PlayerGroupMenu extends Menu {
             _local_2.y = this.posY;
             addChild(_local_2);
             this.playerPanels_.push(_local_2);
+			_local_2.textReady.addOnce(this.onTextChanged);
             this.posY = (this.posY + 32);
         }
     }
+      
+	private function onTextChanged() : void {
+		var _loc1_:GameObjectListItem;
+		draw();
+		for each(_loc1_ in this.playerPanels_) {
+			_loc1_.textReady.remove(this.onTextChanged);
+		}
+	}
 
     private function createHeader():void {
         if (this.map_.allowPlayerTeleport()) {

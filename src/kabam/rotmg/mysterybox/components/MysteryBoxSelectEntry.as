@@ -320,8 +320,8 @@ public class MysteryBoxSelectEntry extends Sprite {
         this.infoImage.width = 283;
         this.infoImage.height = 580;
 		//
-        this.infoImage.x = 379.5;
-        this.infoImage.y = -29 - y;
+        this.infoImage.x = 400 - x;
+        this.infoImage.y = MysteryBoxSelectModal.modalHeight / 2 - y - 290;
 		//
         if (((this.hoverState) && (!(this.descriptionShowing)))) {
             this.descriptionShowing = true;

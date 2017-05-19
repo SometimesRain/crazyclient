@@ -29,10 +29,9 @@ public class CharacterRect extends Sprite {
         super();
     }
 
-    private static function makeDropShadowFilter():Array {
+    protected static function makeDropShadowFilter():Array {
         return ([new DropShadowFilter(0, 0, 0, 1, 8, 8)]);
     }
-
 
     public function init():void {
         tabChildren = false;

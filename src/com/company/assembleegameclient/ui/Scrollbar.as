@@ -149,6 +149,8 @@ public class Scrollbar extends Sprite {
     }
 
     protected function onMouseWheel(_arg_1:MouseEvent):void {
+		_arg_1.stopPropagation();
+		_arg_1.stopImmediatePropagation();
         if (_arg_1.delta > 0) {
             this.jumpUp();
         }

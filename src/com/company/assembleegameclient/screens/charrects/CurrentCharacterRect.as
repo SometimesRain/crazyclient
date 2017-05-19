@@ -6,8 +6,10 @@ import com.company.assembleegameclient.ui.tooltip.MyPlayerToolTip;
 import com.company.assembleegameclient.util.FameUtil;
 import com.company.rotmg.graphics.DeleteXGraphic;
 import kabam.rotmg.messaging.impl.GameServerConnectionConcrete;
+import kabam.rotmg.pets.data.PetVO;
 
 import flash.display.DisplayObject;
+import flash.display.Bitmap;
 import flash.display.Sprite;
 import flash.events.Event;
 import flash.events.MouseEvent;
@@ -36,6 +38,7 @@ public class CurrentCharacterRect extends CharacterRect {
     private var charType:CharacterClass;
     //private var deleteButton:Sprite;
     private var icon:DisplayObject;
+	private var petIcon:Bitmap;
 
     public function CurrentCharacterRect(_arg_1:String, _arg_2:CharacterClass, _arg_3:SavedCharacter, _arg_4:CharacterStats) {
         this.myPlayerToolTipFactory = new MyPlayerToolTipFactory();
@@ -71,6 +74,28 @@ public class CurrentCharacterRect extends CharacterRect {
         this.makeTagline();
         //this.makeDeleteButton();
         this.addEventListeners();
+    }
+      
+	private function makePetIcon() : void {
+		var _loc1_:PetVO = this.char.getPetVO();
+		if (_loc1_) {
+			this.petIcon = _loc1_.getSkin(0.7);
+			if (this.petIcon == null) {
+               return;
+            }
+			this.petIcon.x = -3; //CharacterRectConstants.PET_ICON_POS_X;
+			this.petIcon.y = 12; //CharacterRectConstants.PET_ICON_POS_Y;
+			selectContainer.addChild(this.petIcon);
+		}
+	}
+
+    public function setIcon(_arg_1:DisplayObject):void {
+        ((this.icon) && (selectContainer.removeChild(this.icon)));
+        this.icon = _arg_1;
+        this.icon.x = CharacterRectConstants.ICON_POS_X;
+        this.icon.y = 0;//CharacterRectConstants.ICON_POS_Y;
+        ((this.icon) && (selectContainer.addChild(this.icon)));
+		this.makePetIcon();
     }
 
     /*private function makeDeleteButton():void {
@@ -126,14 +151,6 @@ public class CurrentCharacterRect extends CharacterRect {
 
     private function onDelete(_arg_1:MouseEvent):void {
         this.deleteCharacter.dispatch(this.char);
-    }
-
-    public function setIcon(_arg_1:DisplayObject):void {
-        ((this.icon) && (selectContainer.removeChild(this.icon)));
-        this.icon = _arg_1;
-        this.icon.x = CharacterRectConstants.ICON_POS_X;
-        this.icon.y = 0;//CharacterRectConstants.ICON_POS_Y;
-        ((this.icon) && (selectContainer.addChild(this.icon)));
     }
 
     private function makeTagline():void {

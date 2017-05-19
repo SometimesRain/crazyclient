@@ -43,12 +43,22 @@ public class PlayerGroupToolTip extends ToolTip {
             _local_4.y = _local_2;
             addChild(_local_4);
             this.playerPanels_.push(_local_4);
+            _local_4.textReady.addOnce(this.onTextChanged);
             _local_2 = (_local_2 + 32);
         }
         this.clickMessage_.x = ((width / 2) - (this.clickMessage_.width / 2));
         this.clickMessage_.y = _local_2;
         draw();
     }
+	
+	private function onTextChanged() : void {
+		var _loc1_:GameObjectListItem = null;
+		this.clickMessage_.x = width / 2 - this.clickMessage_.width / 2;
+		draw();
+		for each(_loc1_ in this.playerPanels_) {
+			_loc1_.textReady.remove(this.onTextChanged);
+		}
+	}
 
     private function clear():void {
         var _local_1:GameObjectListItem;

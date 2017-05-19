@@ -3,6 +3,7 @@ import com.company.assembleegameclient.map.Map;
 import com.company.assembleegameclient.map.Square;
 import com.company.assembleegameclient.objects.Character;
 import com.company.assembleegameclient.objects.GameObject;
+import com.company.assembleegameclient.objects.GuildHallPortal;
 import com.company.assembleegameclient.objects.ObjectLibrary;
 import com.company.assembleegameclient.objects.Player;
 import com.company.assembleegameclient.objects.Portal;
@@ -67,6 +68,7 @@ public class MapUserInput {
     public static var reconRealm:ReconnectEvent;
     public static var reconDung:ReconnectEvent;
     public static var reconVault:ReconnectEvent;
+    public static var reconRandom:ReconnectEvent;
     public static var dungTime:uint = 0;
     public static var skipRender:Boolean = false;
     public var lightSpeed:Boolean = false;
@@ -574,7 +576,7 @@ public class MapUserInput {
 				var _targetPortal:int = -1;
 				for each(obj in gs_.map.goDict_)
                 {
-					if(obj is Portal)
+					if(obj is Portal || obj is GuildHallPortal)
 					{
 						var _distSquared2:int = (obj.x_ - player.x_) * (obj.x_ - player.x_) + (obj.y_ - player.y_) * (obj.y_ - player.y_);
 						if(_distSquared2 < dist)
@@ -733,6 +735,14 @@ public class MapUserInput {
 					gs_.dispatchEvent(paramRecon);
 				}
                 break;
+			case Parameters.data_.ReconRandom:
+				if (reconVault != null) {
+					reconRandom = reconVault;
+					reconRandom.charId_ = gs_.gsc_.charId_;
+					reconRandom.server_.name = "Random";
+					reconRandom.gameId_ = -3;
+					gs_.dispatchEvent(reconRandom);
+				}
             case Parameters.data_.ReconDung:
 				if (reconDung != null) {
 					if (getTimer() - dungTime < 180000) {

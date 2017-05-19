@@ -1872,6 +1872,7 @@
          <File>lofiObj3</File>
          <Index>0x19b</Index>
       </Texture>
+      <Size>80</Size>
    </Object>
    <Object type="0x00ef" id="Blade Spiral">
       <Class>Projectile</Class>
@@ -3928,6 +3929,7 @@
          <File>d3LofiObjEmbed16</File>
          <Index>0x1c</Index>
       </Texture>
+      <Size>80</Size>
    </Object>
    <Object type="0xb8ce" id="4-Leaf Clover">
       <Class>Projectile</Class>

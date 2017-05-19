@@ -78,4 +78,150 @@
       <ShadowSize>50</ShadowSize>
       <Defense>10</Defense>
    </Object>
+   <Object type="0x0c5a" id="Guill Hearticles">
+      <Class>GameObject</Class>
+      <Effect color="0x49290f" color2="0x753719" minRadius="0.2" maxRadius="2" rise="0.9" life="3.0" amount="40">Heart</Effect>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x0cd7" id="Guill Cooldowns Pots">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x0cd8" id="Guill Cooldowns Jump">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x0cd9" id="Guill Cooldowns Oryx">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x0807" id="Guill">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>d3Chars8x8rEmbed</File>
+         <Index>17</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>d3Chars8x8rEmbed</File>
+            <Index>18</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Speed>0</Speed>
+         <Damage>0</Damage>
+      </Projectile>
+      <Sound id="0">monster/oryx_death</Sound>
+      <Size>140</Size>
+      <ShadowSize>50</ShadowSize>
+      <Defense>10</Defense>
+   </Object>
+   <Object type="0xc1b" id="Guill Potion Gift">
+      <Class>Character</Class>
+      <StasisImmune/>
+      <Enemy/>
+      <NoMiniMap/>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <XpMult>0.0</XpMult>
+      <Size>80</Size>
+      <Texture>
+         <File>lofiObj</File>
+         <Index>0x02</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0c26" id="Craig Portal">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0xea</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+      <AltTexture id="0">
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0xea</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="1">
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0xe9</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0xe8</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0xe7</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0xe6</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+   </Object>
+   <Object type="0x0c5e" id="Craig">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rMid</File>
+         <Index>0x02</Index>
+      </AnimatedTexture>
+      <ShadowSize>50</ShadowSize>
+   </Object>
+   <Object type="0x74a2" id="GTest">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <NoMiniMap/>
+      <MaxHitPoints>999999</MaxHitPoints>
+      <Defense>999</Defense>
+      <XpMult>0</XpMult>
+   </Object>
+   <Object type="0x5f2a" id="OverHere">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <NoMiniMap/>
+      <MaxHitPoints>250000</MaxHitPoints>
+      <Defense>30</Defense>
+      <XpMult>0</XpMult>
+   </Object>
 </Objects>

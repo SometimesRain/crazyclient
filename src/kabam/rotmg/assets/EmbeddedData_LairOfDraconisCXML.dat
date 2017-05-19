@@ -1620,6 +1620,84 @@
       <Size>0</Size>
       <StasisImmune/>
    </Object>
+   <Object type="0x751d" id="lod Big Trees">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x2d</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x2e</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x2f</Index>
+         </Texture>
+      </RandomTexture>
+      <MinSize>130</MinSize>
+      <MaxSize>160</MaxSize>
+      <SizeStep>5</SizeStep>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x751e" id="lod Iron Wall">
+      <Class>Wall</Class>
+      <RandomTexture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x19e</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x19f</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x1a0</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x751f" id="lod Stalagmite">
+      <Class>Stalagmite</Class>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0xc0</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x7520" id="lod Ice Cave Wall">
+      <Class>CaveWall</Class>
+      <RandomTexture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x1d4</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x1d5</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x1d6</Index>
+         </Texture>
+      </RandomTexture>
+      <ShadowSize>0</ShadowSize>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <Connects/>
+      <EnemyOccupySquare/>
+   </Object>
    <Object type="0x754a" id="lod Ivory Wyvern">
       <DisplayId>Ivory Wyvern</DisplayId>
       <Class>Character</Class>

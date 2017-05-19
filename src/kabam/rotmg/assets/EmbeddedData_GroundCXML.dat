@@ -3938,4 +3938,18 @@
          <Index>0x5e</Index>
       </Texture>
    </Ground>
+   <Ground type="0x120" id="Mysterious Crystal Rock">
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x1d</Index>
+      </Texture>
+      <BlendPriority>0</BlendPriority>
+   </Ground>
+   <Ground type="0x121" id="Dragon Egg Grass">
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x1e</Index>
+      </Texture>
+      <BlendPriority>0</BlendPriority>
+   </Ground>
 </GroundTypes>

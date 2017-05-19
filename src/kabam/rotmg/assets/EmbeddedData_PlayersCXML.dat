@@ -258,7 +258,7 @@
       <UnlockLevel level="20" type="0x030e">Wizard</UnlockLevel>
       <UnlockCost>499</UnlockCost>
    </Object>
-   <Object type="0x0321" id="Necromancer">
+   <Object type="0x0321" id="Necro">
       <Class>Player</Class>
       <Description>The necromancer drains life from his enemies to heal himself and his allies.</Description>
       <AnimatedTexture>

@@ -4166,7 +4166,7 @@
          <Index>118</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Celebrate the 2017 Lunar New Year of the Rooster! Thanks to: Beige</Description>
+      <Description>Celebrate the 2017 Lunar New Year of the Rooster!\n\nSprite Credits: Beige\n\nTransform your pet into Fire Rooster of the Farm family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
       <Activate skinId="6590">PetSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -4182,7 +4182,7 @@
          <Index>0x32</Index>
       </Texture>
       <Family>Farm</Family>
-      <Rarity>Rare</Rarity>
+      <Rarity>Divine</Rarity>
       <DefaultSkin>Rooster of Good Fortune Skin</DefaultSkin>
       <Size>80</Size>
    </Object>
@@ -4203,7 +4203,7 @@
          <Index>119</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Lucky you! You've been blessed by luck for the entire year of 2017! Thanks to: Beige</Description>
+      <Description>Lucky you! You've been blessed by luck for the entire year of 2017!\n\nSprite Credits: Beige\n\nTransform your pet into Rooster of Good Fortune of the Farm family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
       <Activate skinId="6593">PetSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -4244,7 +4244,7 @@
          <Index>120</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Smaller than his Western counterpart, but no less dangerous! Thanks to: Beige</Description>
+      <Description>Smaller than his Western counterpart, but no less dangerous!\n\nSprite Credits: Beige\n\nTransform your pet into Mini Chinese Dragon of the Reptile family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
       <Activate skinId="6596">PetSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -4281,7 +4281,7 @@
          <Index>121</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Don't eat me! Don't eat me! Thanks to: Nmin</Description>
+      <Description>Don't eat me! Don't eat me!\n\nSprite Credits: Nmin\n\nTransform your pet into Gingerbread Man of the ??? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
       <Activate skinId="6599">PetSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -4318,7 +4318,7 @@
          <Index>122</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Little Polaris didn't want to become a boss like Papa Polaris. Thanks to: Poshun</Description>
+      <Description>Little Polaris didn't want to become a boss like Papa Polaris.\n\nSprite Credits: Poshun\n\nTransform your pet into Mini Polaris of the ??? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
       <Activate skinId="6602">PetSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -4401,7 +4401,7 @@
       </AnimatedTexture>
       <ScaleValue>10</ScaleValue>
       <SlotType>10</SlotType>
-      <Description>Light it up and get ready for the festivities! Thanks to: Beige</Description>
+      <Description>Light it up and get ready for the festivities!\n\nSprite Credits: Beige\n\nTransform your pet into Paper Lantern of the ??? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
       <Activate skinId="6608">PetSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -4443,7 +4443,7 @@
       </AnimatedTexture>
       <ScaleValue>10</ScaleValue>
       <SlotType>10</SlotType>
-      <Description>Smaller than his Western counterpart, but no less dangerous! Thanks to: Beige</Description>
+      <Description>Smaller than his Western counterpart, but no less dangerous!\n\nSprite Credits: Beige\n\nTransform your pet into Chinese Dragon of the Reptile family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
       <Activate skinId="6611">PetSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -4517,7 +4517,7 @@
          <Index>124</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Boing Boing! Made by Beige</Description>
+      <Description>Boing Boing!\n\nSprite Credits: Beige\n\nTransform your pet into White Bounsheep of the Farm family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
       <Activate skinId="10912">PetSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -4554,7 +4554,7 @@
          <Index>125</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Boing Boing! Made by Beige</Description>
+      <Description>Boing Boing!\n\nSprite Credits: Beige\n\nTransform your pet into Grey Bounsheep of the Farm family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
       <Activate skinId="10915">PetSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -4591,7 +4591,7 @@
          <Index>126</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Boing Boing! Made by Beige</Description>
+      <Description>Boing Boing!\n\nSprite Credits: Beige\n\nTransform your pet into Brown Bounsheep of the Farm family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
       <Activate skinId="10918">PetSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -4628,7 +4628,7 @@
          <Index>127</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Awe at its wondrous defense! Made by Poshun</Description>
+      <Description>Awe at its wondrous defense!\n\nSprite Credits: Poshun\n\nTransform your pet into Bes' Artifact of the ??? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
       <Activate skinId="10921">PetSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -4665,7 +4665,7 @@
          <Index>128</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>It shall destroy your foes from their soul to their flesh! Made by Poshun</Description>
+      <Description>It shall destroy your foes from their soul to their flesh!\n\nSprite Credits: Poshun\n\nTransform your pet into Geb's Artifact of the ??? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
       <Activate skinId="10924">PetSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -4702,7 +4702,7 @@
          <Index>129</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>It shall make your foes' lethargic lives end much more swiftly! Made by Poshun</Description>
+      <Description>It shall make your foes' lethargic lives end much more swiftly!\n\nSprite Credits: Poshun\n\nTransform your pet into Nut's Artifact of the ??? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
       <Activate skinId="10927">PetSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -4739,7 +4739,7 @@
          <Index>130</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>You hide like cowards... But you can&#8217;t deny its cuteness!</Description>
+      <Description>You hide like cowards... But you can&#8217;t deny its cuteness!\n\nTransform your pet into Mini Sphinx of the ??? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
       <Activate skinId="19184">PetSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -4776,7 +4776,7 @@
          <Index>131</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Call all your friends to help you pet this little steed! Made by Poshun</Description>
+      <Description>Call all your friends to help you pet this little steed!\n\nSprite Credits: Poshun\n\nTransform your pet into Mini Crystal Steed of the ??? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
       <Activate skinId="19185">PetSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -4813,7 +4813,7 @@
          <Index>132</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>This little plant loves to chew on insects! Made by Kingged</Description>
+      <Description>This little plant loves to chew on insects!\n\nSprite Credits: Kingged\n\nTransform your pet into Carnivorous Plant of the ??? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
       <Activate skinId="19186">PetSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -4829,7 +4829,7 @@
          <Index>0x32</Index>
       </Texture>
       <Family>? ? ? ?</Family>
-      <Rarity>Rare</Rarity>
+      <Rarity>Divine</Rarity>
       <DefaultSkin>Knight Companion Skin</DefaultSkin>
       <Size>80</Size>
    </Object>
@@ -4850,7 +4850,7 @@
          <Index>133</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>i'm a ppe btw lel xd Made by Poshun</Description>
+      <Description>i'm a ppe btw lel xd\n\nSprite Credits: Poshun\n\nTransform your pet into Knight Companion of the ??? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
       <Activate skinId="19187">PetSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -4887,7 +4887,7 @@
          <Index>134</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>Bueno pa' gozar, Mulata. Made by Beige</Description>
+      <Description>Bueno pa' gozar, Mulata.\n\nSprite Credits: Beige\n\nTransform your pet into Mr Cactus Jr. of the ??? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
       <Activate skinId="19188">PetSkin</Activate>
       <Consumable/>
       <Soulbound/>
@@ -4924,12 +4924,49 @@
          <Index>38</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>¡Oye Como Va, Mi ritmo! Made by Beige</Description>
+      <Description>¡Oye Como Va, Mi ritmo!\n\nSprite Credits: Beige\n\nTransform your pet into Mr Cactus of the ??? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
       <Activate skinId="19189">PetSkin</Activate>
       <Consumable/>
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Mr Cactus Pet Stone</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object id="Mini Limon" type="0x4bb6">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Mini Limon Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x4bb7" id="Mini Limon Skin">
+      <PetSkin/>
+      <DisplayId>Mini Limon</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>135</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x4bb8" id="Mini Limon Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>135</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>The smallest and fastest Limon alive!\n\nSprite Credits: Beige\n\nTransform your pet into Mini Limon of the ??? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="19382">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Mini Limon Pet Stone</DisplayId>
       <feedPower>5000</feedPower>
    </Object>
 </Objects>

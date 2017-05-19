@@ -72,7 +72,7 @@ public class Camera {
 		var _loc3_:Number;
 		var _loc4_:Number;
 		var _loc5_:Number;
-		if (Parameters.data_.stageScale == StageScaleMode.NO_SCALE) {
+		//if (Parameters.data_.stageScale == StageScaleMode.NO_SCALE) {
 			_loc2_ = Parameters.data_.mscale;
 			_loc3_ = WebMain.sWidth / _loc2_;
 			_loc4_ = WebMain.sHeight / _loc2_;
@@ -81,7 +81,7 @@ public class Camera {
 				return new Rectangle(-((_loc3_ - _loc5_) / 2),-(_loc4_ * 13 / 24),_loc3_,_loc4_);
 			}
 			return new Rectangle(-((_loc3_ - _loc5_) / 2),-(_loc4_ * 3 / 4),_loc3_,_loc4_);
-		}
+		//}
 		if (param1) {
 			return new Rectangle(-300,-325,600,600);
 		}

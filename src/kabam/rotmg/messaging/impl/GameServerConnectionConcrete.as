@@ -2445,6 +2445,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 
     private function onReconnect(_arg_1:Reconnect):void {
 		//addTextLine.dispatch(ChatMessage.make("*Client*","Reconnect"));
+		//addTextLine.dispatch(ChatMessage.make("*Help*","RECON "+_arg_1.host_+":"+server_.address+", gid "+_arg_1.gameId_));
 		if (player != null) {
 			player.questMob1 = null; //tomb hack remove bars
 			player.questMob2 = null;

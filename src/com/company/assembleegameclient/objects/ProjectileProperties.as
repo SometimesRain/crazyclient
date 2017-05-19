@@ -26,6 +26,9 @@ public class ProjectileProperties {
     public var amplitude_:Number;
     public var frequency_:Number;
     public var magnitude_:Number;
+	public var faceDir_:Boolean;
+	public var noRotation_:Boolean;
+	
     public var isPetEffect_:Dictionary;
 
     public function ProjectileProperties(_arg_1:XML) {
@@ -75,6 +78,8 @@ public class ProjectileProperties {
         this.amplitude_ = ((_arg_1.hasOwnProperty("Amplitude")) ? Number(_arg_1.Amplitude) : 0);
         this.frequency_ = ((_arg_1.hasOwnProperty("Frequency")) ? Number(_arg_1.Frequency) : 1);
         this.magnitude_ = ((_arg_1.hasOwnProperty("Magnitude")) ? Number(_arg_1.Magnitude) : 3);
+		this.faceDir_ = _arg_1.hasOwnProperty("FaceDir");
+		this.noRotation_ = _arg_1.hasOwnProperty("NoRotation");
     }
 
 }

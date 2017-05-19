@@ -146,23 +146,14 @@ public class GameObjectArrow extends Sprite {
 	
 	public function correctQuestNote(param1:Rectangle):Rectangle {
 		var _loc2_:Rectangle = param1.clone();
-		if (stage.scaleMode == StageScaleMode.NO_SCALE) { //fs on -> goes under ui
-			if (Parameters.data_.uiscale) {
-				this.scaleY = this.scaleX = (stage.stageWidth < stage.stageHeight ? stage.stageWidth : stage.stageHeight) / Parameters.data_.mscale / 600;
-			}
-			else {
-				this.scaleX = 1;
-				this.scaleY = 1;
-			}
-			//trace("1",_loc2_.right,_loc2_.x,_loc2_.width);
-			_loc2_.right = _loc2_.right - (800 - this.go_.map_.gs_.hudView.x) * stage.stageWidth / Parameters.data_.mscale / 800;
-			//trace("2",_loc2_.right,_loc2_.x,_loc2_.width);
+		if (stage.scaleMode == StageScaleMode.NO_SCALE && Parameters.data_.uiscale) {
+			this.scaleY = this.scaleX = (stage.stageWidth < stage.stageHeight ? stage.stageWidth : stage.stageHeight) / Parameters.data_.mscale / 600;
 		}
 		else {
 			this.scaleX = 1;
 			this.scaleY = 1;
 		}
-		//trace("GOA",_loc2_.x,_loc2_.y,_loc2_.width,_loc2_.height);
+		_loc2_.right = _loc2_.right - (800 - this.go_.map_.gs_.hudView.x) * stage.stageWidth / Parameters.data_.mscale / 800;
 		return _loc2_;
 	}
 

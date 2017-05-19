@@ -665,7 +665,9 @@ public class Options extends Sprite {
         addOptionAndPosition(new NullOption());
         addOptionAndPosition(new KeyMapper("ReconDung","Recon Dungeon","Key that connects the user to the last dungeon in. Only works when used within three minutes of connecting to the dungeon."));
         addOptionAndPosition(new NullOption());
-        addOptionAndPosition(new KeyMapper("ReconVault","Recon Vault","Key that connects the user to their vault."));
+        addOptionAndPosition(new KeyMapper("ReconVault", "Recon Vault", "Key that connects the user to their vault."));
+		addOptionAndPosition(new NullOption());
+        addOptionAndPosition(new KeyMapper("ReconRandom","Connect to Random Realm","Key that connects the user to a random realm on the server."));
     }
     
     private function hpBars() : void
@@ -706,7 +708,7 @@ public class Options extends Sprite {
         addOptionAndPosition(new KeyMapper("QuestTeleport","Closest Player to Quest Teleport","Teleports to the player that is closest to your quest."));
         addOptionAndPosition(new KeyMapper("tpto","Teleport to Caller","Teleport to a person calling a dungeon. Current keywords: "+Parameters.data_.tptoList));
 		addOptionAndPosition(new KeyMapper("resetCHP", "Reset Client HP", "Use this hotkey if your CL bar doesn't match your HP bar."));
-		addOptionAndPosition(new ChoiceOption("autoCorrCHP",makeOnOffLabels(),[true,false],"Auto Correct Client HP","Automatically corrects your health.",null));
+        addOptionAndPosition(new ChoiceOption("autoCorrCHP",makeOnOffLabels(),[true,false],"Auto Correct Client HP","Automatically corrects your health. Increases your chance of dying when turned on.",null,Parameters.data_.autoCorrCHP ? 0xFF0000 : 0xFFFFFF, true));
 		addOptionAndPosition(new KeyMapper("Cam45DegInc", "Rotate Left (45°)", "Turns your camera by 45 degrees to the left."));
 		addOptionAndPosition(new KeyMapper("Cam45DegDec", "Rotate Right (45°)", "Turns your camera by 45 degrees to the right."));
 		addOptionAndPosition(new KeyMapper("cam2quest", "Point Camera to Quest", "Turns your camera so that the quest is to your north."));

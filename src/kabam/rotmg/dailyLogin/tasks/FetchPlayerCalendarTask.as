@@ -105,15 +105,18 @@ package kabam.rotmg.dailyLogin.tasks
 			var _loc5_:CalendarDayModel = null;
 			for each(_loc4_ in param1..Login)
 			{
-				_loc5_ = this.getDayFromXML(_loc4_,param2);
-				if(_loc4_.hasOwnProperty("key"))
-				{
+				_loc5_ = this.getDayFromXML(_loc4_, param2);
+				if (_loc4_.hasOwnProperty("key")) { //3 or more stars for autocalendar
 					_loc5_.claimKey = _loc4_.key;
-					GameServerConnectionConcrete.claimkey = _loc4_.key;
+					var numStars_:int = 0;
+					account.reportIntStat("NumStars", numStars_);
+					if (numStars_ > 2) {
+						GameServerConnectionConcrete.claimkey = _loc4_.key;
+					}
 				}
 				this.dailyLoginModel.addDay(_loc5_,param2);
 			}
-			if(param3)
+			if (param3)
 			{
 				this.dailyLoginModel.setCurrentDay(param2,int(param3));
 			}

@@ -197,8 +197,8 @@
       </Projectile>
       <DisplayId>{cave.Treasure_Rat}</DisplayId>
    </Object>
-   <Object type="0x5e1e" id="Treasure Flame Trap 1.2 Sec">
-      <DisplayId>{cave.Treasure_Flame_Trap_1.2_Sec}</DisplayId>
+   <Object type="0x5e1e" id="Treasure Flame Trap">
+      <DisplayId>{cave.Treasure_Flame_Trap}</DisplayId>
       <Class>GameObject</Class>
       <Enemy/>
       <DrawOnGround/>
@@ -240,13 +240,12 @@
          <ObjectId>Invisible</ObjectId>
          <Damage>50</Damage>
          <Speed>0</Speed>
-         <LifetimeMS>100</LifetimeMS>
-         <Size>100</Size>
+         <LifetimeMS>200</LifetimeMS>
          <MultiHit/>
       </Projectile>
    </Object>
-   <Object type="0x5e3b" id="Treasure Flame Trap 1.7 Sec">
-      <DisplayId>{cave.Treasure_Flame_Trap_1.7_Sec}</DisplayId>
+   <Object type="0x5e3b" id="Treasure Flame Trap Fast">
+      <DisplayId>{cave.Treasure_Flame_Trap_Fast}</DisplayId>
       <Class>GameObject</Class>
       <Enemy/>
       <DrawOnGround/>
@@ -288,8 +287,7 @@
          <ObjectId>Invisible</ObjectId>
          <Damage>50</Damage>
          <Speed>0</Speed>
-         <LifetimeMS>100</LifetimeMS>
-         <Size>100</Size>
+         <LifetimeMS>200</LifetimeMS>
          <MultiHit/>
       </Projectile>
    </Object>

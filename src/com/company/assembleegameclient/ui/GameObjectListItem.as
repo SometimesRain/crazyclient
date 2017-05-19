@@ -121,12 +121,7 @@ public class GameObjectListItem extends Sprite {
             else {
                 _local_1 = "<b>{name}</b> ({type}{level})";
             }
-            /*if (go.name_.length > 8 && !positionClassBelow) {
-                _local_2.name = (this.go.name_.slice(0, 6) + "..."); //shortens names
-            }
-            else {*/
-                _local_2.name = this.go.name_;
-            //}
+			_local_2.name = this.go.name_;
             _local_2.type = ObjectLibrary.typeToDisplayId_[this.type];
             _local_2.level = (((this.level < 1)) ? "" : (" " + this.level));
         }

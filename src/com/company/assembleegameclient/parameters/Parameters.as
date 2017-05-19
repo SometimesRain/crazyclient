@@ -13,8 +13,8 @@ import flash.utils.Dictionary;
 public class Parameters {
 
     public static const BUILD_VERSION:String = "27.7";
-    public static const MINOR_VERSION:String = "X13";
-    public static const CRAZY_VERSION:String = "v9.2";
+    public static const MINOR_VERSION:String = "X14";
+    public static const CRAZY_VERSION:String = "v9.3";
     public static const ENABLE_ENCRYPTION:Boolean = true;
     public static const PORT:int = 2050;
     public static const ALLOW_SCREENSHOT_MODE:Boolean = false;
@@ -288,8 +288,9 @@ public class Parameters {
         setDefault("lootMP",true);
 		//
         setDefaultKey("ReconRealm",KeyCodes.P);
-        setDefaultKey("ReconDung",219);
-        setDefaultKey("ReconVault", 221);
+        setDefaultKey("ReconDung",KeyCodes.K);
+        setDefaultKey("ReconVault", KeyCodes.V);
+        setDefaultKey("ReconRandom", KeyCodes.UNSET);
 		//
         setDefault("AutoNexus",20);
         setDefault("NoClip",false);

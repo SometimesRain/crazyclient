@@ -81,7 +81,7 @@
       <Speed>1.2</Speed>
       <BlendPriority>6</BlendPriority>
    </Ground>
-   <Ground type="0x167a" id="Patty Rainbow Road Rotated  4">
+   <Ground type="0x167a" id="Patty Rainbow Road Rotated 4">
       <Texture>
          <File>stPatricksObjects8x8</File>
          <Index>0x20</Index>

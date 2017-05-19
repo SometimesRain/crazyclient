@@ -27,9 +27,9 @@ public class MysteryBoxSelectModal extends Sprite {
     public static var backgroundImageEmbed:Class = MysteryBoxSelectModal_backgroundImageEmbed;
 
     private var closeButton:DialogCloseButton;
-    private var box_:Sprite;
+    public var box_:Sprite;
     private var mysteryData:Object;
-    private var titleString:String = "MysteryBoxSelectModal.titleString";
+    private var titleString:String = "Mystery Boxes!";
     private var selectEntries:Vector.<MysteryBoxSelectEntry>;
 
 
@@ -51,7 +51,7 @@ public class MysteryBoxSelectModal extends Sprite {
     }
 
     public static function getRightBorderX():int {
-        return ((300 + (modalWidth / 2)));
+        return ((300 + (modalWidth / 2))); //385 -> 300 + 192
     }
 
     private static function makeModalBackground(_arg_1:int, _arg_2:int):PopupWindowBackground {
@@ -87,7 +87,7 @@ public class MysteryBoxSelectModal extends Sprite {
         var _local_5:int;
         var _local_6:MysteryBoxSelectEntry;
         for each (_local_1 in this.mysteryData) {
-            modalHeight = (modalHeight + aMysteryBoxHeight);
+            modalHeight += aMysteryBoxHeight;
         }
         _local_2 = new backgroundImageEmbed();
         _local_2.width = (modalWidth + 1);
@@ -126,7 +126,6 @@ public class MysteryBoxSelectModal extends Sprite {
     private function onRemovedFromStage(_arg_1:Event):void {
         open = false;
     }
-
 
 }
 }//package kabam.rotmg.mysterybox.components

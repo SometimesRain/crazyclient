@@ -131,9 +131,7 @@
       <SlotType>1</SlotType>
       <Description>The sacred blade of the Cult of Admin. Not to be trifled with.</Description>
       <RateOfFire>1.5</RateOfFire>
-      <OldSound>weapon/fire_dagger</OldSound>
       <OldSound>bladeSwing</OldSound>
-      <Soulbound/>
       <Projectile>
          <ObjectId>Admin Blade</ObjectId>
          <Speed>120</Speed>
@@ -155,7 +153,6 @@
       <SlotType>8</SlotType>
       <Description>Only advanced acolytes of the Cult of Admin may wield this weapon.</Description>
       <RateOfFire>1.5</RateOfFire>
-      <Sound>weapon/wand_of_death</Sound>
       <OldSound>magicShoot</OldSound>
       <Projectile>
          <ObjectId>Admin Magic</ObjectId>
@@ -179,7 +176,6 @@
       <SlotType>3</SlotType>
       <Description>The Cult of Admin is always on the hunt for the unworthy.</Description>
       <RateOfFire>1.2</RateOfFire>
-      <Sound>weapon/golden_bow</Sound>
       <OldSound>arrowShoot</OldSound>
       <Projectile>
          <ObjectId>Admin Arrow</ObjectId>
@@ -205,7 +201,6 @@
       <SlotType>2</SlotType>
       <Description>A cursed dagger imbued with the infinite power of the Cult of Admin.</Description>
       <RateOfFire>1.2</RateOfFire>
-      <Sound>weapon/fire_dagger</Sound>
       <OldSound>daggerSwing</OldSound>
       <Projectile>
          <ObjectId>Admin Stab</ObjectId>
@@ -230,7 +225,6 @@
       <SlotType>17</SlotType>
       <Description>A godly weapon belonging to the Cult of Admin.</Description>
       <RateOfFire>1.2</RateOfFire>
-      <Sound>monster/djinn_hit</Sound>
       <OldSound>magicShoot</OldSound>
       <Projectile>
          <ObjectId>Admin Missile</ObjectId>
@@ -258,7 +252,6 @@
       <SlotType>24</SlotType>
       <Description>The finest katana, forged by the Cult of Admin. Its blade cuts anything.</Description>
       <RateOfFire>1.2</RateOfFire>
-      <Sound>weapon/long_sword</Sound>
       <OldSound>bladeSwing</OldSound>
       <Projectile>
          <ObjectId>Admin Slash</ObjectId>

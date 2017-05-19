@@ -27,7 +27,6 @@ public class ThrownProjectile extends BitmapParticle {
         this.end_ = _arg_4;
         this.dx_ = ((this.end_.x - this.start_.x) / this.timeLeft_);
         this.dy_ = ((this.end_.y - this.start_.y) / this.timeLeft_);
-        var _local_5:Number = (Point.distance(_arg_3, _arg_4) / this.timeLeft_);
         this.pathX_ = (x_ = this.start_.x);
         this.pathY_ = (y_ = this.start_.y);
     }

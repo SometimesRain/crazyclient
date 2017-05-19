@@ -333,8 +333,10 @@ public class GameSprite extends AGameSprite {
 		var _loc13_:Number = 600 / stage.stageHeight;
 		var scaleX_:Number = _loc12_ / _loc13_;
 		if (this.map != null) {
-			this.map.scaleX = _loc12_ * (stage.scaleMode != StageScaleMode.EXACT_FIT ? Parameters.data_.mscale : 1);
-			this.map.scaleY = _loc13_ * (stage.scaleMode != StageScaleMode.EXACT_FIT ? Parameters.data_.mscale : 1);
+			//this.map.scaleX = _loc12_ * (stage.scaleMode != StageScaleMode.EXACT_FIT ? Parameters.data_.mscale : 1);
+			//this.map.scaleY = _loc13_ * (stage.scaleMode != StageScaleMode.EXACT_FIT ? Parameters.data_.mscale : 1);
+			this.map.scaleX = _loc12_ * Parameters.data_.mscale;
+			this.map.scaleY = _loc13_ * Parameters.data_.mscale;
 		}
 		if (this.hudView != null) {
 			if (_loc2_) {
