@@ -91,6 +91,7 @@ public class ChatInputMediator extends Mediator {
 
     private function processKeyUp(_arg_1:KeyboardEvent):void {
         var _local_2:uint = _arg_1.keyCode;
+		//trace("INPUTMED");
 		switch (_local_2) {
 			case chatShortcutModel.getCommandShortcut():
 				view.activate("/", true);

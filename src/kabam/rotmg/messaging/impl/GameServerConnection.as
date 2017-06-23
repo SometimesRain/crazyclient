@@ -110,6 +110,9 @@ public class GameServerConnection {
 	public static const LOGIN_REWARD_MSG:int = 82;
 	public static const QUEST_ROOM_MSG:int = 49;
 	
+	public static const SET_SPEED:int = 70;
+	public static const THUNDER_MOVE:int = 110;
+	
     public static var instance:GameServerConnection;
 
     public var changeMapSignal:Signal;
@@ -167,6 +170,9 @@ public class GameServerConnection {
     public function editAccountList(_arg_1:int, _arg_2:Boolean, _arg_3:int):void {
     }
 
+    public function thunderMove(_arg_1:Player):void {
+    }
+	
     public function guildRemove(_arg_1:String):void {
     }
 

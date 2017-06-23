@@ -5,6 +5,7 @@ import com.company.assembleegameclient.objects.GameObject;
 import com.company.assembleegameclient.objects.Player;
 import com.company.assembleegameclient.parameters.Parameters;
 import com.company.assembleegameclient.ui.menu.Menu;
+import com.company.assembleegameclient.ui.tooltip.PortraitToolTip;
 import com.company.assembleegameclient.ui.tooltip.ToolTip;
 import com.company.util.RectangleUtil;
 import com.company.util.Trig;
@@ -54,6 +55,16 @@ public class GameObjectArrow extends Sprite {
         filters = [new DropShadowFilter(0, 0, 0, 1, 8, 8)];
         visible = false;
     }
+	
+    public static function withDummy(x2:Number, y2:Number, name:String):GameObjectArrow {
+		var goa:GameObjectArrow = new GameObjectArrow(0x5E61FF, 0x3F42FF, false);
+		goa.go_ = new GameObject(null);
+		goa.go_.x_ = x2;
+		goa.go_.y_ = y2;
+		goa.go_.name_ = name;
+		//goa.tooltip_ = new PortraitToolTip(new GameObject(null)); //todo
+		return goa;
+	}
 
     public static function removeMenu():void {
         if (menu_ != null) {

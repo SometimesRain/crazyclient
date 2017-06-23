@@ -6,18 +6,20 @@ public class ThrowEffect extends ParticleEffect {
     public var start_:Point;
     public var end_:Point;
     public var color_:int;
+	public var duration_:int;
 
-    public function ThrowEffect(_arg_1:Point, _arg_2:Point, _arg_3:int) {
+	public function ThrowEffect(_arg_1:Point, _arg_2:Point, _arg_3:int, _arg_4:int = 1500) {
         this.start_ = _arg_1;
         this.end_ = _arg_2;
         this.color_ = _arg_3;
+        this.duration_ = _arg_4;
     }
 
     override public function runNormalRendering(_arg_1:int, _arg_2:int):Boolean {
         x_ = this.start_.x;
         y_ = this.start_.y;
         var _local_3:int = 200;
-        var _local_4:ThrowParticle = new ThrowParticle(_local_3, this.color_, 1500, this.start_, this.end_);
+        var _local_4:ThrowParticle = new ThrowParticle(_local_3, this.color_, this.duration_, this.start_, this.end_);
         map_.addObj(_local_4, x_, y_);
         return (false);
     }
@@ -26,7 +28,7 @@ public class ThrowEffect extends ParticleEffect {
         x_ = this.start_.x;
         y_ = this.start_.y;
         var _local_3:int = 10;
-        var _local_4:ThrowParticle = new ThrowParticle(_local_3, this.color_, 1500, this.start_, this.end_);
+        var _local_4:ThrowParticle = new ThrowParticle(_local_3, this.color_, this.duration_, this.start_, this.end_);
         map_.addObj(_local_4, x_, y_);
         return (false);
     }
@@ -79,6 +81,5 @@ class ThrowParticle extends Particle {
         map_.addObj(new SparkParticle((100 * (z_ + 1)), color_, 400, z_, RandomUtil.plusMinus(1), RandomUtil.plusMinus(1)), this.pathX_, this.pathY_);
         return (true);
     }
-
 
 }

@@ -1503,10 +1503,10 @@
       <Sound>weapon/fire_wand</Sound>
       <Projectile>
          <ObjectId>Red Fire</ObjectId>
-         <Speed>150</Speed>
-         <LifetimeMS>600</LifetimeMS>
-         <MinDamage>20</MinDamage>
-         <MaxDamage>35</MaxDamage>
+         <Speed>180</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <MinDamage>25</MinDamage>
+         <MaxDamage>40</MaxDamage>
          <MultiHit/>
       </Projectile>
       <BagType>1</BagType>
@@ -1527,10 +1527,10 @@
       <Sound>weapon/missile_wand</Sound>
       <Projectile>
          <ObjectId>Blue Magic</ObjectId>
-         <Speed>150</Speed>
-         <LifetimeMS>600</LifetimeMS>
-         <MinDamage>30</MinDamage>
-         <MaxDamage>45</MaxDamage>
+         <Speed>180</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <MinDamage>35</MinDamage>
+         <MaxDamage>50</MaxDamage>
          <MultiHit/>
       </Projectile>
       <BagType>1</BagType>
@@ -1551,10 +1551,10 @@
       <Sound>weapon/missile_wand</Sound>
       <Projectile>
          <ObjectId>Blue Magic</ObjectId>
-         <Speed>150</Speed>
-         <LifetimeMS>600</LifetimeMS>
-         <MinDamage>35</MinDamage>
-         <MaxDamage>50</MaxDamage>
+         <Speed>180</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <MinDamage>40</MinDamage>
+         <MaxDamage>55</MaxDamage>
          <MultiHit/>
       </Projectile>
       <BagType>1</BagType>
@@ -1575,10 +1575,10 @@
       <Sound>weapon/missile_wand</Sound>
       <Projectile>
          <ObjectId>Blue Magic</ObjectId>
-         <Speed>150</Speed>
-         <LifetimeMS>600</LifetimeMS>
-         <MinDamage>40</MinDamage>
-         <MaxDamage>55</MaxDamage>
+         <Speed>180</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <MinDamage>45</MinDamage>
+         <MaxDamage>60</MaxDamage>
          <MultiHit/>
       </Projectile>
       <BagType>1</BagType>
@@ -1599,10 +1599,10 @@
       <Sound>weapon/missile_wand</Sound>
       <Projectile>
          <ObjectId>Blue Magic</ObjectId>
-         <Speed>150</Speed>
-         <LifetimeMS>600</LifetimeMS>
-         <MinDamage>50</MinDamage>
-         <MaxDamage>65</MaxDamage>
+         <Speed>180</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <MinDamage>55</MinDamage>
+         <MaxDamage>70</MaxDamage>
          <MultiHit/>
       </Projectile>
       <BagType>1</BagType>
@@ -1623,10 +1623,10 @@
       <Sound>weapon/hells_fire_wand</Sound>
       <Projectile>
          <ObjectId>Purple Magic</ObjectId>
-         <Speed>150</Speed>
-         <LifetimeMS>600</LifetimeMS>
+         <Speed>180</Speed>
+         <LifetimeMS>500</LifetimeMS>
          <MinDamage>60</MinDamage>
-         <MaxDamage>75</MaxDamage>
+         <MaxDamage>85</MaxDamage>
          <MultiHit/>
       </Projectile>
       <BagType>1</BagType>
@@ -1647,10 +1647,10 @@
       <Sound>weapon/wand_of_dark_magic</Sound>
       <Projectile>
          <ObjectId>Pink Bolt</ObjectId>
-         <Speed>150</Speed>
-         <LifetimeMS>600</LifetimeMS>
+         <Speed>180</Speed>
+         <LifetimeMS>500</LifetimeMS>
          <MinDamage>70</MinDamage>
-         <MaxDamage>85</MaxDamage>
+         <MaxDamage>100</MaxDamage>
          <MultiHit/>
       </Projectile>
       <BagType>1</BagType>
@@ -1671,10 +1671,10 @@
       <Sound>weapon/wand_of_dark_magic</Sound>
       <Projectile>
          <ObjectId>Red Fire</ObjectId>
-         <Speed>150</Speed>
-         <LifetimeMS>600</LifetimeMS>
-         <MinDamage>80</MinDamage>
-         <MaxDamage>95</MaxDamage>
+         <Speed>180</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <MinDamage>75</MinDamage>
+         <MaxDamage>115</MaxDamage>
          <MultiHit/>
       </Projectile>
       <BagType>2</BagType>
@@ -1694,10 +1694,10 @@
       <Sound>weapon/sprite_wand</Sound>
       <Projectile>
          <ObjectId>Fire Bolt</ObjectId>
-         <Speed>150</Speed>
-         <LifetimeMS>600</LifetimeMS>
-         <MinDamage>5</MinDamage>
-         <MaxDamage>210</MaxDamage>
+         <Speed>180</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <MinDamage>10</MinDamage>
+         <MaxDamage>220</MaxDamage>
          <Amplitude>1</Amplitude>
          <Frequency>1</Frequency>
       </Projectile>
@@ -1720,10 +1720,10 @@
       <Sound>weapon/wand_of_death</Sound>
       <Projectile>
          <ObjectId>Green Magic</ObjectId>
-         <Speed>150</Speed>
-         <LifetimeMS>600</LifetimeMS>
+         <Speed>180</Speed>
+         <LifetimeMS>500</LifetimeMS>
          <MinDamage>80</MinDamage>
-         <MaxDamage>120</MaxDamage>
+         <MaxDamage>125</MaxDamage>
          <MultiHit/>
       </Projectile>
       <BagType>2</BagType>
@@ -1745,10 +1745,10 @@
       <Sound>weapon/wand_of_death</Sound>
       <Projectile>
          <ObjectId>Purple Magic</ObjectId>
-         <Speed>150</Speed>
-         <LifetimeMS>600</LifetimeMS>
+         <Speed>180</Speed>
+         <LifetimeMS>500</LifetimeMS>
          <MinDamage>85</MinDamage>
-         <MaxDamage>120</MaxDamage>
+         <MaxDamage>130</MaxDamage>
          <MultiHit/>
       </Projectile>
       <BagType>2</BagType>
@@ -1770,10 +1770,10 @@
       <Sound>weapon/wand_of_death</Sound>
       <Projectile>
          <ObjectId>Red Fire</ObjectId>
-         <Speed>150</Speed>
-         <LifetimeMS>600</LifetimeMS>
-         <MinDamage>85</MinDamage>
-         <MaxDamage>125</MaxDamage>
+         <Speed>180</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <MinDamage>90</MinDamage>
+         <MaxDamage>135</MaxDamage>
          <MultiHit/>
       </Projectile>
       <BagType>4</BagType>
@@ -1795,10 +1795,10 @@
       <Sound>weapon/wand_of_death</Sound>
       <Projectile>
          <ObjectId>Green Magic</ObjectId>
-         <Speed>150</Speed>
-         <LifetimeMS>600</LifetimeMS>
-         <MinDamage>90</MinDamage>
-         <MaxDamage>125</MaxDamage>
+         <Speed>180</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <MinDamage>95</MinDamage>
+         <MaxDamage>135</MaxDamage>
          <MultiHit/>
       </Projectile>
       <BagType>4</BagType>
@@ -1820,10 +1820,10 @@
       <Sound>weapon/wand_of_death</Sound>
       <Projectile>
          <ObjectId>Blue Magic</ObjectId>
-         <Speed>150</Speed>
-         <LifetimeMS>600</LifetimeMS>
-         <MinDamage>90</MinDamage>
-         <MaxDamage>130</MaxDamage>
+         <Speed>180</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <MinDamage>95</MinDamage>
+         <MaxDamage>140</MaxDamage>
          <MultiHit/>
       </Projectile>
       <BagType>4</BagType>
@@ -1844,10 +1844,11 @@
       <Sound>weapon/wand_of_death</Sound>
       <Projectile>
          <ObjectId>Purple Magic</ObjectId>
-         <Speed>150</Speed>
-         <LifetimeMS>600</LifetimeMS>
-         <MinDamage>95</MinDamage>
-         <MaxDamage>135</MaxDamage>
+         <Speed>180</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <MinDamage>100</MinDamage>
+         <MaxDamage>140</MaxDamage>
+         <MultiHit/>
       </Projectile>
       <BagType>4</BagType>
       <FameBonus>4</FameBonus>
@@ -1868,10 +1869,11 @@
       <Sound>weapon/wand_of_death</Sound>
       <Projectile>
          <ObjectId>Orange Magic</ObjectId>
-         <Speed>150</Speed>
-         <LifetimeMS>600</LifetimeMS>
-         <MinDamage>95</MinDamage>
-         <MaxDamage>140</MaxDamage>
+         <Speed>180</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <MinDamage>100</MinDamage>
+         <MaxDamage>145</MaxDamage>
+         <MultiHit/>
       </Projectile>
       <BagType>4</BagType>
       <FameBonus>5</FameBonus>
@@ -1892,10 +1894,10 @@
       <Sound>weapon/wand_of_death</Sound>
       <Projectile>
          <ObjectId>Aqua Missile</ObjectId>
-         <Speed>120</Speed>
-         <LifetimeMS>750</LifetimeMS>
-         <MinDamage>75</MinDamage>
-         <MaxDamage>100</MaxDamage>
+         <Speed>150</Speed>
+         <LifetimeMS>600</LifetimeMS>
+         <MinDamage>70</MinDamage>
+         <MaxDamage>110</MaxDamage>
          <ArmorPiercing/>
       </Projectile>
       <BagType>6</BagType>
@@ -1917,12 +1919,13 @@
       <Sound>weapon/wand_of_death</Sound>
       <Projectile>
          <ObjectId>Rimmed Mystic Shot</ObjectId>
-         <Speed>6</Speed>
-         <MinDamage>300</MinDamage>
-         <MaxDamage>400</MaxDamage>
-         <LifetimeMS>11000</LifetimeMS>
+         <Speed>3</Speed>
+         <MinDamage>350</MinDamage>
+         <MaxDamage>450</MaxDamage>
+         <LifetimeMS>10000</LifetimeMS>
          <Parametric/>
          <PassesCover/>
+         <MultiHit/>
       </Projectile>
       <BagType>6</BagType>
       <FameBonus>6</FameBonus>
@@ -3542,6 +3545,7 @@
       <Potion/>
       <BagType>5</BagType>
       <feedPower>150</feedPower>
+      <Track/>
    </Object>
    <Object type="0xa20" id="Potion of Defense">
       <Class>Equipment</Class>
@@ -3559,6 +3563,7 @@
       <Potion/>
       <BagType>5</BagType>
       <feedPower>150</feedPower>
+      <Track/>
    </Object>
    <Object type="0xa21" id="Potion of Speed">
       <Class>Equipment</Class>
@@ -3576,6 +3581,7 @@
       <Potion/>
       <BagType>5</BagType>
       <feedPower>150</feedPower>
+      <Track/>
    </Object>
    <Object type="0xa34" id="Potion of Vitality">
       <Class>Equipment</Class>
@@ -3593,6 +3599,7 @@
       <Potion/>
       <BagType>5</BagType>
       <feedPower>150</feedPower>
+      <Track/>
    </Object>
    <Object type="0xa35" id="Potion of Wisdom">
       <Class>Equipment</Class>
@@ -3610,6 +3617,7 @@
       <Potion/>
       <BagType>5</BagType>
       <feedPower>150</feedPower>
+      <Track/>
    </Object>
    <Object type="0xa4c" id="Potion of Dexterity">
       <Class>Equipment</Class>
@@ -3627,6 +3635,7 @@
       <Potion/>
       <BagType>5</BagType>
       <feedPower>150</feedPower>
+      <Track/>
    </Object>
    <Object type="0xae9" id="Potion of Life">
       <Class>Equipment</Class>
@@ -3643,6 +3652,7 @@
       <Potion/>
       <BagType>5</BagType>
       <feedPower>250</feedPower>
+      <Track/>
    </Object>
    <Object type="0xaea" id="Potion of Mana">
       <Class>Equipment</Class>
@@ -3659,6 +3669,7 @@
       <Potion/>
       <BagType>5</BagType>
       <feedPower>250</feedPower>
+      <Track/>
    </Object>
    <Object type="0x1559" id="Potion of Attack (SB)">
       <Class>Equipment</Class>
@@ -3676,6 +3687,7 @@
       <Soulbound/>
       <BagType>5</BagType>
       <feedPower>150</feedPower>
+      <Track/>
    </Object>
    <Object type="0x155A" id="Potion of Defense (SB)">
       <Class>Equipment</Class>
@@ -3693,6 +3705,7 @@
       <Soulbound/>
       <BagType>5</BagType>
       <feedPower>150</feedPower>
+      <Track/>
    </Object>
    <Object type="0x155B" id="Potion of Speed (SB)">
       <Class>Equipment</Class>
@@ -3710,6 +3723,7 @@
       <Soulbound/>
       <BagType>5</BagType>
       <feedPower>150</feedPower>
+      <Track/>
    </Object>
    <Object type="0x155C" id="Potion of Vitality (SB)">
       <Class>Equipment</Class>
@@ -3727,6 +3741,7 @@
       <Soulbound/>
       <BagType>5</BagType>
       <feedPower>150</feedPower>
+      <Track/>
    </Object>
    <Object type="0x155D" id="Potion of Wisdom (SB)">
       <Class>Equipment</Class>
@@ -3744,6 +3759,7 @@
       <Soulbound/>
       <BagType>5</BagType>
       <feedPower>150</feedPower>
+      <Track/>
    </Object>
    <Object type="0x155E" id="Potion of Dexterity (SB)">
       <Class>Equipment</Class>
@@ -3761,6 +3777,7 @@
       <Soulbound/>
       <BagType>5</BagType>
       <feedPower>150</feedPower>
+      <Track/>
    </Object>
    <Object type="0x155F" id="Potion of Life (SB)">
       <Class>Equipment</Class>
@@ -3778,6 +3795,7 @@
       <Soulbound/>
       <BagType>5</BagType>
       <feedPower>250</feedPower>
+      <Track/>
    </Object>
    <Object type="0x1560" id="Potion of Mana (SB)">
       <Class>Equipment</Class>
@@ -3795,6 +3813,7 @@
       <Soulbound/>
       <BagType>5</BagType>
       <feedPower>250</feedPower>
+      <Track/>
    </Object>
    <Object type="0x1561" id="Olive Gladiator Skin">
       <Class>Equipment</Class>
@@ -6523,7 +6542,7 @@
       <FameBonus>6</FameBonus>
       <MpCost>100</MpCost>
       <Activate effect="Invisible" duration="5.5">ConditionEffectSelf</Activate>
-      <Activate maxDistance="20">Teleport</Activate>
+      <Activate maxDistance="13">Teleport</Activate>
       <Cooldown>6.5</Cooldown>
       <feedPower>750</feedPower>
       <Soulbound/>
@@ -7902,7 +7921,7 @@
       <Usable/>
       <BagType>1</BagType>
       <MpCost>40</MpCost>
-      <Activate radius="4" totalDamage="50" condDuration="3.0">Trap</Activate>
+      <Activate radius="4" totalDamage="60" condDuration="3.0">Trap</Activate>
       <feedPower>5</feedPower>
    </Object>
    <Object type="0xab2" id="Wilderlands Trap">
@@ -7917,8 +7936,8 @@
       <Description>A magical trap suited for hunting the strong beasts of the untamed country.</Description>
       <Usable/>
       <BagType>1</BagType>
-      <MpCost>60</MpCost>
-      <Activate radius="4.5" totalDamage="90" condDuration="3.5">Trap</Activate>
+      <MpCost>50</MpCost>
+      <Activate radius="4.5" totalDamage="95" condDuration="3.5">Trap</Activate>
       <feedPower>10</feedPower>
    </Object>
    <Object type="0xab3" id="Deepforest Trap">
@@ -7933,7 +7952,7 @@
       <Description>An enchanted trap for hunting the fierce beasts of the dark forests.</Description>
       <Usable/>
       <BagType>1</BagType>
-      <MpCost>80</MpCost>
+      <MpCost>60</MpCost>
       <Activate radius="5" totalDamage="140" condDuration="4.0">Trap</Activate>
       <feedPower>20</feedPower>
    </Object>
@@ -7950,7 +7969,7 @@
       <Usable/>
       <BagType>2</BagType>
       <FameBonus>1</FameBonus>
-      <MpCost>100</MpCost>
+      <MpCost>75</MpCost>
       <Activate radius="5.5" totalDamage="200" condDuration="4.5">Trap</Activate>
       <feedPower>45</feedPower>
    </Object>
@@ -7964,11 +7983,12 @@
       <SlotType>20</SlotType>
       <Tier>4</Tier>
       <Description>A potent trap powered by angelic spirits, used by demon hunters in the nether realms.</Description>
+      <ActivateOnEquip stat="20" amount="1">IncrementStat</ActivateOnEquip>
       <Usable/>
       <BagType>2</BagType>
       <FameBonus>2</FameBonus>
-      <MpCost>120</MpCost>
-      <Activate radius="6" totalDamage="250" condDuration="5">Trap</Activate>
+      <MpCost>90</MpCost>
+      <Activate radius="6" totalDamage="260" condDuration="5">Trap</Activate>
       <feedPower>90</feedPower>
    </Object>
    <Object type="0xab6" id="Dragonstalker Trap">
@@ -7981,11 +8001,12 @@
       <SlotType>20</SlotType>
       <Tier>5</Tier>
       <Description>A powerful magic trap charged with astral energies and used by the legendary dragon slayers of ancient times.</Description>
+      <ActivateOnEquip stat="20" amount="2">IncrementStat</ActivateOnEquip>
       <Usable/>
       <BagType>4</BagType>
       <FameBonus>3</FameBonus>
-      <MpCost>140</MpCost>
-      <Activate radius="6.5" totalDamage="300" condDuration="5.5">Trap</Activate>
+      <MpCost>105</MpCost>
+      <Activate radius="6.5" totalDamage="320" condDuration="5.5">Trap</Activate>
       <feedPower>185</feedPower>
    </Object>
    <Object type="0xb2c" id="Giantcatcher Trap">
@@ -7998,13 +8019,14 @@
       <SlotType>20</SlotType>
       <Tier>6</Tier>
       <Description>A most effective magical trap used in the titan wars to hobble even the largest of enemy combatants.</Description>
+      <ActivateOnEquip stat="20" amount="3">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="26" amount="2">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="27" amount="2">IncrementStat</ActivateOnEquip>
       <Usable/>
       <BagType>4</BagType>
       <FameBonus>4</FameBonus>
-      <MpCost>140</MpCost>
-      <Activate radius="6.5" totalDamage="300" condDuration="6">Trap</Activate>
+      <MpCost>105</MpCost>
+      <Activate radius="6.5" totalDamage="350" condDuration="6">Trap</Activate>
       <feedPower>380</feedPower>
    </Object>
    <Object type="0xae4" id="Stasis Orb">
@@ -8264,7 +8286,7 @@
       <BagType>1</BagType>
       <MpCost>60</MpCost>
       <Activate duration="3">Decoy</Activate>
-      <Activate maxDistance="20">Teleport</Activate>
+      <Activate maxDistance="13">Teleport</Activate>
       <feedPower>5</feedPower>
    </Object>
    <Object type="0xb1c" id="Deception Prism">
@@ -8281,7 +8303,7 @@
       <BagType>1</BagType>
       <MpCost>65</MpCost>
       <Activate duration="3.5">Decoy</Activate>
-      <Activate maxDistance="20">Teleport</Activate>
+      <Activate maxDistance="13">Teleport</Activate>
       <feedPower>10</feedPower>
    </Object>
    <Object type="0xb1d" id="Illusion Prism">
@@ -8298,7 +8320,7 @@
       <BagType>1</BagType>
       <MpCost>70</MpCost>
       <Activate duration="4">Decoy</Activate>
-      <Activate maxDistance="20">Teleport</Activate>
+      <Activate maxDistance="13">Teleport</Activate>
       <feedPower>20</feedPower>
    </Object>
    <Object type="0xb1e" id="Hallucination Prism">
@@ -8316,7 +8338,7 @@
       <FameBonus>1</FameBonus>
       <MpCost>75</MpCost>
       <Activate duration="4.5">Decoy</Activate>
-      <Activate maxDistance="20">Teleport</Activate>
+      <Activate maxDistance="13">Teleport</Activate>
       <feedPower>45</feedPower>
    </Object>
    <Object type="0xb1f" id="Prism of Figments">
@@ -8334,7 +8356,7 @@
       <FameBonus>2</FameBonus>
       <MpCost>80</MpCost>
       <Activate duration="5">Decoy</Activate>
-      <Activate maxDistance="20">Teleport</Activate>
+      <Activate maxDistance="13">Teleport</Activate>
       <feedPower>90</feedPower>
    </Object>
    <Object type="0xb20" id="Prism of Phantoms">
@@ -8352,7 +8374,7 @@
       <FameBonus>3</FameBonus>
       <MpCost>85</MpCost>
       <Activate duration="5.5">Decoy</Activate>
-      <Activate maxDistance="20">Teleport</Activate>
+      <Activate maxDistance="13">Teleport</Activate>
       <feedPower>185</feedPower>
    </Object>
    <Object type="0xb23" id="Prism of Apparitions">
@@ -8372,7 +8394,7 @@
       <FameBonus>4</FameBonus>
       <MpCost>85</MpCost>
       <Activate duration="5.5">Decoy</Activate>
-      <Activate maxDistance="20">Teleport</Activate>
+      <Activate maxDistance="13">Teleport</Activate>
       <feedPower>380</feedPower>
    </Object>
    <Object type="0x912" id="Prism of Dancing Swords">
@@ -8434,8 +8456,8 @@
       <Sound>spell/fire_spray</Sound>
       <Usable/>
       <BagType>1</BagType>
-      <MpCost>60</MpCost>
-      <Activate totalDamage="50" maxTargets="3">Lightning</Activate>
+      <MpCost>40</MpCost>
+      <Activate totalDamage="80" decrDamage="8" wisDamageBase="15" maxTargets="3">Lightning</Activate>
       <feedPower>5</feedPower>
    </Object>
    <Object type="0xb2e" id="Discharge Scepter">
@@ -8451,8 +8473,8 @@
       <Sound>spell/fire_spray</Sound>
       <Usable/>
       <BagType>1</BagType>
-      <MpCost>65</MpCost>
-      <Activate totalDamage="80" maxTargets="4">Lightning</Activate>
+      <MpCost>50</MpCost>
+      <Activate totalDamage="120" decrDamage="12" wisDamageBase="25" maxTargets="4">Lightning</Activate>
       <feedPower>10</feedPower>
    </Object>
    <Object type="0xb2f" id="Thunderclap Scepter">
@@ -8468,8 +8490,8 @@
       <Sound>spell/fire_nova</Sound>
       <Usable/>
       <BagType>1</BagType>
-      <MpCost>70</MpCost>
-      <Activate totalDamage="110" maxTargets="5">Lightning</Activate>
+      <MpCost>60</MpCost>
+      <Activate totalDamage="160" decrDamage="20" wisDamageBase="40" maxTargets="4">Lightning</Activate>
       <feedPower>20</feedPower>
    </Object>
    <Object type="0xb30" id="Arcblast Scepter">
@@ -8486,8 +8508,8 @@
       <Usable/>
       <BagType>2</BagType>
       <FameBonus>1</FameBonus>
-      <MpCost>75</MpCost>
-      <Activate totalDamage="140" maxTargets="6">Lightning</Activate>
+      <MpCost>70</MpCost>
+      <Activate totalDamage="200" decrDamage="25" wisDamageBase="50" maxTargets="5">Lightning</Activate>
       <feedPower>45</feedPower>
    </Object>
    <Object type="0xb31" id="Cloudflash Scepter">
@@ -8505,7 +8527,7 @@
       <BagType>2</BagType>
       <FameBonus>2</FameBonus>
       <MpCost>80</MpCost>
-      <Activate totalDamage="170" maxTargets="7">Lightning</Activate>
+      <Activate totalDamage="240" decrDamage="30" wisDamageBase="60" maxTargets="4">Lightning</Activate>
       <feedPower>90</feedPower>
    </Object>
    <Object type="0xb32" id="Scepter of Skybolts">
@@ -8522,8 +8544,8 @@
       <Usable/>
       <BagType>4</BagType>
       <FameBonus>3</FameBonus>
-      <MpCost>85</MpCost>
-      <Activate totalDamage="200" maxTargets="8">Lightning</Activate>
+      <MpCost>90</MpCost>
+      <Activate totalDamage="280" decrDamage="35" wisDamageBase="70" maxTargets="5">Lightning</Activate>
       <feedPower>185</feedPower>
    </Object>
    <Object type="0xb33" id="Scepter of Storms">
@@ -8542,8 +8564,8 @@
       <Usable/>
       <BagType>4</BagType>
       <FameBonus>4</FameBonus>
-      <MpCost>85</MpCost>
-      <Activate totalDamage="200" maxTargets="8">Lightning</Activate>
+      <MpCost>90</MpCost>
+      <Activate totalDamage="300" decrDamage="40" wisDamageBase="80" maxTargets="5">Lightning</Activate>
       <feedPower>380</feedPower>
    </Object>
    <Object type="0xb3e" id="Amulet of Resurrection">
@@ -8973,10 +8995,30 @@
       <ActivateOnEquip stat="22" amount="2">IncrementStat</ActivateOnEquip>
       <Usable/>
       <BagType>6</BagType>
-      <FameBonus>4</FameBonus>
-      <MpCost>130</MpCost>
+      <FameBonus>5</FameBonus>
+      <MpCost>100</MpCost>
       <Activate radius="4" totalDamage="350" condEffect="Paralyzed" condDuration="3.5">Trap</Activate>
-      <feedPower>500</feedPower>
+      <feedPower>700</feedPower>
+      <Soulbound/>
+   </Object>
+   <Object type="0xb40" id="Trap of the Vile Spirit">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0xef</Index>
+      </Texture>
+      <SlotType>20</SlotType>
+      <Description>A long lost artifact recovered by Davy Jones, believed to have been cursed by the gods of the seven seas themselves.</Description>
+      <ActivateOnEquip stat="3" amount="20">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip stat="20" amount="3">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip stat="22" amount="3">IncrementStat</ActivateOnEquip>
+      <Usable/>
+      <BagType>6</BagType>
+      <FameBonus>6</FameBonus>
+      <MpCost>90</MpCost>
+      <Activate radius="3" totalDamage="650" condEffect="Nothing" tilArmed="0.75" sensitivity="0.65" duration="10" color="0x5c6bb8">Trap</Activate>
+      <feedPower>900</feedPower>
       <Soulbound/>
    </Object>
    <Object type="0xc1d" id="St. Abraham's Wand">
@@ -8994,10 +9036,10 @@
       <Sound>weapon/fire_wand</Sound>
       <Projectile>
          <ObjectId>Cross Bullet</ObjectId>
-         <Speed>130</Speed>
+         <Speed>150</Speed>
          <MinDamage>90</MinDamage>
-         <MaxDamage>110</MaxDamage>
-         <LifetimeMS>770</LifetimeMS>
+         <MaxDamage>120</MaxDamage>
+         <LifetimeMS>667</LifetimeMS>
       </Projectile>
       <BagType>4</BagType>
       <FameBonus>3</FameBonus>
@@ -9278,7 +9320,7 @@
       <BagType>6</BagType>
       <MpCost>65</MpCost>
       <Activate objectId="Spirit Prism Bomb">Pet</Activate>
-      <Activate maxDistance="20">Teleport</Activate>
+      <Activate maxDistance="13">Teleport</Activate>
       <FameBonus>6</FameBonus>
       <feedPower>1200</feedPower>
       <Soulbound/>
@@ -9371,8 +9413,8 @@
       <Usable/>
       <BagType>6</BagType>
       <FameBonus>4</FameBonus>
-      <MpCost>65</MpCost>
-      <Activate totalDamage="180" maxTargets="7" condEffect="Slowed" condDuration="3" color="0xff9933">Lightning</Activate>
+      <MpCost>80</MpCost>
+      <Activate totalDamage="220" decrDamage="40" wisDamageBase="80" maxTargets="4" condEffect="Slowed" condDuration="3" color="0xff9933">Lightning</Activate>
       <feedPower>1100</feedPower>
       <Soulbound/>
    </Object>
@@ -9428,8 +9470,8 @@
          <ObjectId>Directed Explosion</ObjectId>
          <Speed>170</Speed>
          <Size>50</Size>
-         <MinDamage>55</MinDamage>
-         <MaxDamage>130</MaxDamage>
+         <MinDamage>60</MinDamage>
+         <MaxDamage>150</MaxDamage>
          <LifetimeMS>471</LifetimeMS>
       </Projectile>
       <ActivateOnEquip stat="28" amount="4">IncrementStat</ActivateOnEquip>
@@ -10635,6 +10677,7 @@
       <Timer>1800</Timer>
       <BagType>2</BagType>
       <feedPower>150</feedPower>
+      <Track/>
    </Object>
    <Object type="0xc69" id="Loot Drop Potion">
       <Class>Equipment</Class>
@@ -10655,6 +10698,7 @@
       <Timer>1800</Timer>
       <BagType>2</BagType>
       <feedPower>150</feedPower>
+      <Track/>
    </Object>
    <Object type="0xc6a" id="XP Booster 1 hr">
       <Class>Equipment</Class>
@@ -10710,7 +10754,7 @@
       <MpCost>5</MpCost>
       <ActivateOnEquip stat="26" amount="5">IncrementStat</ActivateOnEquip>
       <Activate radius="2.0" totalDamage="25">DazeBlast</Activate>
-      <Activate maxDistance="20">Teleport</Activate>
+      <Activate maxDistance="13">Teleport</Activate>
       <BagType>6</BagType>
       <feedPower>1000</feedPower>
       <Soulbound/>
@@ -11184,6 +11228,7 @@
       <Timer>1200</Timer>
       <BagType>2</BagType>
       <feedPower>100</feedPower>
+      <Track/>
    </Object>
    <Object type="0xcc3" id="Saint Patty's Brew">
       <Class>Equipment</Class>
@@ -12219,10 +12264,10 @@
       <Sound>weapon/wand_of_death</Sound>
       <Projectile>
          <ObjectId>Rose Shot</ObjectId>
-         <Speed>150</Speed>
-         <LifetimeMS>600</LifetimeMS>
+         <Speed>180</Speed>
+         <LifetimeMS>500</LifetimeMS>
          <MinDamage>85</MinDamage>
-         <MaxDamage>120</MaxDamage>
+         <MaxDamage>130</MaxDamage>
          <MultiHit/>
       </Projectile>
       <BagType>2</BagType>
@@ -12375,10 +12420,10 @@
       <Sound>weapon/wand_of_death</Sound>
       <Projectile>
          <ObjectId>Dyed Eggs</ObjectId>
-         <Speed>150</Speed>
-         <LifetimeMS>600</LifetimeMS>
-         <MinDamage>90</MinDamage>
-         <MaxDamage>125</MaxDamage>
+         <Speed>180</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <MinDamage>95</MinDamage>
+         <MaxDamage>135</MaxDamage>
          <MultiHit/>
       </Projectile>
       <BagType>2</BagType>
@@ -13316,10 +13361,10 @@
       <Sound>weapon/wand_of_death</Sound>
       <Projectile>
          <ObjectId>Terror Orb</ObjectId>
-         <Speed>150</Speed>
-         <LifetimeMS>600</LifetimeMS>
-         <MinDamage>90</MinDamage>
-         <MaxDamage>125</MaxDamage>
+         <Speed>180</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <MinDamage>95</MinDamage>
+         <MaxDamage>135</MaxDamage>
          <MultiHit/>
          <ParticleTrail>0x000000</ParticleTrail>
       </Projectile>
@@ -13447,6 +13492,7 @@
       <Potion/>
       <BagType>5</BagType>
       <feedPower>200</feedPower>
+      <Track/>
    </Object>
    <Object type="0x2369" id="Greater Potion of Defense">
       <Class>Equipment</Class>
@@ -13464,6 +13510,7 @@
       <Potion/>
       <BagType>5</BagType>
       <feedPower>200</feedPower>
+      <Track/>
    </Object>
    <Object type="0x236A" id="Greater Potion of Speed">
       <Class>Equipment</Class>
@@ -13481,6 +13528,7 @@
       <Potion/>
       <BagType>5</BagType>
       <feedPower>200</feedPower>
+      <Track/>
    </Object>
    <Object type="0x236B" id="Greater Potion of Vitality">
       <Class>Equipment</Class>
@@ -13498,6 +13546,7 @@
       <Potion/>
       <BagType>5</BagType>
       <feedPower>200</feedPower>
+      <Track/>
    </Object>
    <Object type="0x236C" id="Greater Potion of Wisdom">
       <Class>Equipment</Class>
@@ -13515,6 +13564,7 @@
       <Potion/>
       <BagType>5</BagType>
       <feedPower>200</feedPower>
+      <Track/>
    </Object>
    <Object type="0x236D" id="Greater Potion of Dexterity">
       <Class>Equipment</Class>
@@ -13532,6 +13582,7 @@
       <Potion/>
       <BagType>5</BagType>
       <feedPower>200</feedPower>
+      <Track/>
    </Object>
    <Object type="0x236E" id="Greater Potion of Life">
       <Class>Equipment</Class>
@@ -13548,6 +13599,7 @@
       <Potion/>
       <BagType>5</BagType>
       <feedPower>350</feedPower>
+      <Track/>
    </Object>
    <Object type="0x236F" id="Greater Potion of Mana">
       <Class>Equipment</Class>
@@ -13564,6 +13616,7 @@
       <Potion/>
       <BagType>5</BagType>
       <feedPower>350</feedPower>
+      <Track/>
    </Object>
    <Object type="0x2372" id="Ghost Huntress Skin">
       <Class>Equipment</Class>
@@ -13937,6 +13990,7 @@
       <feedPower>380</feedPower>
    </Object>
    <Object type="0x235F" id="Scepter of Geb" setType="0x0002" setName="Priest of Geb Set">
+      <DisplayId>Wand of Geb</DisplayId>
       <Class>Equipment</Class>
       <Item/>
       <Texture>
@@ -13950,8 +14004,8 @@
       <Projectile>
          <ObjectId>Geb Shot</ObjectId>
          <Speed>140</Speed>
-         <MinDamage>65</MinDamage>
-         <MaxDamage>90</MaxDamage>
+         <MinDamage>70</MinDamage>
+         <MaxDamage>100</MaxDamage>
          <LifetimeMS>600</LifetimeMS>
          <Size>80</Size>
          <Amplitude>1.2</Amplitude>
@@ -14449,10 +14503,10 @@
       <Sound>weapon/wand_of_death</Sound>
       <Projectile>
          <ObjectId>Gift Parade</ObjectId>
-         <Speed>150</Speed>
-         <LifetimeMS>600</LifetimeMS>
-         <MinDamage>90</MinDamage>
-         <MaxDamage>125</MaxDamage>
+         <Speed>180</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <MinDamage>95</MinDamage>
+         <MaxDamage>135</MaxDamage>
          <MultiHit/>
       </Projectile>
       <BagType>4</BagType>
@@ -14754,8 +14808,8 @@
       <Usable/>
       <BagType>4</BagType>
       <FameBonus>2</FameBonus>
-      <MpCost>90</MpCost>
-      <Activate totalDamage="100" maxTargets="10" color="0xffdf00">Lightning</Activate>
+      <MpCost>70</MpCost>
+      <Activate arcDegrees="45" totalDamage="100" wisDamageBase="40" maxTargets="6" color="0xffdf00">Lightning</Activate>
       <feedPower>450</feedPower>
       <DisplayId>Honey Scepter</DisplayId>
       <Soulbound/>
@@ -14987,10 +15041,10 @@
       <Sound>weapon/wand_of_death</Sound>
       <Projectile>
          <ObjectId>Frozen Wand Icicle</ObjectId>
-         <Speed>120</Speed>
-         <LifetimeMS>750</LifetimeMS>
-         <MinDamage>75</MinDamage>
-         <MaxDamage>100</MaxDamage>
+         <Speed>150</Speed>
+         <LifetimeMS>600</LifetimeMS>
+         <MinDamage>70</MinDamage>
+         <MaxDamage>110</MaxDamage>
          <ArmorPiercing/>
       </Projectile>
       <BagType>6</BagType>
@@ -15352,12 +15406,13 @@
       <Sound>weapon/wand_of_death</Sound>
       <Projectile>
          <ObjectId>Eternal Snowflake Shot</ObjectId>
-         <Speed>6</Speed>
-         <MinDamage>300</MinDamage>
-         <MaxDamage>400</MaxDamage>
-         <LifetimeMS>11000</LifetimeMS>
+         <Speed>3</Speed>
+         <MinDamage>350</MinDamage>
+         <MaxDamage>450</MaxDamage>
+         <LifetimeMS>10000</LifetimeMS>
          <Parametric/>
          <PassesCover/>
+         <MultiHit/>
       </Projectile>
       <BagType>6</BagType>
       <FameBonus>6</FameBonus>
@@ -16110,20 +16165,151 @@
       <BagType>5</BagType>
       <feedPower>5000</feedPower>
    </Object>
-   <Object type="0x13c" id="Testing Mystery Dye">
+   <Object type="0x13c" id="Mystery Dye (Clothing)">
       <Class>Equipment</Class>
       <Item/>
-      <AnimatedTexture>
-         <File>playerskins</File>
-         <Index>136</Index>
-      </AnimatedTexture>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x5a5</Index>
+      </Texture>
       <SlotType>10</SlotType>
-      <Description>Random Dye</Description>
+      <Description>Grants a random Clothing Dye when used!</Description>
       <Activate>MysteryDyes</Activate>
       <Consumable/>
       <Soulbound/>
       <BagType>5</BagType>
-      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x13d0" id="Mystery Dye (Accessory)">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x5a6</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>Grants a random Accessory Dye when used!</Description>
+      <Activate>MysteryDyes</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>5</BagType>
+   </Object>
+   <Object type="0x13d1" id="Mystery Cloth (Large)">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x5a7</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>Grants a random Large Cloth when used!</Description>
+      <Activate>MysteryDyes</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>5</BagType>
+   </Object>
+   <Object type="0x13d2" id="Mystery Cloth (Small)">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x5a8</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>Grants a random Small Cloth when used!</Description>
+      <Activate>MysteryDyes</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>5</BagType>
+   </Object>
+   <Object type="0x13d3" id="Mystery Skin (Bronze)">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x5a9</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>Grants a random Skin when used! The Skin rarity will depend on the quality of the Mystery Item (Gold, Silver, Bronze)</Description>
+      <Activate>MysteryDyes</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>5</BagType>
+      <Track/>
+   </Object>
+   <Object type="0x13d4" id="Mystery Skin (Silver)">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x5aa</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>Grants a random Skin when used! The Skin rarity will depend on the quality of the Mystery Item (Gold, Silver, Bronze)</Description>
+      <Activate>MysteryDyes</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>5</BagType>
+      <Track/>
+   </Object>
+   <Object type="0x13d5" id="Mystery Skin (Gold)">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x5ab</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>Grants a random Skin when used! The Skin rarity will depend on the quality of the Mystery Item (Gold, Silver, Bronze)</Description>
+      <Activate>MysteryDyes</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>5</BagType>
+      <Track/>
+   </Object>
+   <Object type="0x13d6" id="Mystery Pet Stone (Bronze)">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x5ac</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>Grants a random Pet Stone when used! The Pet Stone rarity will depend on the quality of the Mystery Item (Gold, Silver, Bronze)</Description>
+      <Activate>MysteryDyes</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>5</BagType>
+      <Track/>
+   </Object>
+   <Object type="0x13d7" id="Mystery Pet Stone (Silver)">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x5ad</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>Grants a random Pet Stone when used! The Pet Stone rarity will depend on the quality of the Mystery Item (Gold, Silver, Bronze)</Description>
+      <Activate>MysteryDyes</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>5</BagType>
+      <Track/>
+   </Object>
+   <Object type="0x13d8" id="Mystery Pet Stone (Gold)">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x5ae</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>Grants a random Pet Stone when used! The Pet Stone rarity will depend on the quality of the Mystery Item (Gold, Silver, Bronze)</Description>
+      <Activate>MysteryDyes</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>5</BagType>
+      <Track/>
    </Object>
    <Object type="0x2ac1" id="Warrior - Future Seeker Tester Skin">
       <Class>Equipment</Class>
@@ -17252,6 +17438,156 @@
       <SlotType>10</SlotType>
       <Description>A power crystal will show me the right way. Forward to victory!\n\nSkin Class: Sorcerer\nSprite Credits: BLOODQWEN</Description>
       <Activate skinType="19385">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>5</BagType>
+      <Soulbound/>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x4bc3" id="Beach Trickster Skin">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>172</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Perhaps you should slow down on the Bahama Sunrises and those Blue Paradises. You're starting to see multiples of her!\n\nSkin Class: Trickster\nSprite Credits: Poshun </Description>
+      <Activate skinType="19387">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>5</BagType>
+      <Soulbound/>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x4bc4" id="Hula Mystic Skin">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>173</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Surely, this exotic dancer's beauty will stun you!.. Or stasis. Same thing really.\n\nSkin Class: Mystic\nSprite Credits: Poshun </Description>
+      <Activate skinType="19388">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>5</BagType>
+      <Soulbound/>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x4bc5" id="Redcoat Assassin Skin">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>174</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Came here to kick ass and drink tea, and he's all out of tea.\n\nSkin Class: Assassin\nSprite Credits: Kingged</Description>
+      <Activate skinType="19389">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>5</BagType>
+      <Soulbound/>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x4bc6" id="Patriot Paladin Skin">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>175</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Give me liberty or give me death!\n\nSkin Class: Paladin\nSprite Credits: Kingged</Description>
+      <Activate skinType="19390">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>5</BagType>
+      <Soulbound/>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x4bc7" id="Swimsuit Mystic Skin">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>176</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Summer is here! Grab a towel and off to the beach we go!\n\nSkin Class: Mystic\nSprite Credits: Beige </Description>
+      <Activate skinType="19391">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>5</BagType>
+      <Soulbound/>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x4bc8" id="Swimsuit Huntress Skin">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>177</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Don't stare unless you want to be turned into a pincushion!\n\nSkin Class: Huntress\nSprite Credits: Beige </Description>
+      <Activate skinType="19392">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>5</BagType>
+      <Soulbound/>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x4bc9" id="Swimsuit Trickster Skin">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>178</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Careful, she will stab your heart in all kind of ways!\n\nSkin Class: Trickster\nSprite Credits: Beige </Description>
+      <Activate skinType="19393">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>5</BagType>
+      <Soulbound/>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x4bca" id="Slashing Beauty Ninja Skin">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>179</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>One night with her, an eternity in Heaven.\n\nSkin Class: Ninja\nSprite Credits: Beige </Description>
+      <Activate skinType="19394">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>5</BagType>
+      <Soulbound/>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x4bcd" id="Sunflower Archer Skin">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>180</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>She slays enemies with flowers instead of arrows!\n\nSkin Class: Archer\nSprite Credits: Lovens </Description>
+      <Activate skinType="19403">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>5</BagType>
+      <Soulbound/>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object type="0x4bce" id="Thief Queen Skin">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>181</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Wanted, dead or alive. Reward: the Lost Lands throne, a huge pile of gold and the best bottle of wine from the Mad God himself.\n\nSkin Class: Rogue\nSprite Credits: Lovens </Description>
+      <Activate skinType="19404">UnlockSkin</Activate>
       <Consumable/>
       <BagType>5</BagType>
       <Soulbound/>

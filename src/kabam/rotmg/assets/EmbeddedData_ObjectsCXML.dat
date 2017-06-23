@@ -301,6 +301,7 @@
          <Index>0</Index>
       </Texture>
       <ShadowSize>0</ShadowSize>
+      <Sound id="0">monster/traps_death</Sound>
    </Object>
    <Object type="0x073a" id="Cube">
       <Class>GameObject</Class>

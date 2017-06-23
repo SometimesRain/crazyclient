@@ -26,7 +26,7 @@ public class ChatListItemFactory {
     private static const HELP:String = Parameters.HELP_CHAT_NAME;//"*Help*"
     private static const ERROR:String = Parameters.ERROR_CHAT_NAME;//"*Error*"
     private static const GUILD:String = Parameters.GUILD_CHAT_NAME;//"*Guild*"
-    //private static const HACKER:String = "*Hacker*"; //make recipient for purple text
+    private static const HACKER:String = "*Hacker*"; //make recipient for purple text
     private static const testField:TextField = makeTestTextField();
 
     [Inject]
@@ -206,7 +206,7 @@ public class ChatListItemFactory {
     }
 
     private function getNameColor():uint {
-        //if (this.message.recipient == HACKER) return (0x0073FF); //0x8997DD
+        if (this.message.recipient == HACKER) return (0x0073FF); //0x8997DD
         if (this.message.name.charAt(0) == "#") {
             return (0xFFA800);
         }
@@ -224,7 +224,7 @@ public class ChatListItemFactory {
 
     private function getTextColor():uint {
         var _local_1:String = this.message.name;
-        //if (this.message.recipient == HACKER) return (0x8997DD);
+        if (this.message.recipient == HACKER) return (0x8997DD);
         if (_local_1 == SERVER) {
             return (0xFFFF00);
         }

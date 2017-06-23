@@ -38,6 +38,58 @@
          <Index>0x02</Index>
       </Texture>
    </Object>
+   <Object type="0xb03" id="Egg Gift 1">
+      <Class>Character</Class>
+      <StasisImmune/>
+      <Enemy/>
+      <NoMiniMap/>
+      <MaxHitPoints>200</MaxHitPoints>
+      <XpMult>0.0</XpMult>
+      <Size>80</Size>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x10f</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb04" id="Egg Gift 2">
+      <Class>Character</Class>
+      <StasisImmune/>
+      <Enemy/>
+      <NoMiniMap/>
+      <MaxHitPoints>200</MaxHitPoints>
+      <XpMult>0.0</XpMult>
+      <Size>80</Size>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x11f</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb06" id="Egg Gift 3">
+      <Class>Character</Class>
+      <StasisImmune/>
+      <Enemy/>
+      <NoMiniMap/>
+      <MaxHitPoints>200</MaxHitPoints>
+      <XpMult>0.0</XpMult>
+      <Size>80</Size>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x12f</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb07" id="Egg Gift 4">
+      <Class>Character</Class>
+      <StasisImmune/>
+      <Enemy/>
+      <NoMiniMap/>
+      <MaxHitPoints>200</MaxHitPoints>
+      <XpMult>0.0</XpMult>
+      <Size>80</Size>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0xff</Index>
+      </Texture>
+   </Object>
    <Object type="0x64e" id="Key Spawner">
       <Class>Character</Class>
       <Enemy/>
@@ -669,17 +721,29 @@
    <Object type="0x240" id="Testing Gift Wand Tier">
       <Group>Testing Gifts Weapon</Group>
       <Class>Character</Class>
+      <StasisImmune/>
+      <Enemy/>
+      <NoMiniMap/>
+      <MaxHitPoints>100</MaxHitPoints>
+      <XpMult>0.0</XpMult>
+      <Size>80</Size>
       <Texture>
-         <File>lofiObj3</File>
-         <Index>0x21c</Index>
+         <File>lofiObj5</File>
+         <Index>0x40</Index>
       </Texture>
    </Object>
    <Object type="0x15f" id="Testing Gift Wand Vani">
       <Group>Testing Gifts Weapon</Group>
       <Class>Character</Class>
+      <StasisImmune/>
+      <Enemy/>
+      <NoMiniMap/>
+      <MaxHitPoints>100</MaxHitPoints>
+      <XpMult>0.0</XpMult>
+      <Size>80</Size>
       <Texture>
          <File>lofiObj3</File>
-         <Index>0x21c</Index>
+         <Index>0x42a</Index>
       </Texture>
    </Object>
    <Object type="0x215" id="Testing Gift Katana">

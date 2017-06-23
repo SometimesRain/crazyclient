@@ -34,7 +34,7 @@ public class QuestArrow extends GameObjectArrow {
     }
 
     private function getToolTip(_arg_1:GameObject, _arg_2:int):ToolTip {
-        if ((((_arg_1 == null)) || ((_arg_1.texture_ == null)))) {
+        if (_arg_1 == null || _arg_1.texture_ == null) {
             return (null);
         }
         //if (this.shouldShowFullQuest(_arg_2)) return (new QuestToolTip(go_));

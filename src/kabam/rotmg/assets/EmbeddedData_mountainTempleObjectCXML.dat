@@ -146,8 +146,8 @@
       <Sound>weapon/wand_of_death</Sound>
       <Projectile>
          <ObjectId>Elemental missiles</ObjectId>
-         <Speed>125</Speed>
-         <MinDamage>120</MinDamage>
+         <Speed>120</Speed>
+         <MinDamage>140</MinDamage>
          <MaxDamage>190</MaxDamage>
          <LifetimeMS>550</LifetimeMS>
          <Size>100</Size>

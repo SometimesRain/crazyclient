@@ -36,6 +36,9 @@ public class ChatShortcutModel {
         return (Parameters.data_[Options.SCROLL_CHAT_DOWN]);
     }
 
+    public function getHackShortcut():uint {
+        return (Parameters.data_[Options.HACK]);
+    }
 
 }
 }//package kabam.rotmg.chat.model

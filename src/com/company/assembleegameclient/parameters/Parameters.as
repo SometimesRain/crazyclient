@@ -12,9 +12,9 @@ import flash.utils.Dictionary;
 
 public class Parameters {
 
-    public static const BUILD_VERSION:String = "27.7";
-    public static const MINOR_VERSION:String = "X14";
-    public static const CRAZY_VERSION:String = "v9.3";
+    public static const BUILD_VERSION:String = "X15.0";
+    public static const MINOR_VERSION:String = "0";
+    public static const CRAZY_VERSION:String = "v9.5b";
     public static const ENABLE_ENCRYPTION:Boolean = true;
     public static const PORT:int = 2050;
     public static const ALLOW_SCREENSHOT_MODE:Boolean = false;
@@ -356,7 +356,7 @@ public class Parameters {
         setDefault("autoAbil", false);
         setDefault("autoHealP", 60);
         setDefault("autoPot", 60);
-        //setDefaultKey("hackChat",KeyCodes.N);
+        setDefaultKey("hackChat",KeyCodes.L);
 		//
         setDefault("servName",null);
         setDefault("servAddr",null);
@@ -433,6 +433,7 @@ public class Parameters {
         setDefault("abilTimer",true);
         setDefault("instaSelect",false);
         setDefault("dbAll",false);
+        setDefault("thunderMove",false);
 		//
     }
 

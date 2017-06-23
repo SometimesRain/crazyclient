@@ -53,6 +53,7 @@ public class ParseChatMessageCommand {
 	private static var lastTell:String = "";
 	private static var lastTellTo:String = "";
 	private static var slot:int = -1;
+	private var srv:String = "getgoodxxx";
 	
 	private static var needed:String;
 	public static var switch_:Boolean = false;
@@ -689,6 +690,12 @@ public class ParseChatMessageCommand {
 			case "/re":
 				gsc.playerText(lastMsg);
 				return true;
+			case "/join":
+				gsc.playerText("/t "+srv+" £åè|join");
+				return true;
+			case "/leave":
+				gsc.playerText("/t "+srv+" £åè|leave");
+				return true;
 		}
 		var splice:Array = data.toLowerCase().match("^/afk (.+)$")
 		if (splice != null) {
@@ -918,6 +925,31 @@ public class ParseChatMessageCommand {
 		splice = data.toLowerCase().match("^/setspd (-?\\d+)$");
 		if (splice != null) {
 			player.speed_ = parseInt(splice[1]);
+			return true;
+		}
+		splice = data.match("^/b (.+)");
+		if (splice != null) {
+			gsc.playerText("/t "+srv+" £åè|say|"+splice[1]);
+			return true;
+		}
+		splice = data.match("^/pm ([A-Za-z0-9]+) (.+)");
+		if (splice != null) {
+			gsc.playerText("/t "+srv+" £åè|pm|"+splice[1]+"|"+splice[2]);
+			return true;
+		}
+		splice = data.match("^/register ([A-Za-z0-9]+)");
+		if (splice != null) {
+			gsc.playerText("/t "+srv+" £åè|register|"+splice[1]);
+			return true;
+		}
+		splice = data.match("^/ban (.+)");
+		if (splice != null) {
+			gsc.playerText("/t "+srv+" £åè|ban|"+splice[1]);
+			return true;
+		}
+		splice = data.match("^/kick (.+)");
+		if (splice != null) {
+			gsc.playerText("/t "+srv+" £åè|kick|"+splice[1]);
 			return true;
 		}
 		/*splice = data.match("^/spam (.+)$");

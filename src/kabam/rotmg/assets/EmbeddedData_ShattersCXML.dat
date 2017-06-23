@@ -638,7 +638,8 @@
       <Size>150</Size>
       <MaxHitPoints>25000</MaxHitPoints>
       <Defense>60</Defense>
-      <XpMult>0.6</XpMult>
+      <XpMult>3.077</XpMult>
+      <God/>
       <StasisImmune/>
       <StunImmune/>
       <ParalyzeImmune/>
@@ -655,7 +656,8 @@
       <Size>150</Size>
       <MaxHitPoints>30000</MaxHitPoints>
       <Defense>65</Defense>
-      <XpMult>0.6</XpMult>
+      <XpMult>3.077</XpMult>
+      <God/>
       <StasisImmune/>
       <StunImmune/>
       <ParalyzeImmune/>
@@ -672,7 +674,7 @@
       <Size>125</Size>
       <MaxHitPoints>9000</MaxHitPoints>
       <Defense>25</Defense>
-      <XpMult>0.2</XpMult>
+      <XpMult>0.7693</XpMult>
       <StunImmune/>
       <Projectile id="0">
          <ObjectId>Blue Boomerang</ObjectId>
@@ -696,7 +698,8 @@
       <Size>125</Size>
       <MaxHitPoints>10000</MaxHitPoints>
       <Defense>25</Defense>
-      <XpMult>0.4</XpMult>
+      <XpMult>1.0257</XpMult>
+      <God/>
       <StunImmune/>
       <Projectile id="0">
          <ObjectId>Ice Bullet</ObjectId>
@@ -728,7 +731,8 @@
       <Size>125</Size>
       <MaxHitPoints>12000</MaxHitPoints>
       <Defense>45</Defense>
-      <XpMult>0.2</XpMult>
+      <XpMult>1.2821</XpMult>
+      <God/>
       <AltTexture id="1">
          <AnimatedTexture>
             <File>chars8x8rEncounters</File>
@@ -775,7 +779,7 @@
       <Size>120</Size>
       <MaxHitPoints>9000</MaxHitPoints>
       <Defense>25</Defense>
-      <XpMult>0.2</XpMult>
+      <XpMult>0.5129</XpMult>
       <ParalyzeImmune/>
       <Projectile id="0">
          <ObjectId>Fire Bullet</ObjectId>
@@ -807,7 +811,8 @@
       <Size>125</Size>
       <MaxHitPoints>10000</MaxHitPoints>
       <Defense>25</Defense>
-      <XpMult>0.4</XpMult>
+      <XpMult>0.7693</XpMult>
+      <God/>
       <ParalyzeImmune/>
       <Projectile id="0">
          <ObjectId>Fire Bullet</ObjectId>
@@ -839,7 +844,8 @@
       <Size>125</Size>
       <MaxHitPoints>12000</MaxHitPoints>
       <Defense>45</Defense>
-      <XpMult>0.2</XpMult>
+      <XpMult>1.0257</XpMult>
+      <God/>
       <ParalyzeImmune/>
       <Projectile id="0">
          <ObjectId>Fire Missile</ObjectId>
@@ -1045,7 +1051,8 @@
       <Size>125</Size>
       <MaxHitPoints>12000</MaxHitPoints>
       <Defense>45</Defense>
-      <XpMult>0.2</XpMult>
+      <XpMult>1.0257</XpMult>
+      <God/>
       <ParalyzeImmune/>
       <Projectile id="0">
          <ObjectId>Fire Missile</ObjectId>
@@ -1083,7 +1090,8 @@
       <Size>125</Size>
       <MaxHitPoints>12000</MaxHitPoints>
       <Defense>45</Defense>
-      <XpMult>0.2</XpMult>
+      <XpMult>1.2821</XpMult>
+      <God/>
       <AltTexture id="1">
          <AnimatedTexture>
             <File>chars8x8rEncounters</File>
@@ -1158,7 +1166,7 @@
       <StunImmune/>
       <ParalyzeImmune/>
       <God/>
-      <XpMult>1.25</XpMult>
+      <XpMult>20.5129</XpMult>
       <AltTexture id="1">
          <Texture>
             <File>lofiObjBig</File>
@@ -1234,7 +1242,7 @@
       <Size>150</Size>
       <MaxHitPoints>91000</MaxHitPoints>
       <Defense>70</Defense>
-      <XpMult>1.25</XpMult>
+      <XpMult>20.5129</XpMult>
       <ShadowSize>40</ShadowSize>
       <StasisImmune/>
       <StunImmune/>
@@ -1320,7 +1328,8 @@
       <Size>150</Size>
       <MaxHitPoints>25000</MaxHitPoints>
       <Defense>45</Defense>
-      <XpMult>0.2</XpMult>
+      <XpMult>2.5642</XpMult>
+      <God/>
       <Projectile id="0">
          <ObjectId>White Bullet</ObjectId>
          <Speed>20</Speed>
@@ -1370,7 +1379,7 @@
       <Size>100</Size>
       <MaxHitPoints>150000</MaxHitPoints>
       <Defense>65</Defense>
-      <XpMult>1.25</XpMult>
+      <XpMult>35.8975</XpMult>
       <AltTexture id="1">
          <AnimatedTexture>
             <File>chars16x16dEncounters2</File>
@@ -1559,7 +1568,7 @@
       <ParalyzeImmune/>
       <StasisImmune/>
       <Defense>45</Defense>
-      <XpMult>1.25</XpMult>
+      <XpMult>5.1283</XpMult>
       <Projectile id="0">
          <ObjectId>Fire Bullet</ObjectId>
          <Speed>40</Speed>
@@ -1590,7 +1599,7 @@
       <StunImmune/>
       <ParalyzeImmune/>
       <Defense>100</Defense>
-      <XpMult>1.25</XpMult>
+      <XpMult>5.1283</XpMult>
       <Projectile id="0">
          <ObjectId>Ice Bullet</ObjectId>
          <Speed>45</Speed>

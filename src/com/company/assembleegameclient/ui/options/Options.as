@@ -58,6 +58,7 @@ public class Options extends Sprite {
     public static const CHAT_COMMAND:String = "chatCommand";
     public static const CHAT:String = "chat";
     public static const TELL:String = "tell";
+    public static const HACK:String = "hackChat";
     public static const GUILD_CHAT:String = "guildChat";
     public static const SCROLL_CHAT_UP:String = "scrollChatUp";
     public static const SCROLL_CHAT_DOWN:String = "scrollChatDown";
@@ -714,6 +715,7 @@ public class Options extends Sprite {
 		addOptionAndPosition(new KeyMapper("cam2quest", "Point Camera to Quest", "Turns your camera so that the quest is to your north."));
 		addOptionAndPosition(new KeyMapper("enterPortal", "Portal Enter", "Enters nearest portal."));
 		addOptionAndPosition(new ChoiceOption("instaSelect",makeOnOffLabels(),[true,false],"Instantly Select All Items","When turned on, a right click on the trade window will select all your items instantly. When turned off, selects only items of the same type, smoothly, like an actual player.",null));
+		addOptionAndPosition(new ChoiceOption("thunderMove",makeOnOffLabels(),[true,false],"Thunder Move","To be used with ThunderBoxer.",null));
 	}
     
     private function miscMenu() : void
@@ -865,6 +867,7 @@ public class Options extends Sprite {
         this.addOptionAndPosition(new ChoiceOption("chatGuild", makeOnOffLabels(), [true, false], TextKey.OPTIONS_CHAT_GUILD, TextKey.OPTIONS_CHAT_GUILD_DESC, this.onAllChatDisabled));
         this.addOptionAndPosition(new ChoiceOption("chatTrade", makeOnOffLabels(), [true, false], TextKey.OPTIONS_CHAT_TRADE, TextKey.OPTIONS_CHAT_TRADE_DESC, null));
         this.addOptionAndPosition(new ChoiceOption("chatStarRequirement", makeStarSelectLabels(), [0, 13, 27, 41, 55, 69, 70], TextKey.OPTIONS_STAR_REQ, "Blocks messages from players of this rank and below.", null));
+        this.addOptionAndPosition(new KeyMapper("hackChat", "Custom Chat", "Use /register <username> to use custom chat."));
     }
 
     private static function makeStarSelectLabels():Vector.<StringBuilder> {

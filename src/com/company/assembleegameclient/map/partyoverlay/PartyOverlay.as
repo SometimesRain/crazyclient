@@ -3,6 +3,7 @@ import com.company.assembleegameclient.map.Camera;
 import com.company.assembleegameclient.map.Map;
 import com.company.assembleegameclient.objects.Party;
 import com.company.assembleegameclient.objects.Player;
+import kabam.rotmg.chat.control.TextHandler;
 
 import flash.display.Sprite;
 import flash.events.Event;
@@ -12,6 +13,7 @@ public class PartyOverlay extends Sprite {
     public var map_:Map;
     public var partyMemberArrows_:Vector.<PlayerArrow> = null;
     public var questArrow_:QuestArrow;
+    //public var goa:GameObjectArrow;
 
     public function PartyOverlay(_arg_1:Map) {
         var _local_3:PlayerArrow;
@@ -26,6 +28,12 @@ public class PartyOverlay extends Sprite {
             _local_2++;
         }
         this.questArrow_ = new QuestArrow(this.map_);
+		/*if (TextHandler.rsx > -1) {
+			this.goa = GameObjectArrow.withDummy(TextHandler.rsx, TextHandler.rsy, "RealmSpy");
+			TextHandler.rsx = -1;
+			TextHandler.rsy = -1;
+			addChild(this.goa);
+		}*/
         addChild(this.questArrow_);
         addEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromStage);
     }
@@ -83,6 +91,16 @@ public class PartyOverlay extends Sprite {
         if (!this.questArrow_.mouseOver_) {
             this.questArrow_.draw(_arg_2, _arg_1);
         }
+		//
+		/*if (goa != null) {
+			if (goa.go_ == null) {
+				return;
+			}
+			if (goa.go_.map_ == null) {
+				goa.go_.map_ = this.map_;
+			}
+			goa.draw(_arg_2, _arg_1);
+		}*/
     }
 
 

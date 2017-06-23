@@ -31,6 +31,7 @@ public class ShowEffect extends IncomingMessage {
     public var pos1_:WorldPosData;
     public var pos2_:WorldPosData;
     public var color_:int;
+	public var duration_:Number;
 
     public function ShowEffect(_arg_1:uint, _arg_2:Function) {
         this.pos1_ = new WorldPosData();
@@ -44,11 +45,12 @@ public class ShowEffect extends IncomingMessage {
         this.pos1_.parseFromInput(_arg_1);
         this.pos2_.parseFromInput(_arg_1);
         this.color_ = _arg_1.readInt();
+		this.duration_ = _arg_1.readFloat();
     }
 
     override public function toString():String {
-        return (formatToString("SHOW_EFFECT", "effectType_", "targetObjectId_", "pos1_", "pos2_", "color_"));
-    }
+		return formatToString("SHOW_EFFECT","effectType_","targetObjectId_","pos1_","pos2_","color_","duration_");
+	}
 
 
 }

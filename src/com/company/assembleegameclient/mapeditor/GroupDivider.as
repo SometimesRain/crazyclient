@@ -95,8 +95,11 @@ public class GroupDivider {
         }
         else
         {
-            _local_2[RegionLibrary.idToType_["Spawn"]] = RegionLibrary.xmlLibrary_[RegionLibrary.idToType_["Spawn"]];
-            _local_2[RegionLibrary.idToType_["User Dungeon End"]] = RegionLibrary.xmlLibrary_[RegionLibrary.idToType_["User Dungeon End"]];
+            _local_2[RegionLibrary.idToType_["Hallway"]] = RegionLibrary.xmlLibrary_[RegionLibrary.idToType_["Hallway"]];
+            _local_2[RegionLibrary.idToType_["Enemy"]] = RegionLibrary.xmlLibrary_[RegionLibrary.idToType_["Enemy"]];
+            _local_2[RegionLibrary.idToType_["Hallway 1"]] = RegionLibrary.xmlLibrary_[RegionLibrary.idToType_["Hallway 1"]];
+            _local_2[RegionLibrary.idToType_["Hallway 2"]] = RegionLibrary.xmlLibrary_[RegionLibrary.idToType_["Hallway 2"]];
+            _local_2[RegionLibrary.idToType_["Hallway 3"]] = RegionLibrary.xmlLibrary_[RegionLibrary.idToType_["Hallway 3"]];
         }
         GROUPS[GROUP_LABELS[0]] = _local_1;
         GROUPS[GROUP_LABELS[1]] = _local_3;

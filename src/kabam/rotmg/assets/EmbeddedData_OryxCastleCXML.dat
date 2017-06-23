@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <Objects>
+   <Object type="0x0b01" id="Stone Guardian Support">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>d3Chars8x8rEmbed</File>
+         <Index>13</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
    <Object type="0x0d70" id="Destructible Castle Wall">
       <Class>Wall</Class>
       <Texture>
@@ -13,9 +21,78 @@
             <Index>0x26</Index>
          </Texture>
       </Top>
-      <HitSound>monster/wooden_walls_hit</HitSound>
-      <DeathSound>monster/wooden_walls_death</DeathSound>
-      <MaxHitPoints>3000</MaxHitPoints>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <MaxHitPoints>9000</MaxHitPoints>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Enemy/>
+      <XpMult>0.0</XpMult>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x0b70" id="Fortified Destructible Castle Wall">
+      <Class>Wall</Class>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0xeb</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0xec</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <MaxHitPoints>24000</MaxHitPoints>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Enemy/>
+      <XpMult>0.0</XpMult>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x0b09" id="Destructible Castle Ice Wall">
+      <Class>Wall</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x3a4</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x3a5</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <MaxHitPoints>9000</MaxHitPoints>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Enemy/>
+      <XpMult>0.0</XpMult>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x0b0a" id="Fortified Destructible Castle Ice Wall">
+      <Class>Wall</Class>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0xed</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>d3LofiObjEmbed</File>
+            <Index>0xee</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <MaxHitPoints>24000</MaxHitPoints>
       <Static/>
       <FullOccupy/>
       <OccupySquare/>
@@ -210,7 +287,7 @@
       </AltTexture>
       <HitSound>monster/stone_walls_death</HitSound>
       <DeathSound>monster/flying_brain_death</DeathSound>
-      <MaxHitPoints>60000</MaxHitPoints>
+      <MaxHitPoints>80000</MaxHitPoints>
       <Projectile id="0">
          <ObjectId>Purple Blast</ObjectId>
          <Speed>60</Speed>
@@ -233,7 +310,7 @@
          <LifetimeMS>1000</LifetimeMS>
       </Projectile>
       <Size>120</Size>
-      <Defense>100</Defense>
+      <Defense>80</Defense>
       <XpMult>0.135</XpMult>
    </Object>
    <Object type="0x0d79" id="Oryx Stone Guardian Left">
@@ -276,7 +353,7 @@
       </AltTexture>
       <HitSound>monster/stone_walls_death</HitSound>
       <DeathSound>monster/flying_brain_death</DeathSound>
-      <MaxHitPoints>60000</MaxHitPoints>
+      <MaxHitPoints>80000</MaxHitPoints>
       <Projectile id="0">
          <ObjectId>Red Blast</ObjectId>
          <Speed>60</Speed>
@@ -299,7 +376,7 @@
          <LifetimeMS>1000</LifetimeMS>
       </Projectile>
       <Size>120</Size>
-      <Defense>100</Defense>
+      <Defense>80</Defense>
       <XpMult>0.135</XpMult>
    </Object>
    <Object type="0x0d7a" id="Oryx Guardian TaskMaster">
@@ -659,12 +736,12 @@
       </AltTexture>
       <Projectile id="0">
          <ObjectId>Mute Spell</ObjectId>
-         <Speed>50</Speed>
-         <MinDamage>10</MinDamage>
-         <MaxDamage>20</MaxDamage>
+         <Speed>40</Speed>
+         <Damage>20</Damage>
          <Size>80</Size>
          <LifetimeMS>1000</LifetimeMS>
          <ConditionEffect duration="5">Quiet</ConditionEffect>
+         <ConditionEffect duration="5">Weak</ConditionEffect>
          <MultiHit/>
       </Projectile>
    </Object>
@@ -674,7 +751,7 @@
       <StasisImmune/>
       <Enemy/>
       <NoMiniMap/>
-      <MaxHitPoints>100</MaxHitPoints>
+      <MaxHitPoints>100000</MaxHitPoints>
       <XpMult>0.0</XpMult>
       <Size>90</Size>
       <Defense>0</Defense>
@@ -698,12 +775,12 @@
       <DeathSound>monster/skull_shrine_hit</DeathSound>
       <Projectile id="0">
          <ObjectId>Mute Spell</ObjectId>
-         <Speed>50</Speed>
-         <MinDamage>10</MinDamage>
-         <MaxDamage>20</MaxDamage>
+         <Speed>40</Speed>
+         <Damage>20</Damage>
          <Size>80</Size>
          <LifetimeMS>1000</LifetimeMS>
          <ConditionEffect duration="5">Quiet</ConditionEffect>
+         <ConditionEffect duration="5">Weak</ConditionEffect>
          <MultiHit/>
       </Projectile>
    </Object>
@@ -733,12 +810,12 @@
       </AltTexture>
       <Projectile id="0">
          <ObjectId>Mute Spell</ObjectId>
-         <Speed>50</Speed>
-         <MinDamage>10</MinDamage>
-         <MaxDamage>20</MaxDamage>
+         <Speed>40</Speed>
+         <Damage>20</Damage>
          <Size>80</Size>
          <LifetimeMS>1000</LifetimeMS>
          <ConditionEffect duration="5">Quiet</ConditionEffect>
+         <ConditionEffect duration="5">Weak</ConditionEffect>
          <MultiHit/>
       </Projectile>
    </Object>

@@ -1988,4 +1988,104 @@
       <PlayerClassType>0x0325</PlayerClassType>
       <NoSkinSelect/>
    </Object>
+   <Object type="0x4bbb" id="Beach Trickster">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>172</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0324</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4bbc" id="Hula Mystic">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>173</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0323</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4bbd" id="Redcoat Assassin">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>174</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0320</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4bbe" id="Patriot Paladin">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>175</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x031f</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4bbf" id="Swimsuit Mystic">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>176</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0323</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4bc0" id="Swimsuit Huntress">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>177</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0322</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4bc1" id="Swimsuit Trickster">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>178</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0324</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4bc2" id="Slashing Beauty Ninja">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>179</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0326</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4bcb" id="Sunflower Archer">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>180</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x307</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4bcc" id="Thief Queen">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>181</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0300</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
 </Objects>

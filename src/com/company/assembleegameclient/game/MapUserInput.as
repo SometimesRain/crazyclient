@@ -209,7 +209,7 @@ public class MapUserInput {
 
     public function onMouseDown(_arg_1:MouseEvent):void {
 		//addTextLine.dispatch(ChatMessage.make(Parameters.CLIENT_CHAT_NAME, "mouse down x: "+gs_.mouseX + " y: "+gs_.mouseY));
-		if (gs_.mouseX >= gs_.hudView.x) {
+		if (gs_.hudView != null && gs_.mouseX >= gs_.hudView.x) {
 			return;
 		}
 		if (optionsOpen) {

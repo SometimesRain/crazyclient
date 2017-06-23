@@ -1254,8 +1254,8 @@
       <Enemy/>
       <Size>100</Size>
       <ShadowSize>90</ShadowSize>
-      <MaxHitPoints>50</MaxHitPoints>
-      <Defense>20</Defense>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Defense>5</Defense>
       <XpMult>0.1</XpMult>
       <HitSound>monster/wooden_walls_hit</HitSound>
       <DeathSound>monster/stone_walls_death</DeathSound>

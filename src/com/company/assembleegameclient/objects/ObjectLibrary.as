@@ -6,6 +6,7 @@ import com.company.assembleegameclient.util.TextureRedrawer;
 import com.company.assembleegameclient.util.redrawers.GlowRedrawer;
 import com.company.util.AssetLibrary;
 import com.company.util.ConversionUtil;
+import kabam.rotmg.assets.EmbeddedData;
 
 import flash.display.BitmapData;
 import flash.utils.Dictionary;
@@ -25,6 +26,7 @@ public class ObjectLibrary {
     public static var playerClassAbbr_:Dictionary = new Dictionary();
     public static const propsLibrary_:Dictionary = new Dictionary();
     public static const xmlLibrary_:Dictionary = new Dictionary();
+	public static const setLibrary_:Dictionary = new Dictionary();
     public static const idToType_:Dictionary = new Dictionary();
     public static const itemLib:Vector.<String> = new <String>[];
     public static const typeToDisplayId_:Dictionary = new Dictionary();
@@ -180,6 +182,19 @@ public class ObjectLibrary {
         }
         return (String(_local_2.@id));
     }
+      
+	public static function getSetXMLFromType(param1:int):XML {
+		var _loc2_:XML = null;
+		var _loc3_:int = 0;
+		if (setLibrary_[param1] != undefined) {
+			return setLibrary_[param1];
+		}
+		for each(_loc2_ in EmbeddedData.skinsEquipmentSetsXML.EquipmentSet) {
+			_loc3_ = int(_loc2_.@type);
+			setLibrary_[_loc3_] = _loc2_;
+		}
+		return setLibrary_[param1];
+	}
 
     public static function getPropsFromId(_arg_1:String):ObjectProperties {
         var _local_2:int = idToType_[_arg_1];

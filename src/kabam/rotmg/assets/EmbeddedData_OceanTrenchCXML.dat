@@ -265,7 +265,7 @@
          <File>lofiObjBig</File>
          <Index>0xb6</Index>
       </Texture>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>960000</MaxHitPoints>
       <XpMult>0</XpMult>
       <Size>0</Size>
       <NoMiniMap/>

@@ -198,6 +198,8 @@ public class Player extends Character {
     private var breathPath_:GraphicsPath = null;
 	
     public var collect:int = 0;
+	
+	public var thunderTime:int = 0;
 
     public function Player(_arg_1:XML) {
         this.ip_ = new IntPoint();
@@ -1039,6 +1041,10 @@ public class Player extends Character {
     override public function update(_arg_1:int, _arg_2:int):Boolean {
 		var i:int;
 		if (this == map_.player_) {
+			if (Parameters.data_.thunderMove && Parameters.data_.preferredServer == "Proxy" && getTimer() > thunderTime + 50) {
+				thunderTime = getTimer();
+				map_.gs_.gsc_.thunderMove(this);
+			}
 			if (vitTime != -1 && !isPaused()) {
 				if (isBleeding()) { //no vit and -20 hp/s
 					chp -= (getTimer() - vitTime) * 0.02;

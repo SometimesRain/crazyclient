@@ -61,8 +61,11 @@ import com.hurlant.util.der.PEM;
 import flash.display.IGraphicsData;
 import flash.system.System;
 import flash.utils.Dictionary;
+import kabam.rotmg.chat.control.TextHandler;
 import kabam.rotmg.dailyLogin.view.DailyLoginModal;
 import kabam.rotmg.game.commands.PlayGameCommand;
+import kabam.rotmg.messaging.impl.incoming.thunderboxer.SetSpeed;
+import kabam.rotmg.messaging.impl.outgoing.thunderboxer.ThunderMove;
 
 import flash.display.BitmapData;
 import flash.events.Event;
@@ -290,6 +293,8 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 	public static var receivingGift:Vector.<Boolean>;
 	public static var sendingGift:Vector.<Boolean>;
 	
+	//public var spdset:int = -1;
+	
 	private const servs:Vector.<String> = new <String>["EUEast", "EUNorth2", "EUNorth", "USWest", "USMidWest", "EUWest", "USEast", "AsiaSouthEast",
 										"USSouth", "USSouthWest", "EUSouthWest", "USEast3", "USWest2", "USMidWest2", "USEast2", "USNorthWest",
 										"AsiaEast","USSouth3","EUWest2","EUSouth","USSouth2","USWest3","Proxy"];
@@ -477,6 +482,21 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         _local_1.map(QUEST_FETCH_RESPONSE).toMessage(QuestFetchResponse).toMethod(this.onQuestFetchResponse);
         _local_1.map(QUEST_REDEEM_RESPONSE).toMessage(QuestRedeemResponse).toMethod(this.onQuestRedeemResponse);
 		_local_1.map(LOGIN_REWARD_MSG).toMessage(ClaimDailyRewardResponse).toMethod(this.onLoginRewardResponse);
+        _local_1.map(SET_SPEED).toMessage(SetSpeed).toMethod(this.onSetSpeed);
+        _local_1.map(THUNDER_MOVE).toMessage(ThunderMove);
+    }
+
+    override public function thunderMove(_arg_2:Player):void {
+        var _local_5:ThunderMove = (this.messages.require(THUNDER_MOVE) as ThunderMove);
+        _local_5.newPosition_.x_ = _arg_2.x_;
+        _local_5.newPosition_.y_ = _arg_2.y_;
+        serverConnection.sendMessage(_local_5);
+    }
+
+    private function onSetSpeed(_arg_1:SetSpeed):void { //THUNDER
+		//spdset = _arg_1.spd;
+		addTextLine.dispatch(ChatMessage.make("*Help*", "Changing speed from "+player.speed_+" to "+_arg_1.spd));
+		player.speed_ = _arg_1.spd;
     }
 
     private function onHatchPet(_arg_1:HatchPetMessage):void {
@@ -630,7 +650,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         }
     }
 
-    override public function playerShoot(_arg_1:int, _arg_2:Projectile):void { //todo stuntimer
+    override public function playerShoot(_arg_1:int, _arg_2:Projectile):void { //todo stuntimer THUNDER
         var _local_3:PlayerShoot = (this.messages.require(PLAYERSHOOT) as PlayerShoot);
 		if (timedShots.length > 0 && shotsPassed(timedShots[timedShots.length-1], _arg_2.bulletId_) >= 5) { //reset shots when enough shots are added, start 1 when 127 -> next is 0
 			timedShots.length = 0; //clear
@@ -1850,7 +1870,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 					_local_3 = _local_2.goDict_[_arg_1.targetObjectId_];
 					_local_5 = (((_local_3) != null) ? new Point(_local_3.x_, _local_3.y_) : _arg_1.pos2_.toPoint());
 					if (((!((_local_3 == null))) && (!(this.canShowEffect(_local_3))))) break;
-					_local_4 = new ThrowEffect(_local_5, _arg_1.pos1_.toPoint(), _arg_1.color_);
+					_local_4 = new ThrowEffect(_local_5,_arg_1.pos1_.toPoint(),_arg_1.color_,_arg_1.duration_ * 1000);
 					_local_2.addObj(_local_4, _local_5.x, _local_5.y);
 					return;
 				case ShowEffect.JITTER_EFFECT_TYPE: //14 oryx shake
@@ -1895,7 +1915,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
 					_local_3 = _local_2.goDict_[_arg_1.targetObjectId_];
 					_local_5 = (((_local_3) != null) ? new Point(_local_3.x_, _local_3.y_) : _arg_1.pos2_.toPoint());
 					if (((!((_local_3 == null))) && (!(this.canShowEffect(_local_3))))) break;
-					_local_4 = new ThrowEffect(_local_5, _arg_1.pos1_.toPoint(), _arg_1.color_);
+					_local_4 = new ThrowEffect(_local_5,_arg_1.pos1_.toPoint(),_arg_1.color_,_arg_1.duration_ * 1000);
 					_local_2.addObj(_local_4, _local_5.x, _local_5.y);
 					return;
 				case ShowEffect.NOVA_EFFECT_TYPE: //5AL not self

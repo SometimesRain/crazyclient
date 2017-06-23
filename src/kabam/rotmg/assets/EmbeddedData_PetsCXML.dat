@@ -3045,7 +3045,7 @@
          <Index>0x59e</Index>
       </Texture>
       <SlotType>10</SlotType>
-      <Description>Transform your pet into Sir Bagston of the ? ? ? ? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Description>Sprite Credits: MillSup\n\nTransform your pet into Sir Bagston of the ? ? ? ? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
       <Activate skinId="24835">PetSkin</Activate>
       <Consumable/>
       <Soulbound/>

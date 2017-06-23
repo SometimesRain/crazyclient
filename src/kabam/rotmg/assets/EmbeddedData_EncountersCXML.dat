@@ -32,7 +32,7 @@
       <MaxHitPoints>500000</MaxHitPoints>
       <Size>200</Size>
       <Defense>90</Defense>
-      <XpMult>0.3</XpMult>
+      <XpMult>5.1283</XpMult>
       <AnimatedTexture>
          <File>chars16x16dEncounters2</File>
          <Index>88</Index>
@@ -2413,7 +2413,7 @@
       <DeathSound>monster/flaming_skulls_death</DeathSound>
       <Size>130</Size>
       <ShadowSize>100</ShadowSize>
-      <MaxHitPoints>42000</MaxHitPoints>
+      <MaxHitPoints>66000</MaxHitPoints>
       <Defense>40</Defense>
       <Flying/>
       <Hero/>
@@ -2421,6 +2421,8 @@
       <Quest/>
       <God/>
       <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
       <KeepDamageRecord/>
       <Projectile id="0">
          <ObjectId>Cannonball</ObjectId>
