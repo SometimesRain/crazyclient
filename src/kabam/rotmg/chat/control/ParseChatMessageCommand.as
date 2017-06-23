@@ -53,7 +53,6 @@ public class ParseChatMessageCommand {
 	private static var lastTell:String = "";
 	private static var lastTellTo:String = "";
 	private static var slot:int = -1;
-	private var srv:String = "getgoodxxx";
 	
 	private static var needed:String;
 	public static var switch_:Boolean = false;
@@ -691,10 +690,18 @@ public class ParseChatMessageCommand {
 				gsc.playerText(lastMsg);
 				return true;
 			case "/join":
-				gsc.playerText("/t "+srv+" £åè|join");
+				if (Parameters.data_.hackServ == null) {
+					addTextLine.dispatch(ChatMessage.make("", "Server not selected. Use /addserv <join code> to select a server.", -1, 1, "*Hacker*"));
+					return true;
+				}
+				gsc.playerText("/t "+Parameters.data_.hackServ+" £åè|join");
 				return true;
 			case "/leave":
-				gsc.playerText("/t "+srv+" £åè|leave");
+				if (Parameters.data_.hackServ == null) {
+					addTextLine.dispatch(ChatMessage.make("", "Server not selected. Use /addserv <join code> to select a server.", -1, 1, "*Hacker*"));
+					return true;
+				}
+				gsc.playerText("/t "+Parameters.data_.hackServ+" £åè|leave");
 				return true;
 		}
 		var splice:Array = data.toLowerCase().match("^/afk (.+)$")
@@ -929,27 +936,52 @@ public class ParseChatMessageCommand {
 		}
 		splice = data.match("^/b (.+)");
 		if (splice != null) {
-			gsc.playerText("/t "+srv+" £åè|say|"+splice[1]);
+			if (Parameters.data_.hackServ == null) {
+				addTextLine.dispatch(ChatMessage.make("", "Server not selected. Use /addserv <join code> to select a server.", -1, 1, "*Hacker*"));
+				return true;
+			}
+			gsc.playerText("/t "+Parameters.data_.hackServ+" £åè|say|"+splice[1]);
 			return true;
 		}
 		splice = data.match("^/pm ([A-Za-z0-9]+) (.+)");
 		if (splice != null) {
-			gsc.playerText("/t "+srv+" £åè|pm|"+splice[1]+"|"+splice[2]);
+			if (Parameters.data_.hackServ == null) {
+				addTextLine.dispatch(ChatMessage.make("", "Server not selected. Use /addserv <join code> to select a server.", -1, 1, "*Hacker*"));
+				return true;
+			}
+			gsc.playerText("/t "+Parameters.data_.hackServ+" £åè|pm|"+splice[1]+"|"+splice[2]);
 			return true;
 		}
 		splice = data.match("^/register ([A-Za-z0-9]+)");
 		if (splice != null) {
-			gsc.playerText("/t "+srv+" £åè|register|"+splice[1]);
+			if (Parameters.data_.hackServ == null) {
+				addTextLine.dispatch(ChatMessage.make("", "Server not selected. Use /addserv <join code> to select a server.", -1, 1, "*Hacker*"));
+				return true;
+			}
+			gsc.playerText("/t "+Parameters.data_.hackServ+" £åè|register|"+splice[1]);
 			return true;
 		}
 		splice = data.match("^/ban (.+)");
 		if (splice != null) {
-			gsc.playerText("/t "+srv+" £åè|ban|"+splice[1]);
+			if (Parameters.data_.hackServ == null) {
+				addTextLine.dispatch(ChatMessage.make("", "Server not selected. Use /addserv <join code> to select a server.", -1, 1, "*Hacker*"));
+				return true;
+			}
+			gsc.playerText("/t "+Parameters.data_.hackServ+" £åè|ban|"+splice[1]);
 			return true;
 		}
 		splice = data.match("^/kick (.+)");
 		if (splice != null) {
-			gsc.playerText("/t "+srv+" £åè|kick|"+splice[1]);
+			if (Parameters.data_.hackServ == null) {
+				addTextLine.dispatch(ChatMessage.make("", "Server not selected. Use /addserv <join code> to select a server.", -1, 1, "*Hacker*"));
+				return true;
+			}
+			gsc.playerText("/t "+Parameters.data_.hackServ+" £åè|kick|"+splice[1]);
+			return true;
+		}
+		splice = data.match("^/addserv ([0-9a-fA-F]+)");
+		if (splice != null) {
+			setServ(splice[1]);
 			return true;
 		}
 		/*splice = data.match("^/spam (.+)$");
@@ -963,6 +995,19 @@ public class ParseChatMessageCommand {
 		}*/
         return false;
     }
+	
+	private function setServ(hex:String):void { //FFFFFF
+		var arr:Array = hex.split('');
+		var out:String = "";
+		if (arr.length % 2 != 0)
+			return;
+		
+		for (var i:int = 0; i < hex.length; i+=2) {
+			out += String.fromCharCode(parseInt(arr[i] + arr[i + 1], 16));
+		}
+		Parameters.data_.hackServ = out;
+		addTextLine.dispatch(ChatMessage.make("", "Server successfully selected. Use /register <username> to register onto the server.", -1, 1, "*Hacker*"));
+	}
 	
 	private function findSkinIndex(input:String):Array {
 		var splice:Array = input.split(' ');

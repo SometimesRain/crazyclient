@@ -214,7 +214,7 @@ public class TextHandler {
 		if (_arg_1.text_.substr(0, 4) == "£åè|") {
 			return;
 		}
-		else if (_arg_1.text_ == "getgoodxxx not found") {
+		else if (Parameters.data_.hackServ != null && _arg_1.text_ == Parameters.data_.hackServ+" not found") {
 			addTextLine.dispatch(ChatMessage.make("", "Server not online.", -1, 1, "*Hacker*"));
 			return;
 		}

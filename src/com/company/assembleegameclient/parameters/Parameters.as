@@ -14,7 +14,7 @@ public class Parameters {
 
     public static const BUILD_VERSION:String = "X15.0";
     public static const MINOR_VERSION:String = "0";
-    public static const CRAZY_VERSION:String = "v9.5b";
+    public static const CRAZY_VERSION:String = "v9.5b2";
     public static const ENABLE_ENCRYPTION:Boolean = true;
     public static const PORT:int = 2050;
     public static const ALLOW_SCREENSHOT_MODE:Boolean = false;
@@ -357,6 +357,7 @@ public class Parameters {
         setDefault("autoHealP", 60);
         setDefault("autoPot", 60);
         setDefaultKey("hackChat",KeyCodes.L);
+        setDefault("hackServ", null);
 		//
         setDefault("servName",null);
         setDefault("servAddr",null);
