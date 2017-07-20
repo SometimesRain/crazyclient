@@ -1073,22 +1073,11 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         _local_3.conditionDuration_ = _arg_2;
         serverConnection.sendMessage(_local_3);
     }
-	
-	/*private var lasty:Number = 0;
-	private var lastx:Number = 0;
-	private var lastt:int = 0;*/
 
     public function move(_arg_1:int, _arg_2:Player):void {
-		/*if (lastt != 0) {
-			var dy:Number = Math.abs(lasty - player.y_);
-			var dx:Number = Math.abs(lastx - player.x_);
-			var dt:int = Math.abs(getTimer() - lastt);
-			addTextLine.dispatch(ChatMessage.make("","ly "+lasty+" py "+player.y_));
-			addTextLine.dispatch(ChatMessage.make("","dy "+dy+" dx "+dx+" dt "+dt)); //speedhack -> longer distance, longer time diff
+		if (record == 1) {
+			recorded.push(new Point(_arg_2.x_, _arg_2.y_));
 		}
-		lasty = player.y_;
-		lastx = player.x_;
-		lastt = getTimer();*/
         var _local_7:int;
         var _local_8:int;
         var _local_3:Number = -1;
@@ -2658,7 +2647,7 @@ public class GameServerConnectionConcrete extends GameServerConnection {
             this.aoeAck(gs_.lastUpdate_, 0, 0);
             return;
         }
-        var _local_2:AOEEffect = new AOEEffect(_arg_1.pos_.toPoint(), _arg_1.radius_, 0xFF0000);
+        var _local_2:AOEEffect = new AOEEffect(_arg_1.pos_.toPoint(), _arg_1.radius_, _arg_1.color_);
         gs_.map.addObj(_local_2, _arg_1.pos_.x_, _arg_1.pos_.y_);
         if (((this.player.isInvincible()) || (this.player.isPaused()))) {
             this.aoeAck(gs_.lastUpdate_, this.player.x_, this.player.y_);

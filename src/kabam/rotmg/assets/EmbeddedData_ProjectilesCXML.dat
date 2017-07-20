@@ -3991,4 +3991,208 @@
       </RandomTexture>
       <Rotation>185</Rotation>
    </Object>
+   <Object type="0x10ec" id="EH Arrow Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x4e</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x10f4" id="EH Red Arrow Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x4f</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x10f5" id="EH Blue Arrow Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x50</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x1ad2" id="EH Dagger Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x20</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x1ac8" id="EH Hive Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x1d</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x1ac9" id="EH Hive Range Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x1c</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x10a9" id="EH Hive Spiral Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x1b</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x10a0" id="EH Blue Stinger Small">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x04</Index>
+      </Texture>
+   </Object>
+   <Object type="0x10a1" id="EH Blue Stinger Large">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x05</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1aa3" id="EH Blue Glaive">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x19</Index>
+      </Texture>
+      <Rotation>100</Rotation>
+   </Object>
+   <Object type="0x10a4" id="EH Red Stinger Small">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x06</Index>
+      </Texture>
+   </Object>
+   <Object type="0x10a5" id="EH Red Stinger Large">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x07</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1aa5" id="EH Red Glaive">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x1a</Index>
+      </Texture>
+      <Rotation>100</Rotation>
+   </Object>
+   <Object type="0x10a6" id="EH Yellow Stinger Small">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x08</Index>
+      </Texture>
+   </Object>
+   <Object type="0x10a7" id="EH Yellow Stinger Large">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x09</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1aa4" id="EH Yellow Glaive">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x10</Index>
+      </Texture>
+      <Rotation>100</Rotation>
+   </Object>
+   <Object type="0x1ab4" id="EH Queen Yellow Stinger Small">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x0e</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1ab5" id="EH Queen Yellow Stinger Large">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x0f</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1ab6" id="EH Queen Red Stinger Small">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x11</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1ab7" id="EH Queen Red Stinger Large">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x12</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1ab8" id="EH Queen Blue Stinger Small">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x13</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1ab9" id="EH Queen Blue Stinger Large">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x14</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1aba" id="EH Red Ball">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x15</Index>
+      </Texture>
+      <Rotation>50</Rotation>
+   </Object>
+   <Object type="0x1abb" id="EH Blue Ball">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x16</Index>
+      </Texture>
+      <Rotation>50</Rotation>
+   </Object>
+   <Object type="0x1abc" id="EH Yellow Ball">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x17</Index>
+      </Texture>
+      <Rotation>50</Rotation>
+   </Object>
+   <Object type="0x08f5" id="BeeArrow">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x63</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x08f6" id="BeeityArrow">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x64</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
 </Objects>

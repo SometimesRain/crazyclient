@@ -27,6 +27,7 @@ public class AGameSprite extends Sprite {
     public var hudView:HUDView;
     public var camera_:Camera;
     public var gsc_:GameServerConnection;
+	
 	public var isSafeMap:Boolean;
 
     public function AGameSprite() {

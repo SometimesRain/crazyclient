@@ -978,6 +978,17 @@
       <UnlockSpecial>Set Skin</UnlockSpecial>
       <NoSkinSelect/>
    </Object>
+   <Object type="0x08fb" id="Swarming Huntress Set Skin">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins16</File>
+         <Index>12</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0322</PlayerClassType>
+      <UnlockSpecial>Set Skin</UnlockSpecial>
+      <NoSkinSelect/>
+   </Object>
    <Object type="0x0403" id="Olive Gladiator">
       <Skin/>
       <Class>Skin</Class>
@@ -2086,6 +2097,16 @@
          <Index>181</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0300</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4bcf" id="Mini Queen Bee Huntress">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>182</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0322</PlayerClassType>
       <NoSkinSelect/>
    </Object>
 </Objects>

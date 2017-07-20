@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<GroundTypes>
+   <Ground type="0x1099" id="EH Venom">
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Speed>0.75</Speed>
+      <Animate dx=".2" dy=".2">Flow</Animate>
+      <Sinking/>
+      <BlendPriority>3</BlendPriority>
+      <MinDamage>50</MinDamage>
+      <MaxDamage>70</MaxDamage>
+      <DisplayId>Killer Honey</DisplayId>
+   </Ground>
+   <Ground type="0x1a9d" id="EH UnderPartialFloor Venom">
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Speed>0.75</Speed>
+      <Animate dx=".2" dy=".2">Flow</Animate>
+      <BlendPriority>3</BlendPriority>
+      <DisplayId>Killer Honey</DisplayId>
+   </Ground>
+   <Ground type="0x10fa" id="EH NoSpeedReduct Venom">
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Speed>1</Speed>
+      <Animate dx=".2" dy=".2">Flow</Animate>
+      <BlendPriority>3</BlendPriority>
+      <DisplayId>Killer Honey</DisplayId>
+   </Ground>
+   <Ground type="0x1aa8" id="EH BlendPriorityChange Venom">
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Speed>0.75</Speed>
+      <Animate dx=".2" dy=".2">Flow</Animate>
+      <BlendPriority>9</BlendPriority>
+      <Sink/>
+      <MinDamage>50</MinDamage>
+      <MaxDamage>70</MaxDamage>
+      <DisplayId>Killer Honey</DisplayId>
+   </Ground>
+   <Ground type="0x10ce" id="EH Unwalkable Venom">
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x47</Index>
+      </Texture>
+      <BlendPriority>4</BlendPriority>
+      <NoWalk/>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>120</MaxDamage>
+      <DisplayId>Killer Honey</DisplayId>
+   </Ground>
+   <Ground type="0x1aa1" id="EH Secret Floor">
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x03</Index>
+      </Texture>
+      <BlendPriority>1</BlendPriority>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0x10d8" id="EH S Floor">
+      <SameTypeEdgeMode/>
+      <RandomTexture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x117</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x118</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x119</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x11a</Index>
+         </Texture>
+      </RandomTexture>
+      <Edge>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x60</Index>
+         </Texture>
+      </Edge>
+      <InnerCorner>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x61</Index>
+         </Texture>
+      </InnerCorner>
+      <Corner>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x61</Index>
+         </Texture>
+      </Corner>
+      <BlendPriority>5</BlendPriority>
+   </Ground>
+   <Ground type="0x08e3" id="EH S Floor 2">
+      <RandomTexture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x117</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x118</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x119</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x11a</Index>
+         </Texture>
+      </RandomTexture>
+      <BlendPriority>5</BlendPriority>
+   </Ground>
+   <Ground type="0x08fd" id="EH S Floor 2 Bottom">
+      <RandomTexture>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x70</Index>
+         </Texture>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x70</Index>
+         </Texture>
+      </RandomTexture>
+      <BlendPriority>5</BlendPriority>
+   </Ground>
+   <Ground type="0x08fe" id="EH S Floor 2 Left">
+      <RandomTexture>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x71</Index>
+         </Texture>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x71</Index>
+         </Texture>
+      </RandomTexture>
+      <BlendPriority>5</BlendPriority>
+   </Ground>
+   <Ground type="0x109a" id="EH Floor">
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x01</Index>
+      </Texture>
+      <BlendPriority>7</BlendPriority>
+   </Ground>
+   <Ground type="0x10ac" id="EH Left Dark Floor">
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x22</Index>
+      </Texture>
+      <BlendPriority>7</BlendPriority>
+   </Ground>
+   <Ground type="0x10ad" id="EH Right Dark Floor">
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x23</Index>
+      </Texture>
+      <BlendPriority>7</BlendPriority>
+   </Ground>
+   <Ground type="0x1ab0" id="EH Fake Floor">
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x01</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+</GroundTypes>

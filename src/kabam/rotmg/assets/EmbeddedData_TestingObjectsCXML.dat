@@ -14,6 +14,7 @@
       <Sound>use_key</Sound>
       <Consumable/>
       <Soulbound/>
+      <BagType>5</BagType>
       <Activate id="Prod Enemy Spawner">Create</Activate>
    </Object>
    <Object type="0xbb3" id="Prod Enemy Spawner">
@@ -1304,6 +1305,20 @@
       <AnimatedTexture>
          <File>playerskins16</File>
          <Index>0x0a</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x512" id="Testing Gift ST Bee">
+      <Group>Testing Gifts ST</Group>
+      <Class>Character</Class>
+      <StasisImmune/>
+      <Enemy/>
+      <NoMiniMap/>
+      <MaxHitPoints>100</MaxHitPoints>
+      <XpMult>0.0</XpMult>
+      <Size>40</Size>
+      <AnimatedTexture>
+         <File>playerskins16</File>
+         <Index>12</Index>
       </AnimatedTexture>
    </Object>
 </Objects>

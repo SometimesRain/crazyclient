@@ -1302,6 +1302,7 @@
       </RandomTexture>
    </Ground>
    <Ground type="0xf4" id="Lava Blend">
+      <DisplayId>Lava</DisplayId>
       <Texture>
          <File>lofiEnvironment</File>
          <Index>0x70</Index>
@@ -3291,6 +3292,7 @@
       <BlendPriority>1</BlendPriority>
    </Ground>
    <Ground type="0x015a" id="Hot Lava">
+      <DisplayId>Magma</DisplayId>
       <Texture>
          <File>lofiObj3</File>
          <Index>0x483</Index>
@@ -3599,6 +3601,7 @@
       <NoWalk/>
    </Ground>
    <Ground type="0x2595" id="lod Red Tile">
+      <DisplayId>Magma</DisplayId>
       <RandomTexture>
          <Texture>
             <File>lofiObj3</File>
@@ -3625,6 +3628,7 @@
       <MaxDamage>80</MaxDamage>
    </Ground>
    <Ground type="0x2596" id="lod Purple Tile">
+      <DisplayId>Magma</DisplayId>
       <RandomTexture>
          <Texture>
             <File>lofiObj3</File>
@@ -3651,6 +3655,7 @@
       <MaxDamage>80</MaxDamage>
    </Ground>
    <Ground type="0x2597" id="lod Blue Tile">
+      <DisplayId>Magma</DisplayId>
       <RandomTexture>
          <Texture>
             <File>lofiObj3</File>
@@ -3677,6 +3682,7 @@
       <MaxDamage>80</MaxDamage>
    </Ground>
    <Ground type="0x2598" id="lod Green Tile">
+      <DisplayId>Magma</DisplayId>
       <RandomTexture>
          <Texture>
             <File>lofiObj3</File>
@@ -3703,6 +3709,7 @@
       <MaxDamage>80</MaxDamage>
    </Ground>
    <Ground type="0x2599" id="lod Cream Tile">
+      <DisplayId>Magma</DisplayId>
       <Texture>
          <File>lofiObj3</File>
          <Index>0x371</Index>

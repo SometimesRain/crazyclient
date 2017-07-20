@@ -11,6 +11,7 @@ public class Aoe extends IncomingMessage {
     public var effect_:int;
     public var duration_:Number;
     public var origType_:int;
+    public var color_:int;
 
     public function Aoe(_arg_1:uint, _arg_2:Function) {
         this.pos_ = new WorldPosData();
@@ -24,10 +25,11 @@ public class Aoe extends IncomingMessage {
         this.effect_ = _arg_1.readUnsignedByte();
         this.duration_ = _arg_1.readFloat();
         this.origType_ = _arg_1.readUnsignedShort();
+		this.color_ = _arg_1.readInt();
     }
 
     override public function toString():String {
-        return (formatToString("AOE", "pos_", "radius_", "damage_", "effect_", "duration_", "origType_"));
+		return formatToString("AOE","pos_","radius_","damage_","effect_","duration_","origType_","color_");
     }
 
 

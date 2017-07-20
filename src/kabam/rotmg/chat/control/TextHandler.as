@@ -104,7 +104,7 @@ public class TextHandler {
 		}
         if (_arg_1.recipient_) {
             if (_arg_1.recipient_ != this.model.player.name_ && !isSpecialRecipientChat(_arg_1.recipient_)) { //outgoing message
-				if (_arg_1.recipient_ != "MrEyeball" && _arg_1.recipient_.toLowerCase() != Parameters.data_.hackServ) {
+				if (_arg_1.recipient_ != "MrEyeball") {
 					tellModel.push(_arg_1.recipient_);
 					tellModel.resetRecipients();
 				}
@@ -174,7 +174,7 @@ public class TextHandler {
 						sendBacks.push(_arg_1.name_);
 					}
 				}
-				if (_arg_1.name_ != "MrEyeball" && _arg_1.name_.toLowerCase() != Parameters.data_.hackServ) {
+				if (_arg_1.name_ != "MrEyeball") {
 					tellModel.push(_arg_1.name_);
 					tellModel.resetRecipients();
 				}
@@ -210,14 +210,6 @@ public class TextHandler {
 				}
             }
         }
-		//HIDE HACKERCHAT MESSAGE
-		if (_arg_1.text_.substr(0, 4) == "£åè|") {
-			return;
-		}
-		else if (Parameters.data_.hackServ != null && _arg_1.text_ == Parameters.data_.hackServ+" not found") {
-			addTextLine.dispatch(ChatMessage.make("", "Server not online.", -1, 1, "*Hacker*"));
-			return;
-		}
         _local_3 = _arg_1.text_;
 		if (_local_3.length > 19 && _local_3.substr(7,12) == "NexusPortal.") {
 			_local_3 = _local_3.substr(0, 7) + _local_3.substr(19);

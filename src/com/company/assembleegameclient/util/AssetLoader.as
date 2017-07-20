@@ -99,6 +99,8 @@ public class AssetLoader {
         AssetLibrary.addImageSet("HanamiParts",new EmbeddedAssets.HanamiParts8x8Embed_().bitmapData,8,8);
 		AssetLibrary.addImageSet("summerNexusObjects8x8",new EmbeddedAssets.summerNexusObjects8x8Embed_().bitmapData,8,8);
 		AssetLibrary.addImageSet("summerNexusObjects16x16",new EmbeddedAssets.summerNexusObjects16x16Embed_().bitmapData,16,16);
+		AssetLibrary.addImageSet("epicHiveObjects8x8",new EmbeddedAssets.epicHiveObjects8x8Embed_().bitmapData,8,8);
+		AssetLibrary.addImageSet("epicHiveObjects16x16",new EmbeddedAssets.epicHiveObjects16x16Embed_().bitmapData,16,16);
     }
 
     private function addAnimatedCharacters():void {
@@ -140,6 +142,8 @@ public class AssetLoader {
         AnimatedChars.add("Hanami8x8chars",new EmbeddedAssets.Hanami8x8charsEmbed_().bitmapData,null,8,8,64,8,AnimatedChar.RIGHT);
 		AnimatedChars.add("summerNexusChars8x8",new EmbeddedAssets.summerNexusChars8x8Embed_().bitmapData,null,8,8,56,8,AnimatedChar.RIGHT);
 		AnimatedChars.add("summerNexusChars16x16",new EmbeddedAssets.summerNexusChars16x16Embed_().bitmapData,null,16,16,112,16,AnimatedChar.RIGHT);
+		AnimatedChars.add("epicHiveChars8x8",new EmbeddedAssets.epicHiveChars8x8Embed_().bitmapData,null,8,8,56,8,AnimatedChar.RIGHT);
+		AnimatedChars.add("epicHiveChars16x16",new EmbeddedAssets.epicHiveChars16x16Embed_().bitmapData,null,16,16,112,16,AnimatedChar.RIGHT);
     }
 
     private function addSoundEffects():void {

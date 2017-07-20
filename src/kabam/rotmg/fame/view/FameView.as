@@ -20,6 +20,7 @@ import flash.geom.Rectangle;
 import flash.text.TextFieldAutoSize;
 
 import kabam.rotmg.text.model.TextKey;
+import com.company.assembleegameclient.map.GroundLibrary;
 import kabam.rotmg.text.view.TextFieldDisplayConcrete;
 import kabam.rotmg.text.view.stringBuilder.LineBuilder;
 import kabam.rotmg.ui.view.components.ScreenBase;
@@ -118,6 +119,30 @@ public class FameView extends Sprite {
 		if(_loc4_ == null)
 		{
 			_loc4_ = _loc3_;
+            switch(_loc4_)
+            {
+               case "lava":
+                  _loc4_ = "Lava";
+                  break;
+               case "lava blend":
+                  _loc4_ = "Lava Blend";
+                  break;
+               case "liquid evil":
+                  _loc4_ = "Liquid Evil";
+                  break;
+               case "evil water":
+                  _loc4_ = "Evil Water";
+                  break;
+               case "puke water":
+                  _loc4_ = "Puke Water";
+                  break;
+               case "hot lava":
+                  _loc4_ = "Hot Lava";
+                  break;
+               case "pure evil":
+                  _loc4_ = "Pure Evil";
+                  break;
+            }
 		}
 		else
 		{
@@ -126,9 +151,13 @@ public class FameView extends Sprite {
 			_loc4_ = _loc4_.replace(/APOS/g,"\'");
 			_loc4_ = _loc4_.replace(/BANG/g,"!");
 		}
-		if(ObjectLibrary.getPropsFromId(_loc4_) != null)
+		if (ObjectLibrary.getPropsFromId(_loc4_) != null)
 		{
 			_loc4_ = ObjectLibrary.getPropsFromId(_loc4_).displayId_;
+		}
+		else if (GroundLibrary.getPropsFromId(_loc4_) != null)
+		{
+			_loc4_ = GroundLibrary.getPropsFromId(_loc4_).displayId_;
 		}
 		return _loc4_;
 	}

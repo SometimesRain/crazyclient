@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <Objects>
+   <Object type="0xc0c" id="0Def">
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars8x8rEmbed</File>
+         <Index>17</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <Defense>0</Defense>
+      <MaxHitPoints>100000</MaxHitPoints>
+   </Object>
+   <Object type="0xc0d" id="20Def">
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars8x8rEmbed</File>
+         <Index>17</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <Defense>20</Defense>
+      <MaxHitPoints>100000</MaxHitPoints>
+   </Object>
+   <Object type="0xc0e" id="60Def">
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars8x8rEmbed</File>
+         <Index>17</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <Defense>60</Defense>
+      <MaxHitPoints>100000</MaxHitPoints>
+   </Object>
    <Object type="0x222" id="Hearticles">
       <Class>GameObject</Class>
       <Effect color="0xCC0000" color2="0xFF0066" minRadius="0.2" maxRadius="3" rise="1.8" life="4.5" amount="60">Heart</Effect>

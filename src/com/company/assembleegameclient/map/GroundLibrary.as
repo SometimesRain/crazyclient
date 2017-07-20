@@ -36,6 +36,10 @@ public class GroundLibrary {
         }
         return (_local_2.id_);
     }
+      
+	public static function getPropsFromId(param1:String):GroundProperties {
+		return propsLibrary_[idToType_[param1]];
+	}
 
     public static function getBitmapData(_arg_1:int, _arg_2:int = 0):BitmapData {
         return (typeToTextureData_[_arg_1].getTexture(_arg_2));

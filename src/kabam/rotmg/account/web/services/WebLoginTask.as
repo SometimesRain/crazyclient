@@ -23,20 +23,15 @@ public class WebLoginTask extends BaseTask implements LoginTask {
         });
     }
 
-    private function onComplete(_arg_1:Boolean, _arg_2:*):void {
+    private function onComplete(_arg_1:Boolean, _arg_2:String):void {
         if (_arg_1) {
             this.updateUser(_arg_2);
         }
         completeTask(_arg_1, _arg_2);
     }
 
-    private function updateUser(_arg_1:String):void {
-        var _loc2_:XML = new XML(_arg_1);
-        if(_loc2_.hasOwnProperty("token"))
-        {
-           this.data.token = _loc2_.token;
-           this.account.updateUser(this.data.username,this.data.password,_loc2_.token);
-        }
+    private function updateUser(_arg_1:String):void { //necessary at all?
+		this.account.updateUser(this.data.username,this.data.password,"");
     }
 
 }

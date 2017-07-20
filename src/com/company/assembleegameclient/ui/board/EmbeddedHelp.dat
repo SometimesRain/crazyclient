@@ -22,6 +22,34 @@
       <Explanation>Prints your position to chat</Explanation>
    </Article>
    <Article>
+      <Command>/connect &lt;ip&gt;</Command>
+      <Explanation>Connects you to the server</Explanation>
+   </Article>
+   <Article>
+      <Command>/myid</Command>
+      <Explanation>Displays your object ID</Explanation>
+   </Article>
+   <Article>
+      <Command>/record</Command>
+      <Explanation>Starts a movement recording</Explanation>
+   </Article>
+   <Article>
+      <Command>/save</Command>
+      <Explanation>Stops recording and saves</Explanation>
+   </Article>
+   <Article>
+      <Command>/play</Command>
+      <Explanation>Plays the recording</Explanation>
+   </Article>
+   <Article>
+      <Command>/stop</Command>
+      <Explanation>Stops playing the recording, freeing your character</Explanation>
+   </Article>
+   <Article>
+      <Command>/getid &lt;player name&gt;</Command>
+      <Explanation>Gets the ID of the selected player</Explanation>
+   </Article>
+   <Article>
       <Command>/setspd &lt;value&gt;</Command>
       <Explanation>Sets your speed to the given value&#xA;Setting your speed higher than your real speed stat gets you disconnected&#xA;-54 is the lowest value</Explanation>
    </Article>

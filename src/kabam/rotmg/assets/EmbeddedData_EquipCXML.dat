@@ -17593,4 +17593,351 @@
       <Soulbound/>
       <feedPower>5000</feedPower>
    </Object>
+   <Object type="0x109c" id="The Epic Hive Key">
+      <Class>Equipment</Class>
+      <Item/>
+      <DisplayId>Nest Key</DisplayId>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x02</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A key which opens an entrance to the Nest. Home of the Killer Bee Queen and the pinnacle of insect evolution. \n\nKeys can only be used once you have 10 or more stars! \n\nDungeon credits:\n Lead: Mrunibro \n Art: Beige, Poshun, Dappertron,\n BLOODQWEN \n Special thanks: Krathan, Kiddforce, \n Atrapper</Description>
+      <Sound>use_key</Sound>
+      <Consumable/>
+      <Soulbound/>
+      <Activate id="The Epic Hive Portal">Create</Activate>
+      <feedPower>200</feedPower>
+      <BagType>5</BagType>
+      <Track/>
+   </Object>
+   <Object type="0x109d" id="EH Royal Jelly">
+      <DisplayId>Royal Jelly</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x0c</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>This viscous concoction was robbed from the Killer Bees, and its venomous properties have been cleansed. Its remaining strength seems to come from an unknown ingredient.</Description>
+      <Sound>use_key</Sound>
+      <Consumable/>
+      <Activate stat="0" amount="75" range="5" duration="10">StatBoostAura</Activate>
+      <Activate effect="Healing" duration="10" range="5">ConditionEffectAura</Activate>
+   </Object>
+   <Object type="0x109f" id="EH Queen's Stinger Dagger">
+      <DisplayId>Queen's Stinger Dagger</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x21</Index>
+      </Texture>
+      <SlotType>2</SlotType>
+      <RateOfFire>1</RateOfFire>
+      <Description>The blade of this dagger was once the enormous Killer Bee Queen's stinger. It remains exceptionally sharp, and could easily cut through even the heaviest of armor in a single strike.</Description>
+      <OldSound>bladeSwing</OldSound>
+      <Projectile>
+         <ObjectId>EH Dagger Shot</ObjectId>
+         <Speed>140</Speed>
+         <MinDamage>65</MinDamage>
+         <MaxDamage>155</MaxDamage>
+         <LifetimeMS>357.142857</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <BagType>6</BagType>
+      <FameBonus>6</FameBonus>
+      <feedPower>1000</feedPower>
+      <Soulbound/>
+   </Object>
+   <Object type="0x08b1" id="EH Hivemaster Helm">
+      <DisplayId>Hivemaster Helm</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x62</Index>
+      </Texture>
+      <SlotType>16</SlotType>
+      <Description>A nefarious helm combining pheromones and Killer Honey to captivate Killer Bees into servitude.</Description>
+      <Sound>spell/fire_spray</Sound>
+      <Usable/>
+      <FameBonus>6</FameBonus>
+      <BagType>6</BagType>
+      <MpCost>80</MpCost>
+      <ActivateOnEquip stat="21" amount="6">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip stat="22" amount="6">IncrementStat</ActivateOnEquip>
+      <Activate effect="Berserk" duration="6" range="4">ConditionEffectAura</Activate>
+      <ExtraTooltipData>
+         <EffectInfo name="" description="Summon bees that aid you in combat"/>
+         <EffectInfo name="Chance to Curse" description="50%"/>
+         <EffectInfo name="Curse" description="4 seconds up to 3 targets"/>
+      </ExtraTooltipData>
+      <Activate objectId="EH Ability Bee 1">Pet</Activate>
+      <Activate objectId="EH Ability Bee 2">Pet</Activate>
+      <Activate objectId="EH Ability Bee 3">Pet</Activate>
+      <Cooldown>7.5</Cooldown>
+      <Soulbound/>
+      <feedPower>1000</feedPower>
+   </Object>
+   <Object type="0x10ed" id="EH Yellow Quiver">
+      <DisplayId>Beehemoth Quiver</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x4b</Index>
+      </Texture>
+      <SlotType>15</SlotType>
+      <Description>A quiver crafted from the remains of a yellow Beehemoth, filled with razor-sharp arrows fashioned from Killer Bee stingers.</Description>
+      <ActivateOnEquip stat="20" amount="3">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip stat="28" amount="3">IncrementStat</ActivateOnEquip>
+      <Usable/>
+      <Projectile>
+         <ObjectId>EH Arrow Shot</ObjectId>
+         <Speed>160</Speed>
+         <MinDamage>180</MinDamage>
+         <MaxDamage>260</MaxDamage>
+         <LifetimeMS>600</LifetimeMS>
+         <Size>140</Size>
+         <ConditionEffect duration="5">Slowed</ConditionEffect>
+         <MultiHit/>
+         <PassesCover/>
+         <ParticleTrail>0x992803</ParticleTrail>
+      </Projectile>
+      <MpCost>90</MpCost>
+      <ArcGap>8</ArcGap>
+      <Activate>Shoot</Activate>
+      <NumProjectiles>3</NumProjectiles>
+      <Soulbound/>
+      <Sound>spell/fire_spray</Sound>
+      <BagType>6</BagType>
+      <FameBonus>5</FameBonus>
+      <feedPower>700</feedPower>
+   </Object>
+   <Object type="0x10f3" id="EH Red Quiver">
+      <DisplayId>Beehemoth Quiver</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x4c</Index>
+      </Texture>
+      <SlotType>15</SlotType>
+      <Description>A quiver crafted from the remains of a red Beehemoth, filled with razor-sharp arrows fashioned from Killer Bee stingers.</Description>
+      <ActivateOnEquip stat="20" amount="3">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip stat="28" amount="3">IncrementStat</ActivateOnEquip>
+      <Usable/>
+      <Projectile>
+         <ObjectId>EH Red Arrow Shot</ObjectId>
+         <Speed>160</Speed>
+         <MinDamage>180</MinDamage>
+         <MaxDamage>260</MaxDamage>
+         <LifetimeMS>600</LifetimeMS>
+         <Size>140</Size>
+         <ConditionEffect duration="5">Slowed</ConditionEffect>
+         <MultiHit/>
+         <PassesCover/>
+         <ParticleTrail>0x910a16</ParticleTrail>
+      </Projectile>
+      <Soulbound/>
+      <MpCost>90</MpCost>
+      <ArcGap>8</ArcGap>
+      <Activate>Shoot</Activate>
+      <NumProjectiles>3</NumProjectiles>
+      <Sound>spell/fire_spray</Sound>
+      <BagType>6</BagType>
+      <FameBonus>5</FameBonus>
+      <feedPower>700</feedPower>
+   </Object>
+   <Object type="0x10f2" id="EH Blue Quiver">
+      <DisplayId>Beehemoth Quiver</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x4d</Index>
+      </Texture>
+      <SlotType>15</SlotType>
+      <Description>A quiver crafted from the remains of a blue Beehemoth, filled with razor-sharp arrows fashioned from Killer Bee stingers.</Description>
+      <ActivateOnEquip stat="20" amount="3">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip stat="28" amount="3">IncrementStat</ActivateOnEquip>
+      <Usable/>
+      <Projectile>
+         <ObjectId>EH Blue Arrow Shot</ObjectId>
+         <Speed>160</Speed>
+         <MinDamage>180</MinDamage>
+         <MaxDamage>260</MaxDamage>
+         <LifetimeMS>600</LifetimeMS>
+         <Size>140</Size>
+         <ConditionEffect duration="5">Slowed</ConditionEffect>
+         <MultiHit/>
+         <PassesCover/>
+         <ParticleTrail>0x001133</ParticleTrail>
+      </Projectile>
+      <Soulbound/>
+      <MpCost>90</MpCost>
+      <ArcGap>8</ArcGap>
+      <Activate>Shoot</Activate>
+      <NumProjectiles>3</NumProjectiles>
+      <Sound>spell/fire_spray</Sound>
+      <BagType>6</BagType>
+      <FameBonus>5</FameBonus>
+      <feedPower>700</feedPower>
+   </Object>
+   <Object type="0x10d4" id="EH Yellow Bee Armor">
+      <Class>Equipment</Class>
+      <Item/>
+      <DisplayId>Beehemoth Armor</DisplayId>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x48</Index>
+      </Texture>
+      <SlotType>6</SlotType>
+      <Description>Chitin armor fashioned from the exoskeleton of a yellow Beehemoth. Ultra-light and extremely flexible, yet surprisingly tough.</Description>
+      <ActivateOnEquip stat="21" amount="17">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip stat="22" amount="5">IncrementStat</ActivateOnEquip>
+      <BagType>4</BagType>
+      <FameBonus>5</FameBonus>
+      <feedPower>750</feedPower>
+      <Soulbound/>
+   </Object>
+   <Object type="0x10d5" id="EH Red Bee Armor">
+      <Class>Equipment</Class>
+      <Item/>
+      <DisplayId>Beehemoth Armor</DisplayId>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x4a</Index>
+      </Texture>
+      <SlotType>6</SlotType>
+      <Description>Chitin armor fashioned from the exoskeleton of a red Beehemoth. Ultra-light and extremely flexible, yet surprisingly tough.</Description>
+      <ActivateOnEquip stat="21" amount="17">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip stat="22" amount="5">IncrementStat</ActivateOnEquip>
+      <BagType>4</BagType>
+      <FameBonus>5</FameBonus>
+      <feedPower>750</feedPower>
+      <Soulbound/>
+   </Object>
+   <Object type="0x10d6" id="EH Blue Bee Armor">
+      <Class>Equipment</Class>
+      <Item/>
+      <DisplayId>Beehemoth Armor</DisplayId>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x49</Index>
+      </Texture>
+      <SlotType>6</SlotType>
+      <Description>Chitin armor fashioned from the exoskeleton of a blue Beehemoth. Ultra-light and extremely flexible, yet surprisingly tough.</Description>
+      <ActivateOnEquip stat="21" amount="17">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip stat="22" amount="5">IncrementStat</ActivateOnEquip>
+      <BagType>4</BagType>
+      <FameBonus>5</FameBonus>
+      <feedPower>750</feedPower>
+      <Soulbound/>
+   </Object>
+   <Object type="0x08f7" id="EH Nectar Crossfire" setType="0x000f" setName="Swarming Huntress Set">
+      <DisplayId>Nectar Crossfire</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x65</Index>
+      </Texture>
+      <SlotType>3</SlotType>
+      <Description>A flexible ironwax bow created by the Felwasp Guards to defend their larvae from assailants.</Description>
+      <RateOfFire>1</RateOfFire>
+      <Sound>weapon/golden_bow</Sound>
+      <Projectile>
+         <ObjectId>BeeArrow</ObjectId>
+         <Speed>150</Speed>
+         <MinDamage>35</MinDamage>
+         <MaxDamage>70</MaxDamage>
+         <LifetimeMS>468</LifetimeMS>
+         <Frequency>0.5</Frequency>
+         <Amplitude>0.5</Amplitude>
+         <MultiHit/>
+      </Projectile>
+      <NumProjectiles>4</NumProjectiles>
+      <ArcGap>7</ArcGap>
+      <FameBonus>4</FameBonus>
+      <feedPower>800</feedPower>
+      <BagType>4</BagType>
+      <Soulbound/>
+      <OldSound>arrowShoot</OldSound>
+   </Object>
+   <Object type="0x08f8" id="EH Honeytomb Snare" setType="0x000f" setName="Swarming Huntress Set">
+      <DisplayId>Honeytomb Snare</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x66</Index>
+      </Texture>
+      <Usable/>
+      <SlotType>20</SlotType>
+      <Description>A strange trap that subdues would-be pilferers with a torrent of sticky honey.</Description>
+      <MpCost>65</MpCost>
+      <Activate radius="7" totalDamage="50" condEffect="Slowed" condDuration="3" color="FFC300" sensitivity=".2" duration="3" tilArmed="1.00">Trap</Activate>
+      <FameBonus>4</FameBonus>
+      <feedPower>700</feedPower>
+      <BagType>4</BagType>
+      <Soulbound/>
+   </Object>
+   <Object type="0x08f9" id="EH Apiary Armor" setType="0x000f" setName="Swarming Huntress Set">
+      <DisplayId>Apiary Armor</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x67</Index>
+      </Texture>
+      <SlotType>6</SlotType>
+      <Description>Lightweight, yet protective armor taken from the shed exoskeleton of a warrior bee.</Description>
+      <ActivateOnEquip stat="21" amount="12">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip stat="22" amount="5">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip stat="20" amount="-5">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip stat="28" amount="5">IncrementStat</ActivateOnEquip>
+      <FameBonus>4</FameBonus>
+      <feedPower>500</feedPower>
+      <BagType>4</BagType>
+      <Soulbound/>
+   </Object>
+   <Object type="0x08fa" id="EH Honey Circlet" setType="0x000f" setName="Swarming Huntress Set">
+      <DisplayId>Honey Circlet</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x68</Index>
+      </Texture>
+      <SlotType>9</SlotType>
+      <Description>The solid honey on this ring renews its wearer with incredible energy.</Description>
+      <ActivateOnEquip stat="0" amount="40">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip stat="3" amount="40">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip stat="22" amount="4">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip stat="28" amount="4">IncrementStat</ActivateOnEquip>
+      <FameBonus>4</FameBonus>
+      <feedPower>500</feedPower>
+      <BagType>4</BagType>
+      <Soulbound/>
+   </Object>
+   <Object type="0x4bd0" id="Mini Queen Bee Huntress Skin">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>182</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Become a Mini Queen Bee! Wait a second, wouldn't that make you a Princess Bee instead?\n\nSkin Class: Huntress\nSprite Credits: Dappertron</Description>
+      <Activate skinType="19407">UnlockSkin</Activate>
+      <Consumable/>
+      <BagType>5</BagType>
+      <Soulbound/>
+      <feedPower>2000</feedPower>
+   </Object>
 </Objects>

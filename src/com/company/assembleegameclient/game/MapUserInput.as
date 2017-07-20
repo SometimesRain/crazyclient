@@ -335,6 +335,21 @@ public class MapUserInput {
 				player.mapAutoAbil = !player.mapAutoAbil;
 				player.notifyPlayer(player.mapAutoAbil ? "Auto Ability: Enabled" : "Auto Ability: Disabled", 0x00FF00, 1500);
 				return true;
+			case 0xa52: //T0 seal
+			case 0xad9: //T1 seal
+			case 0xa53: //T2 seal
+			case 0xada: //T3 seal
+			case 0xa54: //T4 seal
+			
+			case 0xa33: //T4 tome
+			case 0xa5b: //T5 tome
+			case 0xb25: //T6 tome
+			case 0xc09: //puri
+				if (Parameters.data_.palaSpam) {
+					player.mapAutoAbil = !player.mapAutoAbil;
+					player.notifyPlayer(player.mapAutoAbil ? "Auto Ability: Enabled" : "Auto Ability: Disabled", 0x00FF00, 1500);
+					return true;
+				}
 		}
 		return false;
 	}
@@ -487,8 +502,8 @@ public class MapUserInput {
 			if (angle < 0) {
 				angle += Math.PI * 2;
 			}
-			var desX:Number = 20 * 50 * Math.sin(angle); //hypotenuse 20 -> how far is the teleport used
-			var desY:Number = 20 * 50 * Math.cos(angle);
+			var desX:Number = 13 * 50 * Math.sin(angle); //hypotenuse 13 -> how far is the teleport used
+			var desY:Number = 13 * 50 * Math.cos(angle);
 			player.useAltWeapon(desX, desY, UseType.START_USE);
 			return;
 		}

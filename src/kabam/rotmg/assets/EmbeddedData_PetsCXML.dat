@@ -4969,4 +4969,46 @@
       <DisplayId>Mini Limon Pet Stone</DisplayId>
       <feedPower>5000</feedPower>
    </Object>
+   <Object type="0x08ae" id="Killer Bee Queen">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Insect</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Killer Bee Queen Skin</DefaultSkin>
+      <Size>80</Size>
+      <WhileMoving>
+         <Z>0.24</Z>
+         <Flying/>
+      </WhileMoving>
+   </Object>
+   <Object type="0x08af" id="Killer Bee Queen Skin">
+      <PetSkin/>
+      <DisplayId>Killer Bee Queen</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>13</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x08b0" id="Killer Bee Queen Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <ScaleValue>10</ScaleValue>
+      <SlotType>10</SlotType>
+      <Description>Transform your pet into the Killer Bee Queen of the Insect family, once the ruler of a mighty insect kingdom. \n \nThis is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="2222">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Killer Bee Queen Pet Skin</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
 </Objects>

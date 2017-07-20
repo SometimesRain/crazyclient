@@ -1,0 +1,4079 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x10A3" id="The Epic Hive Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>The Nest</DisplayId>
+      <DungeonName>The Nest</DungeonName>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x0D</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x08b2" id="EH Ability Bee 1">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>epicHiveChars8x8</File>
+         <Index>12</Index>
+      </AnimatedTexture>
+      <Flying/>
+      <Size>80</Size>
+      <Z>0.2</Z>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x08e8" id="EH Ability Bee 2">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>epicHiveChars8x8</File>
+         <Index>13</Index>
+      </AnimatedTexture>
+      <Flying/>
+      <Size>80</Size>
+      <Z>0.2</Z>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x08e9" id="EH Ability Bee 3">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>epicHiveChars8x8</File>
+         <Index>14</Index>
+      </AnimatedTexture>
+      <Flying/>
+      <Size>80</Size>
+      <Z>0.2</Z>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x108d" id="EH honey Heal">
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x00</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x08b8" id="EH Cowardice Portal">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Size>0</Size>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1ac5" id="EH Large Yellow Bee Object">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Size>0</Size>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+   </Object>
+   <Object type="0x10aa" id="EH Large Red Bee Object">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Size>0</Size>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+   </Object>
+   <Object type="0x10ab" id="EH Large Blue Bee Object">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Size>0</Size>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1ac7" id="EH Large Bee Anchor">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Size>0</Size>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1a9e" id="EH Large Yellow Bee">
+      <Group>Leader Bee</Group>
+      <Class>Character</Class>
+      <DisplayId>Yellow Soldier Bee</DisplayId>
+      <Enemy/>
+      <StasisImmune/>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>2</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <HitSound>monster/snake_queen_hit</HitSound>
+      <DeathSound>monster/snake_queen_death</DeathSound>
+      <MaxHitPoints>17500</MaxHitPoints>
+      <Defense>20</Defense>
+      <XpMult>1</XpMult>
+      <Flying/>
+      <Z>0.24</Z>
+      <Projectile id="0">
+         <ObjectId>EH Yellow Stinger Small</ObjectId>
+         <Damage>120</Damage>
+         <Speed>90</Speed>
+         <Size>100</Size>
+         <LifetimeMS>800</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>EH Yellow Stinger Large</ObjectId>
+         <Damage>150</Damage>
+         <Speed>70</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1300</LifetimeMS>
+         <ConditionEffect duration="2">Dazed</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>EH Yellow Ball</ObjectId>
+         <Damage>40</Damage>
+         <Speed>120</Speed>
+         <Size>100</Size>
+         <LifetimeMS>300</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+         <ConditionEffect duration="3">Dazed</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>EH Yellow Glaive</ObjectId>
+         <Damage>80</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1700</LifetimeMS>
+         <ConditionEffect duration=".8">Paralyzed</ConditionEffect>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>EH Yellow Ball</ObjectId>
+         <Damage>50</Damage>
+         <Speed>50</Speed>
+         <Size>100</Size>
+         <LifetimeMS>800</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="1.4">Paralyzed</ConditionEffect>
+         <ConditionEffect duration="3">Dazed</ConditionEffect>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>EH Yellow Glaive</ObjectId>
+         <Damage>80</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1200</LifetimeMS>
+         <ConditionEffect duration=".8">Paralyzed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x1aa6" id="EH Large Red Bee">
+      <Group>Leader Bee</Group>
+      <Class>Character</Class>
+      <DisplayId>Red Soldier Bee</DisplayId>
+      <StasisImmune/>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>3</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <HitSound>monster/snake_queen_hit</HitSound>
+      <DeathSound>monster/snake_queen_death</DeathSound>
+      <MaxHitPoints>17500</MaxHitPoints>
+      <Defense>20</Defense>
+      <XpMult>1</XpMult>
+      <Flying/>
+      <Z>0.24</Z>
+      <Projectile id="0">
+         <ObjectId>EH Red Stinger Small</ObjectId>
+         <Damage>80</Damage>
+         <Speed>90</Speed>
+         <Size>100</Size>
+         <LifetimeMS>600</LifetimeMS>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>EH Red Stinger Large</ObjectId>
+         <Damage>100</Damage>
+         <Speed>80</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1200</LifetimeMS>
+         <ConditionEffect duration="4">Armor Broken</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>EH Red Ball</ObjectId>
+         <Damage>75</Damage>
+         <Speed>50</Speed>
+         <Size>80</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+         <ConditionEffect duration="4">Armor Broken</ConditionEffect>
+         <ConditionEffect duration=".8">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>EH Red Glaive</ObjectId>
+         <Damage>60</Damage>
+         <Speed>70</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <ConditionEffect duration="2">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>EH Red Glaive</ObjectId>
+         <Damage>60</Damage>
+         <Speed>70</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1000</LifetimeMS>
+         <ConditionEffect duration="4">Confused</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x1aa7" id="EH Large Blue Bee">
+      <Group>Leader Bee</Group>
+      <Class>Character</Class>
+      <DisplayId>Blue Soldier Bee</DisplayId>
+      <Enemy/>
+      <StasisImmune/>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>4</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <HitSound>monster/snake_queen_hit</HitSound>
+      <DeathSound>monster/snake_queen_death</DeathSound>
+      <MaxHitPoints>17500</MaxHitPoints>
+      <Defense>20</Defense>
+      <XpMult>1</XpMult>
+      <Flying/>
+      <Z>0.24</Z>
+      <Projectile id="0">
+         <ObjectId>EH Blue Stinger Small</ObjectId>
+         <Damage>100</Damage>
+         <Speed>85</Speed>
+         <Size>100</Size>
+         <LifetimeMS>800</LifetimeMS>
+         <ConditionEffect duration="3" target="1">Stasis</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>EH Blue Stinger Large</ObjectId>
+         <Damage>120</Damage>
+         <Speed>85</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1000</LifetimeMS>
+         <ConditionEffect duration="2">Weak</ConditionEffect>
+         <ConditionEffect duration="3" target="1">Stasis</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>EH Blue Ball</ObjectId>
+         <Damage>40</Damage>
+         <Speed>50</Speed>
+         <Size>80</Size>
+         <LifetimeMS>600</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="1.2">Weak</ConditionEffect>
+         <ConditionEffect duration="4" target="1">Stasis</ConditionEffect>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>EH Blue Glaive</ObjectId>
+         <Damage>60</Damage>
+         <Speed>75</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1400</LifetimeMS>
+         <ConditionEffect duration="3">Quiet</ConditionEffect>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>EH Blue Glaive</ObjectId>
+         <Damage>60</Damage>
+         <Speed>75</Speed>
+         <Size>100</Size>
+         <LifetimeMS>950</LifetimeMS>
+         <ConditionEffect duration="5">Quiet</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x108e" id="EH Mini Hive">
+      <Class>Character</Class>
+      <Enemy/>
+      <DisplayId>Mini Killer Bee Nest</DisplayId>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>6</Index>
+      </AnimatedTexture>
+      <Size>85</Size>
+      <HitSound>monster/wooden_walls_hit</HitSound>
+      <DeathSound>monster/wooden_walls_death</DeathSound>
+      <MaxHitPoints>12500</MaxHitPoints>
+      <Defense>30</Defense>
+      <XpMult>1</XpMult>
+      <StasisImmune/>
+      <DontFaceAttacks/>
+      <Projectile id="0">
+         <ObjectId>EH Hive Shot</ObjectId>
+         <Size>100</Size>
+         <Speed>40</Speed>
+         <Damage>90</Damage>
+         <LifetimeMS>600</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="2.5">Dazed</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>EH Hive Range Shot</ObjectId>
+         <Size>100</Size>
+         <Speed>60</Speed>
+         <Damage>70</Damage>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="6" target="1">Stasis</ConditionEffect>
+         <ConditionEffect duration="3">Weak</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>EH Hive Spiral Shot</ObjectId>
+         <Size>100</Size>
+         <Speed>50</Speed>
+         <Damage>120</Damage>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0x1aa9" id="EH Fake Hive">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>5</Index>
+      </AnimatedTexture>
+      <Size>85</Size>
+      <HitSound>monster/wooden_walls_hit</HitSound>
+      <DeathSound>monster/wooden_walls_death</DeathSound>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>30</Defense>
+      <XpMult>1.0</XpMult>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x1090" id="EH Small Bees">
+      <DisplayId>Small Worker Bee</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>epicHiveChars8x8</File>
+         <Index>11</Index>
+      </AnimatedTexture>
+      <HitSound>monster/spiders_hit</HitSound>
+      <DeathSound>monster/spiders_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>125</MaxHitPoints>
+      <Defense>25</Defense>
+      <XpMult>0.8</XpMult>
+      <Flying/>
+      <Z>0.24</Z>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>40</Damage>
+         <Speed>0</Speed>
+         <Size>80</Size>
+         <LifetimeMS>100</LifetimeMS>
+         <ConditionEffect duration="1.6">Slowed</ConditionEffect>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0x1091" id="EH Fat Bees">
+      <Group>Busy Bees</Group>
+      <DisplayId>Yellow Killer Bee</DisplayId>
+      <Enemy/>
+      <StunImmune/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>epicHiveChars8x8</File>
+         <Index>2</Index>
+      </AnimatedTexture>
+      <HitSound>monster/scorpions_hit</HitSound>
+      <DeathSound>monster/scorpions_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Defense>25</Defense>
+      <Flying/>
+      <XpMult>0.7</XpMult>
+      <Z>0.24</Z>
+      <Projectile id="0">
+         <ObjectId>EH Yellow Stinger Small</ObjectId>
+         <Damage>130</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1750</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x1092" id="EH Red Fat Bees">
+      <Group>Busy Bees</Group>
+      <DisplayId>Red Killer Bee</DisplayId>
+      <Enemy/>
+      <ParalyzeImmune/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>epicHiveChars8x8</File>
+         <Index>1</Index>
+      </AnimatedTexture>
+      <HitSound>monster/pythons_hit</HitSound>
+      <DeathSound>monster/pythons_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Defense>25</Defense>
+      <Flying/>
+      <XpMult>0.7</XpMult>
+      <Z>0.24</Z>
+      <Projectile id="0">
+         <ObjectId>EH Red Stinger Small</ObjectId>
+         <Damage>80</Damage>
+         <Speed>70</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x1a9f" id="EH Blue Fat Bees">
+      <Group>Busy Bees</Group>
+      <DisplayId>Blue Killer Bee</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>epicHiveChars8x8</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <HitSound>monster/scorpions_hit</HitSound>
+      <DeathSound>monster/scorpions_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Defense>25</Defense>
+      <Flying/>
+      <XpMult>0.7</XpMult>
+      <Z>0.24</Z>
+      <Projectile id="0">
+         <ObjectId>EH Blue Stinger Small</ObjectId>
+         <Damage>100</Damage>
+         <Speed>75</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1300</LifetimeMS>
+         <ConditionEffect duration="2">Weak</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x1093" id="EH King Bee">
+      <DisplayId>Killer Bee Queen</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <HitSound>monster/snake_queen_hit</HitSound>
+      <DeathSound>monster/snake_queen_death</DeathSound>
+      <MaxHitPoints>300000</MaxHitPoints>
+      <Defense>50</Defense>
+      <XpMult>28.205128205128205128205128205128</XpMult>
+      <Size>120</Size>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <Flying/>
+      <Z>0.24</Z>
+      <Quest/>
+      <Projectile id="0">
+         <ObjectId>EH Queen Red Stinger Small</ObjectId>
+         <Damage>100</Damage>
+         <Speed>85</Speed>
+         <Size>120</Size>
+         <LifetimeMS>1118</LifetimeMS>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>EH Queen Red Stinger Large</ObjectId>
+         <Damage>130</Damage>
+         <Speed>75</Speed>
+         <Size>120</Size>
+         <LifetimeMS>1300</LifetimeMS>
+         <ArmorPiercing/>
+         <ConditionEffect duration="3">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>EH Queen Yellow Stinger Small</ObjectId>
+         <Damage>100</Damage>
+         <Speed>75</Speed>
+         <Size>120</Size>
+         <LifetimeMS>1300</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="1.4">Paralyzed</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>EH Queen Yellow Stinger Large</ObjectId>
+         <Damage>140</Damage>
+         <Speed>55</Speed>
+         <Size>120</Size>
+         <LifetimeMS>1300</LifetimeMS>
+         <ConditionEffect duration="3">Dazed</ConditionEffect>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>EH Queen Blue Stinger Small</ObjectId>
+         <Damage>100</Damage>
+         <Speed>85</Speed>
+         <Size>120</Size>
+         <LifetimeMS>1300</LifetimeMS>
+         <ConditionEffect duration="3">Quiet</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>EH Queen Blue Stinger Large</ObjectId>
+         <Damage>120</Damage>
+         <Speed>80</Speed>
+         <Size>120</Size>
+         <LifetimeMS>1300</LifetimeMS>
+         <ConditionEffect duration="4" target="1">Stasis</ConditionEffect>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>EH Red Glaive</ObjectId>
+         <Damage>0</Damage>
+         <Speed>140</Speed>
+         <Size>80</Size>
+         <LifetimeMS>700</LifetimeMS>
+         <ConditionEffect duration="7">Armor Broken</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>EH Blue Ball</ObjectId>
+         <Damage>0</Damage>
+         <Speed>30</Speed>
+         <Size>80</Size>
+         <LifetimeMS>3500</LifetimeMS>
+         <ConditionEffect duration="3" target="1">Stasis</ConditionEffect>
+      </Projectile>
+      <Projectile id="8">
+         <ObjectId>EH Blue Ball</ObjectId>
+         <Damage>90</Damage>
+         <Speed>60</Speed>
+         <Size>120</Size>
+         <LifetimeMS>1750</LifetimeMS>
+         <ConditionEffect duration="4" target="1">Stasis</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="9">
+         <ObjectId>EH Yellow Ball</ObjectId>
+         <Damage>90</Damage>
+         <Speed>45</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration=".8">Paralyzed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="10">
+         <ObjectId>EH Yellow Glaive</ObjectId>
+         <Damage>70</Damage>
+         <Speed>25</Speed>
+         <Size>100</Size>
+         <LifetimeMS>4250</LifetimeMS>
+         <ConditionEffect duration=".8">Paralyzed</ConditionEffect>
+         <ConditionEffect duration="3">Dazed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="11">
+         <ObjectId>EH Red Glaive</ObjectId>
+         <Damage>90</Damage>
+         <Speed>40</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2250</LifetimeMS>
+         <ConditionEffect duration="6">Armor Broken</ConditionEffect>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="12">
+         <ObjectId>EH Blue Glaive</ObjectId>
+         <Damage>80</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>1590</LifetimeMS>
+         <ConditionEffect duration="2">Quiet</ConditionEffect>
+         <ConditionEffect duration="6" target="1">Stasis</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="13">
+         <ObjectId>EH Red Ball</ObjectId>
+         <Damage>80</Damage>
+         <Speed>55</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="4">Confused</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="14">
+         <ObjectId>EH Hive Spiral Shot</ObjectId>
+         <Damage>240</Damage>
+         <Size>140</Size>
+         <Speed>80</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="15">
+         <ObjectId>EH Hive Range Shot</ObjectId>
+         <Damage>120</Damage>
+         <Size>140</Size>
+         <Speed>40</Speed>
+         <LifetimeMS>2500</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="5" target="1">Stasis</ConditionEffect>
+         <ConditionEffect duration="3">Weak</ConditionEffect>
+      </Projectile>
+      <Projectile id="16">
+         <ObjectId>EH Hive Shot</ObjectId>
+         <Damage>150</Damage>
+         <Size>140</Size>
+         <Speed>80</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="3">Dazed</ConditionEffect>
+      </Projectile>
+      <Projectile id="17">
+         <ObjectId>EH Queen Blue Stinger Small</ObjectId>
+         <Damage>100</Damage>
+         <Speed>70</Speed>
+         <Size>120</Size>
+         <LifetimeMS>1300</LifetimeMS>
+         <ConditionEffect duration="3">Quiet</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="18">
+         <ObjectId>EH Yellow Ball</ObjectId>
+         <Damage>90</Damage>
+         <Speed>50</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration=".6">Paralyzed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="19">
+         <ObjectId>EH Blue Ball</ObjectId>
+         <Damage>90</Damage>
+         <Speed>40</Speed>
+         <Size>120</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <ConditionEffect duration="4" target="1">Stasis</ConditionEffect>
+         <ConditionEffect duration="2">Weak</ConditionEffect>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="20">
+         <ObjectId>EH Queen Red Stinger Large</ObjectId>
+         <Damage>130</Damage>
+         <Speed>35</Speed>
+         <Size>120</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <ArmorPiercing/>
+         <ConditionEffect duration="3">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="21">
+         <ObjectId>EH Queen Yellow Stinger Small</ObjectId>
+         <Damage>100</Damage>
+         <Speed>45</Speed>
+         <Size>120</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="1.4">Paralyzed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x1094" id="EH Maggot Egg1">
+      <Class>Character</Class>
+      <Group>EH Eggs</Group>
+      <Enemy/>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x2d</Index>
+      </Texture>
+      <Sound id="0">monster/eggs_death</Sound>
+      <HitSound>monster/eggs_hit</HitSound>
+      <DeathSound>monster/eggs_death</DeathSound>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>5</Defense>
+      <XpMult>0</XpMult>
+   </Object>
+   <Object type="0x1095" id="EH Maggot Egg2">
+      <Class>Character</Class>
+      <Group>EH Eggs</Group>
+      <Enemy/>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x2e</Index>
+      </Texture>
+      <Sound id="0">monster/eggs_death</Sound>
+      <HitSound>monster/eggs_hit</HitSound>
+      <DeathSound>monster/eggs_death</DeathSound>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>5</Defense>
+      <XpMult>0</XpMult>
+   </Object>
+   <Object type="0x1096" id="EH Maggot Egg3">
+      <Class>Character</Class>
+      <Group>EH Eggs</Group>
+      <Enemy/>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x2f</Index>
+      </Texture>
+      <Sound id="0">monster/eggs_death</Sound>
+      <HitSound>monster/eggs_hit</HitSound>
+      <DeathSound>monster/eggs_death</DeathSound>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>5</Defense>
+      <XpMult>0</XpMult>
+   </Object>
+   <Object type="0x10b6" id="EH Queen Blue Hive">
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>7</Index>
+      </AnimatedTexture>
+      <DisplayId>Killer Bee Nest</DisplayId>
+      <NoMiniMap/>
+      <StasisImmune/>
+      <Sound id="0">monster/wooden_walls_death</Sound>
+      <HitSound>monster/wooden_walls_hit</HitSound>
+      <DeathSound>monster/wooden_walls_death</DeathSound>
+      <MaxHitPoints>400000</MaxHitPoints>
+      <Defense>40</Defense>
+      <XpMult>1.53847</XpMult>
+      <Size>80</Size>
+      <DontFaceAttacks/>
+      <Projectile id="0">
+         <ObjectId>EH Hive Range Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>55</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1300</LifetimeMS>
+         <ConditionEffect duration="2">Weak</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x10b7" id="EH Queen Red Hive">
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>7</Index>
+      </AnimatedTexture>
+      <NoMiniMap/>
+      <StasisImmune/>
+      <DisplayId>Killer Bee Nest</DisplayId>
+      <Sound id="0">monster/wooden_walls_death</Sound>
+      <HitSound>monster/wooden_walls_hit</HitSound>
+      <DeathSound>monster/wooden_walls_death</DeathSound>
+      <MaxHitPoints>400000</MaxHitPoints>
+      <XpMult>1.53847</XpMult>
+      <Size>80</Size>
+      <DontFaceAttacks/>
+      <Projectile id="0">
+         <ObjectId>EH Hive Spiral Shot</ObjectId>
+         <Damage>100</Damage>
+         <Speed>50</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1400</LifetimeMS>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x10b8" id="EH Queen Yellow Hive">
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>7</Index>
+      </AnimatedTexture>
+      <NoMiniMap/>
+      <StasisImmune/>
+      <DisplayId>Killer Bee Nest</DisplayId>
+      <Sound id="0">monster/wooden_walls_death</Sound>
+      <HitSound>monster/wooden_walls_hit</HitSound>
+      <DeathSound>monster/wooden_walls_death</DeathSound>
+      <MaxHitPoints>400000</MaxHitPoints>
+      <XpMult>1.53847</XpMult>
+      <Size>100</Size>
+      <DontFaceAttacks/>
+      <Projectile id="0">
+         <ObjectId>EH Hive Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>45</Speed>
+         <Size>90</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <ConditionEffect duration="2">Dazed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x10ba" id="EH QBH Corpse">
+      <Class>Character</Class>
+      <Enemy/>
+      <DisplayId>Killer Bee Nest</DisplayId>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>8</Index>
+      </AnimatedTexture>
+      <HitSound>monster/wooden_walls_hit</HitSound>
+      <DeathSound>monster/wooden_walls_death</DeathSound>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <XpMult>1</XpMult>
+      <NoMiniMap/>
+      <StasisImmune/>
+      <Size>100</Size>
+      <Projectile id="0">
+         <ObjectId>EH Blue Ball</ObjectId>
+         <Damage>45</Damage>
+         <Speed>25</Speed>
+         <Size>80</Size>
+         <LifetimeMS>750</LifetimeMS>
+         <ConditionEffect duration="4" target="1">Stasis</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x10bb" id="EH QRH Corpse">
+      <Class>Character</Class>
+      <Enemy/>
+      <DisplayId>Killer Bee Nest</DisplayId>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>8</Index>
+      </AnimatedTexture>
+      <HitSound>monster/wooden_walls_hit</HitSound>
+      <DeathSound>monster/wooden_walls_death</DeathSound>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <XpMult>1</XpMult>
+      <NoMiniMap/>
+      <StasisImmune/>
+      <Size>100</Size>
+      <Projectile id="0">
+         <ObjectId>EH Red Ball</ObjectId>
+         <Damage>45</Damage>
+         <Speed>25</Speed>
+         <Size>80</Size>
+         <LifetimeMS>750</LifetimeMS>
+         <ConditionEffect duration="2">Confused</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x10bc" id="EH QYH Corpse">
+      <Class>Character</Class>
+      <Enemy/>
+      <DisplayId>Killer Bee Nest</DisplayId>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>8</Index>
+      </AnimatedTexture>
+      <HitSound>monster/wooden_walls_hit</HitSound>
+      <DeathSound>monster/wooden_walls_death</DeathSound>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <XpMult>1</XpMult>
+      <NoMiniMap/>
+      <StasisImmune/>
+      <Size>100</Size>
+      <Projectile id="0">
+         <ObjectId>EH Yellow Ball</ObjectId>
+         <Damage>45</Damage>
+         <Speed>25</Speed>
+         <Size>80</Size>
+         <LifetimeMS>750</LifetimeMS>
+         <ConditionEffect duration="2">Dazed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x08ab" id="EH QH Fake Corpse">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>8</Index>
+      </AnimatedTexture>
+      <HitSound>monster/wooden_walls_hit</HitSound>
+      <DeathSound>monster/wooden_walls_death</DeathSound>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <XpMult>1</XpMult>
+      <NoMiniMap/>
+      <StasisImmune/>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x10bd" id="EH QLB Yellow">
+      <Class>Character</Class>
+      <DisplayId>Adolescent Yellow Beehemoth</DisplayId>
+      <Enemy/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>10</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <HitSound>monster/snake_queen_hit</HitSound>
+      <DeathSound>monster/snake_queen_death</DeathSound>
+      <MaxHitPoints>25000</MaxHitPoints>
+      <Defense>40</Defense>
+      <XpMult>1.0</XpMult>
+      <Flying/>
+      <Z>0.24</Z>
+      <Projectile id="0">
+         <ObjectId>EH Yellow Stinger Large</ObjectId>
+         <Damage>150</Damage>
+         <Speed>70</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1400</LifetimeMS>
+         <ConditionEffect duration="2">Dazed</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>EH Yellow Glaive</ObjectId>
+         <Damage>80</Damage>
+         <Speed>50</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1700</LifetimeMS>
+         <ConditionEffect duration=".8">Paralyzed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x10be" id="EH QLB Red">
+      <Class>Character</Class>
+      <DisplayId>Adolescent Red Beehemoth</DisplayId>
+      <Enemy/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>11</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <HitSound>monster/snake_queen_hit</HitSound>
+      <DeathSound>monster/snake_queen_death</DeathSound>
+      <MaxHitPoints>25000</MaxHitPoints>
+      <Defense>40</Defense>
+      <XpMult>1.0</XpMult>
+      <Flying/>
+      <Z>0.24</Z>
+      <Projectile id="0">
+         <ObjectId>EH Red Stinger Large</ObjectId>
+         <Damage>100</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1750</LifetimeMS>
+         <ConditionEffect duration="4">Armor Broken</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>EH Red Glaive</ObjectId>
+         <Damage>60</Damage>
+         <Speed>70</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <ConditionEffect duration="2">Confused</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x10bf" id="EH QLB Blue">
+      <Class>Character</Class>
+      <DisplayId>Adolescent Blue Beehemoth</DisplayId>
+      <Enemy/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>12</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <HitSound>monster/snake_queen_hit</HitSound>
+      <DeathSound>monster/snake_queen_death</DeathSound>
+      <MaxHitPoints>25000</MaxHitPoints>
+      <Defense>40</Defense>
+      <XpMult>1.0</XpMult>
+      <Flying/>
+      <Z>0.24</Z>
+      <Projectile id="0">
+         <ObjectId>EH Blue Stinger Large</ObjectId>
+         <Damage>120</Damage>
+         <Speed>65</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <ConditionEffect duration="2">Weak</ConditionEffect>
+         <ConditionEffect duration="3" target="1">Stasis</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>EH Blue Glaive</ObjectId>
+         <Damage>60</Damage>
+         <Speed>75</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1400</LifetimeMS>
+         <ConditionEffect duration="3">Quiet</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x1ab1" id="EH Blue Maggots">
+      <DisplayId>Blue Larva</DisplayId>
+      <Group>EH Larves</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>epicHiveChars8x8</File>
+         <Index>3</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Defense>5</Defense>
+      <XpMult>1</XpMult>
+      <Projectile id="0">
+         <ObjectId>EH Blue Ball</ObjectId>
+         <Damage>30</Damage>
+         <Speed>50</Speed>
+         <Size>40</Size>
+         <LifetimeMS>300</LifetimeMS>
+         <ConditionEffect duration="5" target="1">Stasis</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x1ab2" id="EH Red Maggots">
+      <DisplayId>Red Larva</DisplayId>
+      <Group>EH Larves</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>epicHiveChars8x8</File>
+         <Index>4</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Defense>5</Defense>
+      <XpMult>1</XpMult>
+      <Projectile id="0">
+         <ObjectId>EH Red Ball</ObjectId>
+         <Damage>35</Damage>
+         <Speed>50</Speed>
+         <Size>40</Size>
+         <LifetimeMS>300</LifetimeMS>
+         <ConditionEffect duration="4">Armor Broken</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x1ab3" id="EH Yellow Maggots">
+      <DisplayId>Yellow Larva</DisplayId>
+      <Group>EH Larves</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>epicHiveChars8x8</File>
+         <Index>5</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Defense>5</Defense>
+      <XpMult>1</XpMult>
+      <Projectile id="0">
+         <ObjectId>EH Yellow Ball</ObjectId>
+         <Damage>30</Damage>
+         <Speed>50</Speed>
+         <Size>40</Size>
+         <LifetimeMS>300</LifetimeMS>
+         <ConditionEffect duration=".6">Paralyzed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x1abd" id="EH Yellow Leader Healer">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Size>0</Size>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1ad3" id="EH Red Leader Healer">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Size>0</Size>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1ad4" id="EH Blue Leader Healer">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Size>0</Size>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1ac4" id="EH Queen Yellow Bees">
+      <DisplayId>Enraged Yellow Killer Bee</DisplayId>
+      <Enemy/>
+      <StunImmune/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>epicHiveChars8x8</File>
+         <Index>6</Index>
+      </AnimatedTexture>
+      <HitSound>monster/scorpions_hit</HitSound>
+      <DeathSound>monster/scorpions_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>25</Defense>
+      <Flying/>
+      <Z>0.24</Z>
+      <Projectile id="0">
+         <ObjectId>EH Yellow Stinger Small</ObjectId>
+         <Damage>125</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1750</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x10b9" id="EH Queen Blue Bees">
+      <DisplayId>Enraged Blue Killer Bee</DisplayId>
+      <Enemy/>
+      <StunImmune/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>epicHiveChars8x8</File>
+         <Index>7</Index>
+      </AnimatedTexture>
+      <HitSound>monster/scorpions_hit</HitSound>
+      <DeathSound>monster/scorpions_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>25</Defense>
+      <Flying/>
+      <Z>0.24</Z>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>EH Blue Stinger Small</ObjectId>
+         <Damage>90</Damage>
+         <Speed>65</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1750</LifetimeMS>
+         <ConditionEffect duration="2.4">Weak</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x1098" id="EH King Bee Summoner">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Size>0</Size>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1ac1" id="EH Small Bee Spawner">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Size>0</Size>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+   </Object>
+   <Object type="0x10b5" id="EH Egg Spawner">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Size>0</Size>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1ac2" id="EH Bee Spawner">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Size>0</Size>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1ac3" id="EH Leader Spawner">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Size>0</Size>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+   </Object>
+   <Object type="0x10a8" id="EH Hive Despawner">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Size>0</Size>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1ac6" id="EH Waiting Floor">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Size>0</Size>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+   </Object>
+   <Object type="0x10c0" id="EH Destructible Wall">
+      <Class>Wall</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x30</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x31</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <MaxHitPoints>15000</MaxHitPoints>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Enemy/>
+      <XpMult>0.0</XpMult>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x10d3" id="EH Fake Destructible Wall">
+      <Class>Wall</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x30</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x31</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <MaxHitPoints>1500</MaxHitPoints>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Enemy/>
+      <XpMult>0.0</XpMult>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x10c5" id="EH FloorChanger">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Size>0</Size>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+   </Object>
+   <Object type="0x10c1" id="EH WallPicker">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Size>0</Size>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+   </Object>
+   <Object type="0x109b" id="EH Wall">
+      <Class>Wall</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x0a</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x0b</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x10ae" id="EH Alt Wall 1">
+      <Class>Wall</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x24</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x0b</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x10af" id="EH Alt Wall 2">
+      <Class>Wall</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x25</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x0b</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x10b0" id="EH Cracked Art Wall">
+      <Class>Wall</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x26</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x0b</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+      <Animation sync="true" prob="1" period="0.6">
+         <Frame time="0.2">
+            <Texture>
+               <File>epicHiveObjects8x8</File>
+               <Index>0x26</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>epicHiveObjects8x8</File>
+               <Index>0x27</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>epicHiveObjects8x8</File>
+               <Index>0x28</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x10c9" id="EH Boss Wall">
+      <Class>Wall</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x36</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x37</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x10d0" id="EH Alt Boss Wall 1">
+      <Class>Wall</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x38</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x37</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x10d1" id="EH Alt Boss Wall 2">
+      <Class>Wall</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x39</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x37</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x10d2" id="EH Boss Cracked Art Wall">
+      <Class>Wall</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x3a</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x37</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+      <Animation sync="true" prob="1" period="0.6">
+         <Frame time="0.2">
+            <Texture>
+               <File>epicHiveObjects8x8</File>
+               <Index>0x3a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>epicHiveObjects8x8</File>
+               <Index>0x3b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>epicHiveObjects8x8</File>
+               <Index>0x3c</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x10c2" id="EH Medium Boss Wall 1">
+      <Class>Wall</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x33</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x10c6" id="EH Medium Boss Wall 2">
+      <Class>Wall</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x34</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x33</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x10c7" id="EH Medium Boss Wall 3">
+      <Class>Wall</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x35</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x33</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x10c8" id="EH Medium Boss Cracked Art Wall">
+      <Class>Wall</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x3d</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x33</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+      <Animation sync="true" prob="1" period="0.6">
+         <Frame time="0.2">
+            <Texture>
+               <File>epicHiveObjects8x8</File>
+               <Index>0x3d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>epicHiveObjects8x8</File>
+               <Index>0x3e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>epicHiveObjects8x8</File>
+               <Index>0x3f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x10ca" id="EH Light Boss Wall 1">
+      <Class>Wall</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x40</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x41</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x10cb" id="EH Light Boss Wall 2">
+      <Class>Wall</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x42</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x41</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x10cc" id="EH Light Boss Wall 3">
+      <Class>Wall</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x43</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x41</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x10cd" id="EH Light Boss Cracked Art Wall">
+      <Class>Wall</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x44</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x41</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+      <Animation sync="true" prob="1" period="0.6">
+         <Frame time="0.2">
+            <Texture>
+               <File>epicHiveObjects8x8</File>
+               <Index>0x44</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>epicHiveObjects8x8</File>
+               <Index>0x45</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>epicHiveObjects8x8</File>
+               <Index>0x46</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x1aa2" id="EH Fake Wall">
+      <Class>Wall</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x0a</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x0b</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x1ac0" id="EH Fake Fake Wall">
+      <Class>Wall</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x0a</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x0b</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0x10b1" id="EH Chunk 1">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x29</Index>
+      </Texture>
+      <Static/>
+   </Object>
+   <Object type="0x10b2" id="EH Chunk 2">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x2a</Index>
+      </Texture>
+      <Static/>
+   </Object>
+   <Object type="0x10b3" id="EH Chunk 3">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x2b</Index>
+      </Texture>
+      <Static/>
+   </Object>
+   <Object type="0x10b4" id="EH Chunk 4">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <Static/>
+   </Object>
+   <Object type="0x10db" id="EH Static Partial Floor">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x18</Index>
+      </Texture>
+      <DrawOnGround/>
+      <Static/>
+      <ProtectFromGroundDamage/>
+      <ProtectFromSink/>
+   </Object>
+   <Object type="0x1a9c" id="EH Partial Floor">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x18</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromGroundDamage/>
+      <ProtectFromSink/>
+   </Object>
+   <Object type="0x08ee" id="EH Special Partial Floor">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x18</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromGroundDamage/>
+      <ProtectFromSink/>
+   </Object>
+   <Object type="0x1abe" id="EH Fake Partial Floor">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x18</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromGroundDamage/>
+      <ProtectFromSink/>
+   </Object>
+   <Object type="0x1ad0" id="EH Closing Fake Partial Floor">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x18</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromGroundDamage/>
+      <ProtectFromSink/>
+      <Animation sync="true" period="1">
+         <Frame time="1">
+            <Texture>
+               <File>epicHiveObjects8x8</File>
+               <Index>0x18</Index>
+            </Texture>
+         </Frame>
+         <Frame time="1">
+            <Texture>
+               <File>epicHiveObjects8x8</File>
+               <Index>0x1e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="3">
+            <Texture>
+               <File>epicHiveObjects8x8</File>
+               <Index>0x1f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x1ad1" id="EH Appearing Fake Partial Floor">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x18</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromGroundDamage/>
+      <ProtectFromSink/>
+      <Animation sync="true" period="1">
+         <Frame time="1">
+            <Texture>
+               <File>epicHiveObjects8x8</File>
+               <Index>0x1f</Index>
+            </Texture>
+         </Frame>
+         <Frame time="1">
+            <Texture>
+               <File>epicHiveObjects8x8</File>
+               <Index>0x1e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="3">
+            <Texture>
+               <File>epicHiveObjects8x8</File>
+               <Index>0x18</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x10fb" id="EH Event Appearing Fake Partial Floor">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x18</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromGroundDamage/>
+      <ProtectFromSink/>
+      <Animation sync="true" period="9999">
+         <Frame time="1">
+            <Texture>
+               <File>epicHiveObjects8x8</File>
+               <Index>0x1f</Index>
+            </Texture>
+         </Frame>
+         <Frame time="1">
+            <Texture>
+               <File>epicHiveObjects8x8</File>
+               <Index>0x1e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="999">
+            <Texture>
+               <File>epicHiveObjects8x8</File>
+               <Index>0x18</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x1abf" id="EH HallwayFloorObject">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <DrawOnGround/>
+   </Object>
+   <Object type="0x1aa0" id="EH Open Wall">
+      <DisplayId>The Beekeeper</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x08ff" id="EH Open Wall 2">
+      <DisplayId>The Beekeeper</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x08b4" id="EH Long Wall">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>epicHiveObjects16x16</File>
+         <Index>0x0b</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x08b5" id="EH S Wall Left">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>epicHiveObjects16x16</File>
+         <Index>0x0c</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x08b6" id="EH S Wall Right">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>epicHiveObjects16x16</File>
+         <Index>0x0d</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x08b7" id="EH S Wall Bottom">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>epicHiveObjects16x16</File>
+         <Index>0x0e</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x08b9" id="EH S Wall Top">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>epicHiveObjects16x16</File>
+         <Index>0x0f</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x08ba" id="EH Screen Left">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>epicHiveObjects16x16</File>
+         <Index>0x10</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x08bb" id="EH Screen Middle Left">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>epicHiveObjects16x16</File>
+         <Index>0x11</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x08bc" id="EH Screen Middle Right">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>epicHiveObjects16x16</File>
+         <Index>0x12</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x08bd" id="EH Screen Right">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>epicHiveObjects16x16</File>
+         <Index>0x13</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x08be" id="EH Bee Screen Left">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>epicHiveObjects16x16</File>
+         <Index>0x14</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.4">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x14</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x18</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x08bf" id="EH Bee Screen Middle Left">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>epicHiveObjects16x16</File>
+         <Index>0x15</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.4">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x15</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x19</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x08c0" id="EH Bee Screen Middle Right">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>epicHiveObjects16x16</File>
+         <Index>0x16</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.4">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x16</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x1a</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x08c1" id="EH Bee Screen Right">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>epicHiveObjects16x16</File>
+         <Index>0x17</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.4">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x17</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x1b</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x08c2" id="EH Static Screen Left">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>epicHiveObjects16x16</File>
+         <Index>0x1c</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x1c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x20</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x24</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x28</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x08c3" id="EH Static Screen Middle Left">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>epicHiveObjects16x16</File>
+         <Index>0x1d</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x1d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x21</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x25</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x29</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x08c4" id="EH Static Screen Middle Right">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>epicHiveObjects16x16</File>
+         <Index>0x1e</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x1e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x22</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x26</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x2a</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x08c5" id="EH Static Screen Right">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>epicHiveObjects16x16</File>
+         <Index>0x1f</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x1f</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x23</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x27</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x2b</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x08c6" id="EH Apiary">
+      <Class>GameObject</Class>
+      <Model>ThreeSideCube</Model>
+      <Texture>
+         <File>epicHiveObjects16x16</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x08e4" id="EH Apiary 2">
+      <Class>GameObject</Class>
+      <Model>ThreeSideCube</Model>
+      <Texture>
+         <File>epicHiveObjects16x16</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x08e5" id="EH Apiary 3">
+      <Class>GameObject</Class>
+      <Model>ThreeSideCube</Model>
+      <Texture>
+         <File>epicHiveObjects16x16</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x08e3" id="EH Fake Apiary">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <OccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Static/>
+   </Object>
+   <Object type="0x08c7" id="EH Blue Bee Tank">
+      <Class>GameObject</Class>
+      <Static/>
+      <Texture>
+         <File>epicHiveObjects16x16</File>
+         <Index>0x02</Index>
+      </Texture>
+      <Animation period="1.6" prob="1">
+         <Frame time="0.4">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x02</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x03</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x04</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x03</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x08c8" id="EH Red Bee Tank">
+      <Class>GameObject</Class>
+      <Static/>
+      <Texture>
+         <File>epicHiveObjects16x16</File>
+         <Index>0x05</Index>
+      </Texture>
+      <Animation period="1.6" prob="1">
+         <Frame time="0.4">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x05</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x06</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x07</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x06</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x08c9" id="EH Yellow Bee Tank">
+      <Class>GameObject</Class>
+      <Static/>
+      <Texture>
+         <File>epicHiveObjects16x16</File>
+         <Index>0x08</Index>
+      </Texture>
+      <Animation period="1.6" prob="1">
+         <Frame time="0.4">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x08</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x09</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x0a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>epicHiveObjects16x16</File>
+               <Index>0x09</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x08ca" id="EH Big S Light">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>epicHiveObjects16x16</File>
+         <Index>0x01</Index>
+      </Texture>
+      <Size>140</Size>
+      <Static/>
+   </Object>
+   <Object type="0x08cb" id="EH Big S Dark">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>epicHiveObjects16x16</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Static/>
+      <Size>140</Size>
+   </Object>
+   <Object type="0x08cc" id="EH Big S Shade Chooser">
+      <Class>Character</Class>
+      <Texture>
+         <File>epicHiveObjects16x16</File>
+         <Index>0x2d</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x08cd" id="EH Small S Shade Chooser">
+      <Class>Character</Class>
+      <Texture>
+         <File>epicHiveObjects16x16</File>
+         <Index>0x2d</Index>
+      </Texture>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x08ce" id="EH Small S Light">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x5f</Index>
+      </Texture>
+      <Size>120</Size>
+      <Static/>
+   </Object>
+   <Object type="0x08cf" id="EH Small S Dark">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x5d</Index>
+      </Texture>
+      <Size>120</Size>
+      <Static/>
+   </Object>
+   <Object type="0x08d0" id="EH Piss Off Dataminers Lel XD">
+      <Class>Character</Class>
+      <Texture>
+         <File>epicHiveObjects16x16</File>
+         <Index>0x2d</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x08d1" id="EH Purple S Dark">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x5c</Index>
+      </Texture>
+      <Size>120</Size>
+      <Static/>
+   </Object>
+   <Object type="0x08d2" id="EH Purple S Light">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x5e</Index>
+      </Texture>
+      <Size>120</Size>
+      <Static/>
+   </Object>
+   <Object type="0x08e0" id="EH Secret Screen Changer">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x08d3" id="EH Small S Wall Left Left">
+      <Class>Wall</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x52</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x51</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0x08d8" id="EH Small S Wall Left Right">
+      <Class>Wall</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x56</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x51</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0x08d4" id="EH Small S Wall Right Left">
+      <Class>Wall</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x56</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x55</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0x08d9" id="EH Small S Wall Right Right">
+      <Class>Wall</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x52</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x55</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0x08d5" id="EH Small S Wall Clean">
+      <Class>Wall</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x54</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x53</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0x08d6" id="EH Small S Wall Top">
+      <Class>Wall</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x56</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x58</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0x08e1" id="EH Small S Wall Top Inverted">
+      <Class>Wall</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x52</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x58</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0x08d7" id="EH Small S Wall Bottom">
+      <Class>Wall</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x52</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x57</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0x08e2" id="EH Small S Wall Bottom Inverted">
+      <Class>Wall</Class>
+      <Texture>
+         <File>epicHiveObjects8x8</File>
+         <Index>0x56</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>epicHiveObjects8x8</File>
+            <Index>0x57</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0x08f2" id="EH SLBY">
+      <Group>SLB</Group>
+      <Class>Character</Class>
+      <DisplayId>Experimental Yellow Soldier Bee 2.0</DisplayId>
+      <Enemy/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>2</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <HitSound>monster/snake_queen_hit</HitSound>
+      <DeathSound>monster/snake_queen_death</DeathSound>
+      <MaxHitPoints>40000</MaxHitPoints>
+      <Defense>20</Defense>
+      <XpMult>1</XpMult>
+      <Flying/>
+      <Z>0.24</Z>
+      <Projectile id="0">
+         <ObjectId>EH Yellow Stinger Small</ObjectId>
+         <Damage>125</Damage>
+         <Speed>40</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>EH Yellow Stinger Large</ObjectId>
+         <Damage>150</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <ConditionEffect duration="2">Dazed</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>EH Yellow Glaive</ObjectId>
+         <Damage>80</Damage>
+         <Speed>30</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration=".8">Paralyzed</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>EH Yellow Ball</ObjectId>
+         <Damage>50</Damage>
+         <Speed>50</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration=".6">Paralyzed</ConditionEffect>
+         <ConditionEffect duration="3">Dazed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x08f3" id="EH SLBR">
+      <Group>SLB</Group>
+      <Class>Character</Class>
+      <DisplayId>Experimental Red Soldier Bee 2.0</DisplayId>
+      <Enemy/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>3</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <HitSound>monster/snake_queen_hit</HitSound>
+      <DeathSound>monster/snake_queen_death</DeathSound>
+      <MaxHitPoints>40000</MaxHitPoints>
+      <Defense>20</Defense>
+      <XpMult>1</XpMult>
+      <Flying/>
+      <Z>0.24</Z>
+      <Projectile id="0">
+         <ObjectId>EH Red Stinger Small</ObjectId>
+         <Damage>90</Damage>
+         <Speed>40</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>EH Red Stinger Large</ObjectId>
+         <Damage>150</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <ConditionEffect duration="4">Armor Broken</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>EH Red Glaive</ObjectId>
+         <Damage>80</Damage>
+         <Speed>30</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration=".8">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>EH Red Ball</ObjectId>
+         <Damage>75</Damage>
+         <Speed>50</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+         <ConditionEffect duration="2">Confused</ConditionEffect>
+         <ConditionEffect duration="5">Armor Broken</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x08f4" id="EH SLBB">
+      <Group>SLB</Group>
+      <Class>Character</Class>
+      <DisplayId>Experimental Blue Soldier Bee 2.0</DisplayId>
+      <Enemy/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>4</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <HitSound>monster/snake_queen_hit</HitSound>
+      <DeathSound>monster/snake_queen_death</DeathSound>
+      <MaxHitPoints>40000</MaxHitPoints>
+      <Defense>20</Defense>
+      <XpMult>1</XpMult>
+      <Flying/>
+      <Z>0.24</Z>
+      <Projectile id="0">
+         <ObjectId>EH Blue Stinger Small</ObjectId>
+         <Damage>100</Damage>
+         <Speed>40</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="1">Quiet</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>EH Blue Stinger Large</ObjectId>
+         <Damage>150</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <ConditionEffect duration="4" target="1">Stasis</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>EH Blue Glaive</ObjectId>
+         <Damage>80</Damage>
+         <Speed>30</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration="2">Quiet</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>EH Blue Ball</ObjectId>
+         <Damage>75</Damage>
+         <Speed>50</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+         <ConditionEffect duration="2">Weak</ConditionEffect>
+         <ConditionEffect duration="5" target="1">Stasis</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x10d7" id="EH Computer">
+      <DisplayId>Computer</DisplayId>
+      <Class>Character</Class>
+      <OccupySquare/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>180</Size>
+      <Z>2.9</Z>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x08e6" id="EH Beekeeper Anchor">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x08e7" id="EH Beekeeper Flame">
+      <Class>Character</Class>
+      <Enemy/>
+      <NoMiniMap/>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <Texture>
+         <File>summerNexusObjects16x16</File>
+         <Index>0x4f</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>summerNexusObjects16x16</File>
+               <Index>0x50</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>summerNexusObjects16x16</File>
+               <Index>0x51</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>summerNexusObjects16x16</File>
+               <Index>0x52</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>summerNexusObjects16x16</File>
+               <Index>0x4f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <DisplayId>The Beekeeper</DisplayId>
+      <Size>100</Size>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>999</Defense>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>90</Damage>
+         <Size>80</Size>
+         <Speed>0</Speed>
+         <LifetimeMS>100</LifetimeMS>
+         <ConditionEffect duration="4.5">Armor Broken</ConditionEffect>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0x08f0" id="EH Beekeeper Flame Short">
+      <Class>Character</Class>
+      <Enemy/>
+      <NoMiniMap/>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <Texture>
+         <File>summerNexusObjects16x16</File>
+         <Index>0x4f</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>summerNexusObjects16x16</File>
+               <Index>0x50</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>summerNexusObjects16x16</File>
+               <Index>0x51</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>summerNexusObjects16x16</File>
+               <Index>0x52</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>summerNexusObjects16x16</File>
+               <Index>0x4f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <DisplayId>The Beekeeper</DisplayId>
+      <Size>80</Size>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>999</Defense>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>90</Damage>
+         <Size>80</Size>
+         <Speed>0</Speed>
+         <LifetimeMS>100</LifetimeMS>
+         <ConditionEffect duration="4.5">Armor Broken</ConditionEffect>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0x08ef" id="EH Secret Flame Spawner">
+      <Class>Character</Class>
+      <DisplayId>The Beekeeper</DisplayId>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <StasisImmune/>
+      <Enemy/>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x08ed" id="EH Secret Bullet Spawner">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <DisplayId>The Beekeeper</DisplayId>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <StasisImmune/>
+      <Enemy/>
+      <Projectile id="0">
+         <ObjectId>Demon Fire Blast</ObjectId>
+         <Damage>75</Damage>
+         <Speed>40</Speed>
+         <Size>100</Size>
+         <LifetimeMS>5000</LifetimeMS>
+         <ConditionEffect duration="3">Confused</ConditionEffect>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>LavaBombBlast</ObjectId>
+         <Damage>120</Damage>
+         <Speed>40</Speed>
+         <Size>120</Size>
+         <LifetimeMS>3875</LifetimeMS>
+         <Boomerang/>
+         <ConditionEffect duration=".6">Confused</ConditionEffect>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0x08f1" id="EH Beekeeper Summoner">
+      <Class>Character</Class>
+      <DisplayId>The Beekeeper</DisplayId>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Enemy/>
+      <Size>0</Size>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x08b3" id="EH Beekeeper">
+      <Class>Character</Class>
+      <DisplayId>The Beekeeper</DisplayId>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>9</Index>
+      </AnimatedTexture>
+      <MaxHitPoints>125000</MaxHitPoints>
+      <Enemy/>
+      <Quest/>
+      <Size>120</Size>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <XpMult>5.128205128205129</XpMult>
+      <Defense>35</Defense>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Fire Bullet</ObjectId>
+         <MinDamage>120</MinDamage>
+         <MaxDamage>160</MaxDamage>
+         <Speed>50</Speed>
+         <Size>120</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <MultiHit/>
+         <Amplitude>1.5</Amplitude>
+         <Frequency>0.25</Frequency>
+         <ParticleTrail color="ffa500"/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Fire Bullet</ObjectId>
+         <MinDamage>120</MinDamage>
+         <MaxDamage>160</MaxDamage>
+         <Speed>60</Speed>
+         <Size>80</Size>
+         <LifetimeMS>2750</LifetimeMS>
+         <MultiHit/>
+         <Wavy/>
+         <ParticleTrail color="ffa500"/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Fire Bullet</ObjectId>
+         <MinDamage>120</MinDamage>
+         <MaxDamage>160</MaxDamage>
+         <Speed>75</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <MultiHit/>
+         <Amplitude>1</Amplitude>
+         <Frequency>0.25</Frequency>
+         <ParticleTrail color="ffa500"/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Demon Fire Blast</ObjectId>
+         <Damage>75</Damage>
+         <Speed>50</Speed>
+         <Size>120</Size>
+         <LifetimeMS>3500</LifetimeMS>
+         <ConditionEffect duration="3">Confused</ConditionEffect>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Demon Fire Blast</ObjectId>
+         <Damage>50</Damage>
+         <Speed>70</Speed>
+         <Size>120</Size>
+         <LifetimeMS>3500</LifetimeMS>
+         <ConditionEffect duration="3">Confused</ConditionEffect>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0x08ea" id="EH Secret Fat Bees">
+      <Group>Secret Bees</Group>
+      <DisplayId>Yellow Killer Bee</DisplayId>
+      <Enemy/>
+      <StunImmune/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>epicHiveChars8x8</File>
+         <Index>2</Index>
+      </AnimatedTexture>
+      <HitSound>monster/scorpions_hit</HitSound>
+      <DeathSound>monster/scorpions_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Defense>25</Defense>
+      <Flying/>
+      <XpMult>0.75</XpMult>
+      <Z>0.24</Z>
+      <Projectile id="0">
+         <ObjectId>EH Yellow Stinger Small</ObjectId>
+         <Damage>130</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1750</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x08eb" id="EH Secret Red Fat Bees">
+      <Group>Secret Bees</Group>
+      <DisplayId>Red Killer Bee</DisplayId>
+      <Enemy/>
+      <ParalyzeImmune/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>epicHiveChars8x8</File>
+         <Index>1</Index>
+      </AnimatedTexture>
+      <HitSound>monster/pythons_hit</HitSound>
+      <DeathSound>monster/pythons_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Defense>25</Defense>
+      <Flying/>
+      <XpMult>0.75</XpMult>
+      <Z>0.24</Z>
+      <Projectile id="0">
+         <ObjectId>EH Red Stinger Small</ObjectId>
+         <Damage>80</Damage>
+         <Speed>70</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x08ec" id="EH Secret Blue Fat Bees">
+      <Group>Secret Bees</Group>
+      <DisplayId>Blue Killer Bee</DisplayId>
+      <Enemy/>
+      <XpMult>0.75</XpMult>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>epicHiveChars8x8</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <HitSound>monster/scorpions_hit</HitSound>
+      <DeathSound>monster/scorpions_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Defense>25</Defense>
+      <Flying/>
+      <Z>0.24</Z>
+      <Projectile id="0">
+         <ObjectId>EH Blue Stinger Small</ObjectId>
+         <Damage>100</Damage>
+         <Speed>75</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1300</LifetimeMS>
+         <ConditionEffect duration="2">Weak</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x10da" id="EH Event Hive Summoner">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <StasisImmune/>
+      <Enemy/>
+      <Encounter/>
+      <PerRealmMax>1</PerRealmMax>
+      <Hero/>
+   </Object>
+   <Object type="0x08ac" id="EH Event Taunt Controller">
+      <Class>Character</Class>
+      <Enemy/>
+      <DeathSound>silence</DeathSound>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <MaxHitPoints>1</MaxHitPoints>
+      <NoMiniMap/>
+      <Size>60</Size>
+      <ShadowSize>0</ShadowSize>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x10f6" id="EH Event Grenade Summoner">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <DisplayId>Killer Bee Nest</DisplayId>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x10d8" id="EH Event Hive">
+      <Class>Character</Class>
+      <Enemy/>
+      <DisplayId>Killer Bee Nest</DisplayId>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>7</Index>
+      </AnimatedTexture>
+      <Size>220</Size>
+      <Sound id="0">monster/wooden_walls_death</Sound>
+      <HitSound>monster/wooden_walls_hit</HitSound>
+      <DeathSound>monster/wooden_walls_death</DeathSound>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>40</Defense>
+      <XpMult>5.128205128205129</XpMult>
+      <StasisImmune/>
+      <DontFaceAttacks/>
+      <God/>
+      <Quest/>
+      <Level>20</Level>
+      <Projectile id="0">
+         <ObjectId>EH Red Ball</ObjectId>
+         <Damage>75</Damage>
+         <Speed>30</Speed>
+         <Size>100</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <ConditionEffect duration="3">Confused</ConditionEffect>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>EH Blue Ball</ObjectId>
+         <Damage>90</Damage>
+         <Speed>35</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2800</LifetimeMS>
+         <ConditionEffect duration="5" target="1">Stasis</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>EH Yellow Ball</ObjectId>
+         <Damage>90</Damage>
+         <Speed>25</Speed>
+         <Size>100</Size>
+         <LifetimeMS>3200</LifetimeMS>
+         <ConditionEffect duration=".6">Paralyzed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>EH Hive Shot</ObjectId>
+         <Damage>100</Damage>
+         <Speed>50</Speed>
+         <Size>120</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <ConditionEffect duration="2">Dazed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>EH Hive Spiral Shot</ObjectId>
+         <Damage>100</Damage>
+         <Speed>55</Speed>
+         <Size>120</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <ConditionEffect duration="2">Armor Broken</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>EH Hive Range Shot</ObjectId>
+         <Damage>100</Damage>
+         <Speed>60</Speed>
+         <Size>120</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <ConditionEffect duration="2">Quiet</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x10e0" id="EH Fake Event Hive">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <StasisImmune/>
+      <HitSound>monster/wooden_walls_hit</HitSound>
+      <DeathSound>monster/wooden_walls_death</DeathSound>
+   </Object>
+   <Object type="0x10f1" id="EH Portal Spawner">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x10f7" id="EH Red Loot">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <MaxHitPoints>75000</MaxHitPoints>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <Enemy/>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x10f8" id="EH Blue Loot">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <MaxHitPoints>75000</MaxHitPoints>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <StasisImmune/>
+      <Enemy/>
+   </Object>
+   <Object type="0x10f9" id="EH Yellow Loot">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <MaxHitPoints>75000</MaxHitPoints>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <StasisImmune/>
+      <Enemy/>
+   </Object>
+   <Object type="0x10fc" id="EH Yellow Minor Loot">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <MaxHitPoints>75000</MaxHitPoints>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <StasisImmune/>
+      <Enemy/>
+   </Object>
+   <Object type="0x10fd" id="EH Red Minor Loot">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <MaxHitPoints>75000</MaxHitPoints>
+      <NoMiniMap/>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <StasisImmune/>
+      <Enemy/>
+   </Object>
+   <Object type="0x10fe" id="EH Blue Minor Loot">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <MaxHitPoints>75000</MaxHitPoints>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <StasisImmune/>
+      <Enemy/>
+   </Object>
+   <Object type="0x10f0" id="EH Event Hive Corpse">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>8</Index>
+      </AnimatedTexture>
+      <DisplayId>Destroyed Killer Bee Nest</DisplayId>
+      <Enemy/>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Size>80</Size>
+      <NoMiniMap/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>EH Red Ball</ObjectId>
+         <Damage>75</Damage>
+         <Speed>40</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <ConditionEffect duration="3">Confused</ConditionEffect>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>EH Blue Ball</ObjectId>
+         <Damage>90</Damage>
+         <Speed>40</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <ConditionEffect duration="5" target="1">Stasis</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>EH Yellow Ball</ObjectId>
+         <Damage>90</Damage>
+         <Speed>40</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <ConditionEffect duration=".6">Paralyzed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>EH Yellow Ball</ObjectId>
+         <Damage>90</Damage>
+         <Speed>40</Speed>
+         <Size>100</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration=".4">Paralyzed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>EH Red Ball</ObjectId>
+         <Damage>75</Damage>
+         <Speed>40</Speed>
+         <Size>100</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration="3">Confused</ConditionEffect>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>EH Blue Ball</ObjectId>
+         <Damage>90</Damage>
+         <Speed>40</Speed>
+         <Size>100</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration="5" target="1">Stasis</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x10e8" id="EH Guardian Transitioner">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x10eb" id="EH Guardian Transitioner2">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x10e7" id="EH Guardian Controller">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <NoMiniMap/>
+      <Size>80</Size>
+      <ShadowSize>0</ShadowSize>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x10ea" id="EH Blue Guardian Corpse">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x10e9" id="EH Blue Guardian Anchor">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x10d9" id="EH Hive Bomb">
+      <Class>Character</Class>
+      <Enemy/>
+      <DisplayId>Nest Colony</DisplayId>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>6</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <Sound id="0">monster/wooden_walls_death</Sound>
+      <HitSound>monster/wooden_walls_hit</HitSound>
+      <DeathSound>monster/wooden_walls_death</DeathSound>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>40</Defense>
+      <XpMult>1.0</XpMult>
+      <StasisImmune/>
+      <DontFaceAttacks/>
+      <Projectile id="0">
+         <ObjectId>EH Hive Range Shot</ObjectId>
+         <Damage>60</Damage>
+         <Speed>30</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="5">Quiet</ConditionEffect>
+         <ConditionEffect duration=".6">Weak</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>EH Hive Shot</ObjectId>
+         <Damage>100</Damage>
+         <Speed>45</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="2">Dazed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>EH Hive Spiral Shot</ObjectId>
+         <Damage>100</Damage>
+         <Speed>65</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>EH Blue Ball</ObjectId>
+         <Damage>80</Damage>
+         <Speed>30</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="5" target="1">Stasis</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>EH Yellow Ball</ObjectId>
+         <Damage>100</Damage>
+         <Speed>50</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration=".6">Paralyzed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>EH Red Ball</ObjectId>
+         <Damage>75</Damage>
+         <Speed>40</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="3">Confused</ConditionEffect>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x10df" id="EH Ev Bomb Boom">
+      <Class>Character</Class>
+      <Enemy/>
+      <DisplayId>Nest Colony</DisplayId>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <HitSound>monster/wooden_walls_death</HitSound>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <StasisImmune/>
+      <XpMult>0</XpMult>
+      <Projectile id="0">
+         <ObjectId>EH Hive Spiral Shot</ObjectId>
+         <Damage>100</Damage>
+         <Speed>40</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>EH Hive Shot</ObjectId>
+         <Damage>100</Damage>
+         <Speed>30</Speed>
+         <Size>80</Size>
+         <LifetimeMS>3500</LifetimeMS>
+         <ArmorPiercing/>
+         <ConditionEffect duration="2">Dazed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>EH Hive Range Shot</ObjectId>
+         <Damage>60</Damage>
+         <Speed>50</Speed>
+         <Size>80</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <ConditionEffect duration="5">Quiet</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x10ff" id="EH Yellow Boss Anchor">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <Enemy/>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x10e4" id="EH Yellow Guardian Bee">
+      <Class>Character</Class>
+      <DisplayId>Yellow Beehemoth</DisplayId>
+      <Enemy/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>10</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <HitSound>monster/snake_queen_hit</HitSound>
+      <DeathSound>monster/snake_queen_death</DeathSound>
+      <MaxHitPoints>75000</MaxHitPoints>
+      <Defense>25</Defense>
+      <XpMult>5.128205128205129</XpMult>
+      <Flying/>
+      <Quest/>
+      <God/>
+      <Level>20</Level>
+      <KeepDamageRecord/>
+      <Z>0.24</Z>
+      <Projectile id="0">
+         <ObjectId>EH Yellow Stinger Large</ObjectId>
+         <Damage>120</Damage>
+         <Speed>50</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <ConditionEffect duration="2">Dazed</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>EH Yellow Stinger Small</ObjectId>
+         <Damage>100</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>EH Yellow Glaive</ObjectId>
+         <Damage>90</Damage>
+         <Speed>55</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>EH Yellow Ball</ObjectId>
+         <Damage>70</Damage>
+         <Speed>40</Speed>
+         <Size>100</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration=".6">Paralyzed</ConditionEffect>
+         <ConditionEffect duration="1">Dazed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>EH Yellow Ball</ObjectId>
+         <Damage>60</Damage>
+         <Speed>100</Speed>
+         <Size>100</Size>
+         <LifetimeMS>400</LifetimeMS>
+         <ConditionEffect duration=".6">Paralyzed</ConditionEffect>
+         <ConditionEffect duration="1">Dazed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x10e5" id="EH Red Guardian Bee">
+      <Class>Character</Class>
+      <DisplayId>Red Beehemoth</DisplayId>
+      <Enemy/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>11</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <HitSound>monster/snake_queen_hit</HitSound>
+      <DeathSound>monster/snake_queen_death</DeathSound>
+      <MaxHitPoints>75000</MaxHitPoints>
+      <Defense>25</Defense>
+      <XpMult>5.128205128205129</XpMult>
+      <Flying/>
+      <Z>0.24</Z>
+      <Quest/>
+      <God/>
+      <Level>20</Level>
+      <KeepDamageRecord/>
+      <Projectile id="0">
+         <ObjectId>EH Red Stinger Large</ObjectId>
+         <Damage>100</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <ConditionEffect duration="4">Armor Broken</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>EH Red Stinger Small</ObjectId>
+         <Damage>80</Damage>
+         <Speed>70</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>EH Red Glaive</ObjectId>
+         <Damage>90</Damage>
+         <Speed>65</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <ConditionEffect duration="1.4">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>EH Red Ball</ObjectId>
+         <Damage>75</Damage>
+         <Speed>40</Speed>
+         <Size>100</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration=".6">Confused</ConditionEffect>
+         <ConditionEffect duration="1">Armor Broken</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x10e6" id="EH Blue Guardian Bee">
+      <Class>Character</Class>
+      <DisplayId>Blue Beehemoth</DisplayId>
+      <Enemy/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>12</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <HitSound>monster/snake_queen_hit</HitSound>
+      <DeathSound>monster/snake_queen_death</DeathSound>
+      <MaxHitPoints>75000</MaxHitPoints>
+      <Defense>25</Defense>
+      <XpMult>5.128205128205129</XpMult>
+      <Flying/>
+      <Z>0.24</Z>
+      <Quest/>
+      <God/>
+      <Level>20</Level>
+      <KeepDamageRecord/>
+      <Projectile id="0">
+         <ObjectId>EH Blue Stinger Large</ObjectId>
+         <Damage>120</Damage>
+         <Speed>70</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <ConditionEffect duration="4" target="1">Stasis</ConditionEffect>
+         <ConditionEffect duration="2">Weak</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>EH Blue Stinger Small</ObjectId>
+         <Damage>100</Damage>
+         <Speed>80</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="2" target="1">Stasis</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>EH Blue Glaive</ObjectId>
+         <Damage>100</Damage>
+         <Speed>75</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <ConditionEffect duration="3">Quiet</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>EH Blue Ball</ObjectId>
+         <Damage>90</Damage>
+         <Speed>50</Speed>
+         <Size>100</Size>
+         <LifetimeMS>3500</LifetimeMS>
+         <ConditionEffect duration="6" target="1">Stasis</ConditionEffect>
+         <ConditionEffect duration=".6">Weak</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>EH Blue Ball</ObjectId>
+         <Damage>60</Damage>
+         <Speed>50</Speed>
+         <Size>100</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <ConditionEffect duration="4" target="1">Stasis</ConditionEffect>
+         <ConditionEffect duration=".6">Weak</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x10de" id="EH Ev Fat Bees">
+      <DisplayId>Yellow Nest Colony Guardian</DisplayId>
+      <Enemy/>
+      <StunImmune/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>epicHiveChars8x8</File>
+         <Index>8</Index>
+      </AnimatedTexture>
+      <HitSound>monster/scorpions_hit</HitSound>
+      <DeathSound>monster/scorpions_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Defense>25</Defense>
+      <Flying/>
+      <Z>0.24</Z>
+      <XpMult>.75</XpMult>
+      <Projectile id="0">
+         <ObjectId>EH Yellow Stinger Small</ObjectId>
+         <Damage>130</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1750</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x10dc" id="EH Ev Red Fat Bees">
+      <DisplayId>Red Nest Colony Guardian</DisplayId>
+      <Enemy/>
+      <ParalyzeImmune/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>epicHiveChars8x8</File>
+         <Index>9</Index>
+      </AnimatedTexture>
+      <HitSound>monster/pythons_hit</HitSound>
+      <DeathSound>monster/pythons_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Defense>25</Defense>
+      <Flying/>
+      <XpMult>.75</XpMult>
+      <Z>0.24</Z>
+      <Projectile id="0">
+         <ObjectId>EH Red Stinger Small</ObjectId>
+         <Damage>80</Damage>
+         <Speed>70</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x10dd" id="EH Ev Blue Fat Bees">
+      <DisplayId>Blue Nest Colony Guardian</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>epicHiveChars8x8</File>
+         <Index>10</Index>
+      </AnimatedTexture>
+      <HitSound>monster/scorpions_hit</HitSound>
+      <DeathSound>monster/scorpions_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Defense>25</Defense>
+      <Flying/>
+      <Z>0.24</Z>
+      <XpMult>.75</XpMult>
+      <Projectile id="0">
+         <ObjectId>EH Blue Stinger Small</ObjectId>
+         <Damage>100</Damage>
+         <Speed>75</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1300</LifetimeMS>
+         <ConditionEffect duration="2">Weak</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x10e1" id="EH Ev Chase Fat Bees">
+      <Group>Ev Busy Bees</Group>
+      <DisplayId>Yellow Nest Colony Guardian</DisplayId>
+      <Enemy/>
+      <ParalyzeImmune/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>epicHiveChars8x8</File>
+         <Index>8</Index>
+      </AnimatedTexture>
+      <HitSound>monster/scorpions_hit</HitSound>
+      <DeathSound>monster/scorpions_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Defense>25</Defense>
+      <Flying/>
+      <XpMult>.75</XpMult>
+      <Z>0.24</Z>
+      <Projectile id="0">
+         <ObjectId>EH Yellow Stinger Small</ObjectId>
+         <Damage>130</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1750</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x10e2" id="EH Ev Chase Red Fat Bees">
+      <Group>Ev Busy Bees</Group>
+      <DisplayId>Red Nest Colony Guardian</DisplayId>
+      <Enemy/>
+      <ParalyzeImmune/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>epicHiveChars8x8</File>
+         <Index>9</Index>
+      </AnimatedTexture>
+      <HitSound>monster/pythons_hit</HitSound>
+      <DeathSound>monster/pythons_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Defense>25</Defense>
+      <Flying/>
+      <XpMult>.75</XpMult>
+      <Z>0.24</Z>
+      <Projectile id="0">
+         <ObjectId>EH Red Stinger Small</ObjectId>
+         <Damage>80</Damage>
+         <Speed>70</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x10e3" id="EH Ev Chase Blue Fat Bees">
+      <Group>Ev Busy Bees</Group>
+      <DisplayId>Blue Nest Colony Guardian</DisplayId>
+      <Enemy/>
+      <ParalyzeImmune/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>epicHiveChars8x8</File>
+         <Index>10</Index>
+      </AnimatedTexture>
+      <HitSound>monster/scorpions_hit</HitSound>
+      <DeathSound>monster/scorpions_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Defense>25</Defense>
+      <Flying/>
+      <XpMult>.75</XpMult>
+      <Z>0.24</Z>
+      <Projectile id="0">
+         <ObjectId>EH Blue Stinger Small</ObjectId>
+         <Damage>100</Damage>
+         <Speed>75</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1300</LifetimeMS>
+         <ConditionEffect duration="2">Weak</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+</Objects>

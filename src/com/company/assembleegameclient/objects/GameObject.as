@@ -75,7 +75,6 @@ public class GameObject extends BasicObject {
     private var isChargingTransformSet:Boolean = false;
     public var props_:ObjectProperties;
     public var name_:String;
-    public var radius_:Number = 0.5;
     public var facing_:Number = 0;
     public var flying_:Boolean = false;
     public var attackAngle_:Number = 0;

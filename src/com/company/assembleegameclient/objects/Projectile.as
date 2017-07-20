@@ -239,10 +239,9 @@ public class Projectile extends BasicObject {
                 _local_5 = BloodComposition.getColors(this.texture_);
                 map_.addObj(new HitEffect(_local_5, 100, 3, this.angle_, this.projProps_.speed_), _local_4.x, _local_4.y);
             }
-			if (Parameters.data_.PassesCover && this.ownerId_ == map_.player_.objectId_) {
-				return true;
+			if (!(Parameters.data_.PassesCover && this.ownerId_ == map_.player_.objectId_)) { //should fix the fake enemy invulnerability bug
+				return false;
 			}
-            return false;
         }
         var _local_6:GameObject = this.getHit(_local_4.x, _local_4.y);
         if (_local_6 != null) {
@@ -412,32 +411,28 @@ public class Projectile extends BasicObject {
         return true;
     }
 
-    public function getHit(_arg_1:Number, _arg_2:Number):GameObject {
-        var _local_5:GameObject;
-        var _local_6:Number;
-        var _local_7:Number;
-        var _local_8:Number;
+    public function getHit(x:Number, y:Number):GameObject {
+        var go:GameObject;
+        var hitX:Number;
+        var hitY:Number;
         var _local_9:Number;
         var _local_3:Number = Number.MAX_VALUE;
-        var _local_4:GameObject;
-        for each (_local_5 in map_.goDict_) {
-            if (!_local_5.isInvincible()) {
-                if (!_local_5.isStasis()) {
-                    if (((((this.damagesEnemies_) && (_local_5.props_.isEnemy_))) || (((this.damagesPlayers_) && (_local_5.props_.isPlayer_))))) {
-                        if (!((_local_5.dead_) || (_local_5.isPaused()))) {
-                            _local_6 = (((_local_5.x_ > _arg_1)) ? (_local_5.x_ - _arg_1) : (_arg_1 - _local_5.x_));
-                            _local_7 = (((_local_5.y_ > _arg_2)) ? (_local_5.y_ - _arg_2) : (_arg_2 - _local_5.y_));
-                            if (!(((_local_6 > _local_5.radius_)) || ((_local_7 > _local_5.radius_)))) {
-                                if (!((this.projProps_.multiHit_) && (!((this.multiHitDict_[_local_5] == null))))) {
-                                    if (_local_5 == map_.player_) {
-                                        return (_local_5);
-                                    }
-                                    _local_8 = Math.sqrt(((_local_6 * _local_6) + (_local_7 * _local_7)));
-                                    _local_9 = ((_local_6 * _local_6) + (_local_7 * _local_7));
-                                    if (_local_9 < _local_3) {
-                                        _local_3 = _local_9;
-                                        _local_4 = _local_5;
-                                    }
+        var hit:GameObject;
+        for each (go in map_.goDict_) {
+            if (!go.isInvincible() && !go.isStasis()) {
+                if ((damagesEnemies_ && go.props_.isEnemy_) || (damagesPlayers_ && go.props_.isPlayer_)) {
+                    if (!(go.dead_ || go.isPaused())) { //would this fix the invisible enemy bug or cause dc? or maybe a spot that you can't shoot through?
+                        hitX = go.x_ > x ? go.x_ - x : x - go.x_; //abs(go.x_-x)
+                        hitY = go.y_ > y ? go.y_ - y : y - go.y_;
+                        if (!(hitX > 0.5 || hitY > 0.5)) { //hit radius
+                            if (!(projProps_.multiHit_ && this.multiHitDict_[go] != null)) {
+                                if (go == map_.player_) {
+                                    return (go);
+                                }
+                                _local_9 = hitX * hitX + hitY * hitY;
+                                if (_local_9 < _local_3) {
+                                    _local_3 = _local_9;
+                                    hit = go;
                                 }
                             }
                         }
@@ -445,14 +440,13 @@ public class Projectile extends BasicObject {
                 }
             }
         }
-        return (_local_4);
+        return hit;
     }
 
     override public function draw(_arg_1:Vector.<IGraphicsData>, _arg_2:Camera, _arg_3:int):void {
         if (MapUserInput.skipRender == true)
-        {
             return;
-        }
+
         var _local_6:uint;
         var _local_7:uint;
         var _local_8:int;

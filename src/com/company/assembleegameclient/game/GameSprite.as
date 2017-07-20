@@ -131,14 +131,6 @@ public class GameSprite extends AGameSprite {
 	}
 	
 	public function addChatPlayerMenu(param1:Player, param2:Number, param3:Number, param4:String = null, param5:Boolean = false, param6:Boolean = false):void {
-        /*if (_arg_4 == null) {
-			this.removeChatPlayerMenu();
-			this.chatPlayerMenu = new PlayerMenu();
-            this.chatPlayerMenu.init(this, _arg_1);
-			this.chatPlayerMenu.x = _arg_2;
-			this.chatPlayerMenu.y = (_arg_3 - this.chatPlayerMenu.height);
-			addChild(this.chatPlayerMenu);
-        }*/
 		this.removeChatPlayerMenu();
 		this.chatPlayerMenu = new PlayerMenu();
 		if (param4 == null) {
@@ -157,27 +149,6 @@ public class GameSprite extends AGameSprite {
 		addChild(this.chatPlayerMenu);
 		this.chatMenuPositionFixed();
     }
-	/*
-         this.removeChatPlayerMenu();
-         this.chatPlayerMenu = new PlayerMenu();
-         if(param4 == null)
-         {
-            this.chatPlayerMenu.init(this,param1);
-         }
-         else if(param6)
-         {
-            this.chatPlayerMenu.initDifferentServer(this,param4,param5,param6);
-         }
-         else
-         {
-            if(param4.length > 0 && (param4.charAt(0) == "#" || param4.charAt(0) == "*" || param4.charAt(0) == "@"))
-            {
-               return;
-            }
-            this.chatPlayerMenu.initDifferentServer(this,param4,param5);
-         }
-         addChild(this.chatPlayerMenu);
-         this.chatMenuPositionFixed();*/
 
     public function removeChatPlayerMenu():void {
         if (this.chatPlayerMenu != null && this.chatPlayerMenu.parent != null) {

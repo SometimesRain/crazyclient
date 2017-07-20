@@ -14,6 +14,9 @@ public class AOEEffect extends ParticleEffect {
     }
 
     override public function runNormalRendering(_arg_1:int, _arg_2:int):Boolean {
+		if (this.color_ == -1) {
+			return false;
+		}
         var _local_7:Number;
         var _local_8:Point;
         var _local_9:Particle;
@@ -34,6 +37,9 @@ public class AOEEffect extends ParticleEffect {
     }
 
     override public function runEasyRendering(_arg_1:int, _arg_2:int):Boolean {
+		if (this.color_ == -1) {
+			return false;
+		}
         var _local_7:Number;
         var _local_8:Point;
         var _local_9:Particle;

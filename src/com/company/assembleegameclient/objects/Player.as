@@ -176,7 +176,7 @@ public class Player extends Character {
     public var ignored_:Boolean = false;
     public var distSqFromThisPlayer_:Number = 0;
     protected var rotate_:Number = 0;
-    protected var relMoveVec_:Point = null;
+    public var relMoveVec_:Point = null;
     protected var moveMultiplier_:Number = 1;
     public var attackPeriod_:int = 0;
     public var lastAltAttack_:int = 0; //custom
@@ -197,9 +197,9 @@ public class Player extends Character {
     private var breathFill_:GraphicsSolidFill = null;
     private var breathPath_:GraphicsPath = null;
 	
-    public var collect:int = 0;
-	
-	public var thunderTime:int = 0;
+    public var collect:int;
+	public var thunderTime:int;
+	public var recordPointer:int;
 
     public function Player(_arg_1:XML) {
         this.ip_ = new IntPoint();
@@ -1202,9 +1202,28 @@ public class Player extends Character {
 							abilFreq = 4000 * wismod - 200;
 						}
 						break;
+					case 0xa52: //T0 seal
+					case 0xad9: //T1 seal
+					case 0xa53: //T2 seal
+					case 0xada: //T3 seal
+					case 0xa54: //T4 seal
+					
+					case 0xa33: //T4 tome
+					case 0xa5b: //T5 tome
+					case 0xb25: //T6 tome
+					case 0xc09: //puri
+						if (Parameters.data_.palaSpam) {
+							abilFreq = 500;
+						}
+						break;
 					case 0xc1e: //prot
 					case 0x16de: //ice prot
-						abilFreq = 4000 * wismod - 200;
+						if (Parameters.data_.palaSpam) {
+							abilFreq = 500;
+						}
+						else {
+							abilFreq = 4000 * wismod - 200;
+						}
 						break;
 				}
 				if (abilFreq > 0) {
@@ -1243,11 +1262,9 @@ public class Player extends Character {
                 map_.addObj(this.healingEffect_, x_, y_);
             }
         }
-        else {
-            if (this.healingEffect_ != null) {
-                map_.removeObj(this.healingEffect_.objectId_);
-                this.healingEffect_ = null;
-            }
+        else if (this.healingEffect_ != null) {
+            map_.removeObj(this.healingEffect_.objectId_);
+            this.healingEffect_ = null;
         }
         if ((((map_.player_ == this)) && (isPaused()))) {
             return (true);
@@ -1260,11 +1277,22 @@ public class Player extends Character {
                 Parameters.data_.cameraAngle = _local_3;
             }
 			_local_4 = this.getMoveSpeed();
-			/*
-            float angle = (float)Math.Atan2(target.Y - start.Y, target.X - start.X);
-            if (angle < 0)
-                angle += (float)Math.PI * 2;*/
-			if (followTarget != null) {
+			if (map_.gs_.gsc_.record == 2) {
+				var recorded:Vector.<Point> = map_.gs_.gsc_.recorded;
+				var point:Point = recorded[recordPointer];
+				_local_5 = (point.y - y_) * (point.y - y_) + (point.x - x_) * (point.x - x_); //distance to point
+				if (_local_5 < 0.1) { //we are too close
+                    recordPointer++;
+					if (recordPointer >= recorded.length) { //wrap around if record has already been played
+						recordPointer = 0;
+					}
+					point = recorded[recordPointer]; //select next point
+				}
+				_local_5 = Math.atan2(point.y - y_, point.x - x_); //start moving towards point
+				moveVec_.x = _local_4 * Math.cos(_local_5);
+				moveVec_.y = _local_4 * Math.sin(_local_5);
+			}
+			else if (followTarget != null) {
 				_local_5 = (followTarget.y_ - y_) * (followTarget.y_ - y_) + (followTarget.x_ - x_) * (followTarget.x_ - x_);
 				if (_local_5 < 0.1) { //make smaller?
                     moveVec_.x = 0;
@@ -1949,7 +1977,7 @@ public class Player extends Character {
         if (_local_4 < (attackStart_ + this.attackPeriod_)) {
             return;
         }
-        doneAction(map_.gs_, Tutorial.ATTACK_ACTION);
+        //doneAction(map_.gs_, Tutorial.ATTACK_ACTION);
         attackAngle_ = _arg_1;
         attackStart_ = _local_4;
         this.doShoot(attackStart_, _local_2, _local_3, attackAngle_, true);

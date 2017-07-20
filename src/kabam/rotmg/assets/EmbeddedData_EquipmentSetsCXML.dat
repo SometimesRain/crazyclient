@@ -82,4 +82,15 @@
       <ActivateOnEquipAll stat="22" amount="2">IncrementStat</ActivateOnEquipAll>
       <ActivateOnEquipAll stat="27" amount="5">IncrementStat</ActivateOnEquipAll>
    </EquipmentSet>
+   <EquipmentSet type="0x000f" id="Swarming Huntress Set">
+      <Setpiece slot="0" itemtype="0x08f7">Equipment</Setpiece>
+      <Setpiece slot="1" itemtype="0x08f8">Equipment</Setpiece>
+      <Setpiece slot="2" itemtype="0x08f9">Equipment</Setpiece>
+      <Setpiece slot="3" itemtype="0x08fa">Equipment</Setpiece>
+      <ActivateOnEquipAll skinType="0x08fb" size="80" color="ffffff" bulletType="BeeityArrow">ChangeSkin</ActivateOnEquipAll>
+      <ActivateOnEquipAll stat="20" amount="7">IncrementStat</ActivateOnEquipAll>
+      <ActivateOnEquipAll stat="22" amount="8">IncrementStat</ActivateOnEquipAll>
+      <ActivateOnEquipAll stat="28" amount="11">IncrementStat</ActivateOnEquipAll>
+      <ActivateOnEquipAll stat="21" amount="2">IncrementStat</ActivateOnEquipAll>
+   </EquipmentSet>
 </EquipmentSets>

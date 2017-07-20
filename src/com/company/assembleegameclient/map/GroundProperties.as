@@ -9,6 +9,7 @@ public class GroundProperties {
 
     public var type_:int;
     public var id_:String;
+	public var displayId_:String;
     public var noWalk_:Boolean = true;
     public var minDamage_:int = 0;
     public var maxDamage_:int = 0;
@@ -37,7 +38,10 @@ public class GroundProperties {
         this.animate_ = new AnimateProperties();
         super();
         this.type_ = int(_arg_1.@type);
-        this.id_ = String(_arg_1.@id);
+		this.displayId_ = this.id_ = String(_arg_1.@id);
+		if (_arg_1.hasOwnProperty("DisplayId")) {
+			this.displayId_ = String(_arg_1.DisplayId);
+		}
         this.noWalk_ = _arg_1.hasOwnProperty("NoWalk");
         if (_arg_1.hasOwnProperty("MinDamage")) {
             this.minDamage_ = int(_arg_1.MinDamage);
