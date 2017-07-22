@@ -58,7 +58,6 @@ public class Options extends Sprite {
     public static const CHAT_COMMAND:String = "chatCommand";
     public static const CHAT:String = "chat";
     public static const TELL:String = "tell";
-    public static const HACK:String = "hackChat";
     public static const GUILD_CHAT:String = "guildChat";
     public static const SCROLL_CHAT_UP:String = "scrollChatUp";
     public static const SCROLL_CHAT_DOWN:String = "scrollChatDown";

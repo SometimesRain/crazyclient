@@ -161,9 +161,6 @@ public class ChatMediator extends Mediator {
 			else if (_arg_1 == this.shortcuts.getTellShortcut()) {
 				this.triggerOrPromptRegistration((("/tell " + this.tellModel.getNext()) + " "));
 			}
-			else if (_arg_1 == this.shortcuts.getHackShortcut()) {
-				this.triggerOrPromptRegistration("/b ");
-			}
         }
     }
 

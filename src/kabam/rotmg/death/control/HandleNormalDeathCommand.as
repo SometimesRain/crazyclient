@@ -28,13 +28,7 @@ public class HandleNormalDeathCommand {
 
     public function execute():void {
         this.fameVO = new SimpleFameVO(this.death.accountId_, this.death.charId_);
-        this.updateParameters();
         this.gotoFameView();
-    }
-
-    private function updateParameters():void {
-        Parameters.data_.needsRandomRealm = false;
-        Parameters.save();
     }
 
     private function gotoFameView():void {

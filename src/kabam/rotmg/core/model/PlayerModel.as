@@ -52,7 +52,7 @@ public class PlayerModel {
     }
 
     public function isNewPlayer():Boolean {
-        return (((Parameters.data_.needsTutorial) && ((this.charList.nextCharId_ == 1))));
+        return false;
     }
 
     public function getMaxCharacters():int {

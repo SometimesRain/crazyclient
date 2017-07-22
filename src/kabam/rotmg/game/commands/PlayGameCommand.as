@@ -233,19 +233,7 @@ public class PlayGameCommand {
     }
 
     private function getInitialGameId():int {
-        var _local_1:int;
-        /*if (Parameters.data_.needsTutorial) {
-            _local_1 = Parameters.TUTORIAL_GAMEID;
-        }
-        else {*/
-            if (Parameters.data_.needsRandomRealm) {
-                _local_1 = Parameters.RANDOM_REALM_GAMEID;
-            }
-            else {
-                _local_1 = Parameters.NEXUS_GAMEID;
-            }
-        //}
-        return (_local_1);
+		return -2;
     }
 
 

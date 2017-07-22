@@ -14,7 +14,7 @@ public class Parameters {
 
     public static const BUILD_VERSION:String = "X15.1";
     public static const MINOR_VERSION:String = "0";
-    public static const CRAZY_VERSION:String = "v9.5";
+    public static const CRAZY_VERSION:String = "v9.5b";
     public static const ENABLE_ENCRYPTION:Boolean = true;
     public static const PORT:int = 2050;
     public static const ALLOW_SCREENSHOT_MODE:Boolean = false;
@@ -170,8 +170,6 @@ public class Parameters {
         setDefault("playPewPew", true);
         setDefault("centerOnPlayer", true);
         setDefault("preferredServer", null);
-        setDefault("needsTutorial", true);
-        setDefault("needsRandomRealm", true);
         setDefault("cameraAngle", ((7 * Math.PI) / 4));
         setDefault("defaultCameraAngle", ((7 * Math.PI) / 4));
         setDefault("showQuestPortraits", true);

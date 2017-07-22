@@ -29,8 +29,6 @@ public class LeavePetYard extends PetDialog {
 
     private function onExitToNexus(_arg_1:Event):void {
         this.gameSprite.gsc_.escape();
-        Parameters.data_.needsRandomRealm = false;
-        Parameters.save();
         this.closeDialogSignal.dispatch();
     }
 

@@ -704,8 +704,6 @@ public class MapUserInput {
             case Parameters.data_.escapeToNexus2:
                 this.exitGame.dispatch();
                 this.gs_.gsc_.escape();
-                Parameters.data_.needsRandomRealm = false;
-                Parameters.save();
                 break;
             case Parameters.data_.friendList:
                 Parameters.data_.friendListDisplayFlag = !(Parameters.data_.friendListDisplayFlag);
