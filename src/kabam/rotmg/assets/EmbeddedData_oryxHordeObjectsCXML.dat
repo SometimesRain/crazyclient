@@ -1,0 +1,1673 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x203d" id="Oryx Horde Small Burst">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x2a</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x203c" id="Oryx Horde Big X Proj">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x29</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x203b" id="Oryx Horde Big Burst">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x28</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x203a" id="Oryx Horde Shiny Orb">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x27</Index>
+      </Texture>
+   </Object>
+   <Object type="0x2039" id="Oryx Horde Smaall Circle">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x26</Index>
+      </Texture>
+   </Object>
+   <Object type="0x2038" id="Oryx Horde Thick Cross">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x25</Index>
+      </Texture>
+   </Object>
+   <Object type="0x2037" id="Oryx Horde Small Dark Burst">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x24</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x2036" id="Oryx Horde Medium Burst">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x23</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x2035" id="Oryx Horde Plain White">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x22</Index>
+      </Texture>
+   </Object>
+   <Object type="0x2034" id="Oryx Horde Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x21</Index>
+      </Texture>
+   </Object>
+   <Object type="0x2033" id="Oryx small X Proj">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x20</Index>
+      </Texture>
+   </Object>
+   <Object type="0x2030" id="Oryx Darkness Trap Proj">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x1b</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x2031" id="Oryx Daze Trap Proj">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x1c</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x2032" id="Oryx Confuse Trap Proj">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x1d</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x202b" id="Oryx Spirit proj">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x19</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x2025" id="Oryx Statue Slow Proj">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x0d</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x2017" id="Hook Projectile">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x13</Index>
+      </Texture>
+   </Object>
+   <Object type="0x2016" id="Link Projectile">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x14</Index>
+      </Texture>
+   </Object>
+   <Object type="0x2f02" id="Big Grey Mossy Projectile">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x07</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x2000" id="Black Mossy Projectile">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x06</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x1fff" id="Grey Mossy Projectile">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x05</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1ffb" id="Small Mossy Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x04</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1ffa" id="Big Mossy Blast">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x03</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1ff9" id="Small Mossy line">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x02</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1ff8" id="Small Mossy V">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x01</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1ff7" id="Small Mossy zigzag">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x00</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1ff6" id="Big Mossy Stone Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>oryxHordeObjects16x16</File>
+         <Index>0x08</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x1ff5" id="Big Stone bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>oryxHordeObjects16x16</File>
+         <Index>0x07</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x1ff4" id="Dark Mossy Boomerang">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>oryxHordeObjects16x16</File>
+         <Index>0x06</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1ff3" id="Round Axe">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>oryxHordeObjects16x16</File>
+         <Index>0x05</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1fe9" id="Light Mossy Boomerang">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>oryxHordeObjects16x16</File>
+         <Index>0x04</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1fe7" id="War Bullet">
+      <Class>Projectile</Class>
+      <AnimatedTexture>
+         <File>chars8x8dEncounters</File>
+         <Index>18</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x1fe8" id="Sword Bullet">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>d2LofiObjBigEmbed</File>
+         <Index>0x00</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1fe5" id="oHorde Key">
+      <Class>Equipment</Class>
+      <Item/>
+      <DisplayId>Oryx Horde key</DisplayId>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xcb</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A key which opens an entrance to The Oryx Horde event.</Description>
+      <Sound>use_key</Sound>
+      <Consumable/>
+      <Soulbound/>
+      <Activate id="oHorde Portal">Create</Activate>
+      <Track/>
+   </Object>
+   <Object type="0x1fe4" id="oHorde Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>OryxHorde</DisplayId>
+      <DungeonName>Oryx Horde</DungeonName>
+      <Texture>
+         <File>mountainTempleObjects8x8</File>
+         <Index>0xcc</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x2029" id="Megamad Oryx Statue helper">
+      <Enemy/>
+      <NoMiniMap/>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <HitSound>monster/greater_demons_hit</HitSound>
+      <DeathSound>monster/greater_demons_death</DeathSound>
+      <Size>1</Size>
+      <MaxHitPoints>75000</MaxHitPoints>
+      <Defense>12</Defense>
+      <Flying/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+   </Object>
+   <Object type="0x202a" id="Spirit of Oryx Helper">
+      <Enemy/>
+      <NoMiniMap/>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <HitSound>monster/greater_demons_hit</HitSound>
+      <DeathSound>monster/greater_demons_death</DeathSound>
+      <Size>1</Size>
+      <MaxHitPoints>75000</MaxHitPoints>
+      <Defense>12</Defense>
+      <Flying/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+   </Object>
+   <Object type="0x1fdd" id="Brute helper">
+      <Enemy/>
+      <NoMiniMap/>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <HitSound>monster/greater_demons_hit</HitSound>
+      <DeathSound>monster/greater_demons_death</DeathSound>
+      <Size>1</Size>
+      <MaxHitPoints>75000</MaxHitPoints>
+      <Defense>12</Defense>
+      <Flying/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+   </Object>
+   <Object type="0x1fdf" id="StoneRight helper">
+      <Enemy/>
+      <NoMiniMap/>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <HitSound>monster/greater_demons_hit</HitSound>
+      <DeathSound>monster/greater_demons_death</DeathSound>
+      <Size>1</Size>
+      <MaxHitPoints>75000</MaxHitPoints>
+      <Defense>12</Defense>
+      <Flying/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+   </Object>
+   <Object type="0x1fe0" id="StoneLeft helper">
+      <Enemy/>
+      <NoMiniMap/>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <HitSound>monster/greater_demons_hit</HitSound>
+      <DeathSound>monster/greater_demons_death</DeathSound>
+      <Size>1</Size>
+      <MaxHitPoints>75000</MaxHitPoints>
+      <Defense>12</Defense>
+      <Flying/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+   </Object>
+   <Object type="0x1fdc" id="Megamad Oryx Guardian Sword">
+      <DisplayId>Stone Guardian Sword</DisplayId>
+      <Group>Oryx Minions</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <AnimatedTexture>
+         <File>oryxHordeChars8x8</File>
+         <Index>1</Index>
+      </AnimatedTexture>
+      <HitSound>monster/ents_hit</HitSound>
+      <DeathSound>monster/traps_hit</DeathSound>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <Projectile id="0">
+         <ObjectId>Lightning Spiral</ObjectId>
+         <Speed>45</Speed>
+         <Damage>250</Damage>
+         <Size>120</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <ConditionEffect duration="3.5">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Lightning Bolt</ObjectId>
+         <Speed>45</Speed>
+         <Damage>200</Damage>
+         <Size>120</Size>
+         <LifetimeMS>3500</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="0.75">Slowed</ConditionEffect>
+         <ConditionEffect duration="3.5">Stunned</ConditionEffect>
+         <ConditionEffect duration="3.5">Quiet</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Lightning Spiral</ObjectId>
+         <Speed>45</Speed>
+         <Damage>200</Damage>
+         <Size>40</Size>
+         <LifetimeMS>3500</LifetimeMS>
+         <MultiHit/>
+         <Frequency>0.45</Frequency>
+         <Amplitude>0.5</Amplitude>
+         <ConditionEffect duration="0.75">Slowed</ConditionEffect>
+         <ConditionEffect duration="3.5">Stunned</ConditionEffect>
+         <ConditionEffect duration="3.5">Quiet</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Lightning Spiral</ObjectId>
+         <Speed>45</Speed>
+         <Damage>200</Damage>
+         <Size>80</Size>
+         <LifetimeMS>3500</LifetimeMS>
+         <MultiHit/>
+         <Frequency>0.45</Frequency>
+         <Amplitude>0.5</Amplitude>
+         <ConditionEffect duration="0.75">Slowed</ConditionEffect>
+         <ConditionEffect duration="3.5">Stunned</ConditionEffect>
+         <ConditionEffect duration="3.5">Quiet</ConditionEffect>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Lightning Spiral</ObjectId>
+         <Speed>45</Speed>
+         <Damage>200</Damage>
+         <Size>120</Size>
+         <LifetimeMS>3500</LifetimeMS>
+         <MultiHit/>
+         <Frequency>0.45</Frequency>
+         <Amplitude>0.5</Amplitude>
+         <ConditionEffect duration="0.75">Slowed</ConditionEffect>
+         <ConditionEffect duration="3.5">Stunned</ConditionEffect>
+         <ConditionEffect duration="3.5">Quiet</ConditionEffect>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>Lightning Spiral</ObjectId>
+         <Speed>45</Speed>
+         <Damage>200</Damage>
+         <Size>200</Size>
+         <LifetimeMS>3500</LifetimeMS>
+         <MultiHit/>
+         <Frequency>0.45</Frequency>
+         <Amplitude>0.5</Amplitude>
+         <ConditionEffect duration="0.75">Slowed</ConditionEffect>
+         <ConditionEffect duration="3.5">Stunned</ConditionEffect>
+         <ConditionEffect duration="3.5">Quiet</ConditionEffect>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>0</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>0</LifetimeMS>
+         <Frequency>0.45</Frequency>
+         <Amplitude>0.5</Amplitude>
+      </Projectile>
+      <Size>200</Size>
+      <Defense>60</Defense>
+      <XpMult>0.0</XpMult>
+   </Object>
+   <Object type="0x1fdb" id="Megamad Oryx Stone Guardian Right">
+      <DisplayId>Stone Guardian</DisplayId>
+      <Group>Oryx Minions</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <Quest/>
+      <Level>20</Level>
+      <AnimatedTexture>
+         <File>oryxHordeChars16x16</File>
+         <Index>2</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>oryxHordeChars16x16</File>
+            <Index>3</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="2">
+         <AnimatedTexture>
+            <File>oryxHordeChars16x16</File>
+            <Index>4</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="3">
+         <AnimatedTexture>
+            <File>oryxHordeChars16x16</File>
+            <Index>5</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="4">
+         <AnimatedTexture>
+            <File>oryxHordeChars16x16</File>
+            <Index>6</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <MaxHitPoints>250000</MaxHitPoints>
+      <Projectile id="0">
+         <ObjectId>Purple Blast</ObjectId>
+         <Speed>80</Speed>
+         <Damage>150</Damage>
+         <Size>100</Size>
+         <LifetimeMS>4000</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Super Blast Purple</ObjectId>
+         <Speed>70</Speed>
+         <Damage>120</Damage>
+         <Size>140</Size>
+         <LifetimeMS>1800</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Small White Blast</ObjectId>
+         <Speed>60</Speed>
+         <Damage>100</Damage>
+         <Size>100</Size>
+         <LifetimeMS>2000</LifetimeMS>
+      </Projectile>
+      <Size>140</Size>
+      <Defense>100</Defense>
+      <XpMult>0.135</XpMult>
+   </Object>
+   <Object type="0x1fda" id="Megamad Oryx Stone Guardian Left">
+      <DisplayId>Stone Guardian</DisplayId>
+      <Group>Oryx Minions</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <Quest/>
+      <Level>20</Level>
+      <AnimatedTexture>
+         <File>oryxHordeChars16x16</File>
+         <Index>7</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>oryxHordeChars16x16</File>
+            <Index>8</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="2">
+         <AnimatedTexture>
+            <File>oryxHordeChars16x16</File>
+            <Index>9</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="3">
+         <AnimatedTexture>
+            <File>oryxHordeChars16x16</File>
+            <Index>10</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="4">
+         <AnimatedTexture>
+            <File>oryxHordeChars16x16</File>
+            <Index>11</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <MaxHitPoints>250000</MaxHitPoints>
+      <Projectile id="0">
+         <ObjectId>Red Blast</ObjectId>
+         <Speed>80</Speed>
+         <Damage>150</Damage>
+         <Size>100</Size>
+         <LifetimeMS>4000</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Super Blast Red</ObjectId>
+         <Speed>80</Speed>
+         <Damage>180</Damage>
+         <Size>140</Size>
+         <LifetimeMS>1800</LifetimeMS>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Small White Blast</ObjectId>
+         <Speed>60</Speed>
+         <Damage>100</Damage>
+         <Size>100</Size>
+         <LifetimeMS>2000</LifetimeMS>
+      </Projectile>
+      <Size>140</Size>
+      <Defense>100</Defense>
+      <XpMult>0.135</XpMult>
+   </Object>
+   <Object type="0x1fd9" id="Megamad Oryx Guardian TaskMaster">
+      <Group>Oryx Minions</Group>
+      <Class>Character</Class>
+      <StasisImmune/>
+      <NoMiniMap/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/dwarves_death</DeathSound>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Size>0</Size>
+      <Defense>0</Defense>
+      <XpMult>0.0</XpMult>
+   </Object>
+   <Object type="0x1fd8" id="Megamad Stone Guardian Support">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>d3Chars8x8rEmbed</File>
+         <Index>13</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x1fd5" id="Megamad Activator">
+      <Class>Character</Class>
+      <DisplayId>Oryx Statue</DisplayId>
+      <Enemy/>
+      <Portrait>
+         <AnimatedTexture>
+            <File>oryxHordeChars16x16</File>
+            <Index>13</Index>
+         </AnimatedTexture>
+      </Portrait>
+      <Texture>
+         <File>oryxHordeObjects16x16</File>
+         <Index>0x15</Index>
+      </Texture>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <HitSound>monster/eggs_hit</HitSound>
+      <DeathSound>monster/eggs_death</DeathSound>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>0</Defense>
+      <XpMult>0.0</XpMult>
+      <Size>200</Size>
+      <ShadowSize>100</ShadowSize>
+      <Terrain>Mountains</Terrain>
+      <PerRealmMax>1</PerRealmMax>
+      <SpawnProb>1.0</SpawnProb>
+      <NoMiniMap/>
+      <Quest/>
+      <God/>
+      <Level>20</Level>
+   </Object>
+   <Object type="0x1fd3" id="Megamad Oryx Brute">
+      <DisplayId>Megamad Brute of Oryx</DisplayId>
+      <Group>Oryx Minions</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <AnimatedTexture>
+         <File>oryxHordeChars16x16</File>
+         <Index>1</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>oryxHordeChars16x16</File>
+            <Index>0</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <MaxHitPoints>250000</MaxHitPoints>
+      <Projectile id="0">
+         <ObjectId>Dark Mossy Boomerang</ObjectId>
+         <Speed>54</Speed>
+         <Damage>93</Damage>
+         <Size>200</Size>
+         <LifetimeMS>600</LifetimeMS>
+         <MultiHit/>
+         <PassesCover/>
+         <ConditionEffect duration="4">Armor Broken</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Small Mossy line</ObjectId>
+         <Speed>78</Speed>
+         <Damage>93</Damage>
+         <Size>100</Size>
+         <LifetimeMS>2000</LifetimeMS>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Small Mossy V</ObjectId>
+         <Speed>62</Speed>
+         <Damage>90</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Small Mossy line</ObjectId>
+         <Speed>78</Speed>
+         <Damage>93</Damage>
+         <Size>100</Size>
+         <LifetimeMS>2500</LifetimeMS>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Big Mossy Stone Bolt</ObjectId>
+         <Speed>40</Speed>
+         <Damage>255</Damage>
+         <Size>200</Size>
+         <LifetimeMS>2750</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>Small Mossy V</ObjectId>
+         <Speed>72</Speed>
+         <Damage>93</Damage>
+         <Size>100</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <ConditionEffect duration="5" target="1">Stasis</ConditionEffect>
+      </Projectile>
+      <Size>140</Size>
+      <Defense>50</Defense>
+      <XpMult>1.6</XpMult>
+   </Object>
+   <Object type="0x1fd4" id="Megamad Oryx Eye Warrior">
+      <DisplayId>Megamad Warrior of Oryx</DisplayId>
+      <Group>Oryx Minions</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>oryxHordeChars8x8</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <MaxHitPoints>34500</MaxHitPoints>
+      <Projectile id="0">
+         <ObjectId>Small Mossy zigzag</ObjectId>
+         <Speed>40</Speed>
+         <Damage>90</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Small Mossy V</ObjectId>
+         <Speed>70</Speed>
+         <Damage>68</Damage>
+         <Size>80</Size>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+      <Size>140</Size>
+      <Defense>34</Defense>
+      <XpMult>0</XpMult>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x1fe6" id="Ring Bullet">
+      <DisplayId>Alpha Arcane Fighter</DisplayId>
+      <Group>Oryx Minions</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>oryxHordeChars8x8</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <MaxHitPoints>34500</MaxHitPoints>
+      <Projectile id="0">
+         <ObjectId>Small Mossy zigzag</ObjectId>
+         <Speed>50</Speed>
+         <Damage>125</Damage>
+         <Size>200</Size>
+         <LifetimeMS>300</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Size>140</Size>
+      <Defense>34</Defense>
+      <XpMult>0</XpMult>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+   </Object>
+   <Object type="0x1fe2" id="Craig the Mad Intern">
+      <DisplayId>Craig the Intern</DisplayId>
+      <Group>Oryx Minions</Group>
+      <Enemy/>
+      <NoMiniMap/>
+      <Class>Character</Class>
+      <StasisImmune/>
+      <AnimatedTexture>
+         <File>chars8x8rMid</File>
+         <Index>0x02</Index>
+      </AnimatedTexture>
+      <HitSound>monster/ogres_hit</HitSound>
+      <DeathSound>monster/ogres_death</DeathSound>
+      <MaxHitPoints>161000</MaxHitPoints>
+      <Size>100</Size>
+      <Defense>50</Defense>
+      <XpMult>1.6</XpMult>
+   </Object>
+   <Object type="0x1fea" id="Spirit of Oryx">
+      <DisplayId>Spirit of Oryx</DisplayId>
+      <Group>Oryx Minions</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>oryxHordeChars16x16</File>
+         <Index>12</Index>
+      </AnimatedTexture>
+      <HitSound>monster/oryx_hit</HitSound>
+      <DeathSound>monster/oryx_death</DeathSound>
+      <MaxHitPoints>300000</MaxHitPoints>
+      <Size>200</Size>
+      <Defense>75</Defense>
+      <XpMult>1.6</XpMult>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Oryx Spirit proj</ObjectId>
+         <Speed>100</Speed>
+         <Damage>50</Damage>
+         <Size>100</Size>
+         <LifetimeMS>500</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Oryx Spirit proj</ObjectId>
+         <Speed>50</Speed>
+         <Damage>64</Damage>
+         <Size>115</Size>
+         <LifetimeMS>750</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Oryx Spirit proj</ObjectId>
+         <Speed>25</Speed>
+         <Damage>100</Damage>
+         <Size>130</Size>
+         <LifetimeMS>750</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Oryx Horde Big Burst</ObjectId>
+         <Speed>140</Speed>
+         <Damage>100</Damage>
+         <Size>100</Size>
+         <LifetimeMS>800</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>Dragon Eye Laser</ObjectId>
+         <Speed>25</Speed>
+         <Damage>0</Damage>
+         <Size>200</Size>
+         <LifetimeMS>750</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>Eye Laser</ObjectId>
+         <Speed>120</Speed>
+         <Damage>100</Damage>
+         <Size>100</Size>
+         <LifetimeMS>800</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>BR Bullet</ObjectId>
+         <Speed>25</Speed>
+         <Damage>20</Damage>
+         <Size>40</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="8">
+         <ObjectId>BR Bullet</ObjectId>
+         <Speed>25</Speed>
+         <Damage>20</Damage>
+         <Size>80</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="9">
+         <ObjectId>BR Bullet</ObjectId>
+         <Speed>25</Speed>
+         <Damage>20</Damage>
+         <Size>120</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="10">
+         <ObjectId>Oryx Confuse Trap Proj</ObjectId>
+         <Speed>25</Speed>
+         <Damage>65</Damage>
+         <Size>100</Size>
+         <LifetimeMS>4250</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="3">Armor Broken</ConditionEffect>
+         <ConditionEffect duration="3">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="11">
+         <ObjectId>Oryx Daze Trap Proj</ObjectId>
+         <Speed>40</Speed>
+         <Damage>55</Damage>
+         <Size>100</Size>
+         <LifetimeMS>2250</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="3">Armor Broken</ConditionEffect>
+         <ConditionEffect duration="3">Dazed</ConditionEffect>
+      </Projectile>
+      <Projectile id="12">
+         <ObjectId>Oryx Darkness Trap Proj</ObjectId>
+         <Speed>60</Speed>
+         <Damage>45</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1590</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="3">Armor Broken</ConditionEffect>
+         <ConditionEffect duration="3">Darkness</ConditionEffect>
+      </Projectile>
+      <Projectile id="15">
+         <ObjectId>Oryx Horde Big X Proj</ObjectId>
+         <Speed>75</Speed>
+         <Damage>95</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="16">
+         <ObjectId>Oryx small X Proj</ObjectId>
+         <Speed>50</Speed>
+         <Damage>75</Damage>
+         <Size>130</Size>
+         <LifetimeMS>750</LifetimeMS>
+         <Frequency>0.5</Frequency>
+         <Amplitude>5</Amplitude>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x1feb" id="Possessed Oryx Statue">
+      <Class>Character</Class>
+      <DisplayId>Possessed Oryx Statue</DisplayId>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>oryxHordeChars16x16</File>
+         <Index>13</Index>
+      </AnimatedTexture>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <MaxHitPoints>250000</MaxHitPoints>
+      <Defense>0</Defense>
+      <XpMult>0.0</XpMult>
+      <Size>200</Size>
+      <ShadowSize>100</ShadowSize>
+      <AltTexture id="1">
+         <Texture>
+            <File>oryxHordeObjects16x16</File>
+            <Index>0x10</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>oryxHordeObjects16x16</File>
+            <Index>0x11</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>oryxHordeObjects16x16</File>
+            <Index>0x12</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>oryxHordeObjects16x16</File>
+            <Index>0x13</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>oryxHordeObjects16x16</File>
+            <Index>0x14</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="6">
+         <Texture>
+            <File>oryxHordeObjects16x16</File>
+            <Index>0x15</Index>
+         </Texture>
+      </AltTexture>
+      <Projectile id="0">
+         <ObjectId>Oryx Statue Slow Proj</ObjectId>
+         <Speed>65</Speed>
+         <Damage>65</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1590</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="1.2">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Black Mossy Projectile</ObjectId>
+         <Speed>75</Speed>
+         <Damage>1</Damage>
+         <Size>50</Size>
+         <LifetimeMS>1000</LifetimeMS>
+         <ConditionEffect duration="3.5">Stunned</ConditionEffect>
+         <ConditionEffect duration="3.5">Quiet</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x1fec" id="Death Ring Anchor">
+      <Class>Character</Class>
+      <DisplayId>Death Ring Anchor</DisplayId>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>0</Defense>
+      <XpMult>0.0</XpMult>
+      <Size>20</Size>
+      <ShadowSize>100</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x1fed" id="Oryx Marker BR">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xb0</Index>
+      </Texture>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <XpMult>0</XpMult>
+      <Size>0</Size>
+      <NoMiniMap/>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x1fef" id="Oryx Marker BL">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xb0</Index>
+      </Texture>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <XpMult>0</XpMult>
+      <Size>0</Size>
+      <NoMiniMap/>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x1ff0" id="Oryx Marker TL">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xb0</Index>
+      </Texture>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <XpMult>0</XpMult>
+      <Size>0</Size>
+      <NoMiniMap/>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x1ff1" id="Oryx Marker TR">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xb0</Index>
+      </Texture>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <XpMult>0</XpMult>
+      <Size>0</Size>
+      <NoMiniMap/>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x1ff2" id="Oryx Marker Center">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xb0</Index>
+      </Texture>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <XpMult>0</XpMult>
+      <Size>0</Size>
+      <NoMiniMap/>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x1ffc" id="Oryx Leader">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xb0</Index>
+      </Texture>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <XpMult>0</XpMult>
+      <Size>0</Size>
+      <NoMiniMap/>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x1ffd" id="Oryx Darkness Trap">
+      <Enemy/>
+      <NoMiniMap/>
+      <DisplayId>Dark Trap</DisplayId>
+      <Class>Character</Class>
+      <Group>OryxMine</Group>
+      <AnimatedTexture>
+         <File>oryxHordeChars8x8</File>
+         <Index>2</Index>
+      </AnimatedTexture>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>35</Defense>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <Flying/>
+      <XpMult>0.0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Oryx Darkness Trap Proj</ObjectId>
+         <Damage>30</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>160</LifetimeMS>
+         <Size>80</Size>
+         <ConditionEffect duration="3">Armor Broken</ConditionEffect>
+         <ConditionEffect duration="3">Darkness</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x202e" id="Oryx Daze Trap">
+      <Enemy/>
+      <NoMiniMap/>
+      <DisplayId>Daze Trap</DisplayId>
+      <Class>Character</Class>
+      <Group>OryxMine</Group>
+      <AnimatedTexture>
+         <File>oryxHordeChars8x8</File>
+         <Index>3</Index>
+      </AnimatedTexture>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>35</Defense>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <Flying/>
+      <XpMult>0.0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Oryx Daze Trap Proj</ObjectId>
+         <Damage>30</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>160</LifetimeMS>
+         <Size>80</Size>
+         <ConditionEffect duration="3">Armor Broken</ConditionEffect>
+         <ConditionEffect duration="3">Dazed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x202d" id="Oryx Confuse Trap">
+      <Enemy/>
+      <NoMiniMap/>
+      <DisplayId>Dark Trap</DisplayId>
+      <Class>Character</Class>
+      <Group>OryxMine</Group>
+      <AnimatedTexture>
+         <File>oryxHordeChars8x8</File>
+         <Index>4</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>35</Defense>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <Flying/>
+      <XpMult>0.0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Oryx Confuse Trap Proj</ObjectId>
+         <Damage>30</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>160</LifetimeMS>
+         <Size>80</Size>
+         <ConditionEffect duration="3">Armor Broken</ConditionEffect>
+         <ConditionEffect duration="3">Confused</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x6faf" id="Thunder Helper">
+      <Enemy/>
+      <NoMiniMap/>
+      <DisplayId>Thunder</DisplayId>
+      <Class>Character</Class>
+      <Group>Daichi</Group>
+      <Texture>
+         <File>oryxHordeObjects16x16</File>
+         <Index>0x00</Index>
+      </Texture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>35</Defense>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <Flying/>
+      <XpMult>0.0</XpMult>
+      <Animation sync="true" prob="1" period="0.4">
+         <Frame time="0.2">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x00</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x01</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x6fae" id="meteor explosion">
+      <Enemy/>
+      <NoMiniMap/>
+      <DisplayId>Thunderstrike</DisplayId>
+      <Class>Character</Class>
+      <Group>Daichi</Group>
+      <AnimatedTexture>
+         <File>mountainTempleChars16x16</File>
+         <Index>9</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>35</Defense>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <Flying/>
+      <XpMult>0.0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Thunderbolt</ObjectId>
+         <Damage>95</Damage>
+         <Speed>120</Speed>
+         <LifetimeMS>240</LifetimeMS>
+         <Size>80</Size>
+         <ConditionEffect duration="1.2">Paralyzed</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>0</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>0</LifetimeMS>
+         <Frequency>0.45</Frequency>
+         <Amplitude>0.5</Amplitude>
+      </Projectile>
+   </Object>
+   <Object type="0x1ffe" id="EarthSmash">
+      <DisplayId>Earth Smash</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x11</Index>
+      </Texture>
+      <Projectile id="0">
+         <ObjectId>LavaBombBlast</ObjectId>
+         <Speed>55</Speed>
+         <Damage>160</Damage>
+         <Size>200</Size>
+         <LifetimeMS>1200</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <MaxHitPoints>10</MaxHitPoints>
+      <XpMult>0.3</XpMult>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x2015" id="OryxTemporaryLava">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <MaxHitPoints>10</MaxHitPoints>
+      <XpMult>0.3</XpMult>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x2010" id="OryxFireMakerUp">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <MaxHitPoints>10</MaxHitPoints>
+      <XpMult>1</XpMult>
+      <Size>140</Size>
+      <ShadowSize>0</ShadowSize>
+      <Flying/>
+   </Object>
+   <Object type="0x2011" id="OryxFireMakerDn">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <MaxHitPoints>10</MaxHitPoints>
+      <XpMult>1</XpMult>
+      <Size>140</Size>
+      <ShadowSize>0</ShadowSize>
+      <Flying/>
+   </Object>
+   <Object type="0x2012" id="OryxFireMakerLf">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <MaxHitPoints>10</MaxHitPoints>
+      <XpMult>1</XpMult>
+      <Size>140</Size>
+      <ShadowSize>0</ShadowSize>
+      <Flying/>
+   </Object>
+   <Object type="0x2013" id="OryxFireMakerRt">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <MaxHitPoints>10</MaxHitPoints>
+      <XpMult>1</XpMult>
+      <Size>140</Size>
+      <ShadowSize>0</ShadowSize>
+      <Flying/>
+   </Object>
+   <Object type="0x2014" id="OryxFire">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Animation prob="1" period="0">
+         <Frame time="0.1">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x0a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x0b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x0c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x0b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x0a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="2">
+            <Texture>
+               <File>invisible</File>
+               <Index>0</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <MaxHitPoints>10</MaxHitPoints>
+      <XpMult>1</XpMult>
+      <Size>140</Size>
+      <ShadowSize>0</ShadowSize>
+      <Flying/>
+   </Object>
+   <Object type="0x2018" id="Hook Helper">
+      <Enemy/>
+      <NoMiniMap/>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>35</Defense>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <Flying/>
+      <XpMult>0.0</XpMult>
+   </Object>
+   <Object type="0x2019" id="Hook Head">
+      <Enemy/>
+      <NoMiniMap/>
+      <Class>Character</Class>
+      <Texture>
+         <File>oryxHordeObjects16x16</File>
+         <Index>0x09</Index>
+      </Texture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>35</Defense>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <Flying/>
+      <DontFaceAttacks/>
+      <XpMult>0.0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>0</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>100</LifetimeMS>
+         <ConditionEffect duration="1.5">Paralyzed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x2020" id="Hook Link A">
+      <Enemy/>
+      <NoMiniMap/>
+      <Class>Character</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x18</Index>
+      </Texture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>35</Defense>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <Flying/>
+      <XpMult>0.0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>0</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>100</LifetimeMS>
+         <ConditionEffect duration="1.5">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x2021" id="Hook Link B">
+      <Enemy/>
+      <NoMiniMap/>
+      <Class>Character</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x18</Index>
+      </Texture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>35</Defense>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <Flying/>
+      <XpMult>0.0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>0</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>100</LifetimeMS>
+         <ConditionEffect duration="1.5">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x2022" id="Hook Link C">
+      <Enemy/>
+      <NoMiniMap/>
+      <Class>Character</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x18</Index>
+      </Texture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>35</Defense>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <Flying/>
+      <XpMult>0.0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>0</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>100</LifetimeMS>
+         <ConditionEffect duration="1.5">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x2023" id="Hook Link D">
+      <Enemy/>
+      <NoMiniMap/>
+      <Class>Character</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x18</Index>
+      </Texture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>35</Defense>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <Flying/>
+      <XpMult>0.0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>0</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>100</LifetimeMS>
+         <ConditionEffect duration="1.5">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x2024" id="Hook Link E">
+      <Enemy/>
+      <NoMiniMap/>
+      <Class>Character</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x18</Index>
+      </Texture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>35</Defense>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <Flying/>
+      <XpMult>0.0</XpMult>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>0</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>100</LifetimeMS>
+         <ConditionEffect duration="1.5">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x2026" id="Hook Tester">
+      <Class>Character</Class>
+      <DisplayId>Hook Tester</DisplayId>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>oryxHordeChars16x16</File>
+         <Index>16</Index>
+      </AnimatedTexture>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <HitSound>monster/eggs_hit</HitSound>
+      <DeathSound>monster/eggs_death</DeathSound>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>0</Defense>
+      <XpMult>0.0</XpMult>
+      <Size>200</Size>
+      <ShadowSize>100</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x2028" id="Megamad Oryx Statue">
+      <Class>Character</Class>
+      <DisplayId>Megamad Oryx Statue</DisplayId>
+      <Enemy/>
+      <Texture>
+         <File>oryxHordeObjects16x16</File>
+         <Index>0x15</Index>
+      </Texture>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <MaxHitPoints>250000</MaxHitPoints>
+      <Defense>0</Defense>
+      <XpMult>0.0</XpMult>
+      <Size>200</Size>
+      <ShadowSize>100</ShadowSize>
+      <NoMiniMap/>
+      <AltTexture id="1">
+         <Texture>
+            <File>oryxHordeObjects16x16</File>
+            <Index>0x10</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>oryxHordeObjects16x16</File>
+            <Index>0x11</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>oryxHordeObjects16x16</File>
+            <Index>0x12</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>oryxHordeObjects16x16</File>
+            <Index>0x13</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>oryxHordeObjects16x16</File>
+            <Index>0x14</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="6">
+         <Texture>
+            <File>oryxHordeObjects16x16</File>
+            <Index>0x15</Index>
+         </Texture>
+      </AltTexture>
+      <Projectile id="5">
+         <ObjectId>Small Mossy Bolt</ObjectId>
+         <Damage>150</Damage>
+         <Size>80</Size>
+         <MultiHit/>
+         <Speed>40.00000000</Speed>
+         <LifetimeMS>3125</LifetimeMS>
+      </Projectile>
+   </Object>
+</Objects>

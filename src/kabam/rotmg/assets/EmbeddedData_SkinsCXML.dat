@@ -169,7 +169,7 @@
          <Index>16</Index>
       </AnimatedTexture>
       <PlayerClassType>0x030e</PlayerClassType>
-      <UnlockLevel>1</UnlockLevel>
+      <UnlockSpecial>Only appears during Christmas!</UnlockSpecial>
    </Object>
    <Object type="0x0353" id="Little Helper">
       <Skin/>
@@ -179,7 +179,7 @@
          <Index>17</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0307</PlayerClassType>
-      <UnlockLevel>1</UnlockLevel>
+      <UnlockSpecial>Only appears during Christmas!</UnlockSpecial>
    </Object>
    <Object type="0x0354" id="Father Time">
       <Skin/>
@@ -189,7 +189,7 @@
          <Index>18</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0310</PlayerClassType>
-      <UnlockLevel>1</UnlockLevel>
+      <UnlockLevel>5</UnlockLevel>
    </Object>
    <Object type="0x0355" id="Down Under">
       <Skin/>
@@ -199,7 +199,7 @@
          <Index>19</Index>
       </AnimatedTexture>
       <PlayerClassType>0x031d</PlayerClassType>
-      <UnlockLevel>1</UnlockLevel>
+      <UnlockLevel>5</UnlockLevel>
    </Object>
    <Object type="0x0356" id="Founding Father">
       <Skin/>
@@ -209,7 +209,7 @@
          <Index>20</Index>
       </AnimatedTexture>
       <PlayerClassType>0x031f</PlayerClassType>
-      <UnlockLevel>1</UnlockLevel>
+      <UnlockLevel>5</UnlockLevel>
    </Object>
    <Object type="0x0357" id="Cupid">
       <Skin/>
@@ -219,7 +219,7 @@
          <Index>21</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0307</PlayerClassType>
-      <UnlockLevel>1</UnlockLevel>
+      <UnlockLevel>5</UnlockLevel>
    </Object>
    <Object type="0x0387" id="Slime Knight">
       <Skin/>
@@ -229,7 +229,7 @@
          <Index>30</Index>
       </AnimatedTexture>
       <PlayerClassType>0x031e</PlayerClassType>
-      <UnlockSpecial>Granted by crafting the Steam Holiday Sale 2013 badge.</UnlockSpecial>
+      <UnlockSpecial>Seriously slimy quest reward.</UnlockSpecial>
    </Object>
    <Object type="0x0388" id="Slime Archer">
       <Skin/>
@@ -239,7 +239,7 @@
          <Index>35</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0307</PlayerClassType>
-      <UnlockSpecial>Granted by crafting the Steam Holiday Sale 2013 badge.</UnlockSpecial>
+      <UnlockSpecial>Seriously slimy quest reward.</UnlockSpecial>
    </Object>
    <Object type="0x0389" id="Slime Priest">
       <Skin/>
@@ -249,7 +249,7 @@
          <Index>31</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0310</PlayerClassType>
-      <UnlockSpecial>Granted by crafting the Steam Holiday Sale 2013 badge.</UnlockSpecial>
+      <UnlockSpecial>Seriously slimy quest reward.</UnlockSpecial>
    </Object>
    <Object type="0x0390" id="Agent">
       <Skin/>
@@ -259,7 +259,7 @@
          <Index>36</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0320</PlayerClassType>
-      <UnlockSpecial>Granted by crafting the Steam Holiday Sale 2013 badge.</UnlockSpecial>
+      <UnlockLevel>10</UnlockLevel>
    </Object>
    <Object type="0x0391" id="Brigand">
       <Skin/>
@@ -269,7 +269,7 @@
          <Index>44</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0300</PlayerClassType>
-      <UnlockSpecial>Granted by crafting the Steam Holiday Sale 2013 badge.</UnlockSpecial>
+      <UnlockLevel>10</UnlockLevel>
    </Object>
    <Object type="0x0392" id="Gentleman">
       <Skin/>
@@ -279,7 +279,7 @@
          <Index>41</Index>
       </AnimatedTexture>
       <PlayerClassType>0x030e</PlayerClassType>
-      <UnlockSpecial>Granted by crafting the Steam Holiday Sale 2013 badge.</UnlockSpecial>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x0384" id="Scarlett">
       <Skin/>
@@ -289,7 +289,7 @@
          <Index>48</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0322</PlayerClassType>
-      <UnlockSpecial>Winter 2013 Special Release.</UnlockSpecial>
+      <UnlockLevel>10</UnlockLevel>
    </Object>
    <Object type="0x0373" id="Shoveguy">
       <Skin/>
@@ -299,7 +299,7 @@
          <Index>37</Index>
       </AnimatedTexture>
       <PlayerClassType>0x031d</PlayerClassType>
-      <UnlockSpecial>Winter 2013 Special Release.</UnlockSpecial>
+      <UnlockLevel>10</UnlockLevel>
    </Object>
    <Object type="0x0386" id="Iceman">
       <Skin/>
@@ -309,7 +309,7 @@
          <Index>50</Index>
       </AnimatedTexture>
       <PlayerClassType>0x031e</PlayerClassType>
-      <UnlockSpecial>Winter 2013 Gift.</UnlockSpecial>
+      <UnlockLevel>10</UnlockLevel>
    </Object>
    <Object type="0x0358" id="Slime Ninja">
       <Skin/>
@@ -319,7 +319,7 @@
          <Index>22</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0326</PlayerClassType>
-      <UnlockSpecial>Winter 2013 Special Release.</UnlockSpecial>
+      <UnlockSpecial>Seriously slimy quest reward.</UnlockSpecial>
    </Object>
    <Object type="0x0393" id="Bashing Bride">
       <Skin/>
@@ -329,7 +329,7 @@
          <Index>51</Index>
       </AnimatedTexture>
       <PlayerClassType>0x031f</PlayerClassType>
-      <UnlockSpecial>Valentines 2014 Special Release.</UnlockSpecial>
+      <UnlockSpecial>Only appears during Valentines!</UnlockSpecial>
    </Object>
    <Object type="0x0394" id="Eligible Bachelor">
       <Skin/>
@@ -339,7 +339,7 @@
          <Index>52</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0300</PlayerClassType>
-      <UnlockSpecial>Valentines 2014 Special Release.</UnlockSpecial>
+      <UnlockSpecial>Only appears during Valentines!</UnlockSpecial>
    </Object>
    <Object type="0x0374" id="Nun">
       <Skin/>
@@ -349,7 +349,7 @@
          <Index>38</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0310</PlayerClassType>
-      <UnlockSpecial>Valentines 2014 Special Release.</UnlockSpecial>
+      <UnlockLevel>0</UnlockLevel>
    </Object>
    <Object type="0x0382" id="Witch Doctor">
       <Skin/>
@@ -359,7 +359,7 @@
          <Index>46</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0321</PlayerClassType>
-      <UnlockSpecial>Valentines 2014 Special Release.</UnlockSpecial>
+      <UnlockLevel>0</UnlockLevel>
    </Object>
    <Object type="0x0383" id="Sorceress">
       <Skin/>
@@ -369,7 +369,7 @@
          <Index>47</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0325</PlayerClassType>
-      <UnlockSpecial>Valentines 2014 Special Release.</UnlockSpecial>
+      <UnlockLevel>0</UnlockLevel>
    </Object>
    <Object type="0x0385" id="Artemis">
       <Skin/>
@@ -379,7 +379,7 @@
          <Index>53</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0322</PlayerClassType>
-      <UnlockSpecial>Valentines 2014 Special Release.</UnlockSpecial>
+      <UnlockLevel>0</UnlockLevel>
    </Object>
    <Object type="0x0368" id="Slime Wizard">
       <Skin/>
@@ -389,7 +389,7 @@
          <Index>32</Index>
       </AnimatedTexture>
       <PlayerClassType>0x030e</PlayerClassType>
-      <UnlockSpecial>Unlocked 2014.</UnlockSpecial>
+      <UnlockSpecial>Seriously slimy quest reward.</UnlockSpecial>
    </Object>
    <Object type="0x0395" id="Deadly Vixen">
       <Skin/>
@@ -399,7 +399,7 @@
          <Index>49</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0324</PlayerClassType>
-      <UnlockSpecial>Unlocked 2014.</UnlockSpecial>
+      <UnlockLevel>5</UnlockLevel>
    </Object>
    <Object type="0x2297" id="Stanley the Spring Bunny">
       <Skin/>
@@ -409,7 +409,7 @@
          <Index>54</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0325</PlayerClassType>
-      <UnlockSpecial>Spring 2014 Special Release.</UnlockSpecial>
+      <UnlockSpecial>Only appears during Easter!</UnlockSpecial>
    </Object>
    <Object type="0x2311" id="Nexus no Miko">
       <Skin/>
@@ -419,7 +419,7 @@
          <Index>68</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0322</PlayerClassType>
-      <UnlockSpecial>Month of the Mad God 2014 Release.</UnlockSpecial>
+      <UnlockLevel>10</UnlockLevel>
    </Object>
    <Object type="0x2313" id="Drow Trickster">
       <Skin/>
@@ -429,7 +429,7 @@
          <Index>70</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0324</PlayerClassType>
-      <UnlockSpecial>Month of the Mad God 2014 Release.</UnlockSpecial>
+      <UnlockLevel>10</UnlockLevel>
    </Object>
    <Object type="0x2307" id="B.B. Wolf">
       <Skin/>
@@ -439,7 +439,7 @@
          <Index>58</Index>
       </AnimatedTexture>
       <PlayerClassType>0x031d</PlayerClassType>
-      <UnlockSpecial>Month of the Mad God 2014 Release.</UnlockSpecial>
+      <UnlockLevel>15</UnlockLevel>
    </Object>
    <Object type="0x2308" id="Lil Red">
       <Skin/>
@@ -449,7 +449,7 @@
          <Index>59</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0323</PlayerClassType>
-      <UnlockSpecial>Month of the Mad God 2014 Release.</UnlockSpecial>
+      <UnlockLevel>10</UnlockLevel>
    </Object>
    <Object type="0x0375" id="Holy Avenger">
       <Skin/>
@@ -459,7 +459,7 @@
          <Index>39</Index>
       </AnimatedTexture>
       <PlayerClassType>0x031f</PlayerClassType>
-      <UnlockSpecial>Month of the Mad God 2014 Release.</UnlockSpecial>
+      <UnlockLevel>10</UnlockLevel>
    </Object>
    <Object type="0x2309" id="King Knifeula">
       <Skin/>
@@ -469,7 +469,7 @@
          <Index>60</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0324</PlayerClassType>
-      <UnlockSpecial>Month of the Mad God 2014 Release.</UnlockSpecial>
+      <UnlockLevel>10</UnlockLevel>
    </Object>
    <Object type="0x0378" id="Ranger">
       <Skin/>
@@ -479,7 +479,7 @@
          <Index>42</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0307</PlayerClassType>
-      <UnlockSpecial>Month of the Mad God 2014 Release.</UnlockSpecial>
+      <UnlockLevel>10</UnlockLevel>
    </Object>
    <Object type="0x2304" id="Platinum Knight">
       <Skin/>
@@ -489,7 +489,7 @@
          <Index>55</Index>
       </AnimatedTexture>
       <PlayerClassType>0x031e</PlayerClassType>
-      <UnlockSpecial>First Release: August 2014.</UnlockSpecial>
+      <UnlockLevel>10</UnlockLevel>
    </Object>
    <Object type="0x2305" id="Platinum Warrior">
       <Skin/>
@@ -499,7 +499,7 @@
          <Index>56</Index>
       </AnimatedTexture>
       <PlayerClassType>0x031d</PlayerClassType>
-      <UnlockSpecial>First Release: August 2014.</UnlockSpecial>
+      <UnlockLevel>10</UnlockLevel>
    </Object>
    <Object type="0x2306" id="Platinum Rogue">
       <Skin/>
@@ -509,7 +509,7 @@
          <Index>57</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0300</PlayerClassType>
-      <UnlockSpecial>First Release: August 2014.</UnlockSpecial>
+      <UnlockLevel>10</UnlockLevel>
    </Object>
    <Object type="0x2334" id="Witch">
       <Skin/>
@@ -519,7 +519,7 @@
          <Index>71</Index>
       </AnimatedTexture>
       <PlayerClassType>0x030e</PlayerClassType>
-      <UnlockSpecial>Project Realmway 2 Winner, June 2014.</UnlockSpecial>
+      <UnlockLevel>0</UnlockLevel>
    </Object>
    <Object type="0x2335" id="Slime Sorcerer">
       <Skin/>
@@ -619,7 +619,7 @@
          <Index>72</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0320</PlayerClassType>
-      <UnlockSpecial>Looted by those who defeat the Puppet Master in his theatre.</UnlockSpecial>
+      <UnlockSpecial>Drops in The Puppet Master's Theatre.</UnlockSpecial>
    </Object>
    <Object type="0x744b" id="Jester">
       <Skin/>
@@ -629,7 +629,7 @@
          <Index>73</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0324</PlayerClassType>
-      <UnlockSpecial>Looted by those who defeat the Puppet Master in his Theatre. Sprite Credits: Thq32df and ViciousTwo </UnlockSpecial>
+      <UnlockSpecial>Drops in The Puppet Master's Theatre. Sprite Credits: Thq32df and ViciousTwo </UnlockSpecial>
    </Object>
    <Object type="0x745D" id="Ghost Huntress">
       <Skin/>
@@ -639,7 +639,7 @@
          <Index>75</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0322</PlayerClassType>
-      <UnlockSpecial>Unlocked during Halloween 2014.</UnlockSpecial>
+      <UnlockSpecial>Only appears during Halloween!</UnlockSpecial>
    </Object>
    <Object type="0x745E" id="Skeleton Warrior">
       <Skin/>
@@ -649,7 +649,7 @@
          <Index>74</Index>
       </AnimatedTexture>
       <PlayerClassType>0x031d</PlayerClassType>
-      <UnlockSpecial>Unlocked during Halloween 2014.</UnlockSpecial>
+      <UnlockSpecial>Only appears during Halloween!</UnlockSpecial>
    </Object>
    <Object type="0x745F" id="Infected Assassin">
       <Skin/>
@@ -659,7 +659,7 @@
          <Index>76</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0320</PlayerClassType>
-      <UnlockSpecial>Unlocked during Halloween 2014.</UnlockSpecial>
+      <UnlockSpecial>Only appears during Halloween!</UnlockSpecial>
    </Object>
    <Object type="0x7467" id="Huntsman">
       <Skin/>
@@ -669,7 +669,7 @@
          <Index>77</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0307</PlayerClassType>
-      <UnlockSpecial>Unlocked during Halloween 2014. Sprite Credits: WunderWafe</UnlockSpecial>
+      <UnlockLevel>10</UnlockLevel>
    </Object>
    <Object type="0x7468" id="Demon Spawn">
       <Skin/>
@@ -679,7 +679,7 @@
          <Index>78</Index>
       </AnimatedTexture>
       <PlayerClassType>0x031f</PlayerClassType>
-      <UnlockSpecial>Unlocked during Halloween 2014. Sprite Credits: WunderWafe</UnlockSpecial>
+      <UnlockSpecial>Only appears during Halloween! Sprite Credits: WunderWafe</UnlockSpecial>
    </Object>
    <Object type="0x7469" id="Dark Elf Huntress">
       <Skin/>
@@ -689,7 +689,7 @@
          <Index>79</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0322</PlayerClassType>
-      <UnlockSpecial>Unlocked during Halloween 2014. Sprite Credits: Beige</UnlockSpecial>
+      <UnlockLevel>10</UnlockLevel>
    </Object>
    <Object type="0x7478" id="Hunchback">
       <Skin/>
@@ -699,7 +699,7 @@
          <Index>80</Index>
       </AnimatedTexture>
       <PlayerClassType>0x031d</PlayerClassType>
-      <UnlockSpecial>Unlocked during Halloween 2014. Sprite Credits: Hawkmin</UnlockSpecial>
+      <UnlockLevel>10</UnlockLevel>
    </Object>
    <Object type="0x7479" id="Vampiress">
       <Skin/>
@@ -709,7 +709,7 @@
          <Index>81</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0324</PlayerClassType>
-      <UnlockSpecial>Unlocked during Halloween 2014. Sprite Credits: Beige</UnlockSpecial>
+      <UnlockSpecial>Only appears during Halloween! Sprite Credits: Beige</UnlockSpecial>
    </Object>
    <Object type="0x747A" id="Frankenstein's Monster">
       <Skin/>
@@ -719,7 +719,7 @@
          <Index>82</Index>
       </AnimatedTexture>
       <PlayerClassType>0x031e</PlayerClassType>
-      <UnlockSpecial>Unlocked during Halloween 2014. Sprite Credits: Beige</UnlockSpecial>
+      <UnlockSpecial>Only appears during Halloween! Sprite Credits: Beige</UnlockSpecial>
    </Object>
    <Object type="0x7470" id="Jack the Ripper">
       <Skin/>
@@ -729,7 +729,7 @@
          <Index>83</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0300</PlayerClassType>
-      <UnlockSpecial>Unlocked during Halloween 2014. Sprite Credits: Beige</UnlockSpecial>
+      <UnlockSpecial>Only appears during Halloween! Sprite Credits: Beige</UnlockSpecial>
    </Object>
    <Object type="0x7471" id="Death">
       <Skin/>
@@ -739,7 +739,7 @@
          <Index>84</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0326</PlayerClassType>
-      <UnlockSpecial>Unlocked during Halloween 2014. Sprite Credits: Thqdfthqdf</UnlockSpecial>
+      <UnlockSpecial>Only appears during Halloween! Sprite Credits: Thqdfthqdf</UnlockSpecial>
    </Object>
    <Object type="0x7472" id="Tiny Avatar">
       <Skin/>
@@ -749,7 +749,7 @@
          <Index>85</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0321</PlayerClassType>
-      <UnlockSpecial>Unlocked during Halloween 2014. Sprite Credits: DG</UnlockSpecial>
+      <UnlockLevel>10</UnlockLevel>
    </Object>
    <Object type="0x7473" id="Zombie Nurse">
       <Skin/>
@@ -759,7 +759,7 @@
          <Index>86</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0310</PlayerClassType>
-      <UnlockSpecial>Unlocked during Halloween 2014. Sprite Credits: Thqdfthqdf</UnlockSpecial>
+      <UnlockSpecial>Only appears during Halloween! Sprite Credits: Thqdfthqdf</UnlockSpecial>
    </Object>
    <Object type="0x2310" id="Ascended Sorcerer">
       <Skin/>
@@ -769,7 +769,7 @@
          <Index>67</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0325</PlayerClassType>
-      <UnlockSpecial>Unlocked during Halloween 2014.</UnlockSpecial>
+      <UnlockLevel>10</UnlockLevel>
    </Object>
    <Object type="0x7475" id="Mischievous Imp">
       <Skin/>
@@ -779,7 +779,7 @@
          <Index>88</Index>
       </AnimatedTexture>
       <PlayerClassType>0x030e</PlayerClassType>
-      <UnlockSpecial>Unlocked during Halloween 2014. Sprite Credits: Beige</UnlockSpecial>
+      <UnlockSpecial>Only appears during Halloween! Sprite Credits: Beige</UnlockSpecial>
    </Object>
    <Object type="0x7476" id="Vampire Hunter">
       <Skin/>
@@ -789,7 +789,7 @@
          <Index>89</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0320</PlayerClassType>
-      <UnlockSpecial>Unlocked during Halloween 2014. Sprite Credits: Thqdfthqdf</UnlockSpecial>
+      <UnlockSpecial>Only appears during Halloween! Sprite Credits: Thqdfthqdf</UnlockSpecial>
    </Object>
    <Object type="0x7477" id="Poltergeist">
       <Skin/>
@@ -799,7 +799,7 @@
          <Index>90</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0323</PlayerClassType>
-      <UnlockSpecial>Unlocked during Halloween 2014. Sprite Credits: Beige</UnlockSpecial>
+      <UnlockSpecial>Only appears during Halloween! Sprite Credits: Beige</UnlockSpecial>
    </Object>
    <Object type="0x7490" id="Baby Djinja">
       <Skin/>
@@ -809,7 +809,7 @@
          <Index>102</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0326</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x7491" id="Mini Rosen">
       <Skin/>
@@ -819,67 +819,7 @@
          <Index>103</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0326</PlayerClassType>
-      <NoSkinSelect/>
-   </Object>
-   <Object type="0x7492" id="Mini Geb">
-      <Skin/>
-      <Class>Skin</Class>
-      <AnimatedTexture>
-         <File>playerskins</File>
-         <Index>98</Index>
-      </AnimatedTexture>
-      <PlayerClassType>0x0310</PlayerClassType>
-      <NoSkinSelect/>
-   </Object>
-   <Object type="0x7493" id="Mini Skuld">
-      <Skin/>
-      <Class>Skin</Class>
-      <AnimatedTexture>
-         <File>playerskins</File>
-         <Index>99</Index>
-      </AnimatedTexture>
-      <PlayerClassType>0x0300</PlayerClassType>
-      <NoSkinSelect/>
-   </Object>
-   <Object type="0x7494" id="Mini Archmage">
-      <Skin/>
-      <Class>Skin</Class>
-      <AnimatedTexture>
-         <File>playerskins</File>
-         <Index>100</Index>
-      </AnimatedTexture>
-      <PlayerClassType>0x030e</PlayerClassType>
-      <NoSkinSelect/>
-   </Object>
-   <Object type="0x7495" id="Mini Swoll">
-      <Skin/>
-      <Class>Skin</Class>
-      <AnimatedTexture>
-         <File>playerskins</File>
-         <Index>97</Index>
-      </AnimatedTexture>
-      <PlayerClassType>0x031f</PlayerClassType>
-      <NoSkinSelect/>
-   </Object>
-   <Object type="0x7496" id="Mini Phylactery">
-      <Skin/>
-      <Class>Skin</Class>
-      <AnimatedTexture>
-         <File>playerskins</File>
-         <Index>96</Index>
-      </AnimatedTexture>
-      <PlayerClassType>0x0323</PlayerClassType>
-      <NoSkinSelect/>
-   </Object>
-   <Object type="0x7497" id="Mini Oryx">
-      <Skin/>
-      <Class>Skin</Class>
-      <AnimatedTexture>
-         <File>playerskins</File>
-         <Index>95</Index>
-      </AnimatedTexture>
-      <PlayerClassType>0x031e</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x7498" id="Mini Thessal">
       <Skin/>
@@ -889,7 +829,7 @@
          <Index>94</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0322</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x09d9" id="Slurp Knight">
       <Skin/>
@@ -899,7 +839,7 @@
          <Index>107</Index>
       </AnimatedTexture>
       <PlayerClassType>0x031e</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockSpecial>Drops in the Toxic Sewers.</UnlockSpecial>
    </Object>
    <Object type="0x0401" id="Oryx Set Skin">
       <Skin/>
@@ -978,6 +918,17 @@
       <UnlockSpecial>Set Skin</UnlockSpecial>
       <NoSkinSelect/>
    </Object>
+   <Object type="0x08fd" id="Lost Golem Set Skin">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins16</File>
+         <Index>14</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0324</PlayerClassType>
+      <UnlockSpecial>Set Skin</UnlockSpecial>
+      <NoSkinSelect/>
+   </Object>
    <Object type="0x08fb" id="Swarming Huntress Set Skin">
       <Skin/>
       <Class>Skin</Class>
@@ -987,6 +938,96 @@
       </AnimatedTexture>
       <PlayerClassType>0x0322</PlayerClassType>
       <UnlockSpecial>Set Skin</UnlockSpecial>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x7492" id="Mini Geb">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>98</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0310</PlayerClassType>
+      <UnlockSpecial>Drops in the Tomb of the Ancients.</UnlockSpecial>
+   </Object>
+   <Object type="0x7493" id="Mini Skuld">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>99</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0300</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x7494" id="Mini Archmage">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>100</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x030e</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x7495" id="Mini Swoll">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>97</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x031f</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x7496" id="Mini Phylactery">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>96</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0323</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x7497" id="Mini Oryx">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>95</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x031e</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x7fbd" id="Dragon Tamer">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>116</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x031d</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4bcf" id="Mini Queen Bee Huntress">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>182</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0322</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4c49" id="Mini Lost Golem Trickster">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>217</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0324</PlayerClassType>
       <NoSkinSelect/>
    </Object>
    <Object type="0x0403" id="Olive Gladiator">
@@ -1029,6 +1070,16 @@
       <PlayerClassType>0x0326</PlayerClassType>
       <NoSkinSelect/>
    </Object>
+   <Object type="0x2add" id="Beefcake Rogue">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins16</File>
+         <Index>11</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0300</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
    <Object type="0x7ffe" id="Vampire Lord">
       <Skin/>
       <Class>Skin</Class>
@@ -1037,7 +1088,7 @@
          <Index>108</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0321</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockSpecial>Only appears during Halloween!</UnlockSpecial>
    </Object>
    <Object type="0x7f8e" id="Headless Rider">
       <Skin/>
@@ -1047,7 +1098,7 @@
          <Index>109</Index>
       </AnimatedTexture>
       <PlayerClassType>0x031f</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockSpecial>Only appears during Halloween!</UnlockSpecial>
    </Object>
    <Object type="0x7f90" id="Pilgrim Father">
       <Skin/>
@@ -1057,7 +1108,7 @@
          <Index>110</Index>
       </AnimatedTexture>
       <PlayerClassType>0x031f</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>15</UnlockLevel>
    </Object>
    <Object type="0x7f91" id="Pilgrim Mother">
       <Skin/>
@@ -1067,7 +1118,7 @@
          <Index>111</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0323</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>15</UnlockLevel>
    </Object>
    <Object type="0x7f92" id="Wizard Supreme">
       <Skin/>
@@ -1077,7 +1128,7 @@
          <Index>112</Index>
       </AnimatedTexture>
       <PlayerClassType>0x030e</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x7fa3" id="Rudolph the Berzerk">
       <Skin/>
@@ -1087,7 +1138,7 @@
          <Index>113</Index>
       </AnimatedTexture>
       <PlayerClassType>0x031d</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockSpecial>Only appears during Christmas!</UnlockSpecial>
    </Object>
    <Object type="0x7fa4" id="Miss Santa">
       <Skin/>
@@ -1097,7 +1148,7 @@
          <Index>114</Index>
       </AnimatedTexture>
       <PlayerClassType>0x031f</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockSpecial>Only appears during Christmas!</UnlockSpecial>
    </Object>
    <Object type="0x7fa5" id="Snow Queen">
       <Skin/>
@@ -1107,17 +1158,7 @@
          <Index>115</Index>
       </AnimatedTexture>
       <PlayerClassType>0x030e</PlayerClassType>
-      <NoSkinSelect/>
-   </Object>
-   <Object type="0x7fbd" id="Dragon Tamer">
-      <Skin/>
-      <Class>Skin</Class>
-      <AnimatedTexture>
-         <File>playerskins</File>
-         <Index>116</Index>
-      </AnimatedTexture>
-      <PlayerClassType>0x031d</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x138" id="Inuit">
       <Skin/>
@@ -1127,7 +1168,7 @@
          <Index>117</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0307</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x139" id="Snowcloaked Rogue">
       <Skin/>
@@ -1137,7 +1178,7 @@
          <Index>118</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0300</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x16e3" id="Chinese Dress Trickster">
       <Skin/>
@@ -1147,7 +1188,7 @@
          <Index>119</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0324</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockSpecial>Only appears during Lunar New Year!</UnlockSpecial>
    </Object>
    <Object type="0x16e4" id="Penguin Knight">
       <Skin/>
@@ -1157,7 +1198,7 @@
          <Index>120</Index>
       </AnimatedTexture>
       <PlayerClassType>0x031e</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x16e5" id="Frimar Knight">
       <Skin/>
@@ -1167,7 +1208,7 @@
          <Index>121</Index>
       </AnimatedTexture>
       <PlayerClassType>0x031e</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x16e6" id="Frozen King">
       <Skin/>
@@ -1177,7 +1218,7 @@
          <Index>122</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0321</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x16e7" id="Blizzard Sorcerer">
       <Skin/>
@@ -1187,7 +1228,7 @@
          <Index>123</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0325</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x16e8" id="Ice King Priest">
       <Skin/>
@@ -1197,7 +1238,7 @@
          <Index>124</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0310</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x16e9" id="Icicle Dial Mystic">
       <Skin/>
@@ -1207,7 +1248,7 @@
          <Index>125</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0323</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x16ea" id="Yuki Onna Mystic">
       <Skin/>
@@ -1217,7 +1258,7 @@
          <Index>126</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0323</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x16f6" id="Warrior - Artist Extraordinaire">
       <Skin/>
@@ -1499,56 +1540,6 @@
       <PlayerClassType>0x307</PlayerClassType>
       <NoSkinSelect/>
    </Object>
-   <Object type="0x1786" id="Juliet">
-      <Skin/>
-      <Class>Skin</Class>
-      <AnimatedTexture>
-         <File>playerskins</File>
-         <Index>132</Index>
-      </AnimatedTexture>
-      <PlayerClassType>0x0324</PlayerClassType>
-      <NoSkinSelect/>
-   </Object>
-   <Object type="0x1787" id="Heartseeker">
-      <Skin/>
-      <Class>Skin</Class>
-      <AnimatedTexture>
-         <File>playerskins</File>
-         <Index>133</Index>
-      </AnimatedTexture>
-      <PlayerClassType>0x0322</PlayerClassType>
-      <NoSkinSelect/>
-   </Object>
-   <Object type="0x1788" id="Romeo">
-      <Skin/>
-      <Class>Skin</Class>
-      <AnimatedTexture>
-         <File>playerskins</File>
-         <Index>134</Index>
-      </AnimatedTexture>
-      <PlayerClassType>0x0320</PlayerClassType>
-      <NoSkinSelect/>
-   </Object>
-   <Object type="0x1789" id="Mardi Gras Jester">
-      <Skin/>
-      <Class>Skin</Class>
-      <AnimatedTexture>
-         <File>playerskins</File>
-         <Index>135</Index>
-      </AnimatedTexture>
-      <PlayerClassType>0x0325</PlayerClassType>
-      <NoSkinSelect/>
-   </Object>
-   <Object type="0x178a" id="Carnivalmancer">
-      <Skin/>
-      <Class>Skin</Class>
-      <AnimatedTexture>
-         <File>playerskins</File>
-         <Index>136</Index>
-      </AnimatedTexture>
-      <PlayerClassType>0x0321</PlayerClassType>
-      <NoSkinSelect/>
-   </Object>
    <Object type="0x2ab2" id="Warrior - Future Seeker Tester">
       <Skin/>
       <Class>Skin</Class>
@@ -1689,6 +1680,56 @@
       <PlayerClassType>0x0325</PlayerClassType>
       <NoSkinSelect/>
    </Object>
+   <Object type="0x1786" id="Juliet">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>132</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0324</PlayerClassType>
+      <UnlockSpecial>Only appears during Valentines!</UnlockSpecial>
+   </Object>
+   <Object type="0x1787" id="Heartseeker">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>133</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0322</PlayerClassType>
+      <UnlockSpecial>Only appears during Valentines!</UnlockSpecial>
+   </Object>
+   <Object type="0x1788" id="Romeo">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>134</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0320</PlayerClassType>
+      <UnlockSpecial>Only appears during Valentines!</UnlockSpecial>
+   </Object>
+   <Object type="0x1789" id="Mardi Gras Jester">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>135</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0325</PlayerClassType>
+      <UnlockSpecial>Only appears during Mardi Gras!</UnlockSpecial>
+   </Object>
+   <Object type="0x178a" id="Carnivalmancer">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>136</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0321</PlayerClassType>
+      <UnlockSpecial>Only appears during Mardi Gras!</UnlockSpecial>
+   </Object>
    <Object type="0x2acf" id="Wind Flower Ninja">
       <Skin/>
       <Class>Skin</Class>
@@ -1697,7 +1738,7 @@
          <Index>142</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0326</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x2ad0" id="Leprechaun Mystic">
       <Skin/>
@@ -1707,7 +1748,7 @@
          <Index>143</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0323</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x2ad1" id="Mini Nut">
       <Skin/>
@@ -1717,7 +1758,7 @@
          <Index>144</Index>
       </AnimatedTexture>
       <PlayerClassType>0x307</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockSpecial>Drops in the Tomb of the Ancients.</UnlockSpecial>
    </Object>
    <Object type="0x2ad2" id="Miss Shamrock">
       <Skin/>
@@ -1727,7 +1768,7 @@
          <Index>145</Index>
       </AnimatedTexture>
       <PlayerClassType>0x30e</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockSpecial>Only appears during St Patrick's Day!</UnlockSpecial>
    </Object>
    <Object type="0x2ad3" id="Sheep Warrior">
       <Skin/>
@@ -1737,7 +1778,7 @@
          <Index>146</Index>
       </AnimatedTexture>
       <PlayerClassType>0x031d</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x2ad4" id="Sheep Rogue">
       <Skin/>
@@ -1747,7 +1788,7 @@
          <Index>147</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0300</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x2ad5" id="Sheep Wizard">
       <Skin/>
@@ -1757,7 +1798,7 @@
          <Index>148</Index>
       </AnimatedTexture>
       <PlayerClassType>0x30e</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x2ad6" id="Sheep Archer">
       <Skin/>
@@ -1767,7 +1808,7 @@
          <Index>149</Index>
       </AnimatedTexture>
       <PlayerClassType>0x307</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x2ad7" id="Sheep Priest">
       <Skin/>
@@ -1777,7 +1818,7 @@
          <Index>150</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0310</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x2ad8" id="Lil' Bo-Peep">
       <Skin/>
@@ -1787,7 +1828,7 @@
          <Index>151</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0323</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x2ad9" id="The Flamingo">
       <Skin/>
@@ -1797,7 +1838,7 @@
          <Index>152</Index>
       </AnimatedTexture>
       <PlayerClassType>0x30e</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x2adb" id="Dr. Spellbomb">
       <Skin/>
@@ -1807,7 +1848,7 @@
          <Index>153</Index>
       </AnimatedTexture>
       <PlayerClassType>0x30e</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x2ada" id="Mini Stheno">
       <Skin/>
@@ -1817,7 +1858,7 @@
          <Index>154</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0320</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockSpecial>Drops in the Snake Pit.</UnlockSpecial>
    </Object>
    <Object type="0x2ade" id="Iron Maiden">
       <Skin/>
@@ -1827,7 +1868,7 @@
          <Index>155</Index>
       </AnimatedTexture>
       <PlayerClassType>0x031f</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x2adc" id="Explorer">
       <Skin/>
@@ -1837,17 +1878,7 @@
          <Index>156</Index>
       </AnimatedTexture>
       <PlayerClassType>0x031d</PlayerClassType>
-      <NoSkinSelect/>
-   </Object>
-   <Object type="0x2add" id="Beefcake Rogue">
-      <Skin/>
-      <Class>Skin</Class>
-      <AnimatedTexture>
-         <File>playerskins16</File>
-         <Index>11</Index>
-      </AnimatedTexture>
-      <PlayerClassType>0x0300</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x4ad0" id="Mystic Emeritus">
       <Skin/>
@@ -1857,7 +1888,7 @@
          <Index>157</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0323</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x4ad1" id="Silver Ninja">
       <Skin/>
@@ -1867,7 +1898,7 @@
          <Index>158</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0326</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x4ad2" id="Woodland Huntress">
       <Skin/>
@@ -1877,7 +1908,7 @@
          <Index>159</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0322</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x4ad3" id="Bunny Trickster">
       <Skin/>
@@ -1887,7 +1918,7 @@
          <Index>160</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0324</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockSpecial>Only appears during Easter!</UnlockSpecial>
    </Object>
    <Object type="0x4ad4" id="Shrine Priestess">
       <Skin/>
@@ -1897,7 +1928,7 @@
          <Index>161</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0310</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x4ad5" id="Red Outlaw">
       <Skin/>
@@ -1907,7 +1938,7 @@
          <Index>162</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0300</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x4ad6" id="Shadow Mage">
       <Skin/>
@@ -1917,7 +1948,7 @@
          <Index>163</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0321</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x4ad7" id="Shield Maiden">
       <Skin/>
@@ -1927,7 +1958,7 @@
          <Index>164</Index>
       </AnimatedTexture>
       <PlayerClassType>0x031e</PlayerClassType>
-      <NoSkinSelect/>
+      <UnlockLevel>20</UnlockLevel>
    </Object>
    <Object type="0x4baa" id="Markswoman Huntress">
       <Skin/>
@@ -2099,14 +2130,394 @@
       <PlayerClassType>0x0300</PlayerClassType>
       <NoSkinSelect/>
    </Object>
-   <Object type="0x4bcf" id="Mini Queen Bee Huntress">
+   <Object type="0x4bd1" id="Bard Priestess">
       <Skin/>
       <Class>Skin</Class>
       <AnimatedTexture>
          <File>playerskins</File>
-         <Index>182</Index>
+         <Index>183</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0310</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4bd2" id="Princess Warrior">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>184</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x031d</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4bd3" id="Light Cavalry Warrior">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>185</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x031d</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4bd4" id="Clockwork Mystic">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>186</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0323</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4bd5" id="Twilight Acolyte Rogue">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>187</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0300</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4bd6" id="Ethereal Princess Archer">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>188</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x307</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4bd7" id="Antique Diver Knight">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>189</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x031e</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4bd8" id="Guerilla Archer">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>190</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x307</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4bd9" id="Ordinary Box Rogue">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>191</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0300</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4bda" id="Lifeguard Priest">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>192</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0310</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4bdb" id="Stone Statue Rogue">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>193</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0300</PlayerClassType>
+      <UnlockSpecial>Month of the Mad God Reward!</UnlockSpecial>
+   </Object>
+   <Object type="0x4bdc" id="Stone Statue Archer">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>194</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x307</PlayerClassType>
+      <UnlockSpecial>Month of the Mad God Reward!</UnlockSpecial>
+   </Object>
+   <Object type="0x4bdd" id="Stone Statue Wizard">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>195</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x30e</PlayerClassType>
+      <UnlockSpecial>Month of the Mad God Reward!</UnlockSpecial>
+   </Object>
+   <Object type="0x4bde" id="Stone Statue Priest">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>196</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0310</PlayerClassType>
+      <UnlockSpecial>Month of the Mad God Reward!</UnlockSpecial>
+   </Object>
+   <Object type="0x4bdf" id="Stone Statue Warrior">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>197</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x031d</PlayerClassType>
+      <UnlockSpecial>Month of the Mad God Reward!</UnlockSpecial>
+   </Object>
+   <Object type="0x4be0" id="Stone Statue Knight">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>198</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x031e</PlayerClassType>
+      <UnlockSpecial>Month of the Mad God Reward!</UnlockSpecial>
+   </Object>
+   <Object type="0x4be1" id="Stone Statue Paladin">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>199</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x031f</PlayerClassType>
+      <UnlockSpecial>Month of the Mad God Reward!</UnlockSpecial>
+   </Object>
+   <Object type="0x4be2" id="Stone Statue Assassin">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>200</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0320</PlayerClassType>
+      <UnlockSpecial>Month of the Mad God Reward!</UnlockSpecial>
+   </Object>
+   <Object type="0x4be3" id="Stone Statue Necromancer">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>201</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0321</PlayerClassType>
+      <UnlockSpecial>Month of the Mad God Reward!</UnlockSpecial>
+   </Object>
+   <Object type="0x4be4" id="Stone Statue Huntress">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>202</Index>
       </AnimatedTexture>
       <PlayerClassType>0x0322</PlayerClassType>
+      <UnlockSpecial>Month of the Mad God Reward!</UnlockSpecial>
+   </Object>
+   <Object type="0x4be5" id="Stone Statue Mystic">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>203</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0323</PlayerClassType>
+      <UnlockSpecial>Month of the Mad God Reward!</UnlockSpecial>
+   </Object>
+   <Object type="0x4be6" id="Stone Statue Trickster">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>204</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0324</PlayerClassType>
+      <UnlockSpecial>Month of the Mad God Reward!</UnlockSpecial>
+   </Object>
+   <Object type="0x4be7" id="Stone Statue Sorcerer">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>205</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0325</PlayerClassType>
+      <UnlockSpecial>Month of the Mad God Reward!</UnlockSpecial>
+   </Object>
+   <Object type="0x4be8" id="Stone Statue Ninja">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>206</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0326</PlayerClassType>
+      <UnlockSpecial>Month of the Mad God Reward!</UnlockSpecial>
+   </Object>
+   <Object type="0x4be9" id="Voodoo Magus Necromancer">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>207</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0321</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4c1a" id="Undine Sorcerer">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>208</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0325</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4c1b" id="Lodestar Warrior">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>209</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x031d</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4c1c" id="Alice Assassin">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>210</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0320</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4c1d" id="Mad Hatter Trickster">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>211</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0324</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4c1e" id="Queen Of Hearts Sorcerer">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>212</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0325</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4c1f" id="Mad Dwarf Paladin">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>213</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x031f</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4c26" id="Beachcake Rogue">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins16</File>
+         <Index>13</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0300</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4c28" id="Athena Warrior">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>214</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x031d</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4c29" id="Valkyrie Paladin">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>215</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x031f</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4c2a" id="Nameless Sorcerer">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>216</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0325</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4c4b" id="Thunder God Sorcerer">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins16</File>
+         <Index>15</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0325</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4c53" id="Soubrette Trickster">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>219</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0324</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4c54" id="Drake Hunter">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>220</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0322</PlayerClassType>
+      <NoSkinSelect/>
+   </Object>
+   <Object type="0x4c55" id="Pharaoh Ninja">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+         <File>playerskins</File>
+         <Index>221</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0326</PlayerClassType>
       <NoSkinSelect/>
    </Object>
 </Objects>

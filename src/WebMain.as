@@ -3,8 +3,7 @@ import com.company.assembleegameclient.objects.Player;
 import com.company.assembleegameclient.parameters.Parameters;
 import com.company.assembleegameclient.util.AssetLoader;
 import com.company.assembleegameclient.util.StageProxy;
-import flash.external.ExternalInterface;
-//import flash.system.Security;
+import flash.net.LocalConnection;
 import kabam.rotmg.chat.model.ChatMessage;
 import kabam.rotmg.dailyLogin.config.DailyLoginConfig;
 import kabam.rotmg.game.signals.AddTextLineSignal;
@@ -65,14 +64,16 @@ import robotlegs.bender.framework.api.LogLevel;
 public class WebMain extends Sprite {
 
     public static var STAGE:Stage;
-    //public var addTextLine:AddTextLineSignal;
+	public static var lc:LocalConnection;
+    private var addTextLine:AddTextLineSignal;
     protected var context:IContext;
 	public static var sWidth:Number = 800;
 	public static var sHeight:Number = 600;
 
     public function WebMain() {
-		//ExternalInterface.addCallback("main", addMessage);
-		//Security.loadPolicyFile("http://localhost:843"); //must use port 843
+		lc = new LocalConnection();
+		lc.connect("gameClient");
+		lc.client = this;
         if (stage) {
 			stage.addEventListener(Event.RESIZE,this.onStageResize);
             this.setup();
@@ -80,8 +81,13 @@ public class WebMain extends Sprite {
         else {
             addEventListener(Event.ADDED_TO_STAGE, this.onAddedToStage);
         }
-		//addTextLine = this.context.injector.getInstance(AddTextLineSignal);
+		addTextLine = this.context.injector.getInstance(AddTextLineSignal); //temp
     }
+	
+	public function boatNotif():void {
+		//recon and security
+		addTextLine.dispatch(ChatMessage.make("*Help*", "Boat leaving"));
+	}
 	
 	public function onStageResize(param1:Event):void {
 		if (stage.scaleMode == StageScaleMode.NO_SCALE) {
@@ -99,20 +105,6 @@ public class WebMain extends Sprite {
 		sWidth = stage.stageWidth;
 		sHeight = stage.stageHeight;
 	}
-	
-	/*public function addMessage(com:String, name:String, message:String):void {
-		switch (com) {
-			case "Login": //LOGIN
-				break;
-			case "Logout": //LOGOUT
-				break;
-			case "Message": //MESSAGE
-				addTextLine.dispatch(ChatMessage.make(name, message, -1, 1, "*Hacker*"));
-				break;
-			case "List": //LIST
-				break;
-		}
-	}*/
 
     private function onAddedToStage(_arg_1:Event):void {
         removeEventListener(Event.ADDED_TO_STAGE, this.onAddedToStage);
@@ -139,7 +131,6 @@ public class WebMain extends Sprite {
         var _local_1:StageProxy = new StageProxy(this);
         this.context.injector.map(StageProxy).toValue(_local_1);
 		this.context.extend(MVCSBundle).extend(SignalCommandMapExtension).configure(BuildConfig).configure(StartupConfig).configure(NetConfig).configure(AssetsConfig).configure(DialogsConfig).configure(EnvironmentConfig).configure(ApplicationConfig).configure(LanguageConfig).configure(TextConfig).configure(AppEngineConfig).configure(AccountConfig).configure(ErrorConfig).configure(CoreConfig).configure(ApplicationSpecificConfig).configure(DeathConfig).configure(CharactersConfig).configure(ServersConfig).configure(GameConfig).configure(UIConfig).configure(MiniMapConfig).configure(LegendsConfig).configure(NewsConfig).configure(FameConfig).configure(TooltipsConfig).configure(PromotionsConfig).configure(ProTipConfig).configure(MapLoadingConfig).configure(ClassesConfig).configure(PackageConfig).configure(PetsConfig).configure(QuestRewardsConfig).configure(DailyLoginConfig).configure(Stage3DConfig).configure(ArenaConfig).configure(ExternalConfig).configure(MysteryBoxConfig).configure(FortuneConfig).configure(FriendConfig).configure(this);
-        this.context.logLevel = LogLevel.DEBUG;
     }
 
 }

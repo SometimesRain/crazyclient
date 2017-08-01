@@ -172,7 +172,7 @@
       <Defense>5</Defense>
    </Object>
    <Object type="0x12d" id="TH Maggots">
-      <DisplayId>Larve</DisplayId>
+      <DisplayId>Larva</DisplayId>
       <Enemy/>
       <Class>Character</Class>
       <AnimatedTexture>

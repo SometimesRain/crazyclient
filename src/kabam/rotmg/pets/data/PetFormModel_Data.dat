@@ -3026,7 +3026,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Marid Pet Skin</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>2000</feedPower>
    </Object>
    <Object type="0x6104" id="Bagston Skin">
       <PetSkin/>
@@ -3051,6 +3051,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Bagston Pet Skin</DisplayId>
+      <feedPower>5000</feedPower>
    </Object>
    <Object type="0x6107" id="Goldy Skin">
       <PetSkin/>
@@ -3075,6 +3076,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Goldy Pet Skin</DisplayId>
+      <feedPower>5000</feedPower>
    </Object>
    <Object type="0x610a" id="Jaco Skin">
       <PetSkin/>
@@ -3100,7 +3102,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Jaco Pet Skin</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>2000</feedPower>
    </Object>
    <Object type="0x7ffc" id="Giant Vampire Bat Skin">
       <PetSkin/>
@@ -3314,7 +3316,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Muddy Tidechaser Skin</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>300</feedPower>
    </Object>
    <Object type="0x8090" id="Disabled Pet Skin">
       <PetSkin/>
@@ -3528,7 +3530,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Turtle Pet Skin</DisplayId>
-      <feedPower>50</feedPower>
+      <feedPower>300</feedPower>
    </Object>
    <Object type="0x1998" id="Peppermint Snail Pet Stone">
       <Class>Equipment</Class>
@@ -3544,7 +3546,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Peppermint Snail Pet Skin</DisplayId>
-      <feedPower>500</feedPower>
+      <feedPower>300</feedPower>
    </Object>
    <Object type="0x1999" id="Golden Crab Pet Stone">
       <Class>Equipment</Class>
@@ -3561,7 +3563,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Golden Crab Pet Skin</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>2000</feedPower>
    </Object>
    <Object type="0x199a" id="Robobuddy Pet Stone">
       <Class>Equipment</Class>
@@ -3577,7 +3579,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Robobuddy Pet Skin</DisplayId>
-      <feedPower>50</feedPower>
+      <feedPower>300</feedPower>
    </Object>
    <Object type="0x199b" id="Redbot Pet Stone">
       <Class>Equipment</Class>
@@ -3593,7 +3595,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Redbot Pet Skin</DisplayId>
-      <feedPower>500</feedPower>
+      <feedPower>600</feedPower>
    </Object>
    <Object type="0x199c" id="Gutsbot Pet Stone">
       <Class>Equipment</Class>
@@ -3610,7 +3612,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Gutsbot Pet Skin</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>2000</feedPower>
    </Object>
    <Object type="0x199d" id="Cardinal Pet Stone">
       <Class>Equipment</Class>
@@ -3626,7 +3628,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Cardinal Pet Skin</DisplayId>
-      <feedPower>50</feedPower>
+      <feedPower>300</feedPower>
    </Object>
    <Object type="0x199e" id="USA Eagle Pet Stone">
       <Class>Equipment</Class>
@@ -3642,7 +3644,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>USA Eagle Pet Skin</DisplayId>
-      <feedPower>500</feedPower>
+      <feedPower>600</feedPower>
    </Object>
    <Object type="0x199f" id="Griffin Pet Stone">
       <Class>Equipment</Class>
@@ -3659,7 +3661,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Griffin Pet Skin</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>2000</feedPower>
    </Object>
    <Object type="0x19a0" id="Sheepdog Pet Stone">
       <Class>Equipment</Class>
@@ -3675,7 +3677,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Sheepdog Pet Skin</DisplayId>
-      <feedPower>50</feedPower>
+      <feedPower>300</feedPower>
    </Object>
    <Object type="0x19a1" id="Gold Bulldog Pet Stone">
       <Class>Equipment</Class>
@@ -3691,7 +3693,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Gold Bulldog Pet Skin</DisplayId>
-      <feedPower>500</feedPower>
+      <feedPower>600</feedPower>
    </Object>
    <Object type="0x19a2" id="Golden Hyena Pet Stone">
       <Class>Equipment</Class>
@@ -3708,7 +3710,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Golden Hyena Pet Skin</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>2000</feedPower>
    </Object>
    <Object type="0x19a3" id="Elephant Pet Stone">
       <Class>Equipment</Class>
@@ -3724,7 +3726,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Elephant Pet Skin</DisplayId>
-      <feedPower>50</feedPower>
+      <feedPower>300</feedPower>
    </Object>
    <Object type="0x19a4" id="Panda Pet Stone">
       <Class>Equipment</Class>
@@ -3740,7 +3742,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Panda Pet Skin</DisplayId>
-      <feedPower>500</feedPower>
+      <feedPower>600</feedPower>
    </Object>
    <Object type="0x19a5" id="King Gorilla Pet Stone">
       <Class>Equipment</Class>
@@ -3757,7 +3759,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>King Gorilla Pet Skin</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>2000</feedPower>
    </Object>
    <Object type="0x19a6" id="Duck Pet Stone">
       <Class>Equipment</Class>
@@ -3773,7 +3775,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Duck Pet Skin</DisplayId>
-      <feedPower>50</feedPower>
+      <feedPower>300</feedPower>
    </Object>
    <Object type="0x19a7" id="Mallard Pet Stone">
       <Class>Equipment</Class>
@@ -3789,7 +3791,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Mallard Pet Skin</DisplayId>
-      <feedPower>500</feedPower>
+      <feedPower>600</feedPower>
    </Object>
    <Object type="0x19a8" id="Enraged Yack Pet Stone">
       <Class>Equipment</Class>
@@ -3806,7 +3808,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Enraged Yack Pet Skin</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>2000</feedPower>
    </Object>
    <Object type="0x19a9" id="Tan Cat Pet Stone">
       <Class>Equipment</Class>
@@ -3822,7 +3824,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Tan Cat Pet Skin</DisplayId>
-      <feedPower>50</feedPower>
+      <feedPower>300</feedPower>
    </Object>
    <Object type="0x19aa" id="White Lion Pet Stone">
       <Class>Equipment</Class>
@@ -3838,7 +3840,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>White Lion Pet Skin</DisplayId>
-      <feedPower>500</feedPower>
+      <feedPower>600</feedPower>
    </Object>
    <Object type="0x19ab" id="Tiger Pet Stone">
       <Class>Equipment</Class>
@@ -3855,7 +3857,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Tiger Pet Skin</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>2000</feedPower>
    </Object>
    <Object type="0x19ac" id="Leprechaun Pet Stone">
       <Class>Equipment</Class>
@@ -3871,7 +3873,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Leprechaun Pet Skin</DisplayId>
-      <feedPower>500</feedPower>
+      <feedPower>600</feedPower>
    </Object>
    <Object type="0x19ad" id="Red Ant Pet Stone">
       <Class>Equipment</Class>
@@ -3887,7 +3889,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Red Ant Pet Skin</DisplayId>
-      <feedPower>50</feedPower>
+      <feedPower>300</feedPower>
    </Object>
    <Object type="0x19ae" id="Bee Pet Stone">
       <Class>Equipment</Class>
@@ -3903,7 +3905,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Bee Pet Skin</DisplayId>
-      <feedPower>500</feedPower>
+      <feedPower>600</feedPower>
    </Object>
    <Object type="0x19af" id="Beetleman Pet Stone">
       <Class>Equipment</Class>
@@ -3920,7 +3922,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Beetleman Pet Skin</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>2000</feedPower>
    </Object>
    <Object type="0x19b0" id="Penguin Pet Stone">
       <Class>Equipment</Class>
@@ -3936,7 +3938,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Penguin Pet Skin</DisplayId>
-      <feedPower>50</feedPower>
+      <feedPower>300</feedPower>
    </Object>
    <Object type="0x19b1" id="Karate Purple Pet Stone">
       <Class>Equipment</Class>
@@ -3952,7 +3954,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Karate Purple Pet Skin</DisplayId>
-      <feedPower>500</feedPower>
+      <feedPower>600</feedPower>
    </Object>
    <Object type="0x19b2" id="Tank Penguin Pet Stone">
       <Class>Equipment</Class>
@@ -3969,7 +3971,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Tank Penguin Pet Skin</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>2000</feedPower>
    </Object>
    <Object type="0x19b3" id="Dino Pet Stone">
       <Class>Equipment</Class>
@@ -3985,7 +3987,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Dino Pet Skin</DisplayId>
-      <feedPower>50</feedPower>
+      <feedPower>300</feedPower>
    </Object>
    <Object id="Frilled Lizard" type="0x19b4">
       <Pet/>
@@ -4022,7 +4024,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Frilled Lizard Pet Stone</DisplayId>
-      <feedPower>500</feedPower>
+      <feedPower>600</feedPower>
    </Object>
    <Object type="0x19b7" id="Poison Drake Pet Stone">
       <Class>Equipment</Class>
@@ -4039,7 +4041,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Poison Drake Pet Skin</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>2000</feedPower>
    </Object>
    <Object type="0x19b8" id="Spirit Pet Stone">
       <Class>Equipment</Class>
@@ -4055,7 +4057,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Spirit Pet Skin</DisplayId>
-      <feedPower>50</feedPower>
+      <feedPower>300</feedPower>
    </Object>
    <Object type="0x19b9" id="Werewolf Cub Pet Stone">
       <Class>Equipment</Class>
@@ -4071,7 +4073,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Werewolf Cub Pet Skin</DisplayId>
-      <feedPower>500</feedPower>
+      <feedPower>600</feedPower>
    </Object>
    <Object type="0x19ba" id="Hamster Pet Stone">
       <Class>Equipment</Class>
@@ -4087,7 +4089,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Hamster Pet Skin</DisplayId>
-      <feedPower>50</feedPower>
+      <feedPower>300</feedPower>
    </Object>
    <Object type="0x19bb" id="Snowy Owl Pet Stone">
       <Class>Equipment</Class>
@@ -4103,7 +4105,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Snowy Owl Pet Skin</DisplayId>
-      <feedPower>500</feedPower>
+      <feedPower>600</feedPower>
    </Object>
    <Object type="0x19bc" id="Sprite Star Pet Stone">
       <Class>Equipment</Class>
@@ -4119,7 +4121,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Sprite Star Pet Skin</DisplayId>
-      <feedPower>50</feedPower>
+      <feedPower>300</feedPower>
    </Object>
    <Object type="0x19bd" id="Gummy Bear Pet Stone">
       <Class>Equipment</Class>
@@ -4135,7 +4137,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Gummy Bear Pet Skin</DisplayId>
-      <feedPower>500</feedPower>
+      <feedPower>600</feedPower>
    </Object>
    <Object id="Fire Rooster" type="0x19be">
       <Pet/>
@@ -4172,7 +4174,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Fire Rooster Pet Stone</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>2000</feedPower>
    </Object>
    <Object id="Rooster of Good Fortune" type="0x19c1">
       <Pet/>
@@ -4250,7 +4252,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Mini Chinese Dragon Pet Stone</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>2000</feedPower>
    </Object>
    <Object id="Gingerbread Man" type="0x19c7">
       <Pet/>
@@ -4287,7 +4289,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Gingerbread Man Pet Stone</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>2000</feedPower>
    </Object>
    <Object id="Mini Polaris" type="0x19ca">
       <Pet/>
@@ -4324,7 +4326,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Mini Polaris Pet Stone</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>2000</feedPower>
    </Object>
    <Object id="Mini Paper Lantern" type="0x19cd">
       <Pet/>
@@ -4365,7 +4367,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Mini Paper Lantern Pet Skin</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>2000</feedPower>
    </Object>
    <Object id="Paper Lantern" type="0x19d0">
       <Pet/>
@@ -4407,7 +4409,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Paper Lantern Pet Skin</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>2000</feedPower>
    </Object>
    <Object id="Chinese Dragon" type="0x19d3">
       <Pet/>
@@ -4449,7 +4451,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Chinese Dragon Pet Skin</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>2000</feedPower>
    </Object>
    <Object id="Desert Cobra" type="0x19d6">
       <Pet/>
@@ -4486,7 +4488,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Desert Cobra Pet Stone</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>2000</feedPower>
    </Object>
    <Object id="White Bounsheep" type="0x2aa0">
       <Pet/>
@@ -4523,7 +4525,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>White Bounsheep Pet Stone</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>2000</feedPower>
    </Object>
    <Object id="Grey Bounsheep" type="0x2aa3">
       <Pet/>
@@ -4560,7 +4562,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Grey Bounsheep Pet Stone</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>2000</feedPower>
    </Object>
    <Object id="Brown Bounsheep" type="0x2aa6">
       <Pet/>
@@ -4597,7 +4599,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Brown Bounsheep Pet Stone</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>2000</feedPower>
    </Object>
    <Object id="Bes' Artifact" type="0x2aa9">
       <Pet/>
@@ -4634,7 +4636,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Bes' Artifact Pet Stone</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>2000</feedPower>
    </Object>
    <Object id="Geb's Artifact" type="0x2aac">
       <Pet/>
@@ -4671,7 +4673,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Geb's Artifact Pet Stone</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>2000</feedPower>
    </Object>
    <Object id="Nut's Artifact" type="0x2aaf">
       <Pet/>
@@ -4708,7 +4710,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Nut's Artifact Pet Stone</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>2000</feedPower>
    </Object>
    <Object id="Mini Sphinx" type="0x4af0">
       <Pet/>
@@ -4739,13 +4741,13 @@
          <Index>130</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>You hide like cowards... But you can&#8217;t deny its cuteness!\n\nTransform your pet into Mini Sphinx of the ??? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Description>You hide like cowards... But you can&#8217;t deny its cuteness!\n\nSprite Credits: Fishfishd\n\nTransform your pet into Mini Sphinx of the ??? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
       <Activate skinId="19184">PetSkin</Activate>
       <Consumable/>
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Mini Sphinx Pet Stone</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>2000</feedPower>
    </Object>
    <Object id="Mini Crystal Steed" type="0x4af1">
       <Pet/>
@@ -4761,7 +4763,7 @@
    </Object>
    <Object type="0x4ac6" id="Mini Crystal Steed Skin">
       <PetSkin/>
-      <DisplayId>Mini Crystak Steed</DisplayId>
+      <DisplayId>Mini Crystal Steed</DisplayId>
       <Class>PetSkin</Class>
       <AnimatedTexture>
          <File>chars8x8rPets1</File>
@@ -4782,7 +4784,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Mini Crystal Steed Pet Stone</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>2000</feedPower>
    </Object>
    <Object id="Carnivorous Plant" type="0x4af2">
       <Pet/>
@@ -4819,7 +4821,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Carnivorous Plant Pet Stone</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>2000</feedPower>
    </Object>
    <Object id="Knight Companion" type="0x4af3">
       <Pet/>
@@ -4893,7 +4895,7 @@
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Mr Cactus Jr. Pet Stone</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>2000</feedPower>
    </Object>
    <Object id="Mr Cactus" type="0x4af5">
       <Pet/>
@@ -4924,13 +4926,13 @@
          <Index>38</Index>
       </AnimatedTexture>
       <SlotType>10</SlotType>
-      <Description>¡Oye Como Va, Mi ritmo!\n\nSprite Credits: Beige\n\nTransform your pet into Mr Cactus of the ??? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Description>Aye Como Va, Mi ritmo!\n\nSprite Credits: Beige\n\nTransform your pet into Mr Cactus of the ??? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
       <Activate skinId="19189">PetSkin</Activate>
       <Consumable/>
       <Soulbound/>
       <BagType>4</BagType>
       <DisplayId>Mr Cactus Pet Stone</DisplayId>
-      <feedPower>5000</feedPower>
+      <feedPower>2000</feedPower>
    </Object>
    <Object id="Mini Limon" type="0x4bb6">
       <Pet/>
@@ -5010,5 +5012,671 @@
       <BagType>4</BagType>
       <DisplayId>Killer Bee Queen Pet Skin</DisplayId>
       <feedPower>5000</feedPower>
+   </Object>
+   <Object id="Mini Stone Oryx" type="0x4c05">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Mini Stone Oryx Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x4c06" id="Mini Stone Oryx Skin">
+      <PetSkin/>
+      <DisplayId>Mini Stone Oryx</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>136</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x4c07" id="Mini Stone Oryx Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>136</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Your very own angry Oryx Statue!\n\nSprite Credits: PoloKai\n\nTransform your pet into Mini Stone Oryx of the ??? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="19461">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Mini Stone Oryx Pet Stone</DisplayId>
+      <feedPower>2000</feedPower>
+   </Object>
+   <Object id="Mini Gigacorn" type="0x4c08">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Mini Gigacorn Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x4c09" id="Mini Gigacorn Skin">
+      <PetSkin/>
+      <DisplayId>Mini Gigacorn</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>137</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x4c0a" id="Mini Gigacorn Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>137</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Friendship is magic, especially when your friend is a tiny unicorn!\n\nSprite Credits: Septr, Lovens\n\nTransform your pet into Mini Gigacorn of the ??? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="19464">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Mini Gigacorn Pet Stone</DisplayId>
+      <feedPower>2000</feedPower>
+   </Object>
+   <Object id="Mini Creampuff" type="0x4c0b">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Mini Creampuff Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x4c0c" id="Mini Creampuff Skin">
+      <PetSkin/>
+      <DisplayId>Mini Creampuff</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>138</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x4c0d" id="Mini Creampuff Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>138</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Warning: too much sweetness!\n\nSprite Credits: Septr, Lovens\n\nTransform your pet into Mini Creampuff of the ??? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="19467">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Mini Creampuff Pet Stone</DisplayId>
+      <feedPower>2000</feedPower>
+   </Object>
+   <Object id="Mini Desire Troll" type="0x4c0e">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Mini Desire Troll Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x4c0f" id="Mini Desire Troll Skin">
+      <PetSkin/>
+      <DisplayId>Mini Desire Troll</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>139</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x4c10" id="Mini Desire Troll Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>139</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Grants you one wish, but be careful with what you wish for!\n\nSprite Credits: Septr, Lovens\n\nTransform your pet into Mini Desire Troll of the ??? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="19470">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Mini Desire Troll Pet Stone</DisplayId>
+      <feedPower>2000</feedPower>
+   </Object>
+   <Object id="Mini Rototo" type="0x4c11">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Mini Rototo Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x4c12" id="Mini Rototo Skin">
+      <PetSkin/>
+      <DisplayId>Mini Rototo</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>140</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x4c13" id="Mini Rototo Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>140</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Your friendly fluffy neighbor.\n\nSprite Credits: Septr, Lovens\n\nTransform your pet into Mini Rototo of the ??? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="19473">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Mini Rototo Pet Stone</DisplayId>
+      <feedPower>2000</feedPower>
+   </Object>
+   <Object id="Mini Flying Stheno" type="0x4c14">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Reptile</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Mini Flying Stheno Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x4c15" id="Mini Flying Stheno Skin">
+      <PetSkin/>
+      <DisplayId>Mini Flying Stheno</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>141</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x4c16" id="Mini Pet Stheno Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>141</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Because snakes weren't terrifying enough without the ability to fly.\n\nSprite Credits: Poshun\n\nTransform your pet into Mini Flying Stheno of the Reptile family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="19476">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Mini Flying Stheno Pet Stone</DisplayId>
+      <feedPower>2000</feedPower>
+   </Object>
+   <Object id="Surfing Bro" type="0x4c17">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Humanoid</Family>
+      <Rarity>Divine</Rarity>
+      <DefaultSkin>Surfing Bro Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x4c18" id="Surfing Bro Skin">
+      <PetSkin/>
+      <DisplayId>Surfing Bro</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>39</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x4c19" id="Surfing Bro Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>petsDivine</File>
+         <Index>39</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Whoa, dude! Check out this MAD wave! Cowabunga!\n\nSprite Credits: Poshun\n\nTransform your pet into Surfing Bro of the Humanoid family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="19479">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Surfing Bro Pet Stone</DisplayId>
+      <feedPower>5000</feedPower>
+   </Object>
+   <Object id="Mini Ghost King" type="0x4c2e">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Spooky</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Mini Ghost King Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x4c2f" id="Mini Ghost King Skin">
+      <PetSkin/>
+      <DisplayId>Mini Ghost King</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>142</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x4c30" id="Mini Ghost King Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>142</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Aye, let's be miserable together!\n\nSprite Credits: Bloodqwen, Poshun\n\nTransform your pet into Mini Ghost King of the Spooky family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="19502">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Mini Ghost King Pet Stone</DisplayId>
+      <feedPower>2000</feedPower>
+   </Object>
+   <Object id="Robo Brain" type="0x4c31">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Automaton</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Robo Brain Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x4c32" id="Robo Brain Skin">
+      <PetSkin/>
+      <DisplayId>Robo Brain</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>143</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x4c33" id="Robo Brain Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>143</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>I do not think. I'm doing my job. I'm your brain. I'm your pet.\n\nSprite Credits: Bloodqwen\n\nTransform your pet into Robo Brain of the Automaton family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="19505">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Robo Brain Pet Stone</DisplayId>
+      <feedPower>2000</feedPower>
+   </Object>
+   <Object id="Baby Orange Drake" type="0x4c34">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Reptile</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Baby Orange Drake Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x4c35" id="Baby Orange Drake Skin">
+      <PetSkin/>
+      <DisplayId>Baby Orange Drake</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>144</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x4c36" id="Baby Orange Drake Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>144</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Orange is the best color for true Drake Masters.\n\nSprite Credits: Lovens\n\nTransform your pet into Baby Orange Drake of the Reptile family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="19508">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Baby Orange Drake Pet Stone</DisplayId>
+      <feedPower>2000</feedPower>
+   </Object>
+   <Object id="Baby Yellow Drake" type="0x4c37">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Reptile</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Baby Yellow Drake Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x4c38" id="Baby Yellow Drake Skin">
+      <PetSkin/>
+      <DisplayId>Baby Yellow Drake</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>145</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x4c39" id="Baby Yellow Drake Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>145</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Yellow Drakes hold the power of the sun, so strong that it can hurt.\n\nSprite Credits: Lovens\n\nTransform your pet into Baby Yellow Drake of the Reptile family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="19511">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Baby Yellow Drake Pet Stone</DisplayId>
+      <feedPower>2000</feedPower>
+   </Object>
+   <Object id="Baby White Drake" type="0x4c3a">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Reptile</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Baby White Drake Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x4c3b" id="Baby White Drake Skin">
+      <PetSkin/>
+      <DisplayId>Baby White Drake</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>146</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x4c3c" id="Baby White Drake Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>146</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>This majestic creature is ready to assist you in battle like in good old times.\n\nSprite Credits: Lovens\n\nTransform your pet into Baby White Drake of the Reptile family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="19514">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Baby White Drake Pet Stone</DisplayId>
+      <feedPower>2000</feedPower>
+   </Object>
+   <Object id="Baby Green Drake" type="0x4c3d">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Reptile</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Baby Green Drake Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x4c3e" id="Baby Green Drake Skin">
+      <PetSkin/>
+      <DisplayId>Baby Green Drake</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>147</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x4c3f" id="Baby Green Drake Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>147</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Once forgotten and lost in the ancient forests, Green Drakes returned to help players again.\n\nSprite Credits: Lovens\n\nTransform your pet into Baby Green Drake of the Reptile family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="19517">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Baby Green Drake Pet Stone</DisplayId>
+      <feedPower>2000</feedPower>
+   </Object>
+   <Object id="Baby Leviathan" type="0x4c40">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Reptile</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Baby Leviathan Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x4c41" id="Baby Leviathan Skin">
+      <PetSkin/>
+      <DisplayId>Baby Leviathan</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>148</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x4c42" id="Baby Leviathan Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>148</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>This cute manatee is ready to shoot your enemies with 10 billion guns!\n\nSprite Credits: Lovens\n\nTransform your pet into Baby Leviathan of the Reptile family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="19520">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Baby Leviathan Pet Stone</DisplayId>
+      <feedPower>2000</feedPower>
+   </Object>
+   <Object id="Baby Blue Drake" type="0x4c43">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Reptile</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Baby Blue Drake Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x4c44" id="Baby Blue Drake Skin">
+      <PetSkin/>
+      <DisplayId>Baby Blue Drake</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>149</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x4c45" id="Baby Blue Drake Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>149</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>His ancestors were the first pets who were able to paralyze enemies.\n\nSprite Credits: Lovens\n\nTransform your pet into Baby Blue Drake of the Reptile family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="19523">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Baby Blue Drake Pet Stone</DisplayId>
+      <feedPower>2000</feedPower>
+   </Object>
+   <Object id="Baby Purple Drake" type="0x4c46">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>Reptile</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Baby Purple Drake Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x4c47" id="Baby Purple Drake Skin">
+      <PetSkin/>
+      <DisplayId>Baby Purple Drake</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>150</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x4c48" id="Baby Purple Drake Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>150</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Everyone knows that Purple Drakes are better than purple bags!\n\nSprite Credits: Lovens\n\nTransform your pet into Baby Purple Drake of the Reptile family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="19526">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>Baby Purple Drake Pet Stone</DisplayId>
+      <feedPower>2000</feedPower>
+   </Object>
+   <Object id="Pet HP Pot" type="0x4c4d">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Pet HP Pot Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x4c4e" id="Pet HP Pot Skin">
+      <PetSkin/>
+      <DisplayId>HP Pot Pet</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>151</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x4c4f" id="HP Pot Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>151</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>HP Please!\n\nSprite Credits: Spunjah, Lovens\n\nTransform your pet into HP Pot Pet of the ??? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="19533">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>HP Pot Pet Stone</DisplayId>
+      <feedPower>2000</feedPower>
+   </Object>
+   <Object id="Pet MP Pot" type="0x4c50">
+      <Pet/>
+      <Class>Pet</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Family>? ? ? ?</Family>
+      <Rarity>Rare</Rarity>
+      <DefaultSkin>Pet MP Pot Skin</DefaultSkin>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x4c51" id="Pet MP Pot Skin">
+      <PetSkin/>
+      <DisplayId>MP Pot Pet</DisplayId>
+      <Class>PetSkin</Class>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>152</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x4c52" id="MP Pot Pet Stone">
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars8x8rPets1</File>
+         <Index>152</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>MP Please!\n\nSprite Credits: Spunjah, Lovens\n\nTransform your pet into MP Pot Pet of the ??? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
+      <Activate skinId="19536">PetSkin</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>4</BagType>
+      <DisplayId>MP Pot Pet Stone</DisplayId>
+      <feedPower>2000</feedPower>
    </Object>
 </Objects>

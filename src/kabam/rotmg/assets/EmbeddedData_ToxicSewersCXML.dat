@@ -507,7 +507,7 @@
          <File>chars8x8rEncounters</File>
          <Index>132</Index>
       </AnimatedTexture>
-      <MaxHitPoints>4500</MaxHitPoints>
+      <MaxHitPoints>5500</MaxHitPoints>
       <Defense>10</Defense>
       <XpMult>1.0</XpMult>
       <HitSound>monster/bats_hit</HitSound>

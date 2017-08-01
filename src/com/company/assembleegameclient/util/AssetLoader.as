@@ -63,6 +63,7 @@ public class AssetLoader {
         AssetLibrary.addImageSet("lofiObj3", new EmbeddedAssets.lofiObj3Embed_().bitmapData, 8, 8);
         AssetLibrary.addImageSet("lofiObj4", new EmbeddedAssets.lofiObj4Embed_().bitmapData, 8, 8);
         AssetLibrary.addImageSet("lofiObj5", new EmbeddedAssets.lofiObj5Embed_().bitmapData, 8, 8);
+		AssetLibrary.addImageSet("lofiObj5new",new EmbeddedAssets.lofiObj5bEmbed_().bitmapData,8,8);
         AssetLibrary.addImageSet("lofiObj6", new EmbeddedAssets.lofiObj6Embed_().bitmapData, 8, 8);
         AssetLibrary.addImageSet("lofiObjBig", new EmbeddedAssets.lofiObjBigEmbed_().bitmapData, 16, 16);
         AssetLibrary.addImageSet("lofiObj40x40", new EmbeddedAssets.lofiObj40x40Embed_().bitmapData, 40, 40);
@@ -90,6 +91,8 @@ public class AssetLoader {
         AssetLibrary.addImageSet("cursorsEmbed", new EmbeddedAssets.cursorsEmbed_().bitmapData, 32, 32);
 		AssetLibrary.addImageSet("mountainTempleObjects8x8",new EmbeddedAssets.mountainTempleObjects8x8Embed_().bitmapData,8,8);
 		AssetLibrary.addImageSet("mountainTempleObjects16x16",new EmbeddedAssets.mountainTempleObjects16x16Embed_().bitmapData,16,16);
+		AssetLibrary.addImageSet("oryxHordeObjects8x8",new EmbeddedAssets.oryxHordeObjects8x8Embed_().bitmapData,8,8);
+		AssetLibrary.addImageSet("oryxHordeObjects16x16",new EmbeddedAssets.oryxHordeObjects16x16Embed_().bitmapData,16,16);
 		AssetLibrary.addImageSet("stPatricksObjects8x8",new EmbeddedAssets.stPatricksObjects8x8Embed_().bitmapData,8,8);
 		AssetLibrary.addImageSet("stPatricksObjects16x16",new EmbeddedAssets.stPatricksObjects16x16Embed_().bitmapData,16,16);
 		AssetLibrary.addImageSet("buffedBunnyObjects8x8",new EmbeddedAssets.buffedBunnyObjects8x8Embed_().bitmapData,8,8);
@@ -101,6 +104,8 @@ public class AssetLoader {
 		AssetLibrary.addImageSet("summerNexusObjects16x16",new EmbeddedAssets.summerNexusObjects16x16Embed_().bitmapData,16,16);
 		AssetLibrary.addImageSet("epicHiveObjects8x8",new EmbeddedAssets.epicHiveObjects8x8Embed_().bitmapData,8,8);
 		AssetLibrary.addImageSet("epicHiveObjects16x16",new EmbeddedAssets.epicHiveObjects16x16Embed_().bitmapData,16,16);
+		AssetLibrary.addImageSet("LHObj",new EmbeddedAssets.LHObjEmbed_().bitmapData,8,8);
+		AssetLibrary.addImageSet("LHObjBig",new EmbeddedAssets.LHObjBigEmbed_().bitmapData,16,16);
     }
 
     private function addAnimatedCharacters():void {
@@ -139,11 +144,15 @@ public class AssetLoader {
 		AnimatedChars.add("buffedBunnyChars16x16",new EmbeddedAssets.buffedBunnyChars16x16Embed_().bitmapData,null,16,16,112,16,AnimatedChar.RIGHT);
 		AnimatedChars.add("mountainTempleChars8x8",new EmbeddedAssets.mountainTempleChars8x8Embed_().bitmapData,null,8,8,56,8,AnimatedChar.RIGHT);
 		AnimatedChars.add("mountainTempleChars16x16",new EmbeddedAssets.mountainTempleChars16x16Embed_().bitmapData,null,16,16,112,16,AnimatedChar.RIGHT);
+		AnimatedChars.add("oryxHordeChars8x8",new EmbeddedAssets.oryxHordeChars8x8Embed_().bitmapData,null,8,8,56,8,AnimatedChar.RIGHT);
+		AnimatedChars.add("oryxHordeChars16x16",new EmbeddedAssets.oryxHordeChars16x16Embed_().bitmapData,null,16,16,112,16,AnimatedChar.RIGHT);
         AnimatedChars.add("Hanami8x8chars",new EmbeddedAssets.Hanami8x8charsEmbed_().bitmapData,null,8,8,64,8,AnimatedChar.RIGHT);
 		AnimatedChars.add("summerNexusChars8x8",new EmbeddedAssets.summerNexusChars8x8Embed_().bitmapData,null,8,8,56,8,AnimatedChar.RIGHT);
 		AnimatedChars.add("summerNexusChars16x16",new EmbeddedAssets.summerNexusChars16x16Embed_().bitmapData,null,16,16,112,16,AnimatedChar.RIGHT);
 		AnimatedChars.add("epicHiveChars8x8",new EmbeddedAssets.epicHiveChars8x8Embed_().bitmapData,null,8,8,56,8,AnimatedChar.RIGHT);
 		AnimatedChars.add("epicHiveChars16x16",new EmbeddedAssets.epicHiveChars16x16Embed_().bitmapData,null,16,16,112,16,AnimatedChar.RIGHT);
+		AnimatedChars.add("LH16x16chars",new EmbeddedAssets.LH16x16charsEmbed_().bitmapData,null,16,16,112,16,AnimatedChar.RIGHT);
+		AnimatedChars.add("LH8x8chars",new EmbeddedAssets.LH8x8charsEmbed_().bitmapData,null,8,8,56,8,AnimatedChar.RIGHT);
     }
 
     private function addSoundEffects():void {

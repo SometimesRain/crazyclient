@@ -39,7 +39,10 @@ public class BackpackTabContent extends Sprite {
         this.backpackContent.addChild(this.backpackPotionsInventory);
         addChild(this.backpackContent);
     }
-
-
+      
+	public function get backpack() : InventoryGrid
+	{
+		return this.backpack;
+	}
 }
 }//package kabam.rotmg.game.view.components

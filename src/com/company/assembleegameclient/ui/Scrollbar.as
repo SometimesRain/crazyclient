@@ -78,6 +78,8 @@ public class Scrollbar extends Sprite {
     }
 
     public function setPos(_arg_1:Number):void {
+		if(_arg_1 == Number.POSITIVE_INFINITY || _arg_1 == Number.NEGATIVE_INFINITY)
+			return;
         _arg_1 = Math.max(0, Math.min(1, _arg_1));
         this.posIndicator_.y = ((_arg_1 * (this.indicatorRect_.height - this.posIndicator_.height)) + this.indicatorRect_.y);
         this.sendPos();

@@ -713,52 +713,18 @@
       <DisplayId>Lair of Draconis</DisplayId>
       <DungeonName>Lair of Draconis</DungeonName>
       <Texture>
-         <File>lofiObjBig</File>
-         <Index>0x139</Index>
+         <File>lofiObj3</File>
+         <Index>0x3ae</Index>
       </Texture>
-      <Size>60</Size>
-      <Animation prob="1" period="1">
-         <Frame time="0.20">
-            <Texture>
-               <File>lofiObjBig</File>
-               <Index>0x174</Index>
-            </Texture>
-         </Frame>
-         <Frame time="0.20">
-            <Texture>
-               <File>lofiObjBig</File>
-               <Index>0x175</Index>
-            </Texture>
-         </Frame>
-         <Frame time="0.20">
-            <Texture>
-               <File>lofiObjBig</File>
-               <Index>0x176</Index>
-            </Texture>
-         </Frame>
-         <Frame time="0.20">
-            <Texture>
-               <File>lofiObjBig</File>
-               <Index>0x177</Index>
-            </Texture>
-         </Frame>
-         <Frame time="0.20">
-            <Texture>
-               <File>lofiObjBig</File>
-               <Index>0x178</Index>
-            </Texture>
-         </Frame>
-      </Animation>
    </Object>
    <Object type="0x754e" id="Ivory Wyvern Portal">
       <Class>Portal</Class>
       <IntergamePortal/>
       <DungeonName>The Ivory Wyvern</DungeonName>
       <Texture>
-         <File>lofiObjBig</File>
-         <Index>0x139</Index>
+         <File>lofiObj3</File>
+         <Index>0x3ae</Index>
       </Texture>
-      <Size>60</Size>
    </Object>
    <Object type="0x075c" id="Woodland Labyrinth">
       <Class>Portal</Class>

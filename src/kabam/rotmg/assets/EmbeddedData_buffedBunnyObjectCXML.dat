@@ -5,7 +5,7 @@
       <Class>Projectile</Class>
       <Texture>
          <File>buffedBunnyObjects8x8</File>
-         <Index>0x12</Index>
+         <Index>0x23</Index>
       </Texture>
       <AngleCorrection>1</AngleCorrection>
    </Object>
@@ -38,23 +38,23 @@
       <RandomTexture>
          <Texture>
             <File>buffedBunnyObjects8x8</File>
-            <Index>0x14</Index>
+            <Index>0x24</Index>
          </Texture>
          <Texture>
             <File>buffedBunnyObjects8x8</File>
-            <Index>0x15</Index>
+            <Index>0x25</Index>
          </Texture>
          <Texture>
             <File>buffedBunnyObjects8x8</File>
-            <Index>0x16</Index>
+            <Index>0x26</Index>
          </Texture>
          <Texture>
             <File>buffedBunnyObjects8x8</File>
-            <Index>0x17</Index>
+            <Index>0x27</Index>
          </Texture>
          <Texture>
             <File>buffedBunnyObjects8x8</File>
-            <Index>0x18</Index>
+            <Index>0x28</Index>
          </Texture>
       </RandomTexture>
       <Rotation>50</Rotation>
@@ -300,7 +300,7 @@
       <Class>Character</Class>
       <Texture>
          <File>buffedBunnyObjects16x16</File>
-         <Index>0x3</Index>
+         <Index>0x18</Index>
       </Texture>
       <AltTexture id="1">
          <Texture>
@@ -311,13 +311,13 @@
       <AltTexture id="2">
          <Texture>
             <File>buffedBunnyObjects16x16</File>
-            <Index>0x13</Index>
+            <Index>0x19</Index>
          </Texture>
       </AltTexture>
       <AltTexture id="3">
          <Texture>
             <File>buffedBunnyObjects16x16</File>
-            <Index>0x14</Index>
+            <Index>0x1a</Index>
          </Texture>
       </AltTexture>
       <HitSound>monster/eggs_hit</HitSound>
@@ -326,6 +326,9 @@
       <MaxHitPoints>300000</MaxHitPoints>
       <Defense>0</Defense>
       <StasisImmune/>
+      <Terrain>Mountains</Terrain>
+      <PerRealmMax>1</PerRealmMax>
+      <SpawnProb>1.0</SpawnProb>
       <ShadowSize>0</ShadowSize>
       <DisplayId>Mysterious Egg</DisplayId>
    </Object>
@@ -335,14 +338,14 @@
       <Class>Character</Class>
       <AnimatedTexture>
          <File>buffedBunnyChars16x16</File>
-         <Index>0</Index>
+         <Index>1</Index>
       </AnimatedTexture>
       <HitSound>monster/archdemon_hit</HitSound>
       <DeathSound>monster/archdemon_death</DeathSound>
       <Size>120</Size>
       <Quest/>
       <Level>20</Level>
-      <MaxHitPoints>160000</MaxHitPoints>
+      <MaxHitPoints>208000</MaxHitPoints>
       <Defense>0</Defense>
       <StasisImmune/>
       <StunImmune/>

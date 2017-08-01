@@ -2760,11 +2760,12 @@ public class GameServerConnectionConcrete extends GameServerConnection {
     }
 
     override public function questRedeem(_arg_1:int, _arg_2:int, _arg_3:int):void {
-        var _local_4:QuestRedeem = (this.messages.require(QUEST_REDEEM) as QuestRedeem);
+        /*var _local_4:QuestRedeem = (this.messages.require(QUEST_REDEEM) as QuestRedeem);
         _local_4.slotObject.objectId_ = _arg_1;
         _local_4.slotObject.slotId_ = _arg_2;
         _local_4.slotObject.objectType_ = _arg_3;
-        serverConnection.sendMessage(_local_4);
+        serverConnection.sendMessage(_local_4);*/
+		addTextLine.dispatch(ChatMessage.make("*Help*", "Temporarily disabled. This message saved you from being disconnected."));
     }
       
     private function onLoginRewardResponse(param1:ClaimDailyRewardResponse):void

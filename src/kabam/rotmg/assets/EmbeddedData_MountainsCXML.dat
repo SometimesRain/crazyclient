@@ -22,7 +22,6 @@
          <Min>2</Min>
          <Max>4</Max>
       </Spawn>
-      <PerRealmMax>2000</PerRealmMax>
       <Flying/>
       <God/>
       <Projectile id="0">
@@ -507,9 +506,10 @@
       <Enemy/>
       <Class>Character</Class>
       <AnimatedTexture>
-         <File>chars16x16dMountains2</File>
-         <Index>1</Index>
+         <File>d3Chars16x16rEmbed</File>
+         <Index>33</Index>
       </AnimatedTexture>
+      <DontFaceAttacks/>
       <HitSound>monster/greater_pit_snakes_hit</HitSound>
       <DeathSound>monster/medusa_death</DeathSound>
       <Size>100</Size>

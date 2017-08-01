@@ -24,6 +24,19 @@ public class InventoryGrid extends ItemGrid {
             _local_5++;
         }
     }
+      
+	public function getItemById(param1:int) : InventoryTile
+	{
+		var _loc2_:InventoryTile = null;
+		for each(_loc2_ in this.tiles)
+		{
+			if(_loc2_.getItemId() == param1)
+			{
+				return _loc2_;
+			}
+		}
+		return null;
+	}
 
     override public function setItems(_arg_1:Vector.<int>, _arg_2:int = 0):void {
         var _local_3:Boolean;
@@ -51,7 +64,5 @@ public class InventoryGrid extends ItemGrid {
             }
         }
     }
-
-
 }
 }//package com.company.assembleegameclient.ui.panels.itemgrids

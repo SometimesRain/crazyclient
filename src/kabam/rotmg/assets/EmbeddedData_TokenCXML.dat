@@ -1,4 +1,588 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <?xmltoken object type used range:  0xfea1 - 0xffd1     ?>
-<Objects/>
+<Objects>
+   <Object type="0x99f" id="Moss Token x 1">
+      <Displayid>Moss Token x 1</Displayid>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x2e</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A small pile of moss! You can drag and drop tokens onto each other and exchange a stack for a Moss Bag!</Description>
+      <Quantity>1</Quantity>
+      <ExtraTooltipData>
+         <EffectInfo name="Stack limit" description="10"/>
+         <EffectInfo name="Event" description="MotMG 2017"/>
+      </ExtraTooltipData>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Treasure/>
+   </Object>
+   <Object type="0x9a0" id="Moss Token x 2">
+      <Displayid>Moss Token x 2</Displayid>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x2e</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A small pile of moss! You can drag and drop tokens onto each other and exchange a stack for a Moss Bag!</Description>
+      <Quantity>2</Quantity>
+      <ExtraTooltipData>
+         <EffectInfo name="Stack limit" description="10"/>
+         <EffectInfo name="Event" description="MotMG 2017"/>
+      </ExtraTooltipData>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Treasure/>
+   </Object>
+   <Object type="0x9a1" id="Moss Token x 3">
+      <Displayid>Moss Token x 3</Displayid>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x2e</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A small pile of moss! You can drag and drop tokens onto each other and exchange a stack for a Moss Bag!</Description>
+      <Quantity>3</Quantity>
+      <ExtraTooltipData>
+         <EffectInfo name="Stack limit" description="10"/>
+         <EffectInfo name="Event" description="MotMG 2017"/>
+      </ExtraTooltipData>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Treasure/>
+   </Object>
+   <Object type="0x9a2" id="Moss Token x 4">
+      <Displayid>Moss Token x 4</Displayid>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x2e</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A small pile of moss! You can drag and drop tokens onto each other and exchange a stack for a Moss Bag!</Description>
+      <Quantity>4</Quantity>
+      <ExtraTooltipData>
+         <EffectInfo name="Stack limit" description="10"/>
+         <EffectInfo name="Event" description="MotMG 2017"/>
+      </ExtraTooltipData>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Treasure/>
+   </Object>
+   <Object type="0x9a3" id="Moss Token x 5">
+      <Displayid>Moss Token x 5</Displayid>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x2e</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A small pile of moss! You can drag and drop tokens onto each other and exchange a stack for a Moss Bag!</Description>
+      <Quantity>5</Quantity>
+      <ExtraTooltipData>
+         <EffectInfo name="Stack limit" description="10"/>
+         <EffectInfo name="Event" description="MotMG 2017"/>
+      </ExtraTooltipData>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Treasure/>
+   </Object>
+   <Object type="0x9a4" id="Moss Token x 6">
+      <Displayid>Moss Token x 6</Displayid>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x2e</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A small pile of moss! You can drag and drop tokens onto each other and exchange a stack for a Moss Bag!</Description>
+      <Quantity>6</Quantity>
+      <ExtraTooltipData>
+         <EffectInfo name="Stack limit" description="10"/>
+         <EffectInfo name="Event" description="MotMG 2017"/>
+      </ExtraTooltipData>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Treasure/>
+   </Object>
+   <Object type="0x9a5" id="Moss Token x 7">
+      <Displayid>Moss Token x 7</Displayid>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x2e</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A small pile of moss! You can drag and drop tokens onto each other and exchange a stack for a Moss Bag!</Description>
+      <Quantity>7</Quantity>
+      <ExtraTooltipData>
+         <EffectInfo name="Stack limit" description="10"/>
+         <EffectInfo name="Event" description="MotMG 2017"/>
+      </ExtraTooltipData>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Treasure/>
+   </Object>
+   <Object type="0x9a6" id="Moss Token x 8">
+      <Displayid>Moss Token x 8</Displayid>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x2e</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A small pile of moss! You can drag and drop tokens onto each other and exchange a stack for a Moss Bag!</Description>
+      <Quantity>8</Quantity>
+      <ExtraTooltipData>
+         <EffectInfo name="Stack limit" description="10"/>
+         <EffectInfo name="Event" description="MotMG 2017"/>
+      </ExtraTooltipData>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Treasure/>
+   </Object>
+   <Object type="0x9a7" id="Moss Token x 9">
+      <Displayid>Moss Token x 9</Displayid>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x2e</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A small pile of moss! You can drag and drop tokens onto each other and exchange a stack for a Moss Bag!</Description>
+      <Quantity>9</Quantity>
+      <ExtraTooltipData>
+         <EffectInfo name="Stack limit" description="10"/>
+         <EffectInfo name="Event" description="MotMG 2017"/>
+      </ExtraTooltipData>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Treasure/>
+   </Object>
+   <Object type="0x9a8" id="Moss Token x 10">
+      <Displayid>Moss Token x 10</Displayid>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x2e</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A small pile of moss! You can drag and drop tokens onto each other and exchange a stack for a Moss Bag!</Description>
+      <Quantity>10</Quantity>
+      <ExtraTooltipData>
+         <EffectInfo name="" description="Double click to create a Moss Bag! Doing so will consume the Tokens."/>
+         <EffectInfo name="Stack limit" description="10"/>
+         <EffectInfo name="Event" description="MotMG 2017"/>
+      </ExtraTooltipData>
+      <Soulbound/>
+      <Activate id="Moss Bag MotMG 2017">Exchange</Activate>
+      <BagType>2</BagType>
+      <Treasure/>
+      <Track/>
+      <Consumable/>
+   </Object>
+   <Object type="0x9a9" id="Stone Token x 1">
+      <Displayid>Stone Token x 1</Displayid>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A chunk of stone, probably from some ancient statue. You can drag and drop tokens onto each other and exchange a stack for a Stone Bag!</Description>
+      <Quantity>1</Quantity>
+      <ExtraTooltipData>
+         <EffectInfo name="Stack limit" description="10"/>
+         <EffectInfo name="Event" description="MotMG 2017"/>
+      </ExtraTooltipData>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Treasure/>
+   </Object>
+   <Object type="0x9aa" id="Stone Token x 2">
+      <Displayid>Stone Token x 2</Displayid>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A chunk of stone, probably from some ancient statue. You can drag and drop tokens onto each other and exchange a stack for a Stone Bag!</Description>
+      <Quantity>2</Quantity>
+      <ExtraTooltipData>
+         <EffectInfo name="Stack limit" description="10"/>
+         <EffectInfo name="Event" description="MotMG 2017"/>
+      </ExtraTooltipData>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Treasure/>
+   </Object>
+   <Object type="0x9ab" id="Stone Token x 3">
+      <Displayid>Stone Token x 3</Displayid>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A chunk of stone, probably from some ancient statue. You can drag and drop tokens onto each other and exchange a stack for a Stone Bag!</Description>
+      <Quantity>3</Quantity>
+      <ExtraTooltipData>
+         <EffectInfo name="Stack limit" description="10"/>
+         <EffectInfo name="Event" description="MotMG 2017"/>
+      </ExtraTooltipData>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Treasure/>
+   </Object>
+   <Object type="0x9ac" id="Stone Token x 4">
+      <Displayid>Stone Token x 4</Displayid>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A chunk of stone, probably from some ancient statue. You can drag and drop tokens onto each other and exchange a stack for a Stone Bag!</Description>
+      <Quantity>4</Quantity>
+      <ExtraTooltipData>
+         <EffectInfo name="Stack limit" description="10"/>
+         <EffectInfo name="Event" description="MotMG 2017"/>
+      </ExtraTooltipData>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Treasure/>
+   </Object>
+   <Object type="0x9ad" id="Stone Token x 5">
+      <Displayid>Stone Token x 5</Displayid>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A chunk of stone, probably from some ancient statue. You can drag and drop tokens onto each other and exchange a stack for a Stone Bag!</Description>
+      <Quantity>5</Quantity>
+      <ExtraTooltipData>
+         <EffectInfo name="Stack limit" description="10"/>
+         <EffectInfo name="Event" description="MotMG 2017"/>
+      </ExtraTooltipData>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Treasure/>
+   </Object>
+   <Object type="0x9ae" id="Stone Token x 6">
+      <Displayid>Stone Token x 6</Displayid>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A chunk of stone, probably from some ancient statue. You can drag and drop tokens onto each other and exchange a stack for a Stone Bag!</Description>
+      <Quantity>6</Quantity>
+      <ExtraTooltipData>
+         <EffectInfo name="Stack limit" description="10"/>
+         <EffectInfo name="Event" description="MotMG 2017"/>
+      </ExtraTooltipData>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Treasure/>
+   </Object>
+   <Object type="0x9af" id="Stone Token x 7">
+      <Displayid>Stone Token x 7</Displayid>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A chunk of stone, probably from some ancient statue. You can drag and drop tokens onto each other and exchange a stack for a Stone Bag!</Description>
+      <Quantity>7</Quantity>
+      <ExtraTooltipData>
+         <EffectInfo name="Stack limit" description="10"/>
+         <EffectInfo name="Event" description="MotMG 2017"/>
+      </ExtraTooltipData>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Treasure/>
+   </Object>
+   <Object type="0x9b0" id="Stone Token x 8">
+      <Displayid>Stone Token x 8</Displayid>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A chunk of stone, probably from some ancient statue. You can drag and drop tokens onto each other and exchange a stack for a Stone Bag!</Description>
+      <Quantity>8</Quantity>
+      <ExtraTooltipData>
+         <EffectInfo name="Stack limit" description="10"/>
+         <EffectInfo name="Event" description="MotMG 2017"/>
+      </ExtraTooltipData>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Treasure/>
+   </Object>
+   <Object type="0x9b1" id="Stone Token x 9">
+      <Displayid>Stone Token x 9</Displayid>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A chunk of stone, probably from some ancient statue. You can drag and drop tokens onto each other and exchange a stack for a Stone Bag!</Description>
+      <Quantity>9</Quantity>
+      <ExtraTooltipData>
+         <EffectInfo name="Stack limit" description="10"/>
+         <EffectInfo name="Event" description="MotMG 2017"/>
+      </ExtraTooltipData>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Treasure/>
+   </Object>
+   <Object type="0x9b2" id="Stone Token x 10">
+      <Displayid>Stone Token x 10</Displayid>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A chunk of stone, probably from some ancient statue. You can drag and drop tokens onto each other and exchange a stack for a Stone Bag!</Description>
+      <Quantity>10</Quantity>
+      <ExtraTooltipData>
+         <EffectInfo name="" description="Double click to create a Stone Bag! Doing so will consume the Tokens."/>
+         <EffectInfo name="Stack limit" description="10"/>
+         <EffectInfo name="Event" description="MotMG 2017"/>
+      </ExtraTooltipData>
+      <Soulbound/>
+      <Activate id="Stone Bag MotMG 2017">Exchange</Activate>
+      <BagType>2</BagType>
+      <Treasure/>
+      <Track/>
+      <Consumable/>
+   </Object>
+   <Object type="0x9b3" id="Mad God Token x 1">
+      <Displayid>Mad God Token x 1</Displayid>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x31</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A token of the Mad God, rewarded only to the bravest in the Realm! You can drag and drop tokens onto each other and exchange a stack for a Mad God Bag!</Description>
+      <Quantity>1</Quantity>
+      <ExtraTooltipData>
+         <EffectInfo name="Stack limit" description="10"/>
+         <EffectInfo name="Event" description="MotMG 2017"/>
+      </ExtraTooltipData>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Treasure/>
+   </Object>
+   <Object type="0x9b4" id="Mad God Token x 2">
+      <Displayid>Mad God Token x 2</Displayid>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x31</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A token of the Mad God, rewarded only to the bravest in the Realm! You can drag and drop tokens onto each other and exchange a stack for a Mad God Bag!</Description>
+      <Quantity>2</Quantity>
+      <ExtraTooltipData>
+         <EffectInfo name="Stack limit" description="10"/>
+         <EffectInfo name="Event" description="MotMG 2017"/>
+      </ExtraTooltipData>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Treasure/>
+   </Object>
+   <Object type="0x9b5" id="Mad God Token x 3">
+      <Displayid>Mad God Token x 3</Displayid>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x31</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A token of the Mad God, rewarded only to the bravest in the Realm! You can drag and drop tokens onto each other and exchange a stack for a Mad God Bag!</Description>
+      <Quantity>3</Quantity>
+      <ExtraTooltipData>
+         <EffectInfo name="Stack limit" description="10"/>
+         <EffectInfo name="Event" description="MotMG 2017"/>
+      </ExtraTooltipData>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Treasure/>
+   </Object>
+   <Object type="0x9b6" id="Mad God Token x 4">
+      <Displayid>Mad God Token x 4</Displayid>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x31</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A token of the Mad God, rewarded only to the bravest in the Realm! You can drag and drop tokens onto each other and exchange a stack for a Mad God Bag!</Description>
+      <Quantity>4</Quantity>
+      <ExtraTooltipData>
+         <EffectInfo name="Stack limit" description="10"/>
+         <EffectInfo name="Event" description="MotMG 2017"/>
+      </ExtraTooltipData>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Treasure/>
+   </Object>
+   <Object type="0x9b7" id="Mad God Token x 5">
+      <Displayid>Mad God Token x 5</Displayid>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x31</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A token of the Mad God, rewarded only to the bravest in the Realm! You can drag and drop tokens onto each other and exchange a stack for a Mad God Bag!</Description>
+      <Quantity>5</Quantity>
+      <ExtraTooltipData>
+         <EffectInfo name="Stack limit" description="10"/>
+         <EffectInfo name="Event" description="MotMG 2017"/>
+      </ExtraTooltipData>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Treasure/>
+   </Object>
+   <Object type="0x9b8" id="Mad God Token x 6">
+      <Displayid>Mad God Token x 6</Displayid>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x31</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A token of the Mad God, rewarded only to the bravest in the Realm! You can drag and drop tokens onto each other and exchange a stack for a Mad God Bag!</Description>
+      &gt;
+      <Quantity>6</Quantity>
+      <ExtraTooltipData>
+         <EffectInfo name="Stack limit" description="10"/>
+         <EffectInfo name="Event" description="MotMG 2017"/>
+      </ExtraTooltipData>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Treasure/>
+   </Object>
+   <Object type="0x9b9" id="Mad God Token x 7">
+      <Displayid>Mad God Token x 7</Displayid>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x31</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A token of the Mad God, rewarded only to the bravest in the Realm! You can drag and drop tokens onto each other and exchange a stack for a Mad God Bag!</Description>
+      <Quantity>7</Quantity>
+      <ExtraTooltipData>
+         <EffectInfo name="Stack limit" description="10"/>
+         <EffectInfo name="Event" description="MotMG 2017"/>
+      </ExtraTooltipData>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Treasure/>
+   </Object>
+   <Object type="0x9ba" id="Mad God Token x 8">
+      <Displayid>Mad God Token x 8</Displayid>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x31</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A token of the Mad God, rewarded only to the bravest in the Realm! You can drag and drop tokens onto each other and exchange a stack for a Mad God Bag!</Description>
+      <Quantity>8</Quantity>
+      <ExtraTooltipData>
+         <EffectInfo name="Stack limit" description="10"/>
+         <EffectInfo name="Event" description="MotMG 2017"/>
+      </ExtraTooltipData>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Treasure/>
+   </Object>
+   <Object type="0x9bb" id="Mad God Token x 9">
+      <Displayid>Mad God Token x 9</Displayid>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x31</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A token of the Mad God, rewarded only to the bravest in the Realm! You can drag and drop tokens onto each other and exchange a stack for a Mad God Bag!</Description>
+      <Quantity>9</Quantity>
+      <ExtraTooltipData>
+         <EffectInfo name="Stack limit" description="10"/>
+         <EffectInfo name="Event" description="MotMG 2017"/>
+      </ExtraTooltipData>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Treasure/>
+   </Object>
+   <Object type="0x9bc" id="Mad God Token x 10">
+      <Displayid>Mad God Token x 10</Displayid>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x31</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A token of the Mad God, rewarded only to the bravest in the Realm! You can drag and drop tokens onto each other and exchange a stack for a Mad God Bag!</Description>
+      <Quantity>10</Quantity>
+      <ExtraTooltipData>
+         <EffectInfo name="" description="Double click to create a Mad God Bag! Doing so will consume the Tokens."/>
+         <EffectInfo name="Stack limit" description="10"/>
+         <EffectInfo name="Event" description="MotMG 2017"/>
+      </ExtraTooltipData>
+      <Soulbound/>
+      <Activate id="Mad God Bag MotMG 2017">Exchange</Activate>
+      <BagType>2</BagType>
+      <Treasure/>
+      <Track/>
+      <Consumable/>
+   </Object>
+</Objects>

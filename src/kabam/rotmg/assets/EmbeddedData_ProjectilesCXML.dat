@@ -3991,6 +3991,21 @@
       </RandomTexture>
       <Rotation>185</Rotation>
    </Object>
+   <Object type="0xb107" id="Golem Magic">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>LHObj</File>
+         <Index>0xc4</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb108" id="Golem Super Magic">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>LHObj</File>
+         <Index>0xc5</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
    <Object type="0x10ec" id="EH Arrow Shot">
       <Class>Projectile</Class>
       <Texture>
@@ -4192,6 +4207,68 @@
       <Texture>
          <File>epicHiveObjects8x8</File>
          <Index>0x64</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x3003" id="Splendor Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>lofiObj5new</File>
+         <Index>0x9d</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x3004" id="Majesty Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>lofiObj5new</File>
+         <Index>0x9e</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x3005" id="Evocation Magic">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>lofiObj5new</File>
+         <Index>0xad</Index>
+      </Texture>
+   </Object>
+   <Object type="0x3006" id="Retribution Magic">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>lofiObj5new</File>
+         <Index>0xae</Index>
+      </Texture>
+   </Object>
+   <Object type="0x3007" id="Mystical Energy Arrow">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>lofiObj5new</File>
+         <Index>0xbd</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x3008" id="Deep Enchantment Arrow">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>lofiObj5new</File>
+         <Index>0xbe</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xb0c7" id="Sadamune Slash">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>lofiObj5new</File>
+         <Index>0xed</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xb0c8" id="Kusanagi Slash">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>lofiObj5new</File>
+         <Index>0xee</Index>
       </Texture>
       <AngleCorrection>1</AngleCorrection>
    </Object>

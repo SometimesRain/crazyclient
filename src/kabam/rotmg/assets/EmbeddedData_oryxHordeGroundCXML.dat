@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<GroundTypes>
+   <Ground type="0x202c" id="Ohorde Poison">
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x1a</Index>
+      </Texture>
+      <MinDamage>30</MinDamage>
+      <MaxDamage>60</MaxDamage>
+      <Animate dx=".33" dy=".33">Flow</Animate>
+      <Sink/>
+      <Speed>.666</Speed>
+   </Ground>
+</GroundTypes>

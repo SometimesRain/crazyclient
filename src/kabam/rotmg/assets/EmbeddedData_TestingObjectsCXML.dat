@@ -531,6 +531,20 @@
          <Index>0xa2</Index>
       </Texture>
    </Object>
+   <Object type="0x513" id="Testing Gift Ring New">
+      <Group>Testing Gifts</Group>
+      <Class>Character</Class>
+      <StasisImmune/>
+      <Enemy/>
+      <NoMiniMap/>
+      <MaxHitPoints>100</MaxHitPoints>
+      <XpMult>0.0</XpMult>
+      <Size>80</Size>
+      <Texture>
+         <File>LHObj</File>
+         <Index>0xab</Index>
+      </Texture>
+   </Object>
    <Object type="0x20a" id="Testing Gift Robe">
       <Group>Testing Gifts Armor</Group>
       <Class>Character</Class>
@@ -541,8 +555,8 @@
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
-         <File>lofiObj5</File>
-         <Index>0x1c</Index>
+         <File>lofiObj5new</File>
+         <Index>0x1d</Index>
       </Texture>
    </Object>
    <Object type="0x20b" id="Testing Gift Leather">
@@ -555,8 +569,8 @@
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
-         <File>lofiObj5</File>
-         <Index>0x0c</Index>
+         <File>lofiObj5new</File>
+         <Index>0x0d</Index>
       </Texture>
    </Object>
    <Object type="0x20c" id="Testing Gift Armor">
@@ -569,8 +583,8 @@
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
-         <File>lofiObj5</File>
-         <Index>0x2c</Index>
+         <File>lofiObj5new</File>
+         <Index>0x2d</Index>
       </Texture>
    </Object>
    <Object type="0x210" id="Testing Gift Staff">
@@ -583,8 +597,8 @@
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
-         <File>lofiObj5</File>
-         <Index>0x7c</Index>
+         <File>lofiObj5new</File>
+         <Index>0x7d</Index>
       </Texture>
    </Object>
    <Object type="0x238" id="Testing Gift Staff Tier">
@@ -613,8 +627,8 @@
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
-         <File>lofiObj5</File>
-         <Index>0x5c</Index>
+         <File>lofiObj5new</File>
+         <Index>0x5d</Index>
       </Texture>
    </Object>
    <Object type="0x239" id="Testing Gift Bow Tier">
@@ -655,8 +669,8 @@
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
-         <File>lofiObj5</File>
-         <Index>0x6c</Index>
+         <File>lofiObj5new</File>
+         <Index>0x6d</Index>
       </Texture>
    </Object>
    <Object type="0x23a" id="Testing Gift Dagger Tier">
@@ -685,8 +699,8 @@
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
-         <File>lofiObj5</File>
-         <Index>0x3c</Index>
+         <File>lofiObj5new</File>
+         <Index>0x3d</Index>
       </Texture>
    </Object>
    <Object type="0x23f" id="Testing Gift Sword Tier">
@@ -715,8 +729,8 @@
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
-         <File>lofiObj5</File>
-         <Index>0x4c</Index>
+         <File>lofiObj5new</File>
+         <Index>0x4d</Index>
       </Texture>
    </Object>
    <Object type="0x240" id="Testing Gift Wand Tier">
@@ -757,8 +771,8 @@
       <XpMult>0.0</XpMult>
       <Size>80</Size>
       <Texture>
-         <File>lofiObj3</File>
-         <Index>0x228</Index>
+         <File>lofiObj5new</File>
+         <Index>0x8d</Index>
       </Texture>
    </Object>
    <Object type="0x241" id="Testing Gift Katana Tier">
@@ -1319,6 +1333,20 @@
       <AnimatedTexture>
          <File>playerskins16</File>
          <Index>12</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0x514" id="Testing Gift ST Golem">
+      <Group>Testing Gifts ST</Group>
+      <Class>Character</Class>
+      <StasisImmune/>
+      <Enemy/>
+      <NoMiniMap/>
+      <MaxHitPoints>100</MaxHitPoints>
+      <XpMult>0.0</XpMult>
+      <Size>40</Size>
+      <AnimatedTexture>
+         <File>playerskins16</File>
+         <Index>14</Index>
       </AnimatedTexture>
    </Object>
 </Objects>

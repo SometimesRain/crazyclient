@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<GroundTypes>
+   <Ground type="0xb01a" id="LH Main Tile">
+      <RandomTexture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>0</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>2</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb01b" id="LH Main Tile Bloody">
+      <Texture>
+         <File>LHObj</File>
+         <Index>1</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb01c" id="LH Gem Tile">
+      <RandomTexture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>3</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>4</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>5</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>6</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>7</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>8</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>9</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>10</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>11</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>12</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>13</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>14</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb01d" id="LH Hall Tile">
+      <Texture>
+         <File>LHObj</File>
+         <Index>15</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb025" id="LH Cult Main Tile">
+      <Texture>
+         <File>LHObj</File>
+         <Index>0x29</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb027" id="LH Cult Bloody Tile">
+      <Texture>
+         <File>LHObj</File>
+         <Index>0x2a</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb098" id="LH Void Landmark N">
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x447</Index>
+      </Texture>
+      <DisplayId>Pure Evil</DisplayId>
+      <MinDamage>70</MinDamage>
+      <MaxDamage>80</MaxDamage>
+      <Animate dx=".35">Flow</Animate>
+      <Sink/>
+      <RandomOffset/>
+      <Speed>.333</Speed>
+      <BlendPriority>1</BlendPriority>
+   </Ground>
+   <Ground type="0xb099" id="LH Void Landmark E">
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x447</Index>
+      </Texture>
+      <DisplayId>Pure Evil</DisplayId>
+      <MinDamage>70</MinDamage>
+      <MaxDamage>80</MaxDamage>
+      <Animate dx=".35">Flow</Animate>
+      <Sink/>
+      <RandomOffset/>
+      <Speed>.333</Speed>
+      <BlendPriority>1</BlendPriority>
+   </Ground>
+   <Ground type="0xb09a" id="LH Void Landmark S">
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x447</Index>
+      </Texture>
+      <DisplayId>Pure Evil</DisplayId>
+      <MinDamage>70</MinDamage>
+      <MaxDamage>80</MaxDamage>
+      <Animate dx=".35">Flow</Animate>
+      <Sink/>
+      <RandomOffset/>
+      <Speed>.333</Speed>
+      <BlendPriority>1</BlendPriority>
+   </Ground>
+   <Ground type="0xb09b" id="LH Void Landmark W">
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x447</Index>
+      </Texture>
+      <DisplayId>Pure Evil</DisplayId>
+      <MinDamage>70</MinDamage>
+      <MaxDamage>80</MaxDamage>
+      <Animate dx=".35">Flow</Animate>
+      <Sink/>
+      <RandomOffset/>
+      <Speed>.333</Speed>
+      <BlendPriority>1</BlendPriority>
+   </Ground>
+   <Ground type="0xb09c" id="LH Void Landmark C">
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x447</Index>
+      </Texture>
+      <DisplayId>Pure Evil</DisplayId>
+      <MinDamage>70</MinDamage>
+      <MaxDamage>80</MaxDamage>
+      <Animate dx=".35">Flow</Animate>
+      <Sink/>
+      <RandomOffset/>
+      <Speed>.333</Speed>
+      <BlendPriority>1</BlendPriority>
+   </Ground>
+   <Ground type="0xb09d" id="LH Void Landmark Stop">
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x447</Index>
+      </Texture>
+      <DisplayId>Pure Evil</DisplayId>
+      <MinDamage>70</MinDamage>
+      <MaxDamage>80</MaxDamage>
+      <Animate dx=".35">Flow</Animate>
+      <Sink/>
+      <RandomOffset/>
+      <Speed>.333</Speed>
+      <BlendPriority>1</BlendPriority>
+   </Ground>
+   <Ground type="0xb122" id="LH Titan Tile">
+      <RandomTexture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>0</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>2</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb02c" id="LH Spectral Tile A">
+      <RandomTexture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>0</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>2</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb02d" id="LH Spectral Tile B">
+      <RandomTexture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>0</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>2</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb02e" id="LH Spectral Tile C">
+      <RandomTexture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>0</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>2</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb02f" id="LH Spectral Tile D">
+      <RandomTexture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>0</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>2</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb030" id="LH Sentry Tile">
+      <Texture>
+         <File>LHObj</File>
+         <Index>0xac</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb031" id="LH Spectral Tile 1">
+      <RandomTexture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>0</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>2</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb032" id="LH Spectral Tile 2">
+      <RandomTexture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>0</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>2</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb033" id="LH Spectral Tile 3">
+      <RandomTexture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>0</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>2</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb034" id="LH Spectral Tile 4">
+      <RandomTexture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>0</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>2</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb035" id="LH Void Platform">
+      <RandomTexture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>0xc6</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>0xc6</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>0xc6</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>0xc6</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>0xc6</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>0xc6</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>0xc6</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>0xc7</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>0xc8</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>0xc9</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>0xca</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>0xca</Index>
+         </Texture>
+         <Texture>
+            <File>LHObj</File>
+            <Index>0xcb</Index>
+         </Texture>
+      </RandomTexture>
+      <BlendPriority>1</BlendPriority>
+   </Ground>
+</GroundTypes>

@@ -3145,6 +3145,18 @@
          <ArmorPiercing/>
       </Projectile>
    </Object>
+   <Object type="0x08ad" id="EH Beekeeper Portal Checker">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <StasisImmune/>
+   </Object>
    <Object type="0x08ea" id="EH Secret Fat Bees">
       <Group>Secret Bees</Group>
       <DisplayId>Yellow Killer Bee</DisplayId>
@@ -3248,7 +3260,6 @@
    </Object>
    <Object type="0x08ac" id="EH Event Taunt Controller">
       <Class>Character</Class>
-      <Enemy/>
       <DeathSound>silence</DeathSound>
       <Texture>
          <File>invisible</File>
@@ -3258,7 +3269,9 @@
       <NoMiniMap/>
       <Size>60</Size>
       <ShadowSize>0</ShadowSize>
+      <Enemy/>
       <StasisImmune/>
+      <ParalyzeImmune/>
    </Object>
    <Object type="0x10f6" id="EH Event Grenade Summoner">
       <Class>Character</Class>
@@ -3271,7 +3284,9 @@
       <NoMiniMap/>
       <Size>0</Size>
       <ShadowSize>0</ShadowSize>
+      <Enemy/>
       <StasisImmune/>
+      <ParalyzeImmune/>
    </Object>
    <Object type="0x10d8" id="EH Event Hive">
       <Class>Character</Class>
@@ -3388,6 +3403,7 @@
       <ShadowSize>0</ShadowSize>
       <Enemy/>
       <StasisImmune/>
+      <ParalyzeImmune/>
    </Object>
    <Object type="0x10f8" id="EH Blue Loot">
       <Class>Character</Class>
@@ -3399,8 +3415,9 @@
       <NoMiniMap/>
       <Size>0</Size>
       <ShadowSize>0</ShadowSize>
-      <StasisImmune/>
       <Enemy/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
    </Object>
    <Object type="0x10f9" id="EH Yellow Loot">
       <Class>Character</Class>
@@ -3412,8 +3429,9 @@
       <NoMiniMap/>
       <Size>0</Size>
       <ShadowSize>0</ShadowSize>
-      <StasisImmune/>
       <Enemy/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
    </Object>
    <Object type="0x10fc" id="EH Yellow Minor Loot">
       <Class>Character</Class>
@@ -3425,8 +3443,9 @@
       <NoMiniMap/>
       <Size>0</Size>
       <ShadowSize>0</ShadowSize>
-      <StasisImmune/>
       <Enemy/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
    </Object>
    <Object type="0x10fd" id="EH Red Minor Loot">
       <Class>Character</Class>
@@ -3438,8 +3457,9 @@
       <NoMiniMap/>
       <Size>100</Size>
       <ShadowSize>0</ShadowSize>
-      <StasisImmune/>
       <Enemy/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
    </Object>
    <Object type="0x10fe" id="EH Blue Minor Loot">
       <Class>Character</Class>
@@ -3451,8 +3471,9 @@
       <NoMiniMap/>
       <Size>0</Size>
       <ShadowSize>0</ShadowSize>
-      <StasisImmune/>
       <Enemy/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
    </Object>
    <Object type="0x10f0" id="EH Event Hive Corpse">
       <Class>Character</Class>

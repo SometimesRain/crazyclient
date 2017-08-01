@@ -38,7 +38,10 @@ public class InventoryTabContent extends Sprite {
         this.storageContent.y = 7;
         this.potionsInventory.y = (this.storage.height + 4);
     }
-
-
+      
+	public function get storage() : InventoryGrid
+	{
+		return this.storage;
+	}
 }
 }//package kabam.rotmg.game.view.components

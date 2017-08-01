@@ -465,8 +465,8 @@
             <Index>0x212</Index>
          </Texture>
       </RandomTexture>
-      <HitSound>monster/slimes_death</HitSound>
-      <DeathSound>monster/flying_brain_death</DeathSound>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
       <Size>125</Size>
       <ShadowSize>0</ShadowSize>
       <MaxHitPoints>500</MaxHitPoints>

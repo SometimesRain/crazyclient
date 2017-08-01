@@ -64,6 +64,7 @@ public class AssetLibrary {
 
     public static function getImageFromSet(_arg_1:String, _arg_2:int):BitmapData {
         var _local_3:ImageSet = imageSets_[_arg_1];
+		//if (_arg_2 > imageSets_[_arg_1].length) return null;
         return (_local_3.images_[_arg_2]);
     }
 

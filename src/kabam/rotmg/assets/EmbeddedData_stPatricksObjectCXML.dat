@@ -41,6 +41,8 @@
       <BagType>6</BagType>
       <Soulbound/>
       <DisplayId>Clover Bow</DisplayId>
+      <FameBonus>3</FameBonus>
+      <feedPower>400</feedPower>
    </Object>
    <Object type="0x164b" id="Sword of the Rainbow's End">
       <Class>Equipment</Class>
@@ -68,6 +70,8 @@
       <ArcGap>10</ArcGap>
       <BagType>6</BagType>
       <Soulbound/>
+      <feedPower>400</feedPower>
+      <FameBonus>3</FameBonus>
       <DisplayId>Sword of the Rainbow's End</DisplayId>
    </Object>
    <Object type="0x164c" id="St. Patricks Event">
@@ -223,8 +227,6 @@
    </Object>
    <Object type="0x1655" id="Patty Coin Drop">
       <Class>Character</Class>
-      <Enemy/>
-      <NoMiniMap/>
       <StasisImmune/>
       <Texture>
          <File>invisible</File>
@@ -233,5 +235,204 @@
       <XpMult>0.0</XpMult>
       <Size>0</Size>
       <MaxHitPoints>10</MaxHitPoints>
+   </Object>
+   <Object type="0x5b00" id="MotMG St. Patricks Event Anchor">
+      <Enemy/>
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <Terrain>Mountains</Terrain>
+      <SpawnProb>1.0</SpawnProb>
+      <PerRealmMax>1</PerRealmMax>
+      <MaxHitPoints>5000</MaxHitPoints>
+   </Object>
+   <Object type="0x5b0b" id="MotMG St. Patricks Event Protect Checker">
+      <Enemy/>
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>5000</MaxHitPoints>
+   </Object>
+   <Object type="0x5b01" id="MotMG St. Patricks Taunt Controller">
+      <DisplayId>Oryx the Mad God</DisplayId>
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x5b02" id="MotMG St. Patricks Event">
+      <DisplayId>Leprechaun Statue</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>stPatricksChars8x8</File>
+         <Index>1</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>stPatricksChars8x8</File>
+            <Index>2</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="2">
+         <AnimatedTexture>
+            <File>stPatricksChars8x8</File>
+            <Index>3</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <PerRealmMax>1</PerRealmMax>
+      <Size>200</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>150000</MaxHitPoints>
+      <Defense>50</Defense>
+      <XpMult>0</XpMult>
+      <Quest/>
+      <Hero/>
+      <Level>20</Level>
+      <ParalyzeImmune/>
+      <Terrain>MidForest</Terrain>
+   </Object>
+   <Object type="0x5b03" id="MotMG St. Patricks Event 2">
+      <DisplayId>Leprechaun</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>stPatricksChars8x8</File>
+         <Index>4</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dwarves_hit</HitSound>
+      <DeathSound>monster/dwarves_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>20</ShadowSize>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>25</Defense>
+      <XpMult>2.5</XpMult>
+      <Quest/>
+      <Hero/>
+      <Level>20</Level>
+      <ParalyzeImmune/>
+   </Object>
+   <Object type="0x5b04" id="MotMG St. Patricks Event Piece 1">
+      <Group>Patty Statue Pieces</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <StasisImmune/>
+      <Texture>
+         <File>stPatricksObjects8x8</File>
+         <Index>0x30</Index>
+      </Texture>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>10000</MaxHitPoints>
+   </Object>
+   <Object type="0x5b05" id="MotMG St. Patricks Event Piece 2">
+      <Group>Patty Statue Pieces</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <StasisImmune/>
+      <Texture>
+         <File>stPatricksObjects8x8</File>
+         <Index>0x31</Index>
+      </Texture>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>10000</MaxHitPoints>
+   </Object>
+   <Object type="0x5b06" id="MotMG St. Patricks Event Piece 3">
+      <Group>Patty Statue Pieces</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <StasisImmune/>
+      <Texture>
+         <File>stPatricksObjects8x8</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>10000</MaxHitPoints>
+   </Object>
+   <Object type="0x5b07" id="MotMG St. Patricks Event Piece 4">
+      <Group>Patty Statue Pieces</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <StasisImmune/>
+      <Texture>
+         <File>stPatricksObjects8x8</File>
+         <Index>0x33</Index>
+      </Texture>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>10000</MaxHitPoints>
+   </Object>
+   <Object type="0x5b08" id="MotMG St. Patricks Event Piece 5">
+      <Group>Patty Statue Pieces</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <StasisImmune/>
+      <Texture>
+         <File>stPatricksObjects8x8</File>
+         <Index>0x34</Index>
+      </Texture>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>10000</MaxHitPoints>
+   </Object>
+   <Object type="0x5b09" id="MotMG St. Patricks Event Fake Piece">
+      <Group>Patty Statue Pieces</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <StasisImmune/>
+      <Texture>
+         <File>stPatricksObjects8x8</File>
+         <Index>0x35</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>10000</MaxHitPoints>
+   </Object>
+   <Object type="0x5b0a" id="MotMG St. Patricks Event Chest">
+      <DisplayId>Pot of Gold</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>stPatricksChars16x16</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <HitSound>monster/golems_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>120000</MaxHitPoints>
+      <Defense>5</Defense>
+      <XpMult>0.8</XpMult>
+      <StasisImmune/>
    </Object>
 </Objects>

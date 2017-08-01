@@ -173,8 +173,8 @@ public class TextureRedrawer {
         _local_5.scale(5, 5);
         var _local_6:BitmapData = new BitmapDataSpy((_arg_1.width * 5), (_arg_1.height * 5), true, 0);
         _local_6.draw(_arg_1, _local_5);
-        var _local_7:BitmapData = getTexture(_arg_3, colorTexture1);
-        var _local_8:BitmapData = getTexture(_arg_4, colorTexture2);
+		var _local_7:BitmapData = getTexture(_arg_3 >= 0 ? int(_arg_3) : 0, colorTexture1);
+		var _local_8:BitmapData = getTexture(_arg_4 >= 0 ? int(_arg_4) : 0, colorTexture2);
         var _local_9:Shader = new Shader(textureShaderData_);
         _local_9.data.src.input = _local_6;
         _local_9.data.mask.input = _arg_2;
