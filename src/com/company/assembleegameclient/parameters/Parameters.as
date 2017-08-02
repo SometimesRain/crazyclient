@@ -14,7 +14,7 @@ public class Parameters {
 
     public static const BUILD_VERSION:String = "X16.0";
     public static const MINOR_VERSION:String = "0";
-    public static const CRAZY_VERSION:String = "v9.6";
+    public static const CRAZY_VERSION:String = "v9.6.2";
     public static const ENABLE_ENCRYPTION:Boolean = true;
     public static const PORT:int = 2050;
     public static const ALLOW_SCREENSHOT_MODE:Boolean = false;

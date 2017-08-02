@@ -64,16 +64,16 @@ import robotlegs.bender.framework.api.LogLevel;
 public class WebMain extends Sprite {
 
     public static var STAGE:Stage;
-	public static var lc:LocalConnection;
-    private var addTextLine:AddTextLineSignal;
+	//public static var lc:LocalConnection;
+    //private var addTextLine:AddTextLineSignal;
     protected var context:IContext;
 	public static var sWidth:Number = 800;
 	public static var sHeight:Number = 600;
 
     public function WebMain() {
-		lc = new LocalConnection();
-		lc.connect("gameClient");
-		lc.client = this;
+		//lc = new LocalConnection();
+		//lc.connect("gameClient");
+		//lc.client = this;
         if (stage) {
 			stage.addEventListener(Event.RESIZE,this.onStageResize);
             this.setup();
@@ -81,13 +81,13 @@ public class WebMain extends Sprite {
         else {
             addEventListener(Event.ADDED_TO_STAGE, this.onAddedToStage);
         }
-		addTextLine = this.context.injector.getInstance(AddTextLineSignal); //temp
+		//addTextLine = this.context.injector.getInstance(AddTextLineSignal); //temp
     }
 	
-	public function boatNotif():void {
+	/*public function boatNotif():void {
 		//recon and security
 		addTextLine.dispatch(ChatMessage.make("*Help*", "Boat leaving"));
-	}
+	}*/
 	
 	public function onStageResize(param1:Event):void {
 		if (stage.scaleMode == StageScaleMode.NO_SCALE) {
