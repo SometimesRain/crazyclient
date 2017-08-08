@@ -1645,6 +1645,10 @@ public class Player extends Character {
             SoundEffectLibrary.play("error");
             return (false);
         }
+		if (isSilenced()) {
+			SoundEffectLibrary.play("error");
+			return false;
+		}
         for each (_local_7 in thisAbilXML.Activate) {
             if (_local_7.toString() == ActivationType.TELEPORT && !Parameters.data_.spellVoid) {
                 if (!this.isValidPosition(_local_6.x, _local_6.y)) { //trickster tp through wall

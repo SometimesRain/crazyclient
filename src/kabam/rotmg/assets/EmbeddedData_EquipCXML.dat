@@ -3547,8 +3547,8 @@
       <Class>Equipment</Class>
       <Item/>
       <Texture>
-         <File>lofiObj2</File>
-         <Index>0x34</Index>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x102</Index>
       </Texture>
       <SlotType>10</SlotType>
       <Tier>2</Tier>
@@ -3565,8 +3565,8 @@
       <Class>Equipment</Class>
       <Item/>
       <Texture>
-         <File>lofiObj2</File>
-         <Index>0x35</Index>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x103</Index>
       </Texture>
       <SlotType>10</SlotType>
       <Tier>2</Tier>
@@ -3583,8 +3583,8 @@
       <Class>Equipment</Class>
       <Item/>
       <Texture>
-         <File>lofiObj2</File>
-         <Index>0x36</Index>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x104</Index>
       </Texture>
       <SlotType>10</SlotType>
       <Tier>2</Tier>
@@ -3601,8 +3601,8 @@
       <Class>Equipment</Class>
       <Item/>
       <Texture>
-         <File>lofiObj2</File>
-         <Index>0x30</Index>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x106</Index>
       </Texture>
       <SlotType>10</SlotType>
       <Tier>2</Tier>
@@ -3619,8 +3619,8 @@
       <Class>Equipment</Class>
       <Item/>
       <Texture>
-         <File>lofiObj2</File>
-         <Index>0x31</Index>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x107</Index>
       </Texture>
       <SlotType>10</SlotType>
       <Tier>2</Tier>
@@ -3637,8 +3637,8 @@
       <Class>Equipment</Class>
       <Item/>
       <Texture>
-         <File>lofiObj2</File>
-         <Index>0x37</Index>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x105</Index>
       </Texture>
       <SlotType>10</SlotType>
       <Tier>2</Tier>
@@ -3655,8 +3655,8 @@
       <Class>Equipment</Class>
       <Item/>
       <Texture>
-         <File>lofiObj2</File>
-         <Index>0x26</Index>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x100</Index>
       </Texture>
       <SlotType>10</SlotType>
       <Description>A potion that permanently increases health by 5.</Description>
@@ -3672,8 +3672,8 @@
       <Class>Equipment</Class>
       <Item/>
       <Texture>
-         <File>lofiObj2</File>
-         <Index>0x27</Index>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x101</Index>
       </Texture>
       <SlotType>10</SlotType>
       <Description>A potion that permanently increases magic by 5.</Description>
@@ -3689,8 +3689,8 @@
       <Class>Equipment</Class>
       <Item/>
       <Texture>
-         <File>lofiObj2</File>
-         <Index>0x34</Index>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x112</Index>
       </Texture>
       <SlotType>10</SlotType>
       <Description>A potion that permanently increases attack power by 1.</Description>
@@ -3707,8 +3707,8 @@
       <Class>Equipment</Class>
       <Item/>
       <Texture>
-         <File>lofiObj2</File>
-         <Index>0x35</Index>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x113</Index>
       </Texture>
       <SlotType>10</SlotType>
       <Description>A potion that permanently increases defense power by 1.</Description>
@@ -3725,8 +3725,8 @@
       <Class>Equipment</Class>
       <Item/>
       <Texture>
-         <File>lofiObj2</File>
-         <Index>0x36</Index>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x114</Index>
       </Texture>
       <SlotType>10</SlotType>
       <Description>A potion that permanently increases speed by 1.</Description>
@@ -3743,8 +3743,8 @@
       <Class>Equipment</Class>
       <Item/>
       <Texture>
-         <File>lofiObj2</File>
-         <Index>0x30</Index>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x116</Index>
       </Texture>
       <SlotType>10</SlotType>
       <Description>A potion that permanently increases vitality by 1.</Description>
@@ -3761,8 +3761,8 @@
       <Class>Equipment</Class>
       <Item/>
       <Texture>
-         <File>lofiObj2</File>
-         <Index>0x31</Index>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x117</Index>
       </Texture>
       <SlotType>10</SlotType>
       <Description>A potion that permanently increases wisdom by 1.</Description>
@@ -3779,8 +3779,8 @@
       <Class>Equipment</Class>
       <Item/>
       <Texture>
-         <File>lofiObj2</File>
-         <Index>0x37</Index>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x115</Index>
       </Texture>
       <SlotType>10</SlotType>
       <Description>A potion that permanently increases dexterity by 1.</Description>
@@ -3797,8 +3797,8 @@
       <Class>Equipment</Class>
       <Item/>
       <Texture>
-         <File>lofiObj2</File>
-         <Index>0x26</Index>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x110</Index>
       </Texture>
       <SlotType>10</SlotType>
       <Description>A potion that permanently increases health by 5.</Description>
@@ -3815,8 +3815,8 @@
       <Class>Equipment</Class>
       <Item/>
       <Texture>
-         <File>lofiObj2</File>
-         <Index>0x27</Index>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x111</Index>
       </Texture>
       <SlotType>10</SlotType>
       <Description>A potion that permanently increases magic by 5.</Description>
@@ -8440,7 +8440,7 @@
       <MpCost>95</MpCost>
       <Activate duration="5">Decoy</Activate>
       <Activate duration="5" angleOffset="180">Decoy</Activate>
-      <feedPower>400</feedPower>
+      <feedPower>500</feedPower>
       <Soulbound/>
    </Object>
    <Object type="0xb21" id="Chicken Leg of Doom">
@@ -13348,7 +13348,7 @@
       <ActivateOnEquip stat="3" amount="80">IncrementStat</ActivateOnEquip>
       <FameBonus>5</FameBonus>
       <BagType>6</BagType>
-      <feedPower>250</feedPower>
+      <feedPower>600</feedPower>
       <Soulbound/>
    </Object>
    <Object type="0x7449" id="Puppet Master Skin">
@@ -13598,7 +13598,7 @@
       <Item/>
       <Texture>
          <File>d3LofiObjEmbed</File>
-         <Index>0x0d</Index>
+         <Index>0x122</Index>
       </Texture>
       <SlotType>10</SlotType>
       <Tier>4</Tier>
@@ -13616,7 +13616,7 @@
       <Item/>
       <Texture>
          <File>d3LofiObjEmbed</File>
-         <Index>0x0e</Index>
+         <Index>0x123</Index>
       </Texture>
       <SlotType>10</SlotType>
       <Tier>4</Tier>
@@ -13634,7 +13634,7 @@
       <Item/>
       <Texture>
          <File>d3LofiObjEmbed</File>
-         <Index>0x0f</Index>
+         <Index>0x124</Index>
       </Texture>
       <SlotType>10</SlotType>
       <Tier>4</Tier>
@@ -13652,7 +13652,7 @@
       <Item/>
       <Texture>
          <File>d3LofiObjEmbed</File>
-         <Index>0x10</Index>
+         <Index>0x126</Index>
       </Texture>
       <SlotType>10</SlotType>
       <Tier>4</Tier>
@@ -13670,7 +13670,7 @@
       <Item/>
       <Texture>
          <File>d3LofiObjEmbed</File>
-         <Index>0x11</Index>
+         <Index>0x127</Index>
       </Texture>
       <SlotType>10</SlotType>
       <Tier>4</Tier>
@@ -13688,7 +13688,7 @@
       <Item/>
       <Texture>
          <File>d3LofiObjEmbed</File>
-         <Index>0x12</Index>
+         <Index>0x125</Index>
       </Texture>
       <SlotType>10</SlotType>
       <Tier>4</Tier>
@@ -13706,7 +13706,7 @@
       <Item/>
       <Texture>
          <File>d3LofiObjEmbed</File>
-         <Index>0x13</Index>
+         <Index>0x120</Index>
       </Texture>
       <SlotType>10</SlotType>
       <Description>A potion that permanently increases health by 10.</Description>
@@ -13723,7 +13723,7 @@
       <Item/>
       <Texture>
          <File>d3LofiObjEmbed</File>
-         <Index>0x14</Index>
+         <Index>0x121</Index>
       </Texture>
       <SlotType>10</SlotType>
       <Description>A potion that permanently increases magic by 10.</Description>
@@ -19034,6 +19034,7 @@
       <Activate id="Lost Halls Portal">Create</Activate>
       <feedPower>200</feedPower>
       <BagType>5</BagType>
+      <Track/>
    </Object>
    <Object type="0x025c" id="LH Lost Halls Debug Item">
       <Class>Equipment</Class>

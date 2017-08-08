@@ -327,8 +327,8 @@
       <Defense>0</Defense>
       <StasisImmune/>
       <Terrain>Mountains</Terrain>
-      <PerRealmMax>1</PerRealmMax>
       <SpawnProb>1.0</SpawnProb>
+      <PerRealmMax>1</PerRealmMax>
       <ShadowSize>0</ShadowSize>
       <DisplayId>Mysterious Egg</DisplayId>
    </Object>

@@ -542,6 +542,10 @@ public class GameObject extends BasicObject {
     public function isCursedImmune():Boolean {
         return (!(((this.condition_[ConditionEffect.CE_SECOND_BATCH] & ConditionEffect.CURSE_IMMUNE_BIT) == 0)));
     }
+      
+	public function isSilenced():Boolean {
+		return (condition_[ConditionEffect.CE_SECOND_BATCH] & ConditionEffect.SILENCED_BIT) != 0;
+	}
 
     public function isSafe(_arg_1:int = 20):Boolean {
         var _local_2:GameObject;
@@ -778,6 +782,7 @@ public class GameObject extends BasicObject {
                             case ConditionEffect.UNSTABLE:
                             case ConditionEffect.DARKNESS:
                             case ConditionEffect.PETRIFIED_IMMUNE:
+							case ConditionEffect.SILENCED:
                                 _local_9 = ConditionEffect.effects_[_local_8];
                                 break;
                             case ConditionEffect.SLOWED:

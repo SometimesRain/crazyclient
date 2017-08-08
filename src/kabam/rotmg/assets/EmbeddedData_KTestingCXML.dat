@@ -1,6 +1,81 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <Objects>
+   <Object type="0x8da" id="Admin Prism">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj6</File>
+         <Index>0xb0</Index>
+      </Texture>
+      <SlotType>22</SlotType>
+      <Description>A prism used for unprecedented velocity by the Cult of Admin.</Description>
+      <Usable/>
+      <MpCost>0</MpCost>
+      <ActivateOnEquip stat="22" amount="125">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip stat="27" amount="1000">IncrementStat</ActivateOnEquip>
+      <Activate maxDistance="20">Teleport</Activate>
+      <BagType>6</BagType>
+      <feedPower>100000</feedPower>
+      <Soulbound/>
+   </Object>
+   <Object type="0xcf2" id="TG">
+      <DisplayId>Test Guill</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars8x8rEmbed</File>
+         <Index>17</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>d3Chars8x8rEmbed</File>
+            <Index>18</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <Size>160</Size>
+      <XpMult>1.0</XpMult>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <ShadowSize>50</ShadowSize>
+      <Projectile id="0">
+         <ObjectId>Darkness Bolt</ObjectId>
+         <Speed>80</Speed>
+         <Damage>0</Damage>
+         <LifetimeMS>2000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Darkness Bolt</ObjectId>
+         <Speed>20</Speed>
+         <Damage>0</Damage>
+         <Size>0</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Darkness Bolt</ObjectId>
+         <Speed>77.3333</Speed>
+         <Damage>0</Damage>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Color>0x00ff00</Color>
+   </Object>
+   <Object type="0x63d" id="Decaract">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiChar8x8</File>
+         <Index>0xb5</Index>
+      </Texture>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Size>0</Size>
+      <Hero/>
+      <Quest/>
+      <God/>
+      <Encounter/>
+      <Level>20</Level>
+   </Object>
    <Object type="0xc0c" id="0Def">
       <Class>Character</Class>
       <Enemy/>

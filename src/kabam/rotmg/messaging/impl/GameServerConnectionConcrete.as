@@ -1442,7 +1442,6 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         var _local_5:Number;
         var _local_2:GameObject = gs_.map.goDict_[_arg_1.ownerId_];
         if (_local_2 == null || _local_2.dead_) {
-			//addTextLine.dispatch(ChatMessage.make("*Help*", "You're hit by an invisible enemy"));
             this.shootAck(-1); //this causes problems
             return;
         }
@@ -1450,7 +1449,8 @@ public class GameServerConnectionConcrete extends GameServerConnection {
         while (_local_3 < _arg_1.numShots_) {
             _local_4 = (FreeList.newObject(Projectile) as Projectile);
             _local_5 = (_arg_1.angle_ + (_arg_1.angleInc_ * _local_3));
-            _local_4.reset(_local_2.objectType_, _arg_1.bulletType_, _arg_1.ownerId_, ((_arg_1.bulletId_ + _local_3) % 0x0100), _local_5, gs_.lastUpdate_);
+            _local_4.reset(_local_2.objectType_, _arg_1.bulletType_, _arg_1.ownerId_, (_arg_1.bulletId_ + _local_3) % 0x0100, _local_5, gs_.lastUpdate_);
+			//addTextLine.dispatch(ChatMessage.make("*Help*", "bullet "+_arg_1.damage_));
             _local_4.setDamage(_arg_1.damage_);
             gs_.map.addObj(_local_4, _arg_1.startingPos_.x_, _arg_1.startingPos_.y_);
             _local_3++;

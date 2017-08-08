@@ -66,12 +66,6 @@ public class Projectile extends BasicObject {
         return (objBullIdToObjId_[((_arg_2 << 24) | _arg_1)]);
     }
 
-    public static function getNewObjId(_arg_1:int, _arg_2:uint):int {
-        var _local_3:int = getNextFakeObjectId();
-        objBullIdToObjId_[((_arg_2 << 24) | _arg_1)] = _local_3;
-        return (_local_3);
-    }
-
     public static function removeObjId(_arg_1:int, _arg_2:uint):void {
         delete objBullIdToObjId_[((_arg_2 << 24) | _arg_1)];
     }
@@ -80,6 +74,11 @@ public class Projectile extends BasicObject {
         objBullIdToObjId_ = new Dictionary();
     }
 
+    public static function getNewObjId(_arg_1:int, _arg_2:uint):int {
+        var _local_3:int = getNextFakeObjectId();
+        objBullIdToObjId_[((_arg_2 << 24) | _arg_1)] = _local_3;
+        return (_local_3);
+    }
 
     public function reset(_arg_1:int, _arg_2:int, _arg_3:int, _arg_4:int, _arg_5:Number, _arg_6:int, _arg_7:String = "", _arg_8:String = ""):void {
         var _local_11:Number;

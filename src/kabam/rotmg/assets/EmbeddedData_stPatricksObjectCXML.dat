@@ -246,8 +246,6 @@
       </Texture>
       <Size>0</Size>
       <ShadowSize>0</ShadowSize>
-      <Terrain>Mountains</Terrain>
-      <SpawnProb>1.0</SpawnProb>
       <PerRealmMax>1</PerRealmMax>
       <MaxHitPoints>5000</MaxHitPoints>
    </Object>

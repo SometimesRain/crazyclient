@@ -147,7 +147,7 @@ public class EquipmentTile extends InteractiveItemTile {
     }
 
     public function updateDim(_arg_1:Player):void {
-        itemSprite.setDim(((_arg_1) && ((_arg_1.mp_ < this.minManaUsage))));
+		itemSprite.setDim(_arg_1 && (_arg_1.mp_ < this.minManaUsage || this.minManaUsage && _arg_1.isSilenced()));
     }
 
     override protected function beginDragCallback():void {
